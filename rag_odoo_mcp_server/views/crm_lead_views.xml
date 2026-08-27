@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <!-- Action to open the lead brief wizard -->
+    <record id="action_open_lead_brief_wizard" model="ir.actions.act_window">
+        <field name="name">Claude lead generation brief</field>
+        <field name="res_model">rag_odoo_mcp_server.lead_brief_wizard</field>
+        <field name="view_mode">form</field>
+        <field name="target">new</field>
+        <field name="context">{'is_modal': True}</field>
+    </record>
+
+    <!-- Add "Claude Lead Brief" button to the leads list view header.
+         The button is visible only when "CRM Manager" is enabled in Settings. -->
+    <record id="crm_lead_view_tree_inherit_rag_odoo_mcp" model="ir.ui.view">
+        <field name="name">crm.lead.list.inherit.rag.odoo.mcp.lead.brief</field>
+        <field name="model">crm.lead</field>
+        <field name="inherit_id" ref="crm_iap_mine.crm_lead_view_tree_lead"/>
+        <field name="priority">62</field>
+        <field name="arch" type="xml">
+            <xpath expr="//header" position="inside">
+                <button name="%(action_open_lead_brief_wizard)d"
+                        type="action"
+                        string="Claude Lead Brief"
+                        groups="rag_odoo_mcp_server.group_crm_manager"
+                        title="Define countries, industries, buyer persona — saved for MCP so Claude generates leads immediately."/>
+            </xpath>
+        </field>
+    </record>
+</odoo>

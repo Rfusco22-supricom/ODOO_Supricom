@@ -1,0 +1,148 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+# * theme_buzzy
+#
+# Weblate <noreply-mt-weblate@weblate.org>, 2026.
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 17.0+e\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2023-09-28 12:21+0000\n"
+"PO-Revision-Date: 2026-06-23 16:34+0000\n"
+"Last-Translator: Weblate <noreply-mt-weblate@weblate.org>\n"
+"Language-Team: Lao <https://translate.odoo.com/projects/odoo-17/theme_buzzy/"
+"lo/>\n"
+"Language: lo\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: \n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"X-Generator: Weblate 2026.6.1\n"
+
+#. module: theme_buzzy
+#: model_terms:theme.ir.ui.view,arch:theme_buzzy.s_call_to_action
+msgid "<b>Start to build</b> your robust activity with these powerful tools"
+msgstr ""
+
+#. module: theme_buzzy
+#: model_terms:theme.ir.ui.view,arch:theme_buzzy.s_image_text
+msgid "A new open world"
+msgstr "ໂລກໃໝ່ທີ່ເປີດກວ້າງ"
+
+#. module: theme_buzzy
+#: model_terms:theme.ir.ui.view,arch:theme_buzzy.s_three_columns
+msgid "All data <br/>in your hands"
+msgstr "ທຸກຂໍ້ມູນ <br/>ຢູ່ໃນມືຂອງທ່ານ"
+
+#. module: theme_buzzy
+#: model_terms:theme.ir.ui.view,arch:theme_buzzy.s_cover
+msgid ""
+"Bring the best for your team, start the journey with our amazing tools "
+"<br/>and collaborate no matter where you are."
+msgstr ""
+"ມອບສິ່ງທີ່ດີທີ່ສຸດໃຫ້ກັບທີມງານຂອງທ່ານ, ເລີ່ມຕົ້ນການເດີນທາງດ້ວຍເຄື່ອງມືທີ່ຍອດຢ້ຽມ <br/>ແລະ ເຮັດວຽກຮ່ວມກັນ"
+"ໄດ້ບໍ່ວ່າທ່ານຈະຢູ່ໃສ."
+
+#. module: theme_buzzy
+#: model_terms:theme.ir.ui.view,arch:theme_buzzy.s_three_columns
+msgid "Built to <br/>your effigy"
+msgstr "ສ້າງຂຶ້ນ <br/>ຕາມແບບຂອງທ່ານ"
+
+#. module: theme_buzzy
+#: model_terms:theme.ir.ui.view,arch:theme_buzzy.s_three_columns
+msgid ""
+"Don't miss any data anymore and get all reports you need when and where you "
+"want. Analyze them easily with our friendly interface and grow your "
+"activity."
+msgstr ""
+"ບໍ່ພາດຂໍ້ມູນໃດໆອີກຕໍ່ໄປ ແລະ ຮັບທຸກລາຍງານທີ່ທ່ານຕ້ອງການໄດ້ທຸກເວລາ ແລະ ທຸກບ່ອນ. ວິເຄາະຂໍ້ມູນໄດ້ງ່າຍດ້ວຍລ"
+"ະບົບທີ່ເປັນມິດ ແລະ ເຮັດໃຫ້ທຸລະກິດຂອງທ່ານເຕີບໂຕ."
+
+#. module: theme_buzzy
+#: model_terms:theme.ir.ui.view,arch:theme_buzzy.s_three_columns
+msgid "Editable from <br/>A to Z"
+msgstr "ປັບແຕ່ງໄດ້ <br/>ຕັ້ງແຕ່ຕົ້ນຈົນຈົບ"
+
+#. module: theme_buzzy
+#: model_terms:theme.ir.ui.view,arch:theme_buzzy.s_banner
+msgid "Every clever company deserve to work with clever tools."
+msgstr ""
+
+#. module: theme_buzzy
+#: model_terms:theme.ir.ui.view,arch:theme_buzzy.s_cover
+msgid "Faster, lighter and more powerful"
+msgstr "ໄວຂຶ້ນ, ເບົາຂຶ້ນ ແລະ ມີປະສິດທິພາບຫຼາຍຂຶ້ນ"
+
+#. module: theme_buzzy
+#: model_terms:theme.ir.ui.view,arch:theme_buzzy.s_three_columns
+msgid ""
+"Feel free to edit your content the way like you want. You don't need to know"
+" any technical and complex computer language. You will helped by our "
+"intuitive tools."
+msgstr ""
+"ປັບແຕ່ງເນື້ອຫາຂອງທ່ານໄດ້ຕາມໃຈມັກ. ທ່ານບໍ່ຈຳເປັນຕ້ອງມີຄວາມຮູ້ດ້ານເຕັກນິກ ຫຼື ພາສາຄອມພິວເຕີທີ່ຊັບຊ້ອນ. ເຄື່"
+"ອງມືທີ່ໃຊ້ງ່າຍຂອງພວກເຮົາຈະຊ່ວຍທ່ານເອງ."
+
+#. module: theme_buzzy
+#: model_terms:theme.ir.ui.view,arch:theme_buzzy.s_image_text
+msgid "Get what you want, where and when you want."
+msgstr "ໄດ້ຮັບສິ່ງທີ່ທ່ານຕ້ອງການ, ທຸກບ່ອນ ແລະ ທຸກເວລາ."
+
+#. module: theme_buzzy
+#: model_terms:theme.ir.ui.view,arch:theme_buzzy.s_banner
+msgid "Great software <br/>for great people"
+msgstr ""
+
+#. module: theme_buzzy
+#: model_terms:theme.ir.ui.view,arch:theme_buzzy.s_text_image
+msgid "Improve your efficiency"
+msgstr "ປັບປຸງປະສິດທິພາບຂອງທ່ານ"
+
+#. module: theme_buzzy
+#: model_terms:theme.ir.ui.view,arch:theme_buzzy.s_title
+msgid "Increase your productivity"
+msgstr "ເພີ່ມຜົນຜະລິດຂອງທ່ານ"
+
+#. module: theme_buzzy
+#: model_terms:theme.ir.ui.view,arch:theme_buzzy.s_text_image
+msgid ""
+"It's not that easy to be efficient if we don't have the correct tools than "
+"we need. Can you imagine Batman saving Gotham City without his bat-tools?"
+msgstr ""
+"ມັນບໍ່ງ່າຍທີ່ຈະມີປະສິດທິພາບຖ້າພວກເຮົາບໍ່ມີເຄື່ອງມືທີ່ເໝາະສົມ. ທ່ານລອງນຶກພາບເບິ່ງວ່າ ແບັດແມນ ຈະຊ່ວຍເມືອງ ກັ"
+"ອດແຮມ ໄດ້ແນວໃດ ຖ້າບໍ່ມີເຄື່ອງມືຂອງລາວ?"
+
+#. module: theme_buzzy
+#: model_terms:theme.ir.ui.view,arch:theme_buzzy.s_call_to_action
+msgid "Make your company a better place."
+msgstr "ເຮັດໃຫ້ບໍລິສັດຂອງທ່ານເປັນບ່ອນທີ່ດີຂຶ້ນ."
+
+#. module: theme_buzzy
+#: model:ir.model,name:theme_buzzy.model_theme_utils
+msgid "Theme Utils"
+msgstr "ເຄື່ອງມືຊ່ວຍຈັດການທີມ (Theme Utils)"
+
+#. module: theme_buzzy
+#: model_terms:theme.ir.ui.view,arch:theme_buzzy.s_text_image
+msgid "There is no magic, it's time to get the tools you deserve."
+msgstr "ມັນບໍ່ມີມົນວິເສດດອກ, ຮອດເວລາແລ້ວທີ່ທ່ານຈະໄດ້ຮັບເຄື່ອງມືທີ່ທ່ານຄູ່ຄວນ."
+
+#. module: theme_buzzy
+#: model_terms:theme.ir.ui.view,arch:theme_buzzy.s_image_text
+msgid ""
+"Working at the office is good, but working where we want without distraction"
+" is better. With our Cloud service accessing to your data has never been so "
+"easy."
+msgstr ""
+"ການເຮັດວຽກຢູ່ຫ້ອງການກໍດີ, ແຕ່ການເຮັດວຽກຢູ່ບ່ອນທີ່ພວກເຮົາຕ້ອງການໂດຍບໍ່ມີສິ່ງລົບກວນນັ້ນດີກວ່າ. ດ້ວຍບໍລິການຄ"
+"ລາວຂອງພວກເຮົາ, ການເຂົ້າເຖິງຂໍ້ມູນຂອງທ່ານຈະງ່າຍກວ່າທີ່ເຄີຍ."
+
+#. module: theme_buzzy
+#: model_terms:theme.ir.ui.view,arch:theme_buzzy.s_three_columns
+msgid ""
+"You will always find the ideal choice adapted to your needs. From the basic "
+"website based on our attractive templates to the tailor-made website "
+"reflecting your company's values."
+msgstr ""
+"ທ່ານຈະພົບກັບທາງເລືອກທີ່ເໝາະສົມກັບຄວາມຕ້ອງການຂອງທ່ານສະເໝີ. ຕັ້ງແຕ່ເວັບໄຊທ໌ພື້ນຖານຈາກເທັມເພດທີ່ສວຍງາ"
+"ມ ຈົນຮອດເວັບໄຊທ໌ທີ່ອອກແບບມາເປັນພິເສດເພື່ອສະທ້ອນເຖິງຄຸນຄ່າຂອງບໍລິສັດທ່ານ."

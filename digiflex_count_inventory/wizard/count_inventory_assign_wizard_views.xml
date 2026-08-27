@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <record id="view_digiflex_count_inventory_assign_wizard_form" model="ir.ui.view">
+        <field name="name">digiflex.count.inventory.assign.wizard.form</field>
+        <field name="model">digiflex.count.inventory.assign.wizard</field>
+        <field name="arch" type="xml">
+            <form string="Asignación Masiva de Operadores">
+                <sheet>
+                    <group>
+                        <group>
+                            <field name="inventory_id" readonly="1"/>
+                            <field name="employee_id" options="{'no_create': True, 'no_open': True}"/>
+                        </group>
+                        <group>
+                            <field name="search_text" placeholder="Ej. HP, IMPRESORA, CANON, LAPTOP..."/>
+                            <field name="categ_id" options="{'no_create': True, 'no_open': True}"/>
+                            <field name="only_unassigned"/>
+                        </group>
+                    </group>
+                    <div class="text-muted">
+                        * Ingrese un texto de filtro (marca, tipo de producto o nombre) para asignar todos los productos coincidentes al operador seleccionado de una sola vez.
+                    </div>
+                </sheet>
+                <footer>
+                    <button name="action_apply_assignment" string="Aplicar Asignación" type="object" class="oe_highlight"/>
+                    <button string="Cancelar" class="btn-secondary" special="cancel"/>
+                </footer>
+            </form>
+        </field>
+    </record>
+
+    <record id="action_digiflex_count_inventory_assign_wizard" model="ir.actions.act_window">
+        <field name="name">Asignación Masiva de Operadores</field>
+        <field name="res_model">digiflex.count.inventory.assign.wizard</field>
+        <field name="view_mode">form</field>
+        <field name="target">new</field>
+    </record>
+</odoo>

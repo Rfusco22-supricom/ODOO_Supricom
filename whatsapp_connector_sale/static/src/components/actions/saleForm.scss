@@ -1,0 +1,11 @@
+
+.o_SaleForm {
+    .o_ActionTab.drop-active {
+        @extend %-drop-active;
+    }
+    
+    .o_ActionTab.drop-hover {
+        @extend %-drop-hover;
+    }
+}
+

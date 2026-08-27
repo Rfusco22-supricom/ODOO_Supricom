@@ -1,0 +1,6 @@
+id,name,model_id:id,group_id:id,perm_read,perm_write,perm_create,perm_unlink
+access_digiflex_sales_margin_report_user,digiflex.sales.margin.report.user,model_digiflex_sales_margin_report,base.group_user,1,0,0,0
+access_digiflex_sales_margin_report_account_user,digiflex.sales.margin.report.account.user,model_digiflex_sales_margin_report,account.group_account_invoice,1,0,0,0
+access_digiflex_sales_margin_report_salesman,digiflex.sales.margin.report.salesman,model_digiflex_sales_margin_report,sales_team.group_sale_salesman,1,0,0,0
+access_digiflex_sales_margin_report_manager,digiflex.sales.margin.report.manager,model_digiflex_sales_margin_report,sales_team.group_sale_manager,1,1,1,1
+access_digiflex_sales_margin_wizard_user,digiflex.sales.margin.wizard.user,model_digiflex_sales_margin_wizard,base.group_user,1,1,1,1

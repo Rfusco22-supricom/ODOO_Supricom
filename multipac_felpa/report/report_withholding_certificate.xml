@@ -1,0 +1,184 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+
+    <!-- Custom Paper Format -->
+    <record id="paperformat_withholding_certificate" model="report.paperformat">
+        <field name="name">Papel Certificado de Retención</field>
+        <field name="default" eval="True"/>
+        <field name="format">A4</field>
+        <field name="page_height">0</field>
+        <field name="page_width">0</field>
+        <field name="orientation">Portrait</field>
+        <field name="margin_top">15</field>
+        <field name="margin_bottom">15</field>
+        <field name="margin_left">15</field>
+        <field name="margin_right">15</field>
+        <field name="header_line" eval="False"/>
+        <field name="header_spacing">0</field>
+        <field name="dpi">90</field>
+    </record>
+
+    <!-- Report Action -->
+    <record id="action_report_withholding_certificate" model="ir.actions.report">
+        <field name="name">Certificado de Retención</field>
+        <field name="model">fel_pa.withholding</field>
+        <field name="report_type">qweb-pdf</field>
+        <field name="report_name">multipac_felpa.report_withholding_certificate</field>
+        <field name="report_file">multipac_felpa.report_withholding_certificate</field>
+        <field name="print_report_name">'Certificado_Retencion_%s' % (object.name or '').replace('/','_')</field>
+        <field name="binding_model_id" ref="model_fel_pa_withholding"/>
+        <field name="binding_type">report</field>
+        <field name="paperformat_id" ref="multipac_felpa.paperformat_withholding_certificate"/>
+    </record>
+
+    <!-- Report Template -->
+    <template id="report_withholding_certificate">
+        <t t-call="web.html_container">
+            <t t-foreach="docs" t-as="o">
+                <t t-call="web.basic_layout">
+                    <div class="page" style="font-family: Arial, sans-serif; font-size: 12px;">
+
+                        <!-- Company Header -->
+                        <div style="text-align: center; margin-bottom: 10px;">
+                            <div style="display: flex; align-items: center; justify-content: center;">
+                                <div style="text-align: left; flex: 1;">
+                                    <img t-if="o.company_id.logo" t-att-src="image_data_uri(o.company_id.logo)" style="max-height: 80px;" alt="Logo"/>
+                                </div>
+                                <div style="text-align: left; flex: 2; font-size: 11px;">
+                                    <span>RUC: <t t-esc="o.company_id.company_registry or ''"/></span>
+                                    <t t-if="o.company_id.fel_pa_dv"> DV <t t-esc="o.company_id.fel_pa_dv"/></t>
+                                    <br/>
+                                    <span t-field="o.company_id.name" style="text-transform: uppercase;"/>
+                                    <br/>
+                                    <t t-if="o.company_id.fel_pa_county_id">
+                                        <span>CORREGIMIENTO DE <t t-esc="o.company_id.fel_pa_county_id.name" style="text-transform: uppercase;"/></span>
+                                        <br/>
+                                    </t>
+                                    <span t-if="o.company_id.street" t-field="o.company_id.street" style="text-transform: uppercase;"/>
+                                </div>
+                            </div>
+                        </div>
+
+                        <br/>
+
+                        <!-- Title -->
+                        <div style="text-align: center; margin-bottom: 20px;">
+                            <h2 style="font-weight: bold; font-size: 18px; margin-bottom: 5px;">CERTIFICADO DE RETENCIÓN</h2>
+                            <span t-if="o.resolution_text" t-esc="o.resolution_text"/>
+                        </div>
+
+                        <hr style="border: 1px solid #333;"/>
+
+                        <!-- Agent Info -->
+                        <div style="display: flex; justify-content: space-between; margin-bottom: 10px;">
+                            <div>
+                                <i>Razón Social del Agente de Retención: </i>
+                                <b><t t-esc="o.company_id.name"/></b>
+                            </div>
+                            <div>
+                                <span>RUC: <t t-esc="o.company_id.company_registry or ''"/></span>
+                                <t t-if="o.company_id.fel_pa_dv"> DV <t t-esc="o.company_id.fel_pa_dv"/></t>
+                            </div>
+                        </div>
+
+                        <hr style="border: 0.5px solid #333;"/>
+
+                        <!-- Taxpayer Info -->
+                        <div style="margin-bottom: 5px;">
+                            <b>Nombre o Razón Social del Contribuyente:</b>
+                            <br/>
+                            <span t-field="o.partner_id.name"/>
+                        </div>
+                        <div style="display: flex; gap: 40px; margin-bottom: 5px;">
+                            <div>
+                                <b>RUC: </b><span t-esc="o.partner_id.vat or o.partner_id.rif or ''"/>
+                            </div>
+                            <div>
+                                <b>DV: </b><span t-esc="o.partner_id.fel_pa_dv or ''"/>
+                            </div>
+                        </div>
+                        <div style="display: flex; justify-content: space-between; margin-bottom: 15px;">
+                            <div>
+                                <b>Nro. de Retención: </b><span t-field="o.name"/>
+                            </div>
+                            <div>
+                                <b>FECHA: </b><span t-field="o.date"/>
+                            </div>
+                        </div>
+
+                        <!-- Lines Table -->
+                        <table class="table table-sm" style="border-collapse: collapse; width: 100%; font-size: 11px;">
+                            <thead>
+                                <tr style="background-color: #2b6ca3; color: white; text-align: center;">
+                                    <th style="padding: 8px; border: 1px solid #2b6ca3;">Nº de Factura</th>
+                                    <th style="padding: 8px; border: 1px solid #2b6ca3;">Fecha de Emisión</th>
+                                    <th style="padding: 8px; border: 1px solid #2b6ca3;">Base Imponible</th>
+                                    <th style="padding: 8px; border: 1px solid #2b6ca3;">ITBMS Causado</th>
+                                    <th style="padding: 8px; border: 1px solid #2b6ca3;">ITBMS Retenido</th>
+                                    <th style="padding: 8px; border: 1px solid #2b6ca3;">Total a Pagar</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <t t-foreach="o.line_ids" t-as="line">
+                                    <tr style="text-align: center;">
+                                        <td style="padding: 6px; border: 1px solid #ddd;">
+                                            <t t-esc="line.move_id.name"/>
+                                        </td>
+                                        <td style="padding: 6px; border: 1px solid #ddd;">
+                                            <t t-esc="line.invoice_date" t-options="{'widget': 'date'}"/>
+                                        </td>
+                                        <td style="padding: 6px; border: 1px solid #ddd; text-align: right;">
+                                            <t t-esc="'${:,.2f}'.format(line.base_imponible)"/>
+                                        </td>
+                                        <td style="padding: 6px; border: 1px solid #ddd; text-align: right;">
+                                            <t t-esc="'${:,.2f}'.format(line.itbms_causado)"/>
+                                        </td>
+                                        <td style="padding: 6px; border: 1px solid #ddd; text-align: right;">
+                                            <t t-esc="'${:,.2f}'.format(line.itbms_retenido)"/>
+                                        </td>
+                                        <td style="padding: 6px; border: 1px solid #ddd; text-align: right;">
+                                            <t t-esc="'${:,.2f}'.format(line.total_a_pagar)"/>
+                                        </td>
+                                    </tr>
+                                </t>
+                                <!-- Empty rows to fill space (up to 8 rows like the image) -->
+                                <t t-set="empty_rows" t-value="max(0, 8 - len(o.line_ids))"/>
+                                <t t-foreach="range(empty_rows)" t-as="i">
+                                    <tr>
+                                        <td style="padding: 6px; border: 1px solid #ddd;">&#160;</td>
+                                        <td style="padding: 6px; border: 1px solid #ddd;">&#160;</td>
+                                        <td style="padding: 6px; border: 1px solid #ddd;">&#160;</td>
+                                        <td style="padding: 6px; border: 1px solid #ddd;">&#160;</td>
+                                        <td style="padding: 6px; border: 1px solid #ddd;">&#160;</td>
+                                        <td style="padding: 6px; border: 1px solid #ddd;">&#160;</td>
+                                    </tr>
+                                </t>
+                            </tbody>
+                            <tfoot>
+                                <tr style="font-weight: bold; text-align: center;">
+                                    <td colspan="2" style="padding: 8px; border-top: 2px solid #2b6ca3; text-align: right;">
+                                        <b>TOTALES:</b>
+                                    </td>
+                                    <td style="padding: 8px; border-top: 2px solid #2b6ca3; text-align: right;">
+                                        <b><t t-esc="'${:,.2f}'.format(o.total_base)"/></b>
+                                    </td>
+                                    <td style="padding: 8px; border-top: 2px solid #2b6ca3; text-align: right;">
+                                        <b><t t-esc="'${:,.2f}'.format(o.total_itbms_causado)"/></b>
+                                    </td>
+                                    <td style="padding: 8px; border-top: 2px solid #2b6ca3; text-align: right;">
+                                        <b><t t-esc="'${:,.2f}'.format(o.total_itbms_retenido)"/></b>
+                                    </td>
+                                    <td style="padding: 8px; border-top: 2px solid #2b6ca3; text-align: right;">
+                                        <b><t t-esc="'${:,.2f}'.format(o.total_a_pagar)"/></b>
+                                    </td>
+                                </tr>
+                            </tfoot>
+                        </table>
+
+                    </div>
+                </t>
+            </t>
+        </t>
+    </template>
+
+</odoo>

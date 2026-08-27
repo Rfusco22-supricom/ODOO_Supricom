@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<odoo>
+    <record id="server_action_generate_bank_file" model="ir.actions.server">
+        <field name="name">Generar Archivo de Banco</field>
+        <field name="model_id" ref="account.model_account_payment"/>
+        <field name="state">code</field>
+        <field name="binding_model_id" ref="account.model_account_payment"/>
+        <field name="code"><![CDATA[
+if records:
+    action = records.generate_bank_file()
+]]></field>
+    </record>
+</odoo>

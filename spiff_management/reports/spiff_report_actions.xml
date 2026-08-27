@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <!-- Reporte original (combinado) -->
+    <record id="action_report_spiff_calculation" model="ir.actions.report">
+        <field name="name">Reporte de SPIFF</field>
+        <field name="model">spiff.calculation</field>
+        <field name="report_type">qweb-pdf</field>
+        <field name="report_name">spiff_management.report_spiff_calculation</field>
+        <field name="report_file">spiff_management.report_spiff_calculation</field>
+        <field name="print_report_name">'Cálculo SPIFF - %s' % (object.name)</field>
+        <field name="binding_model_id" ref="model_spiff_calculation"/>
+        <field name="binding_type">report</field>
+    </record>
+
+    <!-- Reporte: Detallado por Marca -->
+    <record id="action_report_spiff_by_brand" model="ir.actions.report">
+        <field name="name">SPIFF — Detallado por Marca</field>
+        <field name="model">spiff.calculation</field>
+        <field name="report_type">qweb-pdf</field>
+        <field name="report_name">spiff_management.report_spiff_by_brand</field>
+        <field name="report_file">spiff_management.report_spiff_by_brand</field>
+        <field name="print_report_name">'SPIFF Por Marca - %s' % (object.name)</field>
+        <field name="binding_model_id" ref="model_spiff_calculation"/>
+        <field name="binding_type">report</field>
+    </record>
+
+    <!-- Reporte: Detallado por Vendedor -->
+    <record id="action_report_spiff_by_vendor" model="ir.actions.report">
+        <field name="name">SPIFF — Detallado por Vendedor</field>
+        <field name="model">spiff.calculation</field>
+        <field name="report_type">qweb-pdf</field>
+        <field name="report_name">spiff_management.report_spiff_by_vendor</field>
+        <field name="report_file">spiff_management.report_spiff_by_vendor</field>
+        <field name="print_report_name">'SPIFF Por Vendedor - %s' % (object.name)</field>
+        <field name="binding_model_id" ref="model_spiff_calculation"/>
+        <field name="binding_type">report</field>
+    </record>
+
+    <!-- Reporte: Consolidado de la Empresa -->
+    <record id="action_report_spiff_consolidated" model="ir.actions.report">
+        <field name="name">SPIFF — Consolidado Empresa</field>
+        <field name="model">spiff.calculation</field>
+        <field name="report_type">qweb-pdf</field>
+        <field name="report_name">spiff_management.report_spiff_consolidated</field>
+        <field name="report_file">spiff_management.report_spiff_consolidated</field>
+        <field name="print_report_name">'SPIFF Consolidado - %s' % (object.name)</field>
+        <field name="binding_model_id" ref="model_spiff_calculation"/>
+        <field name="binding_type">report</field>
+    </record>
+</odoo>

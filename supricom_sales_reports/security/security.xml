@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data>
+        <!-- Regla multi-compañía para Reporte de Ventas por Marca y Estado -->
+        <record id="supricom_brand_state_sales_report_comp_rule" model="ir.rule">
+            <field name="name">Brand State Sales Report Multi-Company</field>
+            <field name="model_id" ref="model_supricom_brand_state_sales_report"/>
+            <field name="domain_force">['|', ('company_id', '=', False), ('company_id', 'in', company_ids)]</field>
+        </record>
+
+        <!-- Regla multi-compañía para Reporte de Clientes Nuevos -->
+        <record id="supricom_new_customer_sales_report_comp_rule" model="ir.rule">
+            <field name="name">New Customer Sales Report Multi-Company</field>
+            <field name="model_id" ref="model_supricom_new_customer_sales_report"/>
+            <field name="domain_force">['|', ('company_id', '=', False), ('company_id', 'in', company_ids)]</field>
+        </record>
+    </data>
+</odoo>

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <record id="view_order_form_inherit_photo" model="ir.ui.view">
+        <field name="name">sale.order.form.inherit.photo</field>
+        <field name="model">sale.order</field>
+        <field name="inherit_id" ref="sale.view_order_form"/>
+        <field name="arch" type="xml">
+            <!-- Agregar campo show_product_image cerca de la lista de precios / pago -->
+            <xpath expr="//field[@name='payment_term_id']" position="after">
+                <field name="show_product_image" widget="boolean_toggle"/>
+            </xpath>
+
+            <!-- Agregar columna de imagen en las líneas de pedido -->
+            <xpath expr="//field[@name='order_line']/tree/field[@name='product_id']" position="before">
+                <field name="product_image" widget="image" options="{'size': [40, 40]}" optional="show"/>
+            </xpath>
+        </field>
+    </record>
+</odoo>

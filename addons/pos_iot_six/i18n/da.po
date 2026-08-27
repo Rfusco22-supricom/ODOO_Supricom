@@ -1,0 +1,64 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+# * pos_iot_six
+#
+# Weblate <noreply-mt-weblate@weblate.org>, 2026.
+# "Kira Petersen François (peti)" <peti@odoo.com>, 2026.
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 17.0+e\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2025-12-29 18:47+0000\n"
+"PO-Revision-Date: 2026-06-23 13:20+0000\n"
+"Last-Translator: \"Kira Petersen François (peti)\" <peti@odoo.com>\n"
+"Language-Team: Danish <https://translate.odoo.com/projects/odoo-17/"
+"pos_iot_six/da/>\n"
+"Language: da\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: \n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+"X-Generator: Weblate 2026.6.1\n"
+
+#. module: pos_iot_six
+#. odoo-javascript
+#: code:addons/pos_iot_six/static/src/js/payment_six.js:0
+#, python-format
+msgid "Failed to get balance report from the terminal. Please retry."
+msgstr ""
+"Det var ikke muligt at hente balancerapport fra terminalen. Prøv venligst "
+"igen."
+
+#. module: pos_iot_six
+#. odoo-javascript
+#: code:addons/pos_iot_six/static/src/js/payment_six.js:0
+#, python-format
+msgid "No printer configured"
+msgstr "Ingen printer konfigureret"
+
+#. module: pos_iot_six
+#: model:ir.model,name:pos_iot_six.model_pos_payment_method
+msgid "Point of Sale Payment Methods"
+msgstr "POS-betalingsformer"
+
+#. module: pos_iot_six
+#. odoo-javascript
+#: code:addons/pos_iot_six/static/src/xml/balance_button.xml:0
+#, python-format
+msgid "Six Terminal Balance"
+msgstr "Six Terminalens saldo"
+
+#. module: pos_iot_six
+#. odoo-javascript
+#: code:addons/pos_iot_six/static/src/js/payment_six.js:0
+#, python-format
+msgid "Six balance report error"
+msgstr "Fejl i Six-balancerapport"
+
+#. module: pos_iot_six
+#. odoo-javascript
+#: code:addons/pos_iot_six/static/src/js/payment_six.js:0
+#, python-format
+msgid ""
+"You must select a printer in your POS config to print Six balance report."
+msgstr ""

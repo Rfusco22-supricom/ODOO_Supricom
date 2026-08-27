@@ -1,0 +1,326 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<odoo>
+    <data noupdate="0">
+        <!-- 
+            Reglas de Registro para Usuario SENIAT
+            Estas reglas restringen las operaciones de escritura, creación y eliminación
+            para el grupo SENIAT, permitiendo solo lectura
+        -->
+
+        
+        <!-- Contabilidad - Configuración -->
+        <record id="account.menu_finance_configuration" model="ir.ui.menu">
+            <field name="groups_id" eval="[(6, 0, [ref('account.group_account_manager')])]"/>
+        </record>
+
+        <!-- Ventas - Configuración -->
+        <record id="sale.menu_sale_config" model="ir.ui.menu">
+            <field name="groups_id" eval="[(6, 0, [ref('sales_team.group_sale_manager')])]"/>
+        </record>
+
+        <!-- Compras - Configuración -->
+        <record id="purchase.menu_purchase_config" model="ir.ui.menu">
+            <field name="groups_id" eval="[(6, 0, [ref('purchase.group_purchase_manager')])]"/>
+        </record>
+
+        <!-- Inventario - Configuración -->
+        <record id="stock.menu_stock_config_settings" model="ir.ui.menu">
+            <field name="groups_id" eval="[(6, 0, [ref('stock.group_stock_manager')])]"/>
+        </record>
+
+        <!-- Sistema - Ocultar submenús específicos de configuración -->
+        <!-- Ajustes Generales -->
+        <record id="base.menu_config" model="ir.ui.menu">
+            <field name="groups_id" eval="[(6, 0, [ref('base.group_system')])]"/>
+        </record>
+        
+        <!-- Técnico -->
+        <record id="base.menu_custom" model="ir.ui.menu">
+            <field name="groups_id" eval="[(6, 0, [ref('base.group_system')])]"/>
+        </record>
+        
+        <!-- CONTABILIDAD -->
+        <record id="seniat_readonly_account_move" model="ir.rule">
+            <field name="name">SENIAT: Solo lectura en Asientos Contables</field>
+            <field name="model_id" ref="account.model_account_move"/>
+            <field name="groups" eval="[(4, ref('group_seniat_readonly'))]"/>
+            <field name="perm_read">1</field>
+            <field name="perm_write">0</field>
+            <field name="perm_create">0</field>
+            <field name="perm_unlink">0</field>
+            <field name="domain_force">[(1, '=', 1)]</field>
+        </record>
+
+        <record id="seniat_readonly_account_move_line" model="ir.rule">
+            <field name="name">SENIAT: Solo lectura en Líneas de Asientos</field>
+            <field name="model_id" ref="account.model_account_move_line"/>
+            <field name="groups" eval="[(4, ref('group_seniat_readonly'))]"/>
+            <field name="perm_read">1</field>
+            <field name="perm_write">0</field>
+            <field name="perm_create">0</field>
+            <field name="perm_unlink">0</field>
+            <field name="domain_force">[(1, '=', 1)]</field>
+        </record>
+
+        <record id="seniat_readonly_account_payment" model="ir.rule">
+            <field name="name">SENIAT: Solo lectura en Pagos</field>
+            <field name="model_id" ref="account.model_account_payment"/>
+            <field name="groups" eval="[(4, ref('group_seniat_readonly'))]"/>
+            <field name="perm_read">1</field>
+            <field name="perm_write">0</field>
+            <field name="perm_create">0</field>
+            <field name="perm_unlink">0</field>
+            <field name="domain_force">[(1, '=', 1)]</field>
+        </record>
+
+        <record id="seniat_readonly_account_journal" model="ir.rule">
+            <field name="name">SENIAT: Solo lectura en Diarios</field>
+            <field name="model_id" ref="account.model_account_journal"/>
+            <field name="groups" eval="[(4, ref('group_seniat_readonly'))]"/>
+            <field name="perm_read">1</field>
+            <field name="perm_write">0</field>
+            <field name="perm_create">0</field>
+            <field name="perm_unlink">0</field>
+            <field name="domain_force">[(1, '=', 1)]</field>
+        </record>
+
+        <record id="seniat_readonly_account_account" model="ir.rule">
+            <field name="name">SENIAT: Solo lectura en Plan de Cuentas</field>
+            <field name="model_id" ref="account.model_account_account"/>
+            <field name="groups" eval="[(4, ref('group_seniat_readonly'))]"/>
+            <field name="perm_read">1</field>
+            <field name="perm_write">0</field>
+            <field name="perm_create">0</field>
+            <field name="perm_unlink">0</field>
+            <field name="domain_force">[(1, '=', 1)]</field>
+        </record>
+
+                <!-- CONTABILIDAD ANALÍTICA -->
+        <record id="seniat_readonly_account_analytic_distribution_model" model="ir.rule">
+            <field name="name">SENIAT: Solo lectura en Modelos de distribución analítica</field>
+            <field name="model_id" ref="analytic.model_account_analytic_distribution_model"/>
+            <field name="groups" eval="[(4, ref('group_seniat_readonly'))]"/>
+            <field name="perm_read">1</field>
+            <field name="perm_write">0</field>
+            <field name="perm_create">0</field>
+            <field name="perm_unlink">0</field>
+            <field name="domain_force">[(1, '=', 1)]</field>
+        </record>
+
+        <record id="seniat_readonly_account_analytic_account" model="ir.rule">
+            <field name="name">SENIAT: Solo lectura en Cuentas analíticas</field>
+            <field name="model_id" ref="analytic.model_account_analytic_account"/>
+            <field name="groups" eval="[(4, ref('group_seniat_readonly'))]"/>
+            <field name="perm_read">1</field>
+            <field name="perm_write">0</field>
+            <field name="perm_create">0</field>
+            <field name="perm_unlink">0</field>
+            <field name="domain_force">[(1, '=', 1)]</field>
+        </record>
+
+        <record id="seniat_readonly_account_analytic_plan" model="ir.rule">
+            <field name="name">SENIAT: Solo lectura en Planes analíticos</field>
+            <field name="model_id" ref="analytic.model_account_analytic_plan"/>
+            <field name="groups" eval="[(4, ref('group_seniat_readonly'))]"/>
+            <field name="perm_read">1</field>
+            <field name="perm_write">0</field>
+            <field name="perm_create">0</field>
+            <field name="perm_unlink">0</field>
+            <field name="domain_force">[(1, '=', 1)]</field>
+        </record>
+
+
+        <!-- VENTAS -->
+        <record id="seniat_readonly_sale_order" model="ir.rule">
+            <field name="name">SENIAT: Solo lectura en Órdenes de Venta</field>
+            <field name="model_id" ref="sale.model_sale_order"/>
+            <field name="groups" eval="[(4, ref('group_seniat_readonly'))]"/>
+            <field name="perm_read">1</field>
+            <field name="perm_write">0</field>
+            <field name="perm_create">0</field>
+            <field name="perm_unlink">0</field>
+            <field name="domain_force">[(1, '=', 1)]</field>
+        </record>
+
+        <record id="seniat_readonly_sale_order_line" model="ir.rule">
+            <field name="name">SENIAT: Solo lectura en Líneas de Venta</field>
+            <field name="model_id" ref="sale.model_sale_order_line"/>
+            <field name="groups" eval="[(4, ref('group_seniat_readonly'))]"/>
+            <field name="perm_read">1</field>
+            <field name="perm_write">0</field>
+            <field name="perm_create">0</field>
+            <field name="perm_unlink">0</field>
+            <field name="domain_force">[(1, '=', 1)]</field>
+        </record>
+
+        <!-- COMPRAS -->
+        <record id="seniat_readonly_purchase_order" model="ir.rule">
+            <field name="name">SENIAT: Solo lectura en Órdenes de Compra</field>
+            <field name="model_id" ref="purchase.model_purchase_order"/>
+            <field name="groups" eval="[(4, ref('group_seniat_readonly'))]"/>
+            <field name="perm_read">1</field>
+            <field name="perm_write">0</field>
+            <field name="perm_create">0</field>
+            <field name="perm_unlink">0</field>
+            <field name="domain_force">[(1, '=', 1)]</field>
+        </record>
+
+        <record id="seniat_readonly_purchase_order_line" model="ir.rule">
+            <field name="name">SENIAT: Solo lectura en Líneas de Compra</field>
+            <field name="model_id" ref="purchase.model_purchase_order_line"/>
+            <field name="groups" eval="[(4, ref('group_seniat_readonly'))]"/>
+            <field name="perm_read">1</field>
+            <field name="perm_write">0</field>
+            <field name="perm_create">0</field>
+            <field name="perm_unlink">0</field>
+            <field name="domain_force">[(1, '=', 1)]</field>
+        </record>
+
+        <!-- INVENTARIO -->
+        <record id="seniat_readonly_stock_picking" model="ir.rule">
+            <field name="name">SENIAT: Solo lectura en Transferencias</field>
+            <field name="model_id" ref="stock.model_stock_picking"/>
+            <field name="groups" eval="[(4, ref('group_seniat_readonly'))]"/>
+            <field name="perm_read">1</field>
+            <field name="perm_write">0</field>
+            <field name="perm_create">0</field>
+            <field name="perm_unlink">0</field>
+            <field name="domain_force">[(1, '=', 1)]</field>
+        </record>
+
+        <record id="seniat_readonly_stock_move" model="ir.rule">
+            <field name="name">SENIAT: Solo lectura en Movimientos de Stock</field>
+            <field name="model_id" ref="stock.model_stock_move"/>
+            <field name="groups" eval="[(4, ref('group_seniat_readonly'))]"/>
+            <field name="perm_read">1</field>
+            <field name="perm_write">0</field>
+            <field name="perm_create">0</field>
+            <field name="perm_unlink">0</field>
+            <field name="domain_force">[(1, '=', 1)]</field>
+        </record>
+
+        <record id="seniat_readonly_stock_quant" model="ir.rule">
+            <field name="name">SENIAT: Solo lectura en Cantidades de Stock</field>
+            <field name="model_id" ref="stock.model_stock_quant"/>
+            <field name="groups" eval="[(4, ref('group_seniat_readonly'))]"/>
+            <field name="perm_read">1</field>
+            <field name="perm_write">0</field>
+            <field name="perm_create">0</field>
+            <field name="perm_unlink">0</field>
+            <field name="domain_force">[(1, '=', 1)]</field>
+        </record>
+
+        <record id="seniat_readonly_product_product" model="ir.rule">
+            <field name="name">SENIAT: Solo lectura en Productos</field>
+            <field name="model_id" ref="product.model_product_product"/>
+            <field name="groups" eval="[(4, ref('group_seniat_readonly'))]"/>
+            <field name="perm_read">1</field>
+            <field name="perm_write">0</field>
+            <field name="perm_create">0</field>
+            <field name="perm_unlink">0</field>
+            <field name="domain_force">[(1, '=', 1)]</field>
+        </record>
+
+        <record id="seniat_readonly_product_template" model="ir.rule">
+            <field name="name">SENIAT: Solo lectura en Plantillas de Producto</field>
+            <field name="model_id" ref="product.model_product_template"/>
+            <field name="groups" eval="[(4, ref('group_seniat_readonly'))]"/>
+            <field name="perm_read">1</field>
+            <field name="perm_write">0</field>
+            <field name="perm_create">0</field>
+            <field name="perm_unlink">0</field>
+            <field name="domain_force">[(1, '=', 1)]</field>
+        </record>
+
+        <!-- SISTEMA -->
+        <record id="seniat_readonly_res_users" model="ir.rule">
+            <field name="name">SENIAT: Solo lectura en Usuarios</field>
+            <field name="model_id" ref="base.model_res_users"/>
+            <field name="groups" eval="[(4, ref('group_seniat_readonly'))]"/>
+            <field name="perm_read">1</field>
+            <field name="perm_write">0</field>
+            <field name="perm_create">0</field>
+            <field name="perm_unlink">0</field>
+            <field name="domain_force">[(1, '=', 1)]</field>
+        </record>
+
+        <record id="seniat_readonly_res_company" model="ir.rule">
+            <field name="name">SENIAT: Solo lectura en Compañías</field>
+            <field name="model_id" ref="base.model_res_company"/>
+            <field name="groups" eval="[(4, ref('group_seniat_readonly'))]"/>
+            <field name="perm_read">1</field>
+            <field name="perm_write">0</field>
+            <field name="perm_create">0</field>
+            <field name="perm_unlink">0</field>
+            <field name="domain_force">[(1, '=', 1)]</field>
+        </record>
+
+        <record id="seniat_readonly_res_partner" model="ir.rule">
+            <field name="name">SENIAT: Solo lectura en Contactos</field>
+            <field name="model_id" ref="base.model_res_partner"/>
+            <field name="groups" eval="[(4, ref('group_seniat_readonly'))]"/>
+            <field name="perm_read">1</field>
+            <field name="perm_write">0</field>
+            <field name="perm_create">0</field>
+            <field name="perm_unlink">0</field>
+            <field name="domain_force">[(1, '=', 1)]</field>
+        </record>
+
+        <!-- AUDITORÍA -->
+        <record id="seniat_readonly_auditlog_log" model="ir.rule">
+            <field name="name">SENIAT: Solo lectura en Registros de Auditoría</field>
+            <field name="model_id" ref="auditlogs.model_auditlog_log"/>
+            <field name="groups" eval="[(4, ref('group_seniat_readonly'))]"/>
+            <field name="perm_read">1</field>
+            <field name="perm_write">0</field>
+            <field name="perm_create">0</field>
+            <field name="perm_unlink">0</field>
+            <field name="domain_force">[(1, '=', 1)]</field>
+        </record>
+
+        <record id="seniat_readonly_auditlog_log_line" model="ir.rule">
+            <field name="name">SENIAT: Solo lectura en Líneas de Auditoría</field>
+            <field name="model_id" ref="auditlogs.model_auditlog_log_line"/>
+            <field name="groups" eval="[(4, ref('group_seniat_readonly'))]"/>
+            <field name="perm_read">1</field>
+            <field name="perm_write">0</field>
+            <field name="perm_create">0</field>
+            <field name="perm_unlink">0</field>
+            <field name="domain_force">[(1, '=', 1)]</field>
+        </record>
+
+        <record id="seniat_readonly_auditlog_rule" model="ir.rule">
+            <field name="name">SENIAT: Solo lectura en Reglas de Auditoría</field>
+            <field name="model_id" ref="auditlogs.model_auditlog_rule"/>
+            <field name="groups" eval="[(4, ref('group_seniat_readonly'))]"/>
+            <field name="perm_read">1</field>
+            <field name="perm_write">0</field>
+            <field name="perm_create">0</field>
+            <field name="perm_unlink">0</field>
+            <field name="domain_force">[(1, '=', 1)]</field>
+        </record>
+
+        <record id="seniat_readonly_auditlog_http_session" model="ir.rule">
+            <field name="name">SENIAT: Solo lectura en Sesiones HTTP</field>
+            <field name="model_id" ref="auditlogs.model_auditlog_http_session"/>
+            <field name="groups" eval="[(4, ref('group_seniat_readonly'))]"/>
+            <field name="perm_read">1</field>
+            <field name="perm_write">0</field>
+            <field name="perm_create">0</field>
+            <field name="perm_unlink">0</field>
+            <field name="domain_force">[(1, '=', 1)]</field>
+        </record>
+
+        <record id="seniat_readonly_auditlog_http_request" model="ir.rule">
+            <field name="name">SENIAT: Solo lectura en Peticiones HTTP</field>
+            <field name="model_id" ref="auditlogs.model_auditlog_http_request"/>
+            <field name="groups" eval="[(4, ref('group_seniat_readonly'))]"/>
+            <field name="perm_read">1</field>
+            <field name="perm_write">0</field>
+            <field name="perm_create">0</field>
+            <field name="perm_unlink">0</field>
+            <field name="domain_force">[(1, '=', 1)]</field>
+        </record>
+
+    </data>
+</odoo>

@@ -1,0 +1,172 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+
+    <!-- List view -->
+    <record id="lead_brief_view_list" model="ir.ui.view">
+        <field name="name">rag_odoo_mcp_server.lead_brief.list</field>
+        <field name="model">rag_odoo_mcp_server.lead_brief</field>
+        <field name="arch" type="xml">
+            <tree>
+                <field name="name"/>
+                <field name="lead_number"/>
+                <field name="lead_type"/>
+                <field name="search_type"/>
+                <field name="team_id"/>
+                <field name="user_id" widget="many2one_avatar_user"/>
+                <field name="active" widget="boolean_toggle"/>
+                <field name="write_date" string="Last modified"/>
+            </tree>
+        </field>
+    </record>
+
+    <!-- Form view -->
+    <record id="lead_brief_view_form" model="ir.ui.view">
+        <field name="name">rag_odoo_mcp_server.lead_brief.form</field>
+        <field name="model">rag_odoo_mcp_server.lead_brief</field>
+        <field name="arch" type="xml">
+            <form string="Claude Lead Brief">
+                <header>
+                    <button name="action_activate" type="object"
+                            string="Activate" class="btn-primary"
+                            invisible="active"/>
+                    <button name="action_deactivate" type="object"
+                            string="Deactivate"
+                            invisible="not active"/>
+                </header>
+                <sheet>
+                    <div class="oe_button_box" name="button_box"/>
+                    <widget name="web_ribbon" title="Active"
+                            bg_color="text-bg-success"
+                            invisible="not active"/>
+
+                    <group>
+                        <field name="name"/>
+                        <field name="active" invisible="1"/>
+                    </group>
+
+                    <!-- Targeting -->
+                    <separator string="Targeting"/>
+                    <group>
+                        <group>
+                            <field name="lead_number"/>
+                            <field name="search_type"/>
+                            <field name="lead_type"/>
+                        </group>
+                        <group>
+                            <field name="country_ids" widget="many2many_tags"/>
+                            <field name="state_ids" widget="many2many_tags"/>
+                            <field name="industry_ids" widget="many2many_tags"/>
+                        </group>
+                    </group>
+                    <group invisible="not filter_on_size">
+                        <field name="filter_on_size"/>
+                        <field name="company_size_min"/>
+                        <field name="company_size_max"/>
+                    </group>
+
+                    <!-- CRM defaults -->
+                    <separator string="CRM defaults"/>
+                    <group>
+                        <group>
+                            <field name="team_id"/>
+                            <field name="user_id" widget="many2one_avatar_user"/>
+                        </group>
+                        <group>
+                            <field name="tag_ids" widget="many2many_tags"
+                                   options="{'color_field': 'color'}"/>
+                        </group>
+                    </group>
+
+                    <!-- Contacts -->
+                    <separator string="Contacts" invisible="search_type != 'people'"/>
+                    <group invisible="search_type != 'people'">
+                        <group>
+                            <field name="contact_number"/>
+                            <field name="contact_filter_type"/>
+                            <field name="preferred_role_id"/>
+                            <field name="role_ids" widget="many2many_tags"/>
+                            <field name="seniority_id"/>
+                        </group>
+                    </group>
+
+                    <!-- Claude instructions -->
+                    <separator string="Instructions for Claude"/>
+                    <group>
+                        <group>
+                            <field name="lead_nature"/>
+                            <field name="subsector_notes"/>
+                            <field name="revenue_hint"/>
+                            <field name="geo_notes"/>
+                            <field name="language_id"/>
+                        </group>
+                        <group>
+                            <field name="job_titles_keywords"/>
+                            <field name="research_sources_hint"/>
+                            <field name="keywords_include"/>
+                            <field name="keywords_exclude"/>
+                            <field name="competitor_landscape"/>
+                        </group>
+                    </group>
+                    <group>
+                        <field name="buyer_persona"/>
+                        <field name="product_service_fit"/>
+                    </group>
+
+                    <!-- Marketing / UTM -->
+                    <separator string="Marketing and value"/>
+                    <group>
+                        <group>
+                            <field name="campaign_id"/>
+                            <field name="medium_id"/>
+                            <field name="source_id"/>
+                        </group>
+                        <group>
+                            <field name="expected_revenue_hint"/>
+                            <field name="currency_id" groups="base.group_multi_currency"/>
+                            <field name="company_id" groups="base.group_multi_company"/>
+                            <field name="prefer_iap_enrich"/>
+                        </group>
+                    </group>
+
+                    <!-- Compliance -->
+                    <separator string="Compliance"/>
+                    <group>
+                        <field name="compliance_notes"/>
+                        <field name="extra_notes"/>
+                    </group>
+
+                    <!-- JSON payload -->
+                    <separator string="Brief JSON (auto-generated)"/>
+                    <field name="brief_json" readonly="1" widget="text"/>
+
+                </sheet>
+            </form>
+        </field>
+    </record>
+
+    <!-- Action -->
+    <record id="action_lead_brief" model="ir.actions.act_window">
+        <field name="name">Claude Lead Briefs</field>
+        <field name="res_model">rag_odoo_mcp_server.lead_brief</field>
+        <field name="view_mode">list,form</field>
+        <field name="context">{'active_test': False}</field>
+        <field name="help" type="html">
+            <p class="o_view_nocontent_smiling_face">
+                Create your first lead generation brief for Claude
+            </p>
+            <p>
+                Define targeting criteria and save the brief. Then ask Claude to
+                call <code>lead_gen_get_brief</code> to generate leads automatically.
+            </p>
+        </field>
+    </record>
+
+    <!-- Menu under CRM > Configuration. Visible only when "CRM Manager" is enabled. -->
+    <menuitem id="menu_lead_brief"
+              name="Claude Lead Briefs"
+              parent="crm.crm_menu_config"
+              action="action_lead_brief"
+              sequence="55"
+              groups="rag_odoo_mcp_server.group_crm_manager"/>
+
+</odoo>

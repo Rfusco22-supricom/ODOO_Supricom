@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<odoo>
+    <data>
+        <record id="account_payment_dual_currency" model="ir.ui.view">
+            <field name="name">Venezuela ITF: account.payment.form</field>
+            <field name="model">account.payment</field>
+            <field name="inherit_id" ref="account.view_account_payment_form"/>
+            <field name="arch" type="xml">
+                <xpath expr="//field[@name='journal_id']" position="after">
+                    <field name="is_ve_company" invisible="1"/>
+                    <field name="move_itf_id" readonly="1" invisible="not is_ve_company"/>
+                </xpath>
+                <xpath expr="//group" position="after">
+                    <group name="payment_description" string="Descripción de pago" invisible="not is_ve_company">
+                        <field name="payment_description"/>
+                    </group>
+                </xpath>
+            </field>
+        </record>
+    </data>
+</odoo>

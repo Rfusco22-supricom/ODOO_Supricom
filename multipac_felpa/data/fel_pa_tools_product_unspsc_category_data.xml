@@ -1,0 +1,2374 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+
+    <record id="fel_pa_unspsc_category_1" model="fel_pa.tools.product_unspsc_category">
+        <field name="name">Material Vivo Vegetal y Animal, Accesorios y Suministros</field>
+        <field name="fel_pa_code">1000</field>
+    </record>
+    
+    <record id="fel_pa_unspsc_category_2" model="fel_pa.tools.product_unspsc_category">
+        <field name="name">Animales vivos</field>
+        <field name="fel_pa_code">1010</field>
+    </record>
+    
+    <record id="fel_pa_unspsc_category_3" model="fel_pa.tools.product_unspsc_category">
+        <field name="name">Productos para animales domésticos</field>
+        <field name="fel_pa_code">1011</field>
+    </record>
+    
+    <record id="fel_pa_unspsc_category_4" model="fel_pa.tools.product_unspsc_category">
+        <field name="name">Comida de animales</field>
+        <field name="fel_pa_code">1012</field>
+    </record>
+    
+    <record id="fel_pa_unspsc_category_5" model="fel_pa.tools.product_unspsc_category">
+        <field name="name">Recipientes y hábitat para animales</field>
+        <field name="fel_pa_code">1013</field>
+    </record>
+    
+    <record id="fel_pa_unspsc_category_6" model="fel_pa.tools.product_unspsc_category">
+        <field name="name">Productos de talabartería y arreo</field>
+        <field name="fel_pa_code">1014</field>
+    </record>
+    
+    <record id="fel_pa_unspsc_category_7" model="fel_pa.tools.product_unspsc_category">
+        <field name="name">Semillas, bulbos, plántulas y esquejes</field>
+        <field name="fel_pa_code">1015</field>
+    </record>
+    
+    <record id="fel_pa_unspsc_category_8" model="fel_pa.tools.product_unspsc_category">
+        <field name="name">Productos de floricultura y silvicultura</field>
+        <field name="fel_pa_code">1016</field>
+    </record>
+    
+    <record id="fel_pa_unspsc_category_9" model="fel_pa.tools.product_unspsc_category">
+        <field name="name">Fertilizantes y nutrientes para plantas y herbicidas</field>
+        <field name="fel_pa_code">1017</field>
+    </record>
+    
+    <record id="fel_pa_unspsc_category_10" model="fel_pa.tools.product_unspsc_category">
+        <field name="name">Productos para el control de plagas</field>
+        <field name="fel_pa_code">1019</field>
+    </record>
+    
+    <record id="fel_pa_unspsc_category_11" model="fel_pa.tools.product_unspsc_category">
+        <field name="name">Rosales vivos</field>
+        <field name="fel_pa_code">1020</field>
+    </record>
+    
+    <record id="fel_pa_unspsc_category_12" model="fel_pa.tools.product_unspsc_category">
+        <field name="name">Plantas vivas de especies o variedades de flores altas</field>
+        <field name="fel_pa_code">1021</field>
+    </record>
+    
+    <record id="fel_pa_unspsc_category_13" model="fel_pa.tools.product_unspsc_category">
+        <field name="name">Plantas vivas de especies o variedades de flores bajas</field>
+        <field name="fel_pa_code">1022</field>
+    </record>
+    
+    <record id="fel_pa_unspsc_category_14" model="fel_pa.tools.product_unspsc_category">
+        <field name="name">Crisantemos vivos</field>
+        <field name="fel_pa_code">1023</field>
+    </record>
+    
+    <record id="fel_pa_unspsc_category_15" model="fel_pa.tools.product_unspsc_category">
+        <field name="name">Claveles vivos</field>
+        <field name="fel_pa_code">1024</field>
+    </record>
+    
+    <record id="fel_pa_unspsc_category_16" model="fel_pa.tools.product_unspsc_category">
+        <field name="name">Orquídeas vivas</field>
+        <field name="fel_pa_code">1025</field>
+    </record>
+    
+    <record id="fel_pa_unspsc_category_17" model="fel_pa.tools.product_unspsc_category">
+        <field name="name">Rosas frescas cortadas</field>
+        <field name="fel_pa_code">1030</field>
+    </record>
+    
+    <record id="fel_pa_unspsc_category_18" model="fel_pa.tools.product_unspsc_category">
+        <field name="name">Bouquets cortados frescos de especies o variedades de flores altas</field>
+        <field name="fel_pa_code">1031</field>
+    </record>
+    
+    <record id="fel_pa_unspsc_category_19" model="fel_pa.tools.product_unspsc_category">
+        <field name="name">Bouquets cortados frescos de especies o variedades de flores bajas</field>
+        <field name="fel_pa_code">1032</field>
+    </record>
+    
+    <record id="fel_pa_unspsc_category_20" model="fel_pa.tools.product_unspsc_category">
+        <field name="name">Crisantemos cortados frescos</field>
+        <field name="fel_pa_code">1033</field>
+    </record>
+    
+    <record id="fel_pa_unspsc_category_21" model="fel_pa.tools.product_unspsc_category">
+        <field name="name">Bouquets florales cortados frescos</field>
+        <field name="fel_pa_code">1034</field>
+    </record>
+    
+    <record id="fel_pa_unspsc_category_22" model="fel_pa.tools.product_unspsc_category">
+        <field name="name">Claveles cortados frescos</field>
+        <field name="fel_pa_code">1035</field>
+    </record>
+    
+    <record id="fel_pa_unspsc_category_23" model="fel_pa.tools.product_unspsc_category">
+        <field name="name">Orquídeas cortadas frescas</field>
+        <field name="fel_pa_code">1036</field>
+    </record>
+    
+    <record id="fel_pa_unspsc_category_24" model="fel_pa.tools.product_unspsc_category">
+        <field name="name">Rosas cortadas secas</field>
+        <field name="fel_pa_code">1040</field>
+    </record>
+    
+    <record id="fel_pa_unspsc_category_25" model="fel_pa.tools.product_unspsc_category">
+        <field name="name">Bouquets cortados secos de especies o variedades de flores altas</field>
+        <field name="fel_pa_code">1041</field>
+    </record>
+    
+    <record id="fel_pa_unspsc_category_26" model="fel_pa.tools.product_unspsc_category">
+        <field name="name">Bouquets cortados secos de especies o variedades de flores bajas</field>
+        <field name="fel_pa_code">1042</field>
+    </record>
+    
+    <record id="fel_pa_unspsc_category_27" model="fel_pa.tools.product_unspsc_category">
+        <field name="name">Crisantemos cortados secos</field>
+        <field name="fel_pa_code">1043</field>
+    </record>
+    
+    <record id="fel_pa_unspsc_category_28" model="fel_pa.tools.product_unspsc_category">
+        <field name="name">Claveles cortados secos</field>
+        <field name="fel_pa_code">1044</field>
+    </record>
+    
+    <record id="fel_pa_unspsc_category_29" model="fel_pa.tools.product_unspsc_category">
+        <field name="name">Orquídeas cortadas secas</field>
+        <field name="fel_pa_code">1045</field>
+    </record>
+    
+    <record id="fel_pa_unspsc_category_30" model="fel_pa.tools.product_unspsc_category">
+        <field name="name">Follaje cortado fresco</field>
+        <field name="fel_pa_code">1050</field>
+    </record>
+    
+    <record id="fel_pa_unspsc_category_31" model="fel_pa.tools.product_unspsc_category">
+        <field name="name">Material Mineral, Textil y Vegetal y Animal No Comestible</field>
+        <field name="fel_pa_code">1100</field>
+    </record>
+    
+    <record id="fel_pa_unspsc_category_32" model="fel_pa.tools.product_unspsc_category">
+        <field name="name">Minerales, minerales metálicos y metales</field>
+        <field name="fel_pa_code">1110</field>
+    </record>
+    
+    <record id="fel_pa_unspsc_category_33" model="fel_pa.tools.product_unspsc_category">
+        <field name="name">Tierra y piedra</field>
+        <field name="fel_pa_code">1111</field>
+    </record>
+    
+    <record id="fel_pa_unspsc_category_34" model="fel_pa.tools.product_unspsc_category">
+        <field name="name">Productos no comestibles de planta y silvicultura</field>
+        <field name="fel_pa_code">1112</field>
+    </record>
+    
+    <record id="fel_pa_unspsc_category_35" model="fel_pa.tools.product_unspsc_category">
+        <field name="name">Productos animales no comestibles</field>
+        <field name="fel_pa_code">1113</field>
+    </record>
+    
+    <record id="fel_pa_unspsc_category_36" model="fel_pa.tools.product_unspsc_category">
+        <field name="name">Chatarra y materiales de desecho</field>
+        <field name="fel_pa_code">1114</field>
+    </record>
+    
+    <record id="fel_pa_unspsc_category_37" model="fel_pa.tools.product_unspsc_category">
+        <field name="name">Fibra, hilos e hilados</field>
+        <field name="fel_pa_code">1115</field>
+    </record>
+    
+    <record id="fel_pa_unspsc_category_38" model="fel_pa.tools.product_unspsc_category">
+        <field name="name">Tejidos y materiales de cuero</field>
+        <field name="fel_pa_code">1116</field>
+    </record>
+    
+    <record id="fel_pa_unspsc_category_39" model="fel_pa.tools.product_unspsc_category">
+        <field name="name">Aleaciones</field>
+        <field name="fel_pa_code">1117</field>
+    </record>
+    
+    <record id="fel_pa_unspsc_category_40" model="fel_pa.tools.product_unspsc_category">
+        <field name="name">Óxido metálico</field>
+        <field name="fel_pa_code">1118</field>
+    </record>
+    
+    <record id="fel_pa_unspsc_category_41" model="fel_pa.tools.product_unspsc_category">
+        <field name="name">Desechos metálicos y chatarra</field>
+        <field name="fel_pa_code">1119</field>
+    </record>
+    
+    <record id="fel_pa_unspsc_category_42" model="fel_pa.tools.product_unspsc_category">
+        <field name="name">Material Químico incluyendo Bioquímicos y Materiales de Gas</field>
+        <field name="fel_pa_code">1200</field>
+    </record>
+    
+    <record id="fel_pa_unspsc_category_43" model="fel_pa.tools.product_unspsc_category">
+        <field name="name">Materiales explosivos</field>
+        <field name="fel_pa_code">1213</field>
+    </record>
+    
+    <record id="fel_pa_unspsc_category_44" model="fel_pa.tools.product_unspsc_category">
+        <field name="name">Elementos y gases</field>
+        <field name="fel_pa_code">1214</field>
+    </record>
+    
+    <record id="fel_pa_unspsc_category_45" model="fel_pa.tools.product_unspsc_category">
+        <field name="name">Aditivos</field>
+        <field name="fel_pa_code">1216</field>
+    </record>
+    
+    <record id="fel_pa_unspsc_category_46" model="fel_pa.tools.product_unspsc_category">
+        <field name="name">Colorantes</field>
+        <field name="fel_pa_code">1217</field>
+    </record>
+    
+    <record id="fel_pa_unspsc_category_47" model="fel_pa.tools.product_unspsc_category">
+        <field name="name">Ceras y aceites</field>
+        <field name="fel_pa_code">1218</field>
+    </record>
+    
+    <record id="fel_pa_unspsc_category_48" model="fel_pa.tools.product_unspsc_category">
+        <field name="name">Solventes</field>
+        <field name="fel_pa_code">1219</field>
+    </record>
+    
+    <record id="fel_pa_unspsc_category_49" model="fel_pa.tools.product_unspsc_category">
+        <field name="name">Compuestos y mezclas</field>
+        <field name="fel_pa_code">1235</field>
+    </record>
+    
+    <record id="fel_pa_unspsc_category_50" model="fel_pa.tools.product_unspsc_category">
+        <field name="name">Materiales de Resina, Colofonia, Caucho, Espuma, Película y Elastómericos</field>
+        <field name="fel_pa_code">1300</field>
+    </record>
+    
+    <record id="fel_pa_unspsc_category_51" model="fel_pa.tools.product_unspsc_category">
+        <field name="name">Caucho y elastómeros</field>
+        <field name="fel_pa_code">1310</field>
+    </record>
+    
+    <record id="fel_pa_unspsc_category_52" model="fel_pa.tools.product_unspsc_category">
+        <field name="name">Resinas y colofonias y otros materiales derivados de resina</field>
+        <field name="fel_pa_code">1311</field>
+    </record>
+    
+    <record id="fel_pa_unspsc_category_53" model="fel_pa.tools.product_unspsc_category">
+        <field name="name">Materiales y Productos de Papel</field>
+        <field name="fel_pa_code">1400</field>
+    </record>
+    
+    <record id="fel_pa_unspsc_category_54" model="fel_pa.tools.product_unspsc_category">
+        <field name="name">Materiales de papel</field>
+        <field name="fel_pa_code">1410</field>
+    </record>
+    
+    <record id="fel_pa_unspsc_category_55" model="fel_pa.tools.product_unspsc_category">
+        <field name="name">Productos de papel</field>
+        <field name="fel_pa_code">1411</field>
+    </record>
+    
+    <record id="fel_pa_unspsc_category_56" model="fel_pa.tools.product_unspsc_category">
+        <field name="name">Papel para uso industrial</field>
+        <field name="fel_pa_code">1412</field>
+    </record>
+    
+    <record id="fel_pa_unspsc_category_57" model="fel_pa.tools.product_unspsc_category">
+        <field name="name">Materiales Combustibles, Aditivos para Combustibles, Lubricantes y Anticorrosivos</field>
+        <field name="fel_pa_code">1500</field>
+    </record>
+    
+    <record id="fel_pa_unspsc_category_58" model="fel_pa.tools.product_unspsc_category">
+        <field name="name">Combustibles</field>
+        <field name="fel_pa_code">1510</field>
+    </record>
+    
+    <record id="fel_pa_unspsc_category_59" model="fel_pa.tools.product_unspsc_category">
+        <field name="name">Combustibles gaseosos y aditivos</field>
+        <field name="fel_pa_code">1511</field>
+    </record>
+    
+    <record id="fel_pa_unspsc_category_60" model="fel_pa.tools.product_unspsc_category">
+        <field name="name">Lubricantes, aceites, grasas y anticorros</field>
+        <field name="fel_pa_code">1512</field>
+    </record>
+    
+    <record id="fel_pa_unspsc_category_61" model="fel_pa.tools.product_unspsc_category">
+        <field name="name">Combustible para reactores nucleares</field>
+        <field name="fel_pa_code">1513</field>
+    </record>
+    
+    <record id="fel_pa_unspsc_category_62" model="fel_pa.tools.product_unspsc_category">
+        <field name="name">Maquinaria y Accesorios de Minería y Perforación de Pozos</field>
+        <field name="fel_pa_code">2000</field>
+    </record>
+    
+    <record id="fel_pa_unspsc_category_63" model="fel_pa.tools.product_unspsc_category">
+        <field name="name">Maquinaria y equipo de minería y explotación de canteras</field>
+        <field name="fel_pa_code">2010</field>
+    </record>
+    
+    <record id="fel_pa_unspsc_category_64" model="fel_pa.tools.product_unspsc_category">
+        <field name="name">Equipo de perforación y explotación de pozos</field>
+        <field name="fel_pa_code">2011</field>
+    </record>
+    
+    <record id="fel_pa_unspsc_category_65" model="fel_pa.tools.product_unspsc_category">
+        <field name="name">Equipo para perforación y exploración de petróleo y gas</field>
+        <field name="fel_pa_code">2012</field>
+    </record>
+    
+    <record id="fel_pa_unspsc_category_66" model="fel_pa.tools.product_unspsc_category">
+        <field name="name">Materiales para perforación y operaciones de petróleo y gas</field>
+        <field name="fel_pa_code">2013</field>
+    </record>
+    
+    <record id="fel_pa_unspsc_category_67" model="fel_pa.tools.product_unspsc_category">
+        <field name="name">Equipo de producción y operación de petróleo y gas</field>
+        <field name="fel_pa_code">2014</field>
+    </record>
+    
+    <record id="fel_pa_unspsc_category_68" model="fel_pa.tools.product_unspsc_category">
+        <field name="name">Maquinaria y Accesorios para Agricultura, Pesca, Silvicultura y Fauna</field>
+        <field name="fel_pa_code">2100</field>
+    </record>
+    
+    <record id="fel_pa_unspsc_category_69" model="fel_pa.tools.product_unspsc_category">
+        <field name="name">Maquinaria y equipo para agricultura, silvicultura y paisajismo</field>
+        <field name="fel_pa_code">2110</field>
+    </record>
+    
+    <record id="fel_pa_unspsc_category_70" model="fel_pa.tools.product_unspsc_category">
+        <field name="name">Equipo de pesca y acuicultura</field>
+        <field name="fel_pa_code">2111</field>
+    </record>
+    
+    <record id="fel_pa_unspsc_category_71" model="fel_pa.tools.product_unspsc_category">
+        <field name="name">Maquinaria y Accesorios para Construcción y Edificación</field>
+        <field name="fel_pa_code">2200</field>
+    </record>
+    
+    <record id="fel_pa_unspsc_category_72" model="fel_pa.tools.product_unspsc_category">
+        <field name="name">Maquinaria y equipo pesado de construcción</field>
+        <field name="fel_pa_code">2210</field>
+    </record>
+    
+    <record id="fel_pa_unspsc_category_73" model="fel_pa.tools.product_unspsc_category">
+        <field name="name">Maquinaria y Accesorios para Manufactura y Procesamiento Industrial</field>
+        <field name="fel_pa_code">2300</field>
+    </record>
+    
+    <record id="fel_pa_unspsc_category_74" model="fel_pa.tools.product_unspsc_category">
+        <field name="name">Maquinaria para el procesamiento de materias primas</field>
+        <field name="fel_pa_code">2310</field>
+    </record>
+    
+    <record id="fel_pa_unspsc_category_75" model="fel_pa.tools.product_unspsc_category">
+        <field name="name">Maquinaria para el procesamiento de petróleo</field>
+        <field name="fel_pa_code">2311</field>
+    </record>
+    
+    <record id="fel_pa_unspsc_category_76" model="fel_pa.tools.product_unspsc_category">
+        <field name="name">Maquinaria y accesorios de textiles y tejidos</field>
+        <field name="fel_pa_code">2312</field>
+    </record>
+    
+    <record id="fel_pa_unspsc_category_77" model="fel_pa.tools.product_unspsc_category">
+        <field name="name">Maquinaria y equipos lapidarios</field>
+        <field name="fel_pa_code">2313</field>
+    </record>
+    
+    <record id="fel_pa_unspsc_category_78" model="fel_pa.tools.product_unspsc_category">
+        <field name="name">Maquinaria de reparación y accesorios para marroquinería</field>
+        <field name="fel_pa_code">2314</field>
+    </record>
+    
+    <record id="fel_pa_unspsc_category_79" model="fel_pa.tools.product_unspsc_category">
+        <field name="name">Maquinaria, equipo y suministros de procesos industriales</field>
+        <field name="fel_pa_code">2315</field>
+    </record>
+    
+    <record id="fel_pa_unspsc_category_80" model="fel_pa.tools.product_unspsc_category">
+        <field name="name">Máquinas, equipo y suministros para fundición</field>
+        <field name="fel_pa_code">2316</field>
+    </record>
+    
+    <record id="fel_pa_unspsc_category_81" model="fel_pa.tools.product_unspsc_category">
+        <field name="name">Equipo industrial para alimentos y bebidas</field>
+        <field name="fel_pa_code">2318</field>
+    </record>
+    
+    <record id="fel_pa_unspsc_category_82" model="fel_pa.tools.product_unspsc_category">
+        <field name="name">Mezcladores y sus partes y accesorios</field>
+        <field name="fel_pa_code">2319</field>
+    </record>
+    
+    <record id="fel_pa_unspsc_category_83" model="fel_pa.tools.product_unspsc_category">
+        <field name="name">Equipamiento para transferencia de masa</field>
+        <field name="fel_pa_code">2320</field>
+    </record>
+    
+    <record id="fel_pa_unspsc_category_84" model="fel_pa.tools.product_unspsc_category">
+        <field name="name">Maquinaria de fabricación electrónica, equipo y accesorios</field>
+        <field name="fel_pa_code">2321</field>
+    </record>
+    
+    <record id="fel_pa_unspsc_category_85" model="fel_pa.tools.product_unspsc_category">
+        <field name="name">Equipo y maquinaria de procesamiento de pollos</field>
+        <field name="fel_pa_code">2322</field>
+    </record>
+    
+    <record id="fel_pa_unspsc_category_86" model="fel_pa.tools.product_unspsc_category">
+        <field name="name">Equipo y maquinaria de procesamiento de madera y aserrado</field>
+        <field name="fel_pa_code">2323</field>
+    </record>
+    
+    <record id="fel_pa_unspsc_category_87" model="fel_pa.tools.product_unspsc_category">
+        <field name="name">Maquinaria y accesorios para cortar metales</field>
+        <field name="fel_pa_code">2324</field>
+    </record>
+    
+    <record id="fel_pa_unspsc_category_88" model="fel_pa.tools.product_unspsc_category">
+        <field name="name">Maquinaria y accesorios para el formado de metales</field>
+        <field name="fel_pa_code">2325</field>
+    </record>
+    
+    <record id="fel_pa_unspsc_category_89" model="fel_pa.tools.product_unspsc_category">
+        <field name="name">Maquinaria y accesorios para hacer prototipos rápidos</field>
+        <field name="fel_pa_code">2326</field>
+    </record>
+    
+    <record id="fel_pa_unspsc_category_90" model="fel_pa.tools.product_unspsc_category">
+        <field name="name">Maquinaria y accesorios y suministros para soldadura de todas las clases</field>
+        <field name="fel_pa_code">2327</field>
+    </record>
+    
+    <record id="fel_pa_unspsc_category_91" model="fel_pa.tools.product_unspsc_category">
+        <field name="name">Maquinaria para el tratamiento de metal</field>
+        <field name="fel_pa_code">2328</field>
+    </record>
+    
+    <record id="fel_pa_unspsc_category_92" model="fel_pa.tools.product_unspsc_category">
+        <field name="name">Herramientas de maquinado industrial</field>
+        <field name="fel_pa_code">2329</field>
+    </record>
+    
+    <record id="fel_pa_unspsc_category_93" model="fel_pa.tools.product_unspsc_category">
+        <field name="name">Maquinaria y equipo para cable</field>
+        <field name="fel_pa_code">2330</field>
+    </record>
+    
+    <record id="fel_pa_unspsc_category_94" model="fel_pa.tools.product_unspsc_category">
+        <field name="name">Maquinaria, Accesorios y Suministros para Manejo, Acondicionamiento y Almacenamiento de Materiales</field>
+        <field name="fel_pa_code">2400</field>
+    </record>
+    
+    <record id="fel_pa_unspsc_category_95" model="fel_pa.tools.product_unspsc_category">
+        <field name="name">Maquinaria y equipo para manejo de materiales</field>
+        <field name="fel_pa_code">2410</field>
+    </record>
+    
+    <record id="fel_pa_unspsc_category_96" model="fel_pa.tools.product_unspsc_category">
+        <field name="name">Recipientes y almacenamiento</field>
+        <field name="fel_pa_code">2411</field>
+    </record>
+    
+    <record id="fel_pa_unspsc_category_97" model="fel_pa.tools.product_unspsc_category">
+        <field name="name">Materiales de empaque</field>
+        <field name="fel_pa_code">2412</field>
+    </record>
+    
+    <record id="fel_pa_unspsc_category_98" model="fel_pa.tools.product_unspsc_category">
+        <field name="name">Refrigeración industrial</field>
+        <field name="fel_pa_code">2413</field>
+    </record>
+    
+    <record id="fel_pa_unspsc_category_99" model="fel_pa.tools.product_unspsc_category">
+        <field name="name">Suministros de embalaje</field>
+        <field name="fel_pa_code">2414</field>
+    </record>
+    
+    <record id="fel_pa_unspsc_category_100" model="fel_pa.tools.product_unspsc_category">
+        <field name="name">Vehículos Comerciales, Militares y Particulares, Accesorios y Componentes</field>
+        <field name="fel_pa_code">2500</field>
+    </record>
+    
+    <record id="fel_pa_unspsc_category_101" model="fel_pa.tools.product_unspsc_category">
+        <field name="name">Vehículos de motor</field>
+        <field name="fel_pa_code">2510</field>
+    </record>
+    
+    <record id="fel_pa_unspsc_category_102" model="fel_pa.tools.product_unspsc_category">
+        <field name="name">Transporte marítimo</field>
+        <field name="fel_pa_code">2511</field>
+    </record>
+    
+    <record id="fel_pa_unspsc_category_103" model="fel_pa.tools.product_unspsc_category">
+        <field name="name">Maquinaria y equipo para ferrocarril y tranvías</field>
+        <field name="fel_pa_code">2512</field>
+    </record>
+    
+    <record id="fel_pa_unspsc_category_104" model="fel_pa.tools.product_unspsc_category">
+        <field name="name">Aeronaves</field>
+        <field name="fel_pa_code">2513</field>
+    </record>
+    
+    <record id="fel_pa_unspsc_category_105" model="fel_pa.tools.product_unspsc_category">
+        <field name="name">Naves espaciales</field>
+        <field name="fel_pa_code">2515</field>
+    </record>
+    
+    <record id="fel_pa_unspsc_category_106" model="fel_pa.tools.product_unspsc_category">
+        <field name="name">Bicicletas no motorizadas</field>
+        <field name="fel_pa_code">2516</field>
+    </record>
+    
+    <record id="fel_pa_unspsc_category_107" model="fel_pa.tools.product_unspsc_category">
+        <field name="name">Componentes y sistemas de transporte</field>
+        <field name="fel_pa_code">2517</field>
+    </record>
+    
+    <record id="fel_pa_unspsc_category_108" model="fel_pa.tools.product_unspsc_category">
+        <field name="name">Carrocerías y remolques</field>
+        <field name="fel_pa_code">2518</field>
+    </record>
+    
+    <record id="fel_pa_unspsc_category_109" model="fel_pa.tools.product_unspsc_category">
+        <field name="name">Equipo para servicios de transporte</field>
+        <field name="fel_pa_code">2519</field>
+    </record>
+    
+    <record id="fel_pa_unspsc_category_110" model="fel_pa.tools.product_unspsc_category">
+        <field name="name">Sistemas componentes y equipos aeroespaciales</field>
+        <field name="fel_pa_code">2520</field>
+    </record>
+    
+    <record id="fel_pa_unspsc_category_111" model="fel_pa.tools.product_unspsc_category">
+        <field name="name">Maquinaria y Accesorios para Generación y Distribución de Energía</field>
+        <field name="fel_pa_code">2600</field>
+    </record>
+    
+    <record id="fel_pa_unspsc_category_112" model="fel_pa.tools.product_unspsc_category">
+        <field name="name">Fuentes de energía</field>
+        <field name="fel_pa_code">2610</field>
+    </record>
+    
+    <record id="fel_pa_unspsc_category_113" model="fel_pa.tools.product_unspsc_category">
+        <field name="name">Baterías y generadores y transmisión de energía cinética</field>
+        <field name="fel_pa_code">2611</field>
+    </record>
+    
+    <record id="fel_pa_unspsc_category_114" model="fel_pa.tools.product_unspsc_category">
+        <field name="name">Alambres, cables y arneses</field>
+        <field name="fel_pa_code">2612</field>
+    </record>
+    
+    <record id="fel_pa_unspsc_category_115" model="fel_pa.tools.product_unspsc_category">
+        <field name="name">Generación de energía</field>
+        <field name="fel_pa_code">2613</field>
+    </record>
+    
+    <record id="fel_pa_unspsc_category_116" model="fel_pa.tools.product_unspsc_category">
+        <field name="name">Maquinaria y equipo para energía atómica o nuclear</field>
+        <field name="fel_pa_code">2614</field>
+    </record>
+    
+    <record id="fel_pa_unspsc_category_117" model="fel_pa.tools.product_unspsc_category">
+        <field name="name">Herramientas y Maquinaria General</field>
+        <field name="fel_pa_code">2700</field>
+    </record>
+    
+    <record id="fel_pa_unspsc_category_118" model="fel_pa.tools.product_unspsc_category">
+        <field name="name">Herramientas de mano</field>
+        <field name="fel_pa_code">2711</field>
+    </record>
+    
+    <record id="fel_pa_unspsc_category_119" model="fel_pa.tools.product_unspsc_category">
+        <field name="name">Maquinaria y equipo hidráulico</field>
+        <field name="fel_pa_code">2712</field>
+    </record>
+    
+    <record id="fel_pa_unspsc_category_120" model="fel_pa.tools.product_unspsc_category">
+        <field name="name">Maquinaria y equipo neumático</field>
+        <field name="fel_pa_code">2713</field>
+    </record>
+    
+    <record id="fel_pa_unspsc_category_121" model="fel_pa.tools.product_unspsc_category">
+        <field name="name">Herramientas especializadas automotrices</field>
+        <field name="fel_pa_code">2714</field>
+    </record>
+    
+    <record id="fel_pa_unspsc_category_122" model="fel_pa.tools.product_unspsc_category">
+        <field name="name">Componentes y Suministros para Estructuras, Edificación, Construcción y Obras Civiles</field>
+        <field name="fel_pa_code">3000</field>
+    </record>
+    
+    <record id="fel_pa_unspsc_category_123" model="fel_pa.tools.product_unspsc_category">
+        <field name="name">Componentes estructurales y formas básicas</field>
+        <field name="fel_pa_code">3010</field>
+    </record>
+    
+    <record id="fel_pa_unspsc_category_124" model="fel_pa.tools.product_unspsc_category">
+        <field name="name">Hormigón, cemento y yeso</field>
+        <field name="fel_pa_code">3011</field>
+    </record>
+    
+    <record id="fel_pa_unspsc_category_125" model="fel_pa.tools.product_unspsc_category">
+        <field name="name">Carreteras y paisaje</field>
+        <field name="fel_pa_code">3012</field>
+    </record>
+    
+    <record id="fel_pa_unspsc_category_126" model="fel_pa.tools.product_unspsc_category">
+        <field name="name">Productos de construcción estructurales</field>
+        <field name="fel_pa_code">3013</field>
+    </record>
+    
+    <record id="fel_pa_unspsc_category_127" model="fel_pa.tools.product_unspsc_category">
+        <field name="name">Aislamiento</field>
+        <field name="fel_pa_code">3014</field>
+    </record>
+    
+    <record id="fel_pa_unspsc_category_128" model="fel_pa.tools.product_unspsc_category">
+        <field name="name">Materiales para acabado de exteriores</field>
+        <field name="fel_pa_code">3015</field>
+    </record>
+    
+    <record id="fel_pa_unspsc_category_129" model="fel_pa.tools.product_unspsc_category">
+        <field name="name">Materiales de acabado de interiores</field>
+        <field name="fel_pa_code">3016</field>
+    </record>
+    
+    <record id="fel_pa_unspsc_category_130" model="fel_pa.tools.product_unspsc_category">
+        <field name="name">Puertas y ventanas y vidrio</field>
+        <field name="fel_pa_code">3017</field>
+    </record>
+    
+    <record id="fel_pa_unspsc_category_131" model="fel_pa.tools.product_unspsc_category">
+        <field name="name">Instalaciones de plomería</field>
+        <field name="fel_pa_code">3018</field>
+    </record>
+    
+    <record id="fel_pa_unspsc_category_132" model="fel_pa.tools.product_unspsc_category">
+        <field name="name">Equipo de apoyo para Construcción y Mantenimiento</field>
+        <field name="fel_pa_code">3019</field>
+    </record>
+    
+    <record id="fel_pa_unspsc_category_133" model="fel_pa.tools.product_unspsc_category">
+        <field name="name">Componentes de construcción de estructura portátil</field>
+        <field name="fel_pa_code">3024</field>
+    </record>
+    
+    <record id="fel_pa_unspsc_category_134" model="fel_pa.tools.product_unspsc_category">
+        <field name="name">Estructuras y materiales de minería subterránea</field>
+        <field name="fel_pa_code">3025</field>
+    </record>
+    
+    <record id="fel_pa_unspsc_category_135" model="fel_pa.tools.product_unspsc_category">
+        <field name="name">Materiales estructurales </field>
+        <field name="fel_pa_code">3026</field>
+    </record>
+    
+    <record id="fel_pa_unspsc_category_136" model="fel_pa.tools.product_unspsc_category">
+        <field name="name">Componentes y Suministros de Manufactura</field>
+        <field name="fel_pa_code">3100</field>
+    </record>
+    
+    <record id="fel_pa_unspsc_category_137" model="fel_pa.tools.product_unspsc_category">
+        <field name="name">Piezas de fundición y ensambles de piezas de fundición</field>
+        <field name="fel_pa_code">3110</field>
+    </record>
+    
+    <record id="fel_pa_unspsc_category_138" model="fel_pa.tools.product_unspsc_category">
+        <field name="name">Extrusiones</field>
+        <field name="fel_pa_code">3111</field>
+    </record>
+    
+    <record id="fel_pa_unspsc_category_139" model="fel_pa.tools.product_unspsc_category">
+        <field name="name">Piezas fundidas maquinadas</field>
+        <field name="fel_pa_code">3112</field>
+    </record>
+    
+    <record id="fel_pa_unspsc_category_140" model="fel_pa.tools.product_unspsc_category">
+        <field name="name">Forjaduras</field>
+        <field name="fel_pa_code">3113</field>
+    </record>
+    
+    <record id="fel_pa_unspsc_category_141" model="fel_pa.tools.product_unspsc_category">
+        <field name="name">Molduras</field>
+        <field name="fel_pa_code">3114</field>
+    </record>
+    
+    <record id="fel_pa_unspsc_category_142" model="fel_pa.tools.product_unspsc_category">
+        <field name="name">Cuerda, cadena, cable, alambre y correa</field>
+        <field name="fel_pa_code">3115</field>
+    </record>
+    
+    <record id="fel_pa_unspsc_category_143" model="fel_pa.tools.product_unspsc_category">
+        <field name="name">Ferretería</field>
+        <field name="fel_pa_code">3116</field>
+    </record>
+    
+    <record id="fel_pa_unspsc_category_144" model="fel_pa.tools.product_unspsc_category">
+        <field name="name">Rodamientos, cojinetes ruedas y engranajes </field>
+        <field name="fel_pa_code">3117</field>
+    </record>
+    
+    <record id="fel_pa_unspsc_category_145" model="fel_pa.tools.product_unspsc_category">
+        <field name="name">Empaques, glándulas, fundas y cubiertas</field>
+        <field name="fel_pa_code">3118</field>
+    </record>
+    
+    <record id="fel_pa_unspsc_category_146" model="fel_pa.tools.product_unspsc_category">
+        <field name="name">Materiales de afilado pulido y alisado</field>
+        <field name="fel_pa_code">3119</field>
+    </record>
+    
+    <record id="fel_pa_unspsc_category_147" model="fel_pa.tools.product_unspsc_category">
+        <field name="name">Adhesivos y selladores</field>
+        <field name="fel_pa_code">3120</field>
+    </record>
+    
+    <record id="fel_pa_unspsc_category_148" model="fel_pa.tools.product_unspsc_category">
+        <field name="name">Pinturas y bases y acabados</field>
+        <field name="fel_pa_code">3121</field>
+    </record>
+    
+    <record id="fel_pa_unspsc_category_149" model="fel_pa.tools.product_unspsc_category">
+        <field name="name">Extractos de teñir y de curtir</field>
+        <field name="fel_pa_code">3122</field>
+    </record>
+    
+    <record id="fel_pa_unspsc_category_150" model="fel_pa.tools.product_unspsc_category">
+        <field name="name">Materia prima en placas o barras labradas</field>
+        <field name="fel_pa_code">3123</field>
+    </record>
+    
+    <record id="fel_pa_unspsc_category_151" model="fel_pa.tools.product_unspsc_category">
+        <field name="name">Óptica industrial</field>
+        <field name="fel_pa_code">3124</field>
+    </record>
+    
+    <record id="fel_pa_unspsc_category_152" model="fel_pa.tools.product_unspsc_category">
+        <field name="name">Sistemas de control neumático, hidráulico o eléctrico</field>
+        <field name="fel_pa_code">3125</field>
+    </record>
+    
+    <record id="fel_pa_unspsc_category_153" model="fel_pa.tools.product_unspsc_category">
+        <field name="name">Cubiertas, cajas y envolturas</field>
+        <field name="fel_pa_code">3126</field>
+    </record>
+    
+    <record id="fel_pa_unspsc_category_154" model="fel_pa.tools.product_unspsc_category">
+        <field name="name">Piezas hechas a máquina</field>
+        <field name="fel_pa_code">3127</field>
+    </record>
+    
+    <record id="fel_pa_unspsc_category_155" model="fel_pa.tools.product_unspsc_category">
+        <field name="name">Componentes de placa y estampados</field>
+        <field name="fel_pa_code">3128</field>
+    </record>
+    
+    <record id="fel_pa_unspsc_category_156" model="fel_pa.tools.product_unspsc_category">
+        <field name="name">Extrusiones maquinadas</field>
+        <field name="fel_pa_code">3129</field>
+    </record>
+    
+    <record id="fel_pa_unspsc_category_157" model="fel_pa.tools.product_unspsc_category">
+        <field name="name">Forjas labradas</field>
+        <field name="fel_pa_code">3130</field>
+    </record>
+    
+    <record id="fel_pa_unspsc_category_158" model="fel_pa.tools.product_unspsc_category">
+        <field name="name">Ensambles de tubería fabricada</field>
+        <field name="fel_pa_code">3131</field>
+    </record>
+    
+    <record id="fel_pa_unspsc_category_159" model="fel_pa.tools.product_unspsc_category">
+        <field name="name">Ensambles fabricados de material en barras</field>
+        <field name="fel_pa_code">3132</field>
+    </record>
+    
+    <record id="fel_pa_unspsc_category_160" model="fel_pa.tools.product_unspsc_category">
+        <field name="name">Ensambles estructurales fabricados</field>
+        <field name="fel_pa_code">3133</field>
+    </record>
+    
+    <record id="fel_pa_unspsc_category_161" model="fel_pa.tools.product_unspsc_category">
+        <field name="name">Ensambles de lámina fabricado</field>
+        <field name="fel_pa_code">3134</field>
+    </record>
+    
+    <record id="fel_pa_unspsc_category_162" model="fel_pa.tools.product_unspsc_category">
+        <field name="name">Ensambles de tubería fabricada</field>
+        <field name="fel_pa_code">3135</field>
+    </record>
+    
+    <record id="fel_pa_unspsc_category_163" model="fel_pa.tools.product_unspsc_category">
+        <field name="name">Ensambles de placa fabricados</field>
+        <field name="fel_pa_code">3136</field>
+    </record>
+    
+    <record id="fel_pa_unspsc_category_164" model="fel_pa.tools.product_unspsc_category">
+        <field name="name">Refractarios</field>
+        <field name="fel_pa_code">3137</field>
+    </record>
+    
+    <record id="fel_pa_unspsc_category_165" model="fel_pa.tools.product_unspsc_category">
+        <field name="name">Imanes y materiales magnéticos</field>
+        <field name="fel_pa_code">3138</field>
+    </record>
+    
+    <record id="fel_pa_unspsc_category_166" model="fel_pa.tools.product_unspsc_category">
+        <field name="name">Maquinados</field>
+        <field name="fel_pa_code">3139</field>
+    </record>
+    
+    <record id="fel_pa_unspsc_category_167" model="fel_pa.tools.product_unspsc_category">
+        <field name="name">Empaques</field>
+        <field name="fel_pa_code">3140</field>
+    </record>
+    
+    <record id="fel_pa_unspsc_category_168" model="fel_pa.tools.product_unspsc_category">
+        <field name="name">Sellos</field>
+        <field name="fel_pa_code">3141</field>
+    </record>
+    
+    <record id="fel_pa_unspsc_category_169" model="fel_pa.tools.product_unspsc_category">
+        <field name="name">Partes sinterizadas</field>
+        <field name="fel_pa_code">3142</field>
+    </record>
+    
+    <record id="fel_pa_unspsc_category_170" model="fel_pa.tools.product_unspsc_category">
+        <field name="name">Componentes y Suministros Electrónicos</field>
+        <field name="fel_pa_code">3200</field>
+    </record>
+    
+    <record id="fel_pa_unspsc_category_171" model="fel_pa.tools.product_unspsc_category">
+        <field name="name">Circuitos impresos, circuitos integrados y micro ensamblajes</field>
+        <field name="fel_pa_code">3210</field>
+    </record>
+    
+    <record id="fel_pa_unspsc_category_172" model="fel_pa.tools.product_unspsc_category">
+        <field name="name">Dispositivo semiconductor discreto</field>
+        <field name="fel_pa_code">3211</field>
+    </record>
+    
+    <record id="fel_pa_unspsc_category_173" model="fel_pa.tools.product_unspsc_category">
+        <field name="name">Componentes pasivos discretos</field>
+        <field name="fel_pa_code">3212</field>
+    </record>
+    
+    <record id="fel_pa_unspsc_category_174" model="fel_pa.tools.product_unspsc_category">
+        <field name="name">Piezas de componentes y hardware electrónicos y accesorios</field>
+        <field name="fel_pa_code">3213</field>
+    </record>
+    
+    <record id="fel_pa_unspsc_category_175" model="fel_pa.tools.product_unspsc_category">
+        <field name="name">Dispositivos de tubo electrónico y accesorios</field>
+        <field name="fel_pa_code">3214</field>
+    </record>
+    
+    <record id="fel_pa_unspsc_category_176" model="fel_pa.tools.product_unspsc_category">
+        <field name="name">Dispositivos y componentes y accesorios de control de automatización</field>
+        <field name="fel_pa_code">3215</field>
+    </record>
+    
+    <record id="fel_pa_unspsc_category_177" model="fel_pa.tools.product_unspsc_category">
+        <field name="name">Componentes, Accesorios y Suministros de Sistemas Eléctricos e Iluminación</field>
+        <field name="fel_pa_code">3900</field>
+    </record>
+    
+    <record id="fel_pa_unspsc_category_178" model="fel_pa.tools.product_unspsc_category">
+        <field name="name">Lámparas y bombillas y componentes para lámparas</field>
+        <field name="fel_pa_code">3910</field>
+    </record>
+    
+    <record id="fel_pa_unspsc_category_179" model="fel_pa.tools.product_unspsc_category">
+        <field name="name">Iluminación, artefactos y accesorios</field>
+        <field name="fel_pa_code">3911</field>
+    </record>
+    
+    <record id="fel_pa_unspsc_category_180" model="fel_pa.tools.product_unspsc_category">
+        <field name="name">Equipos, suministros y componentes eléctricos</field>
+        <field name="fel_pa_code">3912</field>
+    </record>
+    
+    <record id="fel_pa_unspsc_category_181" model="fel_pa.tools.product_unspsc_category">
+        <field name="name">Dispositivos y accesorios y suministros de manejo de cable eléctrico</field>
+        <field name="fel_pa_code">3913</field>
+    </record>
+    
+    <record id="fel_pa_unspsc_category_182" model="fel_pa.tools.product_unspsc_category">
+        <field name="name">Componentes y Equipos para Distribución y Sistemas de Acondicionamiento</field>
+        <field name="fel_pa_code">4000</field>
+    </record>
+    
+    <record id="fel_pa_unspsc_category_183" model="fel_pa.tools.product_unspsc_category">
+        <field name="name">Calefacción, ventilación y circulación del aire</field>
+        <field name="fel_pa_code">4010</field>
+    </record>
+    
+    <record id="fel_pa_unspsc_category_184" model="fel_pa.tools.product_unspsc_category">
+        <field name="name">Distribución de fluidos y gas</field>
+        <field name="fel_pa_code">4014</field>
+    </record>
+    
+    <record id="fel_pa_unspsc_category_185" model="fel_pa.tools.product_unspsc_category">
+        <field name="name">Bombas y compresores industriales</field>
+        <field name="fel_pa_code">4015</field>
+    </record>
+    
+    <record id="fel_pa_unspsc_category_186" model="fel_pa.tools.product_unspsc_category">
+        <field name="name">Filtrado y purificación industrial</field>
+        <field name="fel_pa_code">4016</field>
+    </record>
+    
+    <record id="fel_pa_unspsc_category_187" model="fel_pa.tools.product_unspsc_category">
+        <field name="name">Instalaciones de tubos y entubamientos</field>
+        <field name="fel_pa_code">4017</field>
+    </record>
+    
+    <record id="fel_pa_unspsc_category_188" model="fel_pa.tools.product_unspsc_category">
+        <field name="name">Instalaciones de tubos y tuberías</field>
+        <field name="fel_pa_code">4018</field>
+    </record>
+    
+    <record id="fel_pa_unspsc_category_189" model="fel_pa.tools.product_unspsc_category">
+        <field name="name">Equipos y Suministros de Laboratorio, de Medición, de Observación y de Pruebas</field>
+        <field name="fel_pa_code">4100</field>
+    </record>
+    
+    <record id="fel_pa_unspsc_category_190" model="fel_pa.tools.product_unspsc_category">
+        <field name="name">Equipo de laboratorio y científico</field>
+        <field name="fel_pa_code">4110</field>
+    </record>
+    
+    <record id="fel_pa_unspsc_category_191" model="fel_pa.tools.product_unspsc_category">
+        <field name="name">Instrumentos de medida, observación y ensayo</field>
+        <field name="fel_pa_code">4111</field>
+    </record>
+    
+    <record id="fel_pa_unspsc_category_192" model="fel_pa.tools.product_unspsc_category">
+        <field name="name">Suministros y accesorios de laboratorio</field>
+        <field name="fel_pa_code">4112</field>
+    </record>
+    
+    <record id="fel_pa_unspsc_category_193" model="fel_pa.tools.product_unspsc_category">
+        <field name="name">Equipo Médico, Accesorios y Suministros</field>
+        <field name="fel_pa_code">4200</field>
+    </record>
+    
+    <record id="fel_pa_unspsc_category_194" model="fel_pa.tools.product_unspsc_category">
+        <field name="name">Equipos y suministros veterinarios</field>
+        <field name="fel_pa_code">4212</field>
+    </record>
+    
+    <record id="fel_pa_unspsc_category_195" model="fel_pa.tools.product_unspsc_category">
+        <field name="name">Telas y vestidos médicos</field>
+        <field name="fel_pa_code">4213</field>
+    </record>
+    
+    <record id="fel_pa_unspsc_category_196" model="fel_pa.tools.product_unspsc_category">
+        <field name="name">Suministros, productos de tratamiento y cuidado del enfermo</field>
+        <field name="fel_pa_code">4214</field>
+    </record>
+    
+    <record id="fel_pa_unspsc_category_197" model="fel_pa.tools.product_unspsc_category">
+        <field name="name">Equipos y suministros dentales</field>
+        <field name="fel_pa_code">4215</field>
+    </record>
+    
+    <record id="fel_pa_unspsc_category_198" model="fel_pa.tools.product_unspsc_category">
+        <field name="name">Equipo de diálisis y suministros</field>
+        <field name="fel_pa_code">4216</field>
+    </record>
+    
+    <record id="fel_pa_unspsc_category_199" model="fel_pa.tools.product_unspsc_category">
+        <field name="name">Productos para los servicios médicos de urgencias y campo</field>
+        <field name="fel_pa_code">4217</field>
+    </record>
+    
+    <record id="fel_pa_unspsc_category_200" model="fel_pa.tools.product_unspsc_category">
+        <field name="name">Productos de examen y control del paciente</field>
+        <field name="fel_pa_code">4218</field>
+    </record>
+    
+    <record id="fel_pa_unspsc_category_201" model="fel_pa.tools.product_unspsc_category">
+        <field name="name">Productos de centro médico</field>
+        <field name="fel_pa_code">4219</field>
+    </record>
+    
+    <record id="fel_pa_unspsc_category_202" model="fel_pa.tools.product_unspsc_category">
+        <field name="name">Productos de hacer imágenes diagnósticas médicas y de medicina nuclear</field>
+        <field name="fel_pa_code">4220</field>
+    </record>
+    
+    <record id="fel_pa_unspsc_category_203" model="fel_pa.tools.product_unspsc_category">
+        <field name="name">Ayuda para personas con desafíos físicos para vivir independiente</field>
+        <field name="fel_pa_code">4221</field>
+    </record>
+    
+    <record id="fel_pa_unspsc_category_204" model="fel_pa.tools.product_unspsc_category">
+        <field name="name">Productos para administración intravenosa y arterial</field>
+        <field name="fel_pa_code">4222</field>
+    </record>
+    
+    <record id="fel_pa_unspsc_category_205" model="fel_pa.tools.product_unspsc_category">
+        <field name="name">Nutrición clínica</field>
+        <field name="fel_pa_code">4223</field>
+    </record>
+    
+    <record id="fel_pa_unspsc_category_206" model="fel_pa.tools.product_unspsc_category">
+        <field name="name">Productos medicinales de deportes y ortopédicos y prótesis</field>
+        <field name="fel_pa_code">4224</field>
+    </record>
+    
+    <record id="fel_pa_unspsc_category_207" model="fel_pa.tools.product_unspsc_category">
+        <field name="name">Productos de rehabilitación y terapia ocupacional y física</field>
+        <field name="fel_pa_code">4225</field>
+    </record>
+    
+    <record id="fel_pa_unspsc_category_208" model="fel_pa.tools.product_unspsc_category">
+        <field name="name">Equipo y suministros post mortem y funerarios</field>
+        <field name="fel_pa_code">4226</field>
+    </record>
+    
+    <record id="fel_pa_unspsc_category_209" model="fel_pa.tools.product_unspsc_category">
+        <field name="name">Productos de resucitación, anestesia y respiratorio</field>
+        <field name="fel_pa_code">4227</field>
+    </record>
+    
+    <record id="fel_pa_unspsc_category_210" model="fel_pa.tools.product_unspsc_category">
+        <field name="name">Productos para la esterilización médica</field>
+        <field name="fel_pa_code">4228</field>
+    </record>
+    
+    <record id="fel_pa_unspsc_category_211" model="fel_pa.tools.product_unspsc_category">
+        <field name="name">Productos quirúrgicos</field>
+        <field name="fel_pa_code">4229</field>
+    </record>
+    
+    <record id="fel_pa_unspsc_category_212" model="fel_pa.tools.product_unspsc_category">
+        <field name="name">Suministros para formación y estudios de medicina</field>
+        <field name="fel_pa_code">4230</field>
+    </record>
+    
+    <record id="fel_pa_unspsc_category_213" model="fel_pa.tools.product_unspsc_category">
+        <field name="name">Productos para el cuidado de heridas</field>
+        <field name="fel_pa_code">4231</field>
+    </record>
+    
+    <record id="fel_pa_unspsc_category_214" model="fel_pa.tools.product_unspsc_category">
+        <field name="name">Implantes ortopédicos quirúrgicos</field>
+        <field name="fel_pa_code">4232</field>
+    </record>
+    
+    <record id="fel_pa_unspsc_category_215" model="fel_pa.tools.product_unspsc_category">
+        <field name="name">Difusión de Tecnologías de Información y Telecomunicaciones</field>
+        <field name="fel_pa_code">4300</field>
+    </record>
+    
+    <record id="fel_pa_unspsc_category_216" model="fel_pa.tools.product_unspsc_category">
+        <field name="name">Dispositivos de comunicaciones y accesorios</field>
+        <field name="fel_pa_code">4319</field>
+    </record>
+    
+    <record id="fel_pa_unspsc_category_217" model="fel_pa.tools.product_unspsc_category">
+        <field name="name">Componentes para tecnología de la información, difusión o telecomunicaciones</field>
+        <field name="fel_pa_code">4320</field>
+    </record>
+    
+    <record id="fel_pa_unspsc_category_218" model="fel_pa.tools.product_unspsc_category">
+        <field name="name">Equipo informático y accesorios</field>
+        <field name="fel_pa_code">4321</field>
+    </record>
+    
+    <record id="fel_pa_unspsc_category_219" model="fel_pa.tools.product_unspsc_category">
+        <field name="name">Equipos o plataformas y accesorios de redes multimedia o de voz y datos</field>
+        <field name="fel_pa_code">4322</field>
+    </record>
+    
+    <record id="fel_pa_unspsc_category_220" model="fel_pa.tools.product_unspsc_category">
+        <field name="name">Software</field>
+        <field name="fel_pa_code">4323</field>
+    </record>
+    
+    <record id="fel_pa_unspsc_category_221" model="fel_pa.tools.product_unspsc_category">
+        <field name="name">Maquinaria, suministros y accesorios de oficina </field>
+        <field name="fel_pa_code">4410</field>
+    </record>
+    
+    <record id="fel_pa_unspsc_category_222" model="fel_pa.tools.product_unspsc_category">
+        <field name="name">Accesorios de oficina y escritorio</field>
+        <field name="fel_pa_code">4411</field>
+    </record>
+    
+    <record id="fel_pa_unspsc_category_223" model="fel_pa.tools.product_unspsc_category">
+        <field name="name">Suministros de oficina</field>
+        <field name="fel_pa_code">4412</field>
+    </record>
+    
+    <record id="fel_pa_unspsc_category_224" model="fel_pa.tools.product_unspsc_category">
+        <field name="name">Equipos y Suministros para Impresión, Fotografía y Audiovisuales</field>
+        <field name="fel_pa_code">4500</field>
+    </record>
+    
+    <record id="fel_pa_unspsc_category_225" model="fel_pa.tools.product_unspsc_category">
+        <field name="name">Equipo de imprenta y publicación</field>
+        <field name="fel_pa_code">4510</field>
+    </record>
+    
+    <record id="fel_pa_unspsc_category_226" model="fel_pa.tools.product_unspsc_category">
+        <field name="name">Equipos de audio y video para presentación y composición</field>
+        <field name="fel_pa_code">4511</field>
+    </record>
+    
+    <record id="fel_pa_unspsc_category_227" model="fel_pa.tools.product_unspsc_category">
+        <field name="name">Equipo de vídeo, filmación o fotografía</field>
+        <field name="fel_pa_code">4512</field>
+    </record>
+    
+    <record id="fel_pa_unspsc_category_228" model="fel_pa.tools.product_unspsc_category">
+        <field name="name">Medios fotográficos y de grabación</field>
+        <field name="fel_pa_code">4513</field>
+    </record>
+    
+    <record id="fel_pa_unspsc_category_229" model="fel_pa.tools.product_unspsc_category">
+        <field name="name">Suministros fotográficos para cine</field>
+        <field name="fel_pa_code">4514</field>
+    </record>
+    
+    <record id="fel_pa_unspsc_category_230" model="fel_pa.tools.product_unspsc_category">
+        <field name="name">Equipos y Suministros de Defensa, Orden Público, Protección, Vigilancia y Seguridad</field>
+        <field name="fel_pa_code">4600</field>
+    </record>
+    
+    <record id="fel_pa_unspsc_category_231" model="fel_pa.tools.product_unspsc_category">
+        <field name="name">Armas ligeras y munición</field>
+        <field name="fel_pa_code">4610</field>
+    </record>
+    
+    <record id="fel_pa_unspsc_category_232" model="fel_pa.tools.product_unspsc_category">
+        <field name="name">Armas de guerra convencionales</field>
+        <field name="fel_pa_code">4611</field>
+    </record>
+    
+    <record id="fel_pa_unspsc_category_233" model="fel_pa.tools.product_unspsc_category">
+        <field name="name">Misiles</field>
+        <field name="fel_pa_code">4612</field>
+    </record>
+    
+    <record id="fel_pa_unspsc_category_234" model="fel_pa.tools.product_unspsc_category">
+        <field name="name">Cohetes y subsistemas</field>
+        <field name="fel_pa_code">4613</field>
+    </record>
+    
+    <record id="fel_pa_unspsc_category_235" model="fel_pa.tools.product_unspsc_category">
+        <field name="name">Lanzadores</field>
+        <field name="fel_pa_code">4614</field>
+    </record>
+    
+    <record id="fel_pa_unspsc_category_236" model="fel_pa.tools.product_unspsc_category">
+        <field name="name">Protección del Orden Público</field>
+        <field name="fel_pa_code">4615</field>
+    </record>
+    
+    <record id="fel_pa_unspsc_category_237" model="fel_pa.tools.product_unspsc_category">
+        <field name="name">Seguridad y control público</field>
+        <field name="fel_pa_code">4616</field>
+    </record>
+    
+    <record id="fel_pa_unspsc_category_238" model="fel_pa.tools.product_unspsc_category">
+        <field name="name">Seguridad, vigilancia y detección</field>
+        <field name="fel_pa_code">4617</field>
+    </record>
+    
+    <record id="fel_pa_unspsc_category_239" model="fel_pa.tools.product_unspsc_category">
+        <field name="name">Seguridad y protección personal</field>
+        <field name="fel_pa_code">4618</field>
+    </record>
+    
+    <record id="fel_pa_unspsc_category_240" model="fel_pa.tools.product_unspsc_category">
+        <field name="name">Protección contra incendios</field>
+        <field name="fel_pa_code">4619</field>
+    </record>
+    
+    <record id="fel_pa_unspsc_category_241" model="fel_pa.tools.product_unspsc_category">
+        <field name="name">Equipo de entrenamiento de seguridad física e industrial, defensa y orden público </field>
+        <field name="fel_pa_code">4620</field>
+    </record>
+    
+    <record id="fel_pa_unspsc_category_242" model="fel_pa.tools.product_unspsc_category">
+        <field name="name">Equipos de Limpieza y Suministros</field>
+        <field name="fel_pa_code">4700</field>
+    </record>
+    
+    <record id="fel_pa_unspsc_category_243" model="fel_pa.tools.product_unspsc_category">
+        <field name="name">Tratamiento, suministros y eliminación de agua y aguas residuales</field>
+        <field name="fel_pa_code">4710</field>
+    </record>
+    
+    <record id="fel_pa_unspsc_category_244" model="fel_pa.tools.product_unspsc_category">
+        <field name="name">Equipo industrial de lavandería y lavado en seco</field>
+        <field name="fel_pa_code">4711</field>
+    </record>
+    
+    <record id="fel_pa_unspsc_category_245" model="fel_pa.tools.product_unspsc_category">
+        <field name="name">Equipo de aseo</field>
+        <field name="fel_pa_code">4712</field>
+    </record>
+    
+    <record id="fel_pa_unspsc_category_246" model="fel_pa.tools.product_unspsc_category">
+        <field name="name">Suministros de aseo y limpieza</field>
+        <field name="fel_pa_code">4713</field>
+    </record>
+    
+    <record id="fel_pa_unspsc_category_247" model="fel_pa.tools.product_unspsc_category">
+        <field name="name">Maquinaria, Equipo y Suministros para la Industria de Servicios</field>
+        <field name="fel_pa_code">4800</field>
+    </record>
+    
+    <record id="fel_pa_unspsc_category_248" model="fel_pa.tools.product_unspsc_category">
+        <field name="name">Equipos de servicios de alimentación para instituciones</field>
+        <field name="fel_pa_code">4810</field>
+    </record>
+    
+    <record id="fel_pa_unspsc_category_249" model="fel_pa.tools.product_unspsc_category">
+        <field name="name">Máquinas expendedoras</field>
+        <field name="fel_pa_code">4811</field>
+    </record>
+    
+    <record id="fel_pa_unspsc_category_250" model="fel_pa.tools.product_unspsc_category">
+        <field name="name">Equipo de Juego o de Apostar</field>
+        <field name="fel_pa_code">4812</field>
+    </record>
+    
+    <record id="fel_pa_unspsc_category_251" model="fel_pa.tools.product_unspsc_category">
+        <field name="name">Equipo y materiales funerarios</field>
+        <field name="fel_pa_code">4813</field>
+    </record>
+    
+    <record id="fel_pa_unspsc_category_252" model="fel_pa.tools.product_unspsc_category">
+        <field name="name">Equipos, Suministros y Accesorios para Deportes y Recreación</field>
+        <field name="fel_pa_code">4900</field>
+    </record>
+    
+    <record id="fel_pa_unspsc_category_253" model="fel_pa.tools.product_unspsc_category">
+        <field name="name">Coleccionables y condecoraciones</field>
+        <field name="fel_pa_code">4910</field>
+    </record>
+    
+    <record id="fel_pa_unspsc_category_254" model="fel_pa.tools.product_unspsc_category">
+        <field name="name">Equipos y accesorios para acampada y exteriores</field>
+        <field name="fel_pa_code">4912</field>
+    </record>
+    
+    <record id="fel_pa_unspsc_category_255" model="fel_pa.tools.product_unspsc_category">
+        <field name="name">Equipos de pesca y caza</field>
+        <field name="fel_pa_code">4913</field>
+    </record>
+    
+    <record id="fel_pa_unspsc_category_256" model="fel_pa.tools.product_unspsc_category">
+        <field name="name">Equipos para deportes acuáticos</field>
+        <field name="fel_pa_code">4914</field>
+    </record>
+    
+    <record id="fel_pa_unspsc_category_257" model="fel_pa.tools.product_unspsc_category">
+        <field name="name">Equipos para deportes de invierno</field>
+        <field name="fel_pa_code">4915</field>
+    </record>
+    
+    <record id="fel_pa_unspsc_category_258" model="fel_pa.tools.product_unspsc_category">
+        <field name="name">Equipos deportivos para campos y canchas </field>
+        <field name="fel_pa_code">4916</field>
+    </record>
+    
+    <record id="fel_pa_unspsc_category_259" model="fel_pa.tools.product_unspsc_category">
+        <field name="name">Equipos de gimnasia y boxeo</field>
+        <field name="fel_pa_code">4917</field>
+    </record>
+    
+    <record id="fel_pa_unspsc_category_260" model="fel_pa.tools.product_unspsc_category">
+        <field name="name">Juegos, equipo de tiro y mesa</field>
+        <field name="fel_pa_code">4918</field>
+    </record>
+    
+    <record id="fel_pa_unspsc_category_261" model="fel_pa.tools.product_unspsc_category">
+        <field name="name">Equipo para entrenamiento físico</field>
+        <field name="fel_pa_code">4920</field>
+    </record>
+    
+    <record id="fel_pa_unspsc_category_262" model="fel_pa.tools.product_unspsc_category">
+        <field name="name">Otros deportes</field>
+        <field name="fel_pa_code">4921</field>
+    </record>
+    
+    <record id="fel_pa_unspsc_category_263" model="fel_pa.tools.product_unspsc_category">
+        <field name="name">Equipo y accesorios para deportes</field>
+        <field name="fel_pa_code">4922</field>
+    </record>
+    
+    <record id="fel_pa_unspsc_category_264" model="fel_pa.tools.product_unspsc_category">
+        <field name="name">Equipo de recreo, parques infantiles y equipo y suministros de natación y de spa</field>
+        <field name="fel_pa_code">4924</field>
+    </record>
+    
+    <record id="fel_pa_unspsc_category_265" model="fel_pa.tools.product_unspsc_category">
+        <field name="name">Alimentos, Bebidas y Tabaco</field>
+        <field name="fel_pa_code">5000</field>
+    </record>
+    
+    <record id="fel_pa_unspsc_category_266" model="fel_pa.tools.product_unspsc_category">
+        <field name="name">Frutos secos</field>
+        <field name="fel_pa_code">5010</field>
+    </record>
+    
+    <record id="fel_pa_unspsc_category_267" model="fel_pa.tools.product_unspsc_category">
+        <field name="name">Productos de carne y aves de corral</field>
+        <field name="fel_pa_code">5011</field>
+    </record>
+    
+    <record id="fel_pa_unspsc_category_268" model="fel_pa.tools.product_unspsc_category">
+        <field name="name">Pescados y mariscos</field>
+        <field name="fel_pa_code">5012</field>
+    </record>
+    
+    <record id="fel_pa_unspsc_category_269" model="fel_pa.tools.product_unspsc_category">
+        <field name="name">Productos lácteos y huevos</field>
+        <field name="fel_pa_code">5013</field>
+    </record>
+    
+    <record id="fel_pa_unspsc_category_270" model="fel_pa.tools.product_unspsc_category">
+        <field name="name">Aceites y grasas comestibles</field>
+        <field name="fel_pa_code">5015</field>
+    </record>
+    
+    <record id="fel_pa_unspsc_category_271" model="fel_pa.tools.product_unspsc_category">
+        <field name="name">Chocolates, azúcares, edulcorantes y productos de confitería</field>
+        <field name="fel_pa_code">5016</field>
+    </record>
+    
+    <record id="fel_pa_unspsc_category_272" model="fel_pa.tools.product_unspsc_category">
+        <field name="name">Condimentos y conservantes</field>
+        <field name="fel_pa_code">5017</field>
+    </record>
+    
+    <record id="fel_pa_unspsc_category_273" model="fel_pa.tools.product_unspsc_category">
+        <field name="name">Productos de panadería</field>
+        <field name="fel_pa_code">5018</field>
+    </record>
+    
+    <record id="fel_pa_unspsc_category_274" model="fel_pa.tools.product_unspsc_category">
+        <field name="name">Alimentos preparados y conservados</field>
+        <field name="fel_pa_code">5019</field>
+    </record>
+    
+    <record id="fel_pa_unspsc_category_275" model="fel_pa.tools.product_unspsc_category">
+        <field name="name">Bebidas</field>
+        <field name="fel_pa_code">5020</field>
+    </record>
+    
+    <record id="fel_pa_unspsc_category_276" model="fel_pa.tools.product_unspsc_category">
+        <field name="name">Tabaco y productos de fumar y substitutos</field>
+        <field name="fel_pa_code">5021</field>
+    </record>
+    
+    <record id="fel_pa_unspsc_category_277" model="fel_pa.tools.product_unspsc_category">
+        <field name="name">Productos de cereales y legumbres</field>
+        <field name="fel_pa_code">5022</field>
+    </record>
+    
+    <record id="fel_pa_unspsc_category_278" model="fel_pa.tools.product_unspsc_category">
+        <field name="name">Fruta fresca</field>
+        <field name="fel_pa_code">5030</field>
+    </record>
+    
+    <record id="fel_pa_unspsc_category_279" model="fel_pa.tools.product_unspsc_category">
+        <field name="name">Fruta orgánica fresca</field>
+        <field name="fel_pa_code">5031</field>
+    </record>
+    
+    <record id="fel_pa_unspsc_category_280" model="fel_pa.tools.product_unspsc_category">
+        <field name="name">Fruta seca</field>
+        <field name="fel_pa_code">5032</field>
+    </record>
+    
+    <record id="fel_pa_unspsc_category_281" model="fel_pa.tools.product_unspsc_category">
+        <field name="name">Fruta orgánica seca</field>
+        <field name="fel_pa_code">5033</field>
+    </record>
+    
+    <record id="fel_pa_unspsc_category_282" model="fel_pa.tools.product_unspsc_category">
+        <field name="name">Fruta congelada</field>
+        <field name="fel_pa_code">5034</field>
+    </record>
+    
+    <record id="fel_pa_unspsc_category_283" model="fel_pa.tools.product_unspsc_category">
+        <field name="name">Fruta orgánica congelada</field>
+        <field name="fel_pa_code">5035</field>
+    </record>
+    
+    <record id="fel_pa_unspsc_category_284" model="fel_pa.tools.product_unspsc_category">
+        <field name="name">Fruta en lata o en frasco</field>
+        <field name="fel_pa_code">5036</field>
+    </record>
+    
+    <record id="fel_pa_unspsc_category_285" model="fel_pa.tools.product_unspsc_category">
+        <field name="name">Fruta orgánica en lata o en frasco</field>
+        <field name="fel_pa_code">5037</field>
+    </record>
+    
+    <record id="fel_pa_unspsc_category_286" model="fel_pa.tools.product_unspsc_category">
+        <field name="name">Puré de frutas</field>
+        <field name="fel_pa_code">5038</field>
+    </record>
+    
+    <record id="fel_pa_unspsc_category_287" model="fel_pa.tools.product_unspsc_category">
+        <field name="name">Vegetales frescos</field>
+        <field name="fel_pa_code">5040</field>
+    </record>
+    
+    <record id="fel_pa_unspsc_category_288" model="fel_pa.tools.product_unspsc_category">
+        <field name="name">Vegetales orgánicos frescos</field>
+        <field name="fel_pa_code">5041</field>
+    </record>
+    
+    <record id="fel_pa_unspsc_category_289" model="fel_pa.tools.product_unspsc_category">
+        <field name="name">Vegetales secos</field>
+        <field name="fel_pa_code">5042</field>
+    </record>
+    
+    <record id="fel_pa_unspsc_category_290" model="fel_pa.tools.product_unspsc_category">
+        <field name="name">Vegetales orgánicos secos</field>
+        <field name="fel_pa_code">5043</field>
+    </record>
+    
+    <record id="fel_pa_unspsc_category_291" model="fel_pa.tools.product_unspsc_category">
+        <field name="name">Vegetales congelados</field>
+        <field name="fel_pa_code">5044</field>
+    </record>
+    
+    <record id="fel_pa_unspsc_category_292" model="fel_pa.tools.product_unspsc_category">
+        <field name="name">Vegetales orgánicos congelados</field>
+        <field name="fel_pa_code">5045</field>
+    </record>
+    
+    <record id="fel_pa_unspsc_category_293" model="fel_pa.tools.product_unspsc_category">
+        <field name="name">Vegetales en lata o en frasco</field>
+        <field name="fel_pa_code">5046</field>
+    </record>
+    
+    <record id="fel_pa_unspsc_category_294" model="fel_pa.tools.product_unspsc_category">
+        <field name="name">Vegetales orgánicos en lata o en frasco</field>
+        <field name="fel_pa_code">5047</field>
+    </record>
+    
+    <record id="fel_pa_unspsc_category_295" model="fel_pa.tools.product_unspsc_category">
+        <field name="name">Medicamentos y Productos Farmacéuticos</field>
+        <field name="fel_pa_code">5100</field>
+    </record>
+    
+    <record id="fel_pa_unspsc_category_296" model="fel_pa.tools.product_unspsc_category">
+        <field name="name">Medicamentos anti infecciosos</field>
+        <field name="fel_pa_code">5110</field>
+    </record>
+    
+    <record id="fel_pa_unspsc_category_297" model="fel_pa.tools.product_unspsc_category">
+        <field name="name">Agentes antitumorales</field>
+        <field name="fel_pa_code">5111</field>
+    </record>
+    
+    <record id="fel_pa_unspsc_category_298" model="fel_pa.tools.product_unspsc_category">
+        <field name="name">Medicamentos cardiovasculares</field>
+        <field name="fel_pa_code">5112</field>
+    </record>
+    
+    <record id="fel_pa_unspsc_category_299" model="fel_pa.tools.product_unspsc_category">
+        <field name="name">Medicamentos hematólogos</field>
+        <field name="fel_pa_code">5113</field>
+    </record>
+    
+    <record id="fel_pa_unspsc_category_300" model="fel_pa.tools.product_unspsc_category">
+        <field name="name">Medicamentos para el sistema nervioso central</field>
+        <field name="fel_pa_code">5114</field>
+    </record>
+    
+    <record id="fel_pa_unspsc_category_301" model="fel_pa.tools.product_unspsc_category">
+        <field name="name">Medicamentos para el sistema nervioso autónomo</field>
+        <field name="fel_pa_code">5115</field>
+    </record>
+    
+    <record id="fel_pa_unspsc_category_302" model="fel_pa.tools.product_unspsc_category">
+        <field name="name">Medicamentos que afectan al sistema respiratorio</field>
+        <field name="fel_pa_code">5116</field>
+    </record>
+    
+    <record id="fel_pa_unspsc_category_303" model="fel_pa.tools.product_unspsc_category">
+        <field name="name">Medicamentos que afectan al sistema gastrointestinal</field>
+        <field name="fel_pa_code">5117</field>
+    </record>
+    
+    <record id="fel_pa_unspsc_category_304" model="fel_pa.tools.product_unspsc_category">
+        <field name="name">Hormonas y antagonistas hormonales </field>
+        <field name="fel_pa_code">5118</field>
+    </record>
+    
+    <record id="fel_pa_unspsc_category_305" model="fel_pa.tools.product_unspsc_category">
+        <field name="name">Agentes que afectan el agua y los electrolitos</field>
+        <field name="fel_pa_code">5119</field>
+    </record>
+    
+    <record id="fel_pa_unspsc_category_306" model="fel_pa.tools.product_unspsc_category">
+        <field name="name">Medicamentos inmunomoduladores</field>
+        <field name="fel_pa_code">5120</field>
+    </record>
+    
+    <record id="fel_pa_unspsc_category_307" model="fel_pa.tools.product_unspsc_category">
+        <field name="name">Categorías de medicamentos varios</field>
+        <field name="fel_pa_code">5121</field>
+    </record>
+    
+    <record id="fel_pa_unspsc_category_308" model="fel_pa.tools.product_unspsc_category">
+        <field name="name">Fármacos que afectan a los oídos, los ojos, la nariz y la piel</field>
+        <field name="fel_pa_code">5124</field>
+    </record>
+    
+    <record id="fel_pa_unspsc_category_309" model="fel_pa.tools.product_unspsc_category">
+        <field name="name">Suplementos alimenticios veterinarios</field>
+        <field name="fel_pa_code">5125</field>
+    </record>
+    
+    <record id="fel_pa_unspsc_category_310" model="fel_pa.tools.product_unspsc_category">
+        <field name="name">Artículos Domésticos, Suministros y Productos Electrónicos de Consumo</field>
+        <field name="fel_pa_code">5200</field>
+    </record>
+    
+    <record id="fel_pa_unspsc_category_311" model="fel_pa.tools.product_unspsc_category">
+        <field name="name">Revestimientos de suelos</field>
+        <field name="fel_pa_code">5210</field>
+    </record>
+    
+    <record id="fel_pa_unspsc_category_312" model="fel_pa.tools.product_unspsc_category">
+        <field name="name">Ropa de cama, mantelerías, paños de cocina y toallas</field>
+        <field name="fel_pa_code">5212</field>
+    </record>
+    
+    <record id="fel_pa_unspsc_category_313" model="fel_pa.tools.product_unspsc_category">
+        <field name="name">Tratamientos de ventanas</field>
+        <field name="fel_pa_code">5213</field>
+    </record>
+    
+    <record id="fel_pa_unspsc_category_314" model="fel_pa.tools.product_unspsc_category">
+        <field name="name">Aparatos electrodomésticos</field>
+        <field name="fel_pa_code">5214</field>
+    </record>
+    
+    <record id="fel_pa_unspsc_category_315" model="fel_pa.tools.product_unspsc_category">
+        <field name="name">Utensilios de cocina domésticos</field>
+        <field name="fel_pa_code">5215</field>
+    </record>
+    
+    <record id="fel_pa_unspsc_category_316" model="fel_pa.tools.product_unspsc_category">
+        <field name="name">Electrónica de consumo</field>
+        <field name="fel_pa_code">5216</field>
+    </record>
+    
+    <record id="fel_pa_unspsc_category_317" model="fel_pa.tools.product_unspsc_category">
+        <field name="name">Tratamientos de pared doméstica</field>
+        <field name="fel_pa_code">5217</field>
+    </record>
+    
+    <record id="fel_pa_unspsc_category_318" model="fel_pa.tools.product_unspsc_category">
+        <field name="name">Ropa, Maletas y Productos de Aseo Personal</field>
+        <field name="fel_pa_code">5300</field>
+    </record>
+    
+    <record id="fel_pa_unspsc_category_319" model="fel_pa.tools.product_unspsc_category">
+        <field name="name">Ropa</field>
+        <field name="fel_pa_code">5310</field>
+    </record>
+    
+    <record id="fel_pa_unspsc_category_320" model="fel_pa.tools.product_unspsc_category">
+        <field name="name">Calzado</field>
+        <field name="fel_pa_code">5311</field>
+    </record>
+    
+    <record id="fel_pa_unspsc_category_321" model="fel_pa.tools.product_unspsc_category">
+        <field name="name">Maletas, bolsos de mano, mochilas y estuches</field>
+        <field name="fel_pa_code">5312</field>
+    </record>
+    
+    <record id="fel_pa_unspsc_category_322" model="fel_pa.tools.product_unspsc_category">
+        <field name="name">Artículos de tocador y cuidado personal</field>
+        <field name="fel_pa_code">5313</field>
+    </record>
+    
+    <record id="fel_pa_unspsc_category_323" model="fel_pa.tools.product_unspsc_category">
+        <field name="name">Fuentes y accesorios de costura</field>
+        <field name="fel_pa_code">5314</field>
+    </record>
+    
+    <record id="fel_pa_unspsc_category_324" model="fel_pa.tools.product_unspsc_category">
+        <field name="name">Productos para Relojería, Joyería y Piedras Preciosas</field>
+        <field name="fel_pa_code">5400</field>
+    </record>
+    
+    <record id="fel_pa_unspsc_category_325" model="fel_pa.tools.product_unspsc_category">
+        <field name="name">Joyería</field>
+        <field name="fel_pa_code">5410</field>
+    </record>
+    
+    <record id="fel_pa_unspsc_category_326" model="fel_pa.tools.product_unspsc_category">
+        <field name="name">Relojes</field>
+        <field name="fel_pa_code">5411</field>
+    </record>
+    
+    <record id="fel_pa_unspsc_category_327" model="fel_pa.tools.product_unspsc_category">
+        <field name="name">Gemas</field>
+        <field name="fel_pa_code">5412</field>
+    </record>
+    
+    <record id="fel_pa_unspsc_category_328" model="fel_pa.tools.product_unspsc_category">
+        <field name="name">Publicaciones Impresas, Publicaciones Electrónicas y Accesorios</field>
+        <field name="fel_pa_code">5500</field>
+    </record>
+    
+    <record id="fel_pa_unspsc_category_329" model="fel_pa.tools.product_unspsc_category">
+        <field name="name">Medios impresos</field>
+        <field name="fel_pa_code">5510</field>
+    </record>
+    
+    <record id="fel_pa_unspsc_category_330" model="fel_pa.tools.product_unspsc_category">
+        <field name="name">Material electrónico de referencia</field>
+        <field name="fel_pa_code">5511</field>
+    </record>
+    
+    <record id="fel_pa_unspsc_category_331" model="fel_pa.tools.product_unspsc_category">
+        <field name="name">Etiquetado y accesorios</field>
+        <field name="fel_pa_code">5512</field>
+    </record>
+    
+    <record id="fel_pa_unspsc_category_332" model="fel_pa.tools.product_unspsc_category">
+        <field name="name">Muebles, Mobiliario y Decoración</field>
+        <field name="fel_pa_code">5600</field>
+    </record>
+    
+    <record id="fel_pa_unspsc_category_333" model="fel_pa.tools.product_unspsc_category">
+        <field name="name">Muebles de alojamiento</field>
+        <field name="fel_pa_code">5610</field>
+    </record>
+    
+    <record id="fel_pa_unspsc_category_334" model="fel_pa.tools.product_unspsc_category">
+        <field name="name">Muebles comerciales e industriales</field>
+        <field name="fel_pa_code">5611</field>
+    </record>
+    
+    <record id="fel_pa_unspsc_category_335" model="fel_pa.tools.product_unspsc_category">
+        <field name="name">Mobiliario institucional, escolar y educativo y accesorios</field>
+        <field name="fel_pa_code">5612</field>
+    </record>
+    
+    <record id="fel_pa_unspsc_category_336" model="fel_pa.tools.product_unspsc_category">
+        <field name="name">Muebles y accesorios para mercadeo</field>
+        <field name="fel_pa_code">5613</field>
+    </record>
+    
+    <record id="fel_pa_unspsc_category_337" model="fel_pa.tools.product_unspsc_category">
+        <field name="name">Adornos para el hogar</field>
+        <field name="fel_pa_code">5614</field>
+    </record>
+    
+    <record id="fel_pa_unspsc_category_338" model="fel_pa.tools.product_unspsc_category">
+        <field name="name">Instrumentos Musicales, Juegos, Juguetes, Artes, Artesanías y Equipo educativo, Materiales, Accesorios y Suministros</field>
+        <field name="fel_pa_code">6000</field>
+    </record>
+    
+    <record id="fel_pa_unspsc_category_339" model="fel_pa.tools.product_unspsc_category">
+        <field name="name">Materiales didácticos profesionales y de desarrollo y accesorios y suministros</field>
+        <field name="fel_pa_code">6010</field>
+    </record>
+    
+    <record id="fel_pa_unspsc_category_340" model="fel_pa.tools.product_unspsc_category">
+        <field name="name">Decoraciones y suministros del aula</field>
+        <field name="fel_pa_code">6011</field>
+    </record>
+    
+    <record id="fel_pa_unspsc_category_341" model="fel_pa.tools.product_unspsc_category">
+        <field name="name">Equipo, accesorios y suministros de arte y manualidades </field>
+        <field name="fel_pa_code">6012</field>
+    </record>
+    
+    <record id="fel_pa_unspsc_category_342" model="fel_pa.tools.product_unspsc_category">
+        <field name="name">Instrumentos musicales, piezas y accesorios</field>
+        <field name="fel_pa_code">6013</field>
+    </record>
+    
+    <record id="fel_pa_unspsc_category_343" model="fel_pa.tools.product_unspsc_category">
+        <field name="name">Juguetes y juegos</field>
+        <field name="fel_pa_code">6014</field>
+    </record>
+    
+    <record id="fel_pa_unspsc_category_344" model="fel_pa.tools.product_unspsc_category">
+        <field name="name">Servicios de Contratación Agrícola, Pesquera, Forestal y de Fauna</field>
+        <field name="fel_pa_code">7000</field>
+    </record>
+    
+    <record id="fel_pa_unspsc_category_345" model="fel_pa.tools.product_unspsc_category">
+        <field name="name">Pesquerías y acuicultura</field>
+        <field name="fel_pa_code">7010</field>
+    </record>
+    
+    <record id="fel_pa_unspsc_category_346" model="fel_pa.tools.product_unspsc_category">
+        <field name="name">Horticultura</field>
+        <field name="fel_pa_code">7011</field>
+    </record>
+    
+    <record id="fel_pa_unspsc_category_347" model="fel_pa.tools.product_unspsc_category">
+        <field name="name">Servicios de animales vivos</field>
+        <field name="fel_pa_code">7012</field>
+    </record>
+    
+    <record id="fel_pa_unspsc_category_348" model="fel_pa.tools.product_unspsc_category">
+        <field name="name">Preparación, gestión y protección del terreno y del suelo</field>
+        <field name="fel_pa_code">7013</field>
+    </record>
+    
+    <record id="fel_pa_unspsc_category_349" model="fel_pa.tools.product_unspsc_category">
+        <field name="name">Producción, gestión y protección de cultivos</field>
+        <field name="fel_pa_code">7014</field>
+    </record>
+    
+    <record id="fel_pa_unspsc_category_350" model="fel_pa.tools.product_unspsc_category">
+        <field name="name">Silvicultura</field>
+        <field name="fel_pa_code">7015</field>
+    </record>
+    
+    <record id="fel_pa_unspsc_category_351" model="fel_pa.tools.product_unspsc_category">
+        <field name="name">Fauna y flora silvestres</field>
+        <field name="fel_pa_code">7016</field>
+    </record>
+    
+    <record id="fel_pa_unspsc_category_352" model="fel_pa.tools.product_unspsc_category">
+        <field name="name">Desarrollo y vigilancia de recursos hidráulicos</field>
+        <field name="fel_pa_code">7017</field>
+    </record>
+    
+    <record id="fel_pa_unspsc_category_353" model="fel_pa.tools.product_unspsc_category">
+        <field name="name">Servicios de Minería, Petróleo y Gas</field>
+        <field name="fel_pa_code">7100</field>
+    </record>
+    
+    <record id="fel_pa_unspsc_category_354" model="fel_pa.tools.product_unspsc_category">
+        <field name="name">Servicios de minería</field>
+        <field name="fel_pa_code">7110</field>
+    </record>
+    
+    <record id="fel_pa_unspsc_category_355" model="fel_pa.tools.product_unspsc_category">
+        <field name="name">Servicios de perforación y prospección petrolífera y de gas</field>
+        <field name="fel_pa_code">7111</field>
+    </record>
+    
+    <record id="fel_pa_unspsc_category_356" model="fel_pa.tools.product_unspsc_category">
+        <field name="name">Servicios de construcción y perforación de pozos</field>
+        <field name="fel_pa_code">7112</field>
+    </record>
+    
+    <record id="fel_pa_unspsc_category_357" model="fel_pa.tools.product_unspsc_category">
+        <field name="name">Servicios de aumento de la extracción y producción de gas y petróleo</field>
+        <field name="fel_pa_code">7113</field>
+    </record>
+    
+    <record id="fel_pa_unspsc_category_358" model="fel_pa.tools.product_unspsc_category">
+        <field name="name">Servicios de restauración y recuperación de gas y petróleo</field>
+        <field name="fel_pa_code">7114</field>
+    </record>
+    
+    <record id="fel_pa_unspsc_category_359" model="fel_pa.tools.product_unspsc_category">
+        <field name="name">Servicios de procesamiento y gestión de datos de petróleo y gas</field>
+        <field name="fel_pa_code">7115</field>
+    </record>
+    
+    <record id="fel_pa_unspsc_category_360" model="fel_pa.tools.product_unspsc_category">
+        <field name="name">Servicios de gerencia de proyectos en pozos de petróleo y gas</field>
+        <field name="fel_pa_code">7116</field>
+    </record>
+    
+    <record id="fel_pa_unspsc_category_361" model="fel_pa.tools.product_unspsc_category">
+        <field name="name">Servicios de Edificación, Construcción de Instalaciones y Mantenimiento</field>
+        <field name="fel_pa_code">7200</field>
+    </record>
+    
+    <record id="fel_pa_unspsc_category_362" model="fel_pa.tools.product_unspsc_category">
+        <field name="name">Servicios de mantenimiento y reparaciones de construcciones e instalaciones</field>
+        <field name="fel_pa_code">7210</field>
+    </record>
+    
+    <record id="fel_pa_unspsc_category_363" model="fel_pa.tools.product_unspsc_category">
+        <field name="name">Servicios de construcción de edificaciones residenciales</field>
+        <field name="fel_pa_code">7211</field>
+    </record>
+    
+    <record id="fel_pa_unspsc_category_364" model="fel_pa.tools.product_unspsc_category">
+        <field name="name">Servicios de construcción de edificaciones no residenciales</field>
+        <field name="fel_pa_code">7212</field>
+    </record>
+    
+    <record id="fel_pa_unspsc_category_365" model="fel_pa.tools.product_unspsc_category">
+        <field name="name">Servicios de construcción pesada</field>
+        <field name="fel_pa_code">7214</field>
+    </record>
+    
+    <record id="fel_pa_unspsc_category_366" model="fel_pa.tools.product_unspsc_category">
+        <field name="name">Servicios de mantenimiento y construcción de comercio especializado</field>
+        <field name="fel_pa_code">7215</field>
+    </record>
+    
+    <record id="fel_pa_unspsc_category_367" model="fel_pa.tools.product_unspsc_category">
+        <field name="name">Servicios de Producción Industrial y Manufactura</field>
+        <field name="fel_pa_code">7300</field>
+    </record>
+    
+    <record id="fel_pa_unspsc_category_368" model="fel_pa.tools.product_unspsc_category">
+        <field name="name">Industrias de plásticos y productos químicos</field>
+        <field name="fel_pa_code">7310</field>
+    </record>
+    
+    <record id="fel_pa_unspsc_category_369" model="fel_pa.tools.product_unspsc_category">
+        <field name="name">Industrias de la madera y el papel</field>
+        <field name="fel_pa_code">7311</field>
+    </record>
+    
+    <record id="fel_pa_unspsc_category_370" model="fel_pa.tools.product_unspsc_category">
+        <field name="name">Industrias del metal y de minerales</field>
+        <field name="fel_pa_code">7312</field>
+    </record>
+    
+    <record id="fel_pa_unspsc_category_371" model="fel_pa.tools.product_unspsc_category">
+        <field name="name">Industrias de alimentos y bebidas</field>
+        <field name="fel_pa_code">7313</field>
+    </record>
+    
+    <record id="fel_pa_unspsc_category_372" model="fel_pa.tools.product_unspsc_category">
+        <field name="name">Industrias de fibras, textiles y de tejidos</field>
+        <field name="fel_pa_code">7314</field>
+    </record>
+    
+    <record id="fel_pa_unspsc_category_373" model="fel_pa.tools.product_unspsc_category">
+        <field name="name">Servicios de apoyo a la fabricación</field>
+        <field name="fel_pa_code">7315</field>
+    </record>
+    
+    <record id="fel_pa_unspsc_category_374" model="fel_pa.tools.product_unspsc_category">
+        <field name="name">Fabricación de maquinaria y equipo de transporte</field>
+        <field name="fel_pa_code">7316</field>
+    </record>
+    
+    <record id="fel_pa_unspsc_category_375" model="fel_pa.tools.product_unspsc_category">
+        <field name="name">Fabricación de productos eléctricos e instrumentos de precisión</field>
+        <field name="fel_pa_code">7317</field>
+    </record>
+    
+    <record id="fel_pa_unspsc_category_376" model="fel_pa.tools.product_unspsc_category">
+        <field name="name">Servicios de maquinado y procesado</field>
+        <field name="fel_pa_code">7318</field>
+    </record>
+    
+    <record id="fel_pa_unspsc_category_377" model="fel_pa.tools.product_unspsc_category">
+        <field name="name">Servicios de Limpieza, Descontaminación y Tratamiento de Residuos</field>
+        <field name="fel_pa_code">7600</field>
+    </record>
+    
+    <record id="fel_pa_unspsc_category_378" model="fel_pa.tools.product_unspsc_category">
+        <field name="name">Servicios de descontaminación</field>
+        <field name="fel_pa_code">7610</field>
+    </record>
+    
+    <record id="fel_pa_unspsc_category_379" model="fel_pa.tools.product_unspsc_category">
+        <field name="name">Servicios de aseo y limpieza</field>
+        <field name="fel_pa_code">7611</field>
+    </record>
+    
+    <record id="fel_pa_unspsc_category_380" model="fel_pa.tools.product_unspsc_category">
+        <field name="name">Eliminación y tratamiento de desechos</field>
+        <field name="fel_pa_code">7612</field>
+    </record>
+    
+    <record id="fel_pa_unspsc_category_381" model="fel_pa.tools.product_unspsc_category">
+        <field name="name">Limpieza de residuos tóxicos y peligrosos</field>
+        <field name="fel_pa_code">7613</field>
+    </record>
+    
+    <record id="fel_pa_unspsc_category_382" model="fel_pa.tools.product_unspsc_category">
+        <field name="name">Servicios Medioambientales</field>
+        <field name="fel_pa_code">7700</field>
+    </record>
+    
+    <record id="fel_pa_unspsc_category_383" model="fel_pa.tools.product_unspsc_category">
+        <field name="name">Gestión medioambiental</field>
+        <field name="fel_pa_code">7710</field>
+    </record>
+    
+    <record id="fel_pa_unspsc_category_384" model="fel_pa.tools.product_unspsc_category">
+        <field name="name">Protección medioambiental</field>
+        <field name="fel_pa_code">7711</field>
+    </record>
+    
+    <record id="fel_pa_unspsc_category_385" model="fel_pa.tools.product_unspsc_category">
+        <field name="name">Seguimiento, control y rehabilitación de la contaminación</field>
+        <field name="fel_pa_code">7712</field>
+    </record>
+    
+    <record id="fel_pa_unspsc_category_386" model="fel_pa.tools.product_unspsc_category">
+        <field name="name">Servicios de seguimiento, control o rehabilitación de contaminantes</field>
+        <field name="fel_pa_code">7713</field>
+    </record>
+    
+    <record id="fel_pa_unspsc_category_387" model="fel_pa.tools.product_unspsc_category">
+        <field name="name">Servicios de Transporte, Almacenaje y Correo</field>
+        <field name="fel_pa_code">7800</field>
+    </record>
+    
+    <record id="fel_pa_unspsc_category_388" model="fel_pa.tools.product_unspsc_category">
+        <field name="name">Transporte de correo y carga</field>
+        <field name="fel_pa_code">7810</field>
+    </record>
+    
+    <record id="fel_pa_unspsc_category_389" model="fel_pa.tools.product_unspsc_category">
+        <field name="name">Transporte de pasajeros</field>
+        <field name="fel_pa_code">7811</field>
+    </record>
+    
+    <record id="fel_pa_unspsc_category_390" model="fel_pa.tools.product_unspsc_category">
+        <field name="name">Manejo y embalaje de material</field>
+        <field name="fel_pa_code">7812</field>
+    </record>
+    
+    <record id="fel_pa_unspsc_category_391" model="fel_pa.tools.product_unspsc_category">
+        <field name="name">Almacenaje</field>
+        <field name="fel_pa_code">7813</field>
+    </record>
+    
+    <record id="fel_pa_unspsc_category_392" model="fel_pa.tools.product_unspsc_category">
+        <field name="name">Servicios de transporte</field>
+        <field name="fel_pa_code">7814</field>
+    </record>
+    
+    <record id="fel_pa_unspsc_category_393" model="fel_pa.tools.product_unspsc_category">
+        <field name="name">Servicios de mantenimiento o reparaciones de transportes</field>
+        <field name="fel_pa_code">7818</field>
+    </record>
+    
+    <record id="fel_pa_unspsc_category_394" model="fel_pa.tools.product_unspsc_category">
+        <field name="name">Servicios de Gestión, Servicios Profesionales de Empresa y Servicios Administrativos</field>
+        <field name="fel_pa_code">8000</field>
+    </record>
+    
+    <record id="fel_pa_unspsc_category_395" model="fel_pa.tools.product_unspsc_category">
+        <field name="name">Servicios de asesoría de gestión</field>
+        <field name="fel_pa_code">8010</field>
+    </record>
+    
+    <record id="fel_pa_unspsc_category_396" model="fel_pa.tools.product_unspsc_category">
+        <field name="name">Servicios de recursos humanos</field>
+        <field name="fel_pa_code">8011</field>
+    </record>
+    
+    <record id="fel_pa_unspsc_category_397" model="fel_pa.tools.product_unspsc_category">
+        <field name="name">Servicios legales</field>
+        <field name="fel_pa_code">8012</field>
+    </record>
+    
+    <record id="fel_pa_unspsc_category_398" model="fel_pa.tools.product_unspsc_category">
+        <field name="name">Servicios inmobiliarios</field>
+        <field name="fel_pa_code">8013</field>
+    </record>
+    
+    <record id="fel_pa_unspsc_category_399" model="fel_pa.tools.product_unspsc_category">
+        <field name="name">Comercialización y distribución</field>
+        <field name="fel_pa_code">8014</field>
+    </record>
+    
+    <record id="fel_pa_unspsc_category_400" model="fel_pa.tools.product_unspsc_category">
+        <field name="name">Política comercial y servicios</field>
+        <field name="fel_pa_code">8015</field>
+    </record>
+    
+    <record id="fel_pa_unspsc_category_401" model="fel_pa.tools.product_unspsc_category">
+        <field name="name">Servicios de administración de empresas</field>
+        <field name="fel_pa_code">8016</field>
+    </record>
+    
+    <record id="fel_pa_unspsc_category_402" model="fel_pa.tools.product_unspsc_category">
+        <field name="name">Servicios Basados en Ingeniería, Investigación y Tecnología</field>
+        <field name="fel_pa_code">8100</field>
+    </record>
+    
+    <record id="fel_pa_unspsc_category_403" model="fel_pa.tools.product_unspsc_category">
+        <field name="name">Servicios profesionales de ingeniería</field>
+        <field name="fel_pa_code">8110</field>
+    </record>
+    
+    <record id="fel_pa_unspsc_category_404" model="fel_pa.tools.product_unspsc_category">
+        <field name="name">Servicios informáticos</field>
+        <field name="fel_pa_code">8111</field>
+    </record>
+    
+    <record id="fel_pa_unspsc_category_405" model="fel_pa.tools.product_unspsc_category">
+        <field name="name">Economía</field>
+        <field name="fel_pa_code">8112</field>
+    </record>
+    
+    <record id="fel_pa_unspsc_category_406" model="fel_pa.tools.product_unspsc_category">
+        <field name="name">Estadística</field>
+        <field name="fel_pa_code">8113</field>
+    </record>
+    
+    <record id="fel_pa_unspsc_category_407" model="fel_pa.tools.product_unspsc_category">
+        <field name="name">Tecnologías de fabricación</field>
+        <field name="fel_pa_code">8114</field>
+    </record>
+    
+    <record id="fel_pa_unspsc_category_408" model="fel_pa.tools.product_unspsc_category">
+        <field name="name">Servicios de pedología</field>
+        <field name="fel_pa_code">8115</field>
+    </record>
+    
+    <record id="fel_pa_unspsc_category_409" model="fel_pa.tools.product_unspsc_category">
+        <field name="name">Entrega de servicios de tecnología de información</field>
+        <field name="fel_pa_code">8116</field>
+    </record>
+    
+    <record id="fel_pa_unspsc_category_410" model="fel_pa.tools.product_unspsc_category">
+        <field name="name">Servicios Editoriales, de Diseño, de Artes Gráficas y Bellas Artes</field>
+        <field name="fel_pa_code">8200</field>
+    </record>
+    
+    <record id="fel_pa_unspsc_category_411" model="fel_pa.tools.product_unspsc_category">
+        <field name="name">Publicidad</field>
+        <field name="fel_pa_code">8210</field>
+    </record>
+    
+    <record id="fel_pa_unspsc_category_412" model="fel_pa.tools.product_unspsc_category">
+        <field name="name">Escritura y traducciones</field>
+        <field name="fel_pa_code">8211</field>
+    </record>
+    
+    <record id="fel_pa_unspsc_category_413" model="fel_pa.tools.product_unspsc_category">
+        <field name="name">Servicios de reproducción</field>
+        <field name="fel_pa_code">8212</field>
+    </record>
+    
+    <record id="fel_pa_unspsc_category_414" model="fel_pa.tools.product_unspsc_category">
+        <field name="name">Servicios fotográficos</field>
+        <field name="fel_pa_code">8213</field>
+    </record>
+    
+    <record id="fel_pa_unspsc_category_415" model="fel_pa.tools.product_unspsc_category">
+        <field name="name">Diseño gráfico</field>
+        <field name="fel_pa_code">8214</field>
+    </record>
+    
+    <record id="fel_pa_unspsc_category_416" model="fel_pa.tools.product_unspsc_category">
+        <field name="name">Artistas e intérpretes profesionales</field>
+        <field name="fel_pa_code">8215</field>
+    </record>
+    
+    <record id="fel_pa_unspsc_category_417" model="fel_pa.tools.product_unspsc_category">
+        <field name="name">Servicios Públicos y Servicios Relacionados con el Sector Público</field>
+        <field name="fel_pa_code">8300</field>
+    </record>
+    
+    <record id="fel_pa_unspsc_category_418" model="fel_pa.tools.product_unspsc_category">
+        <field name="name">Servicios públicos</field>
+        <field name="fel_pa_code">8310</field>
+    </record>
+    
+    <record id="fel_pa_unspsc_category_419" model="fel_pa.tools.product_unspsc_category">
+        <field name="name">Servicios de medios de telecomunicaciones</field>
+        <field name="fel_pa_code">8311</field>
+    </record>
+    
+    <record id="fel_pa_unspsc_category_420" model="fel_pa.tools.product_unspsc_category">
+        <field name="name">Servicios de información</field>
+        <field name="fel_pa_code">8312</field>
+    </record>
+    
+    <record id="fel_pa_unspsc_category_421" model="fel_pa.tools.product_unspsc_category">
+        <field name="name">Servicios Financieros y de Seguros</field>
+        <field name="fel_pa_code">8400</field>
+    </record>
+    
+    <record id="fel_pa_unspsc_category_422" model="fel_pa.tools.product_unspsc_category">
+        <field name="name">Finanzas de desarrollo</field>
+        <field name="fel_pa_code">8410</field>
+    </record>
+    
+    <record id="fel_pa_unspsc_category_423" model="fel_pa.tools.product_unspsc_category">
+        <field name="name">Servicios de contabilidad y auditorias</field>
+        <field name="fel_pa_code">8411</field>
+    </record>
+    
+    <record id="fel_pa_unspsc_category_424" model="fel_pa.tools.product_unspsc_category">
+        <field name="name">Banca e inversiones</field>
+        <field name="fel_pa_code">8412</field>
+    </record>
+    
+    <record id="fel_pa_unspsc_category_425" model="fel_pa.tools.product_unspsc_category">
+        <field name="name">Servicios de seguros y pensiones</field>
+        <field name="fel_pa_code">8413</field>
+    </record>
+    
+    <record id="fel_pa_unspsc_category_426" model="fel_pa.tools.product_unspsc_category">
+        <field name="name">Agencias de crédito</field>
+        <field name="fel_pa_code">8414</field>
+    </record>
+    
+    <record id="fel_pa_unspsc_category_427" model="fel_pa.tools.product_unspsc_category">
+        <field name="name">Servicios de Salud</field>
+        <field name="fel_pa_code">8500</field>
+    </record>
+    
+    <record id="fel_pa_unspsc_category_428" model="fel_pa.tools.product_unspsc_category">
+        <field name="name">Servicios integrales de salud</field>
+        <field name="fel_pa_code">8510</field>
+    </record>
+    
+    <record id="fel_pa_unspsc_category_429" model="fel_pa.tools.product_unspsc_category">
+        <field name="name">Prevención y control de enfermedades</field>
+        <field name="fel_pa_code">8511</field>
+    </record>
+    
+    <record id="fel_pa_unspsc_category_430" model="fel_pa.tools.product_unspsc_category">
+        <field name="name">Práctica médica</field>
+        <field name="fel_pa_code">8512</field>
+    </record>
+    
+    <record id="fel_pa_unspsc_category_431" model="fel_pa.tools.product_unspsc_category">
+        <field name="name">Ciencia médica, investigación y experimentación</field>
+        <field name="fel_pa_code">8513</field>
+    </record>
+    
+    <record id="fel_pa_unspsc_category_432" model="fel_pa.tools.product_unspsc_category">
+        <field name="name">Medicina alternativa y holística</field>
+        <field name="fel_pa_code">8514</field>
+    </record>
+    
+    <record id="fel_pa_unspsc_category_433" model="fel_pa.tools.product_unspsc_category">
+        <field name="name">Servicios alimenticios y de nutrición</field>
+        <field name="fel_pa_code">8515</field>
+    </record>
+    
+    <record id="fel_pa_unspsc_category_434" model="fel_pa.tools.product_unspsc_category">
+        <field name="name">Servicios de mantenimiento, renovación y reparación de equipo médico quirúrgico</field>
+        <field name="fel_pa_code">8516</field>
+    </record>
+    
+    <record id="fel_pa_unspsc_category_435" model="fel_pa.tools.product_unspsc_category">
+        <field name="name">Servicios de muerte y soporte al fallecimiento</field>
+        <field name="fel_pa_code">8517</field>
+    </record>
+    
+    <record id="fel_pa_unspsc_category_436" model="fel_pa.tools.product_unspsc_category">
+        <field name="name">Servicios Educativos y de Formación</field>
+        <field name="fel_pa_code">8600</field>
+    </record>
+    
+    <record id="fel_pa_unspsc_category_437" model="fel_pa.tools.product_unspsc_category">
+        <field name="name">Formación profesional</field>
+        <field name="fel_pa_code">8610</field>
+    </record>
+    
+    <record id="fel_pa_unspsc_category_438" model="fel_pa.tools.product_unspsc_category">
+        <field name="name">Sistemas educativos alternativos</field>
+        <field name="fel_pa_code">8611</field>
+    </record>
+    
+    <record id="fel_pa_unspsc_category_439" model="fel_pa.tools.product_unspsc_category">
+        <field name="name">Instituciones educativas</field>
+        <field name="fel_pa_code">8612</field>
+    </record>
+    
+    <record id="fel_pa_unspsc_category_440" model="fel_pa.tools.product_unspsc_category">
+        <field name="name">Servicios educativos especializados</field>
+        <field name="fel_pa_code">8613</field>
+    </record>
+    
+    <record id="fel_pa_unspsc_category_441" model="fel_pa.tools.product_unspsc_category">
+        <field name="name">Instalaciones educativas</field>
+        <field name="fel_pa_code">8614</field>
+    </record>
+    
+    <record id="fel_pa_unspsc_category_442" model="fel_pa.tools.product_unspsc_category">
+        <field name="name">Servicios de Viajes, Alimentación, Alojamiento y Entretenimiento</field>
+        <field name="fel_pa_code">9000</field>
+    </record>
+    
+    <record id="fel_pa_unspsc_category_443" model="fel_pa.tools.product_unspsc_category">
+        <field name="name">Restaurantes y catering (servicios de comidas y bebidas)</field>
+        <field name="fel_pa_code">9010</field>
+    </record>
+    
+    <record id="fel_pa_unspsc_category_444" model="fel_pa.tools.product_unspsc_category">
+        <field name="name">Instalaciones hoteleras, alojamientos y centros de encuentros</field>
+        <field name="fel_pa_code">9011</field>
+    </record>
+    
+    <record id="fel_pa_unspsc_category_445" model="fel_pa.tools.product_unspsc_category">
+        <field name="name">Facilitación de viajes</field>
+        <field name="fel_pa_code">9012</field>
+    </record>
+    
+    <record id="fel_pa_unspsc_category_446" model="fel_pa.tools.product_unspsc_category">
+        <field name="name">Artes interpretativas</field>
+        <field name="fel_pa_code">9013</field>
+    </record>
+    
+    <record id="fel_pa_unspsc_category_447" model="fel_pa.tools.product_unspsc_category">
+        <field name="name">Deportes comerciales</field>
+        <field name="fel_pa_code">9014</field>
+    </record>
+    
+    <record id="fel_pa_unspsc_category_448" model="fel_pa.tools.product_unspsc_category">
+        <field name="name">Servicios de entretenimiento</field>
+        <field name="fel_pa_code">9015</field>
+    </record>
+    
+    <record id="fel_pa_unspsc_category_449" model="fel_pa.tools.product_unspsc_category">
+        <field name="name">Servicios Personales y Domésticos</field>
+        <field name="fel_pa_code">9100</field>
+    </record>
+    
+    <record id="fel_pa_unspsc_category_450" model="fel_pa.tools.product_unspsc_category">
+        <field name="name">Aspecto personal</field>
+        <field name="fel_pa_code">9110</field>
+    </record>
+    
+    <record id="fel_pa_unspsc_category_451" model="fel_pa.tools.product_unspsc_category">
+        <field name="name">Asistencia doméstica y personal</field>
+        <field name="fel_pa_code">9111</field>
+    </record>
+    
+    <record id="fel_pa_unspsc_category_452" model="fel_pa.tools.product_unspsc_category">
+        <field name="name">Servicios de Defensa Nacional, Orden Público, Seguridad y Vigilancia</field>
+        <field name="fel_pa_code">9200</field>
+    </record>
+    
+    <record id="fel_pa_unspsc_category_453" model="fel_pa.tools.product_unspsc_category">
+        <field name="name">Orden público y seguridad</field>
+        <field name="fel_pa_code">9210</field>
+    </record>
+    
+    <record id="fel_pa_unspsc_category_454" model="fel_pa.tools.product_unspsc_category">
+        <field name="name">Servicios militares o defensa nacional</field>
+        <field name="fel_pa_code">9211</field>
+    </record>
+    
+    <record id="fel_pa_unspsc_category_455" model="fel_pa.tools.product_unspsc_category">
+        <field name="name">Seguridad y protección personal</field>
+        <field name="fel_pa_code">9212</field>
+    </record>
+    
+    <record id="fel_pa_unspsc_category_456" model="fel_pa.tools.product_unspsc_category">
+        <field name="name">Servicios Políticos y de Asuntos Cívicos</field>
+        <field name="fel_pa_code">9300</field>
+    </record>
+    
+    <record id="fel_pa_unspsc_category_457" model="fel_pa.tools.product_unspsc_category">
+        <field name="name">Sistemas e instituciones políticas</field>
+        <field name="fel_pa_code">9310</field>
+    </record>
+    
+    <record id="fel_pa_unspsc_category_458" model="fel_pa.tools.product_unspsc_category">
+        <field name="name">Condiciones sociopolíticas</field>
+        <field name="fel_pa_code">9311</field>
+    </record>
+    
+    <record id="fel_pa_unspsc_category_459" model="fel_pa.tools.product_unspsc_category">
+        <field name="name">Relaciones internacionales</field>
+        <field name="fel_pa_code">9312</field>
+    </record>
+    
+    <record id="fel_pa_unspsc_category_460" model="fel_pa.tools.product_unspsc_category">
+        <field name="name">Ayuda y asistencia humanitaria</field>
+        <field name="fel_pa_code">9313</field>
+    </record>
+    
+    <record id="fel_pa_unspsc_category_461" model="fel_pa.tools.product_unspsc_category">
+        <field name="name">Servicios comunitarios y sociales</field>
+        <field name="fel_pa_code">9314</field>
+    </record>
+    
+    <record id="fel_pa_unspsc_category_462" model="fel_pa.tools.product_unspsc_category">
+        <field name="name">Servicios de administración y financiación pública</field>
+        <field name="fel_pa_code">9315</field>
+    </record>
+    
+    <record id="fel_pa_unspsc_category_463" model="fel_pa.tools.product_unspsc_category">
+        <field name="name">Tributación</field>
+        <field name="fel_pa_code">9316</field>
+    </record>
+    
+    <record id="fel_pa_unspsc_category_464" model="fel_pa.tools.product_unspsc_category">
+        <field name="name">Política y regulación comercial</field>
+        <field name="fel_pa_code">9317</field>
+    </record>
+    
+    <record id="fel_pa_unspsc_category_465" model="fel_pa.tools.product_unspsc_category">
+        <field name="name">Organizaciones y Clubes</field>
+        <field name="fel_pa_code">9400</field>
+    </record>
+    
+    <record id="fel_pa_unspsc_category_466" model="fel_pa.tools.product_unspsc_category">
+        <field name="name">Organizaciones laborales</field>
+        <field name="fel_pa_code">9410</field>
+    </record>
+    
+    <record id="fel_pa_unspsc_category_467" model="fel_pa.tools.product_unspsc_category">
+        <field name="name">Organizaciones religiosas</field>
+        <field name="fel_pa_code">9411</field>
+    </record>
+    
+    <record id="fel_pa_unspsc_category_468" model="fel_pa.tools.product_unspsc_category">
+        <field name="name">Clubes</field>
+        <field name="fel_pa_code">9412</field>
+    </record>
+    
+    <record id="fel_pa_unspsc_category_469" model="fel_pa.tools.product_unspsc_category">
+        <field name="name">Organizaciones, asociaciones y movimientos cívicos</field>
+        <field name="fel_pa_code">9413</field>
+    </record>
+    
+    <record id="fel_pa_unspsc_category_470" model="fel_pa.tools.product_unspsc_category">
+        <field name="name">Terrenos, Edificios, Estructuras y Vías</field>
+        <field name="fel_pa_code">9500</field>
+    </record>
+    
+    <record id="fel_pa_unspsc_category_471" model="fel_pa.tools.product_unspsc_category">
+        <field name="name">Parcelas de tierra</field>
+        <field name="fel_pa_code">9510</field>
+    </record>
+    
+    <record id="fel_pa_unspsc_category_472" model="fel_pa.tools.product_unspsc_category">
+        <field name="name">Vías</field>
+        <field name="fel_pa_code">9511</field>
+    </record>
+    
+    <record id="fel_pa_unspsc_category_473" model="fel_pa.tools.product_unspsc_category">
+        <field name="name">Estructuras y edificios permanentes</field>
+        <field name="fel_pa_code">9512</field>
+    </record>
+    
+    <record id="fel_pa_unspsc_category_474" model="fel_pa.tools.product_unspsc_category">
+        <field name="name">Estructuras y edificios móviles</field>
+        <field name="fel_pa_code">9513</field>
+    </record>
+
+</odoo>

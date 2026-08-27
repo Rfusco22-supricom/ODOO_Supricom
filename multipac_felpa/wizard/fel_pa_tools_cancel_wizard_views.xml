@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+
+    <record id="fel_pa_tools_cancel_wizard_form_view" model="ir.ui.view">
+        <field name="name">fel_pa_tools_cancel_wizard_form_view</field>
+        <field name="model">fel_pa.tools.cancel_wizard</field>
+        <field name="arch" type="xml">
+            <form>
+                <sheet>
+                    <group>
+                        <group>
+                            <field name="invoices_ids" readonly="1" widget="many2many_tags"/>
+                            <field name="name"/>
+                        </group>
+                    </group>
+                </sheet>
+                <footer>
+                    <button name="action_cancel" string="Cancel Document(s)" type="object" default_focus="1" class="oe_highlight" />
+                    <button string="Cancel" class="btn btn-secondary" special="cancel" />
+                </footer>
+            </form>
+        </field>
+    </record>
+
+    <record id="action_document_cancel_wizard" model="ir.actions.act_window">
+        <field name="name">FEL Cancel Tool</field>
+        <field name="res_model">fel_pa.tools.cancel_wizard</field>
+        <field name="view_mode">form</field>
+        <field name="target">new</field>
+    </record>
+
+</odoo>

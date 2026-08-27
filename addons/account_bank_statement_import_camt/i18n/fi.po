@@ -1,0 +1,2254 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+# * account_bank_statement_import_camt
+#
+# Translators:
+# Jussi Lehto <jussi@gulfeo.com>, 2023
+# Mikko Salmela <salmemik@gmail.com>, 2023
+# Tuomo Aura <tuomo.aura@web-veistamo.fi>, 2023
+# Pekko Tuomisto <pekko.tuomisto@web-veistamo.fi>, 2023
+# Jarmo Kortetjärvi <jarmo.kortetjarvi@gmail.com>, 2023
+# Martin Trigaux, 2023
+# Eino Mäkitalo <eino.makitalo@netitbe.fi>, 2023
+# Simo Suurla <simo@suurla.fi>, 2023
+# Ossi Mantylahti <ossi.mantylahti@obs-solutions.fi>, 2023
+# Saara Hakanen <sahak@odoo.com>, 2026.
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 17.0+e\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2025-12-29 18:45+0000\n"
+"PO-Revision-Date: 2026-01-17 17:31+0000\n"
+"Last-Translator: Saara Hakanen <sahak@odoo.com>\n"
+"Language-Team: Finnish <https://translate.odoo.com/projects/odoo-17/"
+"account_bank_statement_import_camt/fi/>\n"
+"Language: fi\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: \n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+"X-Generator: Weblate 5.14.3\n"
+
+#. module: account_bank_statement_import_camt
+#. odoo-python
+#: code:addons/account_bank_statement_import_camt/lib/camt.py:0
+#, python-format
+msgid "ACH Concentration"
+msgstr "ACH-keskitys"
+
+#. module: account_bank_statement_import_camt
+#. odoo-python
+#: code:addons/account_bank_statement_import_camt/lib/camt.py:0
+#, python-format
+msgid "ACH Corporate Trade"
+msgstr "ACH-yrityskauppa"
+
+#. module: account_bank_statement_import_camt
+#. odoo-python
+#: code:addons/account_bank_statement_import_camt/lib/camt.py:0
+#, python-format
+msgid "ACH Credit"
+msgstr "ACH-kredit"
+
+#. module: account_bank_statement_import_camt
+#. odoo-python
+#: code:addons/account_bank_statement_import_camt/lib/camt.py:0
+#, python-format
+msgid "ACH Debit"
+msgstr "ACH-debet"
+
+#. module: account_bank_statement_import_camt
+#. odoo-python
+#: code:addons/account_bank_statement_import_camt/lib/camt.py:0
+#, python-format
+msgid "ACH Pre-Authorised"
+msgstr "Ennakkoon hyväksytty ACH"
+
+#. module: account_bank_statement_import_camt
+#. odoo-python
+#: code:addons/account_bank_statement_import_camt/lib/camt.py:0
+#, python-format
+msgid "ACH Return"
+msgstr "ACH-palautus"
+
+#. module: account_bank_statement_import_camt
+#. odoo-python
+#: code:addons/account_bank_statement_import_camt/lib/camt.py:0
+#, python-format
+msgid "ACH Reversal"
+msgstr "ACH-kumoaminen"
+
+#. module: account_bank_statement_import_camt
+#. odoo-python
+#: code:addons/account_bank_statement_import_camt/lib/camt.py:0
+#, python-format
+msgid "ACH Settlement"
+msgstr "ACH-selvitys"
+
+#. module: account_bank_statement_import_camt
+#. odoo-python
+#: code:addons/account_bank_statement_import_camt/lib/camt.py:0
+#, python-format
+msgid "ACH Transaction"
+msgstr "ACH-tapahtuma"
+
+#. module: account_bank_statement_import_camt
+#. odoo-python
+#: code:addons/account_bank_statement_import_camt/lib/camt.py:0
+#, python-format
+msgid "ARP Debit"
+msgstr "ARP-debet"
+
+#. module: account_bank_statement_import_camt
+#. odoo-python
+#: code:addons/account_bank_statement_import_camt/lib/camt.py:0
+#, python-format
+msgid "Account Balancing"
+msgstr "Tilin tasapainottaminen"
+
+#. module: account_bank_statement_import_camt
+#. odoo-python
+#: code:addons/account_bank_statement_import_camt/lib/camt.py:0
+#, python-format
+msgid "Account Closing"
+msgstr "Tilin sulkeminen"
+
+#. module: account_bank_statement_import_camt
+#. odoo-python
+#: code:addons/account_bank_statement_import_camt/lib/camt.py:0
+#, python-format
+msgid "Account Management"
+msgstr "Tilin hallinta"
+
+#. module: account_bank_statement_import_camt
+#. odoo-python
+#: code:addons/account_bank_statement_import_camt/lib/camt.py:0
+#, python-format
+msgid "Account Opening"
+msgstr "Tilin avaaminen"
+
+#. module: account_bank_statement_import_camt
+#. odoo-python
+#: code:addons/account_bank_statement_import_camt/lib/camt.py:0
+#, python-format
+msgid "Account Transfer"
+msgstr "Tilin siirto"
+
+#. module: account_bank_statement_import_camt
+#. odoo-python
+#: code:addons/account_bank_statement_import_camt/models/account_journal.py:0
+#, python-format
+msgid "Additional Info: %s"
+msgstr "Lisätietoja: %s"
+
+#. module: account_bank_statement_import_camt
+#. odoo-python
+#: code:addons/account_bank_statement_import_camt/lib/camt.py:0
+#, python-format
+msgid "Additional Miscellaneous Credit Operations"
+msgstr "Muut sekalaiset kredit-tapahtumat"
+
+#. module: account_bank_statement_import_camt
+#. odoo-python
+#: code:addons/account_bank_statement_import_camt/lib/camt.py:0
+#, python-format
+msgid "Additional Miscellaneous Debit Operations"
+msgstr "Muut sekalaiset debet-toiminnot"
+
+#. module: account_bank_statement_import_camt
+#. odoo-python
+#: code:addons/account_bank_statement_import_camt/models/account_journal.py:0
+#, python-format
+msgid "Address:\n"
+msgstr "Osoite:\n"
+
+#. module: account_bank_statement_import_camt
+#. odoo-python
+#: code:addons/account_bank_statement_import_camt/lib/camt.py:0
+#, python-format
+msgid "Adjustments"
+msgstr "Hienosäädöt"
+
+#. module: account_bank_statement_import_camt
+#. odoo-python
+#: code:addons/account_bank_statement_import_camt/lib/camt.py:0
+#, python-format
+msgid "Automatic Transfer"
+msgstr "Automaattinen siirto"
+
+#. module: account_bank_statement_import_camt
+#. odoo-python
+#: code:addons/account_bank_statement_import_camt/lib/camt.py:0
+#, python-format
+msgid "Back Value"
+msgstr "Takautuva arvo"
+
+#. module: account_bank_statement_import_camt
+#. odoo-python
+#: code:addons/account_bank_statement_import_camt/lib/camt.py:0
+#, python-format
+msgid "Bank Cheque"
+msgstr "Pankin shekki"
+
+#. module: account_bank_statement_import_camt
+#. odoo-python
+#: code:addons/account_bank_statement_import_camt/lib/camt.py:0
+#, python-format
+msgid "Bank Fees"
+msgstr "Pankkimaksut"
+
+#. module: account_bank_statement_import_camt
+#. odoo-python
+#: code:addons/account_bank_statement_import_camt/lib/camt.py:0
+#, python-format
+msgid "Blocked Transactions"
+msgstr "Estetyt tapahtumat"
+
+#. module: account_bank_statement_import_camt
+#. odoo-python
+#: code:addons/account_bank_statement_import_camt/lib/camt.py:0
+#, python-format
+msgid "Bonus Issue/Capitalisation Issue"
+msgstr "Ilmaisanti/rahastoanti"
+
+#. module: account_bank_statement_import_camt
+#. odoo-python
+#: code:addons/account_bank_statement_import_camt/lib/camt.py:0
+#, python-format
+msgid "Borrowing fee"
+msgstr "Lainausmaksu"
+
+#. module: account_bank_statement_import_camt
+#. odoo-python
+#: code:addons/account_bank_statement_import_camt/lib/camt.py:0
+#, python-format
+msgid "Branch Account Transfer"
+msgstr "Toimipisteen tilin siirto"
+
+#. module: account_bank_statement_import_camt
+#. odoo-python
+#: code:addons/account_bank_statement_import_camt/lib/camt.py:0
+#, python-format
+msgid "Branch Deposit"
+msgstr "Toimipisteen talletus"
+
+#. module: account_bank_statement_import_camt
+#. odoo-python
+#: code:addons/account_bank_statement_import_camt/lib/camt.py:0
+#, python-format
+msgid "Branch Withdrawal"
+msgstr "Toimipisteen nosto"
+
+#. module: account_bank_statement_import_camt
+#. odoo-python
+#: code:addons/account_bank_statement_import_camt/lib/camt.py:0
+#, python-format
+msgid "Brokerage fee"
+msgstr "Välityspalkkio"
+
+#. module: account_bank_statement_import_camt
+#. odoo-python
+#: code:addons/account_bank_statement_import_camt/lib/camt.py:0
+#, python-format
+msgid "Buy Sell Back"
+msgstr "Osta ja myy takaisin"
+
+#. module: account_bank_statement_import_camt
+#. odoo-python
+#: code:addons/account_bank_statement_import_camt/lib/camt.py:0
+#, python-format
+msgid "CSD Blocked Transactions"
+msgstr "CSD:n estetämät tapahtumat"
+
+#. module: account_bank_statement_import_camt
+#. odoo-python
+#: code:addons/account_bank_statement_import_camt/lib/camt.py:0
+#, python-format
+msgid "Call on intermediate securities"
+msgstr "Arvopapereiden lunastaminen"
+
+#. module: account_bank_statement_import_camt
+#. odoo-python
+#: code:addons/account_bank_statement_import_camt/lib/camt.py:0
+#, python-format
+msgid "Capital Gains Distribution"
+msgstr "Luovutusvoittojen jako"
+
+#. module: account_bank_statement_import_camt
+#. odoo-python
+#: code:addons/account_bank_statement_import_camt/lib/camt.py:0
+#, python-format
+msgid "Cash Deposit"
+msgstr "Käteistalletus"
+
+#. module: account_bank_statement_import_camt
+#. odoo-python
+#: code:addons/account_bank_statement_import_camt/lib/camt.py:0
+#, python-format
+msgid "Cash Dividend"
+msgstr "Käteisosinko"
+
+#. module: account_bank_statement_import_camt
+#. odoo-python
+#: code:addons/account_bank_statement_import_camt/lib/camt.py:0
+#, python-format
+msgid "Cash Letter"
+msgstr "Maksuosoitus"
+
+#. module: account_bank_statement_import_camt
+#. odoo-python
+#: code:addons/account_bank_statement_import_camt/lib/camt.py:0
+#, python-format
+msgid "Cash Letter Adjustment"
+msgstr "Maksuosoitteen oikaisu"
+
+#. module: account_bank_statement_import_camt
+#. odoo-python
+#: code:addons/account_bank_statement_import_camt/lib/camt.py:0
+#, python-format
+msgid "Cash Management"
+msgstr "Kassanhallinta"
+
+#. module: account_bank_statement_import_camt
+#. odoo-python
+#: code:addons/account_bank_statement_import_camt/lib/camt.py:0
+#, python-format
+msgid "Cash Pooling"
+msgstr "Cash pool -järjestely"
+
+#. module: account_bank_statement_import_camt
+#. odoo-python
+#: code:addons/account_bank_statement_import_camt/lib/camt.py:0
+#, python-format
+msgid "Cash Withdrawal"
+msgstr "Käteisnosto"
+
+#. module: account_bank_statement_import_camt
+#. odoo-python
+#: code:addons/account_bank_statement_import_camt/lib/camt.py:0
+#, python-format
+msgid "Cash in lieu"
+msgstr "Käteiskorvaus"
+
+#. module: account_bank_statement_import_camt
+#. odoo-python
+#: code:addons/account_bank_statement_import_camt/lib/camt.py:0
+#, python-format
+msgid "Certified Customer Cheque"
+msgstr "Varmennettu asiakasshekki"
+
+#. module: account_bank_statement_import_camt
+#. odoo-python
+#: code:addons/account_bank_statement_import_camt/lib/camt.py:0
+#, python-format
+msgid "Charge/fees"
+msgstr "Veloitus/maksut"
+
+#. module: account_bank_statement_import_camt
+#. odoo-python
+#: code:addons/account_bank_statement_import_camt/lib/camt.py:0
+#, python-format
+msgid "Charges"
+msgstr "Veloitukset"
+
+#. module: account_bank_statement_import_camt
+#. odoo-python
+#: code:addons/account_bank_statement_import_camt/models/account_journal.py:0
+#, python-format
+msgid "Check Number: %s"
+msgstr "Shekin numero: %s"
+
+#. module: account_bank_statement_import_camt
+#. odoo-python
+#: code:addons/account_bank_statement_import_camt/lib/camt.py:0
+#, python-format
+msgid "Cheque"
+msgstr "Shekki"
+
+#. module: account_bank_statement_import_camt
+#. odoo-python
+#: code:addons/account_bank_statement_import_camt/lib/camt.py:0
+#, python-format
+msgid "Cheque Deposit"
+msgstr "Shekin talletus"
+
+#. module: account_bank_statement_import_camt
+#. odoo-python
+#: code:addons/account_bank_statement_import_camt/lib/camt.py:0
+#, python-format
+msgid "Cheque Reversal"
+msgstr "Shekin kumoaminen"
+
+#. module: account_bank_statement_import_camt
+#. odoo-python
+#: code:addons/account_bank_statement_import_camt/lib/camt.py:0
+#, python-format
+msgid "Cheque Under Reserve"
+msgstr "Shekki varauksella"
+
+#. module: account_bank_statement_import_camt
+#. odoo-python
+#: code:addons/account_bank_statement_import_camt/lib/camt.py:0
+#, python-format
+msgid "Circular Cheque"
+msgstr "Kiertoshekki"
+
+#. module: account_bank_statement_import_camt
+#. odoo-python
+#: code:addons/account_bank_statement_import_camt/lib/camt.py:0
+#, python-format
+msgid "Clean Collection"
+msgstr "Suora perintä"
+
+#. module: account_bank_statement_import_camt
+#. odoo-python
+#: code:addons/account_bank_statement_import_camt/lib/camt.py:0
+#, python-format
+msgid "Client Owned Collateral"
+msgstr "Asiakkaan omistamat vakuudet"
+
+#. module: account_bank_statement_import_camt
+#. odoo-python
+#: code:addons/account_bank_statement_import_camt/lib/camt.py:0
+#, python-format
+msgid "Collateral Management"
+msgstr "Vakuuksien hallinta"
+
+#. module: account_bank_statement_import_camt
+#. odoo-python
+#: code:addons/account_bank_statement_import_camt/lib/camt.py:0
+#, python-format
+msgid "Commission"
+msgstr "Palkkio"
+
+#. module: account_bank_statement_import_camt
+#. odoo-python
+#: code:addons/account_bank_statement_import_camt/lib/camt.py:0
+#, python-format
+msgid "Commission excluding taxes"
+msgstr "Veroton palkkio"
+
+#. module: account_bank_statement_import_camt
+#. odoo-python
+#: code:addons/account_bank_statement_import_camt/lib/camt.py:0
+#, python-format
+msgid "Commission including taxes"
+msgstr "Verollinen palkkio"
+
+#. module: account_bank_statement_import_camt
+#. odoo-python
+#: code:addons/account_bank_statement_import_camt/lib/camt.py:0
+#, python-format
+msgid "Commodities"
+msgstr "Hyödykkeet"
+
+#. module: account_bank_statement_import_camt
+#. odoo-python
+#: code:addons/account_bank_statement_import_camt/lib/camt.py:0
+#, python-format
+msgid "Compensation/Claims"
+msgstr "Korvaukset/vaatimukset"
+
+#. module: account_bank_statement_import_camt
+#. odoo-python
+#: code:addons/account_bank_statement_import_camt/lib/camt.py:0
+#, python-format
+msgid "Consumer Loans"
+msgstr "Kuluttajalainat"
+
+#. module: account_bank_statement_import_camt
+#. odoo-python
+#: code:addons/account_bank_statement_import_camt/lib/camt.py:0
+#, python-format
+msgid "Controlled Disbursement"
+msgstr "Valvottu maksaminen"
+
+#. module: account_bank_statement_import_camt
+#. odoo-python
+#: code:addons/account_bank_statement_import_camt/lib/camt.py:0
+#, python-format
+msgid "Conversion"
+msgstr "Konversio"
+
+#. module: account_bank_statement_import_camt
+#. odoo-python
+#: code:addons/account_bank_statement_import_camt/lib/camt.py:0
+#, python-format
+msgid "Corporate Action"
+msgstr "Yhtiötapahtuma"
+
+#. module: account_bank_statement_import_camt
+#. odoo-python
+#: code:addons/account_bank_statement_import_camt/lib/camt.py:0
+#, python-format
+msgid "Corporate Own Account Transfer"
+msgstr "Yhtiön oman tilin siirto"
+
+#. module: account_bank_statement_import_camt
+#. odoo-python
+#: code:addons/account_bank_statement_import_camt/lib/camt.py:0
+#, python-format
+msgid "Corporate Rebate"
+msgstr "Yhtiön hyvitys"
+
+#. module: account_bank_statement_import_camt
+#. odoo-python
+#: code:addons/account_bank_statement_import_camt/lib/camt.py:0
+#, python-format
+msgid "Corporate mark broker owned"
+msgstr "Välittäjän omistama yhtiötunnus"
+
+#. module: account_bank_statement_import_camt
+#. odoo-python
+#: code:addons/account_bank_statement_import_camt/lib/camt.py:0
+#, python-format
+msgid "Corporate mark client owned"
+msgstr "Asiakkaan omistama yhtiötunnus"
+
+#. module: account_bank_statement_import_camt
+#. odoo-python
+#: code:addons/account_bank_statement_import_camt/models/account_journal.py:0
+#, python-format
+msgid "Counter Party: %(partner)s"
+msgstr "Vastapuoli: %(partner)s"
+
+#. module: account_bank_statement_import_camt
+#. odoo-python
+#: code:addons/account_bank_statement_import_camt/lib/camt.py:0
+#, python-format
+msgid "Counter Transactions"
+msgstr "Vastatapahtumat"
+
+#. module: account_bank_statement_import_camt
+#. odoo-python
+#: code:addons/account_bank_statement_import_camt/lib/camt.py:0
+#, python-format
+msgid "Credit Adjustment"
+msgstr "Kredit-hienosäätö"
+
+#. module: account_bank_statement_import_camt
+#. odoo-python
+#: code:addons/account_bank_statement_import_camt/lib/camt.py:0
+#, python-format
+msgid "Credit Adjustments"
+msgstr "Kredit-hienosäädöt"
+
+#. module: account_bank_statement_import_camt
+#. odoo-python
+#: code:addons/account_bank_statement_import_camt/lib/camt.py:0
+#, python-format
+msgid "Credit Card Payment"
+msgstr "Luottokorttimaksu"
+
+#. module: account_bank_statement_import_camt
+#. odoo-python
+#: code:addons/account_bank_statement_import_camt/lib/camt.py:0
+#, python-format
+msgid "Credit Transfer with agreed Commercial Information"
+msgstr "Tilisiirto sovituilla kaupallisilla tiedoilla"
+
+#. module: account_bank_statement_import_camt
+#. odoo-python
+#: code:addons/account_bank_statement_import_camt/lib/camt.py:0
+#, python-format
+msgid "Cross Trade"
+msgstr "Cross trade"
+
+#. module: account_bank_statement_import_camt
+#. odoo-python
+#: code:addons/account_bank_statement_import_camt/lib/camt.py:0
+#, python-format
+msgid "Cross-Border"
+msgstr "Rajat ylittävä"
+
+#. module: account_bank_statement_import_camt
+#. odoo-python
+#: code:addons/account_bank_statement_import_camt/lib/camt.py:0
+#, python-format
+msgid "Cross-Border Cash Withdrawal"
+msgstr "Rajat ylittävä käteisnosto"
+
+#. module: account_bank_statement_import_camt
+#. odoo-python
+#: code:addons/account_bank_statement_import_camt/lib/camt.py:0
+#, python-format
+msgid "Cross-Border Credit Card Payment"
+msgstr "Rajat ylittävä luottokorttimaksu"
+
+#. module: account_bank_statement_import_camt
+#. odoo-python
+#: code:addons/account_bank_statement_import_camt/lib/camt.py:0
+#, python-format
+msgid "Cross-Border Credit Transfer"
+msgstr "Rajat ylittävä kredit-siirto"
+
+#. module: account_bank_statement_import_camt
+#. odoo-python
+#: code:addons/account_bank_statement_import_camt/lib/camt.py:0
+#, python-format
+msgid "Cross-Border Direct Debit"
+msgstr "Rajat ylittävä suoraveloitus"
+
+#. module: account_bank_statement_import_camt
+#. odoo-python
+#: code:addons/account_bank_statement_import_camt/lib/camt.py:0
+#, python-format
+msgid "Cross-Border Intra Company Transfer"
+msgstr "Rajat ylittävä yrityksen sisäinen siirto"
+
+#. module: account_bank_statement_import_camt
+#. odoo-python
+#: code:addons/account_bank_statement_import_camt/lib/camt.py:0
+#, python-format
+msgid "Cross-Border Payroll/Salary Payment"
+msgstr "Rajat ylittävä palkanlaskenta/-maksu"
+
+#. module: account_bank_statement_import_camt
+#. odoo-python
+#: code:addons/account_bank_statement_import_camt/lib/camt.py:0
+#, python-format
+msgid "Cross-Border Standing Order"
+msgstr "Rajat ylittävä pysyvä toimeksianto"
+
+#. module: account_bank_statement_import_camt
+#. odoo-python
+#: code:addons/account_bank_statement_import_camt/lib/camt.py:0
+#, python-format
+msgid "Crossed Cheque"
+msgstr "Leimattu shekki"
+
+#. module: account_bank_statement_import_camt
+#. odoo-python
+#: code:addons/account_bank_statement_import_camt/lib/camt.py:0
+#, python-format
+msgid "Custody"
+msgstr "Hallussapito"
+
+#. module: account_bank_statement_import_camt
+#. odoo-python
+#: code:addons/account_bank_statement_import_camt/lib/camt.py:0
+#, python-format
+msgid "Custody Collection"
+msgstr "Hallussapidon perintä"
+
+#. module: account_bank_statement_import_camt
+#. odoo-python
+#: code:addons/account_bank_statement_import_camt/lib/camt.py:0
+#, python-format
+msgid "Customer Card Transactions"
+msgstr "Asiakkaan korttitapahtumat"
+
+#. module: account_bank_statement_import_camt
+#. odoo-python
+#: code:addons/account_bank_statement_import_camt/lib/camt.py:0
+#, python-format
+msgid "Debit"
+msgstr "Debet"
+
+#. module: account_bank_statement_import_camt
+#. odoo-python
+#: code:addons/account_bank_statement_import_camt/lib/camt.py:0
+#, python-format
+msgid "Debit Adjustments"
+msgstr "Debet-oikaisut"
+
+#. module: account_bank_statement_import_camt
+#. odoo-python
+#: code:addons/account_bank_statement_import_camt/lib/camt.py:0
+#, python-format
+msgid "Decrease in Value"
+msgstr "Arvon alentuminen"
+
+#. module: account_bank_statement_import_camt
+#. odoo-python
+#: code:addons/account_bank_statement_import_camt/lib/camt.py:0
+#, python-format
+msgid "Delivery"
+msgstr "Toimitus"
+
+#. module: account_bank_statement_import_camt
+#. odoo-python
+#: code:addons/account_bank_statement_import_camt/lib/camt.py:0
+#, python-format
+msgid "Deposit"
+msgstr "Talletus"
+
+#. module: account_bank_statement_import_camt
+#. odoo-python
+#: code:addons/account_bank_statement_import_camt/lib/camt.py:0
+#, python-format
+msgid "Deposit/Contribution"
+msgstr "Talletus/Osuusmaksu"
+
+#. module: account_bank_statement_import_camt
+#. odoo-python
+#: code:addons/account_bank_statement_import_camt/lib/camt.py:0
+#, python-format
+msgid "Depositary Receipt Issue"
+msgstr "Talletustodistuksen myöntäminen"
+
+#. module: account_bank_statement_import_camt
+#. odoo-python
+#: code:addons/account_bank_statement_import_camt/lib/camt.py:0
+#, python-format
+msgid "Derivatives"
+msgstr "Johdannaiset"
+
+#. module: account_bank_statement_import_camt
+#. odoo-python
+#: code:addons/account_bank_statement_import_camt/lib/camt.py:0
+#, python-format
+msgid "Direct Debit"
+msgstr "Suoraveloitus"
+
+#. module: account_bank_statement_import_camt
+#. odoo-python
+#: code:addons/account_bank_statement_import_camt/lib/camt.py:0
+#, python-format
+msgid "Direct Debit Payment"
+msgstr "Suoraveloitusmaksu"
+
+#. module: account_bank_statement_import_camt
+#. odoo-python
+#: code:addons/account_bank_statement_import_camt/lib/camt.py:0
+#, python-format
+msgid "Direct Debit under reserve"
+msgstr "Suoraveloitus varauksella"
+
+#. module: account_bank_statement_import_camt
+#. odoo-python
+#: code:addons/account_bank_statement_import_camt/lib/camt.py:0
+#, python-format
+msgid "Discounted Draft"
+msgstr "Diskontattu maksumääräys"
+
+#. module: account_bank_statement_import_camt
+#. odoo-python
+#: code:addons/account_bank_statement_import_camt/lib/camt.py:0
+#, python-format
+msgid "Dishonoured/Unpaid Draft"
+msgstr "Hylätty/maksamaton maksumääräys"
+
+#. module: account_bank_statement_import_camt
+#. odoo-python
+#: code:addons/account_bank_statement_import_camt/lib/camt.py:0
+#, python-format
+msgid "Dividend Option"
+msgstr "Osinko-optio"
+
+#. module: account_bank_statement_import_camt
+#. odoo-python
+#: code:addons/account_bank_statement_import_camt/lib/camt.py:0
+#, python-format
+msgid "Dividend Reinvestment"
+msgstr "Osingon uudelleensijoittaminen"
+
+#. module: account_bank_statement_import_camt
+#. odoo-python
+#: code:addons/account_bank_statement_import_camt/lib/camt.py:0
+#, python-format
+msgid "Documentary Collection"
+msgstr "Dokumenttiperintä"
+
+#. module: account_bank_statement_import_camt
+#. odoo-python
+#: code:addons/account_bank_statement_import_camt/lib/camt.py:0
+#, python-format
+msgid "Documentary Credit"
+msgstr "Remburssi"
+
+#. module: account_bank_statement_import_camt
+#. odoo-python
+#: code:addons/account_bank_statement_import_camt/lib/camt.py:0
+#, python-format
+msgid "Domestic Credit Transfer"
+msgstr "Kotimaan tilisiirto"
+
+#. module: account_bank_statement_import_camt
+#. odoo-python
+#: code:addons/account_bank_statement_import_camt/lib/camt.py:0
+#, python-format
+msgid "Draft Maturity Change"
+msgstr "Maksumääräyksen eräpäivämuutos"
+
+#. module: account_bank_statement_import_camt
+#. odoo-python
+#: code:addons/account_bank_statement_import_camt/lib/camt.py:0
+#, python-format
+msgid "Drafts/BillOfOrders"
+msgstr "Maksumääräykset/Tilausten lasku"
+
+#. module: account_bank_statement_import_camt
+#. odoo-python
+#: code:addons/account_bank_statement_import_camt/lib/camt.py:0
+#, python-format
+msgid "Drawdown"
+msgstr "Luoton nosto"
+
+#. module: account_bank_statement_import_camt
+#. odoo-python
+#: code:addons/account_bank_statement_import_camt/lib/camt.py:0
+#, python-format
+msgid "Drawing"
+msgstr "Nostaminen"
+
+#. module: account_bank_statement_import_camt
+#. odoo-python
+#: code:addons/account_bank_statement_import_camt/lib/camt.py:0
+#, python-format
+msgid "Dutch Auction"
+msgstr "Hollantilainen huutokauppa"
+
+#. module: account_bank_statement_import_camt
+#. odoo-python
+#: code:addons/account_bank_statement_import_camt/models/account_journal.py:0
+#, python-format
+msgid "End to end ID: %s"
+msgstr "Päästä päähän tunnus: %s"
+
+#. module: account_bank_statement_import_camt
+#. odoo-python
+#: code:addons/account_bank_statement_import_camt/models/account_journal.py:0
+#, python-format
+msgid "Entry Info: %s"
+msgstr "Kirjaustiedot: %s"
+
+#. module: account_bank_statement_import_camt
+#. odoo-python
+#: code:addons/account_bank_statement_import_camt/lib/camt.py:0
+#, python-format
+msgid "Equity Premium Reserve"
+msgstr "Oman pääoman ylikurssirahasto"
+
+#. module: account_bank_statement_import_camt
+#. odoo-python
+#: code:addons/account_bank_statement_import_camt/lib/camt.py:0
+#, python-format
+msgid "Equity mark broker owned"
+msgstr "Välittäjän omistama pääoma"
+
+#. module: account_bank_statement_import_camt
+#. odoo-python
+#: code:addons/account_bank_statement_import_camt/lib/camt.py:0
+#, python-format
+msgid "Equity mark client owned"
+msgstr "Asiakkaan omistama pääoma"
+
+#. module: account_bank_statement_import_camt
+#. odoo-python
+#: code:addons/account_bank_statement_import_camt/lib/camt.py:0
+#, python-format
+msgid "Exchange"
+msgstr "Vaihto"
+
+#. module: account_bank_statement_import_camt
+#. odoo-python
+#: code:addons/account_bank_statement_import_camt/lib/camt.py:0
+#, python-format
+msgid "Exchange Rate Adjustment"
+msgstr "Vaihtokurssin mukautus"
+
+#. module: account_bank_statement_import_camt
+#. odoo-python
+#: code:addons/account_bank_statement_import_camt/lib/camt.py:0
+#, python-format
+msgid "Exchange Traded"
+msgstr "Pörssilistattu"
+
+#. module: account_bank_statement_import_camt
+#. odoo-python
+#: code:addons/account_bank_statement_import_camt/lib/camt.py:0
+#, python-format
+msgid "Exchange Traded CCP"
+msgstr "Pörssilistattu CCP"
+
+#. module: account_bank_statement_import_camt
+#. odoo-python
+#: code:addons/account_bank_statement_import_camt/lib/camt.py:0
+#, python-format
+msgid "Exchange Traded Non-CCP"
+msgstr "Pörssilistattu ei-CCP"
+
+#. module: account_bank_statement_import_camt
+#. odoo-python
+#: code:addons/account_bank_statement_import_camt/lib/camt.py:0
+#, python-format
+msgid "Extended Domain"
+msgstr "Laajennettu domain"
+
+#. module: account_bank_statement_import_camt
+#. odoo-python
+#: code:addons/account_bank_statement_import_camt/lib/camt.py:0
+#, python-format
+msgid "External Account Transfer"
+msgstr "Ulkoinen tilisiirto"
+
+#. module: account_bank_statement_import_camt
+#. odoo-python
+#: code:addons/account_bank_statement_import_camt/lib/camt.py:0
+#, python-format
+msgid "Factor Update"
+msgstr "Tekijän päivitys"
+
+#. module: account_bank_statement_import_camt
+#. odoo-python
+#: code:addons/account_bank_statement_import_camt/lib/camt.py:0
+#, python-format
+msgid "Fees"
+msgstr "Maksut"
+
+#. module: account_bank_statement_import_camt
+#. odoo-python
+#: code:addons/account_bank_statement_import_camt/lib/camt.py:0
+#, python-format
+msgid "Fees, Commission , Taxes, Charges and Interest"
+msgstr "Maksut, palkkiot, verot, veloitukset ja korot"
+
+#. module: account_bank_statement_import_camt
+#. odoo-python
+#: code:addons/account_bank_statement_import_camt/lib/camt.py:0
+#, python-format
+msgid "Final Maturity"
+msgstr "Lopullinen erääntyinen"
+
+#. module: account_bank_statement_import_camt
+#. odoo-python
+#: code:addons/account_bank_statement_import_camt/lib/camt.py:0
+#, python-format
+msgid "Final Payment"
+msgstr "Loppumaksu"
+
+#. module: account_bank_statement_import_camt
+#. odoo-python
+#: code:addons/account_bank_statement_import_camt/lib/camt.py:0
+#, python-format
+msgid "Financial Institution Credit Transfer"
+msgstr "Rahoituslaitoksen tilisiirto"
+
+#. module: account_bank_statement_import_camt
+#. odoo-python
+#: code:addons/account_bank_statement_import_camt/lib/camt.py:0
+#, python-format
+msgid "Financial Institution Direct Debit Payment"
+msgstr "Rahoituslaitoksen suoraveloitusmaksu"
+
+#. module: account_bank_statement_import_camt
+#. odoo-python
+#: code:addons/account_bank_statement_import_camt/lib/camt.py:0
+#, python-format
+msgid "Financial Institution Own Account Transfer"
+msgstr "Rahoituslaitoksen oma tilisiirto"
+
+#. module: account_bank_statement_import_camt
+#. odoo-python
+#: code:addons/account_bank_statement_import_camt/lib/camt.py:0
+#, python-format
+msgid "Fixed Deposit Interest Amount"
+msgstr "Kiinteän talletuksen koron määrä"
+
+#. module: account_bank_statement_import_camt
+#. odoo-python
+#: code:addons/account_bank_statement_import_camt/lib/camt.py:0
+#, python-format
+msgid "Fixed Term Deposits"
+msgstr "Määräaikaistalletukset"
+
+#. module: account_bank_statement_import_camt
+#. odoo-python
+#: code:addons/account_bank_statement_import_camt/lib/camt.py:0
+#, python-format
+msgid "Fixed Term Loans"
+msgstr "Määräaikaislainat"
+
+#. module: account_bank_statement_import_camt
+#. odoo-python
+#: code:addons/account_bank_statement_import_camt/lib/camt.py:0
+#, python-format
+msgid "Float adjustment"
+msgstr "Kelluva korjaus"
+
+#. module: account_bank_statement_import_camt
+#. odoo-python
+#: code:addons/account_bank_statement_import_camt/lib/camt.py:0
+#, python-format
+msgid "Foreign Cheque"
+msgstr "Ulkomaan shekki"
+
+#. module: account_bank_statement_import_camt
+#. odoo-python
+#: code:addons/account_bank_statement_import_camt/lib/camt.py:0
+#, python-format
+msgid "Foreign Cheque Under Reserve"
+msgstr "Ulkomainen shekki varauksella"
+
+#. module: account_bank_statement_import_camt
+#. odoo-python
+#: code:addons/account_bank_statement_import_camt/lib/camt.py:0
+#, python-format
+msgid "Foreign Currency Deposit"
+msgstr "Ulkomaanvaluutan talletus"
+
+#. module: account_bank_statement_import_camt
+#. odoo-python
+#: code:addons/account_bank_statement_import_camt/lib/camt.py:0
+#, python-format
+msgid "Foreign Currency Withdrawal"
+msgstr "Ulkomaanvaluutan nosto"
+
+#. module: account_bank_statement_import_camt
+#. odoo-python
+#: code:addons/account_bank_statement_import_camt/lib/camt.py:0
+#, python-format
+msgid "Foreign Exchange"
+msgstr "Ulkomaanvaluutta"
+
+#. module: account_bank_statement_import_camt
+#. odoo-python
+#: code:addons/account_bank_statement_import_camt/lib/camt.py:0
+#, python-format
+msgid "Forwards"
+msgstr "Termiinit"
+
+#. module: account_bank_statement_import_camt
+#. odoo-python
+#: code:addons/account_bank_statement_import_camt/lib/camt.py:0
+#, python-format
+msgid "Forwards broker owned collateral"
+msgstr "Välittäjän omistamat termiinivakuudet"
+
+#. module: account_bank_statement_import_camt
+#. odoo-python
+#: code:addons/account_bank_statement_import_camt/lib/camt.py:0
+#, python-format
+msgid "Forwards client owned collateral"
+msgstr "Asiakkaan omistamat termiinivakuudet"
+
+#. module: account_bank_statement_import_camt
+#. odoo-python
+#: code:addons/account_bank_statement_import_camt/lib/camt.py:0
+#, python-format
+msgid "Freeze of funds"
+msgstr "Varojen jäädyttäminen"
+
+#. module: account_bank_statement_import_camt
+#. odoo-python
+#: code:addons/account_bank_statement_import_camt/lib/camt.py:0
+#, python-format
+msgid "Full Call / Early Redemption"
+msgstr "Täysi osto / Ennenaikainen takaisinmaksu"
+
+#. module: account_bank_statement_import_camt
+#. odoo-python
+#: code:addons/account_bank_statement_import_camt/lib/camt.py:0
+#, python-format
+msgid "Future Variation Margin"
+msgstr "Tuleva vaihtelumarginaali"
+
+#. module: account_bank_statement_import_camt
+#. odoo-python
+#: code:addons/account_bank_statement_import_camt/lib/camt.py:0
+#, python-format
+msgid "Futures"
+msgstr "Futuurit"
+
+#. module: account_bank_statement_import_camt
+#. odoo-python
+#: code:addons/account_bank_statement_import_camt/lib/camt.py:0
+#, python-format
+msgid "Futures Commission"
+msgstr "Futuurien komissio"
+
+#. module: account_bank_statement_import_camt
+#. odoo-python
+#: code:addons/account_bank_statement_import_camt/lib/camt.py:0
+#, python-format
+msgid "Futures Residual Amount"
+msgstr "Futuurien jäännösmäärä"
+
+#. module: account_bank_statement_import_camt
+#. odoo-python
+#: code:addons/account_bank_statement_import_camt/lib/camt.py:0
+#, python-format
+msgid "Guarantees"
+msgstr "Takaukset"
+
+#. module: account_bank_statement_import_camt
+#. odoo-python
+#: code:addons/account_bank_statement_import_camt/lib/camt.py:0
+#, python-format
+msgid "Inspeci/Share Exchange"
+msgstr "Inspeci/osakevaihto"
+
+#. module: account_bank_statement_import_camt
+#. odoo-python
+#: code:addons/account_bank_statement_import_camt/models/account_journal.py:0
+#, python-format
+msgid "Instruction ID: %s"
+msgstr "Ohjetunnus: %s"
+
+#. module: account_bank_statement_import_camt
+#. odoo-python
+#: code:addons/account_bank_statement_import_camt/lib/camt.py:0
+#, python-format
+msgid "Interest"
+msgstr "Korko"
+
+#. module: account_bank_statement_import_camt
+#. odoo-python
+#: code:addons/account_bank_statement_import_camt/lib/camt.py:0
+#, python-format
+msgid "Interest Payment"
+msgstr "Korkomaksu"
+
+#. module: account_bank_statement_import_camt
+#. odoo-python
+#: code:addons/account_bank_statement_import_camt/lib/camt.py:0
+#, python-format
+msgid "Interest Payment with Principle"
+msgstr "Koron maksu lyhennyksen kanssa"
+
+#. module: account_bank_statement_import_camt
+#. odoo-python
+#: code:addons/account_bank_statement_import_camt/lib/camt.py:0
+#, python-format
+msgid "Internal Account Transfer"
+msgstr "Sisäinen tilisiirto"
+
+#. module: account_bank_statement_import_camt
+#. odoo-python
+#: code:addons/account_bank_statement_import_camt/lib/camt.py:0
+#, python-format
+msgid "Internal Book Transfer"
+msgstr "Kirjanpidon sisäinen siirto"
+
+#. module: account_bank_statement_import_camt
+#. odoo-python
+#: code:addons/account_bank_statement_import_camt/lib/camt.py:0
+#, python-format
+msgid "Intra Company Transfer"
+msgstr "Yrityksen sisäinen siirto"
+
+#. module: account_bank_statement_import_camt
+#. odoo-python
+#: code:addons/account_bank_statement_import_camt/lib/camt.py:0
+#, python-format
+msgid "Invoice Accepted with Differed Due Date"
+msgstr "Hyväksytty lasku poikkeavalla eräpäivällä"
+
+#. module: account_bank_statement_import_camt
+#. odoo-python
+#: code:addons/account_bank_statement_import_camt/lib/camt.py:0
+#, python-format
+msgid "Issued Cash Concentration Transactions"
+msgstr "Myönnetyt kassakeskittämistapahtumat"
+
+#. module: account_bank_statement_import_camt
+#. odoo-python
+#: code:addons/account_bank_statement_import_camt/lib/camt.py:0
+#, python-format
+msgid "Issued Cheques"
+msgstr "Myönnetyt shekit"
+
+#. module: account_bank_statement_import_camt
+#. odoo-python
+#: code:addons/account_bank_statement_import_camt/lib/camt.py:0
+#, python-format
+msgid "Issued Credit Transfers"
+msgstr "Suoritetut tilisiirrot"
+
+#. module: account_bank_statement_import_camt
+#. odoo-python
+#: code:addons/account_bank_statement_import_camt/lib/camt.py:0
+#, python-format
+msgid "Issued Direct Debits"
+msgstr "Lähetetyt suoraveloitukset"
+
+#. module: account_bank_statement_import_camt
+#. odoo-python
+#: code:addons/account_bank_statement_import_camt/lib/camt.py:0
+#, python-format
+msgid "Issued Real Time Credit Transfer"
+msgstr "Lähetetty välitön tilisiirto"
+
+#. module: account_bank_statement_import_camt
+#: model:ir.model,name:account_bank_statement_import_camt.model_account_journal
+msgid "Journal"
+msgstr "Päiväkirja"
+
+#. module: account_bank_statement_import_camt
+#. odoo-python
+#: code:addons/account_bank_statement_import_camt/lib/camt.py:0
+#, python-format
+msgid "Lack"
+msgstr "Puute"
+
+#. module: account_bank_statement_import_camt
+#. odoo-python
+#: code:addons/account_bank_statement_import_camt/lib/camt.py:0
+#, python-format
+msgid "Lending Broker Owned Cash Collateral"
+msgstr "Lainanvälittäjän omistamat käteisvakuudet"
+
+#. module: account_bank_statement_import_camt
+#. odoo-python
+#: code:addons/account_bank_statement_import_camt/lib/camt.py:0
+#, python-format
+msgid "Lending Client Owned Cash Collateral"
+msgstr "Asiakkaan omistamien käteisvakuuksien lainaaminen"
+
+#. module: account_bank_statement_import_camt
+#. odoo-python
+#: code:addons/account_bank_statement_import_camt/lib/camt.py:0
+#, python-format
+msgid "Lending income"
+msgstr "Lainatulot"
+
+#. module: account_bank_statement_import_camt
+#. odoo-python
+#: code:addons/account_bank_statement_import_camt/lib/camt.py:0
+#, python-format
+msgid "Liquidation Dividend / Liquidation Payment"
+msgstr "Likvidointiosinko / likvidointimaksu"
+
+#. module: account_bank_statement_import_camt
+#. odoo-python
+#: code:addons/account_bank_statement_import_camt/lib/camt.py:0
+#, python-format
+msgid "Listed Derivatives – Futures"
+msgstr "Listatut johdannaiset – Futuurit"
+
+#. module: account_bank_statement_import_camt
+#. odoo-python
+#: code:addons/account_bank_statement_import_camt/lib/camt.py:0
+#, python-format
+msgid "Listed Derivatives – Options"
+msgstr "Listatut johdannaiset – Optiot"
+
+#. module: account_bank_statement_import_camt
+#. odoo-python
+#: code:addons/account_bank_statement_import_camt/lib/camt.py:0
+#, python-format
+msgid "Loans, Deposits & Syndications"
+msgstr "Lainat, talletukset & syndikoinnit"
+
+#. module: account_bank_statement_import_camt
+#. odoo-python
+#: code:addons/account_bank_statement_import_camt/lib/camt.py:0
+#, python-format
+msgid "Lockbox Transactions"
+msgstr "Tallelokerosiirrot"
+
+#. module: account_bank_statement_import_camt
+#. odoo-python
+#: code:addons/account_bank_statement_import_camt/lib/camt.py:0
+#, python-format
+msgid "Management Fees"
+msgstr "Hallintomaksut"
+
+#. module: account_bank_statement_import_camt
+#. odoo-python
+#: code:addons/account_bank_statement_import_camt/models/account_journal.py:0
+#, python-format
+msgid "Mandate ID: %s"
+msgstr "Valtuutuksen tunnus: %s"
+
+#. module: account_bank_statement_import_camt
+#. odoo-python
+#: code:addons/account_bank_statement_import_camt/lib/camt.py:0
+#, python-format
+msgid "Margin Payments"
+msgstr "Marginaalimaksut"
+
+#. module: account_bank_statement_import_camt
+#. odoo-python
+#: code:addons/account_bank_statement_import_camt/lib/camt.py:0
+#, python-format
+msgid "Margin client owned cash collateral"
+msgstr "Asiakkaan omistama käteisvakuusmarginaali"
+
+#. module: account_bank_statement_import_camt
+#. odoo-python
+#: code:addons/account_bank_statement_import_camt/lib/camt.py:0
+#, python-format
+msgid "Merchant Card Transactions"
+msgstr "Kauppiaan korttitapahtumat"
+
+#. module: account_bank_statement_import_camt
+#. odoo-python
+#: code:addons/account_bank_statement_import_camt/lib/camt.py:0
+#, python-format
+msgid "Merger"
+msgstr "Fuusio"
+
+#. module: account_bank_statement_import_camt
+#. odoo-python
+#: code:addons/account_bank_statement_import_camt/lib/camt.py:0
+#, python-format
+msgid "Miscellaneous Credit Operations"
+msgstr "Sekalaiset kredit-tapahtumat"
+
+#. module: account_bank_statement_import_camt
+#. odoo-python
+#: code:addons/account_bank_statement_import_camt/lib/camt.py:0
+#, python-format
+msgid "Miscellaneous Debit Operations"
+msgstr "Sekalaiset debet-toiminnot"
+
+#. module: account_bank_statement_import_camt
+#. odoo-python
+#: code:addons/account_bank_statement_import_camt/lib/camt.py:0
+#, python-format
+msgid "Miscellaneous Deposit"
+msgstr "Sekalaiset talletukset"
+
+#. module: account_bank_statement_import_camt
+#. odoo-python
+#: code:addons/account_bank_statement_import_camt/lib/camt.py:0
+#, python-format
+msgid "Miscellaneous Securities Operations"
+msgstr "Sekalaiset arvopaperitoiminnot"
+
+#. module: account_bank_statement_import_camt
+#. odoo-python
+#: code:addons/account_bank_statement_import_camt/lib/camt.py:0
+#, python-format
+msgid "Mixed Deposit"
+msgstr "Yhdistetty talletus"
+
+#. module: account_bank_statement_import_camt
+#. odoo-python
+#: code:addons/account_bank_statement_import_camt/lib/camt.py:0
+#, python-format
+msgid "Mortgage Loans"
+msgstr "Asuntolainat"
+
+#. module: account_bank_statement_import_camt
+#. odoo-python
+#: code:addons/account_bank_statement_import_camt/lib/camt.py:0
+#, python-format
+msgid "Netting"
+msgstr "Nettoutus"
+
+#. module: account_bank_statement_import_camt
+#. odoo-python
+#: code:addons/account_bank_statement_import_camt/lib/camt.py:0
+#, python-format
+msgid ""
+"No exchange rate was found to convert an amount into the currency of the "
+"journal"
+msgstr "Valuuttakurssia ei löytynyt määrän muuntamiseksi päiväkirjan valuuttaan"
+
+#. module: account_bank_statement_import_camt
+#. odoo-python
+#: code:addons/account_bank_statement_import_camt/lib/camt.py:0
+#, python-format
+msgid "Non Deliverable"
+msgstr "Ei toimitettavissa"
+
+#. module: account_bank_statement_import_camt
+#. odoo-python
+#: code:addons/account_bank_statement_import_camt/lib/camt.py:0
+#, python-format
+msgid "Non Settled"
+msgstr "Ei selvitetty"
+
+#. module: account_bank_statement_import_camt
+#. odoo-python
+#: code:addons/account_bank_statement_import_camt/lib/camt.py:0
+#, python-format
+msgid "Non Syndicated"
+msgstr "Ei syndikoitu"
+
+#. module: account_bank_statement_import_camt
+#. odoo-python
+#: code:addons/account_bank_statement_import_camt/lib/camt.py:0
+#, python-format
+msgid "Non Taxable commissions"
+msgstr "Verottomat palkkiot"
+
+#. module: account_bank_statement_import_camt
+#. odoo-python
+#: code:addons/account_bank_statement_import_camt/lib/camt.py:0
+#, python-format
+msgid "Non-Presented Circular Cheque"
+msgstr "Esittämätön kiertoshekki"
+
+#. module: account_bank_statement_import_camt
+#. odoo-python
+#: code:addons/account_bank_statement_import_camt/lib/camt.py:0
+#, python-format
+msgid "Not available"
+msgstr "Ei saatavilla"
+
+#. module: account_bank_statement_import_camt
+#. odoo-python
+#: code:addons/account_bank_statement_import_camt/lib/camt.py:0
+#, python-format
+msgid "Notice Deposits"
+msgstr "Ilmoitustalletukset"
+
+#. module: account_bank_statement_import_camt
+#. odoo-python
+#: code:addons/account_bank_statement_import_camt/lib/camt.py:0
+#, python-format
+msgid "Notice Loans"
+msgstr "Ilmoituslainat"
+
+#. module: account_bank_statement_import_camt
+#. odoo-python
+#: code:addons/account_bank_statement_import_camt/lib/camt.py:0
+#, python-format
+msgid "OTC"
+msgstr "OTC"
+
+#. module: account_bank_statement_import_camt
+#. odoo-python
+#: code:addons/account_bank_statement_import_camt/lib/camt.py:0
+#, python-format
+msgid "OTC CCP"
+msgstr "OTC CCP"
+
+#. module: account_bank_statement_import_camt
+#. odoo-python
+#: code:addons/account_bank_statement_import_camt/lib/camt.py:0
+#, python-format
+msgid "OTC Derivatives – Bonds"
+msgstr "OTC-johdannaiset – Joukkovelkakirjat"
+
+#. module: account_bank_statement_import_camt
+#. odoo-python
+#: code:addons/account_bank_statement_import_camt/lib/camt.py:0
+#, python-format
+msgid "OTC Derivatives – Credit Derivatives"
+msgstr "OTC-johdannaiset – Kredit-johdannaiset"
+
+#. module: account_bank_statement_import_camt
+#. odoo-python
+#: code:addons/account_bank_statement_import_camt/lib/camt.py:0
+#, python-format
+msgid "OTC Derivatives – Equity"
+msgstr "OTC-johdannaiset – Pääoma"
+
+#. module: account_bank_statement_import_camt
+#. odoo-python
+#: code:addons/account_bank_statement_import_camt/lib/camt.py:0
+#, python-format
+msgid "OTC Derivatives – Interest Rates"
+msgstr "OTC-johdannaiset – Korot"
+
+#. module: account_bank_statement_import_camt
+#. odoo-python
+#: code:addons/account_bank_statement_import_camt/lib/camt.py:0
+#, python-format
+msgid "OTC Derivatives – Structured Exotic Derivatives"
+msgstr "OTC-johdannaiset – Strukturoidut eksoottiset johdannaiset"
+
+#. module: account_bank_statement_import_camt
+#. odoo-python
+#: code:addons/account_bank_statement_import_camt/lib/camt.py:0
+#, python-format
+msgid "OTC Derivatives – Swaps"
+msgstr "OTC-johdannaiset – Swapit"
+
+#. module: account_bank_statement_import_camt
+#. odoo-python
+#: code:addons/account_bank_statement_import_camt/lib/camt.py:0
+#, python-format
+msgid "OTC Non-CCP"
+msgstr "OTC, ei-CCP"
+
+#. module: account_bank_statement_import_camt
+#. odoo-python
+#: code:addons/account_bank_statement_import_camt/lib/camt.py:0
+#, python-format
+msgid "Odd Lot Sale/Purchase"
+msgstr "Jäännöserän myynti/osto"
+
+#. module: account_bank_statement_import_camt
+#. odoo-python
+#: code:addons/account_bank_statement_import_camt/lib/camt.py:0
+#, python-format
+msgid "One-Off Direct Debit"
+msgstr "Kertaluonteinen suoraveloitus"
+
+#. module: account_bank_statement_import_camt
+#. odoo-python
+#: code:addons/account_bank_statement_import_camt/lib/camt.py:0
+#, python-format
+msgid "Open Cheque"
+msgstr "Avoin shekki"
+
+#. module: account_bank_statement_import_camt
+#. odoo-python
+#: code:addons/account_bank_statement_import_camt/lib/camt.py:0
+#, python-format
+msgid "Opening & Closing"
+msgstr "Avaaminen & sulkeminen"
+
+#. module: account_bank_statement_import_camt
+#. odoo-python
+#: code:addons/account_bank_statement_import_camt/lib/camt.py:0
+#, python-format
+msgid "Option broker owned collateral"
+msgstr "Välittäjän omistama optiovakuus"
+
+#. module: account_bank_statement_import_camt
+#. odoo-python
+#: code:addons/account_bank_statement_import_camt/lib/camt.py:0
+#, python-format
+msgid "Option client owned collateral"
+msgstr "Asiakkaan omistama optiovakuus"
+
+#. module: account_bank_statement_import_camt
+#. odoo-python
+#: code:addons/account_bank_statement_import_camt/lib/camt.py:0
+#, python-format
+msgid "Options"
+msgstr "Optiot"
+
+#. module: account_bank_statement_import_camt
+#. odoo-python
+#: code:addons/account_bank_statement_import_camt/lib/camt.py:0
+#, python-format
+msgid "Order Cheque"
+msgstr "Tietylle henkilölle maksettava shekki"
+
+#. module: account_bank_statement_import_camt
+#. odoo-python
+#: code:addons/account_bank_statement_import_camt/lib/camt.py:0
+#, python-format
+msgid "Other"
+msgstr "Muu"
+
+#. module: account_bank_statement_import_camt
+#. odoo-python
+#: code:addons/account_bank_statement_import_camt/lib/camt.py:0
+#, python-format
+msgid "Overdraft"
+msgstr "Tilinylitys"
+
+#. module: account_bank_statement_import_camt
+#. odoo-python
+#: code:addons/account_bank_statement_import_camt/lib/camt.py:0
+#, python-format
+msgid "Overdraft Charge"
+msgstr "Tilinylitysmaksu"
+
+#. module: account_bank_statement_import_camt
+#. odoo-python
+#: code:addons/account_bank_statement_import_camt/lib/camt.py:0
+#, python-format
+msgid "Pair-Off"
+msgstr "Pair-Off"
+
+#. module: account_bank_statement_import_camt
+#. odoo-python
+#: code:addons/account_bank_statement_import_camt/lib/camt.py:0
+#, python-format
+msgid "Partial Payment"
+msgstr "Osittainen maksu"
+
+#. module: account_bank_statement_import_camt
+#. odoo-python
+#: code:addons/account_bank_statement_import_camt/lib/camt.py:0
+#, python-format
+msgid "Partial Redemption Without Reduction of Nominal Value"
+msgstr "Osittainen lunastus ilman nimellisarvon alentamista"
+
+#. module: account_bank_statement_import_camt
+#. odoo-python
+#: code:addons/account_bank_statement_import_camt/lib/camt.py:0
+#, python-format
+msgid "Partial Redemption with reduction of nominal value"
+msgstr "Osittainen lunastus nimellisarvon alennuksella"
+
+#. module: account_bank_statement_import_camt
+#. odoo-python
+#: code:addons/account_bank_statement_import_camt/lib/camt.py:0
+#, python-format
+msgid "Payments"
+msgstr "Maksut"
+
+#. module: account_bank_statement_import_camt
+#. odoo-python
+#: code:addons/account_bank_statement_import_camt/lib/camt.py:0
+#, python-format
+msgid "Payroll/Salary Payment"
+msgstr "Palkanlaskenta/palkanmaksu"
+
+#. module: account_bank_statement_import_camt
+#. odoo-python
+#: code:addons/account_bank_statement_import_camt/lib/camt.py:0
+#, python-format
+msgid "Placement"
+msgstr "Sijoittelu"
+
+#. module: account_bank_statement_import_camt
+#. odoo-python
+#: code:addons/account_bank_statement_import_camt/models/account_journal.py:0
+#, python-format
+msgid ""
+"Please check the currency on your bank journal.\n"
+"No statements in currency %s were found in this CAMT file."
+msgstr ""
+"Tarkista pankkipäiväkirjasi valuutta.\n"
+"Tästä CAMT-tiedostosta ei löydetty tiliotteita valuuttassa %s."
+
+#. module: account_bank_statement_import_camt
+#. odoo-python
+#: code:addons/account_bank_statement_import_camt/models/account_journal.py:0
+#, python-format
+msgid ""
+"Please set the IBAN account on your bank journal.\n"
+"\n"
+"This CAMT file is targeting several IBAN accounts but none match the current "
+"journal."
+msgstr ""
+"Aseta IBAN-tili pankkipäiväkirjaasi.\n"
+"\n"
+"Tämä CAMT-tiedosto kohdistuu useisiin IBAN-tileihin, mutta mikään niistä ei "
+"vastaa nykyistä päiväkirjaa."
+
+#. module: account_bank_statement_import_camt
+#. odoo-python
+#: code:addons/account_bank_statement_import_camt/lib/camt.py:0
+#, python-format
+msgid "Point-of-Sale (POS) Payment"
+msgstr "Kassajärjestelmän maksu"
+
+#. module: account_bank_statement_import_camt
+#. odoo-python
+#: code:addons/account_bank_statement_import_camt/lib/camt.py:0
+#, python-format
+msgid "Point-of-Sale (POS) Payment - Debit Card"
+msgstr "Kassajärjestelmän maksu - Pankkikortti"
+
+#. module: account_bank_statement_import_camt
+#. odoo-python
+#: code:addons/account_bank_statement_import_camt/lib/camt.py:0
+#, python-format
+msgid "Portfolio Move"
+msgstr "Salkun siirto"
+
+#. module: account_bank_statement_import_camt
+#. odoo-python
+#: code:addons/account_bank_statement_import_camt/lib/camt.py:0
+#, python-format
+msgid "Posting Error"
+msgstr "Kirjausvirhe"
+
+#. module: account_bank_statement_import_camt
+#. odoo-python
+#: code:addons/account_bank_statement_import_camt/lib/camt.py:0
+#, python-format
+msgid "Pre-Authorised Direct Debit"
+msgstr "Ennakkoon hyväksytty suoraveloitus"
+
+#. module: account_bank_statement_import_camt
+#. odoo-python
+#: code:addons/account_bank_statement_import_camt/lib/camt.py:0
+#, python-format
+msgid "Precious Metal"
+msgstr "Arvometalli"
+
+#. module: account_bank_statement_import_camt
+#. odoo-python
+#: code:addons/account_bank_statement_import_camt/lib/camt.py:0
+#, python-format
+msgid "Principal Pay-down/pay-up"
+msgstr "Pääoman lyhennys/korotus"
+
+#. module: account_bank_statement_import_camt
+#. odoo-python
+#: code:addons/account_bank_statement_import_camt/lib/camt.py:0
+#, python-format
+msgid "Principal Payment"
+msgstr "Pääomamaksu"
+
+#. module: account_bank_statement_import_camt
+#. odoo-python
+#: code:addons/account_bank_statement_import_camt/lib/camt.py:0
+#, python-format
+msgid "Priority Credit Transfer"
+msgstr "Priorisoitu tilisiirto"
+
+#. module: account_bank_statement_import_camt
+#. odoo-python
+#: code:addons/account_bank_statement_import_camt/lib/camt.py:0
+#, python-format
+msgid "Priority Issue"
+msgstr "Etuoikeusosakkeet"
+
+#. module: account_bank_statement_import_camt
+#. odoo-python
+#: code:addons/account_bank_statement_import_camt/lib/camt.py:0
+#, python-format
+msgid "Put Redemption"
+msgstr "Myyntioptiolunastus"
+
+#. module: account_bank_statement_import_camt
+#. odoo-python
+#: code:addons/account_bank_statement_import_camt/lib/camt.py:0
+#, python-format
+msgid "Received Cash Concentration Transactions"
+msgstr "Vastaanotetut kassakeskittämistapahtumat"
+
+#. module: account_bank_statement_import_camt
+#. odoo-python
+#: code:addons/account_bank_statement_import_camt/lib/camt.py:0
+#, python-format
+msgid "Received Cheques"
+msgstr "Vastaanotetut shekit"
+
+#. module: account_bank_statement_import_camt
+#. odoo-python
+#: code:addons/account_bank_statement_import_camt/lib/camt.py:0
+#, python-format
+msgid "Received Credit Transfers"
+msgstr "Vastaanotetut tilisiirrot"
+
+#. module: account_bank_statement_import_camt
+#. odoo-python
+#: code:addons/account_bank_statement_import_camt/lib/camt.py:0
+#, python-format
+msgid "Received Direct Debits"
+msgstr "Vastaanotetut suoraveloitukset"
+
+#. module: account_bank_statement_import_camt
+#. odoo-python
+#: code:addons/account_bank_statement_import_camt/lib/camt.py:0
+#, python-format
+msgid "Received Real Time Credit Transfer"
+msgstr "Vastaanotettu reaaliaikainen tilisiirto"
+
+#. module: account_bank_statement_import_camt
+#. odoo-python
+#: code:addons/account_bank_statement_import_camt/lib/camt.py:0
+#, python-format
+msgid "Redemption"
+msgstr "Lunastus"
+
+#. module: account_bank_statement_import_camt
+#. odoo-python
+#: code:addons/account_bank_statement_import_camt/lib/camt.py:0
+#, python-format
+msgid "Redemption Asset Allocation"
+msgstr "Lunastusperusteinen varojen allokointi"
+
+#. module: account_bank_statement_import_camt
+#. odoo-python
+#: code:addons/account_bank_statement_import_camt/lib/camt.py:0
+#, python-format
+msgid "Redemption Withdrawing Plan"
+msgstr "Lunastusnostosuunnitelma"
+
+#. module: account_bank_statement_import_camt
+#. odoo-python
+#: code:addons/account_bank_statement_import_camt/lib/camt.py:0
+#, python-format
+msgid "Reimbursements"
+msgstr "Korvaukset"
+
+#. module: account_bank_statement_import_camt
+#. odoo-python
+#: code:addons/account_bank_statement_import_camt/lib/camt.py:0
+#, python-format
+msgid "Renewal"
+msgstr "Uusiminen"
+
+#. module: account_bank_statement_import_camt
+#. odoo-python
+#: code:addons/account_bank_statement_import_camt/lib/camt.py:0
+#, python-format
+msgid "Repayment"
+msgstr "Takaisinmaksu"
+
+#. module: account_bank_statement_import_camt
+#. odoo-python
+#: code:addons/account_bank_statement_import_camt/lib/camt.py:0
+#, python-format
+msgid "Repo"
+msgstr "Takaisinostositoumus (Repo)"
+
+#. module: account_bank_statement_import_camt
+#. odoo-python
+#: code:addons/account_bank_statement_import_camt/lib/camt.py:0
+#, python-format
+msgid "Repurchase offer/Issuer Bid/Reverse Rights."
+msgstr "Takaisinostotarjous/Liikkeeseenlaskijan tarjous/Käänteiset oikeudet."
+
+#. module: account_bank_statement_import_camt
+#. odoo-python
+#: code:addons/account_bank_statement_import_camt/lib/camt.py:0
+#, python-format
+msgid "Reset Payment"
+msgstr "Nollaa maksu"
+
+#. module: account_bank_statement_import_camt
+#. odoo-python
+#: code:addons/account_bank_statement_import_camt/lib/camt.py:0
+#, python-format
+msgid "Reversal due to Payment Cancellation Request"
+msgstr "Maksun peruutuspyynnöstä johtuva kumoaminen"
+
+#. module: account_bank_statement_import_camt
+#. odoo-python
+#: code:addons/account_bank_statement_import_camt/lib/camt.py:0
+#, python-format
+msgid "Reversal due to Payment Return/reimbursement of a Credit Transfer"
+msgstr "Maksun/tilisiirron palautuksesta johtuva kumoaminen"
+
+#. module: account_bank_statement_import_camt
+#. odoo-python
+#: code:addons/account_bank_statement_import_camt/lib/camt.py:0
+#, python-format
+msgid "Reversal due to Payment Reversal"
+msgstr "Maksun peruuttamisesta johtuva kumoaminen"
+
+#. module: account_bank_statement_import_camt
+#. odoo-python
+#: code:addons/account_bank_statement_import_camt/lib/camt.py:0
+#, python-format
+msgid "Reversal due to Return/Unpaid Direct Debit"
+msgstr "Palautetusta/maksamattomasta suoraveloituksesta johtuva kumoaminen"
+
+#. module: account_bank_statement_import_camt
+#. odoo-python
+#: code:addons/account_bank_statement_import_camt/lib/camt.py:0
+#, python-format
+msgid "Reversal due to a Payment Cancellation Request"
+msgstr "Maksun peruutuspyynnöstä johtuva kumoaminen"
+
+#. module: account_bank_statement_import_camt
+#. odoo-python
+#: code:addons/account_bank_statement_import_camt/lib/camt.py:0
+#, python-format
+msgid "Reverse Repo"
+msgstr "Kumoa takaisinostositoumus (repo)"
+
+#. module: account_bank_statement_import_camt
+#. odoo-python
+#: code:addons/account_bank_statement_import_camt/lib/camt.py:0
+#, python-format
+msgid "Rights Issue/Subscription Rights/Rights Offer"
+msgstr "Uusanti/Merkintäoikeus/Uusmerkintä"
+
+#. module: account_bank_statement_import_camt
+#. odoo-python
+#: code:addons/account_bank_statement_import_camt/lib/camt.py:0
+#, python-format
+msgid "SEPA B2B Direct Debit"
+msgstr "SEPA B2B-suoraveloitus"
+
+#. module: account_bank_statement_import_camt
+#. odoo-python
+#: code:addons/account_bank_statement_import_camt/lib/camt.py:0
+#, python-format
+msgid "SEPA Core Direct Debit"
+msgstr "SEPA Core -suoraveloitus"
+
+#. module: account_bank_statement_import_camt
+#. odoo-python
+#: code:addons/account_bank_statement_import_camt/lib/camt.py:0
+#, python-format
+msgid "SEPA Credit Transfer"
+msgstr "SEPA-tilisiirto"
+
+#. module: account_bank_statement_import_camt
+#. odoo-python
+#: code:addons/account_bank_statement_import_camt/lib/camt.py:0
+#, python-format
+msgid "Same Day Value Credit Transfer"
+msgstr "Samanpäiväinen tilisiirto"
+
+#. module: account_bank_statement_import_camt
+#. odoo-python
+#: code:addons/account_bank_statement_import_camt/lib/camt.py:0
+#, python-format
+msgid "Securities"
+msgstr "Arvopaperit"
+
+#. module: account_bank_statement_import_camt
+#. odoo-python
+#: code:addons/account_bank_statement_import_camt/lib/camt.py:0
+#, python-format
+msgid "Securities Borrowing"
+msgstr "Arvopapereiden lainaksi ottaminen"
+
+#. module: account_bank_statement_import_camt
+#. odoo-python
+#: code:addons/account_bank_statement_import_camt/lib/camt.py:0
+#, python-format
+msgid "Securities Lending"
+msgstr "Arvopapereiden lainaksi antaminen"
+
+#. module: account_bank_statement_import_camt
+#. odoo-python
+#: code:addons/account_bank_statement_import_camt/lib/camt.py:0
+#, python-format
+msgid "Sell Buy Back"
+msgstr "Sell-buy back"
+
+#. module: account_bank_statement_import_camt
+#. odoo-python
+#: code:addons/account_bank_statement_import_camt/lib/camt.py:0
+#, python-format
+msgid "Settlement"
+msgstr "Selvitys"
+
+#. module: account_bank_statement_import_camt
+#. odoo-python
+#: code:addons/account_bank_statement_import_camt/lib/camt.py:0
+#, python-format
+msgid "Settlement after collection"
+msgstr "Maksu perinnän jälkeen"
+
+#. module: account_bank_statement_import_camt
+#. odoo-python
+#: code:addons/account_bank_statement_import_camt/lib/camt.py:0
+#, python-format
+msgid "Settlement against bank guarantee"
+msgstr "Maksu pankkitakausta vastaan"
+
+#. module: account_bank_statement_import_camt
+#. odoo-python
+#: code:addons/account_bank_statement_import_camt/lib/camt.py:0
+#, python-format
+msgid "Settlement at Maturity"
+msgstr "Maksu eräpäivänä"
+
+#. module: account_bank_statement_import_camt
+#. odoo-python
+#: code:addons/account_bank_statement_import_camt/lib/camt.py:0
+#, python-format
+msgid "Settlement of Sight Export document"
+msgstr "Sight-vientiasiakirjan selvitys"
+
+#. module: account_bank_statement_import_camt
+#. odoo-python
+#: code:addons/account_bank_statement_import_camt/lib/camt.py:0
+#, python-format
+msgid "Settlement of Sight Import document"
+msgstr "Sight-tuontiasiakirjan selvitys"
+
+#. module: account_bank_statement_import_camt
+#. odoo-python
+#: code:addons/account_bank_statement_import_camt/lib/camt.py:0
+#, python-format
+msgid "Settlement under reserve"
+msgstr "Varauksen alainen selvitys"
+
+#. module: account_bank_statement_import_camt
+#. odoo-python
+#: code:addons/account_bank_statement_import_camt/lib/camt.py:0
+#, python-format
+msgid "Smart-Card Payment"
+msgstr "Älykorttimaksu"
+
+#. module: account_bank_statement_import_camt
+#. odoo-python
+#: code:addons/account_bank_statement_import_camt/lib/camt.py:0
+#, python-format
+msgid "Spots"
+msgstr "Paikat"
+
+#. module: account_bank_statement_import_camt
+#. odoo-python
+#: code:addons/account_bank_statement_import_camt/lib/camt.py:0
+#, python-format
+msgid "Stamp duty"
+msgstr "Leimavero"
+
+#. module: account_bank_statement_import_camt
+#. odoo-python
+#: code:addons/account_bank_statement_import_camt/lib/camt.py:0
+#, python-format
+msgid "Stand-By Letter Of Credit"
+msgstr "Standby-remburssi"
+
+#. module: account_bank_statement_import_camt
+#. odoo-python
+#: code:addons/account_bank_statement_import_camt/lib/camt.py:0
+#, python-format
+msgid "Standing Order"
+msgstr "Pysyvä toimeksianto"
+
+#. module: account_bank_statement_import_camt
+#. odoo-python
+#: code:addons/account_bank_statement_import_camt/lib/camt.py:0
+#, python-format
+msgid "Subscription"
+msgstr "Tilaus"
+
+#. module: account_bank_statement_import_camt
+#. odoo-python
+#: code:addons/account_bank_statement_import_camt/lib/camt.py:0
+#, python-format
+msgid "Subscription Asset Allocation"
+msgstr "Tilausvarallisuuden allokointi"
+
+#. module: account_bank_statement_import_camt
+#. odoo-python
+#: code:addons/account_bank_statement_import_camt/lib/camt.py:0
+#, python-format
+msgid "Subscription Savings Plan"
+msgstr "Tilaussäästösuunnitelma"
+
+#. module: account_bank_statement_import_camt
+#. odoo-python
+#: code:addons/account_bank_statement_import_camt/lib/camt.py:0
+#, python-format
+msgid "Swap Payment"
+msgstr "Swap-maksu"
+
+#. module: account_bank_statement_import_camt
+#. odoo-python
+#: code:addons/account_bank_statement_import_camt/lib/camt.py:0
+#, python-format
+msgid "Swap broker owned collateral"
+msgstr "Välittäjän omistamat swap-vakuudet"
+
+#. module: account_bank_statement_import_camt
+#. odoo-python
+#: code:addons/account_bank_statement_import_camt/lib/camt.py:0
+#, python-format
+msgid "Swaps"
+msgstr "Swapit"
+
+#. module: account_bank_statement_import_camt
+#. odoo-python
+#: code:addons/account_bank_statement_import_camt/lib/camt.py:0
+#, python-format
+msgid "Sweep"
+msgstr "Sweep"
+
+#. module: account_bank_statement_import_camt
+#. odoo-python
+#: code:addons/account_bank_statement_import_camt/lib/camt.py:0
+#, python-format
+msgid "Sweeping"
+msgstr "Sweeping"
+
+#. module: account_bank_statement_import_camt
+#. odoo-python
+#: code:addons/account_bank_statement_import_camt/lib/camt.py:0
+#, python-format
+msgid "Switch"
+msgstr "Vaihto"
+
+#. module: account_bank_statement_import_camt
+#. odoo-python
+#: code:addons/account_bank_statement_import_camt/lib/camt.py:0
+#, python-format
+msgid "Syndicated"
+msgstr "Syndikoitu"
+
+#. module: account_bank_statement_import_camt
+#. odoo-python
+#: code:addons/account_bank_statement_import_camt/lib/camt.py:0
+#, python-format
+msgid "Syndications"
+msgstr "Syndikaatiot"
+
+#. module: account_bank_statement_import_camt
+#. odoo-python
+#: code:addons/account_bank_statement_import_camt/lib/camt.py:0
+#, python-format
+msgid "TBA closing"
+msgstr "Päätös ilmoitetaan myöhemmin"
+
+#. module: account_bank_statement_import_camt
+#. odoo-python
+#: code:addons/account_bank_statement_import_camt/lib/camt.py:0
+#, python-format
+msgid "Tax Reclaim"
+msgstr "Veronpalautus"
+
+#. module: account_bank_statement_import_camt
+#. odoo-python
+#: code:addons/account_bank_statement_import_camt/lib/camt.py:0
+#, python-format
+msgid "Taxes"
+msgstr "Verot"
+
+#. module: account_bank_statement_import_camt
+#. odoo-python
+#: code:addons/account_bank_statement_import_camt/lib/camt.py:0
+#, python-format
+msgid "Tender"
+msgstr "Tarjous"
+
+#. module: account_bank_statement_import_camt
+#. odoo-python
+#: code:addons/account_bank_statement_import_camt/lib/camt.py:0
+#, python-format
+msgid "Topping"
+msgstr "Lisäys"
+
+#. module: account_bank_statement_import_camt
+#. odoo-python
+#: code:addons/account_bank_statement_import_camt/lib/camt.py:0
+#, python-format
+msgid "Trade"
+msgstr "Kauppa"
+
+#. module: account_bank_statement_import_camt
+#. odoo-python
+#: code:addons/account_bank_statement_import_camt/lib/camt.py:0
+#, python-format
+msgid "Trade Services"
+msgstr "Kauppapalvelut"
+
+#. module: account_bank_statement_import_camt
+#. odoo-python
+#: code:addons/account_bank_statement_import_camt/lib/camt.py:0
+#, python-format
+msgid "Trade, Clearing and Settlement"
+msgstr "Kauppa, määritys ja selvitys"
+
+#. module: account_bank_statement_import_camt
+#. odoo-python
+#: code:addons/account_bank_statement_import_camt/lib/camt.py:0
+#, python-format
+msgid "Transaction Fees"
+msgstr "Tapahtumamaksut"
+
+#. module: account_bank_statement_import_camt
+#. odoo-python
+#: code:addons/account_bank_statement_import_camt/models/account_journal.py:0
+#, python-format
+msgid "Transaction ID: %s"
+msgstr "Tapahtumatunnus: %s"
+
+#. module: account_bank_statement_import_camt
+#. odoo-python
+#: code:addons/account_bank_statement_import_camt/lib/camt.py:0
+#, python-format
+msgid "Transfer In"
+msgstr "Siirto sisään"
+
+#. module: account_bank_statement_import_camt
+#. odoo-python
+#: code:addons/account_bank_statement_import_camt/lib/camt.py:0
+#, python-format
+msgid "Transfer Out"
+msgstr "Siirto ulos"
+
+#. module: account_bank_statement_import_camt
+#. odoo-python
+#: code:addons/account_bank_statement_import_camt/lib/camt.py:0
+#, python-format
+msgid "Travellers Cheques Deposit"
+msgstr "Matkashekkien talletus"
+
+#. module: account_bank_statement_import_camt
+#. odoo-python
+#: code:addons/account_bank_statement_import_camt/lib/camt.py:0
+#, python-format
+msgid "Travellers Cheques Withdrawal"
+msgstr "Matkashekkien nosto"
+
+#. module: account_bank_statement_import_camt
+#. odoo-python
+#: code:addons/account_bank_statement_import_camt/lib/camt.py:0
+#, python-format
+msgid "Treasury Tax And Loan Service"
+msgstr "Valtiovarainhallinnon vero- ja lainapalvelu (TTL)"
+
+#. module: account_bank_statement_import_camt
+#. odoo-python
+#: code:addons/account_bank_statement_import_camt/lib/camt.py:0
+#, python-format
+msgid "Triparty Repo"
+msgstr "Kolmen osapuolen takaisinostositoumus (repo)"
+
+#. module: account_bank_statement_import_camt
+#. odoo-python
+#: code:addons/account_bank_statement_import_camt/lib/camt.py:0
+#, python-format
+msgid "Triparty Reverse Repo"
+msgstr "Kolmen osapuolen käänteinen takaisinostositoumus (repo)"
+
+#. module: account_bank_statement_import_camt
+#. odoo-python
+#: code:addons/account_bank_statement_import_camt/lib/camt.py:0
+#, python-format
+msgid "Turnaround"
+msgstr "Läpimenoaika"
+
+#. module: account_bank_statement_import_camt
+#. odoo-python
+#: code:addons/account_bank_statement_import_camt/lib/camt.py:0
+#, python-format
+msgid "Underwriting Commission"
+msgstr "Lunastuspalkkio"
+
+#. module: account_bank_statement_import_camt
+#. odoo-python
+#: code:addons/account_bank_statement_import_camt/lib/camt.py:0
+#, python-format
+msgid "Unpaid Card Transaction"
+msgstr "Maksamaton korttitapahtuma"
+
+#. module: account_bank_statement_import_camt
+#. odoo-python
+#: code:addons/account_bank_statement_import_camt/lib/camt.py:0
+#, python-format
+msgid "Unpaid Cheque"
+msgstr "Maksamaton shekki"
+
+#. module: account_bank_statement_import_camt
+#. odoo-python
+#: code:addons/account_bank_statement_import_camt/lib/camt.py:0
+#, python-format
+msgid "Unpaid Foreign Cheque"
+msgstr "Maksamaton ulkomaan shekki"
+
+#. module: account_bank_statement_import_camt
+#. odoo-python
+#: code:addons/account_bank_statement_import_camt/lib/camt.py:0
+#, python-format
+msgid "Upfront Payment"
+msgstr "Ennakkomaksu"
+
+#. module: account_bank_statement_import_camt
+#. odoo-python
+#: code:addons/account_bank_statement_import_camt/lib/camt.py:0
+#, python-format
+msgid "Value Date"
+msgstr "Arvopäivä"
+
+#. module: account_bank_statement_import_camt
+#. odoo-python
+#: code:addons/account_bank_statement_import_camt/lib/camt.py:0
+#, python-format
+msgid "Warrant Exercise/Warrant Conversion"
+msgstr "Warranttien lunastaminen/muuntaminen"
+
+#. module: account_bank_statement_import_camt
+#. odoo-python
+#: code:addons/account_bank_statement_import_camt/lib/camt.py:0
+#, python-format
+msgid "Withdrawal/distribution"
+msgstr "Nosto/jako"
+
+#. module: account_bank_statement_import_camt
+#. odoo-python
+#: code:addons/account_bank_statement_import_camt/lib/camt.py:0
+#, python-format
+msgid "Withholding Tax"
+msgstr "Lähdevero"
+
+#. module: account_bank_statement_import_camt
+#. odoo-python
+#: code:addons/account_bank_statement_import_camt/lib/camt.py:0
+#, python-format
+msgid "YTD Adjustment"
+msgstr "Vuodesta alun jälkeiset korjaukset"
+
+#. module: account_bank_statement_import_camt
+#. odoo-python
+#: code:addons/account_bank_statement_import_camt/lib/camt.py:0
+#, python-format
+msgid "Zero Balancing"
+msgstr "Nollabalansointi"

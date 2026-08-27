@@ -1,0 +1,216 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+# * theme_graphene
+#
+# Weblate <noreply-mt-weblate@weblate.org>, 2026.
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 17.0+e\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2023-09-28 12:22+0000\n"
+"PO-Revision-Date: 2026-05-30 17:40+0000\n"
+"Last-Translator: Weblate <noreply-mt-weblate@weblate.org>\n"
+"Language-Team: Lao <https://translate.odoo.com/projects/odoo-17/"
+"theme_graphene/lo/>\n"
+"Language: lo\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: \n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"X-Generator: Weblate 5.17\n"
+
+#. module: theme_graphene
+#: model_terms:theme.ir.ui.view,arch:theme_graphene.s_comparisons
+msgid "24/7 support"
+msgstr ""
+
+#. module: theme_graphene
+#: model_terms:theme.ir.ui.view,arch:theme_graphene.s_call_to_action
+msgid "<b>50,000+ companies</b> run our software."
+msgstr ""
+
+#. module: theme_graphene
+#: model_terms:theme.ir.ui.view,arch:theme_graphene.s_cover
+msgid "<b>Making the difference.</b>"
+msgstr "<b>ສ້າງຄວາມແຕກຕ່າງ.</b>"
+
+#. module: theme_graphene
+#: model_terms:theme.ir.ui.view,arch:theme_graphene.s_company_team
+msgid ""
+"<small>Aline is one of the iconic people in life who can say they love what "
+"they do. She mentors 100+ in-house developers and looks after the community "
+"of thousands of developers.</small>"
+msgstr ""
+
+#. module: theme_graphene
+#: model_terms:theme.ir.ui.view,arch:theme_graphene.s_company_team
+msgid ""
+"<small>Founder and chief visionary, Tony is the driving force behind the "
+"company. He loves to keep his hands full by participating in the development"
+" of the software, marketing, and customer experience strategies.</small>"
+msgstr ""
+
+#. module: theme_graphene
+#: model_terms:theme.ir.ui.view,arch:theme_graphene.s_company_team
+msgid ""
+"<small>Iris, with her international experience, helps us easily understand "
+"the numbers and improves them. She is determined to drive success and "
+"delivers her professional acumen to bring the company to the next "
+"level.</small>"
+msgstr ""
+
+#. module: theme_graphene
+#: model_terms:theme.ir.ui.view,arch:theme_graphene.s_company_team
+msgid ""
+"<small>Mich loves taking on challenges. With his multi-year experience as "
+"Commercial Director in the software industry, Mich has helped the company to"
+" get where it is today. Mich is among the best minds.</small>"
+msgstr ""
+
+#. module: theme_graphene
+#: model_terms:theme.ir.ui.view,arch:theme_graphene.s_comparisons
+msgid "Access to all modules"
+msgstr ""
+
+#. module: theme_graphene
+#: model_terms:theme.ir.ui.view,arch:theme_graphene.s_comparisons
+msgid "Access to all modules and features"
+msgstr ""
+
+#. module: theme_graphene
+#: model_terms:theme.ir.ui.view,arch:theme_graphene.s_process_steps
+msgid "Add to Cart"
+msgstr "ເພີ່ມລົງໃນກະຕ່າ"
+
+#. module: theme_graphene
+#: model_terms:theme.ir.ui.view,arch:theme_graphene.s_company_team
+msgid "Aline Turner, <small><b>CTO</b></small>"
+msgstr ""
+
+#. module: theme_graphene
+#: model_terms:theme.ir.ui.view,arch:theme_graphene.s_cover
+msgid "Contact us"
+msgstr "ຕິດຕໍ່ພວກເຮົາ"
+
+#. module: theme_graphene
+#: model_terms:theme.ir.ui.view,arch:theme_graphene.s_process_steps
+msgid "Get Delivered"
+msgstr "ໄດ້ຮັບການຈັດສົ່ງ"
+
+#. module: theme_graphene
+#: model_terms:theme.ir.ui.view,arch:theme_graphene.s_picture
+msgid "Grow with Us"
+msgstr "ເຕີບໂຕໄປກັບພວກເຮົາ"
+
+#. module: theme_graphene
+#: model_terms:theme.ir.ui.view,arch:theme_graphene.s_company_team
+msgid "Iris Joe, <small><b>CFO</b></small>"
+msgstr ""
+
+#. module: theme_graphene
+#: model_terms:theme.ir.ui.view,arch:theme_graphene.s_company_team
+msgid "Mich Stark, <small><b>COO</b></small>"
+msgstr ""
+
+#. module: theme_graphene
+#: model_terms:theme.ir.ui.view,arch:theme_graphene.s_three_columns
+msgid "Mobile Experience"
+msgstr "ປະສົບການຜ່ານມືຖື"
+
+#. module: theme_graphene
+#: model_terms:theme.ir.ui.view,arch:theme_graphene.s_cover
+msgid ""
+"Our mission is to give customers the best experience.<br/>Extensive "
+"documentation &amp; guides, an active community,<br/>24/7 support make it a "
+"pleasure to work with us."
+msgstr ""
+"ພາລະກິດຂອງພວກເຮົາຄືການມອບປະສົບການທີ່ດີທີ່ສຸດໃຫ້ແກ່ລູກຄ້າ.<br/>ດ້ວຍເອກະສານ ແລະ ຄູ່ມືທີ່ຄົບຖ້ວນ, ຊຸມຊົນ"
+"ທີ່ຕື່ນຕົວ,<br/>ແລະ ບໍລິການຊ່ວຍເຫຼືອ 24/7 ຈະເຮັດໃຫ້ທ່ານມີຄວາມສຸກໃນການເຮັດວຽກຮ່ວມກັບພວກເຮົາ."
+
+#. module: theme_graphene
+#: model_terms:theme.ir.ui.view,arch:theme_graphene.s_process_steps
+msgid "Pay"
+msgstr "ຈ່າຍ"
+
+#. module: theme_graphene
+#: model_terms:theme.ir.ui.view,arch:theme_graphene.s_three_columns
+msgid "Powerful API"
+msgstr "API ທີ່ມີປະສິດທິພາບ"
+
+#. module: theme_graphene
+#: model_terms:theme.ir.ui.view,arch:theme_graphene.s_three_columns
+msgid ""
+"Probably the only CRM with a full mobile experience. Never wondered how it "
+"works? That's because it just works"
+msgstr ""
+"ອາດຈະເປັນ CRM ດຽວທີ່ມີປະສົບການການນຳໃຊ້ຜ່ານມືຖືແບບເຕັມຮູບແບບ. ບໍ່ຕ້ອງສົງໄສເລີຍວ່າມັນເຮັດວຽກແນວໃ"
+"ດ? ເພາະວ່າມັນສາມາດເຮັດວຽກໄດ້ຢ່າງສົມບູນແບບຢູ່ແລ້ວ"
+
+#. module: theme_graphene
+#: model_terms:theme.ir.ui.view,arch:theme_graphene.s_picture
+msgid ""
+"Put your people at the heart of your marketing with tools that help you get "
+"to know your audience <br/>and see who you should be talking to."
+msgstr ""
+"ໃຫ້ຄົນຂອງທ່ານເປັນຫົວໃຈສຳຄັນຂອງການຕະຫຼາດ ດ້ວຍເຄື່ອງມືທີ່ຊ່ວຍໃຫ້ທ່ານຮູ້ຈັກກຸ່ມເປົ້າໝາຍຂອງທ່ານ <br/>ແລະ "
+"ຮູ້ວ່າທ່ານຄວນຈະສື່ສານກັບໃຜ."
+
+#. module: theme_graphene
+#: model_terms:theme.ir.ui.view,arch:theme_graphene.s_process_steps
+msgid "Sign In"
+msgstr "ເຂົ້າສູ່ລະບົບ"
+
+#. module: theme_graphene
+#: model_terms:theme.ir.ui.view,arch:theme_graphene.s_comparisons
+msgid "Start Now"
+msgstr "ເລີ່ມຕົ້ນດຽວນີ້"
+
+#. module: theme_graphene
+#: model_terms:theme.ir.ui.view,arch:theme_graphene.s_three_columns
+msgid "Support Team"
+msgstr "ທີມງານຊ່ວຍເຫຼືອ"
+
+#. module: theme_graphene
+#: model_terms:theme.ir.ui.view,arch:theme_graphene.s_three_columns
+msgid ""
+"Thanks to our API, Developers report building their solutions 4x faster. "
+"Discover why and how."
+msgstr ""
+"ຍ້ອນ API ຂອງພວກເຮົາ, ນັກພັດທະນາສາມາດສ້າງວິທີແກ້ໄຂຂອງພວກເຂົາໄດ້ໄວຂຶ້ນເຖິງ 4 ເທົ່າ. ຄົ້ນຫາເຫດຜົນ "
+"ແລະ ວິທີການໄດ້ທີ່ນີ້."
+
+#. module: theme_graphene
+#: model:ir.model,name:theme_graphene.model_theme_utils
+msgid "Theme Utils"
+msgstr "ເຄື່ອງມືຊ່ວຍຈັດການທີມ (Theme Utils)"
+
+#. module: theme_graphene
+#: model_terms:theme.ir.ui.view,arch:theme_graphene.s_company_team
+msgid "Tony Fred, <small><b>CEO</b></small>"
+msgstr ""
+
+#. module: theme_graphene
+#: model_terms:theme.ir.ui.view,arch:theme_graphene.s_text_image
+msgid "Unique experiences to drive engagement"
+msgstr "ປະສົບການທີ່ເປັນເອກະລັກເພື່ອຂັບເຄື່ອນການມີສ່ວນຮ່ວມ"
+
+#. module: theme_graphene
+#: model_terms:theme.ir.ui.view,arch:theme_graphene.s_text_image
+msgid ""
+"Users are looking to consume engaging content.<br/>We empowers our teams to "
+"create the most relevant content."
+msgstr ""
+"ຜູ້ໃຊ້ກຳລັງຊອກຫາເນື້ອຫາທີ່ໜ້າສົນໃຈ.<br/>ພວກເຮົາເສີມສ້າງໃຫ້ທີມງານຂອງພວກເຮົາສ້າງເນື້ອຫາທີ່ກ່ຽວຂ້ອງທີ່ສຸດ."
+
+#. module: theme_graphene
+#: model_terms:theme.ir.ui.view,arch:theme_graphene.s_three_columns
+msgid ""
+"We have a support team that will do everything to answer you as quickly as "
+"the voice assistants."
+msgstr ""
+"ພວກເຮົາມີທີມງານຊ່ວຍເຫຼືອທີ່ຈະເຮັດທຸກຢ່າງເພື່ອຕອບຄຳຖາມຂອງທ່ານໃຫ້ໄວຄືກັບລະບົບສັ່ງການດ້ວຍສຽງ."
+
+#. module: theme_graphene
+#: model_terms:theme.ir.ui.view,arch:theme_graphene.s_text_image
+msgid "We have one goal in mind, the user satisfaction."
+msgstr "ພວກເຮົາມີເປົ້າໝາຍດຽວໃນໃຈ ຄືຄວາມເພິ່ງພໍໃຈຂອງຜູ້ໃຊ້."

@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <record id="view_igtf_report_wizard_form" model="ir.ui.view">
+        <field name="name">igtf.report.wizard.form</field>
+        <field name="model">igtf.report.wizard</field>
+        <field name="arch" type="xml">
+            <form string="Listado de IGTF Percibido">
+                <group>
+                    <group>
+                        <field name="date_from"/>
+                    </group>
+                    <group>
+                        <field name="date_to"/>
+                    </group>
+                </group>
+                <footer>
+                    <button name="action_print_report" string="Imprimir" type="object" class="btn-primary"/>
+                    <button string="Cancelar" class="btn-secondary" special="cancel"/>
+                </footer>
+            </form>
+        </field>
+    </record>
+
+    <record id="action_igtf_report_wizard" model="ir.actions.act_window">
+        <field name="name">Listado de IGTF Percibido</field>
+        <field name="type">ir.actions.act_window</field>
+        <field name="res_model">igtf.report.wizard</field>
+        <field name="view_mode">form</field>
+        <field name="target">new</field>
+        <field name="view_id" ref="view_igtf_report_wizard_form"/>
+    </record>
+
+    <menuitem id="menu_igtf_report"
+              name="Listado de IGTF Percibido"
+              parent="account.menu_finance_reports"
+              action="action_igtf_report_wizard"
+              sequence="100"
+              groups="l10n_ve_full.group_localizacion"/>
+</odoo>

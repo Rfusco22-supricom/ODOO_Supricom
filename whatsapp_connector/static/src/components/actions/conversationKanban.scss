@@ -1,0 +1,13 @@
+
+@media (min-width: 475px) and (max-width: 767px) {
+    .o_chatroom_funnel {
+        >.o_kanban_group {
+            max-width: 30rem;
+        }
+    }
+}
+.o_chatroom_funnel {
+    .o_field_many2many_tags .o_tag {
+        font-size: 0.65rem;
+    }
+}

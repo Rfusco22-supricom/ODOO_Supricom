@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <!-- Client Action for OWL App (Standard Main View) -->
+    <record id="action_count_inventory_owl" model="ir.actions.client">
+        <field name="name">Conteo de Inventario (OWL)</field>
+        <field name="tag">digiflex_count_inventory.app</field>
+        <field name="target">main</field>
+    </record>
+
+    <menuitem id="menu_count_inventory_root"
+              name="Conteo Inventario"
+              web_icon="stock,static/description/icon.png"
+              action="action_count_inventory_owl"
+              groups="digiflex_count_inventory.group_count_inventory_user,digiflex_count_inventory.group_count_inventory_manager"
+              sequence="15"/>
+
+    <!-- Submenús para Backend -->
+    <menuitem id="menu_count_inventory_app_sub"
+              name="Pantalla de Conteo (OWL)"
+              parent="menu_count_inventory_root"
+              action="action_count_inventory_owl"
+              sequence="1"/>
+
+    <menuitem id="menu_count_inventory_backend_sub"
+              name="Histórico de Registros"
+              parent="menu_count_inventory_root"
+              action="action_digiflex_count_inventory_backend"
+              groups="digiflex_count_inventory.group_count_inventory_manager"
+              sequence="2"/>
+</odoo>

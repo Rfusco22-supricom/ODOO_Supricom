@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+
+    <!-- Vista Tree / Lista del Reporte CxC con Banner Superior de Exportación -->
+    <record id="view_digiflex_cxc_report_tree" model="ir.ui.view">
+        <field name="name">digiflex.cxc.report.tree</field>
+        <field name="model">digiflex.cxc.report</field>
+        <field name="arch" type="xml">
+            <tree string="Cuentas por Cobrar" create="false" edit="false" delete="false" banner_route="/digiflex_cxc_odoo/export_banner">
+                <header>
+                    <button name="action_export_excel" string="Exportar a Excel" type="object" class="btn-primary" icon="fa-file-excel-o"/>
+                </header>
+                <field name="user_name" string="Vendedor" optional="show"/>
+                <field name="partner_name" string="Cliente"/>
+                <field name="phone" optional="show"/>
+                <field name="transaction_type" optional="show"/>
+                <field name="document_number" string="Documento"/>
+                <field name="nro_ctrl" optional="show"/>
+                <field name="invoice_date"/>
+                <field name="date_maturity" optional="show"/>
+                <field name="days_overdue" optional="show"/>
+                <field name="currency_id" column_invisible="True"/>
+                <field name="amount_residual" widget="monetary" options="{'currency_field': 'currency_id'}" sum="Total Saldo"/>
+                <field name="amount_current" widget="monetary" options="{'currency_field': 'currency_id'}" sum="Total Por Vencer"/>
+                <field name="amount_1_30" widget="monetary" options="{'currency_field': 'currency_id'}" sum="Total 1-30"/>
+                <field name="amount_31_60" widget="monetary" options="{'currency_field': 'currency_id'}" sum="Total 31-60"/>
+                <field name="amount_61_90" widget="monetary" options="{'currency_field': 'currency_id'}" sum="Total 61-90"/>
+                <field name="amount_91_plus" widget="monetary" options="{'currency_field': 'currency_id'}" sum="Total 91+"/>
+                <field name="company_name" string="Compañía" groups="base.group_multi_company" optional="show"/>
+            </tree>
+        </field>
+    </record>
+
+    <!-- Vista Search / Búsqueda -->
+    <record id="view_digiflex_cxc_report_search" model="ir.ui.view">
+        <field name="name">digiflex.cxc.report.search</field>
+        <field name="model">digiflex.cxc.report</field>
+        <field name="arch" type="xml">
+            <search string="Buscar Cuentas por Cobrar">
+                <field name="partner_name" string="Cliente"/>
+                <field name="user_name" string="Vendedor"/>
+                <field name="document_number" string="Documento"/>
+                <field name="nro_ctrl"/>
+                <field name="transaction_type"/>
+                <field name="company_name" string="Compañía" groups="base.group_multi_company"/>
+
+                <filter string="Vencidas" name="filter_overdue" domain="[('days_overdue', '&gt;', 0)]"/>
+                <filter string="Por Vencer" name="filter_current" domain="[('days_overdue', '&lt;=', 0)]"/>
+                <separator/>
+                <filter string="Mis Ventas" name="filter_my_sales" domain="[('user_id', '=', uid)]"/>
+
+                <group expand="1" string="Agrupar por">
+                    <filter string="Vendedor" name="group_by_user_name" context="{'group_by': 'user_name'}"/>
+                    <filter string="Cliente" name="group_by_partner_name" context="{'group_by': 'partner_name'}"/>
+                    <filter string="Transacción" name="group_by_transaction_type" context="{'group_by': 'transaction_type'}"/>
+                    <filter string="Compañía" name="group_by_company_name" context="{'group_by': 'company_name'}" groups="base.group_multi_company"/>
+                    <filter string="Fecha de Emisión" name="group_by_invoice_date" context="{'group_by': 'invoice_date:month'}"/>
+                    <filter string="Fecha de Vencimiento" name="group_by_date_maturity" context="{'group_by': 'date_maturity:month'}"/>
+                </group>
+            </search>
+        </field>
+    </record>
+
+    <!-- Acción de Ventana para el Reporte -->
+    <record id="action_digiflex_cxc_report" model="ir.actions.act_window">
+        <field name="name">Cuentas por Cobrar</field>
+        <field name="res_model">digiflex.cxc.report</field>
+        <field name="view_mode">tree</field>
+        <field name="view_id" ref="view_digiflex_cxc_report_tree"/>
+        <field name="search_view_id" ref="view_digiflex_cxc_report_search"/>
+        <field name="context">{
+            'search_default_group_by_user_name': 1,
+            'search_default_group_by_partner_name': 1
+        }</field>
+        <field name="help" type="html">
+            <p class="o_view_nocontent_smiling_face">
+                ¡No se encontraron cuentas por cobrar!
+            </p>
+            <p>
+                Este reporte muestra todas las facturas y saldos pendientes agrupados por vendedor y cliente, desglosados por días de vencimiento.
+            </p>
+        </field>
+    </record>
+
+    <!-- Acción de Servidor para Exportar a Excel -->
+    <record id="action_server_export_cxc_excel" model="ir.actions.server">
+        <field name="name">Exportar Cuentas por Cobrar a Excel</field>
+        <field name="model_id" ref="model_digiflex_cxc_report"/>
+        <field name="binding_model_id" ref="model_digiflex_cxc_report"/>
+        <field name="binding_view_types">list</field>
+        <field name="state">code</field>
+        <field name="code">
+            action = env['digiflex.cxc.report'].action_export_excel()
+        </field>
+    </record>
+
+</odoo>

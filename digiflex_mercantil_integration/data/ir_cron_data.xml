@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data noupdate="1">
+        <record id="cron_bank_integration_daily_fetch_reconcile" model="ir.cron">
+            <field name="name">Sincronización y Conciliación Bancaria Diaria (API)</field>
+            <field name="model_id" ref="model_bank_integration_account"/>
+            <field name="state">code</field>
+            <field name="code">model.cron_fetch_and_reconcile_daily()</field>
+            <field name="interval_number">1</field>
+            <field name="interval_type">days</field>
+            <field name="numbercall">-1</field>
+            <field name="active">True</field>
+            <field name="doall" eval="False"/>
+            <field name="nextcall" eval="(datetime.now() + timedelta(days=1)).strftime('%Y-%m-%d 02:00:00')"/>
+        </record>
+    </data>
+</odoo>

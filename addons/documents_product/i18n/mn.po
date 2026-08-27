@@ -1,0 +1,152 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+# * documents_product
+#
+# Translators:
+# Batmunkh Ganbat <batmunkh.g@bumanit.mn>, 2022
+# Baskhuu Lodoikhuu <baskhuujacara@gmail.com>, 2022
+# Martin Trigaux, 2022
+# Uuganbayar Batbaatar <uuganaaub33@gmail.com>, 2022
+# tserendavaa tsogtoo <tseegii011929@gmail.com>, 2022
+# Гэрэлтцог Цогтбаатар, 2023
+# Weblate <noreply-mt-weblate@weblate.org>, 2025.
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 15.5alpha1+e\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2025-12-29 18:46+0000\n"
+"PO-Revision-Date: 2025-12-30 15:25+0000\n"
+"Last-Translator: Weblate <noreply-mt-weblate@weblate.org>\n"
+"Language-Team: Mongolian <https://translate.odoo.com/projects/odoo-17/"
+"documents_product/mn/>\n"
+"Language: mn\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: \n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+"X-Generator: Weblate 5.14.3\n"
+
+#. module: documents_product
+#: model:ir.model,name:documents_product.model_documents_workflow_rule
+msgid ""
+"A set of condition and actions which will be available to all attachments "
+"matching the conditions"
+msgstr ""
+"Тухайн нөхцөл байдалд тохирсон бүх хавсралтад ашиглах боломжтой нөхцөл ба "
+"үйлдлүүдийн багц"
+
+#. module: documents_product
+#: model_terms:ir.ui.view,arch_db:documents_product.res_config_settings_view_form
+msgid "Centralize files attached to products"
+msgstr ""
+
+#. module: documents_product
+#: model:ir.model,name:documents_product.model_res_company
+msgid "Companies"
+msgstr "Компаниуд"
+
+#. module: documents_product
+#: model:ir.model,name:documents_product.model_res_config_settings
+msgid "Config Settings"
+msgstr "Тохиргооны тохируулга"
+
+#. module: documents_product
+#: model:ir.model.fields,field_description:documents_product.field_documents_workflow_rule__create_model
+msgid "Create"
+msgstr "Үүсгэх"
+
+#. module: documents_product
+#: model:documents.tag,name:documents_product.documents_product_sheet_tag
+msgid "DataSheets"
+msgstr ""
+
+#. module: documents_product
+#: model_terms:ir.ui.view,arch_db:documents_product.res_config_settings_view_form
+msgid "Default Tags"
+msgstr "Үндсэн пайз"
+
+#. module: documents_product
+#: model:ir.model,name:documents_product.model_documents_document
+msgid "Document"
+msgstr "Баримт"
+
+#. module: documents_product
+#: model:documents.facet,name:documents_product.documents_product_documents_facet
+msgid "Documents"
+msgstr "Баримтууд"
+
+#. module: documents_product
+#: model:ir.model.fields,field_description:documents_product.field_res_company__documents_product_settings
+msgid "Documents Product Settings"
+msgstr ""
+
+#. module: documents_product
+#. odoo-python
+#: code:addons/documents_product/models/document.py:0
+#, python-format
+msgid "Invalid %s search"
+msgstr ""
+
+#. module: documents_product
+#: model:documents.tag,name:documents_product.documents_product_msds_tag
+msgid "MSDS"
+msgstr "MSDS"
+
+#. module: documents_product
+#: model:documents.tag,name:documents_product.documents_product_new_tag
+msgid "New"
+msgstr "Шинэ"
+
+#. module: documents_product
+#: model:documents.tag,name:documents_product.documents_product_plans_tag
+msgid "Plans"
+msgstr "Төлөвлөгөө"
+
+#. module: documents_product
+#: model:ir.model,name:documents_product.model_product_template
+#: model:ir.model.fields,field_description:documents_product.field_documents_document__product_template_id
+#: model:ir.model.fields,field_description:documents_product.field_res_config_settings__documents_product_settings
+msgid "Product"
+msgstr "Бараа"
+
+#. module: documents_product
+#: model:ir.model.fields,field_description:documents_product.field_res_company__product_tags
+#: model:ir.model.fields,field_description:documents_product.field_res_config_settings__product_tags
+msgid "Product Tags"
+msgstr "Барааны пайзууд"
+
+#. module: documents_product
+#: model:ir.model,name:documents_product.model_product_product
+#: model:ir.model.fields,field_description:documents_product.field_documents_document__product_id
+msgid "Product Variant"
+msgstr "Барааны хувилбар"
+
+#. module: documents_product
+#: model:ir.model.fields,field_description:documents_product.field_res_company__product_folder
+msgid "Product Workspace"
+msgstr ""
+
+#. module: documents_product
+#: model:ir.model.fields.selection,name:documents_product.selection__documents_workflow_rule__create_model__product_template
+msgid "Product template"
+msgstr "Барааны загвар"
+
+#. module: documents_product
+#: model:documents.folder,name:documents_product.documents_product_folder
+msgid "Products"
+msgstr "Бараа"
+
+#. module: documents_product
+#: model:documents.tag,name:documents_product.documents_product_specs_tag
+msgid "Specs"
+msgstr "Онцлог"
+
+#. module: documents_product
+#: model_terms:ir.ui.view,arch_db:documents_product.res_config_settings_view_form
+msgid "Workspace"
+msgstr "Ажлын талбар"
+
+#. module: documents_product
+#: model:ir.model.fields,field_description:documents_product.field_res_config_settings__product_folder
+msgid "product default workspace"
+msgstr ""

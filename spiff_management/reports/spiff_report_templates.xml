@@ -1,0 +1,398 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <template id="report_spiff_calculation">
+        <t t-call="web.html_container">
+            <t t-foreach="docs" t-as="doc">
+                <t t-call="web.external_layout">
+                    <div class="page">
+                        <div class="oe_structure"/>
+                        
+                        <div class="row">
+                            <div class="col-12 text-center mb-4">
+                                <h2>Reporte de Incentivos SPIFF</h2>
+                                <h4>Periodo: <span t-field="doc.period_start"/> - <span t-field="doc.period_end"/></h4>
+                            </div>
+                        </div>
+
+                        <!-- 1. General Summary by Salesperson -->
+                        <div class="row mt-4 mb-2">
+                             <div class="col-12">
+                                <h3 class="bg-light p-2">Resumen por Vendedor</h3>
+                            </div>
+                        </div>
+
+                        <table class="table table-sm table-bordered">
+                            <thead>
+                                <tr>
+                                    <th>Vendedor</th>
+                                    <th class="text-end">Total Cantidad</th>
+                                    <th class="text-end">Total Vendido</th>
+                                    <th class="text-end">Total a Pagar</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <t t-set="summary_lines" t-value="doc.line_ids.read_group([('calculation_id', '=', doc.id)], ['user_id', 'total_quantity', 'total_amount_sold', 'spiff_amount'], ['user_id'])"/>
+                                <t t-foreach="summary_lines" t-as="stat">
+                                    <tr>
+                                        <td><span t-esc="stat['user_id'][1]"/></td>
+                                        <td class="text-end"><span t-esc="stat['total_quantity']" t-options='{"widget": "float", "precision": 0}'/></td>
+                                        <td class="text-end"><span t-esc="stat['total_amount_sold']" t-options='{"widget": "monetary", "display_currency": doc.company_id.currency_id}'/></td>
+                                        <td class="text-end fw-bold"><span t-esc="stat['spiff_amount']" t-options='{"widget": "monetary", "display_currency": doc.company_id.currency_id}'/></td>
+                                    </tr>
+                                </t>
+                                <tr class="table-active fw-bold">
+                                    <td>TOTALES</td>
+                                    <td class="text-end"><span t-esc="sum(l.total_quantity for l in doc.line_ids)" t-options='{"widget": "float", "precision": 0}'/></td>
+                                    <td class="text-end"><span t-esc="sum(l.total_amount_sold for l in doc.line_ids)" t-options='{"widget": "monetary", "display_currency": doc.company_id.currency_id}'/></td>
+                                    <td class="text-end"><span t-esc="sum(l.spiff_amount for l in doc.line_ids)" t-options='{"widget": "monetary", "display_currency": doc.company_id.currency_id}'/></td>
+                                </tr>
+                            </tbody>
+                        </table>
+
+                        <!-- 2. Detail by User and Product -->
+                         <div class="row mt-5 mb-2">
+                             <div class="col-12">
+                                <h3 class="bg-light p-2">Detalle por Producto/Marca</h3>
+                            </div>
+                        </div>
+
+                        <!-- Grouping by User Manually -->
+                        <t t-foreach="doc.line_ids.mapped('user_id')" t-as="user">
+                            <div class="mt-3">
+                                <h5 t-field="user.name" class="border-bottom pb-1 border-dark"/>
+                                <table class="table table-sm table-striped">
+                                    <thead>
+                                        <tr>
+                                            <th>Regla / Producto</th>
+                                            <th class="text-end">Cant. Neta</th>
+                                            <th class="text-end">Monto Neto Vendido</th>
+                                            <th class="text-end">Pago SPIFF</th>
+                                            <th class="text-end">Pago SPIFF ($)</th> <!-- Added USD Column -->
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <t t-set="user_lines" t-value="doc.line_ids.filtered(lambda l: l.user_id == user)"/>
+                                        <tr t-foreach="user_lines" t-as="line">
+                                            <td>
+                                                <span t-field="line.rule_id.name"/>
+                                                <t t-if="line.rule_id.rule_type == 'product'">
+                                                    <span class="text-muted fst-italic"> (<span t-field="line.rule_id.product_id.name"/>)</span>
+                                                </t>
+                                                <t t-else="">
+                                                    <!-- FIX: brand_name -> brand_id.name -->
+                                                    <span class="text-muted fst-italic"> (<span t-field="line.rule_id.brand_id.name"/>)</span>
+                                                </t>
+                                            </td>
+                                            <td class="text-end"><span t-field="line.total_quantity"/></td>
+                                            <td class="text-end"><span t-field="line.total_amount_sold"/></td>
+                                            <td class="text-end text-success fw-bold"><span t-field="line.spiff_amount"/></td>
+                                            <td class="text-end text-primary fw-bold"><span t-field="line.spiff_amount_usd" t-options='{"widget": "monetary", "display_currency": user.env.ref("base.USD")}'/></td>
+                                        </tr>
+                                        <tr class="table-light fw-bold text-end">
+                                            <td colspan="3">Total <span t-field="user.name"/></td>
+                                            <td><span t-esc="sum(l.spiff_amount for l in user_lines)" t-options='{"widget": "monetary", "display_currency": doc.company_id.currency_id}'/></td>
+                                            <td><span t-esc="sum(l.spiff_amount_usd for l in user_lines)" t-options='{"widget": "monetary", "display_currency": user.env.ref("base.USD")}'/></td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </t>
+
+                        <div class="oe_structure"/>
+                    </div>
+                </t>
+            </t>
+        </t>
+    </template>
+
+
+    <!-- ===================================================== -->
+    <!-- REPORTE 1: DETALLADO POR MARCA                        -->
+    <!-- ===================================================== -->
+    <template id="report_spiff_by_brand">
+        <t t-call="web.html_container">
+            <t t-foreach="docs" t-as="doc">
+                <t t-call="web.external_layout">
+                    <div class="page">
+                        <div class="row mb-4">
+                            <div class="col-12 text-center">
+                                <h2>Reporte SPIFF — Detallado por Marca</h2>
+                                <h4>Periodo: <span t-field="doc.period_start"/> - <span t-field="doc.period_end"/></h4>
+                            </div>
+                        </div>
+
+                        <!-- Group by brand -->
+                        <t t-set="brand_rules" t-value="doc.line_ids.mapped('rule_id').filtered(lambda r: r.rule_type == 'brand').mapped('brand_id')"/>
+                        <t t-set="product_rules" t-value="doc.line_ids.mapped('rule_id').filtered(lambda r: r.rule_type == 'product')"/>
+
+                        <!-- Section: Por Marca -->
+                        <t t-if="brand_rules">
+                            <t t-foreach="brand_rules" t-as="brand">
+                                <div class="mt-4">
+                                    <h4 class="bg-light p-2 border-bottom">
+                                        Marca: <strong><span t-esc="brand.name"/></strong>
+                                    </h4>
+                                    <table class="table table-sm table-bordered">
+                                        <thead>
+                                            <tr>
+                                                <th>Vendedor</th>
+                                                <th>Regla</th>
+                                                <th class="text-end">Monto Vendido</th>
+                                                <th class="text-end">Pago SPIFF</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <t t-set="brand_lines" t-value="doc.line_ids.filtered(lambda l: l.rule_id.brand_id == brand)"/>
+                                            <tr t-foreach="brand_lines" t-as="line">
+                                                <td><span t-field="line.user_id.name"/></td>
+                                                <td><span t-field="line.rule_id.name"/></td>
+                                                <td class="text-end"><span t-field="line.total_amount_sold"/></td>
+                                                <td class="text-end fw-bold text-success"><span t-field="line.spiff_amount"/></td>
+                                            </tr>
+                                            <tr class="table-active fw-bold">
+                                                <td colspan="3" class="text-end">Subtotal <span t-esc="brand.name"/>:</td>
+                                                <td class="text-end"><span t-esc="sum(l.spiff_amount for l in brand_lines)" t-options='{"widget": "monetary", "display_currency": doc.company_id.currency_id}'/></td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </t>
+                        </t>
+
+                        <!-- Section: Por Producto (reglas tipo product) -->
+                        <t t-if="product_rules">
+                            <div class="mt-4">
+                                <h4 class="bg-light p-2 border-bottom">Por Producto</h4>
+                                <t t-foreach="product_rules" t-as="rule">
+                                    <t t-set="rule_lines" t-value="doc.line_ids.filtered(lambda l: l.rule_id == rule)"/>
+                                    <t t-if="rule_lines">
+                                        <h6 class="mt-2 ms-2"><span t-field="rule.name"/> (<span t-field="rule.product_id.name"/>)</h6>
+                                        <table class="table table-sm table-bordered">
+                                            <thead>
+                                                <tr>
+                                                    <th>Vendedor</th>
+                                                    <th class="text-end">Cant. Neta</th>
+                                                    <th class="text-end">Pago SPIFF</th>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                <tr t-foreach="rule_lines" t-as="line">
+                                                    <td><span t-field="line.user_id.name"/></td>
+                                                    <td class="text-end"><span t-field="line.total_quantity"/></td>
+                                                    <td class="text-end fw-bold text-success"><span t-field="line.spiff_amount"/></td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </t>
+                                </t>
+                            </div>
+                        </t>
+
+                        <!-- Grand Total -->
+                        <div class="row mt-4">
+                            <div class="col-12 text-end">
+                                <strong>TOTAL GENERAL A PAGAR: </strong>
+                                <span t-esc="sum(l.spiff_amount for l in doc.line_ids)" t-options='{"widget": "monetary", "display_currency": doc.company_id.currency_id}' class="text-success fs-5 fw-bold"/>
+                            </div>
+                        </div>
+                    </div>
+                </t>
+            </t>
+        </t>
+    </template>
+
+
+    <!-- ===================================================== -->
+    <!-- REPORTE 2: DETALLADO POR VENDEDOR                     -->
+    <!-- ===================================================== -->
+    <template id="report_spiff_by_vendor">
+        <t t-call="web.html_container">
+            <t t-foreach="docs" t-as="doc">
+                <t t-call="web.external_layout">
+                    <div class="page">
+                        <div class="row mb-4">
+                            <div class="col-12 text-center">
+                                <h2>Reporte SPIFF — Detallado por Vendedor</h2>
+                                <h4>Periodo: <span t-field="doc.period_start"/> - <span t-field="doc.period_end"/></h4>
+                            </div>
+                        </div>
+
+                        <t t-foreach="doc.line_ids.mapped('user_id')" t-as="user">
+                            <t t-set="user_lines" t-value="doc.line_ids.filtered(lambda l: l.user_id == user)"/>
+                            <div class="mt-4">
+                                <h4 class="border-bottom border-dark pb-1">
+                                    Vendedor: <strong><span t-esc="user.name"/></strong>
+                                </h4>
+                                <table class="table table-sm table-striped table-bordered">
+                                    <thead>
+                                        <tr>
+                                            <th>Regla / Incentivo</th>
+                                            <th>Tipo</th>
+                                            <th class="text-end">Cant. Neta</th>
+                                            <th class="text-end">Monto Vendido</th>
+                                            <th class="text-end">Pago SPIFF</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr t-foreach="user_lines" t-as="line">
+                                            <td>
+                                                <span t-field="line.rule_id.name"/>
+                                                <t t-if="line.rule_id.rule_type == 'product'">
+                                                    <span class="text-muted fst-italic"> (<span t-field="line.rule_id.product_id.name"/>)</span>
+                                                </t>
+                                                <t t-else="">
+                                                    <span class="text-muted fst-italic"> (<span t-field="line.rule_id.brand_id.name"/>)</span>
+                                                </t>
+                                            </td>
+                                            <td>
+                                                <span t-if="line.rule_id.rule_type == 'product'" class="badge bg-primary">Producto</span>
+                                                <span t-else="" class="badge bg-info">Marca</span>
+                                            </td>
+                                            <td class="text-end"><span t-field="line.total_quantity"/></td>
+                                            <td class="text-end"><span t-field="line.total_amount_sold"/></td>
+                                            <td class="text-end fw-bold text-success"><span t-field="line.spiff_amount"/></td>
+                                        </tr>
+                                        <tr class="table-light fw-bold">
+                                            <td colspan="4" class="text-end">Total <span t-esc="user.name"/>:</td>
+                                            <td class="text-end text-success">
+                                                <span t-esc="sum(l.spiff_amount for l in user_lines)" t-options='{"widget": "monetary", "display_currency": doc.company_id.currency_id}'/>
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </t>
+
+                        <!-- Grand Total -->
+                        <div class="row mt-4">
+                            <div class="col-12 text-end">
+                                <strong>TOTAL EMPRESA A PAGAR: </strong>
+                                <span t-esc="sum(l.spiff_amount for l in doc.line_ids)" t-options='{"widget": "monetary", "display_currency": doc.company_id.currency_id}' class="text-success fs-5 fw-bold"/>
+                            </div>
+                        </div>
+                    </div>
+                </t>
+            </t>
+        </t>
+    </template>
+
+
+    <!-- ===================================================== -->
+    <!-- REPORTE 3: CONSOLIDADO DE LA EMPRESA                  -->
+    <!-- ===================================================== -->
+    <template id="report_spiff_consolidated">
+        <t t-call="web.html_container">
+            <t t-foreach="docs" t-as="doc">
+                <t t-call="web.external_layout">
+                    <div class="page">
+                        <div class="row mb-4">
+                            <div class="col-12 text-center">
+                                <h2>Reporte SPIFF — Consolidado de la Empresa</h2>
+                                <h4>Periodo: <span t-field="doc.period_start"/> - <span t-field="doc.period_end"/></h4>
+                                <p class="text-muted">Generado: <span t-field="doc.calculation_date"/></p>
+                            </div>
+                        </div>
+
+                        <!-- Summary KPI Row -->
+                        <div class="row text-center mb-4">
+                            <div class="col-4">
+                                <div class="card p-3 bg-light">
+                                    <strong>Total Vendedores</strong>
+                                    <h3 class="text-primary"><span t-esc="len(doc.line_ids.mapped('user_id'))"/></h3>
+                                </div>
+                            </div>
+                            <div class="col-4">
+                                <div class="card p-3 bg-light">
+                                    <strong>Total Monto Vendido</strong>
+                                    <h3 class="text-info">
+                                        <span t-esc="sum(l.total_amount_sold for l in doc.line_ids)" t-options='{"widget": "monetary", "display_currency": doc.company_id.currency_id}'/>
+                                    </h3>
+                                </div>
+                            </div>
+                            <div class="col-4">
+                                <div class="card p-3 bg-success text-white">
+                                    <strong>Total a Pagar</strong>
+                                    <h3>
+                                        <span t-esc="sum(l.spiff_amount for l in doc.line_ids)" t-options='{"widget": "monetary", "display_currency": doc.company_id.currency_id}'/>
+                                    </h3>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Consolidated Table -->
+                        <h4 class="mt-4">Resumen por Vendedor</h4>
+                        <table class="table table-bordered table-striped">
+                            <thead class="table-dark">
+                                <tr>
+                                    <th>Vendedor</th>
+                                    <th class="text-end">Reglas Aplicadas</th>
+                                    <th class="text-end">Monto Neto Vendido</th>
+                                    <th class="text-end">Total a Pagar</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <t t-set="grand_total" t-value="0"/>
+                                <t t-foreach="doc.line_ids.mapped('user_id')" t-as="user">
+                                    <t t-set="user_lines" t-value="doc.line_ids.filtered(lambda l: l.user_id == user)"/>
+                                    <t t-set="user_total" t-value="sum(l.spiff_amount for l in user_lines)"/>
+                                    <t t-set="grand_total" t-value="grand_total + user_total"/>
+                                    <tr>
+                                        <td><span t-esc="user.name"/></td>
+                                        <td class="text-end"><span t-esc="len(user_lines)"/></td>
+                                        <td class="text-end">
+                                            <span t-esc="sum(l.total_amount_sold for l in user_lines)" t-options='{"widget": "monetary", "display_currency": doc.company_id.currency_id}'/>
+                                        </td>
+                                        <td class="text-end fw-bold text-success">
+                                            <span t-esc="user_total" t-options='{"widget": "monetary", "display_currency": doc.company_id.currency_id}'/>
+                                        </td>
+                                    </tr>
+                                </t>
+                                <tr class="table-active fw-bold fs-5">
+                                    <td colspan="3" class="text-end">TOTAL GENERAL:</td>
+                                    <td class="text-end text-success">
+                                        <span t-esc="grand_total" t-options='{"widget": "monetary", "display_currency": doc.company_id.currency_id}'/>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+
+                        <!-- By Rule Summary -->
+                        <h4 class="mt-5">Resumen por Regla/Incentivo</h4>
+                        <table class="table table-bordered table-sm">
+                            <thead class="table-secondary">
+                                <tr>
+                                    <th>Regla</th>
+                                    <th>Tipo</th>
+                                    <th class="text-end">Vendedores</th>
+                                    <th class="text-end">Total a Pagar</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <t t-foreach="doc.line_ids.mapped('rule_id')" t-as="rule">
+                                    <t t-set="rule_lines" t-value="doc.line_ids.filtered(lambda l: l.rule_id == rule)"/>
+                                    <tr>
+                                        <td>
+                                            <span t-esc="rule.name"/>
+                                            <span class="text-muted fst-italic ms-1">
+                                                (<t t-if="rule.rule_type == 'product'"><span t-esc="rule.product_id.name"/></t><t t-else=""><span t-esc="rule.brand_id.name"/></t>)
+                                            </span>
+                                        </td>
+                                        <td>
+                                            <span t-if="rule.rule_type == 'product'" class="badge bg-primary">Producto</span>
+                                            <span t-else="" class="badge bg-info">Marca</span>
+                                        </td>
+                                        <td class="text-end"><span t-esc="len(rule_lines.mapped('user_id'))"/></td>
+                                        <td class="text-end fw-bold">
+                                            <span t-esc="sum(l.spiff_amount for l in rule_lines)" t-options='{"widget": "monetary", "display_currency": doc.company_id.currency_id}'/>
+                                        </td>
+                                    </tr>
+                                </t>
+                            </tbody>
+                        </table>
+                    </div>
+                </t>
+            </t>
+        </t>
+    </template>
+
+</odoo>

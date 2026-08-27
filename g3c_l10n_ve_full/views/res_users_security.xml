@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+<data noupdate="0">
+    <record id="group_allow_change_price_sales" model="res.groups">
+        <field name="name">Permitir cambiar precio en Ventas</field>
+        <field name="category_id" ref="base.module_category_hidden"/>
+    </record>
+
+    <record id="group_allow_change_price_purchase" model="res.groups">
+        <field name="name">Permitir modificar y ver precio de costos</field>
+        <field name="category_id" ref="base.module_category_hidden"/>
+    </record>
+</data>
+</odoo>

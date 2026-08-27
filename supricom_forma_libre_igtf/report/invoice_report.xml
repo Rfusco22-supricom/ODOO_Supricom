@@ -1,0 +1,15 @@
+<odoo>
+    <data>
+        <!-- Definir el reporte -->
+        <report
+            id="action_report_invoice_custom"
+            string="Factura Fiscal"
+            model="account.move"
+            report_type="qweb-pdf"
+            file="supricom_forma_libre_igtf.report_invoice_template"
+            name="supricom_forma_libre_igtf.report_invoice_template"
+            print_report_name="'Factura Fiscal - %s' % (object.name)"
+            paperformat="fiscal_format"
+        />
+    </data>
+</odoo>

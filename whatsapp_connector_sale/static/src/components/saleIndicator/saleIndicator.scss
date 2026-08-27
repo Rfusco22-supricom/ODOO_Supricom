@@ -1,0 +1,12 @@
+
+.o_SaleIndicator {
+    height: 100%;
+    overflow: auto;
+    .o_graph_barchart {
+        margin-bottom: 1em;
+        
+        > svg {
+            overflow: initial;
+        }
+    }
+}

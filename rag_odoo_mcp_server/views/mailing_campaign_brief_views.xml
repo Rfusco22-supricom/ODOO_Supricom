@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+
+    <!-- ─── Tree view ─────────────────────────────────────────────── -->
+    <record id="campaign_brief_view_list" model="ir.ui.view">
+        <field name="name">rag_odoo_mcp_server.campaign_brief.list</field>
+        <field name="model">rag_odoo_mcp_server.campaign_brief</field>
+        <field name="arch" type="xml">
+            <tree string="Claude campaign briefs" default_order="write_date desc">
+                <field name="name"/>
+                <field name="campaign_goal"/>
+                <field name="campaign_tone"/>
+                <field name="product_ids" widget="many2many_tags"/>
+                <field name="contact_list_ids" widget="many2many_tags"/>
+                <field name="active" widget="boolean_toggle"/>
+                <field name="write_date" string="Last modified"/>
+            </tree>
+        </field>
+    </record>
+
+    <!-- ─── Form view ─────────────────────────────────────────────── -->
+    <record id="campaign_brief_view_form" model="ir.ui.view">
+        <field name="name">rag_odoo_mcp_server.campaign_brief.form</field>
+        <field name="model">rag_odoo_mcp_server.campaign_brief</field>
+        <field name="arch" type="xml">
+            <form string="Claude campaign brief">
+                <header>
+                    <button name="action_activate"
+                            type="object"
+                            string="Activate"
+                            class="btn-primary"
+                            invisible="active"/>
+                    <button name="action_deactivate"
+                            type="object"
+                            string="Deactivate"
+                            class="btn-secondary"
+                            invisible="not active"/>
+                    <field name="active" widget="boolean_toggle"/>
+                </header>
+                <sheet>
+                    <div class="oe_button_box" name="button_box"/>
+
+                    <widget name="web_ribbon" title="Active" bg_color="text-bg-success"
+                            invisible="not active"/>
+
+                    <div class="oe_title">
+                        <h1>
+                            <field name="name" placeholder="Name this brief"/>
+                        </h1>
+                    </div>
+
+                    <!-- Products -->
+                    <separator string="Products to promote"/>
+                    <group>
+                        <field name="product_ids"
+                               widget="many2many_tags"
+                               nolabel="1"
+                               options="{'no_open': True}"
+                               placeholder="Select one or more products..."/>
+                    </group>
+
+                    <!-- Campaign style -->
+                    <separator string="Campaign style"/>
+                    <group>
+                        <group>
+                            <field name="campaign_goal"/>
+                            <field name="campaign_tone"/>
+                            <field name="cta_text"
+                                   placeholder='e.g. "Shop Now", "Get 20% Off"'/>
+                        </group>
+                        <group>
+                            <field name="extra_instructions"
+                                   placeholder="Discount codes, seasonal angle, forbidden words..."/>
+                        </group>
+                    </group>
+
+                    <!-- Audience -->
+                    <separator string="Target audience"/>
+                    <group>
+                        <group>
+                            <field name="contact_list_ids"
+                                   widget="many2many_tags"
+                                   options="{'no_open': True}"
+                                   placeholder="Pick mailing lists..."/>
+                        </group>
+                        <group>
+                            <field name="target_audience"
+                                   placeholder="Demographics, interests, purchase history..."/>
+                        </group>
+                    </group>
+
+                    <!-- Custom images -->
+                    <separator string="Custom images (optional)"/>
+                    <field name="image_ids" nolabel="1">
+                        <tree editable="bottom">
+                            <field name="image"
+                                   widget="image"
+                                   string="Image"
+                                   options="{'size': [80, 80]}"/>
+                            <field name="image_filename" invisible="1"/>
+                            <field name="attachment_id" invisible="1"/>
+                            <field name="description" string="Usage hint"/>
+                        </tree>
+                    </field>
+
+                    <!-- Scheduling -->
+                    <separator string="Scheduling"/>
+                    <group>
+                        <group>
+                            <field name="schedule_type" widget="radio"
+                                   options="{'horizontal': true}"/>
+                            <field name="schedule_date"
+                                   invisible="schedule_type != 'scheduled'"
+                                   required="schedule_type == 'scheduled'"/>
+                        </group>
+                        <group>
+                            <field name="utm_campaign_id"
+                                   options="{'no_open': True}"/>
+                        </group>
+                    </group>
+
+                    <!-- JSON payload (debug) -->
+                    <separator string="JSON payload (auto-generated)"/>
+                    <group>
+                        <field name="brief_json" widget="text" readonly="1" nolabel="1" colspan="2"/>
+                    </group>
+                </sheet>
+            </form>
+        </field>
+    </record>
+
+    <!-- ─── Action ────────────────────────────────────────────────── -->
+    <record id="action_campaign_brief" model="ir.actions.act_window">
+        <field name="name">Claude Briefs</field>
+        <field name="res_model">rag_odoo_mcp_server.campaign_brief</field>
+        <field name="view_mode">list,form</field>
+        <field name="context">{'active_test': False}</field>
+        <field name="help" type="html">
+            <p class="o_view_nocontent_smiling_face">
+                Create your first Claude campaign brief
+            </p>
+            <p>
+                Define products, tone, audience and custom images.
+                Activate a brief so Claude uses it to generate email campaigns.
+            </p>
+        </field>
+    </record>
+
+    <!-- ─── Menu under Email Marketing / Configuration ────────────── -->
+    <!-- Visible only when "CRM Manager" is enabled in Settings. -->
+    <menuitem id="menu_campaign_brief"
+              name="Claude Briefs"
+              parent="mass_mailing.mass_mailing_configuration"
+              action="action_campaign_brief"
+              sequence="50"
+              groups="rag_odoo_mcp_server.group_crm_manager"/>
+
+</odoo>

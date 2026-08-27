@@ -1,0 +1,115 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+# * spreadsheet_dashboard_hr_payroll
+#
+# Translators:
+# Wil Odoo, 2023
+#
+# Weblate <noreply-mt-weblate@weblate.org>, 2025.
+# "Marta (wacm)" <wacm@odoo.com>, 2026.
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 17.0+e\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2025-12-29 18:48+0000\n"
+"PO-Revision-Date: 2026-03-25 16:29+0000\n"
+"Last-Translator: \"Marta (wacm)\" <wacm@odoo.com>\n"
+"Language-Team: Polish <https://translate.odoo.com/projects/odoo-17/"
+"spreadsheet_dashboard_hr_payroll/pl/>\n"
+"Language: pl\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: \n"
+"Plural-Forms: nplurals=4; plural=(n==1 ? 0 : (n%10>=2 && n%10<=4) && "
+"(n%100<12 || n%100>14) ? 1 : n!=1 && (n%10>=0 && n%10<=1) || (n%10>=5 && "
+"n%10<=9) || (n%100>=12 && n%100<=14) ? 2 : 3);\n"
+"X-Generator: Weblate 5.16.2\n"
+
+#. module: spreadsheet_dashboard_hr_payroll
+#. odoo-javascript
+#: code:addons/spreadsheet_dashboard_hr_payroll/data/files/payroll_dashboard.json:0
+#, python-format
+msgid "Average Basic Wage"
+msgstr "Średnia podstawowa płaca"
+
+#. module: spreadsheet_dashboard_hr_payroll
+#. odoo-javascript
+#: code:addons/spreadsheet_dashboard_hr_payroll/data/files/payroll_dashboard.json:0
+#, python-format
+msgid "Average Net Wage"
+msgstr "Średnia płaca netto"
+
+#. module: spreadsheet_dashboard_hr_payroll
+#. odoo-javascript
+#: code:addons/spreadsheet_dashboard_hr_payroll/data/files/payroll_dashboard.json:0
+#, python-format
+msgid "Avg Hours/Days"
+msgstr "Śr. godzin/dni"
+
+#. module: spreadsheet_dashboard_hr_payroll
+#. odoo-javascript
+#: code:addons/spreadsheet_dashboard_hr_payroll/data/files/payroll_dashboard.json:0
+#, python-format
+msgid "Department"
+msgstr "Dział"
+
+#. module: spreadsheet_dashboard_hr_payroll
+#. odoo-javascript
+#: code:addons/spreadsheet_dashboard_hr_payroll/data/files/payroll_dashboard.json:0
+#, python-format
+msgid "Paid Time Off"
+msgstr "Płatny urlop"
+
+#. module: spreadsheet_dashboard_hr_payroll
+#: model:spreadsheet.dashboard,name:spreadsheet_dashboard_hr_payroll.spreadsheet_dashboard_payroll
+msgid "Payroll"
+msgstr "Wynagrodzenie"
+
+#. module: spreadsheet_dashboard_hr_payroll
+#. odoo-javascript
+#: code:addons/spreadsheet_dashboard_hr_payroll/data/files/payroll_dashboard.json:0
+#, python-format
+msgid "Payroll Analysis"
+msgstr "Analiza listy płac"
+
+#. module: spreadsheet_dashboard_hr_payroll
+#. odoo-javascript
+#: code:addons/spreadsheet_dashboard_hr_payroll/data/files/payroll_dashboard.json:0
+#, python-format
+msgid "Period"
+msgstr "Okres"
+
+#. module: spreadsheet_dashboard_hr_payroll
+#. odoo-javascript
+#: code:addons/spreadsheet_dashboard_hr_payroll/data/files/payroll_dashboard.json:0
+#, python-format
+msgid "Total Basic Wage"
+msgstr "Całkowita płaca podstawowa"
+
+#. module: spreadsheet_dashboard_hr_payroll
+#. odoo-javascript
+#: code:addons/spreadsheet_dashboard_hr_payroll/data/files/payroll_dashboard.json:0
+#, python-format
+msgid "Total Net Wage"
+msgstr "Całkowita płaca netto"
+
+#. module: spreadsheet_dashboard_hr_payroll
+#. odoo-javascript
+#: code:addons/spreadsheet_dashboard_hr_payroll/data/files/payroll_dashboard.json:0
+#, python-format
+msgid "Unpaid Time off"
+msgstr "Bezpłatny czas wolny"
+
+#. module: spreadsheet_dashboard_hr_payroll
+#. odoo-javascript
+#: code:addons/spreadsheet_dashboard_hr_payroll/data/files/payroll_dashboard.json:0
+#, python-format
+msgid "Work Entries Analysis"
+msgstr "Analiza wpisów roboczych"
+
+#. module: spreadsheet_dashboard_hr_payroll
+#. odoo-javascript
+#: code:addons/spreadsheet_dashboard_hr_payroll/data/files/payroll_dashboard.json:0
+#, python-format
+msgid "Work Entries Analysis by Work Entry Type"
+msgstr "Analiza wpisów roboczych według typu wpisu roboczego"

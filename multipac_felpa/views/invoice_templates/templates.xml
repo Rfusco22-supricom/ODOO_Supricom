@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <template id="templates_company_details">
+        <span t-attf-style="padding:0px; margin:0; color: #{company_color or '#ffffff'}; font-size:10px;">
+            <t t-if="o.company_id and o.company_id.fel_pa_is_company_bold">
+                <strong>
+                    <span t-field="o.company_id.partner_id"/>
+                </strong>
+            </t>
+            <t t-if="not o.company_id.fel_pa_is_company_bold">
+                <span t-field="o.company_id.partner_id"/>
+            </t>
+        </span>
+        <div t-attf-style="color: #{company_address_color or '#ffffff'}; font-size:9px; line-height: 1.1; margin-top: 2px;">
+            <span t-esc="o._get_fel_pa_street(o.company_id.partner_id)"/>
+            <br/>
+            <span t-esc="o._get_fel_pa_address_details(o.company_id.partner_id)"/>
+            <br/>
+            <t t-if="o.company_id.partner_id.mobile">
+                <strong>Mobile:</strong>
+                <span t-field="o.company_id.partner_id.mobile"/>
+                <br/>
+            </t>
+            <t t-if="o.company_id.partner_id.email">
+                <strong>Email:</strong>
+                <span t-field="o.company_id.partner_id.email"/>
+            </t>
+        </div>
+    </template>
+    <template id="templates_customer_details">
+        <span t-attf-style="text-transform:capitalize; padding:0px; margin:0; color: #{customer_color or '#ffffff'};">
+            <t t-if="o.company_id and o.company_id.fel_pa_is_customer_bold">
+                <strong>
+                    <span t-field="o.partner_id"/>
+                </strong>
+            </t>
+            <t t-if="not o.company_id.fel_pa_is_customer_bold">
+                <span t-field="o.partner_id"/>
+            </t>
+        </span>
+        <p t-attf-style="margin:0; padding-top:0; color: #{customer_address_color or '#ffffff'};">
+            <span t-esc="o._get_fel_pa_street(o.partner_id)"/>
+            <br/>
+            <span t-esc="o._get_fel_pa_address_details(o.partner_id)"/>
+            <br/>
+            <t t-if="o.partner_id.mobile">
+                <strong>Mobile:</strong>
+                <span t-field="o.partner_id.mobile"/>
+                <br/>
+            </t>
+            <t t-if="o.partner_id.email">
+                <strong>Email:</strong>
+                <span t-field="o.partner_id.email"/>
+                <br/>
+            </t>
+            <t t-if="o.partner_id.vat">
+                <strong>Vat:</strong>
+                <span t-field="o.partner_id.vat"/>
+            </t>
+        </p>
+    </template>
+    <template id="templates_watermark">
+        <t t-if="o.company_id and o.company_id.fel_pa_is_show_watermark">
+            <div class="watermark text-center" style="position:absolute; opacity:0.25; width:100%; height:auto; z-index:1000; -webkit-transform: rotate(-45deg); -moz-transform:rotate(-45deg); bottom:-600px; left:-100px;">
+                <t t-if="o.company_id.fel_pa_watermark == 'logo'">
+                    <span style="max-height: 500px;" t-field="o.company_id.fel_pa_watermark_logo" t-options="{'widget':'image'}"/>
+                </t>
+                <t t-if="o.company_id.fel_pa_watermark != 'logo'">
+                    <span t-att-style="'font-size:'+str(o.company_id.fel_pa_watermark_text_font_size)+'em; color:'+o.company_id.fel_pa_watermark_text_color">
+                        <span t-field="o.company_id.fel_pa_watermark_text" t-if="o.company_id.fel_pa_watermark == 'text'"/>
+                        <span t-field="o.state" t-if="o.company_id.fel_pa_watermark == 'status'"/>
+                    </span>
+                </t>
+            </div>
+        </t>
+    </template>
+    <template id="template_total_amount_word">
+        <t t-if="o.company_id.fel_pa_add_amount_in_words == True">
+            <span t-attf-style="color: #{text_color or '#000000'};padding-bottom: 5px;">Total en letras:- 
+                <t t-esc="o.fel_pa_total_in_letters"/>
+            </span>
+        </t>
+    </template>
+    <template id="report_signature">
+        <t t-if="o.company_id.fel_pa_signature">
+            <div>
+                <img t-att-src="image_data_uri(o.company_id.fel_pa_signature)" style="max-height: 60px;"/>
+            </div>
+        </t>
+    </template>
+    <template id="report_barcode">
+        <div class="row" t-if="o.company_id.fel_pa_is_show_barcode==True">
+            <div style="position:absolute; width:100%; text-align:center;">
+                <span t-field="o.name" t-options="{'widget':'barcode','width':190,'height':35}"/>
+            </div>
+        </div>
+    </template>
+    <template id="templates_footer">
+        <div class="footer" t-att-style="'font-family:'+(o.company_id.fel_pa_font_id.family or '')+';font-size:'+str(o.company_id.fel_pa_font_size)+'px;'" t-if="o.company_id.fel_pa_report_footer_selection == 'standard'">
+            <div class="text-center" style="border-top: 1px solid black;">
+                <ul class="list-inline mb4">
+                    <li t-if="company.phone">Phone: 
+                        <span t-field="company.phone"/></li>
+                    <li t-if="company.email">Email: 
+                        <span t-field="company.email"/></li>
+                    <li t-if="company.website">Web: 
+                        <span t-field="company.website"/></li>
+                    <li t-if="company.vat">
+                        <t t-esc="company.country_id.vat_label or 'TIN'"/>: 
+                        <span t-field="company.vat"/></li>
+                </ul>
+                <div name="financial_infos">
+                    <span t-field="company.report_footer"/>
+                </div>
+                <div class="text-muted">Page: 
+                    <span class="page"/>
+                    / 
+                    <span class="topage"/></div>
+            </div>
+        </div>
+        <div class="footer" t-att-style="'font-family:'+(o.company_id.fel_pa_font_id.family or '')+';font-size:'+str(o.company_id.fel_pa_font_size)+'px;border-top: 1px solid black;'" t-if="o.company_id.fel_pa_report_footer_selection == 'multi_columns'">
+            <div class="col-md-4 text-center" style="width:33%; flex: 0 0 33%; max-width: 33%; display:inline-block; text-align:center; vertical-align: top;margin-top: 25px;height: 128px;">
+                <span t-field="o.company_id.name"/>
+                <br/>
+                <span t-esc="o._get_fel_pa_street(o.company_id.partner_id)"/>
+                <br/>
+                <span t-esc="o._get_fel_pa_address_details(o.company_id.partner_id)"/>
+            </div>
+            <div class="col-md-4 text-center"  style="width:33%; flex: 0 0 33%; max-width: 33%; display:inline-block; text-align:center; vertical-align: top;margin-top: 25px;height: 128px;">
+                <span t-field="o.company_id.phone"/>
+                <br/>
+                <span t-field="o.company_id.website"/>
+                <br/>
+                <span t-field="o.company_id.email"/>
+                <br/>
+            </div>
+            <div class="col-md-4 text-center" style="width:33%; flex: 0 0 33%; max-width: 33%; margin-top: 25px; margin-bottom:20px; display: inline-block; text-align:center; vertical-align: top;">
+                <span t-options="{'widget':'image',
+                'img_style':'width:80px;height:80px','height':'80px','width':'80px'}" t-field="o.company_id.fel_pa_logo_footer"/>
+            </div>
+        </div>
+    </template>
+</odoo>

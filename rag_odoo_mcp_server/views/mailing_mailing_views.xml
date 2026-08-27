@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <!-- Action to open the Claude brief wizard (callable without selecting records) -->
+    <record id="action_open_campaign_brief_wizard" model="ir.actions.act_window">
+        <field name="name">Claude campaign brief</field>
+        <field name="res_model">rag_odoo_mcp_server.mailing_campaign_brief_wizard</field>
+        <field name="view_mode">form</field>
+        <field name="target">new</field>
+        <field name="context">{'is_modal': True}</field>
+    </record>
+
+    <!-- Add "Claude brief" button to the mailings list view header.
+         The button is visible only when "CRM Manager" is enabled in Settings. -->
+    <record id="mailing_mailing_tree_inherit_rag_odoo_mcp" model="ir.ui.view">
+        <field name="name">mailing.mailing.list.inherit.rag.odoo.mcp</field>
+        <field name="model">mailing.mailing</field>
+        <field name="inherit_id" ref="mass_mailing.view_mail_mass_mailing_tree"/>
+        <field name="priority">60</field>
+        <field name="arch" type="xml">
+            <xpath expr="//tree/field[1]" position="before">
+                <header>
+                    <button name="%(action_open_campaign_brief_wizard)d"
+                            type="action"
+                            string="Claude brief"
+                            groups="rag_odoo_mcp_server.group_crm_manager"
+                            title="Define products, tone, audience and custom images — saved for MCP so Claude generates campaigns immediately."/>
+                </header>
+            </xpath>
+        </field>
+    </record>
+</odoo>

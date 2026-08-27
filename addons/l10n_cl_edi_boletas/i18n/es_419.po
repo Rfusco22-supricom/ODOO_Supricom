@@ -1,0 +1,212 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+# * l10n_cl_edi_boletas
+#
+# Weblate <noreply-mt-weblate@weblate.org>, 2025.
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 14.0+e\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2025-12-29 18:58+0000\n"
+"PO-Revision-Date: 2025-11-21 06:46+0000\n"
+"Last-Translator: Weblate <noreply-mt-weblate@weblate.org>\n"
+"Language-Team: Spanish (Latin America) <https://translate.odoo.com/projects/"
+"odoo-17-l10n/l10n_cl_edi_boletas/es_419/>\n"
+"Language: es_419\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+"X-Generator: Weblate 5.12.2\n"
+
+#. module: l10n_cl_edi_boletas
+#. odoo-python
+#: code:addons/l10n_cl_edi_boletas/models/account_move.py:0
+#, python-format
+msgid "Accepted with objections"
+msgstr "Aceptado con reparos"
+
+#. module: l10n_cl_edi_boletas
+#. odoo-python
+#: code:addons/l10n_cl_edi_boletas/models/l10n_cl_edi_util.py:0
+#, python-format
+msgid "Ask for DTE status to SII failed due to:"
+msgstr "Consultando estado del DTE con la siguiente respuesta:"
+
+#. module: l10n_cl_edi_boletas
+#. odoo-python
+#: code:addons/l10n_cl_edi_boletas/models/account_move.py:0
+#, python-format
+msgid "Asking for DTE status with response:"
+msgstr "Consultando estado del DTE con la siguiente respuesta:"
+
+#. module: l10n_cl_edi_boletas
+#. odoo-python
+#: code:addons/l10n_cl_edi_boletas/models/account_move.py:0
+#, python-format
+msgid "Cover OK"
+msgstr "Carátula OK"
+
+#. module: l10n_cl_edi_boletas
+#. odoo-python
+#: code:addons/l10n_cl_edi_boletas/models/account_move.py:0
+#, python-format
+msgid "DTE has been sent to SII with response: %s"
+msgstr "El DTE ha sido enviado al SII con la siguiente respuesta: %s"
+
+#. module: l10n_cl_edi_boletas
+#. odoo-python
+#: code:addons/l10n_cl_edi_boletas/models/account_move.py:0
+#, python-format
+msgid "It is not allowed to create receipts in a different currency than CLP"
+msgstr "No está permitido crear recibos en una moneda distinta del CLP"
+
+#. module: l10n_cl_edi_boletas
+#: model:ir.model,name:l10n_cl_edi_boletas.model_account_move
+msgid "Journal Entry"
+msgstr "Asiento contable"
+
+#. module: l10n_cl_edi_boletas
+#: model:ir.model.fields,field_description:l10n_cl_edi_boletas.field_l10n_cl_certificate__last_rest_token
+msgid "Last REST Token"
+msgstr "Último Token REST"
+
+#. module: l10n_cl_edi_boletas
+#. odoo-python
+#: code:addons/l10n_cl_edi_boletas/models/l10n_cl_edi_util.py:0
+#, python-format
+msgid "Not possible to get a seed"
+msgstr "No es posible obtener una semilla"
+
+#. module: l10n_cl_edi_boletas
+#. odoo-python
+#: code:addons/l10n_cl_edi_boletas/models/account_move.py:0
+#, python-format
+msgid "Receipts with withholding taxes are not allowed"
+msgstr "No está permitido por el SII usar retenciones en boletas"
+
+#. module: l10n_cl_edi_boletas
+#. odoo-python
+#: code:addons/l10n_cl_edi_boletas/models/account_move.py:0
+#, python-format
+msgid "Rejected by error in covert"
+msgstr "Rechazado por error en caratula"
+
+#. module: l10n_cl_edi_boletas
+#. odoo-python
+#: code:addons/l10n_cl_edi_boletas/models/account_move.py:0
+#, python-format
+msgid "Rejected by schema"
+msgstr "Rechazado por Schema"
+
+#. module: l10n_cl_edi_boletas
+#. odoo-python
+#: code:addons/l10n_cl_edi_boletas/models/account_move.py:0
+#, python-format
+msgid "Rejected due to error in signature"
+msgstr "Rechazado por error en firma"
+
+#. module: l10n_cl_edi_boletas
+#. odoo-python
+#: code:addons/l10n_cl_edi_boletas/models/account_move.py:0
+#, python-format
+msgid "Rejected due to information errors"
+msgstr "Rechazado por errores en información"
+
+#. module: l10n_cl_edi_boletas
+#. odoo-python
+#: code:addons/l10n_cl_edi_boletas/models/account_move.py:0
+#, python-format
+msgid "Rejected for consistency"
+msgstr "Rechazado por consistencia"
+
+#. module: l10n_cl_edi_boletas
+#. odoo-python
+#: code:addons/l10n_cl_edi_boletas/models/account_move.py:0
+#, python-format
+msgid "Repeat submission rejected"
+msgstr "Envío repetido rechazado"
+
+#. module: l10n_cl_edi_boletas
+#: model:ir.model,name:l10n_cl_edi_boletas.model_l10n_cl_certificate
+msgid "SII Digital Signature"
+msgstr "Firma digital SII"
+
+#. module: l10n_cl_edi_boletas
+#. odoo-python
+#: code:addons/l10n_cl_edi_boletas/models/l10n_cl_edi_util.py:0
+#, python-format
+msgid "Sending DTE to SII failed due to:"
+msgstr "El envío del DTE al SII ha fallado debido a:"
+
+#. module: l10n_cl_edi_boletas
+#. odoo-python
+#: code:addons/l10n_cl_edi_boletas/models/account_move.py:0
+#, python-format
+msgid "Submission in process"
+msgstr "Envío en proceso"
+
+#. module: l10n_cl_edi_boletas
+#. odoo-python
+#: code:addons/l10n_cl_edi_boletas/models/account_move.py:0
+#, python-format
+msgid "Submission processed"
+msgstr "Envío procesado"
+
+#. module: l10n_cl_edi_boletas
+#. odoo-python
+#: code:addons/l10n_cl_edi_boletas/models/account_move.py:0
+#, python-format
+msgid "Submission received"
+msgstr "Envío recibido"
+
+#. module: l10n_cl_edi_boletas
+#. odoo-python
+#: code:addons/l10n_cl_edi_boletas/models/account_move.py:0
+#, python-format
+msgid "Submission signature validated"
+msgstr "Firma de envío validada"
+
+#. module: l10n_cl_edi_boletas
+#. odoo-python
+#: code:addons/l10n_cl_edi_boletas/models/account_move.py:0
+#, python-format
+msgid "The .xml file was not found"
+msgstr "El fichero .xml no fue encontrado"
+
+#. module: l10n_cl_edi_boletas
+#. odoo-python
+#: code:addons/l10n_cl_edi_boletas/models/account_move.py:0
+#, python-format
+msgid ""
+"This DTE has been generated in DEMO Mode. It is considered as accepted and "
+"it won't be sent to SII."
+msgstr ""
+"Este DTE ha sido generado en modo DEMO. Se considera como aceptado y no será "
+"enviado al SII."
+
+#. module: l10n_cl_edi_boletas
+#. odoo-python
+#: code:addons/l10n_cl_edi_boletas/models/account_move.py:0
+#, python-format
+msgid "This electronic document is being processed already."
+msgstr "Este documento electrónico ya se encuentra en proceso."
+
+#. module: l10n_cl_edi_boletas
+#. odoo-python
+#: code:addons/l10n_cl_edi_boletas/models/l10n_cl_edi_util.py:0
+#, python-format
+msgid "Token cannot be generated. Please try again"
+msgstr "El token no puede ser generado. Por favor intente nuevamente"
+
+#. module: l10n_cl_edi_boletas
+#: model:ir.model,name:l10n_cl_edi_boletas.model_l10n_cl_edi_util
+msgid "Utility Methods for Chilean Electronic Invoicing"
+msgstr "Métodos Utilitarios para Facturación Electrónica de Chile"
+
+#. module: l10n_cl_edi_boletas
+#. odoo-python
+#: code:addons/l10n_cl_edi_boletas/models/account_move.py:0
+#, python-format
+msgid "Validated schema"
+msgstr "Schema validado"

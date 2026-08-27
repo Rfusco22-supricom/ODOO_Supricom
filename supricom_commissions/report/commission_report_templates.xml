@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <template id="report_commission">
+        <t t-call="web.html_container">
+            <t t-foreach="sales_data" t-as="salesperson">
+                <t t-call="web.external_layout">
+                    <div class="page">
+                        <h2>Liquidación de Comisiones</h2>
+                        <div class="row mt32 mb32">
+                            <div class="col-6">
+                                <strong>Vendedor:</strong> <span t-esc="salesperson.name"/>
+                            </div>
+                            <div class="col-6">
+                                <strong>Periodo:</strong> <span t-esc="date_from"/> - <span t-esc="date_to"/>
+                            </div>
+                        </div>
+
+                        <!-- Resumen / Consolidated -->
+                        <h4>Resumen</h4>
+                        <table class="table table-sm">
+                            <thead>
+                                <tr>
+                                    <th>Meta</th>
+                                    <th>Ventas Cobradas</th>
+                                    <th>% Cumplimiento</th>
+                                    <th>Total Comisión</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <t t-set="sp_data" t-value="sales_data[salesperson]"/>
+                                <tr>
+                                    <td><span t-esc="sp_data['target']" t-options='{"widget": "monetary", "display_currency": res_company.currency_id}'/></td>
+                                    <td><span t-esc="sp_data['total_collected']" t-options='{"widget": "monetary", "display_currency": res_company.currency_id}'/></td>
+                                    <td>
+                                        <t t-if="sp_data['target'] > 0">
+                                            <span t-esc="(sp_data['total_collected'] / sp_data['target']) * 100" t-options='{"widget": "float", "precision": 2}'/>%
+                                        </t>
+                                        <t t-else="">N/A</t>
+                                    </td>
+                                    <td>
+                                        <t t-set="total_comm" t-value="sum(l['amount_comm'] for l in sp_data['lines'])"/>
+                                        <span t-esc="total_comm" t-options='{"widget": "monetary", "display_currency": res_company.currency_id}'/>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+
+                        <!-- Detalle / Detailed -->
+                        <h4 class="mt-4">Detalle</h4>
+                        <table class="table table-sm table-striped">
+                            <thead>
+                                <tr>
+                                    <th>Fecha</th>
+                                    <th>Cliente</th>
+                                    <th>Term. Pago</th>
+                                    <th>Producto</th>
+                                    <th>Precio</th>
+                                    <th>Costo</th>
+                                    <th>Base Com.</th>
+                                    <th>% Com</th>
+                                    <th>% Ded</th>
+                                    <th>% Pen</th>
+                                    <th>Monto Com.</th>
+                                    <th>Monto Com. ($)</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr t-foreach="sp_data['lines']" t-as="line" t-att-class="'text-danger' if line.get('is_min_price_sale') else ''">
+                                    <td><span t-esc="line['date']"/></td>
+                                    <td><span t-esc="line['client']"/></td>
+                                    <td><span t-esc="line.get('payment_term', '')"/></td>
+                                    <td>
+                                        <span t-esc="line['product']"/>
+                                        <t t-if="line.get('is_min_price_sale')"> (Precio Mín)</t>
+                                    </td>
+                                    <td><span t-esc="line['price']"/></td>
+                                    <td><span t-esc="line['cost']"/></td>
+                                    <td><span t-esc="line['commission_base']"/></td>
+                                    <td><span t-esc="line['comm_pct_base']"/>%</td>
+                                    <td><span t-esc="line['deduction_pct']" t-options='{"widget": "float", "precision": 2}'/>%</td>
+                                    <td><span t-esc="line['penalty_pct']" t-options='{"widget": "float", "precision": 2}'/>%</td>
+                                    <td><span t-esc="line['amount_comm']" t-options='{"widget": "monetary", "display_currency": res_company.currency_id}'/></td>
+                                    <td><span t-esc="line.get('commission_amount_usd', 0.0)" t-options='{"widget": "monetary", "display_currency": res_company.env["res.currency"].search([("name", "=", "USD")], limit=1)}'/></td>
+                                </tr>
+                            </tbody>
+                        </table>
+                        
+                        <p style="page-break-after:always;"/>
+                    </div>
+                </t>
+            </t>
+        </t>
+    </template>
+</odoo>

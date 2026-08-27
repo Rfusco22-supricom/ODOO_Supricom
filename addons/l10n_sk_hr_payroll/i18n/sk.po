@@ -1,0 +1,627 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+# * l10n_sk_hr_payroll
+#
+# Weblate <noreply-mt-weblate@weblate.org>, 2025, 2026.
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 17.0+e\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2025-12-29 19:03+0000\n"
+"PO-Revision-Date: 2026-04-25 17:21+0000\n"
+"Last-Translator: Weblate <noreply-mt-weblate@weblate.org>\n"
+"Language-Team: Slovak <https://translate.odoo.com/projects/odoo-17-l10n/"
+"l10n_sk_hr_payroll/sk/>\n"
+"Language: sk\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=3; plural=(n==1) ? 0 : (n>=2 && n<=4) ? 1 : 2;\n"
+"X-Generator: Weblate 5.17\n"
+
+#. module: l10n_sk_hr_payroll
+#: model:ir.actions.report,print_report_name:l10n_sk_hr_payroll.action_report_payslip_sk
+msgid "'Payslip - %s' % (object.employee_id.name)"
+msgstr "'Výplatná páska - %s' % (object.employee_id.name)"
+
+#. module: l10n_sk_hr_payroll
+#: model_terms:hr.job,job_details:l10n_sk_hr_payroll.job_developer_slovakia
+msgid "1 Onsite Interview"
+msgstr "1 Pohovor na mieste"
+
+#. module: l10n_sk_hr_payroll
+#: model_terms:hr.job,job_details:l10n_sk_hr_payroll.job_developer_slovakia
+msgid "1 Phone Call"
+msgstr "1 Telefonický hovor"
+
+#. module: l10n_sk_hr_payroll
+#: model_terms:hr.job,website_description:l10n_sk_hr_payroll.job_developer_slovakia
+msgid "12 days / year, including <br>6 of your choice."
+msgstr "12 dni / rok vrátane <br>6 podľa vášho výberu."
+
+#. module: l10n_sk_hr_payroll
+#: model_terms:hr.job,job_details:l10n_sk_hr_payroll.job_developer_slovakia
+msgid "2 open days"
+msgstr "2 dni otvorených dverí"
+
+#. module: l10n_sk_hr_payroll
+#: model_terms:hr.job,job_details:l10n_sk_hr_payroll.job_developer_slovakia
+msgid "4 Days after Interview"
+msgstr "4 dni po pohovore"
+
+#. module: l10n_sk_hr_payroll
+#: model_terms:hr.job,website_description:l10n_sk_hr_payroll.job_developer_slovakia
+msgid "<small><b>READ</b></small>"
+msgstr "<small><b>ČÍTAŤ</b></small>"
+
+#. module: l10n_sk_hr_payroll
+#: model_terms:hr.job,job_details:l10n_sk_hr_payroll.job_developer_slovakia
+msgid "<span class=\"text-muted small\">Days to get an Offer</span>"
+msgstr "<span class=\"text-muted small\">Dni na získanie ponuky</span>"
+
+#. module: l10n_sk_hr_payroll
+#: model_terms:hr.job,job_details:l10n_sk_hr_payroll.job_developer_slovakia
+msgid "<span class=\"text-muted small\">Process</span>"
+msgstr "<span class=\"text-muted small\">Proces</span>"
+
+#. module: l10n_sk_hr_payroll
+#: model_terms:hr.job,job_details:l10n_sk_hr_payroll.job_developer_slovakia
+msgid "<span class=\"text-muted small\">Time to Answer</span>"
+msgstr "<span class=\"text-muted small\">Čas na odpoveď</span>"
+
+#. module: l10n_sk_hr_payroll
+#: model_terms:ir.ui.view,arch_db:l10n_sk_hr_payroll.hr_contract_view_form
+msgid "<span>€ / voucher</span>"
+msgstr ""
+
+#. module: l10n_sk_hr_payroll
+#: model_terms:hr.job,website_description:l10n_sk_hr_payroll.job_developer_slovakia
+msgid "A full-time position <br>Attractive salary package."
+msgstr "Pozícia na plný úväzok <br>Atraktívny platový balík."
+
+#. module: l10n_sk_hr_payroll
+#: model:hr.salary.rule,name:l10n_sk_hr_payroll.l10n_sk_accident_insurance_employer
+msgid "Accident Insurance (Employer)"
+msgstr "Úrazové poistenie (zamestnanec)"
+
+#. module: l10n_sk_hr_payroll
+#: model_terms:hr.job,website_description:l10n_sk_hr_payroll.job_developer_slovakia
+msgid "Achieve monthly sales objectives"
+msgstr "Dosahujte ciele mesačného predaja"
+
+#. module: l10n_sk_hr_payroll
+#: model_terms:hr.job,website_description:l10n_sk_hr_payroll.job_developer_slovakia
+msgid "Additional languages"
+msgstr "Ďalšie jazyky"
+
+#. module: l10n_sk_hr_payroll
+#: model_terms:hr.job,website_description:l10n_sk_hr_payroll.job_developer_slovakia
+msgid "Administrative Work"
+msgstr "Administratívne práce"
+
+#. module: l10n_sk_hr_payroll
+#: model_terms:res.company,invoice_terms_html:l10n_sk_hr_payroll.res_company_sk
+msgid ""
+"All our contractual relations will be governed exclusively by Slovakia law."
+msgstr ""
+
+#. module: l10n_sk_hr_payroll
+#: model_terms:hr.job,website_description:l10n_sk_hr_payroll.job_developer_slovakia
+msgid ""
+"As an employee of our company, you will <b>collaborate with each department\n"
+"                        to create and deploy disruptive products.</b> Come "
+"work at a growing company\n"
+"                        that offers great benefits with opportunities to "
+"moving forward and learn\n"
+"                        alongside accomplished leaders. We're seeking an "
+"experienced and outstanding\n"
+"                        member of staff.\n"
+"                        <br><br>\n"
+"                        This position is both <b>creative and rigorous</b> "
+"by nature you need to think\n"
+"                        outside the box. We expect the candidate to be "
+"proactive and have a \"get it done\"\n"
+"                        spirit. To be successful, you will have solid "
+"solving problem skills."
+msgstr ""
+"Ako zamestnanec našej spoločnosti budete <b>spolupracovať s každým "
+"oddelením\n"
+"                        na vytváraní a zavádzaní revolučných produktov.</b> "
+"Príďte pracovať do rastúcej spoločnosti,\n"
+"                        ktorá ponúka skvelé benefity s príležitosťami na "
+"kariérny rast a učenie sa\n"
+"                        po boku skúsených lídrov. Hľadáme skúseného a "
+"vynikajúceho\n"
+"                        zamestnanca.\n"
+"                        <br><br>\n"
+"                        Táto pozícia je svojou povahou <b>kreatívna aj "
+"náročná</b>, preto je potrebné myslieť\n"
+"                        netradične. Očakávame, že kandidát bude proaktívny a "
+"bude mať „get it done“\n"
+"                        ducha. Aby ste boli úspešní, budete potrebovať "
+"solídne zručnosti v riešení problémov."
+
+#. module: l10n_sk_hr_payroll
+#: model_terms:hr.job,website_description:l10n_sk_hr_payroll.job_developer_slovakia
+msgid "Autonomy"
+msgstr "Autonómia"
+
+#. module: l10n_sk_hr_payroll
+#: model_terms:hr.job,website_description:l10n_sk_hr_payroll.job_developer_slovakia
+msgid "Bachelor Degree or Higher"
+msgstr "Bakalársky alebo vyšší titul"
+
+#. module: l10n_sk_hr_payroll
+#: model_terms:res.company,invoice_terms_html:l10n_sk_hr_payroll.res_company_sk
+msgid ""
+"Below text serves as a suggestion and doesn’t engage Odoo S.A. "
+"responsibility."
+msgstr ""
+"Nižšie uvedený text slúži ako návrh a nezaväzuje spoločnosť Odoo S.A. k "
+"zodpovednosti."
+
+#. module: l10n_sk_hr_payroll
+#: model_terms:res.company,invoice_terms_html:l10n_sk_hr_payroll.res_company_sk
+msgid ""
+"Certain countries apply withholding at source on the amount of invoices, in "
+"accordance with their internal legislation. Any withholding at source will "
+"be paid by the client to the tax authorities. Under no circumstances can My "
+"Slovak Company become involved in costs related to a country's legislation. "
+"The amount of the invoice will therefore be due to My Slovak Company in its "
+"entirety and does not include any costs relating to the legislation of the "
+"country in which the client is located."
+msgstr ""
+
+#. module: l10n_sk_hr_payroll
+#: model_terms:hr.job,website_description:l10n_sk_hr_payroll.job_developer_slovakia
+msgid "Create content that will help our users on a daily basis"
+msgstr "Vytvárajte obsah, ktorý bude denne pomáhať našim používateľom"
+
+#. module: l10n_sk_hr_payroll
+#: model_terms:hr.job,website_description:l10n_sk_hr_payroll.job_developer_slovakia
+msgid "Customer Relationship"
+msgstr "Vzťah k zákazníkovi"
+
+#. module: l10n_sk_hr_payroll
+#: model:hr.salary.rule,name:l10n_sk_hr_payroll.l10n_sk_disability_insurance_employee
+msgid "Disability Insurance"
+msgstr "Poistenie invalidity"
+
+#. module: l10n_sk_hr_payroll
+#: model:hr.salary.rule,name:l10n_sk_hr_payroll.l10n_sk_disability_insurance_employer
+msgid "Disability Insurance (Employer)"
+msgstr "Poistenie pre prípad invalidity (zamestávateľ)"
+
+#. module: l10n_sk_hr_payroll
+#: model_terms:hr.job,website_description:l10n_sk_hr_payroll.job_developer_slovakia
+msgid "Discover our products."
+msgstr "Objavte naše produkty."
+
+#. module: l10n_sk_hr_payroll
+#: model_terms:hr.job,website_description:l10n_sk_hr_payroll.job_developer_slovakia
+msgid ""
+"Each employee has a chance to see the impact of his work.\n"
+"                You can make a real contribution to the success of the "
+"company.\n"
+"                <br>\n"
+"                Several activities are often organized all over the year, "
+"such as weekly\n"
+"                sports sessions, team building events, monthly drink, and "
+"much more"
+msgstr ""
+
+#. module: l10n_sk_hr_payroll
+#: model_terms:hr.job,website_description:l10n_sk_hr_payroll.job_developer_slovakia
+msgid "Eat &amp; Drink"
+msgstr "Jesť &amp; Nápoje"
+
+#. module: l10n_sk_hr_payroll
+#: model:ir.model,name:l10n_sk_hr_payroll.model_hr_contract
+msgid "Employee Contract"
+msgstr "Zamestnanecká zmluva"
+
+#. module: l10n_sk_hr_payroll
+#: model_terms:hr.job,website_description:l10n_sk_hr_payroll.job_developer_slovakia
+msgid "Expand your knowledge of various business industries"
+msgstr "Rozšírte svoje znalosti z rôznych odvetví podnikania"
+
+#. module: l10n_sk_hr_payroll
+#: model_terms:hr.job,website_description:l10n_sk_hr_payroll.job_developer_slovakia
+msgid "Experience in writing online content"
+msgstr "Skúsenosti s písaním online obsahu"
+
+#. module: l10n_sk_hr_payroll
+#: model:hr.job,name:l10n_sk_hr_payroll.job_developer_slovakia
+msgid "Experienced Developer SK"
+msgstr ""
+
+#. module: l10n_sk_hr_payroll
+#: model_terms:hr.job,website_description:l10n_sk_hr_payroll.job_developer_slovakia
+msgid "Fruit, coffee and <br>snacks provided."
+msgstr "Ovocie, káva a <br>občerstvenie zabezpečené."
+
+#. module: l10n_sk_hr_payroll
+#: model_terms:hr.job,website_description:l10n_sk_hr_payroll.job_developer_slovakia
+msgid "Google Adwords experience"
+msgstr "Skúsenosti s Google Adwords"
+
+#. module: l10n_sk_hr_payroll
+#: model_terms:hr.job,website_description:l10n_sk_hr_payroll.job_developer_slovakia
+msgid "Great team of smart people, in a friendly and open culture"
+msgstr "Skvelý tím šikovných ľudí v priateľskej a otvorenej kultúre"
+
+#. module: l10n_sk_hr_payroll
+#: model:hr.salary.rule,name:l10n_sk_hr_payroll.l10n_sk_guarantee_insurance_employer
+msgid "Guarantee Insurance (Employer)"
+msgstr "Poistenie záruky (zamestnávateľ)"
+
+#. module: l10n_sk_hr_payroll
+#: model:hr.salary.rule,name:l10n_sk_hr_payroll.l10n_sk_health_insurance_employee
+msgid "Health Insurance"
+msgstr "Zdravotné poistenie"
+
+#. module: l10n_sk_hr_payroll
+#: model:hr.salary.rule,name:l10n_sk_hr_payroll.l10n_sk_health_insurance_employer
+msgid "Health Insurance (Employer)"
+msgstr "Zdravotné poistenie (zamestnanec)"
+
+#. module: l10n_sk_hr_payroll
+#: model_terms:hr.job,website_description:l10n_sk_hr_payroll.job_developer_slovakia
+msgid "Highly creative and autonomous"
+msgstr "Vysoko kreatívny a autonómny"
+
+#. module: l10n_sk_hr_payroll
+#: model_terms:res.company,invoice_terms_html:l10n_sk_hr_payroll.res_company_sk
+msgid ""
+"If a payment is still outstanding more than sixty (60) days after the due "
+"payment date, My Slovak Company reserves the right to call on the services "
+"of a debt recovery company. All legal expenses will be payable by the client."
+msgstr ""
+
+#. module: l10n_sk_hr_payroll
+#: model_terms:res.company,invoice_terms_html:l10n_sk_hr_payroll.res_company_sk
+msgid ""
+"In order for it to be admissible, My Slovak Company must be notified of any "
+"claim by means of a letter sent by recorded delivery to its registered "
+"office within 8 days of the delivery of the goods or the provision of the "
+"services."
+msgstr ""
+
+#. module: l10n_sk_hr_payroll
+#: model:hr.salary.rule,name:l10n_sk_hr_payroll.l10n_sk_income_tax_19_employee
+#: model:hr.salary.rule,name:l10n_sk_hr_payroll.l10n_sk_income_tax_25_employee
+#: model:hr.salary.rule.category,name:l10n_sk_hr_payroll.hr_payroll_income_tax_employee
+msgid "Income Tax"
+msgstr "Daň z príjmu"
+
+#. module: l10n_sk_hr_payroll
+#: model:hr.salary.rule,name:l10n_sk_hr_payroll.l10n_sk_income_tax_total
+#: model:hr.salary.rule.category,name:l10n_sk_hr_payroll.hr_payroll_income_tax_employee_total
+msgid "Income Tax Total"
+msgstr "Daň z príjmu – celkom"
+
+#. module: l10n_sk_hr_payroll
+#: model:hr.salary.rule,name:l10n_sk_hr_payroll.l10n_sk_short_time_work_employer
+msgid "Insurance to Finance Support during Short-Time Work (Employer)"
+msgstr ""
+"Poistenie na financovanie podpory počas skráteného pracovného času "
+"(zamestnávateľ)"
+
+#. module: l10n_sk_hr_payroll
+#: model_terms:hr.job,website_description:l10n_sk_hr_payroll.job_developer_slovakia
+msgid "Lead the entire sales cycle"
+msgstr "Viesť celý predajný cyklus"
+
+#. module: l10n_sk_hr_payroll
+#: model:ir.actions.report,name:l10n_sk_hr_payroll.action_report_payslip_sk
+msgid "Li: Payslip"
+msgstr ""
+
+#. module: l10n_sk_hr_payroll
+#: model_terms:hr.job,website_description:l10n_sk_hr_payroll.job_developer_slovakia
+msgid "Master demos of our software"
+msgstr "Majster ukážky nášho softvéru"
+
+#. module: l10n_sk_hr_payroll
+#: model:hr.leave.type,name:l10n_sk_hr_payroll.hr_leave_type_maternity
+msgid "Maternity Time Off"
+msgstr ""
+
+#. module: l10n_sk_hr_payroll
+#: model:hr.work.entry.type,name:l10n_sk_hr_payroll.work_entry_type_maternity
+msgid "Maternity Time Off (Paid at 75%)"
+msgstr ""
+
+#. module: l10n_sk_hr_payroll
+#: model:hr.salary.rule,name:l10n_sk_hr_payroll.l10n_sk_meal_voucher_employee
+msgid "Meal Vouchers"
+msgstr "Stravné lístky"
+
+#. module: l10n_sk_hr_payroll
+#: model:hr.salary.rule.category,name:l10n_sk_hr_payroll.hr_payroll_meal_vouchers_employee
+msgid "Meal Vouchers (Employee)"
+msgstr "Stravné lístky (zamestnanec)"
+
+#. module: l10n_sk_hr_payroll
+#: model:hr.salary.rule,name:l10n_sk_hr_payroll.l10n_sk_meal_voucher_employer
+#: model:hr.salary.rule.category,name:l10n_sk_hr_payroll.hr_payroll_meal_vouchers_employer
+msgid "Meal Vouchers (Employer)"
+msgstr "Stravné lístky (zamestnávateľ)"
+
+#. module: l10n_sk_hr_payroll
+#: model:ir.model.fields,field_description:l10n_sk_hr_payroll.field_hr_contract__l10n_sk_meal_voucher_employee
+msgid "Meal Vouchers Amount (Employee)"
+msgstr "Výška stravných lístkov (zamestnanec)"
+
+#. module: l10n_sk_hr_payroll
+#: model:ir.model.fields,field_description:l10n_sk_hr_payroll.field_hr_contract__l10n_sk_meal_voucher_employer
+msgid "Meal Vouchers Amount (Employer)"
+msgstr "Výška stravných lístkov (zamestnavateľ)"
+
+#. module: l10n_sk_hr_payroll
+#: model_terms:hr.job,website_description:l10n_sk_hr_payroll.job_developer_slovakia
+msgid "Must Have"
+msgstr "Musieť mať"
+
+#. module: l10n_sk_hr_payroll
+#: model_terms:res.company,invoice_terms_html:l10n_sk_hr_payroll.res_company_sk
+msgid ""
+"My Slovak Company undertakes to do its best to supply performant services in "
+"due time in accordance with the agreed timeframes. However, none of its "
+"obligations can be considered as being an obligation to achieve results. My "
+"Slovak Company cannot under any circumstances, be required by the client to "
+"appear as a third party in the context of any claim for damages filed "
+"against the client by an end consumer."
+msgstr ""
+
+#. module: l10n_sk_hr_payroll
+#: model_terms:hr.job,website_description:l10n_sk_hr_payroll.job_developer_slovakia
+msgid "Negotiate and contract"
+msgstr "Vyjednávať a uzatvárať zmluvy"
+
+#. module: l10n_sk_hr_payroll
+#: model_terms:hr.job,website_description:l10n_sk_hr_payroll.job_developer_slovakia
+msgid "Nice to have"
+msgstr "Pekné mať"
+
+#. module: l10n_sk_hr_payroll
+#: model_terms:hr.job,website_description:l10n_sk_hr_payroll.job_developer_slovakia
+msgid "No dumb managers, no stupid tools to use, no rigid working hours"
+msgstr ""
+"Žiadni hlúpi manažéri, žiadne hlúpe nástroje na používanie, žiadny prísny "
+"pracovný čas"
+
+#. module: l10n_sk_hr_payroll
+#: model_terms:hr.job,website_description:l10n_sk_hr_payroll.job_developer_slovakia
+msgid ""
+"No waste of time in enterprise processes, real responsibilities and autonomy"
+msgstr ""
+"Žiadne plytvanie časom v podnikových procesoch, skutočná zodpovednosť a "
+"autonómia"
+
+#. module: l10n_sk_hr_payroll
+#: model_terms:hr.job,website_description:l10n_sk_hr_payroll.job_developer_slovakia
+msgid "Our Product"
+msgstr "Náš produkt"
+
+#. module: l10n_sk_hr_payroll
+#: model_terms:res.company,invoice_terms_html:l10n_sk_hr_payroll.res_company_sk
+msgid ""
+"Our invoices are payable within 21 working days, unless another payment "
+"timeframe is indicated on either the invoice or the order. In the event of "
+"non-payment by the due date, My Slovak Company reserves the right to request "
+"a fixed interest payment amounting to 10% of the sum remaining due. My "
+"Slovak Company will be authorized to suspend any provision of services "
+"without prior warning in the event of late payment."
+msgstr ""
+
+#. module: l10n_sk_hr_payroll
+#: model:hr.work.entry.type,name:l10n_sk_hr_payroll.work_entry_type_parental_time_off
+msgid "Parental Time Off"
+msgstr ""
+
+#. module: l10n_sk_hr_payroll
+#: model_terms:hr.job,website_description:l10n_sk_hr_payroll.job_developer_slovakia
+msgid "Passion for software products"
+msgstr "Vášeň pre softvérové produkty"
+
+#. module: l10n_sk_hr_payroll
+#: model:ir.model,name:l10n_sk_hr_payroll.model_hr_payslip
+msgid "Pay Slip"
+msgstr "Výplatná páska"
+
+#. module: l10n_sk_hr_payroll
+#: model:ir.model,name:l10n_sk_hr_payroll.model_hr_payslip_worked_days
+msgid "Payslip Worked Days"
+msgstr "Odpracovné dni výplatnej pásky"
+
+#. module: l10n_sk_hr_payroll
+#: model:hr.salary.rule,name:l10n_sk_hr_payroll.l10n_sk_pension_contribution_employee
+msgid "Pension Contribution"
+msgstr "Príspevok na dôchodkové poistenie"
+
+#. module: l10n_sk_hr_payroll
+#: model:hr.salary.rule,name:l10n_sk_hr_payroll.l10n_sk_pension_contribution_employer
+msgid "Pension Contribution (Employer)"
+msgstr "Príspevok na dôchodkové poistenie (zamestnávateľ)"
+
+#. module: l10n_sk_hr_payroll
+#: model_terms:hr.job,website_description:l10n_sk_hr_payroll.job_developer_slovakia
+msgid "Perfect written English"
+msgstr "Perfektne napísaná angličtina"
+
+#. module: l10n_sk_hr_payroll
+#: model_terms:hr.job,description:l10n_sk_hr_payroll.job_developer_slovakia
+msgid ""
+"Perform assigned responsibilities, collaborate with team members, and adhere "
+"to company policies.\n"
+"        Strong communication, problem-solving, and work ethic required.\n"
+"        Adaptability, initiative, and willingness to learn are valued."
+msgstr ""
+
+#. module: l10n_sk_hr_payroll
+#: model_terms:hr.job,website_description:l10n_sk_hr_payroll.job_developer_slovakia
+msgid "Perks"
+msgstr "Výhody"
+
+#. module: l10n_sk_hr_payroll
+#: model_terms:hr.job,website_description:l10n_sk_hr_payroll.job_developer_slovakia
+msgid "Personal Evolution"
+msgstr "Osobný vývoj"
+
+#. module: l10n_sk_hr_payroll
+#: model_terms:hr.job,website_description:l10n_sk_hr_payroll.job_developer_slovakia
+msgid "Play any sport with colleagues, <br>the bill is covered."
+msgstr "Hrajte s kolegami akýkoľvek šport, <br>účet je krytý."
+
+#. module: l10n_sk_hr_payroll
+#: model_terms:hr.job,website_description:l10n_sk_hr_payroll.job_developer_slovakia
+msgid "Qualify the customer needs"
+msgstr "Kvalifikujte potreby zákazníkov"
+
+#. module: l10n_sk_hr_payroll
+#: model:hr.department,name:l10n_sk_hr_payroll.hr_department_rdpl
+msgid "RD SK"
+msgstr ""
+
+#. module: l10n_sk_hr_payroll
+#: model_terms:hr.job,website_description:l10n_sk_hr_payroll.job_developer_slovakia
+msgid "Real responsibilities and challenges in a fast evolving company"
+msgstr "Skutočná zodpovednosť a výzvy v rýchlo sa rozvíjajúcej spoločnosti"
+
+#. module: l10n_sk_hr_payroll
+#: model:hr.salary.rule,name:l10n_sk_hr_payroll.l10n_sk_reserve_fund_employer
+msgid "Reserve Fund (Employer)"
+msgstr "Rezervný fond (zamestnávateľ)"
+
+#. module: l10n_sk_hr_payroll
+#: model_terms:hr.job,website_description:l10n_sk_hr_payroll.job_developer_slovakia
+msgid "Responsibilities"
+msgstr "Zodpovednosti"
+
+#. module: l10n_sk_hr_payroll
+#: model_terms:res.company,invoice_terms_html:l10n_sk_hr_payroll.res_company_sk
+msgid "STANDARD TERMS AND CONDITIONS OF SALE"
+msgstr "Štandardné obchodné podmienky predaja"
+
+#. module: l10n_sk_hr_payroll
+#: model:hr.work.entry.type,name:l10n_sk_hr_payroll.work_entry_type_sick_25
+msgid "Sick Time Off Day 1-3 (Paid at 25%)"
+msgstr ""
+
+#. module: l10n_sk_hr_payroll
+#: model:hr.work.entry.type,name:l10n_sk_hr_payroll.work_entry_type_sick_55
+msgid "Sick Time Off Day 4-10 (Paid at 55%)"
+msgstr ""
+
+#. module: l10n_sk_hr_payroll
+#: model:hr.work.entry.type,name:l10n_sk_hr_payroll.work_entry_type_sick_0
+msgid "Sick Time Off Day up to 52 weeks (Paid at 55% by social security)"
+msgstr ""
+
+#. module: l10n_sk_hr_payroll
+#: model:hr.salary.rule,name:l10n_sk_hr_payroll.l10n_sk_sickness_insurance_employee
+msgid "Sickness Insurance"
+msgstr "Zdravotné poistenie"
+
+#. module: l10n_sk_hr_payroll
+#: model:hr.salary.rule,name:l10n_sk_hr_payroll.l10n_sk_sickness_insurance_employer
+msgid "Sickness Insurance (Employer)"
+msgstr "Zdravotné poistenie (zamestnávateľ)"
+
+#. module: l10n_sk_hr_payroll
+#: model:hr.salary.rule.category,name:l10n_sk_hr_payroll.hr_payroll_social_security_employee
+msgid "Social Security (Employee)"
+msgstr "Sociálne zabezpečenie (zamestnanec)"
+
+#. module: l10n_sk_hr_payroll
+#: model:hr.salary.rule.category,name:l10n_sk_hr_payroll.hr_payroll_social_security_employer
+msgid "Social Security (Employer)"
+msgstr "Sociálne zabezpečenie (zamestnávateľ)"
+
+#. module: l10n_sk_hr_payroll
+#: model:hr.salary.rule,name:l10n_sk_hr_payroll.l10n_sk_social_security_total_employee
+#: model:hr.salary.rule.category,name:l10n_sk_hr_payroll.hr_payroll_social_security_employee_total
+msgid "Social Security Total (Employee)"
+msgstr "Sociálne zabezpečenie celkom (zamestnanec)"
+
+#. module: l10n_sk_hr_payroll
+#: model:hr.salary.rule,name:l10n_sk_hr_payroll.l10n_sk_social_security_total_employer
+#: model:hr.salary.rule.category,name:l10n_sk_hr_payroll.hr_payroll_social_security_employer_total
+msgid "Social Security Total (Employer)"
+msgstr "Sociálne zabezpečenie celkom (zamestnávateľ)"
+
+#. module: l10n_sk_hr_payroll
+#: model_terms:hr.job,website_description:l10n_sk_hr_payroll.job_developer_slovakia
+msgid "Sport Activity"
+msgstr "Športová aktivita"
+
+#. module: l10n_sk_hr_payroll
+#: model_terms:hr.job,website_description:l10n_sk_hr_payroll.job_developer_slovakia
+msgid "Strong analytical skills"
+msgstr "Silné analytické schopnosti"
+
+#. module: l10n_sk_hr_payroll
+#: model_terms:hr.job,website_description:l10n_sk_hr_payroll.job_developer_slovakia
+msgid "Technical Expertise"
+msgstr "Technické znalosti"
+
+#. module: l10n_sk_hr_payroll
+#: model_terms:res.company,sign_terms:l10n_sk_hr_payroll.res_company_sk
+#: model_terms:res.company,sign_terms_html:l10n_sk_hr_payroll.res_company_sk
+msgid "Terms &amp; Conditions"
+msgstr "Obchodné podmienky"
+
+#. module: l10n_sk_hr_payroll
+#: model_terms:res.company,invoice_terms_html:l10n_sk_hr_payroll.res_company_sk
+msgid ""
+"The client explicitly waives its own standard terms and conditions, even if "
+"these were drawn up after these standard terms and conditions of sale. In "
+"order to be valid, any derogation must be expressly agreed to in advance in "
+"writing."
+msgstr ""
+"Klient sa výslovne vzdáva svojich vlastných všeobecných obchodných "
+"podmienok, aj keď boli vypracované po týchto všeobecných obchodných "
+"podmienkach. Akákoľvek odchýlka musí byť vopred výslovne dohodnutá písomnou "
+"formou, aby bola platná."
+
+#. module: l10n_sk_hr_payroll
+#: model_terms:hr.job,website_description:l10n_sk_hr_payroll.job_developer_slovakia
+msgid "Trainings"
+msgstr "Školenia"
+
+#. module: l10n_sk_hr_payroll
+#: model:hr.salary.rule,name:l10n_sk_hr_payroll.l10n_sk_unemployment_insurance_employee
+msgid "Unemployment Insurance"
+msgstr "Poistenie nezamestnanosti"
+
+#. module: l10n_sk_hr_payroll
+#: model:hr.salary.rule,name:l10n_sk_hr_payroll.l10n_sk_unemployment_insurance_employer
+msgid "Unemployment Insurance (Employer)"
+msgstr "Poistenie v nezamestnanosti (zamestnávateľ)"
+
+#. module: l10n_sk_hr_payroll
+#: model_terms:hr.job,website_description:l10n_sk_hr_payroll.job_developer_slovakia
+msgid "Valid work permit for Belgium"
+msgstr "Platné pracovné povolenie pre Belgicko"
+
+#. module: l10n_sk_hr_payroll
+#: model_terms:hr.job,website_description:l10n_sk_hr_payroll.job_developer_slovakia
+msgid "What We Offer"
+msgstr "Čo ponúkame"
+
+#. module: l10n_sk_hr_payroll
+#: model_terms:hr.job,website_description:l10n_sk_hr_payroll.job_developer_slovakia
+msgid "What's great in the job?"
+msgstr "Čo je na práci skvelé?"
+
+#. module: l10n_sk_hr_payroll
+#: model_terms:res.company,invoice_terms_html:l10n_sk_hr_payroll.res_company_sk
+msgid "You should update this document to reflect your T&amp;C."
+msgstr "Tento dokument by ste mali aktualizovať tak, aby odrážal vaše VOP."
+
+#. module: l10n_sk_hr_payroll
+#: model_terms:res.company,sign_terms:l10n_sk_hr_payroll.res_company_sk
+#: model_terms:res.company,sign_terms_html:l10n_sk_hr_payroll.res_company_sk
+msgid "Your conditions..."
+msgstr ""

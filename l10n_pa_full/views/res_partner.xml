@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data>
+        <record id="view_partner_form_panama" model="ir.ui.view">
+            <field name="name">res.partner.form.panama</field>
+            <field name="model">res.partner</field>
+            <field name="inherit_id" ref="base.view_partner_form"/>
+            <field name="priority">100</field>
+            <field name="arch" type="xml">
+                
+                <xpath expr="//field[@name='type']/.." position="before">
+                    <field name="is_panama" invisible="1"/>
+                    <field name="ruc_type" invisible="not is_panama"  required="is_panama"
+                           string="Tipo de RUC"/>  
+                </xpath>
+                <!-- Usar el campo estándar `vat` (label dinámico vía res.country.vat_label por compañía). -->
+
+                <xpath expr="//field[@name='vat']" position="attributes">
+                    <attribute name="class" remove="oe_inline" separator=" "/>
+                </xpath>
+            </field>
+        </record>
+
+        <record id="view_partner_filter_panama" model="ir.ui.view">
+            <field name="name">res.partner.filter.panama</field>
+            <field name="model">res.partner</field>
+            <field name="inherit_id" ref="base.view_res_partner_filter"/>
+            <field name="arch" type="xml">
+                <xpath expr="//search/field[@name='name']" position="after">
+                    <field name="ruc" string="RUC" filter_domain="[('ruc', 'ilike', self)]"/>
+                </xpath>
+            </field>
+        </record>
+    </data>
+</odoo>

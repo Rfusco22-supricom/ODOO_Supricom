@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <record id="product_pricelist_item_form_view_inherit_account_dual_currency" model="ir.ui.view">
+        <field name="name">product.pricelist.item.form.inherit</field>
+        <field name="model">product.pricelist.item</field>
+        <field name="inherit_id" ref="product.product_pricelist_item_form_view"/>
+        <field name="arch" type="xml">
+            <xpath expr="//group[@name='pricelist_rule_base']//field[@name='fixed_price']" position="after">
+                <field invisible="1" name="currency_id_dif"/>
+                <field invisible="compute_price != 'fixed'" name="price_fixed_usd" options="{'currency_field': 'currency_id_dif'}" widget="monetary"/>
+                <field invisible="compute_price != 'fixed'" name="price_fixed_usd_vat" options="{'currency_field': 'currency_id_dif'}" widget="monetary"/>
+            </xpath></field>
+    </record>
+</odoo>

@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <record id="res_config_settings_view_form_supricom_fl_igtf" model="ir.ui.view">
+        <field name="name">res.config.settings.view.form.inherit.supricom.fl.igtf</field>
+        <field name="model">res.config.settings</field>
+        <field name="priority" eval="90"/>
+        <field name="inherit_id" ref="account.res_config_settings_view_form"/>
+        <field name="arch" type="xml">
+            <xpath expr="//setting[@id='default_taxes']" position="after">
+                <setting id="supricom_fl_igtf_activa_setting" 
+                         string="Forma Libre e IGTF" 
+                         help="Activa la automatización de IGTF y el formato Forma Libre">
+                    <div class="content-group">
+                        <div class="row mt16">
+                            <label for="supricom_fl_igtf_enabled" class="col-lg-3 o_light_label"/>
+                            <field name="supricom_fl_igtf_enabled"/>
+                        </div>
+                    </div>
+                </setting>
+                <setting id="igtf_settings_homologacion" 
+                         string="Configuración de Recargo IGTF" 
+                         help="Configuración para la auto-generación de notas de débito por IGTF en pagos."
+                         invisible="not supricom_fl_igtf_enabled">
+                    <div class="content-group">
+                        <div class="row mt16">
+                            <label for="igtf_product_id" string="Producto Recargo IGTF" class="col-lg-3 o_light_label"/>
+                            <field name="igtf_product_id"/>
+                        </div>
+                    </div>
+                </setting>
+            </xpath>
+        </field>
+    </record>
+</odoo>

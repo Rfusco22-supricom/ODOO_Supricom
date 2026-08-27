@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data>
+        <record id="res_config_settings_view_form_inherit_rag_odoo_mcp_server" model="ir.ui.view">
+            <field name="name">res.config.settings.view.form.inherit.rag.odoo.mcp.server</field>
+            <field name="model">res.config.settings</field>
+            <field name="inherit_id" ref="base.res_config_settings_view_form"/>
+            <field name="arch" type="xml">
+                <xpath expr="//form" position="inside">
+                    <app data-string="RAG Odoo MCP Server" string="RAG Odoo MCP Server" name="rag_odoo_mcp_server" groups="base.group_system">
+                        <block title="MCP Endpoint">
+                            <setting string="URL" help="After installing, MCP is available at: http://&lt;your-odoo-host&gt;:&lt;port&gt;/mcp/sse?db=&lt;database&gt;. In Cursor/Claude use mcp-remote with --transport sse-only and --allow-http.">
+                                <field name="mcp_endpoint_hint" readonly="1" nolabel="1"/>
+                            </setting>
+                        </block>
+                        <block title="Authentication">
+                            <setting string="How the AI signs in" help="Choose how the AI assistant authenticates with this Odoo instance. 'Sign in with Odoo (OAuth)' is the recommended native method: one URL, each user logs in with their own Odoo account, no keys to copy. Choose 'Other methods' only for clients that cannot use OAuth.">
+                                <field name="mcp_auth_primary" widget="radio"/>
+                            </setting>
+                        </block>
+                        <block title="Sign in with Odoo (OAuth)" invisible="mcp_auth_primary != 'oauth'">
+                            <setting string="How to connect Claude Desktop" help="The modern, native way to connect — no API keys, no config file, no mcp-remote.">
+                                <div class="text-muted">
+                                    <ol class="mb-1">
+                                        <li>In Claude Desktop, open <b>Settings → Connectors → Add custom connector</b>.</li>
+                                        <li>Paste the <b>connector URL below</b> into the URL field. Leave <b>Client ID</b> and <b>Client Secret</b> <b>empty</b>.</li>
+                                        <li>Save, then click <b>Connect</b>: a browser opens and the user signs in with their <b>own Odoo account</b> and clicks <b>Allow</b>.</li>
+                                    </ol>
+                                    <p class="mb-0">The assistant then runs with exactly that user's Odoo permissions — nothing more. Each user gets their own separate, correctly-scoped session.</p>
+                                </div>
+                            </setting>
+                            <setting string="Connector URL — copy this into Claude" help="Paste into Claude Desktop → Settings → Connectors → Add custom connector → URL. Leave Client ID and Client Secret empty.">
+                                <field name="mcp_oauth_endpoint_hint" widget="CopyClipboardChar" nolabel="1"/>
+                            </setting>
+                            <setting string="Video tutorial" help="Watch how to add a custom connector in Claude Desktop and sign in.">
+                                <button string="Watch tutorial video" name="action_open_mcp_oauth_tutorial" type="object" class="btn-secondary" icon="fa-youtube-play"/>
+                            </setting>
+                            <setting string="Requirement on multi-database servers" help="OAuth discovery is requested without a database name.">
+                                <div class="text-muted">
+                                    <p class="mb-0">Sign-in discovery is fetched without a database name, so this server must be able to resolve a <b>default database</b>. This is automatic when the host serves a single database. On a multi-database server, set <code>db_name = &lt;database&gt;</code> (or a matching <code>dbfilter</code>) in <code>odoo.conf</code>, otherwise the login flow cannot start.</p>
+                                </div>
+                            </setting>
+                        </block>
+                        <block title="Other authentication methods" invisible="mcp_auth_primary != 'other'">
+                            <setting string="Method" help="Legacy connection methods for clients that cannot use OAuth. Pick one — its own configuration appears below.">
+                                <field name="mcp_auth_method" widget="radio"/>
+                            </setting>
+                        </block>
+                        <block title="API tokens (User = read-only, Admin = read+write)" invisible="mcp_auth_primary != 'other' or mcp_auth_method != 'token'">
+                            <setting string="Require API key" help="If checked, clients must send a valid User or Admin token. If not checked, no token is required (read-only access).">
+                                <field name="require_api_key"/>
+                            </setting>
+                            <setting string="User token (read-only)" help="Give this token to standard users. Claude will only be able to search and read data (no create, edit or delete).">
+                                <field name="user_token_set" readonly="1" nolabel="1"/>
+                                <button string="Generate User token" name="action_generate_mcp_api_key_user" type="object" class="btn-secondary"/>
+                            </setting>
+                            <setting string="Admin token (read+write)" help="⚠️ Give only to managers or admins. With this token Claude can create, edit and delete records (orders, invoices, etc.). Use with care and ensure backups.">
+                                <field name="admin_token_set" readonly="1" nolabel="1"/>
+                                <button string="Generate Admin token" name="action_generate_mcp_api_key_admin" type="object" class="btn-primary"/>
+                            </setting>
+                        </block>
+                        <block title="Odoo User Credentials" invisible="mcp_auth_primary != 'other' or mcp_auth_method != 'odoo_user'">
+                            <setting string="Odoo Username" help="The login (email) of the Odoo user the LLM will operate as. The LLM will respect this user's access rights and permissions.">
+                                <field name="mcp_odoo_user_login" nolabel="1" placeholder="e.g. claude@mycompany.com"/>
+                            </setting>
+                            <setting string="Odoo Password" help="The password of the Odoo user. It will be stored in system parameters.">
+                                <field name="mcp_odoo_user_password" password="True" nolabel="1" placeholder="Enter password"/>
+                            </setting>
+                            <setting string="Allow write operations" help="If checked, the LLM can create, edit and delete records. If unchecked, only read operations are permitted.">
+                                <field name="mcp_odoo_user_allow_write"/>
+                            </setting>
+                            <setting string="Test connection" help="Verify that the configured username and password are valid for this Odoo database.">
+                                <button string="Test Connection" name="action_test_odoo_user_connection" type="object" class="btn-primary" icon="fa-plug"/>
+                            </setting>
+                        </block>
+                        <block title="Per-User API Key" invisible="mcp_auth_primary != 'other' or mcp_auth_method != 'user_api_key'">
+                            <setting string="How it works" help="Each person connects with their own native Odoo API key. The LLM then operates as that user and can do exactly what the user is allowed to do in Odoo — nothing more. No shared admin token is used.">
+                                <div class="text-muted">
+                                    <p>Each user generates their own key in
+                                        <b>Preferences → Account Security → New API Key</b>
+                                        (top-right user menu → My Profile, then the "Account Security" tab).
+                                        Admins can create a key on behalf of a user via "Log in as" that user.
+                                    </p>
+                                    <p>The client must send the key on every request, in any of these forms:</p>
+                                    <ul>
+                                        <li><code>Authorization: Bearer &lt;database&gt;:&lt;api_key&gt;</code></li>
+                                        <li><code>Authorization: Bearer &lt;api_key&gt;</code> (with <code>?db=</code> in the URL)</li>
+                                        <li><code>X-API-Key: &lt;api_key&gt;</code> header, or <code>?api_key=</code> query param</li>
+                                    </ul>
+                                    <p>Write access follows the user's own Odoo permissions: read-only users can only read; users without delete rights cannot delete, and so on.</p>
+                                </div>
+                            </setting>
+                        </block>
+                        <block title="MCP Client Configuration (for Claude Desktop / Cursor)" invisible="mcp_auth_primary == 'oauth'">
+                            <setting string="Auto-generate client config" help="Builds the JSON block to paste into your Claude Desktop / Cursor MCP client configuration file, using this Odoo instance's URL, the current database name, and the selected Authentication method. Click to regenerate whenever you change the base URL, switch database, or change the authentication method (save first).">
+                                <button string="Generate config" name="action_generate_mcp_client_config" type="object" class="btn-primary" icon="fa-cogs"/>
+                            </setting>
+                            <setting string="How to find / edit the client config file" help="Opens a short tutorial that shows where Claude Desktop / Cursor store their MCP configuration file and how to edit it.">
+                                <button string="Watch tutorial video" name="action_open_mcp_config_tutorial" type="object" class="btn-secondary" icon="fa-youtube-play"/>
+                            </setting>
+                            <setting string="Generated configuration block" help="Copy this 'odoo' entry and paste it inside the &quot;mcpServers&quot;: { ... } object of your MCP client configuration file (e.g. claude_desktop_config.json), next to any other servers you already have. Replace any &lt;PASTE-...&gt; placeholder with your real value: for Per-User API Key use your own key (Preferences → Account Security → New API Key); for shared tokens use the User or Admin token generated above.">
+                                <field name="mcp_client_config" nolabel="1" readonly="1" widget="McpConfigBlock" placeholder="Click 'Generate config' to build the configuration from this Odoo instance."/>
+                            </setting>
+                        </block>
+                        <block title="Company Context">
+                            <setting string="Default company" help="If set, all MCP operations will run in this company's context by default. Claude can override this per-tool call using company_id, or per-request via ?company_id= or X-Odoo-Company header. Leave empty for no default (multi-company: all companies visible).">
+                                <field name="mcp_default_company_id" nolabel="1"/>
+                            </setting>
+                        </block>
+                        <block title="LLM context (recommended)">
+                            <setting string="Instance description" help="Passed to MCP clients in serverInfo.description. Example: 'CRM and inside sales; leads, opportunities, teams; no manufacturing.' Installed apps are still auto-detected.">
+                                <field name="mcp_client_description" nolabel="1" placeholder="Short description of this Odoo database for the AI..."/>
+                            </setting>
+                        </block>
+                        <block title="Tool restrictions">
+                            <setting string="Generate dashboard only" help="If checked, the connected LLM can ONLY use the dashboard tools (list, get, schema help, create, update, add/remove widget, delete). All other tools — ORM read/write, raw SQL, CRM lead generation, capability discovery — are hidden from tools/list and refused on tools/call. Use this to lock the assistant to dashboard work only.">
+                                <field name="mcp_dashboard_only"/>
+                            </setting>
+                        </block>
+                        <block title="Optional features">
+                            <setting string="CRM Manager" help="Enable lead-generation and mailing-campaign 'from a brief' features. When ON, you get a 'Claude Lead Brief' button on CRM > Leads, a 'Claude brief' button on Email Marketing > Mailings, Claude Briefs menus under each app's Configuration, and Claude can use the lead-gen / CRM / mailing MCP tools. When OFF, those menus, buttons, and tools are hidden and refused. (CRM and Mass Mailing are dependencies of this module and stay installed in either case.)">
+                                <field name="crm_manager_enabled"/>
+                            </setting>
+                            <setting string="Access Manager" help="Let the connected LLM manage user access rules in plain language: hide menus, restrict create/edit/delete on models, hide or make fields readonly, apply record-level domains, block whole apps, control chatter/export visibility, and create users. When ON, the access-management MCP tools are exposed to the assistant in addition to its normal capabilities. When OFF (default), those tools are hidden and refused.">
+                                <field name="access_manager_enabled"/>
+                            </setting>
+                            <setting string="SEO Manager" help="Let the connected LLM optimise your website for search engines. When ON, Claude can audit every page, product and blog post (meta title/description length, duplicate titles, missing OpenGraph image, noindex or unpublished pages, bad URLs, missing or multiple &lt;h1&gt;, images without alt text, thin content), then fix what it finds: write meta tags, rename URLs with an automatic 301 redirect, set alt text and headings, manage redirects and robots.txt, refresh the sitemap, and set the canonical domain, Google Search Console and Analytics keys. When OFF (default), those tools are hidden and refused. Requires Odoo's Website app.">
+                                <field name="seo_manager_enabled"/>
+                                <field name="seo_website_app_installed" invisible="1"/>
+                                <div class="text-warning mt-2" invisible="not seo_manager_enabled or seo_website_app_installed">
+                                    <i class="fa fa-exclamation-triangle me-1"/>
+                                    The <b>Website</b> app is not installed, so the SEO tools have nothing to work on.
+                                    They stay visible to the assistant and will tell you to install it.
+                                    <button name="action_open_website_app_install" type="object"
+                                            string="Install Website" class="btn-link ps-1" icon="fa-arrow-right"/>
+                                </div>
+                            </setting>
+                        </block>
+                    </app>
+                </xpath>
+            </field>
+        </record>
+    </data>
+</odoo>

@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+
+    <!-- Inherit Orders Tree View -->
+    <record id="view_order_tree_inherit_digiflex" model="ir.ui.view">
+        <field name="name">sale.order.tree.inherit.digiflex</field>
+        <field name="model">sale.order</field>
+        <field name="inherit_id" ref="sale.view_order_tree"/>
+        <field name="arch" type="xml">
+            <xpath expr="//field[@name='invoice_status']" position="after">
+                <field name="operation_status"
+                       string="Estado Operativo"
+                       widget="badge"
+                       decoration-warning="operation_status == 'partially_operated'"
+                       decoration-success="operation_status == 'fully_operated'"
+                       decoration-info="operation_status in ('pending', 'in_progress')"
+                       decoration-muted="operation_status == 'cancelled'"
+                       optional="show"/>
+                <field name="has_refund_or_return" column_invisible="True"/>
+                <field name="is_partially_operated" column_invisible="True"/>
+            </xpath>
+        </field>
+    </record>
+
+    <!-- Inherit Quotations Tree View -->
+    <record id="view_quotation_tree_inherit_digiflex" model="ir.ui.view">
+        <field name="name">sale.quotation.tree.inherit.digiflex</field>
+        <field name="model">sale.order</field>
+        <field name="inherit_id" ref="sale.view_quotation_tree_with_onboarding"/>
+        <field name="arch" type="xml">
+            <xpath expr="//field[@name='state']" position="after">
+                <field name="operation_status"
+                       string="Estado Operativo"
+                       widget="badge"
+                       decoration-warning="operation_status == 'partially_operated'"
+                       decoration-success="operation_status == 'fully_operated'"
+                       decoration-info="operation_status in ('pending', 'in_progress')"
+                       decoration-muted="operation_status == 'cancelled'"
+                       optional="hide"/>
+                <field name="has_refund_or_return" column_invisible="True"/>
+                <field name="is_partially_operated" column_invisible="True"/>
+            </xpath>
+        </field>
+    </record>
+
+    <!-- Inherit Sale Order Form View -->
+    <record id="view_order_form_inherit_digiflex" model="ir.ui.view">
+        <field name="name">sale.order.form.inherit.digiflex</field>
+        <field name="model">sale.order</field>
+        <field name="inherit_id" ref="sale.view_order_form"/>
+        <field name="arch" type="xml">
+            <xpath expr="//field[@name='payment_term_id']" position="after">
+                <field name="operation_status"
+                       widget="badge"
+                       decoration-warning="operation_status == 'partially_operated'"
+                       decoration-success="operation_status == 'fully_operated'"
+                       decoration-info="operation_status in ('pending', 'in_progress')"
+                       decoration-muted="operation_status == 'cancelled'"
+                       readonly="1"/>
+                <field name="has_refund_or_return" invisible="1"/>
+                <field name="is_partially_operated" invisible="1"/>
+            </xpath>
+        </field>
+    </record>
+
+    <!-- Inherit Search View -->
+    <record id="view_sales_order_filter_inherit_digiflex" model="ir.ui.view">
+        <field name="name">sale.order.search.inherit.digiflex</field>
+        <field name="model">sale.order</field>
+        <field name="inherit_id" ref="sale.sale_order_view_search_inherit_sale"/>
+        <field name="arch" type="xml">
+            <xpath expr="//filter[@name='my_sale_orders_filter']" position="after">
+                <separator/>
+                <filter string="Operados Parcialmente (Con Devolución)"
+                        name="filter_partially_operated"
+                        domain="[('operation_status', '=', 'partially_operated')]"/>
+                <filter string="Operados Totalmente"
+                        name="filter_fully_operated"
+                        domain="[('operation_status', '=', 'fully_operated')]"/>
+            </xpath>
+            <xpath expr="//group" position="inside">
+                <filter string="Estado Operativo"
+                        name="group_by_operation_status"
+                        domain="[]"
+                        context="{'group_by': 'operation_status'}"/>
+            </xpath>
+        </field>
+    </record>
+
+</odoo>

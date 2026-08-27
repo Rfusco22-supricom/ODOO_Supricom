@@ -1,0 +1,91 @@
+.o_dual_summary_box {
+    float: right;
+    width: 320px;
+    margin-top: 15px;
+    padding: 12px;
+    border: 1px solid #dee2e6;
+    border-radius: 4px;
+    background-color: #fcfcfc;
+    font-size: 0.95em;
+    clear: both;
+}
+
+.o_dual_title {
+    font-weight: bold;
+    color: #495057;
+    border-bottom: 2px solid #3366cc;
+    margin-bottom: 8px;
+    padding-bottom: 4px;
+    font-size: 0.9em;
+    text-transform: uppercase;
+}
+
+.o_dual_table {
+    width: 100%;
+}
+
+.o_dual_table td {
+    padding: 6px 0;
+    vertical-align: middle;
+}
+
+.o_label {
+    color: #495057;
+    text-align: left;
+    font-weight: 500;
+}
+
+.o_value {
+    text-align: right;
+    font-weight: 600;
+}
+
+.o_second_val {
+    color: #0056b3;
+    /* Professional Blue for Bs. */
+}
+
+.o_second_val.text-success {
+    color: #198754 !important;
+    /* Professional Green for USD */
+}
+
+.o_total_row {
+    border-top: 1px solid #dee2e6;
+    margin-top: 4px;
+}
+
+.o_total_row .o_label {
+    font-weight: bold;
+}
+
+.o_total_row .o_main_val,
+.o_total_row .o_second_val {
+    font-size: 1.1em;
+}
+
+.o_residual_row {
+    color: #d9534f;
+}
+
+.o_dual_payments {
+    font-size: 0.9em;
+    color: #495057;
+    margin-top: 10px;
+    padding-top: 10px;
+    border-top: 1px solid #dee2e6;
+}
+
+.o_dual_payments .o_payment_label {
+    font-weight: 500;
+}
+
+/* Ensure payment links look good in the box */
+.o_dual_payments a {
+    color: #0056b3;
+    text-decoration: none;
+}
+
+.o_dual_payments a:hover {
+    text-decoration: underline;
+}

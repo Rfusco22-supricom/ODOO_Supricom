@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+
+    <record id="view_product_template_form_inherit_supricom_commissions" model="ir.ui.view">
+        <field name="name">product.template.form.inherit.supricom.commissions</field>
+        <field name="model">product.template</field>
+        <field name="inherit_id" ref="product.product_template_form_view"/>
+        <field name="arch" type="xml">
+            <xpath expr="//notebook" position="inside">
+                <page string="Comisiones" name="commissions" groups="supricom_commissions.group_commission_manager">
+                    <group>
+                        <group name="commission_rules" string="Reglas de Comisión">
+                            <field name="commission_use_fixed_amount" invisible="1"/>
+                            <field name="commission_use_fixed_percentage" invisible="1"/>
+                            <field name="commission_is_explicit_amount" invisible="1"/>
+                            <field name="commission_is_explicit_percentage" invisible="1"/>
+                            <field name="commission_type" widget="radio" invisible="commission_is_explicit_amount or commission_is_explicit_percentage or not commission_use_fixed_amount"/>
+                            <field name="x_comision_fija_producto" string="% Comisión Fija" widget="percentage" invisible="(commission_type != 'percentage' and not commission_is_explicit_percentage) or not commission_use_fixed_percentage or commission_is_explicit_amount" help="Si colocas un porcentaje mayor a 0, se ignorará la matriz de comisiones y se usará este porcentaje."/>
+                            <field name="commission_fixed_amount" string="Monto Fijo ($)" invisible="(commission_type != 'fixed' and not commission_is_explicit_amount) or not commission_use_fixed_amount or commission_is_explicit_percentage" help="Monto en dólares que se pagará por cada unidad vendida."/>
+                        </group>
+                        <group name="commission_limits" string="Límites y Excepciones">
+                            <field name="min_price" string="Precio Mínimo de Venta"/>
+                        </group>
+                    </group>
+                </page>
+            </xpath>
+        </field>
+    </record>
+
+</odoo>

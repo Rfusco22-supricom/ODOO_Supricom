@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<odoo>
+    <record id="view_auditlog_http_session_form" model="ir.ui.view">
+        <field name="name">auditlog.http.session.form</field>
+        <field name="model">auditlog.http.session</field>
+        <field name="arch" type="xml">
+            <form string="Sesión de usuario">
+                <sheet>
+                    <group string="Sesión de usuario">
+                        <field name="user_id" string="Usuario"/>
+                        <field name="login" string="Login"/>
+                        <field name="status" string="Estado"/>
+                        <field name="remote_ip" string="IP Remota"/>
+                        <field name="create_date" string="Fecha de Creación"/>
+                        <field name="name" string="ID de Sesión"/>
+                    </group>
+                    <group string="Peticiones HTTP">
+                        <field name="http_request_ids" nolabel="1" />
+                    </group>
+                </sheet>
+            </form>
+        </field>
+    </record>
+    <record id="view_auditlog_http_session_tree" model="ir.ui.view">
+        <field name="name">auditlog.http.session.tree</field>
+        <field name="model">auditlog.http.session</field>
+        <field name="arch" type="xml">
+            <tree>
+                <field name="user_id" string="Usuario"/>
+                <field name="login" string="Login"/>
+                <field name="status" string="Estado"/>
+                <field name="remote_ip" string="IP Remota"/>
+                <field name="create_date" string="Fecha de Creación"/>
+                <field name="name" string="ID de Sesión"/>
+            </tree>
+        </field>
+    </record>
+    <record id="view_auditlog_http_session_search" model="ir.ui.view">
+        <field name="name">auditlog.http.session.search</field>
+        <field name="model">auditlog.http.session</field>
+        <field name="arch" type="xml">
+            <search string="Sesiones de usuario">
+                <field name="user_id" string="Usuario"/>
+                <field name="login" string="Login"/>
+                <field name="remote_ip" string="IP Remota"/>
+                <field name="name" string="ID de Sesión"/>
+                <field name="create_date" string="Fecha de Creación"/>
+                <group expand="0" string="Group By...">
+                    <filter
+                        name="group_by_user_id"
+                        string="Usuario"
+                        domain="[]"
+                        context="{'group_by':'login'}"
+                    />
+                    <filter
+                        name="group_by_status"
+                        string="Estado"
+                        domain="[]"
+                        context="{'group_by':'status'}"
+                    />
+                    <filter
+                        name="group_by_create_date"
+                        string="Creado el"
+                        domain="[]"
+                        context="{'group_by':'create_date'}"
+                    />
+                </group>
+            </search>
+        </field>
+    </record>
+    <record model="ir.actions.act_window" id="action_auditlog_http_session_tree">
+        <field name="name">Sesiones de usuario</field>
+        <field name="type">ir.actions.act_window</field>
+        <field name="res_model">auditlog.http.session</field>
+        <field name="view_id" ref="view_auditlog_http_session_tree"/>
+        <field name="view_mode">tree</field>
+        <field name="context">{'create': False}</field>
+    </record>
+    <menuitem
+        id="menu_action_auditlog_http_session_tree"
+        parent="menu_audit"
+        action="action_auditlog_http_session_tree"
+        sequence="30"
+    />
+</odoo>

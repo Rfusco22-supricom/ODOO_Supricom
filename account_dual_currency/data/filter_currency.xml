@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <record id="account_reports.profit_and_loss" model="account.report">
+        <field name="filter_currency" eval="True" />
+    </record>
+
+    <record id="account_reports.balance_sheet" model="account.report">
+        <field name="filter_currency" eval="True" />
+    </record>
+
+    <record id="account_reports.executive_summary" model="account.report">
+        <field name="filter_currency" eval="True" />
+    </record>
+
+    <record id="account_reports.general_ledger_report" model="account.report">
+        <field name="filter_currency" eval="True" />
+    </record>
+
+    <record id="account_reports.trial_balance_report" model="account.report">
+        <field name="filter_currency" eval="True" />
+    </record>
+
+    <record id="account_reports.aged_receivable_report" model="account.report">
+        <field name="filter_currency" eval="True" />
+    </record>
+
+    <record id="account_reports.aged_payable_report" model="account.report">
+        <field name="filter_currency" eval="True" />
+    </record>
+
+    <record id="account_reports.cash_flow_report" model="account.report">
+        <field name="filter_currency" eval="True" />
+    </record>
+
+    <record id="account_reports.partner_ledger_report" model="account.report">
+        <field name="filter_currency" eval="True" />
+    </record>
+
+    <record id="account.generic_tax_report" model="account.report">
+        <field name="filter_currency" eval="True" />
+    </record>
+
+    <record id="account.generic_tax_report_account_tax" model="account.report">
+        <field name="filter_currency" eval="True" />
+    </record>
+
+    <record id="account.generic_tax_report_tax_account" model="account.report">
+        <field name="filter_currency" eval="True" />
+    </record>
+
+    <record id="account_reports.journal_report" model="account.report">
+        <field name="filter_currency" eval="True" />
+    </record>
+
+    <record id="account_reports.deferred_expense_report" model="account.report">
+        <field name="filter_currency" eval="True" />
+    </record>
+
+    <record id="account_reports.multicurrency_revaluation_report" model="account.report">
+        <field name="filter_currency" eval="True" />
+    </record>
+    <!--  -->
+    <record id="account_reports.deferred_revenue_report" model="account.report">
+        <field name="filter_currency" eval="True" />
+    </record>
+
+    <record id="account_reports.generic_ec_sales_report" model="account.report">
+        <field name="filter_currency" eval="True" />
+    </record>
+<!--     
+    <record id="account_reports.disallowed_expenses_report" model="account.report">
+        <field name="filter_currency" eval="False" />
+    </record> -->
+
+    
+
+</odoo>

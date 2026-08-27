@@ -1,0 +1,480 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <template id="invoice_templates_customer_details">
+        <p t-attf-style="text-transform:capitalize; color: #{theme_color or '#ffffff'}; font-weight:bold; margin:0; margin-bottom:5px; padding:10px 0px 0px 0px;">
+            <strong t-if="o.partner_shipping_id == o.partner_id">Dirección de facturación y envío:</strong>
+            <strong t-if="o.partner_shipping_id != o.partner_id">Dirección de facturación:</strong>
+        </p>
+        <t t-if="o.partner_id">
+            <span t-attf-style="text-transform:capitalize; padding:0px; margin:0; color: #{customer_color or '#ffffff'};">
+                <t t-if="o.company_id and o.company_id.fel_pa_is_customer_bold">
+                    <strong>
+                        <t t-if="o.partner_id.parent_id">
+                            <span t-field="o.partner_id.parent_id.name"/>
+                        </t>
+                        <t t-else="">
+                            <span t-field="o.partner_id.name"/>
+                        </t>
+                    </strong>
+                </t>
+                <t t-if="not o.company_id.fel_pa_is_customer_bold">
+                    <t t-if="o.partner_id.parent_id">
+                        <span t-field="o.partner_id.parent_id.name"/>
+                    </t>
+                    <t t-else="">
+                        <span t-field="o.partner_id.name"/>
+                    </t>
+                </t>
+            </span>
+            <p t-attf-style="color: #{customer_address_color or '#ffffff'};">
+                <span t-esc="o._get_fel_pa_street(o.partner_id)"/>
+                <br/>
+                <span t-esc="o._get_fel_pa_address_details(o.partner_id)"/>
+                <br/>
+                <t t-if="o.partner_id.mobile">
+                    <strong>Móvil: </strong>
+                    <span t-field="o.partner_id.mobile"/>
+                    <br/>
+                </t>
+                <t t-if="o.partner_id.email">
+                    <strong>Correo electrónico: </strong>
+                    <span t-field="o.partner_id.email"/>
+                    <br/>
+                </t>
+                <t t-set="partner_vat" t-value="o._get_fel_pa_partner_vat(o.partner_id)"/>
+                <t t-if="partner_vat">
+                    <strong><span t-esc="partner_vat[0]"/>: </strong><span t-esc="partner_vat[1]"/>
+                    <t t-if="partner_vat[2]">DV: <span t-esc="partner_vat[2]"/></t>
+                </t>
+            </p>
+        </t>
+    </template>
+    <template id="invoice_templates_customer_shipping_details">
+        <p t-attf-style="text-transform:capitalize; color: #{theme_color or '#ffffff'}; font-weight:bold; margin:0; margin-bottom:5px; padding:10px 0px 0px 0px;" t-if="o.partner_shipping_id != o.partner_id">
+            <strong t-if="o.partner_shipping_id  and o.partner_shipping_id != o.partner_id">Dirección de Envio:</strong>
+        </p>
+        <t t-if="o.partner_shipping_id and o.partner_shipping_id != o.partner_id">
+            <span t-attf-style="text-transform:capitalize; padding:0px; margin:0; color: #{customer_color or '#ffffff'};">
+                <t t-if="o.company_id and o.company_id.fel_pa_is_customer_bold">
+                    <strong>
+                        <span t-field="o.partner_shipping_id"/>
+                    </strong>
+                </t>
+                <t t-if="not o.company_id.fel_pa_is_customer_bold">
+                    <span t-field="o.partner_shipping_id"/>
+                </t>
+            </span>
+            <p t-attf-style="color: #{customer_address_color or '#ffffff'};">
+                <span t-esc="o._get_fel_pa_street(o.partner_shipping_id)"/>
+                <br/>
+                <span t-esc="o._get_fel_pa_address_details(o.partner_shipping_id)"/>
+                <br/>
+                <t t-if="o.partner_shipping_id.mobile">
+                    <strong>Móvil: </strong>
+                    <span t-field="o.partner_shipping_id.mobile"/>
+                    <br/>
+                </t>
+                <t t-if="o.partner_shipping_id.email">
+                    <strong>Correo electrónico: </strong>
+                    <span t-field="o.partner_shipping_id.email"/>
+                    <br/>
+                </t>
+            </p>
+        </t>
+    </template>
+    <template id="templates_company_details">
+        <div t-attf-style="color: #{company_color or '#ffffff'};">
+        <span t-att-style="'text-transform:capitalize; padding:0px; margin:0;'">
+            <t t-if="o.company_id and o.company_id.fel_pa_is_company_bold">
+                <t t-if="o.company_id.company_registry">
+                    <strong>
+                        <span t-field="o.company_id.company_registry"/>
+                    </strong>
+                </t>
+                <t t-else="">
+                    <strong>
+                        <span t-field="o.company_id.name"/>
+                    </strong>
+                </t>
+            </t>
+            <t t-if="not o.company_id.fel_pa_is_company_bold">
+                <t t-if="o.company_id.company_registry">
+                    <strong>
+                        <span t-field="o.company_id.company_registry"/>
+                    </strong>
+                </t>
+                <t t-else="">
+                    <strong>
+                        <span t-field="o.company_id.name"/>
+                    </strong>
+                </t>
+            </t>
+        </span>
+        </div>
+        <div t-attf-style="color: #{company_address_color or '#ffffff'};">
+            Dirección: <span t-esc="o._get_fel_pa_full_address_details(o.company_id.partner_id)"/><br/>
+            <strong><span class="text-center" t-field="o.company_id.partner_id.l10n_latam_identification_type_id.name"/>:</strong> <span class="text-center" t-field="o.company_id.vat"/> <t t-if="o.company_id.partner_id.fel_pa_dv">DV: <span class="text-center" t-field="o.company_id.partner_id.fel_pa_dv"/></t><br/>
+            <t t-if="o.company_id.phone">
+                <strong>Teléfono: </strong>
+                <span t-field="o.company_id.phone"/>
+                <br/>
+            </t>
+            <t t-if="o.company_id.email">
+                <strong>Correo electrónico: </strong>
+                <span t-field="o.company_id.email"/>
+                <br/>
+            </t>
+        </div>
+    </template>
+    <template id="template_watermark">
+        <t t-if="o.company_id and o.company_id.fel_pa_is_show_watermark">
+            <div class="watermark text-center" style="position:absolute; opacity:0.25; width:100%; height:auto; z-index:1000; -webkit-transform: rotate(-45deg); -moz-transform:rotate(-45deg); bottom:-600px; left:-100px;">
+                <t t-if="o.company_id.fel_pa_watermark == 'logo'">
+                    <span style="max-height: 500px;height:auto;" t-field="o.company_id.fel_pa_watermark_logo" t-options="{'widget':'image'}"/>
+                </t>
+                <t t-if="o.company_id.fel_pa_watermark != 'logo'">
+                    <span t-att-style="'font-size:'+str(o.company_id.fel_pa_watermark_text_font_size)+'em; color:'+o.company_id.fel_pa_watermark_text_color">
+                        <span t-field="o.company_id.fel_pa_watermark_text" t-if="o.company_id.fel_pa_watermark == 'text'"/>
+                        <span t-field="o.state" t-if="o.company_id.fel_pa_watermark == 'status'"/>
+                    </span>
+                </t>
+            </div>
+        </t>
+    </template>
+    <template id="template_total_amount_word">
+        <t t-if="o.company_id.fel_pa_add_amount_in_words == True">
+            <span t-attf-style="color: #{text_color or '#000000'};padding-bottom: 5px;">Total en letras:- 
+                <t t-esc="o.fel_pa_total_in_letters"/>
+            </span>
+        </t>
+    </template>
+    <template id="report_invoice_order_lines">
+        <t t-set="display_discount" t-value="any([l.discount for l in o.invoice_line_ids])"/>
+        <table BORDERCOLOR="#{theme_color or '#000000'}" border="1" cellpadding="0" cellspacing="0" class="table table-bordered" style="border:0.5px solid #ccc;  border-collapse: collapse; text-transform:capitalize; padding:10px;" width="100%">
+            <thead>
+                <tr t-attf-style="page-break-inside: avoid !important;background-color: #{theme_color or '#000000'}; color: #{theme_text_color or '#000000'};">
+                    <td align="center" t-attf-style="padding:5px 10px; border:1px solid #{theme_color or '#000000'} !important; border-right:0px solid #{theme_color or '#000000'} !important; font-weight:bold;" width="8%">No.</td>
+                    <t t-if="o.company_id.fel_pa_add_product_image == True">
+                        <td align="center" t-attf-style="padding:5px 10px; border:1px solid #{theme_color or '#000000'} !important; border-right:0px solid #{theme_color or '#000000'} !important; font-weight:bold;" width="15%">Imagen</td>
+                    </t>
+                    <td align="center" t-attf-style="padding:5px 10px; border:1px solid #{theme_color or '#000000'} !important; border-right:0px solid #{theme_color or '#000000'} !important; font-weight:bold;" width="52%">Descripción</td>
+                    <td align="center" t-attf-style="padding:5px 10px; border:1px solid #{theme_color or '#000000'} !important; border-right:0px solid #{theme_color or '#000000'} !important; font-weight:bold;" width="14%">Cantidad</td>
+                    <td align="center" t-attf-style="padding:5px; border:1px solid #{theme_color or '#000000'} !important; border-right:0px solid #{theme_color or '#000000'} !important; font-weight:bold;" width="15%">Precio Unitario</td>
+                    <t t-if="o.company_id.fel_pa_invoice_discount_column">
+                        <td align="center" groups="product.group_discount_per_so_line" t-attf-style="padding:5px 10px; border:1px solid #{theme_color or '#000000'} !important; border-right:0px solid #{theme_color or '#000000'} !important; font-weight:bold;" t-if="display_discount" width="12%">Desc.</td>
+                    </t>
+                    <t t-if="o.company_id.fel_pa_invoice_tax_column">
+                        <td align="center" t-attf-style="padding:5px 10px; border:1px solid #{theme_color or '#000000'} !important; border-right:0px solid #{theme_color or '#000000'} !important; font-weight:bold;" width="12%">Impuestos</td>
+                    </t>
+                    <td align="center" t-attf-style="padding:5px 10px; border:1px solid #{theme_color or '#000000'} !important; border-right:0px solid #{theme_color or '#000000'} !important; font-weight:bold;" width="25%">Valor</td>
+                </tr>
+            </thead>
+            <tbody>
+                <t t-as="l" t-foreach="o.invoice_line_ids">
+                    <t t-if="not l.display_type or l.display_type in ('product', 'line_section', 'line_note')">
+                        <t t-if="l_odd">
+                            <t t-set="ol_color" t-value="o.company_id.fel_pa_even_party_color"/>
+                        </t>
+                        <t t-if="l_even">
+                            <t t-set="ol_color" t-value="o.company_id.fel_pa_odd_party_color"/>
+                        </t>
+                        <tr t-att-style="'page-break-inside: avoid !important; color: %s; background-color: %s '%(text_color, ol_color)  ">
+                            <t t-if="not l.display_type or l.display_type == 'product'">
+                                <td class="text-center" t-att-style="'padding:2px 5px; border:0.5px solid #ccc !important; border-right:0px solid #ccc !important; font-size:11px;'">
+                                    <span t-esc="l_index+1"/>
+                                </td>
+                                <t t-if="o.company_id.fel_pa_add_product_image == True">
+                                    <td class="text-right" t-att-style="'padding:2px 5px; border:0.5px solid #ccc !important; border-right:0px solid #ccc !important; font-size:11px;'">
+                                        <span style="width: 40px;height: 40px;margin: auto;display: -webkit-box;display: -ms-flexbox;display: flex;-webkit-box-pack: center;-ms-flex-pack: center;justify-content: center;-webkit-box-align: center;-ms-flex-align: center;align-items: center;" t-field="l.product_id.image_256" t-if="l.product_id and l.product_id.image_256" t-options="{&quot;widget&quot;:&quot;image&quot;,&quot;class&quot;:&quot;img-rounded mh-100&quot;}"/>
+                                    </td>
+                                </t>
+                                <td class="text-left" t-att-style="'padding:2px 5px; border:0.5px solid #ccc !important; border-right:0px solid #ccc !important; font-size:11px;'">
+                                    <t t-if="not o.company_id.fel_pa_is_description">
+                                        <span t-field="l.product_id and l.product_id.name"/>
+                                    </t>
+                                    <t t-if="o.company_id.fel_pa_is_description">
+                                        <span t-field="l.name" t-options="{'widget': 'text'}"/>
+                                    </t>
+                                </td>
+                                <td class="text-right" t-att-style="'padding:2px 5px; border:0.5px solid #ccc !important; border-right:0px solid #ccc !important; font-size:11px;'">
+                                    <span t-field="l.quantity"/>
+                                </td>
+                                <td class="text-right" t-att-style="'padding:2px 5px; border:0.5px solid #ccc !important; border-right:0px solid #ccc !important; font-size:11px;'">
+                                    <span t-esc="l.price_unit" t-options="{'widget': 'monetary', 'display_currency': o.currency_id}"/>
+                                </td>
+                                <t t-set="total_discount_line" t-value="(l.price_unit * l.quantity) * (l.discount/100)"/>
+                                <t t-if="o.company_id.fel_pa_invoice_discount_column">
+                                    <td class="text-right"  groups="product.group_discount_per_so_line" t-att-style="'padding:2px 5px; border:0.5px solid #ccc !important; border-right:0px solid #ccc !important; font-size:11px;'" t-if="display_discount">
+                                        <span t-esc="total_discount_line" t-options="{'widget': 'monetary', 'display_currency': o.currency_id}"/>
+                                    </td>
+                                </t>
+
+                                <t t-if="o.company_id.fel_pa_invoice_tax_column">
+                                    <td class="text-right" t-att-style="'padding:2px 5px; border:0.5px solid #ccc !important; border-right:0px solid #ccc !important; font-size:11px;'">
+                                        <span t-esc="', '.join(map(lambda x: (x.description or x.name), l.tax_ids))"/>
+                                    </td>
+                                </t>
+
+                                <t t-set="total_linea" t-value="(l.price_unit * l.quantity) - total_discount_line"/>
+
+                                <td class="text-right" t-att-style="'padding:2px 5px; border:0.5px solid #ccc !important; border-right:0px solid #ccc !important; font-size:11px;'">
+                                    <span t-esc="total_linea" t-options="{'widget': 'monetary', 'display_currency': o.currency_id}"/>
+                                </td>
+                            </t>
+                            <t t-if="l.display_type == 'line_section'">
+                                <td class="text-center" t-att-style="'padding:2px 5px; border:0.5px solid #ccc !important; border-right:0px solid #ccc !important; font-size:11px;'">
+                                    <span t-esc="l_index+1"/>
+                                </td>
+                                <td t-att-colspan="6">
+                                    <span t-field="l.name" t-options="{'widget': 'text'}"/>
+                                </td>
+                                <t t-set="current_section" t-value="l"/>
+                                <t t-set="current_subtotal" t-value="0"/>
+                            </t>
+                            <t t-if="l.display_type == 'line_note'">
+                                <td class="text-center" t-att-style="'padding:2px 5px; border:0.5px solid #ccc !important; border-right:0px solid #ccc !important; font-size:11px;'">
+                                    <span t-esc="l_index+1"/>
+                                </td>
+                                <td t-att-colspan="6">
+                                    <span t-field="l.name" t-options="{'widget': 'text'}"/>
+                                </td>
+                            </t>
+                        </tr>
+                    </t>
+                </t>
+            </tbody>
+        </table>
+    </template>
+    <template id="document_tax_totals_custom">
+        <t t-if="o.company_id.fel_pa_invoice_tax_column">
+            <t t-foreach="tax_totals['subtotals']" t-as="subtotal">
+                <tr class="border-black o_subtotal">
+                    <td><strong t-esc="subtotal['name']"/></td>
+
+                    <td class="text-end">
+                        <span
+                            t-att-class="oe_subtotal_footer_separator"
+                            t-esc="subtotal['formatted_amount']"
+                        />
+                    </td>
+                </tr>
+
+                <t t-set="subtotal_to_show" t-value="subtotal['name']"/>
+                <t t-call="multipac_felpa.tax_groups_totals_custom"/>
+            </t>
+        </t>
+
+        <!--Total amount with all taxes-->
+        <tr class="tm_gray_bg" t-attf-style="color: #{o.company_id and o.company_id.fel_pa_theme_text_color or '#000000'};font-weight:bold; background-color: #{o.company_id and o.company_id.fel_pa_theme_color or '#000000'};">
+            <td><strong>Total</strong></td>
+            <td class="text-end">
+                <span t-esc="tax_totals['formatted_amount_total']"/>
+            </td>
+        </tr>
+    </template>
+
+    <template id="tax_groups_totals_custom">
+        <t t-foreach="tax_totals['groups_by_subtotal'][subtotal_to_show]" t-as="amount_by_group">
+            <tr>
+                <t t-if="tax_totals['display_tax_base']">
+                    <td>
+                        <span t-esc="amount_by_group['tax_group_name']"/>
+                        <span class="text-nowrap"> en 
+                            <t t-esc="amount_by_group['formatted_tax_group_base_amount']"/>
+                        </span>
+                    </td>
+                    <td class="text-end o_price_total">
+                        <span class="text-nowrap" t-esc="amount_by_group['formatted_tax_group_amount']"/>
+                    </td>
+                </t>
+                <t t-else="">
+                    <td><span class="text-nowrap" t-esc="amount_by_group['tax_group_name']"/></td>
+                    <td class="text-end o_price_total">
+                        <span class="text-nowrap" t-esc="amount_by_group['formatted_tax_group_amount']" />
+                    </td>
+                </t>
+            </tr>
+        </t>
+    </template>
+    <template id="invoice_subtotal_tem">
+        <div class="fix" t-att-style="'font-family:'+(o.company_id.fel_pa_font_id.family or '')+';font-size:'+str(o.company_id.fel_pa_font_size)+'px;'">
+            <div id="total1" class="rows">
+                <div t-attf-class="#{'col-6' if report_type != 'html' else 'col-sm-7 col-md-6'} ms-auto">
+                    <table class="table table-striped" style="page-break-inside: avoid;">
+                        <!--Tax totals-->
+                        <t t-set="tax_totals" t-value="o.tax_totals"/>
+                        <t t-call="multipac_felpa.document_tax_totals_custom"/>
+                        <t t-if="not o.company_id.fel_pa_invoice_hide_payments">
+                            <tr t-if="print_with_payments">
+                                <t t-if="o.payment_state != 'invoicing_legacy'">
+                                    <t t-set="payments_vals" t-value="o.sudo().invoice_payments_widget and o.sudo().invoice_payments_widget['content'] or []"/>
+                                    <t t-foreach="payments_vals" t-as="payment_vals">
+                                        <tr t-if="payment_vals['is_exchange'] == 0">
+                                        <td>
+                                                <i class="oe_form_field text-end oe_payment_label">Pagado el <t t-esc="payment_vals['date']" t-options='{"widget": "date"}'/></i>
+                                            </td> 
+                                            <td class="text-end">
+                                                <span t-esc="payment_vals['amount']" t-options='{"widget": "monetary", "display_currency": o.currency_id}'/>
+                                            </td> 
+                                            </tr>
+                                    </t>
+                                    <t t-if="len(payments_vals) > 0">
+                                        <tr class="border-black" t-attf-style="color: #{o.company_id and o.company_id.fel_pa_theme_text_color or '#000000'};font-weight:bold; background-color: #{o.company_id and o.company_id.fel_pa_theme_color or '#000000'};">
+                                            <td><strong>Importe Adeudado</strong></td>
+                                            <td class="text-end">
+                                                <span t-field="o.amount_residual"/>
+                                            </td>
+                                        </tr>
+                                    </t>
+                                </t>
+                            </tr>
+                        </t>
+                    </table> 
+                </div>
+            </div>
+        </div>
+    </template>
+
+    <!-- </template> -->
+    <template id="report_invoice_signature">
+        <t t-if="o.company_id.fel_pa_is_show_signature == True">
+            <img t-att-src="image_data_uri(o.company_id.fel_pa_signature)" style="max-height: 60px;"/>
+
+        </t>
+    </template>
+    <template id="report_invoice_barcode">
+        <div class="row" t-if="o.company_id.fel_pa_is_show_barcode == True">
+            <div style="page-break-inside: avoid !important; position:static; width:100%; text-align:center;">
+                <span t-field="o.name" t-options="{'widget':'barcode','width':190,'height':35}"/>
+            </div>
+        </div>
+    </template>
+    <template id="report_invoice_fel_pac" name="template_name">
+        <t t-if="o.state == 'cancel'">
+            <div style="position: absolute; top: 5cm; left: 20%; z-index: 9999; text-align: center; -ms-transform: rotate(-45deg); -webkit-transform: rotate(-45deg); transform: rotate(-45deg);">
+                <p style="color: red; font-size: 100px; font-weight: bold; opacity: 0.2;">
+                    ANULADA
+                </p>
+                <t t-if="o.fel_pa_cancel_motive">
+                    <p style="color: red; font-size: 20px; opacity: 0.5;">
+                        Motivo: <span t-esc="o.fel_pa_cancel_motive"/>
+                    </p>
+                </t>
+            </div>
+        </t>
+        <div class="col-12 text-end" t-if="o.fel_pa_cufe" style="font-size:10px; line-height:1.2; margin-top:5px;">
+            
+            <t t-if="o.fel_pa_cufe">
+                Protocolo de autorización: <span t-field="o.fel_pa_authorization_protocol"/><br/>
+                Consulta en la página: https://dgi-fep.mef.gob.pa/Consultas/FacturasPorCUFE<br/>
+                Usando el CUFE: <span t-field="o.fel_pa_cufe"/><br/>
+            </t>
+            <t t-if="o.company_id.fel_pa_pac == 'the_factory_hka'">
+                Certificador: Documento validado por The Factory HKA Corp. con RUC 155596713-2-2015, es Proveedor Autorizado Calificado, Resolución No. 201-9719 de 12/10/2021<br/>
+            </t>
+            <t t-if="o.company_id.fel_pa_pac == 'ebi'">
+                Certificador: Documento validado por Electronic Business Intelligence. con RUC 155709723-2-2021, es Proveedor Autorizado Calificado, Resolución No. 201-9721 de 12/10/2021<br/>
+            </t>
+            <t t-if="o.company_id.fel_pa_pac == 'digifact'">
+                Certificador: Documento validado por DIGIFACT SERVICIOS, S.A.. con RUC: 155704849-2-2021 D.V. 32, es Proveedor Autorizado Calificado, RESOLUCIÓN: 201-4219, de 29/06/2022<br/>
+            </t>
+            <t t-if="o.company_id.fel_pa_pac == 'efacturapty'">
+                Certificador: Documento validado por IDEATI S.A. con RUC: 1528364-1-653006. Proveedor Autorizado Calificado, RESOLUCIÓN: 201-5712 de 4/7/2022<br/>
+            </t>
+
+            <div t-if="o.fel_pa_cufe" class="d-flex justify-content-end align-items-center mt-2" style="page-break-inside: avoid !important; break-inside: avoid !important;">
+                <div class="d-flex align-items-center">
+                    <div class="me-3">
+                        <t t-if="o.company_id.fel_pa_dgi_logo">
+                            <img src="/multipac_felpa/static/src/img/dgi_logo.png" class="img-fluid" style="max-height: 50px;" alt="DGI Logo"/>
+                        </t>
+                    </div>
+                    <div class="text-center">
+                        <t t-if="o.fel_pa_qr and o.company_id.fel_pa_qr_code and o.company_id.fel_pa_qr_code_size">
+                            <img t-att-src="image_data_uri(o.fel_pa_qr)" 
+                                class="img-fluid" 
+                                t-att-style="'max-height: '+str(min(o.company_id.fel_pa_qr_code_size or 100, 100))+'px;'" 
+                                alt="QR Code"/>
+                            <p class="mt-1 fw-bold" style="font-size: 11px;">ESCANEAR CÓDIGO QR</p>
+                        </t>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </template>
+    <template id="report_invoice_notes">
+        <ul t-attf-style="padding-left:15px; margin:0; color: #{text_color or '#000000'};">
+            <li t-if="o.invoice_incoterm_id and o.company_id.fel_pa_is_show_payment_notes">
+                <b>Incoterm: </b>
+                <span t-field="o.invoice_incoterm_id.name"/>
+            </li>
+            <li t-if="o.narration and o.company_id.fel_pa_is_show_notes">
+                <b>Nota: </b>
+                <span t-field="o.narration"/>
+            </li>
+            <li t-if="o.fiscal_position_id.name">
+                <b>Posición Fiscal: </b>
+                <span t-field="o.fiscal_position_id.name"/>
+            </li>
+        </ul>
+        <div class="row" t-if="o.display_qr_code">
+            <div style="page-break-inside: avoid !important; position:absolute; width:100%; text-align:center;">
+                <div id="qrcode" t-if="o.display_qr_code and o.amount_residual > 0">
+                    <p t-if="qr_code_urls.get(o.id)">
+                        <strong class="text-center">Escanear con aplicación de Banco.</strong><br/><br/>
+                        <img class="border border-dark rounded" t-att-src="qr_code_urls[o.id]"/>
+                    </p>
+                </div>
+            </div>
+        </div>
+        
+    </template>
+    <template id="template_footer">
+        <div class="footer" t-att-style="'font-family:'+(o.company_id.fel_pa_font_id.family or '')+';font-size:'+str(o.company_id.fel_pa_font_size)+'px;'" t-if="o.company_id.fel_pa_report_footer_selection == 'standard'">
+            <div class="text-center" style="border-top: 1px solid black;">
+                <ul class="list-inline mb4">
+                    <li t-if="company.phone">Móvil: 
+                        <span t-field="company.phone"/></li>
+                    <li t-if="company.email">Correo electrónico: 
+                        <span t-field="company.email"/></li>
+                    <li t-if="company.website">Página Web: 
+                        <span t-field="company.website"/></li>
+                    <li t-if="company.vat">
+                        <t t-esc="company.country_id.vat_label or 'TIN'"/>: 
+                        <span t-field="company.vat"/></li>
+                </ul>
+                <div name="financial_infos">
+                    <span t-field="company.report_footer"/>
+                </div>
+                <div class="text-muted">Página: 
+                    <span class="page"/>
+                    / 
+                    <span class="topage"/></div>
+            </div>
+        </div>
+        <div class="footer" t-att-style="'font-family:'+(o.company_id.fel_pa_font_id.family or '')+';font-size:'+str(o.company_id.fel_pa_font_size)+'px;width:100%; text-align:center; border-top:1px solid #d9d9d9;'" t-if="o.company_id.fel_pa_report_footer_selection == 'multi_columns'">
+            <div class="col-md-4 text-center" style="width:33%; flex: 0 0 33%; max-width: 33%; display:inline-block; text-align:center; vertical-align: top;margin-top: 25px;height: 128px;">
+                <span t-field="o.company_id.name"/>
+                <br/>
+                <span t-esc="o._get_fel_pa_street(o.company_id.partner_id)"/>
+                <br/>
+                <span t-esc="o._get_fel_pa_address_details(o.company_id.partner_id)"/>
+            </div>
+            <div class="col-md-4 text-center" style="width:33%; flex: 0 0 33%; max-width: 33%; display:inline-block; text-align:center; vertical-align: top;margin-top: 25px;height: 128px;">
+                <span t-field="o.company_id.phone"/>
+                <br/>
+                <span t-field="o.company_id.website"/>
+                <br/>
+                <span t-field="o.company_id.email"/>
+                <br/>
+            </div>
+            <div class="col-md-4 text-center" style="width:33%; flex: 0 0 33%; max-width: 33%; margin-top: 25px; margin-bottom:20px; display: inline-block; text-align:center; vertical-align: top;">
+                <t t-if="o.company_id.fel_pa_logo_footer">
+                    <span t-options="{'widget':'image','img_style':'width:80px;height:80px','height':'80px','width':'80px'}" t-field="o.company_id.fel_pa_logo_footer"/>
+                </t>
+                
+            </div>
+        </div>
+    </template>
+
+</odoo>

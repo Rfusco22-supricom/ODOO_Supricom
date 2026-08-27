@@ -1,0 +1,481 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+# 	* l10n_ph_reports
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 17.0+e\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2025-12-29 19:03+0000\n"
+"PO-Revision-Date: 2025-12-29 19:03+0000\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: \n"
+"Plural-Forms: \n"
+
+#. module: l10n_ph_reports
+#. odoo-python
+#: code:addons/l10n_ph_reports/models/slsp_report.py:0
+#, python-format
+msgid "(Last Name, First Name, Middle Name)"
+msgstr ""
+
+#. module: l10n_ph_reports
+#. odoo-javascript
+#: code:addons/l10n_ph_reports/static/src/components/slsp_reports/filter_extra_options.xml:0
+#, python-format
+msgid ", With Importations"
+msgstr ""
+
+#. module: l10n_ph_reports
+#. odoo-javascript
+#: code:addons/l10n_ph_reports/static/src/components/slsp_reports/filter_extra_options.xml:0
+#, python-format
+msgid ", With Partners Without TIN"
+msgstr ""
+
+#. module: l10n_ph_reports
+#. odoo-python
+#: code:addons/l10n_ph_reports/models/slsp_report.py:0
+#, python-format
+msgid "AMOUNT OF"
+msgstr ""
+
+#. module: l10n_ph_reports
+#. odoo-python
+#: code:addons/l10n_ph_reports/models/slsp_report.py:0
+#, python-format
+msgid "CUSTOMER'S ADDRESS"
+msgstr ""
+
+#. module: l10n_ph_reports
+#: model:account.report.column,name:l10n_ph_reports.sls_report_customer_address
+msgid "Customer's Address"
+msgstr ""
+
+#. module: l10n_ph_reports
+#. odoo-python
+#: code:addons/l10n_ph_reports/models/slsp_report.py:0
+#, python-format
+msgid "END OF REPORT"
+msgstr ""
+
+#. module: l10n_ph_reports
+#. odoo-python
+#: code:addons/l10n_ph_reports/models/slsp_report.py:0
+#, python-format
+msgid "EXEMPT PURCHASE"
+msgstr ""
+
+#. module: l10n_ph_reports
+#. odoo-python
+#: code:addons/l10n_ph_reports/models/slsp_report.py:0
+#, python-format
+msgid "EXEMPT SALES"
+msgstr ""
+
+#. module: l10n_ph_reports
+#: model:account.report.column,name:l10n_ph_reports.slp_report_exempt_purchases
+msgid "Exempt Purchase"
+msgstr ""
+
+#. module: l10n_ph_reports
+#: model:account.report.column,name:l10n_ph_reports.sls_report_exempt_sales
+msgid "Exempt Sales"
+msgstr ""
+
+#. module: l10n_ph_reports
+#. odoo-python
+#: code:addons/l10n_ph_reports/models/slsp_report.py:0
+#, python-format
+msgid "Export SLSP"
+msgstr ""
+
+#. module: l10n_ph_reports
+#. odoo-python
+#: code:addons/l10n_ph_reports/models/slsp_report.py:0
+#, python-format
+msgid "GROSS PURCHASE"
+msgstr ""
+
+#. module: l10n_ph_reports
+#. odoo-python
+#: code:addons/l10n_ph_reports/models/slsp_report.py:0
+#, python-format
+msgid "GROSS SALES"
+msgstr ""
+
+#. module: l10n_ph_reports
+#. odoo-python
+#: code:addons/l10n_ph_reports/models/slsp_report.py:0
+#, python-format
+msgid "GROSS TAXABLE PURCHASE"
+msgstr ""
+
+#. module: l10n_ph_reports
+#. odoo-python
+#: code:addons/l10n_ph_reports/models/slsp_report.py:0
+#, python-format
+msgid "GROSS TAXABLE SALES"
+msgstr ""
+
+#. module: l10n_ph_reports
+#. odoo-python
+#: code:addons/l10n_ph_reports/models/slsp_report.py:0
+#, python-format
+msgid "Grand Total"
+msgstr ""
+
+#. module: l10n_ph_reports
+#. odoo-python
+#: code:addons/l10n_ph_reports/models/slsp_report.py:0
+#, python-format
+msgid "Grand total:"
+msgstr ""
+
+#. module: l10n_ph_reports
+#: model:account.report.column,name:l10n_ph_reports.slp_report_gross_purchases
+msgid "Gross Purchase"
+msgstr ""
+
+#. module: l10n_ph_reports
+#: model:account.report.column,name:l10n_ph_reports.sls_report_gross_sales
+msgid "Gross Sales"
+msgstr ""
+
+#. module: l10n_ph_reports
+#: model:account.report.column,name:l10n_ph_reports.slp_report_gross_taxable_purchases
+msgid "Gross Taxable Purchase"
+msgstr ""
+
+#. module: l10n_ph_reports
+#: model:account.report.column,name:l10n_ph_reports.sls_report_gross_taxable_sales
+msgid "Gross Taxable Sales"
+msgstr ""
+
+#. module: l10n_ph_reports
+#. odoo-python
+#: code:addons/l10n_ph_reports/models/slsp_report.py:0
+#, python-format
+msgid "IDENTIFICATION"
+msgstr ""
+
+#. module: l10n_ph_reports
+#. odoo-python
+#: code:addons/l10n_ph_reports/models/slsp_report.py:0
+#, python-format
+msgid "INPUT TAX"
+msgstr ""
+
+#. module: l10n_ph_reports
+#. odoo-javascript
+#: code:addons/l10n_ph_reports/static/src/components/slsp_reports/filter_extra_options.xml:0
+#, python-format
+msgid "Including Importations"
+msgstr ""
+
+#. module: l10n_ph_reports
+#. odoo-javascript
+#: code:addons/l10n_ph_reports/static/src/components/slsp_reports/filter_extra_options.xml:0
+#, python-format
+msgid "Including Partners Without TIN"
+msgstr ""
+
+#. module: l10n_ph_reports
+#: model:account.report.column,name:l10n_ph_reports.slp_report_input_tax
+msgid "Input Tax"
+msgstr ""
+
+#. module: l10n_ph_reports
+#. odoo-python
+#: code:addons/l10n_ph_reports/models/slsp_report.py:0
+#, python-format
+msgid "MONTH"
+msgstr ""
+
+#. module: l10n_ph_reports
+#. odoo-python
+#: code:addons/l10n_ph_reports/models/slsp_report.py:0
+#, python-format
+msgid "NAME OF CUSTOMER"
+msgstr ""
+
+#. module: l10n_ph_reports
+#. odoo-python
+#: code:addons/l10n_ph_reports/models/slsp_report.py:0
+#, python-format
+msgid "NAME OF SUPPLIER"
+msgstr ""
+
+#. module: l10n_ph_reports
+#. odoo-python
+#: code:addons/l10n_ph_reports/models/slsp_report.py:0
+#, python-format
+msgid "NUMBER"
+msgstr ""
+
+#. module: l10n_ph_reports
+#. odoo-python
+#: code:addons/l10n_ph_reports/models/slsp_report.py:0
+#, python-format
+msgid "OUTPUT TAX"
+msgstr ""
+
+#. module: l10n_ph_reports
+#. odoo-python
+#: code:addons/l10n_ph_reports/models/slsp_report.py:0
+#, python-format
+msgid "OWNER'S ADDRESS:"
+msgstr ""
+
+#. module: l10n_ph_reports
+#. odoo-python
+#: code:addons/l10n_ph_reports/models/slsp_report.py:0
+#, python-format
+msgid "OWNER'S NAME:"
+msgstr ""
+
+#. module: l10n_ph_reports
+#. odoo-python
+#: code:addons/l10n_ph_reports/models/slsp_report.py:0
+#, python-format
+msgid "OWNER'S TRADE NAME:"
+msgstr ""
+
+#. module: l10n_ph_reports
+#: model:account.report.column,name:l10n_ph_reports.sls_report_output_tax
+msgid "Output Tax"
+msgstr ""
+
+#. module: l10n_ph_reports
+#. odoo-python
+#: code:addons/l10n_ph_reports/models/slsp_report.py:0
+#, python-format
+msgid "PURCHASE OF CAPITAL GOODS"
+msgstr ""
+
+#. module: l10n_ph_reports
+#. odoo-python
+#: code:addons/l10n_ph_reports/models/slsp_report.py:0
+#, python-format
+msgid "PURCHASE OF OTHER THAN CAPITAL GOODS"
+msgstr ""
+
+#. module: l10n_ph_reports
+#. odoo-python
+#: code:addons/l10n_ph_reports/models/slsp_report.py:0
+#, python-format
+msgid "PURCHASE OF SERVICES"
+msgstr ""
+
+#. module: l10n_ph_reports
+#. odoo-python
+#: code:addons/l10n_ph_reports/models/slsp_report.py:0
+#, python-format
+msgid "PURCHASE TRANSACTION"
+msgstr ""
+
+#. module: l10n_ph_reports
+#: model:account.report.column,name:l10n_ph_reports.slp_report_cg
+msgid "Purchase of Capital Goods"
+msgstr ""
+
+#. module: l10n_ph_reports
+#: model:account.report.column,name:l10n_ph_reports.slp_report_other_than_cg
+msgid "Purchase of Other Than Capital Goods"
+msgstr ""
+
+#. module: l10n_ph_reports
+#: model:account.report.column,name:l10n_ph_reports.slp_report_services
+msgid "Purchase of Services"
+msgstr ""
+
+#. module: l10n_ph_reports
+#: model:account.report,name:l10n_ph_reports.slp_report
+msgid "Purchases"
+msgstr ""
+
+#. module: l10n_ph_reports
+#. odoo-python
+#: code:addons/l10n_ph_reports/models/slsp_report.py:0
+#, python-format
+msgid "RECONCILIATION OF LISTING FOR ENFORCEMENT"
+msgstr ""
+
+#. module: l10n_ph_reports
+#. odoo-python
+#: code:addons/l10n_ph_reports/models/slsp_report.py:0
+#, python-format
+msgid "REGISTER NAME"
+msgstr ""
+
+#. module: l10n_ph_reports
+#: model:account.report.column,name:l10n_ph_reports.slp_report_register_name
+#: model:account.report.column,name:l10n_ph_reports.sls_report_register_name
+msgid "Register Name"
+msgstr ""
+
+#. module: l10n_ph_reports
+#. odoo-python
+#: code:addons/l10n_ph_reports/models/slsp_report.py:0
+#, python-format
+msgid "SALES TRANSACTION"
+msgstr ""
+
+#. module: l10n_ph_reports
+#. odoo-python
+#: code:addons/l10n_ph_reports/models/slsp_report.py:0
+#, python-format
+msgid "SUPPLIER'S ADDRESS"
+msgstr ""
+
+#. module: l10n_ph_reports
+#: model:account.report,name:l10n_ph_reports.sls_report
+msgid "Sales"
+msgstr ""
+
+#. module: l10n_ph_reports
+#: model:ir.model,name:l10n_ph_reports.model_l10n_ph_slp_report_handler
+msgid "Summary Lists of Purchases Custom Handler"
+msgstr ""
+
+#. module: l10n_ph_reports
+#: model:ir.model,name:l10n_ph_reports.model_l10n_ph_sls_report_handler
+msgid "Summary Lists of Sales Custom Handler"
+msgstr ""
+
+#. module: l10n_ph_reports
+#: model:account.report,name:l10n_ph_reports.slsp_report
+#: model:ir.actions.client,name:l10n_ph_reports.action_l10n_ph_report_slsp
+#: model:ir.ui.menu,name:l10n_ph_reports.menu_action_l10n_ph_report_slsp
+msgid "Summary Lists of Sales and Purchases"
+msgstr ""
+
+#. module: l10n_ph_reports
+#: model:ir.model,name:l10n_ph_reports.model_l10n_ph_slsp_report_handler
+msgid "Summary Lists of Sales and Purchases Custom Handler"
+msgstr ""
+
+#. module: l10n_ph_reports
+#: model:account.report.column,name:l10n_ph_reports.slp_report_supplier_address
+msgid "Supplier's Address"
+msgstr ""
+
+#. module: l10n_ph_reports
+#. odoo-python
+#: code:addons/l10n_ph_reports/models/slsp_report.py:0
+#, python-format
+msgid "TAXABLE"
+msgstr ""
+
+#. module: l10n_ph_reports
+#. odoo-python
+#: code:addons/l10n_ph_reports/models/slsp_report.py:0
+#, python-format
+msgid "TAXABLE PURCHASE"
+msgstr ""
+
+#. module: l10n_ph_reports
+#. odoo-python
+#: code:addons/l10n_ph_reports/models/slsp_report.py:0
+#, python-format
+msgid "TAXABLE SALES"
+msgstr ""
+
+#. module: l10n_ph_reports
+#. odoo-python
+#: code:addons/l10n_ph_reports/models/slsp_report.py:0
+#, python-format
+msgid "TAXPAYER"
+msgstr ""
+
+#. module: l10n_ph_reports
+#. odoo-python
+#: code:addons/l10n_ph_reports/models/slsp_report.py:0
+#, python-format
+msgid "TIN:"
+msgstr ""
+
+#. module: l10n_ph_reports
+#: model:account.report.column,name:l10n_ph_reports.slp_report_taxable_purchases
+msgid "Taxable Purchase"
+msgstr ""
+
+#. module: l10n_ph_reports
+#: model:account.report.column,name:l10n_ph_reports.sls_report_taxable_sales
+msgid "Taxable Sales"
+msgstr ""
+
+#. module: l10n_ph_reports
+#: model:account.report.column,name:l10n_ph_reports.slp_report_taxpayer_id
+#: model:account.report.column,name:l10n_ph_reports.sls_report_taxpayer_id
+msgid "Taxpayer ID Number"
+msgstr ""
+
+#. module: l10n_ph_reports
+#. odoo-python
+#: code:addons/l10n_ph_reports/models/slsp_report.py:0
+#, python-format
+msgid "The export can only be executed if a report section has been selected"
+msgstr ""
+
+#. module: l10n_ph_reports
+#. odoo-python
+#: code:addons/l10n_ph_reports/models/slsp_report.py:0
+#, python-format
+msgid "XLSX"
+msgstr ""
+
+#. module: l10n_ph_reports
+#. odoo-python
+#: code:addons/l10n_ph_reports/models/slsp_report.py:0
+#, python-format
+msgid "ZERO-RATED PURCHASE"
+msgstr ""
+
+#. module: l10n_ph_reports
+#. odoo-python
+#: code:addons/l10n_ph_reports/models/slsp_report.py:0
+#, python-format
+msgid "ZERO-RATED SALES"
+msgstr ""
+
+#. module: l10n_ph_reports
+#: model:account.report.column,name:l10n_ph_reports.slp_report_zero_rated_purchases
+msgid "Zero Rated Purchase"
+msgstr ""
+
+#. module: l10n_ph_reports
+#: model:account.report.column,name:l10n_ph_reports.sls_report_zero_rated_sales
+msgid "Zero Rated Sales"
+msgstr ""
+
+#. module: l10n_ph_reports
+#. odoo-python
+#: code:addons/l10n_ph_reports/models/slsp_report.py:0
+#, python-format
+msgid "sl_purchases"
+msgstr ""
+
+#. module: l10n_ph_reports
+#. odoo-python
+#: code:addons/l10n_ph_reports/models/slsp_report.py:0
+#, python-format
+msgid "sl_sales"
+msgstr ""
+
+#. module: l10n_ph_reports
+#. odoo-python
+#: code:addons/l10n_ph_reports/models/slsp_report.py:0
+#, python-format
+msgid "slp"
+msgstr ""
+
+#. module: l10n_ph_reports
+#. odoo-python
+#: code:addons/l10n_ph_reports/models/slsp_report.py:0
+#, python-format
+msgid "sls"
+msgstr ""

@@ -1,0 +1,144 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+# 	* l10n_sa_hr_payroll
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 17.0+e\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2025-12-29 19:03+0000\n"
+"PO-Revision-Date: 2025-12-29 19:03+0000\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: \n"
+"Plural-Forms: \n"
+
+#. module: l10n_sa_hr_payroll
+#: model_terms:ir.ui.view,arch_db:l10n_sa_hr_payroll.hr_contract_view_form
+msgid "<span>/ month</span>"
+msgstr ""
+
+#. module: l10n_sa_hr_payroll
+#: model_terms:ir.ui.view,arch_db:l10n_sa_hr_payroll.hr_contract_view_form
+msgid "Company Country Code"
+msgstr ""
+
+#. module: l10n_sa_hr_payroll
+#: model:ir.model,name:l10n_sa_hr_payroll.model_hr_contract
+msgid "Employee Contract"
+msgstr ""
+
+#. module: l10n_sa_hr_payroll
+#: model_terms:ir.ui.view,arch_db:l10n_sa_hr_payroll.hr_contract_view_form
+msgid "End Of Service Provision"
+msgstr ""
+
+#. module: l10n_sa_hr_payroll
+#: model:hr.salary.rule,name:l10n_sa_hr_payroll.ksa_expat_end_of_service_provision_salary_rule
+#: model:hr.salary.rule,name:l10n_sa_hr_payroll.ksa_saudi_end_of_service_provision_salary_rule
+msgid "End of Service Provision"
+msgstr ""
+
+#. module: l10n_sa_hr_payroll
+#: model:hr.salary.rule,name:l10n_sa_hr_payroll.ksa_expat_end_of_service_salary_rule
+msgid "Expat End of Service Benefit"
+msgstr ""
+
+#. module: l10n_sa_hr_payroll
+#: model:hr.salary.rule,name:l10n_sa_hr_payroll.ksa_expat_housing_allowance_salary_rule
+#: model:hr.salary.rule,name:l10n_sa_hr_payroll.ksa_saudi_housing_allowance_salary_rule
+#: model_terms:ir.ui.view,arch_db:l10n_sa_hr_payroll.hr_contract_view_form
+msgid "Housing Allowance"
+msgstr ""
+
+#. module: l10n_sa_hr_payroll
+#: model_terms:ir.ui.view,arch_db:l10n_sa_hr_payroll.hr_contract_view_form
+msgid "Number of Days"
+msgstr ""
+
+#. module: l10n_sa_hr_payroll
+#: model:ir.model.constraint,message:l10n_sa_hr_payroll.constraint_hr_contract_l10n_sa_hr_payroll_number_of_days_constraint
+msgid "Number of Days must be equal to or greater than 0"
+msgstr ""
+
+#. module: l10n_sa_hr_payroll
+#: model:ir.model.fields,help:l10n_sa_hr_payroll.field_hr_contract__l10n_sa_number_of_days
+msgid ""
+"Number of days of basic salary to be added to the end of service provision "
+"per year"
+msgstr ""
+
+#. module: l10n_sa_hr_payroll
+#: model:hr.salary.rule,name:l10n_sa_hr_payroll.ksa_expat_other_allowances_salary_rule
+#: model:hr.salary.rule,name:l10n_sa_hr_payroll.ksa_saudi_other_allowances_salary_rule
+#: model_terms:ir.ui.view,arch_db:l10n_sa_hr_payroll.hr_contract_view_form
+msgid "Other Allowances"
+msgstr ""
+
+#. module: l10n_sa_hr_payroll
+#: model:hr.salary.rule,name:l10n_sa_hr_payroll.ksa_expat_overtime
+#: model:hr.salary.rule,name:l10n_sa_hr_payroll.ksa_saudi_overtime
+msgid "Overtime"
+msgstr ""
+
+#. module: l10n_sa_hr_payroll
+#: model:ir.model,name:l10n_sa_hr_payroll.model_hr_payslip
+msgid "Pay Slip"
+msgstr ""
+
+#. module: l10n_sa_hr_payroll
+#: model:ir.model.fields,field_description:l10n_sa_hr_payroll.field_hr_contract__l10n_sa_company_country_code
+msgid "Saudi Company Country Code"
+msgstr ""
+
+#. module: l10n_sa_hr_payroll
+#: model:hr.salary.rule,name:l10n_sa_hr_payroll.ksa_saudi_end_of_service_salary_rule
+msgid "Saudi End of Service Benefit"
+msgstr ""
+
+#. module: l10n_sa_hr_payroll
+#: model:ir.model.fields,field_description:l10n_sa_hr_payroll.field_hr_contract__l10n_sa_housing_allowance
+msgid "Saudi Housing Allowance"
+msgstr ""
+
+#. module: l10n_sa_hr_payroll
+#: model:ir.model.fields,field_description:l10n_sa_hr_payroll.field_hr_contract__l10n_sa_number_of_days
+msgid "Saudi Number of Days"
+msgstr ""
+
+#. module: l10n_sa_hr_payroll
+#: model:ir.model.fields,field_description:l10n_sa_hr_payroll.field_hr_contract__l10n_sa_other_allowances
+msgid "Saudi Other Allowances"
+msgstr ""
+
+#. module: l10n_sa_hr_payroll
+#: model:ir.model.fields,field_description:l10n_sa_hr_payroll.field_hr_contract__l10n_sa_transportation_allowance
+msgid "Saudi Transportation Allowance"
+msgstr ""
+
+#. module: l10n_sa_hr_payroll
+#: model:hr.salary.rule,name:l10n_sa_hr_payroll.ksa_saudi_social_insurance_contribution
+msgid "Social Insurance Contribution"
+msgstr ""
+
+#. module: l10n_sa_hr_payroll
+#: model:ir.model.fields,help:l10n_sa_hr_payroll.field_hr_contract__l10n_sa_company_country_code
+msgid ""
+"The ISO country code in two chars. \n"
+"You can use this field for quick search."
+msgstr ""
+
+#. module: l10n_sa_hr_payroll
+#: model:hr.salary.rule,name:l10n_sa_hr_payroll.ksa_expat_transportation_allowance_salary_rule
+#: model:hr.salary.rule,name:l10n_sa_hr_payroll.ksa_saudi_transportation_allowance_salary_rule
+#: model_terms:ir.ui.view,arch_db:l10n_sa_hr_payroll.hr_contract_view_form
+msgid "Transportation Allowance"
+msgstr ""
+
+#. module: l10n_sa_hr_payroll
+#: model:hr.salary.rule,name:l10n_sa_hr_payroll.ksa_expat_unpaid_leave
+#: model:hr.salary.rule,name:l10n_sa_hr_payroll.ksa_saudi_unpaid_leave
+msgid "Unpaid Leave"
+msgstr ""

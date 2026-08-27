@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <record id="hr_payroll_report_wizard_form" model="ir.ui.view">
+        <field name="name">hr.payroll.report.wizard.form</field>
+        <field name="model">hr.payroll.report.wizard</field>
+        <field name="arch" type="xml">
+            <form string="Reporte de Reglas Salariales">
+                <field name="state" invisible="1"/>
+                <div invisible="state != 'draft'">
+                    <group>
+                        <group string="Período">
+                            <field name="date_from"/>
+                            <field name="date_to"/>
+                        </group>
+                        <group string="Configuración">
+                            <field name="report_type" widget="radio"/>
+                            <field name="department_id" options="{'no_create': True}"/>
+                            <field name="deductible_as_positive"/>
+                        </group>
+                    </group>
+                    <group string="Estructuras Salariales">
+                        <field name="struct_ids"
+                               widget="many2many_tags"
+                               nolabel="1"
+                               options="{'no_create': True}"
+                               colspan="2"/>
+                    </group>
+                    <group string="Reglas Salariales (opcional)">
+                        <field name="salary_rule_ids"
+                               widget="many2many_tags"
+                               nolabel="1"
+                               options="{'no_create': True}"
+                               colspan="2"
+                               domain="[('struct_id', 'in', struct_ids)]"/>
+                    </group>
+                    <group string="Empleados (opcional)">
+                        <field name="employee_ids"
+                               widget="many2many_tags"
+                               nolabel="1"
+                               options="{'no_create': True}"
+                               colspan="2"/>
+                    </group>
+                    <separator string="Favoritos"/>
+                    <group>
+                        <group>
+                            <field name="favorite_id"
+                                   options="{'no_create': True}"
+                                   placeholder="Seleccione un favorito para cargar..."/>
+                        </group>
+                        <group>
+                            <field name="favorite_name"
+                                   placeholder="Nombre para guardar como favorito..."/>
+                        </group>
+                    </group>
+                </div>
+                
+                <div invisible="state != 'done'">
+                    <div class="alert alert-success mt-3" role="alert">
+                        Reporte generado con éxito.
+                    </div>
+                    <group>
+                        <field name="excel_filename" invisible="1"/>
+                        <field name="excel_file" filename="excel_filename" readonly="1" string="Descargar Archivo"/>
+                    </group>
+                </div>
+
+                <footer>
+                    <button name="action_generate_report"
+                            string="Generar PDF"
+                            type="object"
+                            class="btn-primary"
+                            icon="fa-file-pdf-o"
+                            invisible="state != 'draft'"/>
+                    <button name="action_generate_excel"
+                            string="Generar Excel"
+                            type="object"
+                            class="btn-primary"
+                            icon="fa-file-excel-o"
+                            invisible="state != 'draft'"/>
+                    <button name="action_save_favorite"
+                            string="Guardar Favorito"
+                            type="object"
+                            class="btn-secondary"
+                            icon="fa-star"
+                            invisible="state != 'draft'"/>
+                    
+                    <!-- Buttons when in 'done' state -->
+                    <button string="Volver" class="btn-secondary" 
+                            special="cancel" invisible="state != 'done'"/>
+                    <button string="Cerrar" class="btn-secondary" 
+                            special="cancel" invisible="state != 'draft'"/>
+                </footer>
+            </form>
+        </field>
+    </record>
+
+    <record id="action_hr_payroll_report_wizard" model="ir.actions.act_window">
+        <field name="name">Reporte de Reglas Salariales</field>
+        <field name="res_model">hr.payroll.report.wizard</field>
+        <field name="view_mode">form</field>
+        <field name="target">new</field>
+    </record>
+</odoo>

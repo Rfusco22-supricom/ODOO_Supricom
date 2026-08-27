@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data noupdate="1">
+        <!-- Multi-Company Rule for Commission Settlement -->
+        <record id="rule_commission_settlement_multi_company" model="ir.rule">
+            <field name="name">Commission Settlement Multi-Company</field>
+            <field name="model_id" ref="model_commission_settlement"/>
+            <field name="domain_force">['|', ('company_id', '=', False), ('company_id', 'in', company_ids)]</field>
+        </record>
+
+        <!-- Multi-Company Rule for Monthly Target -->
+        <record id="rule_commission_monthly_target_multi_company" model="ir.rule">
+            <field name="name">Commission Monthly Target Multi-Company</field>
+            <field name="model_id" ref="model_commission_monthly_target"/>
+            <field name="domain_force">['|', ('company_id', '=', False), ('company_id', 'in', company_ids)]</field>
+        </record>
+
+        <!-- Multi-Company Rule for Monthly Closing -->
+        <record id="rule_commission_monthly_closing_multi_company" model="ir.rule">
+            <field name="name">Commission Monthly Closing Multi-Company</field>
+            <field name="model_id" ref="model_commission_monthly_closing"/>
+            <field name="domain_force">['|', ('company_id', '=', False), ('company_id', 'in', company_ids)]</field>
+        </record>
+
+        <!-- Multi-Company Rule for Commission Matrix -->
+        <record id="rule_commission_matrix_multi_company" model="ir.rule">
+            <field name="name">Commission Matrix Multi-Company</field>
+            <field name="model_id" ref="model_commission_matrix"/>
+            <field name="domain_force">['|', ('company_id', '=', False), ('company_id', 'in', company_ids)]</field>
+        </record>
+
+        <!-- Multi-Company Rule for Commission Collection Matrix -->
+        <record id="rule_commission_collection_matrix_multi_company" model="ir.rule">
+            <field name="name">Commission Collection Matrix Multi-Company</field>
+            <field name="model_id" ref="model_commission_collection_matrix"/>
+            <field name="domain_force">['|', ('company_id', '=', False), ('company_id', 'in', company_ids)]</field>
+        </record>
+    </data>
+
+    <data noupdate="0">
+        <!-- Global Rule for Commission Vendor Type (Shared across companies) -->
+        <record id="rule_commission_vendor_type_multi_company" model="ir.rule">
+            <field name="name">Commission Vendor Type Multi-Company</field>
+            <field name="model_id" ref="model_commission_vendor_type"/>
+            <field name="domain_force">[(1, '=', 1)]</field>
+        </record>
+
+        <!-- Multi-Company Rule for Manager Volume Range -->
+        <record id="rule_commission_manager_volume_range_multi_company" model="ir.rule">
+            <field name="name">Commission Manager Volume Range Multi-Company</field>
+            <field name="model_id" ref="model_commission_manager_volume_range"/>
+            <field name="domain_force">['|', ('company_id', '=', False), ('company_id', 'in', company_ids)]</field>
+        </record>
+    </data>
+
+    <data noupdate="1">
+        <!-- Multi-Company Rule for Override Log -->
+        <record id="rule_commission_override_log_multi_company" model="ir.rule">
+            <field name="name">Commission Override Log Multi-Company</field>
+            <field name="model_id" ref="model_commission_override_log"/>
+            <field name="domain_force">['|', ('company_id', '=', False), ('company_id', 'in', company_ids)]</field>
+        </record>
+
+        <!-- Multi-Company Rule for Settlement Line -->
+        <record id="rule_commission_settlement_line_multi_company" model="ir.rule">
+            <field name="name">Commission Settlement Line Multi-Company</field>
+            <field name="model_id" ref="model_commission_settlement_line"/>
+            <field name="domain_force">['|', ('company_id', '=', False), ('company_id', 'in', company_ids)]</field>
+        </record>
+
+        <!-- Multi-Company Rule for Fixed Expense -->
+        <record id="rule_commission_fixed_expense_multi_company" model="ir.rule">
+            <field name="name">Commission Fixed Expense Multi-Company</field>
+            <field name="model_id" ref="model_commission_fixed_expense"/>
+            <field name="domain_force">['|', ('company_id', '=', False), ('company_id', 'in', company_ids)]</field>
+        </record>
+    </data>
+</odoo>

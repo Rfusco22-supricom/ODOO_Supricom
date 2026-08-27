@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <!-- Paper Format con header_spacing para evitar solapamiento -->
+    <record id="paperformat_payroll_report" model="report.paperformat">
+        <field name="name">Formato Reporte de Nómina</field>
+        <field name="default">False</field>
+        <field name="format">custom</field>
+        <field name="page_height">216</field>
+        <field name="page_width">279</field>
+        <field name="orientation">Landscape</field>
+        <field name="margin_top">60</field>
+        <field name="margin_bottom">20</field>
+        <field name="margin_left">7</field>
+        <field name="margin_right">7</field>
+        <field name="header_line">False</field>
+        <field name="header_spacing">55</field>
+        <field name="dpi">90</field>
+    </record>
+
+    <record id="action_report_payroll_rules" model="ir.actions.report">
+        <field name="name">Reporte de Reglas Salariales</field>
+        <field name="model">hr.payroll.report.wizard</field>
+        <field name="report_type">qweb-pdf</field>
+        <field name="report_name">hr_payroll_reports.report_payroll_rules_document</field>
+        <field name="report_file">hr_payroll_reports.report_payroll_rules_document</field>
+        <field name="print_report_name">'Reporte_Nomina_%s_%s' % (object.date_from, object.date_to)</field>
+        <field name="binding_type">report</field>
+        <field name="paperformat_id" ref="paperformat_payroll_report"/>
+    </record>
+</odoo>

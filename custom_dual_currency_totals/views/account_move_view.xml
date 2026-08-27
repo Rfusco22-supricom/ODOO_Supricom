@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <record id="view_move_form_inherit_custom_dual" model="ir.ui.view">
+        <field name="name">account.move.form.inherit.custom.dual</field>
+        <field name="model">account.move</field>
+        <field name="inherit_id" ref="account.view_move_form"/>
+        <field name="arch" type="xml">
+            <!-- Ocultar los bloques de dualidad del módulo original mediante sus campos específicos -->
+            <xpath expr="//field[@name='amount_untaxed_usd']" position="attributes">
+                <attribute name="invisible">1</attribute>
+            </xpath>
+            <xpath expr="//field[@name='amount_tax_usd']" position="attributes">
+                <attribute name="invisible">1</attribute>
+            </xpath>
+            <xpath expr="//field[@name='amount_total_usd']" position="attributes">
+                <attribute name="invisible">1</attribute>
+            </xpath>
+            <!-- Nuevo: Ocultar Residual y Widget de Pagos Original -->
+            <xpath expr="//field[@name='amount_residual_usd']" position="attributes">
+                <attribute name="invisible">1</attribute>
+            </xpath>
+            <xpath expr="//field[@name='invoice_payments_widget_usd']" position="attributes">
+                <attribute name="invisible">1</attribute>
+            </xpath>
+            <xpath expr="//field[@name='amount_untaxed_bs']" position="attributes">
+                <attribute name="invisible">1</attribute>
+            </xpath>
+            <xpath expr="//field[@name='amount_tax_bs']" position="attributes">
+                <attribute name="invisible">1</attribute>
+            </xpath>
+            <xpath expr="//field[@name='amount_total_bs']" position="attributes">
+                <attribute name="invisible">1</attribute>
+            </xpath>
+
+            <!-- Ocultar widgets de pagos originales de dualidad si estorban -->
+            <xpath expr="//field[@name='invoice_payments_widget_usd']" position="attributes">
+                <attribute name="invisible">1</attribute>
+            </xpath>
+            <xpath expr="//field[@name='invoice_payments_widget_bs']" position="attributes">
+                <attribute name="invisible">1</attribute>
+            </xpath>
+
+            <!-- Insertar nuestro bloque profesional en el área de totales -->
+            <xpath expr="//group[hasclass('oe_subtotal_footer')]" position="after">
+                <field name="dual_summary_html" nolabel="1" widget="html"/>
+            </xpath>
+        </field>
+    </record>
+</odoo>

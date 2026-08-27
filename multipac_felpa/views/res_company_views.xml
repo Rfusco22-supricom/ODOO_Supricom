@@ -1,0 +1,290 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<odoo>
+
+    <data noupdate="1">
+        <record id="base.main_company" model="res.company">
+            <field file="multipac_felpa/static/src/img/company_image.png" name="fel_pa_invoice_logo" type="base64"/>
+        </record>
+    </data>
+
+    <record id="multipac_felpa.mutlicert_felpa_res_company_form_view_inherit" model="ir.ui.view">
+        <field name="name">multipac_felpa.mutipac.felpa.res.company.form.inherit</field>
+        <field name="active">True</field>
+        <field name="model">res.company</field>
+        <field name="inherit_id" ref="base.view_company_form"/>
+        <field name="priority">99</field>
+        <field name="type">form</field>
+        <field name="arch" type="xml">
+            <field name="city" position="after">
+                <div invisible="country_code != 'PA'">
+                    <div class="o_row">
+                        <field name="fel_pa_county_id" domain="[('city_id', '=?', city_id)]" options="{'no_open': True, 'no_create': True}" placeholder="Corregimiento..."/>
+					    <field name="city_id" domain="[('state_id', '=?', state_id)]" options="{'no_open': True, 'no_create': True}" placeholder="Distrito..."/>
+                    </div>
+                </div>
+            </field>
+            <field name="company_registry" position="after">
+                <field name="country_code" invisible="1"/>
+				<field name="fel_pa_dv" placeholder="DV" invisible="country_code != 'PA'"/>
+			</field>
+            <xpath expr="//page" position="after">
+                <page string="Configuración de Factura Panamá FEL" groups="multipac_felpa.felpa_group_user" invisible="country_code != 'PA'">
+                    <group string="Configuración Predeterminada">
+                        <group>
+                            <field required="1" domain="[('report_name', 'ilike', '%invoice_template%')]" name="fel_pa_report_template_id" options="{'no_create': True, 'no_edit_create': True}"/>
+                            <button class="oe_stat_button oe_edit_only" icon="fa-pencil-square-o" name="%(action_fel_report_extracontent)d" type="action">
+                                <span>Extra Content</span>
+                            </button>
+                        </group>
+                        <group>
+                            <field class="oe_avatar" name="fel_pa_invoice_logo" widget="image"/>
+                            <field name="fel_pa_standard_template"/>
+                        </group>
+                    </group>
+                    <group name="fel_pa_watermark" string="Marca de Agua">
+                        <group>
+                            <field name="fel_pa_is_show_watermark"/>
+                            <field name="fel_pa_watermark" invisible="fel_pa_is_show_watermark == False"/>
+                            <field invisible="fel_pa_is_show_watermark == False or fel_pa_watermark != 'logo'" class="oe_avatar" name="fel_pa_watermark_logo" widget="image"/>
+                            <field invisible="fel_pa_is_show_watermark == False or fel_pa_watermark != 'text'" required="fel_pa_watermark != 'text'" name="fel_pa_watermark_text"/>
+                            <field invisible="fel_pa_is_show_watermark == False or fel_pa_watermark != 'text'" required="fel_pa_watermark != 'text'" name="fel_pa_watermark_text_color" placeholder="like #2b4e99" widget="color"/>
+                            <field invisible="fel_pa_is_show_watermark == False or fel_pa_watermark != 'text'" required="fel_pa_watermark != 'text'" name="fel_pa_watermark_text_font_size"/>
+                        </group>
+                    </group>
+                    <group>
+                        <group string="Colores de Empresa">
+                            <field name="fel_pa_company_color" placeholder=" like #b30000" widget="color"/>
+                            <field name="fel_pa_company_address_color" placeholder=" like #b30010" widget="color"/>
+                            <field name="fel_pa_is_company_bold"/>
+                        </group>
+                        <group string="Colores de Contacto">
+                            <field name="fel_pa_customer_color" placeholder=" like #2763a1" widget="color"/>
+                            <field name="fel_pa_customer_address_color" placeholder=" like #2763c1" widget="color"/>
+                            <field name="fel_pa_is_customer_bold"/>
+                        </group>
+                    </group>
+                    <group>
+                        <group string="Colores del Tema">
+                            <group>
+                                <field name="fel_pa_theme_color" placeholder=" like #d4d2d2" widget="color"/>
+                                <field name="fel_pa_theme_text_color" placeholder=" like #5cc2d2" widget="color"/>
+                                <field name="fel_pa_text_color" placeholder=" like #5bb3d2" widget="color"/>
+                            </group>
+                            <group>
+                                <field name="fel_pa_odd_party_color" placeholder=" like #aea8a8" widget="color"/>
+                                <field name="fel_pa_even_party_color" placeholder=" like #aea8aa" widget="color"/>
+                            </group>
+                        </group>
+                    </group>
+                    <group string="Otras Configuraciones">
+                        <group>
+                            <group>
+                                <field name="fel_pa_is_description"/>
+                                <field name="fel_pa_add_product_image"/>
+                                <field name="fel_pa_add_amount_in_words"/>
+                                <field name="fel_pa_is_show_notes"/>
+                            </group>
+                            <group>
+                                <field name="fel_pa_is_show_payment_notes"/>
+                                <field name="fel_pa_is_show_barcode"/>
+                                <field name="fel_pa_qr_code"/>
+                                <field name="fel_pa_qr_code_size"/>
+                                <field name="fel_pa_dgi_logo"/>
+                                <field name="fel_pa_use_as_default_template"/>
+                            </group>
+                        </group>
+                        <group>
+                            <group>
+                                <field name="fel_pa_invoice_tax_column"/>
+                                <field name="fel_pa_invoice_discount_column"/>
+                                <field name="fel_pa_invoice_hide_payments"/>
+                                <field name="fel_pa_invoice_show_customer_code"/>
+                            </group>
+                            <group>
+                                <field name="fel_pa_invoice_show_invoice_ref"/>
+                                <field name="fel_pa_invoice_show_origin_order_name"/>
+                                <field name="fel_pa_invoice_show_origin_order_date"/>
+                                <field name="fel_pa_invoice_show_invoice_date_due"/>
+                            </group>
+                        </group>
+                    </group>
+                    <group string="Información Bancaria FEL (PAC / eFacturaPTY)">
+                        <field name="fel_pa_bank_account_info" placeholder="Ingrese los datos bancarios fijos (ej. BANCO GENERAL - Cta Cte 03-72-... Todo cheque devuelto...) a concatenar con el plazo de pago." nolabel="1" colspan="2"/>
+                    </group>
+                    <group>
+                        <group name="fel_pa_font" string="Fuente del Reporte">
+                            <label for="fel_pa_font_id" string="Fuente del Reporte"/>
+                            <div>
+                                <field class="oe_inline" name="fel_pa_font_id" widget="selection"/>
+                                <button class="oe_link" name="fel_pa_act_discover_fonts" string="(reload fonts)" type="object"/>
+                            </div>
+                            <field name="fel_pa_font_size"/>
+                        </group>
+                        <group string="Pie de Página">
+                            <field name="fel_pa_report_footer_selection"/>
+                            <field name="fel_pa_logo_footer" invisible="fel_pa_report_footer_selection != 'multi_columns'" class="oe_avatar" widget="image"/>
+                        </group>
+                    </group>
+                    <group col="4" string="Firma">
+                        <field name="fel_pa_is_show_signature"/>
+                        <field invisible="fel_pa_is_show_signature == False" required="fel_pa_is_show_signature == True" class="oe_avatar" name="fel_pa_signature" widget="image"/>
+                    </group>
+                </page>
+                <page string="Configuración Panamá FEL" groups="multipac_felpa.felpa_group_user" invisible="country_code != 'PA'">
+                    <group>
+                        <group string="Configuración PAC">
+                            <field name="fel_pa_pac"/>
+                            <field name="fel_pa_pac_url"/>
+                            <field name="fel_pa_pac_company_username" required="fel_pa_pac == 'digifact'" invisible="fel_pa_pac != 'digifact'"/>
+                            <field name="fel_pa_pac_company_token" readonly="fel_pa_pac == 'digifact'"/>
+                            <field name="fel_pa_pac_password_token"/>
+                            <field name="fel_pa_pac_company_token_url" required="fel_pa_pac == 'digifact'" invisible="fel_pa_pac != 'digifact'"/>
+                            <field name="fel_pa_pac_company_token_expiry" readonly="1" invisible="fel_pa_pac != 'digifact'"/>
+                            <button name="fel_pa_remaining_folios" type="object" string="Folios Restantes" colspan="2" invisible="fel_pa_pac == 'digifact'"/>
+                            <button name="fel_pa_generate_company_token" type="object" string="Generar Token" colspan="2" invisible="fel_pa_pac != 'digifact'"/>
+                            <field name="fel_pa_pac_partner_validation_url" required="fel_pa_pac == 'digifact'" invisible="fel_pa_pac != 'digifact'"/>
+                            <field name="fel_pa_pac_document_query_url" required="fel_pa_pac == 'digifact'" invisible="fel_pa_pac != 'digifact'"/>
+                            <field name="fel_pa_pac_document_download_url" required="fel_pa_pac == 'digifact'" invisible="fel_pa_pac != 'digifact'"/>
+                        </group>
+                        <group string="Configuración Utilidad PAC Offline" invisible="fel_pa_pac not in ['the_factory_hka', 'ebi']">
+                            <field name="fel_pa_offline_available"/>
+                            <field name="fel_pa_offline_utility_path" invisible="not fel_pa_offline_available"/>
+                            <field name="fel_pa_offline_pending_path" invisible="not fel_pa_offline_available"/>
+                            <field name="fel_pa_force_offline_normal_consumer" invisible="not fel_pa_offline_available"/>
+                        </group>
+                        <group string="Configuración Extra FEL">
+                            <field name="fel_pa_invoice_line_name"/>
+                            <field name="fel_pa_publish_onerror"/>
+                        </group>
+                        <group string="Configuración Predeterminada FEL">
+                            <field name="fel_pa_default_operation_nature"/>
+                            <field name="fel_pa_default_sale_type"/>
+                            <field name="fel_pa_default_payment_method_id" options="{'no_create': True, 'no_create_edit':True}"/>
+                            <field name="fel_pa_default_cancel_motive"/>
+                            <field name="fel_pa_default_contingency_motive"/>
+                            <field name="fel_pa_default_product_unspsc_category_id" options="{'no_create': True, 'no_create_edit':True}"/>
+                        </group>
+                    </group>
+                </page>
+            </xpath>
+        </field>
+    </record>
+
+    <record id="mutlicert_felpa_res_company_invoice_configuration_form_view" model="ir.ui.view">
+        <field name="name">mutlicert_felpa_res_company_invoice_configuration_form_view</field>
+        <field name="active">True</field>
+        <field name="model">res.company</field>
+        <field name="priority">99</field>
+        <field name="type">form</field>
+        <field name="arch" type="xml">
+            <form create="false" delete="false">
+                <sheet>
+                    <notebook>
+                        <page string="Configuración de Factura Panamá FEL" groups="multipac_felpa.felpa_group_user">
+                            <group string="Configuración Predeterminada">
+                                <group>
+                                    <field required="1" domain="[('report_name', 'ilike', '%invoice_template%')]" name="fel_pa_report_template_id" options="{'no_create': True}"/>
+                                    <button class="oe_stat_button oe_edit_only" icon="fa-pencil-square-o" name="%(action_fel_report_extracontent)d" type="action">
+                                        <span>Extra Content</span>
+                                    </button>
+                                </group>
+                                <group>
+                                    <field class="oe_avatar" name="fel_pa_invoice_logo" widget="image"/>
+                                    <field name="fel_pa_standard_template"/>
+                                </group>
+                            </group>
+                            <group name="fel_pa_watermark" string="Marca de Agua">
+                                <group>
+                                    <field name="fel_pa_is_show_watermark"/>
+                                    <field name="fel_pa_watermark" invisible="fel_pa_is_show_watermark == False"/>
+                                    <field invisible="fel_pa_is_show_watermark == False or fel_pa_watermark != 'logo'" class="oe_avatar" name="fel_pa_watermark_logo" widget="image"/>
+                                    <field invisible="fel_pa_is_show_watermark == False or fel_pa_watermark != 'text'" required="fel_pa_watermark != 'text'" name="fel_pa_watermark_text"/>
+                                    <field invisible="fel_pa_is_show_watermark == False or fel_pa_watermark != 'text'" required="fel_pa_watermark != 'text'" name="fel_pa_watermark_text_color" placeholder="like #2b4e99" widget="color"/>
+                                    <field invisible="fel_pa_is_show_watermark == False or fel_pa_watermark != 'text'" required="fel_pa_watermark != 'text'" name="fel_pa_watermark_text_font_size"/>
+                                </group>
+                            </group>
+                            <group>
+                                <group string="Colores de Empresa">
+                                    <field name="fel_pa_company_color" placeholder=" like #b30000" widget="color"/>
+                                    <field name="fel_pa_company_address_color" placeholder=" like #b30010" widget="color"/>
+                                    <field name="fel_pa_is_company_bold"/>
+                                </group>
+                                <group string="Colores de Contacto">
+                                    <field name="fel_pa_customer_color" placeholder=" like #2763a1" widget="color"/>
+                                    <field name="fel_pa_customer_address_color" placeholder=" like #2763c1" widget="color"/>
+                                    <field name="fel_pa_is_customer_bold"/>
+                                </group>
+                            </group>
+                            <group>
+                                <group string="Colores del Tema">
+                                    <group>
+                                        <field name="fel_pa_theme_color" placeholder=" like #d4d2d2" widget="color"/>
+                                        <field name="fel_pa_theme_text_color" placeholder=" like #5cc2d2" widget="color"/>
+                                        <field name="fel_pa_text_color" placeholder=" like #5bb3d2" widget="color"/>
+                                    </group>
+                                    <group>
+                                        <field name="fel_pa_odd_party_color" placeholder=" like #aea8a8" widget="color"/>
+                                        <field name="fel_pa_even_party_color" placeholder=" like #aea8aa" widget="color"/>
+                                    </group>
+                                </group>
+                            </group>
+                            <group string="Otras Configuraciones">
+                                <group>
+                                    <group>
+                                        <field name="fel_pa_is_description"/>
+                                        <field name="fel_pa_add_product_image"/>
+                                        <field name="fel_pa_add_amount_in_words"/>
+                                        <field name="fel_pa_is_show_notes"/>
+                                    </group>
+                                    <group>
+                                        <field name="fel_pa_is_show_payment_notes"/>
+                                        <field name="fel_pa_is_show_barcode"/>
+                                        <field name="fel_pa_qr_code"/>
+                                        <field name="fel_pa_qr_code_size"/>
+                                        <field name="fel_pa_dgi_logo"/>
+                                    </group>
+                                </group>
+                                <group>
+                                    <group>
+                                        <field name="fel_pa_invoice_tax_column"/>
+                                        <field name="fel_pa_invoice_discount_column"/>
+                                        <field name="fel_pa_invoice_hide_payments"/>
+                                        <field name="fel_pa_invoice_show_customer_code"/>
+                                    </group>
+                                    <group>
+                                        <field name="fel_pa_invoice_show_invoice_ref"/>
+                                        <field name="fel_pa_invoice_show_origin_order_name"/>
+                                        <field name="fel_pa_invoice_show_origin_order_date"/>
+                                        <field name="fel_pa_invoice_show_invoice_date_due"/>
+                                    </group>
+                                </group>
+                            </group>
+                            <group string="Información Bancaria FEL (PAC / eFacturaPTY)">
+                                <field name="fel_pa_bank_account_info" placeholder="Ingrese los datos bancarios fijos (ej. BANCO GENERAL - Cta Cte 03-72-... Todo cheque devuelto...) a concatenar con el plazo de pago." nolabel="1" colspan="2"/>
+                            </group>
+                            <group>
+                                <group name="fel_pa_font" string="Fuente del Reporte">
+                                    <label for="fel_pa_font_id" string="Fuente del Reporte"/>
+                                    <div>
+                                        <field class="oe_inline" name="fel_pa_font_id" widget="selection"/>
+                                        <button class="oe_link" name="fel_pa_act_discover_fonts" string="(reload fonts)" type="object"/>
+                                    </div>
+                                    <field name="fel_pa_font_size"/>
+                                </group>
+                                <group string="Pie de Página">
+                                    <field name="fel_pa_report_footer_selection"/>
+                                    <field name="fel_pa_logo_footer" invisible="fel_pa_report_footer_selection != 'multi_columns'" class="oe_avatar" widget="image"/>
+                                </group>
+                            </group>
+                            <group col="4" string="Firma">
+                                <field name="fel_pa_is_show_signature"/>
+                                <field invisible="fel_pa_is_show_signature == False" required="fel_pa_is_show_signature == True" class="oe_avatar" name="fel_pa_signature" widget="image"/>
+                            </group>
+                        </page>
+                    </notebook>
+                </sheet>
+            </form>
+        </field>
+    </record>
+    
+</odoo>

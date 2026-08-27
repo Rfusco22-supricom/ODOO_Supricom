@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<odoo>
+
+    <record id="multipac_felpa_account_journal_form_inherit" model="ir.ui.view">
+        <field name="name">multipac_felpa_account_journal_form_inherit</field>
+        <field name="active">True</field>
+        <field name="model">account.journal</field>
+        <field name="inherit_id" ref="account.view_account_journal_form"/>
+        <field name="priority">99</field>
+        <field name="type">form</field>
+        <field name="arch" type="xml">
+            <xpath expr="//page[@name='advanced_settings']" position="after">
+                <page string="Panamá FEL Configuration" invisible="type not in (('sale','purchase','bank','cash')) or country_code != 'PA'" groups="multipac_felpa.felpa_group_user">
+                    <group string="FEL Active" invisible="type not in (('sale','purchase'))">
+                        <field name="fel_pa_active" widget="boolean_toggle"/>
+                        <field name="fel_pa_certify" widget="boolean_toggle"/>
+                    </group>
+                    <div>
+                        <group string="FEL Configuration" invisible="type not in (('sale','purchase')) or not fel_pa_active">
+                            <field name="fel_pa_code_branch_issuer"/>
+                            <field name="fel_pa_default_document_type_id" invisible="not fel_pa_document_type_ids"/>
+                            <field name="fel_pa_branch_type"/>
+                            <field name="fel_pa_cafe_format"/>
+                            <field name="fel_pa_cafe_delivery"/>
+                            <field name="fel_pa_container_sent"/>
+                            <field name="fel_pa_coordinates"/>
+                        </group>
+                        <group string="Payment Configuration" invisible="type not in (('bank','cash'))">
+                            <field name="fel_pa_payment_method"/>
+                            <field name="fel_pa_other_payment_description" invisible="fel_pa_payment_method != '99'" required="fel_pa_payment_method == '99'"/>
+                        </group>
+                        <group string="FEL Documents" invisible="type not in (('sale','purchase')) or not fel_pa_active">
+                            <group>
+                                <button name="create_fel_pa_document_types" type="object" string="Create FEL Document Types" colspan="2"/>
+                            </group>
+                            <field name="fel_pa_document_type_ids" nolabel="1">
+                                <tree editable="bottom" colspan="2">
+                                    <field name="document_type"/>
+                                    <field name="code"/>
+                                    <field name="sequence_actual_number"/>
+                                    <field name="active" widget="boolean_toggle"/>
+                                </tree>
+                            </field>
+                        </group>
+                        <field name="fel_pa_pac" invisible="1"/>
+                        <group string="FEL Contingency" invisible="type not in (('sale','purchase')) or not fel_pa_active or fel_pa_pac =='digifact'">
+                            <field name="fel_pa_active_contingency_id" invisible="1"/>
+                            <group>
+                                <button name="create_fel_pa_contingency" type="object" string="Create FEL Contingency" colspan="2" invisible="fel_pa_active_contingency_id"/>
+                                <button name="action_close_contingency" type="object" string="Close Active FEL Contingency" colspan="2" invisible="not fel_pa_active_contingency_id"/>
+                            </group>
+                            <field name="fel_pa_contingency_ids" nolabel="1" readonly="1" invisible="not fel_pa_contingency_ids">
+                                <tree colspan="2">
+                                    <field name="start_date"/>
+                                    <field name="motive"/>
+                                    <field name="move_ids" widget="many2many_tags"/>
+                                    <field name="active"/>
+                                    <button invisible="not active" name="close_contingency" string="Close Contingency" type="object"/>
+                                </tree>
+                            </field>
+                        </group>
+                    </div>
+                </page>
+            </xpath>
+        </field>
+    </record>
+    
+</odoo>

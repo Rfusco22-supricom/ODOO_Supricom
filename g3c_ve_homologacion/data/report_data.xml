@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data>
+        <!-- 
+            En Odoo 17, ir.actions.report no tiene campo 'active'. 
+            Para ocultar el reporte del menú 'Imprimir' y del portal:
+            1. Quitamos la vinculación al modelo (binding_model_id = False)
+            2. Lo asignamos a un grupo técnico (base.group_no_one) para que no sea visible
+        -->
+        
+        <record id="account.account_invoices" model="ir.actions.report">
+            <field name="binding_model_id" eval="False"/>
+            <field name="groups_id" eval="[(6, 0, [ref('base.group_no_one')])]"/>
+        </record>
+
+        <record id="account.account_invoices_without_payment" model="ir.actions.report">
+            <field name="binding_model_id" eval="False"/>
+            <field name="groups_id" eval="[(6, 0, [ref('base.group_no_one')])]"/>
+        </record>
+    </data>
+</odoo>

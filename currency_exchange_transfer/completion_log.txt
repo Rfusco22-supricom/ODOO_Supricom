@@ -1,0 +1,5 @@
+Log:
+- Menus separated: Enviados/Recibidos.
+- Journal permission check implemented.
+- Files updated.
+Processing complete.

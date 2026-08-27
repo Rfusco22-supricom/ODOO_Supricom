@@ -1,0 +1,60 @@
+<odoo>
+    <!-- Configuración para Ventas -->
+    <record id="res_config_settings_view_form_homologacion_sale" model="ir.ui.view">
+        <field name="name">res.config.settings.view.form.inherit.sale.homologacion</field>
+        <field name="model">res.config.settings</field>
+        <field name="priority" eval="90"/>
+        <field name="inherit_id" ref="sale.res_config_settings_view_form"/>
+        <field name="arch" type="xml">
+            <xpath expr="//setting[@id='proforma_configuration']" position="after">
+                <setting id="hide_sale_confirm_setting" 
+                         string="Homologación Fiscal" 
+                         help="Restricciones adicionales de seguridad y auditoría.">
+                    <div class="content-group">
+                        <div class="row mt16">
+                            <label for="hide_sale_confirm" class="col-lg-3 o_light_label"/>
+                            <field name="hide_sale_confirm"/>
+                        </div>
+                    </div>
+                </setting>
+            </xpath>
+        </field>
+    </record>
+
+    <!-- Configuración para Contabilidad -->
+    <record id="res_config_settings_view_form_homologacion_account" model="ir.ui.view">
+        <field name="name">res.config.settings.view.form.inherit.account.homologacion</field>
+        <field name="model">res.config.settings</field>
+        <field name="priority" eval="90"/>
+        <field name="inherit_id" ref="account.res_config_settings_view_form"/>
+        <field name="arch" type="xml">
+            <xpath expr="//setting[@id='default_taxes']" position="after">
+                <setting id="homologacion_activa_setting" 
+                         string="Activación G3C" 
+                         help="Activa o desactiva Caracteristicas Digiflex"
+                         >
+                    <div class="content-group">
+                        <div class="row mt16">
+                            <label for="homologacion_activa" class="col-lg-3 o_light_label"/>
+                            <field name="homologacion_activa"/>
+                        </div>
+                    </div>
+                </setting>
+                <setting id="igtf_settings_homologacion" 
+                         string="IGTF Homologación" 
+                         help="Configuración para la auto-generación de notas de débito por IGTF en pagos.">
+                    <div class="content-group">
+                        <div class="row mt16">
+                            <label for="igtf_product_id" string="Producto Recargo IGTF" class="col-lg-3 o_light_label"/>
+                            <field name="igtf_product_id"/>
+                        </div>
+                        <div class="row mt16">
+                            <label for="igtf_debit_note_paid" string="Generar ND de IGTF Pagada" class="col-lg-3 o_light_label"/>
+                            <field name="igtf_debit_note_paid"/>
+                        </div>
+                    </div>
+                </setting>
+            </xpath>
+        </field>
+    </record>
+</odoo>

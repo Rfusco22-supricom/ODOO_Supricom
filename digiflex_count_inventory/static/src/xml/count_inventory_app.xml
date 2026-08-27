@@ -1,0 +1,388 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<templates xml:space="preserve">
+    <t t-name="digiflex_count_inventory.CountInventoryApp" owl="1">
+        <div class="o_count_inventory_app">
+            
+            <!-- STEP 1: SELECT / CREATE & SCHEDULE SESSION -->
+            <div t-if="state.step === 1" class="step-container">
+                <button class="btn btn-outline-secondary mb-3" t-on-click="exitApp">
+                    <i class="fa fa-arrow-left me-2"/> Salir a Odoo
+                </button>
+
+                <div class="title-header">
+                    <h1>CONTEO DE INVENTARIO</h1>
+                    <p t-if="state.isManager">Organice, agende y controle los conteos cuantitativos de inventario</p>
+                    <p t-else="">Seleccione una sesión asignada para ingresar con su PIN y realizar la toma física</p>
+                </div>
+
+                <div class="row mt-4">
+                <div class="row mt-4">
+                    <!-- COLUMNA IZQUIERDA: ORGANIZADOR / AGENDADOR (PASO A PASO) -->
+                    <div t-if="state.isManager" class="col-lg-6 mb-4">
+                        <div class="organizer-card p-4 rounded-3 shadow-sm border bg-white">
+                            <h4 class="section-subtitle primary-title mb-3 d-flex align-items-center">
+                                <i class="fa fa-calendar-plus-o me-2 fs-5"/> Organizar y Agendar Conteo
+                            </h4>
+
+                            <!-- PASO 1 -->
+                            <div class="step-box mb-4 p-3 rounded border bg-light">
+                                <div class="step-header d-flex align-items-center mb-3">
+                                    <span class="step-number me-2 text-white rounded-circle d-inline-flex align-items-center justify-content-center" style="width:26px; height:26px; font-size:12px; font-weight:700;">1</span>
+                                    <h6 class="mb-0 fw-bold text-dark">Ubicación y Tipo de Auditoría</h6>
+                                </div>
+                                <div class="form-group mb-3">
+                                    <label class="form-label small text-muted">Ubicación de Almacén:</label>
+                                    <select t-model="state.newSession.location_id" class="form-select custom-input">
+                                        <option value="">-- Seleccione Ubicación --</option>
+                                        <t t-foreach="state.locations" t-as="loc" t-key="loc.id">
+                                            <option t-att-value="loc.id"><t t-esc="loc.complete_name"/></option>
+                                        </t>
+                                    </select>
+                                </div>
+
+                                <div class="row g-2">
+                                    <div class="col-sm-6 form-group">
+                                        <label class="form-label small text-muted">Tipo de Conteo:</label>
+                                        <select t-model="state.newSession.count_type" class="form-select custom-input">
+                                            <option value="daily">Cíclico Diario (Entregados por Fecha)</option>
+                                            <option value="monthly">Todos los Productos</option>
+                                        </select>
+                                    </div>
+                                    <div class="col-sm-6 form-group">
+                                        <label class="form-label small text-muted">Fecha del Conteo:</label>
+                                        <input type="date" t-model="state.newSession.date" class="form-control custom-input"/>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- PASO 2 -->
+                            <div class="step-box mb-4 p-3 rounded border bg-light">
+                                <div class="step-header d-flex align-items-center mb-3">
+                                    <span class="step-number me-2 text-white rounded-circle d-inline-flex align-items-center justify-content-center" style="width:26px; height:26px; font-size:12px; font-weight:700;">2</span>
+                                    <h6 class="mb-0 fw-bold text-dark">Parámetros de Auditoría</h6>
+                                </div>
+
+                                <div t-if="state.newSession.count_type === 'daily'" class="form-group mb-3">
+                                    <label class="form-label text-primary small"><i class="fa fa-calendar me-1"/> Fecha de Entregas a Auditar / Contar:</label>
+                                    <input type="date" t-model="state.newSession.sales_target_date" class="form-control custom-input"/>
+                                    <small class="text-muted d-block mt-1">Seleccione la fecha a auditar (ej. Sábado si hoy es Lunes).</small>
+                                </div>
+
+                                <div class="form-check form-switch mt-2">
+                                    <input class="form-check-input" type="checkbox" id="hide_theoretical" t-model="state.newSession.hide_theoretical_qty"/>
+                                    <label class="form-check-label small fw-semibold text-dark" for="hide_theoretical">Conteo a Ciegas (Ocultar Stock Teórico a Operadores)</label>
+                                </div>
+                            </div>
+
+                            <!-- PASO 3 -->
+                            <div class="step-box mb-4 p-3 rounded border bg-light">
+                                <div class="step-header d-flex align-items-center mb-3">
+                                    <span class="step-number me-2 text-white rounded-circle d-inline-flex align-items-center justify-content-center" style="width:26px; height:26px; font-size:12px; font-weight:700;">3</span>
+                                    <h6 class="mb-0 fw-bold text-dark">Personal Responsable y Asignación</h6>
+                                </div>
+
+                                <div class="form-group mb-2">
+                                    <label class="form-label small text-muted">Seleccionar Operadores Participantes:</label>
+                                    <div class="operator-selection-grid">
+                                        <t t-foreach="state.employees" t-as="emp" t-key="emp.id">
+                                            <div t-att-class="'operator-chip ' + (state.newSession.selectedEmployeeIds.includes(emp.id) ? 'selected' : '')" t-on-click="() => this.toggleEmployeeAssignment(emp.id)">
+                                                <i t-att-class="'fa ' + (state.newSession.selectedEmployeeIds.includes(emp.id) ? 'fa-check-circle' : 'fa-user-o') + ' me-1'"/>
+                                                <t t-esc="emp.name"/>
+                                            </div>
+                                        </t>
+                                    </div>
+                                </div>
+
+                                <div class="alert alert-info py-2 px-3 mt-3 mb-0 small rounded-2">
+                                    <i class="fa fa-info-circle me-1 text-primary"/> 
+                                    <strong>Asignación de Operadores:</strong> Seleccione los colaboradores que participarán en la jornada de conteo. Podrá realizar asignaciones específicas por Filtro o Marca desde la pantalla de conteo.
+                                </div>
+                            </div>
+
+                            <!-- BOTÓN FINAL -->
+                            <button class="action-btn primary w-100 justify-content-center py-3 fs-6" t-on-click="startNewSession">
+                                <i class="fa fa-calendar-check-o me-2"/> Agendar Nueva Sesión de Conteo
+                            </button>
+                        </div>
+                    </div>
+
+                    <!-- COLUMNA DERECHA: SESIONES ACTIVAS Y AGENDADAS -->
+                    <div t-att-class="state.isManager ? 'col-lg-6 mb-4' : 'col-md-12 mb-4'">
+                        <div class="sessions-card p-4 rounded-3 shadow-sm border bg-white h-100">
+                            <h4 class="section-subtitle warning-title mb-3 d-flex align-items-center">
+                                <i class="fa fa-tasks me-2 fs-5"/>
+                                <t t-esc="state.isManager ? 'Sesiones Agendadas / En Proceso' : 'Mis Sesiones Asignadas / En Proceso'"/>
+                            </h4>
+
+                            <div t-if="state.activeSessions.length === 0" class="empty-session-alert p-4 rounded-3 text-center">
+                                <i class="fa fa-info-circle fa-2x mb-2 d-block text-muted"/>
+                                <t t-if="state.isManager">No hay sesiones de conteo abiertas o agendadas en este momento.</t>
+                                <t t-else="">No tiene sesiones de conteo asignadas pendientes en este momento.</t>
+                            </div>
+                            <div t-else="" class="list-group">
+                                <t t-foreach="state.activeSessions" t-as="session" t-key="session.id">
+                                    <div class="session-item-card p-3 mb-3 border rounded-3 d-flex align-items-center justify-content-between shadow-sm" t-on-click="() => this.openExistingSession(session.id)">
+                                        <div class="flex-grow-1">
+                                            <div class="d-flex align-items-center justify-content-between mb-1">
+                                                <h6 class="session-item-title mb-0 text-dark fw-bold"><t t-esc="session.name"/></h6>
+                                                <span class="session-badge badge bg-primary-subtle text-primary border border-primary-subtle px-2 py-1"><t t-esc="session.total_items"/> ítems</span>
+                                            </div>
+                                            <small class="session-item-meta d-block text-muted mb-2">
+                                                <i class="fa fa-map-marker me-1 text-danger"/> <t t-esc="session.location_name"/> | <i class="fa fa-calendar me-1 ms-2"/> <t t-esc="session.date"/>
+                                                <t t-if="session.count_type === 'daily'"> (Entregas: <t t-esc="session.sales_target_date"/>)</t>
+                                            </small>
+                                            
+                                            <div t-if="session.employees &amp;&amp; session.employees.length &gt; 0" class="d-flex flex-wrap gap-1 mt-1">
+                                                <t t-foreach="session.employees" t-as="emp" t-key="emp.id">
+                                                    <span class="badge bg-light text-secondary border"><i class="fa fa-user me-1"/> <t t-esc="emp.name"/></span>
+                                                </t>
+                                            </div>
+                                        </div>
+                                        <div class="ms-3">
+                                            <button class="btn btn-sm btn-primary d-flex align-items-center gap-1">
+                                                <i class="fa fa-sign-in"/> <t t-esc="state.isManager ? 'Gestionar' : 'Ingresar'"/>
+                                            </button>
+                                        </div>
+                                    </div>
+                                </t>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                </div>
+            </div>
+
+            <!-- STEP 2: SELECT EMPLOYEE & PIN -->
+            <div t-if="state.step === 2" class="step-container">
+                <button class="btn btn-outline-secondary mb-3" t-on-click="goBack">
+                    <i class="fa fa-arrow-left me-2"/> Atrás
+                </button>
+                <div class="title-header">
+                    <h1>IDENTIFICACIÓN DE PERSONAL</h1>
+                    <p>Seleccione el empleado responsable del conteo e ingrese su PIN</p>
+                </div>
+
+                <div t-if="!state.selectedEmployee">
+                    <h4 class="text-center section-subtitle primary-title mb-4">Seleccionar Empleado Responsable</h4>
+                    <div class="card-grid">
+                        <t t-foreach="state.employees" t-as="emp" t-key="emp.id">
+                            <div class="selection-card" t-on-click="() => this.selectEmployee(emp)">
+                                <i class="fa fa-user-circle-o"/>
+                                <h5><t t-esc="emp.name"/></h5>
+                            </div>
+                        </t>
+                    </div>
+                </div>
+
+                <div t-if="state.selectedEmployee" class="pin-container">
+                    <h3 class="employee-welcome">Hola, <t t-esc="state.selectedEmployee.name"/></h3>
+                    <p class="text-muted mb-3">Ingrese su PIN de 4 dígitos</p>
+
+                    <div class="pin-display" t-att-class="{'error': state.pinError}">
+                        <t t-esc="'*'.repeat(state.pin.length)"/>
+                    </div>
+
+                    <div class="numpad">
+                        <button t-on-click="() => this.appendPin('1')">1</button>
+                        <button t-on-click="() => this.appendPin('2')">2</button>
+                        <button t-on-click="() => this.appendPin('3')">3</button>
+                        <button t-on-click="() => this.appendPin('4')">4</button>
+                        <button t-on-click="() => this.appendPin('5')">5</button>
+                        <button t-on-click="() => this.appendPin('6')">6</button>
+                        <button t-on-click="() => this.appendPin('7')">7</button>
+                        <button t-on-click="() => this.appendPin('8')">8</button>
+                        <button t-on-click="() => this.appendPin('9')">9</button>
+                        <button t-on-click="clearPin" class="clear">C</button>
+                        <button t-on-click="() => this.appendPin('0')">0</button>
+                        <button t-on-click="verifyPin" class="enter"><i class="fa fa-check"/></button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- STEP 3: MAIN COUNT WORKSPACE -->
+            <div t-if="state.step === 3" class="step-container full-workspace">
+                <div class="workspace-header">
+                    <div class="d-flex align-items-center flex-wrap gap-2">
+                        <button class="btn btn-sm btn-outline-secondary me-2" t-on-click="goBack">
+                            <i class="fa fa-arrow-left"/> Cambiar Usuario
+                        </button>
+                        <span class="fs-4 primary-title fw-bold me-2"><t t-esc="state.currentSession.name"/></span>
+                        <span class="badge tag-badge-slate"><t t-esc="state.currentSession.location_name"/></span>
+                        <span class="badge tag-badge-blue"><t t-esc="state.currentSession.count_type === 'daily' ? 'Cíclico Diario' : 'Todos los Productos'"/></span>
+                        <span t-if="state.currentSession.hide_theoretical_qty" class="badge tag-badge-amber"><i class="fa fa-eye-slash me-1"/> Conteo a Ciegas</span>
+                    </div>
+
+                    <div class="search-box">
+                        <i class="fa fa-search"/>
+                        <input type="text" placeholder="Buscar por código, barras o nombre..." t-model="state.searchQuery"/>
+                    </div>
+                </div>
+
+                <!-- WIDGET DE PROGRESO Y AUTOGUARDADO -->
+                <div class="progress-widget mb-3">
+                    <div class="d-flex justify-content-between align-items-center mb-2 flex-wrap gap-2">
+                        <span class="fw-bold fs-6 text-secondary">
+                            <i class="fa fa-tasks me-1 text-primary"/> Progreso del Conteo: 
+                            <strong class="text-dark"><t t-esc="itemsCountedCount"/> de <t t-esc="totalLinesCount"/></strong> Productos Contados 
+                            (<strong class="text-success"><t t-esc="progressPercentage"/>%</strong>)
+                        </span>
+                        <div>
+                            <span t-if="state.autosaveStatus === 'saving'" class="badge bg-warning text-dark px-3 py-2">
+                                <i class="fa fa-spinner fa-spin me-1"/> Guardando autoguardado...
+                            </span>
+                            <span t-if="state.autosaveStatus === 'saved'" class="badge bg-success text-white px-3 py-2">
+                                <i class="fa fa-check me-1"/> Guardado automáticamente
+                            </span>
+                        </div>
+                    </div>
+                    <div class="progress custom-progress-bar">
+                        <div class="progress-bar" role="progressbar" t-att-style="'width: ' + progressPercentage + '%'" t-att-aria-valuenow="progressPercentage" aria-valuemin="0" aria-valuemax="100"></div>
+                    </div>
+                </div>
+
+                <!-- BARRA DE ASIGNACIÓN MASIVA RÁPIDA (PARA ADMINISTRADORES) -->
+                <div t-if="state.isManager" class="card p-3 mb-3 bg-light border">
+                    <div class="d-flex align-items-center flex-wrap gap-2">
+                        <span class="fw-bold text-primary me-1"><i class="fa fa-users me-1"/> Asignación Masiva de Productos por Filtro / Marca:</span>
+                        <input type="text" class="form-control form-control-sm custom-input" style="max-width: 220px;" placeholder="Filtro (ej. HP, CANON...)" t-model="state.massAssignText"/>
+                        <select class="form-select form-select-sm custom-input" style="max-width: 220px;" t-model="state.massAssignEmpId">
+                            <option value="">-- Seleccionar Operador --</option>
+                            <t t-foreach="state.employees" t-as="emp" t-key="emp.id">
+                                <option t-att-value="emp.id"><t t-esc="emp.name"/></option>
+                            </t>
+                        </select>
+                        <button class="btn btn-sm btn-primary" t-on-click="applyMassAssignmentOWL">
+                            <i class="fa fa-check me-1"/> Asignar a Filtrados
+                        </button>
+                    </div>
+                </div>
+
+                <!-- PESTAÑAS / FILTROS DE PRODUCTOS (MIS ASIGNADOS VS TODOS) -->
+                <div class="d-flex align-items-center justify-content-between mb-3 flex-wrap gap-2">
+                    <div class="btn-group" role="group">
+                        <button type="button" t-att-class="'btn btn-sm ' + (state.productFilterMode === 'my_items' ? 'btn-primary' : 'btn-outline-primary')" t-on-click="() => this.setFilterMode('my_items')">
+                            <i class="fa fa-user me-1"/> Mis Productos Asignados (<t t-esc="myAssignedLinesCount"/>)
+                        </button>
+                        <button type="button" t-att-class="'btn btn-sm ' + (state.productFilterMode === 'all_items' ? 'btn-primary' : 'btn-outline-primary')" t-on-click="() => this.setFilterMode('all_items')">
+                            <i class="fa fa-list me-1"/> Todos los Productos del Conteo (<t t-esc="totalLinesCount"/>)
+                        </button>
+                    </div>
+
+                    <span t-if="state.selectedEmployee" class="text-muted small">
+                        Operador activo: <strong class="text-dark"><t t-esc="state.selectedEmployee.name"/></strong>
+                    </span>
+                </div>
+
+                <div class="count-table-container">
+                    <table class="count-table">
+                        <thead>
+                            <tr>
+                                <th>Ref / Código</th>
+                                <th>Producto</th>
+                                <th>UdM</th>
+                                <th>Operador Asignado</th>
+                                <th t-if="!state.currentSession.hide_theoretical_qty" class="text-end">Teórica</th>
+                                <th class="text-center" style="min-width: 180px;">Conteo Cuantitativo</th>
+                                <th t-if="!state.currentSession.hide_theoretical_qty" class="text-end">Diferencia</th>
+                                <th t-if="!state.currentSession.hide_theoretical_qty" class="text-center">Estado</th>
+                                <th>Observaciones</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <t t-if="filteredLines.length === 0">
+                                <tr>
+                                    <td t-att-colspan="state.currentSession.hide_theoretical_qty ? 6 : 9" class="text-center py-5 text-muted">
+                                        <i class="fa fa-info-circle fa-2x mb-2 d-block text-secondary"/>
+                                        <h5 class="fw-normal mb-1">No hay productos asignados o que coincidan con la búsqueda.</h5>
+                                        <small t-if="state.productFilterMode === 'my_items'">Seleccione <strong>"Todos los Productos del Conteo"</strong> o solicite al supervisor la asignación de ítems.</small>
+                                    </td>
+                                </tr>
+                            </t>
+                            <t t-else="">
+                                <t t-foreach="filteredLines" t-as="line" t-key="line.id">
+                                    <tr>
+                                        <td><span class="code-badge"><t t-esc="line.default_code || '-'"/></span></td>
+                                        <td>
+                                            <div class="product-title"><t t-esc="line.product_name"/></div>
+                                            <small class="product-barcode"><t t-esc="line.barcode"/></small>
+                                        </td>
+                                        <td><t t-esc="line.uom_name"/></td>
+                                        <td>
+                                            <select t-att-value="line.assigned_employee_id || ''" class="form-select form-select-sm table-note-input" t-on-change="(e) => this.onAssignOperator(line, e)">
+                                                <option value="" t-att-selected="!line.assigned_employee_id">-- Sin Asignar --</option>
+                                                <t t-foreach="state.employees" t-as="emp" t-key="emp.id">
+                                                    <option t-att-value="emp.id" t-att-selected="line.assigned_employee_id === emp.id"><t t-esc="emp.name"/></option>
+                                                </t>
+                                            </select>
+                                        </td>
+                                        <td t-if="!state.currentSession.hide_theoretical_qty" class="text-end text-muted fw-bold">
+                                            <t t-esc="line.theoretical_qty.toFixed(2)"/>
+                                        </td>
+                                        <td>
+                                            <div class="qty-control justify-content-center">
+                                                <button class="qty-btn minus" t-on-click="() => this.changeQty(line, -1)">-</button>
+                                                <input type="number" class="qty-input" step="1" t-att-value="line.counted_qty" t-on-change="(e) => this.onInputQty(line, e)"/>
+                                                <button class="qty-btn plus" t-on-click="() => this.changeQty(line, 1)">+</button>
+                                            </div>
+                                        </td>
+                                        <td t-if="!state.currentSession.hide_theoretical_qty" class="text-end fw-bold">
+                                            <span t-att-class="line.difference_qty &lt; 0 ? 'text-danger' : (line.difference_qty &gt; 0 ? 'text-primary' : 'text-success')">
+                                                <t t-esc="line.difference_qty.toFixed(2)"/>
+                                            </span>
+                                        </td>
+                                        <td t-if="!state.currentSession.hide_theoretical_qty" class="text-center">
+                                            <t t-if="line.is_counted">
+                                                <span t-att-class="'diff-badge ' + line.difference_state">
+                                                    <t t-esc="line.difference_state === 'match' ? 'Exacto' : (line.difference_state === 'missing' ? 'Faltante' : 'Sobrante')"/>
+                                                </span>
+                                            </t>
+                                            <t t-else="">
+                                                <span class="badge bg-secondary text-white">Pendiente</span>
+                                            </t>
+                                        </td>
+                                        <td>
+                                            <input type="text" class="table-note-input" t-model="line.notes" t-on-change="(e) => this.onInputNote(line, e)" placeholder="Nota opcional..."/>
+                                        </td>
+                                    </tr>
+                                </t>
+                            </t>
+                        </tbody>
+                    </table>
+                </div>
+
+                <div class="action-footer">
+                    <div>
+                        <span class="text-muted me-3">Total Ítems: <strong class="text-dark"><t t-esc="state.currentSession.lines.length"/></strong></span>
+                        <span t-if="!state.currentSession.hide_theoretical_qty" class="text-muted">Con Diferencia: <strong class="text-danger"><t t-esc="totalDifferencesCount"/></strong></span>
+                    </div>
+
+                    <div class="d-flex gap-2 flex-wrap">
+                        <button class="action-btn secondary" t-on-click="saveDraft">
+                            <i class="fa fa-save"/> Guardar Progresos
+                        </button>
+                        <button class="action-btn warning" t-on-click="printPdfReport">
+                            <i class="fa fa-print"/> Imprimir PDF
+                        </button>
+                        <t t-if="state.isManager">
+                            <button t-if="!state.currentSession.adjustment_applied" class="action-btn primary" t-on-click="createOdooAdjustment">
+                                <i class="fa fa-commenting"/> Registrar Resumen en Chatter
+                            </button>
+                            <button t-else="" class="action-btn secondary" disabled="disabled">
+                                <i class="fa fa-check-circle"/> Resumen Registrado en Chatter
+                            </button>
+                        </t>
+                        <button class="action-btn success" t-on-click="finishOperatorCount">
+                            <i class="fa fa-check-circle"/> Finalizar Mi Conteo
+                        </button>
+                        <t t-if="state.isManager">
+                            <button class="action-btn danger" t-on-click="closeSessionDayManager">
+                                <i class="fa fa-power-off"/> Cierre General (Administrativo)
+                            </button>
+                        </t>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </t>
+</templates>

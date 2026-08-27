@@ -1,0 +1,88 @@
+<?xml version='1.0' encoding='utf-8'?>
+<odoo>
+    <data>
+
+        <record id="base.pa" model="res.country">
+            <field name="zip_required" eval="False" />
+        </record>
+
+        <record model="res.country.state" id="fel_pa_state_1">
+            <field name="code">1</field>
+            <field name="name">BOCAS DEL TORO</field>
+            <field name="country_id" ref="base.pa"/>
+        </record>
+        
+        <record model="res.country.state" id="fel_pa_state_2">
+            <field name="code">2</field>
+            <field name="name">COCLE</field>
+            <field name="country_id" ref="base.pa"/>
+        </record>
+        
+        <record model="res.country.state" id="fel_pa_state_3">
+            <field name="code">3</field>
+            <field name="name">COLON</field>
+            <field name="country_id" ref="base.pa"/>
+        </record>
+        
+        <record model="res.country.state" id="fel_pa_state_4">
+            <field name="code">4</field>
+            <field name="name">CHIRIQUI</field>
+            <field name="country_id" ref="base.pa"/>
+        </record>
+        
+        <record model="res.country.state" id="fel_pa_state_5">
+            <field name="code">5</field>
+            <field name="name">DARIEN</field>
+            <field name="country_id" ref="base.pa"/>
+        </record>
+        
+        <record model="res.country.state" id="fel_pa_state_6">
+            <field name="code">6</field>
+            <field name="name">HERRERA</field>
+            <field name="country_id" ref="base.pa"/>
+        </record>
+        
+        <record model="res.country.state" id="fel_pa_state_7">
+            <field name="code">7</field>
+            <field name="name">LOS SANTOS</field>
+            <field name="country_id" ref="base.pa"/>
+        </record>
+        
+        <record model="res.country.state" id="fel_pa_state_8">
+            <field name="code">8</field>
+            <field name="name">PANAMA</field>
+            <field name="country_id" ref="base.pa"/>
+        </record>
+        
+        <record model="res.country.state" id="fel_pa_state_9">
+            <field name="code">9</field>
+            <field name="name">VERAGUAS</field>
+            <field name="country_id" ref="base.pa"/>
+        </record>
+        
+        <record model="res.country.state" id="fel_pa_state_10">
+            <field name="code">10</field>
+            <field name="name">COMARCA KUNA YALA</field>
+            <field name="country_id" ref="base.pa"/>
+        </record>
+        
+        <record model="res.country.state" id="fel_pa_state_11">
+            <field name="code">11</field>
+            <field name="name">COMARCA EMBERAWOUNAAN</field>
+            <field name="country_id" ref="base.pa"/>
+        </record>
+        
+        <record model="res.country.state" id="fel_pa_state_12">
+            <field name="code">12</field>
+            <field name="name">COMARCA NGABEBUGLE</field>
+            <field name="country_id" ref="base.pa"/>
+        </record>
+        
+        <record model="res.country.state" id="fel_pa_state_13">
+            <field name="code">13</field>
+            <field name="name">PANAMA OESTE</field>
+            <field name="country_id" ref="base.pa"/>
+        </record>
+        
+    </data>
+</odoo>

@@ -1,0 +1,15 @@
+<?xml version="1.0"?>
+<odoo>
+    <data>
+        <record id="res_country_custom_nacionality" model="ir.ui.view">
+            <field name="name">res.country.custom.form</field>
+            <field name="model">res.country</field>
+            <field name="inherit_id" ref="base.view_country_form" />
+            <field name="arch" type="xml">
+                <xpath expr="//sheet//field[@name='name']" position="after">
+                    <field name="nacionality" />
+                </xpath>
+            </field>
+        </record>
+    </data>
+</odoo>

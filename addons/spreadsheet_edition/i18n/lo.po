@@ -1,0 +1,1184 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+# * spreadsheet_edition
+#
+# Weblate <noreply-mt-weblate@weblate.org>, 2026.
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 17.0+e\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-04-03 18:53+0000\n"
+"PO-Revision-Date: 2026-06-23 15:10+0000\n"
+"Last-Translator: Weblate <noreply-mt-weblate@weblate.org>\n"
+"Language-Team: Lao <https://translate.odoo.com/projects/odoo-17/"
+"spreadsheet_edition/lo/>\n"
+"Language: lo\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: \n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"X-Generator: Weblate 2026.6.1\n"
+
+#. module: spreadsheet_edition
+#. odoo-javascript
+#: code:addons/spreadsheet_edition/static/src/assets/list_view/list_renderer.js:0
+#, python-format
+msgid "%(field name)s by %(order)s"
+msgstr "%(field name)s ຕາມ %(order)s"
+
+#. module: spreadsheet_edition
+#. odoo-javascript
+#: code:addons/spreadsheet_edition/static/src/bundle/actions/version_history/version_history_action.js:0
+#, python-format
+msgid "%(name)s (restored from %(timestamp)s)"
+msgstr "%(name)s (ກູ້ຄືນມາຈາກ %(timestamp)s)"
+
+#. module: spreadsheet_edition
+#. odoo-javascript
+#: code:addons/spreadsheet_edition/static/src/assets/pivot_view/pivot_view.js:0
+#, python-format
+msgid "%(name)s by %(field)s"
+msgstr ""
+
+#. module: spreadsheet_edition
+#. odoo-javascript
+#: code:addons/spreadsheet_edition/static/src/assets/pivot_view/pivot_view.js:0
+#, python-format
+msgid "%(name)s by %(field)s (%(period)s)"
+msgstr ""
+
+#. module: spreadsheet_edition
+#. odoo-javascript
+#: code:addons/spreadsheet_edition/static/src/bundle/list/side_panels/listing_details_side_panel.js:0
+#, python-format
+msgid "%(sortName)s (ascending)"
+msgstr ""
+
+#. module: spreadsheet_edition
+#. odoo-javascript
+#: code:addons/spreadsheet_edition/static/src/bundle/list/side_panels/listing_details_side_panel.js:0
+#, python-format
+msgid "%(sortName)s (descending)"
+msgstr ""
+
+#. module: spreadsheet_edition
+#. odoo-javascript
+#: code:addons/spreadsheet_edition/static/src/bundle/actions/control_panel/spreadsheet_control_panel.js:0
+#, python-format
+msgid "- dates: %s"
+msgstr "- ວັນທີ: %s"
+
+#. module: spreadsheet_edition
+#. odoo-javascript
+#: code:addons/spreadsheet_edition/static/src/bundle/actions/control_panel/spreadsheet_control_panel.js:0
+#, python-format
+msgid "- numbers: %s"
+msgstr "- ຕົວເລກ: %s"
+
+#. module: spreadsheet_edition
+#: model:ir.model.fields,field_description:spreadsheet_edition.field_spreadsheet_revision__active
+msgid "Active"
+msgstr "ເປີດໃຊ້ງານ"
+
+#. module: spreadsheet_edition
+#. odoo-javascript
+#: code:addons/spreadsheet_edition/static/src/bundle/global_filters/global_filter_side_panel.xml:0
+#, python-format
+msgid "Add a new filter..."
+msgstr "ເພີ່ມຕົວກັ່ນຕອງໃໝ່..."
+
+#. module: spreadsheet_edition
+#. odoo-javascript
+#: code:addons/spreadsheet_edition/static/src/bundle/global_filters/components/filter_field_offset.js:0
+#, python-format
+msgid "After next"
+msgstr "ຫຼັງຖັດໄປ"
+
+#. module: spreadsheet_edition
+#. odoo-javascript
+#: code:addons/spreadsheet_edition/static/src/bundle/list/side_panels/listing_all_side_panel.js:0
+#, python-format
+msgid "Are you sure you want to delete this list?"
+msgstr "ທ່ານແນ່ໃຈບໍ່ວ່າຕ້ອງການລຶບລາຍການນີ້?"
+
+#. module: spreadsheet_edition
+#. odoo-javascript
+#: code:addons/spreadsheet_edition/static/src/bundle/pivot/side_panels/pivot_list_side_panel.js:0
+#, python-format
+msgid "Are you sure you want to delete this pivot?"
+msgstr "ທ່ານແນ່ໃຈບໍ່ວ່າຕ້ອງການລຶບ Pivot ນີ້?"
+
+#. module: spreadsheet_edition
+#. odoo-javascript
+#: code:addons/spreadsheet_edition/static/src/bundle/global_filters/components/filter_editor/date_filter_editor_side_panel.xml:0
+#, python-format
+msgid "Automatically filter on the current period"
+msgstr "ກັ່ນຕອງອັດຕະໂນມັດຕາມໄລຍະເວລາປັດຈຸບັນ"
+
+#. module: spreadsheet_edition
+#. odoo-javascript
+#: code:addons/spreadsheet_edition/static/src/bundle/global_filters/components/filter_editor/relation_filter_editor_side_panel.xml:0
+#, python-format
+msgid "Automatically filter on the current user"
+msgstr "ກັ່ນຕອງອັດຕະໂນມັດຕາມຜູ້ໃຊ້ປັດຈຸບັນ"
+
+#. module: spreadsheet_edition
+#. odoo-javascript
+#: code:addons/spreadsheet_edition/static/src/bundle/actions/version_history/side_panel/version_history_side_panel.xml:0
+#: code:addons/spreadsheet_edition/static/src/bundle/list/side_panels/listing_all_side_panel.xml:0
+#: code:addons/spreadsheet_edition/static/src/bundle/pivot/side_panels/pivot_list_side_panel.xml:0
+#, python-format
+msgid "Back"
+msgstr "ກັບຄືນ"
+
+#. module: spreadsheet_edition
+#. odoo-javascript
+#: code:addons/spreadsheet_edition/static/src/bundle/actions/control_panel/spreadsheet_control_panel.js:0
+#, python-format
+msgid "Back to “%s”"
+msgstr "ກັບຄືນໄປຫາ “%s”"
+
+#. module: spreadsheet_edition
+#. odoo-javascript
+#: code:addons/spreadsheet_edition/static/src/bundle/global_filters/components/filter_field_offset.js:0
+#, python-format
+msgid "Before previous"
+msgstr "ກ່ອນໜ້າກ່ອນ"
+
+#. module: spreadsheet_edition
+#. odoo-javascript
+#: code:addons/spreadsheet_edition/static/src/assets/components/spreadsheet_selector_dialog/spreadsheet_selector_panel.xml:0
+#, python-format
+msgid "Blank spreadsheet"
+msgstr "ສະເປຣດຊີດຫວ່າງເປົ່າ"
+
+#. module: spreadsheet_edition
+#. odoo-javascript
+#: code:addons/spreadsheet_edition/static/src/assets/components/spreadsheet_selector_dialog/spreadsheet_selector_dialog.xml:0
+#: code:addons/spreadsheet_edition/static/src/bundle/actions/input_dialog/input_dialog.xml:0
+#: code:addons/spreadsheet_edition/static/src/bundle/global_filters/components/filter_editor/filter_editor_side_panel.xml:0
+#: code:addons/spreadsheet_edition/static/src/bundle/ir_menu_selector/ir_menu_selector.xml:0
+#, python-format
+msgid "Cancel"
+msgstr "ຍົກເລີອກ"
+
+#. module: spreadsheet_edition
+#: model:ir.model,name:spreadsheet_edition.model_spreadsheet_revision
+msgid "Collaborative spreadsheet revision"
+msgstr "ການປັບປຸງສະເປຣດຊີດແບບຮ່ວມມື"
+
+#. module: spreadsheet_edition
+#: model:ir.model.fields,field_description:spreadsheet_edition.field_spreadsheet_revision__commands
+msgid "Commands"
+msgstr "ຄຳສັ່ງ"
+
+#. module: spreadsheet_edition
+#. odoo-javascript
+#: code:addons/spreadsheet_edition/static/src/assets/components/spreadsheet_selector_dialog/spreadsheet_selector_dialog.xml:0
+#: code:addons/spreadsheet_edition/static/src/bundle/actions/input_dialog/input_dialog.xml:0
+#: code:addons/spreadsheet_edition/static/src/bundle/actions/spreadsheet_component.js:0
+#: code:addons/spreadsheet_edition/static/src/bundle/ir_menu_selector/ir_menu_selector.xml:0
+#, python-format
+msgid "Confirm"
+msgstr "ຢືນຢັນ"
+
+#. module: spreadsheet_edition
+#: model:ir.model.fields,field_description:spreadsheet_edition.field_spreadsheet_revision__create_uid
+msgid "Created by"
+msgstr "ສ້າງໂດຍ"
+
+#. module: spreadsheet_edition
+#: model:ir.model.fields,field_description:spreadsheet_edition.field_spreadsheet_revision__create_date
+msgid "Created on"
+msgstr "ສ້າງເມື່ອ"
+
+#. module: spreadsheet_edition
+#. odoo-javascript
+#: code:addons/spreadsheet_edition/static/src/bundle/chart/side_panels/odoo_line/odoo_line_config_panel.xml:0
+#, python-format
+msgid "Cumulative data"
+msgstr "ຂໍ້ມູນສະສົມ"
+
+#. module: spreadsheet_edition
+#. odoo-javascript
+#: code:addons/spreadsheet_edition/static/src/bundle/hooks.js:0
+#, python-format
+msgid "Currency"
+msgstr "ເງິນຕາ"
+
+#. module: spreadsheet_edition
+#. odoo-javascript
+#: code:addons/spreadsheet_edition/static/src/bundle/actions/version_history/side_panel/version_history_item.js:0
+#, python-format
+msgid "Current Version"
+msgstr "ເວີຊັນປັດຈຸບັນ"
+
+#. module: spreadsheet_edition
+#. odoo-javascript
+#: code:addons/spreadsheet_edition/static/src/assets/components/spreadsheet_selector_dialog/spreadsheet_selector_dialog.js:0
+#, python-format
+msgid "Dashboards"
+msgstr "ກະດານຂໍ້ມູນ (Dashboards)"
+
+#. module: spreadsheet_edition
+#. odoo-javascript
+#: code:addons/spreadsheet_edition/static/src/bundle/global_filters/global_filter_side_panel.xml:0
+#, python-format
+msgid "Date"
+msgstr "ວັນທີ"
+
+#. module: spreadsheet_edition
+#. odoo-javascript
+#: code:addons/spreadsheet_edition/static/src/bundle/global_filters/components/filter_editor/date_filter_editor_side_panel.xml:0
+#, python-format
+msgid "Date field"
+msgstr "ຫ້ອງວັນທີ"
+
+#. module: spreadsheet_edition
+#. odoo-javascript
+#: code:addons/spreadsheet_edition/static/src/assets/helpers.js:0
+#, python-format
+msgid "Day"
+msgstr "ວັນ"
+
+#. module: spreadsheet_edition
+#. odoo-javascript
+#: code:addons/spreadsheet_edition/static/src/bundle/global_filters/components/filter_editor/date_filter_editor_side_panel.xml:0
+#: code:addons/spreadsheet_edition/static/src/bundle/global_filters/components/filter_editor/relation_filter_editor_side_panel.xml:0
+#: code:addons/spreadsheet_edition/static/src/bundle/global_filters/components/filter_editor/text_filter_editor_side_panel.xml:0
+#, python-format
+msgid "Default value"
+msgstr "ຄ່າເລີ່ມຕົ້ນ"
+
+#. module: spreadsheet_edition
+#. odoo-javascript
+#: code:addons/spreadsheet_edition/static/src/bundle/list/side_panels/listing_all_side_panel.xml:0
+#: code:addons/spreadsheet_edition/static/src/bundle/pivot/side_panels/pivot_list_side_panel.xml:0
+#, python-format
+msgid "Delete"
+msgstr "ລຶບ"
+
+#. module: spreadsheet_edition
+#. odoo-javascript
+#: code:addons/spreadsheet_edition/static/src/bundle/actions/control_panel/spreadsheet_control_panel.js:0
+#, python-format
+msgid ""
+"Difference between user locale (%(user_locale)s) and spreadsheet locale "
+"(%(spreadsheet_locale)s). This spreadsheet is using the formats below:"
+msgstr ""
+"ຄວາມແຕກຕ່າງລະຫວ່າງທ້ອງຖິ່ນຂອງຜູ້ໃຊ້ (%(user_locale)s) ແລະ ທ້ອງຖິ່ນຂອງສະເປຣດຊີດ (%"
+"(spreadsheet_locale)s). ສະເປຣດຊີດນີ້ກຳລັງໃຊ້ຮູບແບບລຸ່ມນີ້:"
+
+#. module: spreadsheet_edition
+#. odoo-javascript
+#: code:addons/spreadsheet_edition/static/src/bundle/pivot/side_panels/pivot_details_side_panel.xml:0
+#, python-format
+msgid "Dimensions"
+msgstr "ຂະໜາດ"
+
+#. module: spreadsheet_edition
+#: model:ir.model.fields,field_description:spreadsheet_edition.field_spreadsheet_revision__display_name
+msgid "Display Name"
+msgstr "ຊື່ທີ່ສະແດງ"
+
+#. module: spreadsheet_edition
+#: model:ir.model.fields,field_description:spreadsheet_edition.field_spreadsheet_dashboard__display_thumbnail
+#: model:ir.model.fields,field_description:spreadsheet_edition.field_spreadsheet_dashboard_share__display_thumbnail
+#: model:ir.model.fields,field_description:spreadsheet_edition.field_spreadsheet_mixin__display_thumbnail
+msgid "Display Thumbnail"
+msgstr "ສະແດງຮູບຕົວຢ່າງ"
+
+#. module: spreadsheet_edition
+#. odoo-javascript
+#: code:addons/spreadsheet_edition/static/src/bundle/pivot/pivot_dialog.xml:0
+#, python-format
+msgid "Display missing cells only"
+msgstr "ສະແດງສະເພາະຫ້ອງທີ່ຂໍ້ມູນຂາດຫາຍ"
+
+#. module: spreadsheet_edition
+#. odoo-javascript
+#: code:addons/spreadsheet_edition/static/src/bundle/chart/side_panels/common/config_panel.xml:0
+#: code:addons/spreadsheet_edition/static/src/bundle/list/side_panels/listing_details_side_panel.xml:0
+#: code:addons/spreadsheet_edition/static/src/bundle/pivot/side_panels/pivot_details_side_panel.xml:0
+#, python-format
+msgid "Domain"
+msgstr "ໂດເມນ"
+
+#. module: spreadsheet_edition
+#. odoo-javascript
+#: code:addons/spreadsheet_edition/static/src/bundle/o_spreadsheet/menu_item_registry.js:0
+#, python-format
+msgid "Download"
+msgstr "ດາວໂຫຼດ"
+
+#. module: spreadsheet_edition
+#. odoo-javascript
+#: code:addons/spreadsheet_edition/static/src/bundle/o_spreadsheet/menu_item_registry.js:0
+#, python-format
+msgid "Download as JSON"
+msgstr "ດາວໂຫຼດເປັນ JSON"
+
+#. module: spreadsheet_edition
+#. odoo-javascript
+#: code:addons/spreadsheet_edition/static/src/bundle/global_filters/components/filter_editor/filter_editor_side_panel.js:0
+#, python-format
+msgid "Duplicated Label"
+msgstr "ປ້າຍຊື່ຊ້ຳກັນ"
+
+#. module: spreadsheet_edition
+#. odoo-javascript
+#: code:addons/spreadsheet_edition/static/src/bundle/global_filters/global_filter_side_panel.xml:0
+#, python-format
+msgid "Edit"
+msgstr "ແກ້ໄຂ"
+
+#. module: spreadsheet_edition
+#. odoo-javascript
+#: code:addons/spreadsheet_edition/static/src/bundle/chart/side_panels/common/config_panel.xml:0
+#: code:addons/spreadsheet_edition/static/src/bundle/list/side_panels/listing_details_side_panel.xml:0
+#: code:addons/spreadsheet_edition/static/src/bundle/pivot/side_panels/pivot_details_side_panel.xml:0
+#, python-format
+msgid "Edit domain"
+msgstr "ແກ້ໄຂໂດເມນ"
+
+#. module: spreadsheet_edition
+#. odoo-javascript
+#: code:addons/spreadsheet_edition/static/src/bundle/global_filters/components/filter_editor/date_filter_editor_side_panel.xml:0
+#: code:addons/spreadsheet_edition/static/src/bundle/global_filters/components/filter_editor/relation_filter_editor_side_panel.xml:0
+#: code:addons/spreadsheet_edition/static/src/bundle/global_filters/components/filter_editor/text_filter_editor_side_panel.xml:0
+#, python-format
+msgid "Field matching"
+msgstr "ການຈັບຄູ່ຫ້ອງຂໍ້ມູນ"
+
+#. module: spreadsheet_edition
+#. odoo-javascript
+#: code:addons/spreadsheet_edition/static/src/bundle/global_filters/index.js:0
+#: code:addons/spreadsheet_edition/static/src/bundle/global_filters/index.js:0
+#: code:addons/spreadsheet_edition/static/src/bundle/global_filters/index.js:0
+#, python-format
+msgid "Filter properties"
+msgstr "ຄຸນສົມບັດຕົວກັ່ນຕອງ"
+
+#. module: spreadsheet_edition
+#. odoo-javascript
+#: code:addons/spreadsheet_edition/static/src/bundle/global_filters/global_filter_side_panel.xml:0
+#: code:addons/spreadsheet_edition/static/src/bundle/global_filters/index.js:0
+#, python-format
+msgid "Filters"
+msgstr "ຕົວຕອງ"
+
+#. module: spreadsheet_edition
+#. odoo-javascript
+#: code:addons/spreadsheet_edition/static/src/bundle/global_filters/components/filter_editor/date_filter_editor_side_panel.js:0
+#, python-format
+msgid "From / To"
+msgstr "ຈາກ / ຫາ"
+
+#. module: spreadsheet_edition
+#: model:ir.model.fields,field_description:spreadsheet_edition.field_spreadsheet_revision__id
+msgid "ID"
+msgstr "ໄອດີ"
+
+#. module: spreadsheet_edition
+#. odoo-javascript
+#: code:addons/spreadsheet_edition/static/src/assets/graph_view/graph_view.xml:0
+#: code:addons/spreadsheet_edition/static/src/assets/graph_view/graph_view.xml:0
+#: code:addons/spreadsheet_edition/static/src/bundle/pivot/pivot.xml:0
+#: code:addons/spreadsheet_edition/static/src/bundle/pivot/pivot.xml:0
+#: code:addons/spreadsheet_edition/static/src/bundle/pivot/pivot.xml:0
+#: code:addons/spreadsheet_edition/static/src/bundle/pivot/pivot.xml:0
+#, python-format
+msgid "Insert in Spreadsheet"
+msgstr "ແຊກເຂົ້າໃນສະເປຣດຊີດ"
+
+#. module: spreadsheet_edition
+#. odoo-javascript
+#: code:addons/spreadsheet_edition/static/src/assets/list_view/insert_list_spreadsheet_menu.xml:0
+#, python-format
+msgid "Insert list in spreadsheet"
+msgstr "ແຊກລາຍການເຂົ້າໃນສະເປຣດຊີດ"
+
+#. module: spreadsheet_edition
+#. odoo-javascript
+#: code:addons/spreadsheet_edition/static/src/bundle/o_spreadsheet/menu_item_registry.js:0
+#, python-format
+msgid "Insert pivot"
+msgstr ""
+
+#. module: spreadsheet_edition
+#. odoo-javascript
+#: code:addons/spreadsheet_edition/static/src/bundle/o_spreadsheet/menu_item_registry.js:0
+#: code:addons/spreadsheet_edition/static/src/bundle/pivot/pivot_actions.js:0
+#, python-format
+msgid "Insert pivot cell"
+msgstr ""
+
+#. module: spreadsheet_edition
+#. odoo-javascript
+#: code:addons/spreadsheet_edition/static/src/assets/components/spreadsheet_selector_dialog/spreadsheet_selector_dialog.xml:0
+#, python-format
+msgid "Insert the first"
+msgstr "ແຊກລາຍການທຳອິດ"
+
+#. module: spreadsheet_edition
+#. odoo-javascript
+#: code:addons/spreadsheet_edition/static/src/bundle/global_filters/components/filter_editor/filter_editor_side_panel.xml:0
+#, python-format
+msgid "Label"
+msgstr "ຄຳອະທິບາຍ"
+
+#. module: spreadsheet_edition
+#: model:ir.model.fields,field_description:spreadsheet_edition.field_spreadsheet_revision__write_uid
+msgid "Last Updated by"
+msgstr "ອັບເດດລ້າສຸດໂດຍ"
+
+#. module: spreadsheet_edition
+#: model:ir.model.fields,field_description:spreadsheet_edition.field_spreadsheet_revision__write_date
+msgid "Last Updated on"
+msgstr "ອັບເດດລ້າສຸດເມື່ອ"
+
+#. module: spreadsheet_edition
+#. odoo-javascript
+#: code:addons/spreadsheet_edition/static/src/bundle/chart/side_panels/common/config_panel.xml:0
+#: code:addons/spreadsheet_edition/static/src/bundle/list/side_panels/listing_details_side_panel.xml:0
+#: code:addons/spreadsheet_edition/static/src/bundle/pivot/side_panels/pivot_details_side_panel.xml:0
+#, python-format
+msgid "Last updated at"
+msgstr "ອັບເດດຫຼ້າສຸດເມື່ອ"
+
+#. module: spreadsheet_edition
+#. odoo-javascript
+#: code:addons/spreadsheet_edition/static/src/bundle/ir_ui_menu/index.js:0
+#, python-format
+msgid "Link an Odoo menu"
+msgstr "ເຊື່ອມຕໍ່ເມນູ Odoo"
+
+#. module: spreadsheet_edition
+#. odoo-javascript
+#: code:addons/spreadsheet_edition/static/src/assets/insert_action_link_menu/insert_action_link_menu.xml:0
+#, python-format
+msgid "Link menu in spreadsheet"
+msgstr "ເມນູເຊື່ອມຕໍ່ໃນສະເປຣດຊີດ"
+
+#. module: spreadsheet_edition
+#. odoo-javascript
+#: code:addons/spreadsheet_edition/static/src/bundle/chart/odoo_menu/chart_panel.xml:0
+#, python-format
+msgid "Link to Odoo menu"
+msgstr "ເຊື່ອມຕໍ່ຫາເມນູ Odoo"
+
+#. module: spreadsheet_edition
+#. odoo-javascript
+#: code:addons/spreadsheet_edition/static/src/bundle/list/side_panels/listing_details_side_panel.xml:0
+#, python-format
+msgid "List Name"
+msgstr "ຊື່ລາຍການ"
+
+#. module: spreadsheet_edition
+#. odoo-javascript
+#: code:addons/spreadsheet_edition/static/src/bundle/list/index.js:0
+#, python-format
+msgid "List properties"
+msgstr "ຄຸນສົມບັດລາຍການ"
+
+#. module: spreadsheet_edition
+#. odoo-javascript
+#: code:addons/spreadsheet_edition/static/src/bundle/actions/version_history/side_panel/version_history_side_panel.xml:0
+#, python-format
+msgid "Load More"
+msgstr "ໂຫຼດເພີ່ມຕື່ມ"
+
+#. module: spreadsheet_edition
+#. odoo-javascript
+#: code:addons/spreadsheet_edition/static/src/bundle/actions/version_history/side_panel/version_history_item.js:0
+#: code:addons/spreadsheet_edition/static/src/bundle/o_spreadsheet/menu_item_registry.js:0
+#, python-format
+msgid "Make a copy"
+msgstr "ເຮັດສຳເນົາ"
+
+#. module: spreadsheet_edition
+#. odoo-javascript
+#: code:addons/spreadsheet_edition/static/src/bundle/global_filters/components/filter_editor/filter_editor_side_panel.xml:0
+#, python-format
+msgid "Match this filter to a field for each data source"
+msgstr "ຈັບຄູ່ຕົວກັ່ນຕອງນີ້ເຂົ້າກັບຫ້ອງຂໍ້ມູນສຳລັບແຕ່ລະແຫຼ່ງຂໍ້ມູນ"
+
+#. module: spreadsheet_edition
+#. odoo-javascript
+#: code:addons/spreadsheet_edition/static/src/bundle/pivot/side_panels/pivot_details_side_panel.xml:0
+#, python-format
+msgid "Measures"
+msgstr "ການວັດແທກ"
+
+#. module: spreadsheet_edition
+#. odoo-javascript
+#: code:addons/spreadsheet_edition/static/src/bundle/ir_menu_selector/ir_menu_selector.js:0
+#, python-format
+msgid "Menu Items"
+msgstr "ລາຍການເມນູ"
+
+#. module: spreadsheet_edition
+#. odoo-javascript
+#: code:addons/spreadsheet_edition/static/src/bundle/list/plugins/list_autofill_plugin.js:0
+#, python-format
+msgid "Missing list #%s"
+msgstr "ຂາດລາຍການ #%s"
+
+#. module: spreadsheet_edition
+#. odoo-javascript
+#: code:addons/spreadsheet_edition/static/src/bundle/pivot/plugins/pivot_autofill_plugin.js:0
+#, python-format
+msgid "Missing pivot"
+msgstr "ຂາດ pivot"
+
+#. module: spreadsheet_edition
+#. odoo-javascript
+#: code:addons/spreadsheet_edition/static/src/bundle/pivot/plugins/pivot_autofill_plugin.js:0
+#, python-format
+msgid "Missing pivot #%s"
+msgstr "ຂາດ pivot #%s"
+
+#. module: spreadsheet_edition
+#. odoo-javascript
+#: code:addons/spreadsheet_edition/static/src/bundle/chart/side_panels/common/config_panel.xml:0
+#: code:addons/spreadsheet_edition/static/src/bundle/list/side_panels/listing_details_side_panel.xml:0
+#: code:addons/spreadsheet_edition/static/src/bundle/pivot/side_panels/pivot_details_side_panel.xml:0
+#: model:ir.model.fields,field_description:spreadsheet_edition.field_spreadsheet_revision__res_model
+#, python-format
+msgid "Model"
+msgstr "ລຸ້ນ"
+
+#. module: spreadsheet_edition
+#. odoo-javascript
+#: code:addons/spreadsheet_edition/static/src/assets/helpers.js:0
+#: code:addons/spreadsheet_edition/static/src/bundle/global_filters/components/filter_editor/date_filter_editor_side_panel.js:0
+#, python-format
+msgid "Month"
+msgstr "ເດືອນ"
+
+#. module: spreadsheet_edition
+#. odoo-javascript
+#: code:addons/spreadsheet_edition/static/src/bundle/global_filters/components/filter_editor/date_filter_editor_side_panel.js:0
+#, python-format
+msgid "Month / Quarter"
+msgstr "ເດືອນ / ໄຕມາດ"
+
+#. module: spreadsheet_edition
+#. odoo-javascript
+#: code:addons/spreadsheet_edition/static/src/bundle/global_filters/components/filter_editor/date_filter_editor_side_panel.xml:0
+#: code:addons/spreadsheet_edition/static/src/bundle/global_filters/components/filter_editor/date_filter_editor_side_panel.xml:0
+#, python-format
+msgid "Months"
+msgstr "ເດືອນ"
+
+#. module: spreadsheet_edition
+#. odoo-javascript
+#: code:addons/spreadsheet_edition/static/src/assets/components/spreadsheet_selector_dialog/spreadsheet_selector_dialog.js:0
+#, python-format
+msgid "Name of the %s:"
+msgstr "ຊື່ຂອງ %s:"
+
+#. module: spreadsheet_edition
+#. odoo-javascript
+#: code:addons/spreadsheet_edition/static/src/bundle/actions/version_history/side_panel/version_history_item.js:0
+#, python-format
+msgid "Name this version"
+msgstr ""
+
+#. module: spreadsheet_edition
+#. odoo-javascript
+#: code:addons/spreadsheet_edition/static/src/bundle/o_spreadsheet/menu_item_registry.js:0
+#, python-format
+msgid "New"
+msgstr "ໃໝ່"
+
+#. module: spreadsheet_edition
+#. odoo-javascript
+#: code:addons/spreadsheet_edition/static/src/bundle/global_filters/components/filter_editor/filter_editor_side_panel.js:0
+#, python-format
+msgid "New %s filter"
+msgstr "ຕົວກັ່ນຕອງ %s ໃໝ່"
+
+#. module: spreadsheet_edition
+#. odoo-javascript
+#: code:addons/spreadsheet_edition/static/src/assets/components/spreadsheet_selector_dialog/spreadsheet_selector_panel.js:0
+#, python-format
+msgid "New sheet inserted in '%s'"
+msgstr "ແຊກແຜ່ນງານໃໝ່ໃນ '%s'"
+
+#. module: spreadsheet_edition
+#. odoo-javascript
+#: code:addons/spreadsheet_edition/static/src/bundle/global_filters/components/filter_field_offset.js:0
+#, python-format
+msgid "Next"
+msgstr "ຖັດໄປ"
+
+#. module: spreadsheet_edition
+#. odoo-javascript
+#: code:addons/spreadsheet_edition/static/src/bundle/actions/spreadsheet_component.js:0
+#, python-format
+msgid "No"
+msgstr "ບໍ່"
+
+#. module: spreadsheet_edition
+#. odoo-javascript
+#: code:addons/spreadsheet_edition/static/src/assets/components/spreadsheet_selector_dialog/spreadsheet_selector_panel.xml:0
+#, python-format
+msgid "No preview"
+msgstr "ບໍ່ມີການສະແດງຕົວຢ່າງ"
+
+#. module: spreadsheet_edition
+#. odoo-javascript
+#: code:addons/spreadsheet_edition/static/src/bundle/actions/input_dialog/input_dialog.js:0
+#: code:addons/spreadsheet_edition/static/src/bundle/actions/spreadsheet_component.js:0
+#: code:addons/spreadsheet_edition/static/src/bundle/actions/spreadsheet_component.js:0
+#: code:addons/spreadsheet_edition/static/src/bundle/actions/version_history/version_history_action.js:0
+#: code:addons/spreadsheet_edition/static/src/bundle/actions/version_history/version_history_action.js:0
+#, python-format
+msgid "Odoo Spreadsheet"
+msgstr "Odoo ສະເປຣດຊີດ"
+
+#. module: spreadsheet_edition
+#: model:ir.model.fields,field_description:spreadsheet_edition.field_spreadsheet_revision__parent_revision_id
+msgid "Parent Revision"
+msgstr "ລຸ້ນການແກ້ໄຂຫຼັກ"
+
+#. module: spreadsheet_edition
+#. odoo-javascript
+#: code:addons/spreadsheet_edition/static/src/bundle/global_filters/components/filter_field_offset.xml:0
+#, python-format
+msgid "Period offset"
+msgstr "ການຊົດເຊີຍໄລຍະເວລາ"
+
+#. module: spreadsheet_edition
+#. odoo-javascript
+#: code:addons/spreadsheet_edition/static/src/bundle/global_filters/components/filter_field_offset.js:0
+#, python-format
+msgid "Period offset applied to this source"
+msgstr "ນຳໃຊ້ການຊົດເຊີຍໄລຍະເວລາກັບແຫຼ່ງຂໍ້ມູນນີ້"
+
+#. module: spreadsheet_edition
+#. odoo-javascript
+#: code:addons/spreadsheet_edition/static/src/assets/pivot_view/pivot_view.js:0
+#, python-format
+msgid "Pivot contains duplicate groupbys"
+msgstr "Pivot ມີການຈັດກຸ່ມທີ່ຊ້ຳກັນ"
+
+#. module: spreadsheet_edition
+#. odoo-javascript
+#: code:addons/spreadsheet_edition/static/src/bundle/pivot/side_panels/pivot_details_side_panel.xml:0
+#, python-format
+msgid "Pivot name"
+msgstr "ຊື່ພີວັອດ"
+
+#. module: spreadsheet_edition
+#. odoo-javascript
+#: code:addons/spreadsheet_edition/static/src/bundle/pivot/index.js:0
+#, python-format
+msgid "Pivot properties"
+msgstr ""
+
+#. module: spreadsheet_edition
+#. odoo-javascript
+#: code:addons/spreadsheet_edition/static/src/bundle/actions/input_dialog/input_dialog.js:0
+#, python-format
+msgid "Please enter a valid number."
+msgstr "ກະລຸນາປ້ອນຕົວເລກທີ່ຖືກຕ້ອງ."
+
+#. module: spreadsheet_edition
+#. odoo-javascript
+#: code:addons/spreadsheet_edition/static/src/bundle/global_filters/components/filter_field_offset.js:0
+#, python-format
+msgid "Previous"
+msgstr "ກ່ອນໜ້າ"
+
+#. module: spreadsheet_edition
+#. odoo-javascript
+#: code:addons/spreadsheet_edition/static/src/bundle/o_spreadsheet/menu_item_registry.js:0
+#, python-format
+msgid "Print"
+msgstr "ພິມ"
+
+#. module: spreadsheet_edition
+#. odoo-javascript
+#: code:addons/spreadsheet_edition/static/src/assets/helpers.js:0
+#: code:addons/spreadsheet_edition/static/src/bundle/global_filters/components/filter_editor/date_filter_editor_side_panel.js:0
+#, python-format
+msgid "Quarter"
+msgstr "ໄຕມາດ"
+
+#. module: spreadsheet_edition
+#. odoo-javascript
+#: code:addons/spreadsheet_edition/static/src/bundle/global_filters/components/filter_editor/date_filter_editor_side_panel.xml:0
+#: code:addons/spreadsheet_edition/static/src/bundle/global_filters/components/filter_editor/date_filter_editor_side_panel.xml:0
+#, python-format
+msgid "Quarters"
+msgstr "ໄຕມາດທັງໝົດ"
+
+#. module: spreadsheet_edition
+#. odoo-javascript
+#: code:addons/spreadsheet_edition/static/src/bundle/actions/spreadsheet_component.js:0
+#: code:addons/spreadsheet_edition/static/src/bundle/o_spreadsheet/menu_item_registry.js:0
+#, python-format
+msgid "Re-insert list"
+msgstr "ແຊກລາຍການຄືນໃໝ່"
+
+#. module: spreadsheet_edition
+#. odoo-javascript
+#: code:addons/spreadsheet_edition/static/src/bundle/o_spreadsheet/menu_item_registry.js:0
+#, python-format
+msgid "Re-insert pivot"
+msgstr ""
+
+#. module: spreadsheet_edition
+#. odoo-javascript
+#: code:addons/spreadsheet_edition/static/src/bundle/list/plugins/list_autofill_plugin.js:0
+#, python-format
+msgid "Record #"
+msgstr ""
+
+#. module: spreadsheet_edition
+#: model:ir.model.fields,field_description:spreadsheet_edition.field_spreadsheet_revision__res_id
+msgid "Record id"
+msgstr "ໄອດີແຖວຂໍ້ມູນ"
+
+#. module: spreadsheet_edition
+#. odoo-javascript
+#: code:addons/spreadsheet_edition/static/src/bundle/o_spreadsheet/menu_item_registry.js:0
+#, python-format
+msgid "Refresh all data"
+msgstr "ຣີເຟຣຊຂໍ້ມູນທັງໝົດ"
+
+#. module: spreadsheet_edition
+#. odoo-javascript
+#: code:addons/spreadsheet_edition/static/src/bundle/chart/side_panels/common/config_panel.xml:0
+#: code:addons/spreadsheet_edition/static/src/bundle/list/side_panels/listing_details_side_panel.xml:0
+#: code:addons/spreadsheet_edition/static/src/bundle/pivot/side_panels/pivot_details_side_panel.xml:0
+#, python-format
+msgid "Refresh values"
+msgstr ""
+
+#. module: spreadsheet_edition
+#. odoo-javascript
+#: code:addons/spreadsheet_edition/static/src/bundle/global_filters/components/filter_editor/relation_filter_editor_side_panel.xml:0
+#, python-format
+msgid "Related model"
+msgstr "ແບບຈຳລອງທີ່ກ່ຽວຂ້ອງ"
+
+#. module: spreadsheet_edition
+#. odoo-javascript
+#: code:addons/spreadsheet_edition/static/src/bundle/global_filters/global_filter_side_panel.xml:0
+#, python-format
+msgid "Relation"
+msgstr "ຄວາມສຳພັນ"
+
+#. module: spreadsheet_edition
+#. odoo-javascript
+#: code:addons/spreadsheet_edition/static/src/bundle/global_filters/components/filter_editor/date_filter_editor_side_panel.js:0
+#, python-format
+msgid "Relative Period"
+msgstr "ໄລຍະເວລາທີ່ກ່ຽວພັນ"
+
+#. module: spreadsheet_edition
+#. odoo-javascript
+#: code:addons/spreadsheet_edition/static/src/bundle/global_filters/components/filter_editor/filter_editor_side_panel.xml:0
+#, python-format
+msgid "Remove"
+msgstr "ລຶບອອກ"
+
+#. module: spreadsheet_edition
+#. odoo-javascript
+#: code:addons/spreadsheet_edition/static/src/bundle/actions/control_panel/spreadsheet_name.xml:0
+#: code:addons/spreadsheet_edition/static/src/bundle/actions/version_history/side_panel/version_history_item.js:0
+#: code:addons/spreadsheet_edition/static/src/bundle/o_spreadsheet/editable_name/editable_name.xml:0
+#, python-format
+msgid "Rename"
+msgstr "ປ່ຽນຊື່"
+
+#. module: spreadsheet_edition
+#. odoo-javascript
+#: code:addons/spreadsheet_edition/static/src/bundle/global_filters/components/filter_field_offset.js:0
+#, python-format
+msgid "Requires a selected field"
+msgstr "ຕ້ອງການຫ້ອງຂໍ້ມູນທີ່ເລືອກໄວ້"
+
+#. module: spreadsheet_edition
+#. odoo-javascript
+#: code:addons/spreadsheet_edition/static/src/bundle/global_filters/components/filter_editor/text_filter_editor_side_panel.xml:0
+#, python-format
+msgid "Restrict values to a range"
+msgstr "ຈຳກັດຄ່າໃຫ້ຢູ່ໃນຊ່ວງ"
+
+#. module: spreadsheet_edition
+#: model:ir.model.fields,field_description:spreadsheet_edition.field_spreadsheet_revision__revision_id
+msgid "Revision"
+msgstr ""
+
+#. module: spreadsheet_edition
+#: model:ir.model.fields,field_description:spreadsheet_edition.field_spreadsheet_revision__name
+msgid "Revision name"
+msgstr "ຊື່ລຸ້ນການແກ້ໄຂ"
+
+#. module: spreadsheet_edition
+#: model:ir.actions.act_window,name:spreadsheet_edition.spreadsheet_revision_action
+#: model:ir.ui.menu,name:spreadsheet_edition.menu_technical_spreadsheet_revision
+msgid "Revisions"
+msgstr "ລຸ້ນການແກ້ໄຂທັງໝົດ"
+
+#. module: spreadsheet_edition
+#. odoo-javascript
+#: code:addons/spreadsheet_edition/static/src/bundle/global_filters/components/filter_editor/filter_editor_side_panel.xml:0
+#: code:addons/spreadsheet_edition/static/src/bundle/o_spreadsheet/editable_name/editable_name.xml:0
+#, python-format
+msgid "Save"
+msgstr "ບັນທຶກ"
+
+#. module: spreadsheet_edition
+#. odoo-javascript
+#: code:addons/spreadsheet_edition/static/src/bundle/o_spreadsheet/menu_item_registry.js:0
+#, python-format
+msgid "Save as template"
+msgstr "ບັນທຶກເປັນແມ່ແບບ"
+
+#. module: spreadsheet_edition
+#. odoo-javascript
+#: code:addons/spreadsheet_edition/static/src/bundle/actions/control_panel/spreadsheet_breadcrumbs.xml:0
+#, python-format
+msgid "Saved"
+msgstr "ບັນທຶກແລ້ວ"
+
+#. module: spreadsheet_edition
+#. odoo-javascript
+#: code:addons/spreadsheet_edition/static/src/bundle/actions/control_panel/spreadsheet_breadcrumbs.xml:0
+#, python-format
+msgid "Saving"
+msgstr "ກຳລັງບັນທຶກ"
+
+#. module: spreadsheet_edition
+#. odoo-javascript
+#: code:addons/spreadsheet_edition/static/src/assets/components/spreadsheet_selector_dialog/spreadsheet_selector_panel.xml:0
+#: code:addons/spreadsheet_edition/static/src/assets/components/spreadsheet_selector_dialog/spreadsheet_selector_panel.xml:0
+#: code:addons/spreadsheet_edition/static/src/assets/components/spreadsheet_selector_dialog/spreadsheet_selector_panel.xml:0
+#, python-format
+msgid "Search..."
+msgstr "ຄົ້ນຫາ..."
+
+#. module: spreadsheet_edition
+#. odoo-javascript
+#: code:addons/spreadsheet_edition/static/src/bundle/list/index.js:0
+#, python-format
+msgid "See list properties"
+msgstr "ເບິ່ງຄຸນສົມບັດລາຍການ"
+
+#. module: spreadsheet_edition
+#. odoo-javascript
+#: code:addons/spreadsheet_edition/static/src/bundle/pivot/index.js:0
+#, python-format
+msgid "See pivot properties"
+msgstr "ເບິ່ງຄຸນສົມບັດ pivot"
+
+#. module: spreadsheet_edition
+#. odoo-javascript
+#: code:addons/spreadsheet_edition/static/src/bundle/version_history/index.js:0
+#, python-format
+msgid "See version history"
+msgstr "ເບິ່ງປະຫວັດລຸ້ນຕ່າງໆ"
+
+#. module: spreadsheet_edition
+#. odoo-javascript
+#: code:addons/spreadsheet_edition/static/src/bundle/ir_menu_selector/ir_menu_selector.js:0
+#, python-format
+msgid "Select a menu..."
+msgstr "ເລືອກເມນູ..."
+
+#. module: spreadsheet_edition
+#. odoo-javascript
+#: code:addons/spreadsheet_edition/static/src/assets/components/spreadsheet_selector_dialog/spreadsheet_selector_dialog.js:0
+#, python-format
+msgid "Select a spreadsheet to insert your %s."
+msgstr "ເລືອກສະເປຣດຊີດເພື່ອແຊກ %s ຂອງທ່ານ."
+
+#. module: spreadsheet_edition
+#. odoo-javascript
+#: code:addons/spreadsheet_edition/static/src/bundle/ir_menu_selector/ir_menu_selector.js:0
+#, python-format
+msgid "Select an Odoo menu to link in your spreadsheet"
+msgstr "ເລືອກເມນູ Odoo ເພື່ອເຊື່ອມຕໍ່ໃນສະເປຣດຊີດຂອງທ່ານ"
+
+#. module: spreadsheet_edition
+#. odoo-javascript
+#: code:addons/spreadsheet_edition/static/src/bundle/actions/spreadsheet_component.js:0
+#, python-format
+msgid "Select the number of records to insert"
+msgstr "ເລືອກຈຳນວນແຖວຂໍ້ມູນທີ່ຈະແຊກ"
+
+#. module: spreadsheet_edition
+#: model:ir.model.fields,field_description:spreadsheet_edition.field_spreadsheet_dashboard__server_revision_id
+#: model:ir.model.fields,field_description:spreadsheet_edition.field_spreadsheet_dashboard_share__server_revision_id
+#: model:ir.model.fields,field_description:spreadsheet_edition.field_spreadsheet_mixin__server_revision_id
+msgid "Server Revision"
+msgstr ""
+
+#. module: spreadsheet_edition
+#. odoo-javascript
+#: code:addons/spreadsheet_edition/static/src/bundle/global_filters/index.js:0
+#, python-format
+msgid "Set as filter"
+msgstr "ຕັ້ງເປັນຕົວກັ່ນຕອງ"
+
+#. module: spreadsheet_edition
+#. odoo-javascript
+#: code:addons/spreadsheet_edition/static/src/bundle/o_spreadsheet/menu_item_registry.js:0
+#, python-format
+msgid "Snapshot"
+msgstr "ສະແນັບຊັອດ"
+
+#. module: spreadsheet_edition
+#. odoo-javascript
+#: code:addons/spreadsheet_edition/static/src/bundle/global_filters/components/filter_editor/filter_editor_side_panel.js:0
+#, python-format
+msgid "Some required fields are not valid"
+msgstr "ບາງຫ້ອງຂໍ້ມູນທີ່ຈຳເປັນບໍ່ຖືກຕ້ອງ"
+
+#. module: spreadsheet_edition
+#. odoo-javascript
+#: code:addons/spreadsheet_edition/static/src/bundle/list/side_panels/listing_details_side_panel.xml:0
+#: code:addons/spreadsheet_edition/static/src/bundle/pivot/side_panels/pivot_details_side_panel.xml:0
+#, python-format
+msgid "Sorting"
+msgstr "ການຈັດລຽງ"
+
+#. module: spreadsheet_edition
+#. odoo-javascript
+#: code:addons/spreadsheet_edition/static/src/assets/spreadsheet_cog_menu/spreadsheet_cog_menu.xml:0
+#: model:ir.ui.menu,name:spreadsheet_edition.menu_technical_spreadsheet
+#, python-format
+msgid "Spreadsheet"
+msgstr "ສະເປຣດຊີດ"
+
+#. module: spreadsheet_edition
+#: model:ir.model.fields,field_description:spreadsheet_edition.field_spreadsheet_dashboard__spreadsheet_revision_ids
+#: model:ir.model.fields,field_description:spreadsheet_edition.field_spreadsheet_dashboard_share__spreadsheet_revision_ids
+#: model:ir.model.fields,field_description:spreadsheet_edition.field_spreadsheet_mixin__spreadsheet_revision_ids
+msgid "Spreadsheet Revision"
+msgstr "ເວີຊັນສະເປຣດຊີດ"
+
+#. module: spreadsheet_edition
+#: model:ir.model.fields,field_description:spreadsheet_edition.field_spreadsheet_dashboard__spreadsheet_snapshot
+#: model:ir.model.fields,field_description:spreadsheet_edition.field_spreadsheet_dashboard_share__spreadsheet_snapshot
+#: model:ir.model.fields,field_description:spreadsheet_edition.field_spreadsheet_mixin__spreadsheet_snapshot
+msgid "Spreadsheet Snapshot"
+msgstr "ພາບຖ່າຍສະເປຣດຊີດ"
+
+#. module: spreadsheet_edition
+#: model:ir.model,name:spreadsheet_edition.model_spreadsheet_mixin
+msgid "Spreadsheet mixin"
+msgstr "Spreadsheet mixin"
+
+#. module: spreadsheet_edition
+#. odoo-javascript
+#: code:addons/spreadsheet_edition/static/src/assets/components/spreadsheet_selector_dialog/spreadsheet_selector_dialog.js:0
+#, python-format
+msgid "Spreadsheets"
+msgstr "ສະເປຣດຊີດ"
+
+#. module: spreadsheet_edition
+#. odoo-javascript
+#: code:addons/spreadsheet_edition/static/src/bundle/chart/side_panels/odoo_bar/odoo_bar_config_panel.xml:0
+#, python-format
+msgid "Stacked barchart"
+msgstr ""
+
+#. module: spreadsheet_edition
+#. odoo-javascript
+#: code:addons/spreadsheet_edition/static/src/bundle/chart/side_panels/odoo_line/odoo_line_config_panel.xml:0
+#, python-format
+msgid "Stacked linechart"
+msgstr ""
+
+#. module: spreadsheet_edition
+#. odoo-javascript
+#: code:addons/spreadsheet_edition/static/src/bundle/global_filters/global_filter_side_panel.xml:0
+#, python-format
+msgid "Text"
+msgstr "ຂໍ້ຄວາມ"
+
+#. module: spreadsheet_edition
+#. odoo-javascript
+#: code:addons/spreadsheet_edition/static/src/bundle/actions/version_history/version_history_action.js:0
+#, python-format
+msgid ""
+"The history of your spreadsheet is corrupted and you are likely missing "
+"recent revisions. This feature cannot be used."
+msgstr ""
+"ປະຫວັດຂອງສະເປຣດຊີດຂອງທ່ານເສຍຫາຍ ແລະ ທ່ານອາດຈະຂາດລຸ້ນການແກ້ໄຂຫຼ້າສຸດ. ບໍ່ສາມາດໃຊ້ຄຸນສົມບັດນີ້ໄດ້."
+
+#. module: spreadsheet_edition
+#. odoo-python
+#: code:addons/spreadsheet_edition/models/spreadsheet_mixin.py:0
+#: code:addons/spreadsheet_edition/models/spreadsheet_mixin.py:0
+#, python-format
+msgid ""
+"The operation could not be applied because of a concurrent update. Please "
+"try again."
+msgstr ""
+"ບໍ່ສາມາດນຳໃຊ້ການດຳເນີນການໄດ້ເນື່ອງຈາກມີການອັບເດດພ້ອມກັນ. ກະລຸນາລອງໃໝ່ອີກຄັ້ງ."
+
+#. module: spreadsheet_edition
+#. odoo-javascript
+#: code:addons/spreadsheet_edition/static/src/bundle/actions/version_history/version_history_action.js:0
+#, python-format
+msgid ""
+"There are missing revisions that prevent to restore the whole edition history.\n"
+"\n"
+"Would you like to load the more recent modifications?"
+msgstr ""
+"ມີລຸ້ນການແກ້ໄຂທີ່ຂາດຫາຍໄປ ຊຶ່ງເຮັດໃຫ້ບໍ່ສາມາດກູ້ຄືນປະຫວັດການແກ້ໄຂທັງໝົດໄດ້. ທ່ານຕ້ອງການໂຫຼດການປ່ຽນແປງ"
+"ຫຼ້າສຸດບໍ່?"
+
+#. module: spreadsheet_edition
+#. odoo-javascript
+#: code:addons/spreadsheet_edition/static/src/bundle/actions/version_history/side_panel/version_history_side_panel.xml:0
+#, python-format
+msgid "There are no prior revisions for this spreadsheet."
+msgstr "ບໍ່ມີລຸ້ນການແກ້ໄຂກ່ອນໜ້ານີ້ສຳລັບສະເປຣດຊີດນີ້."
+
+#. module: spreadsheet_edition
+#. odoo-javascript
+#: code:addons/spreadsheet_edition/static/src/bundle/global_filters/components/filter_editor/date_filter_editor_side_panel.xml:0
+#, python-format
+msgid "Time range"
+msgstr "ຊ່ວງເວລາ"
+
+#. module: spreadsheet_edition
+#. odoo-javascript
+#: code:addons/spreadsheet_edition/static/src/bundle/pivot/plugins/pivot_autofill_plugin.js:0
+#: code:addons/spreadsheet_edition/static/src/bundle/pivot/plugins/pivot_autofill_plugin.js:0
+#, python-format
+msgid "Total"
+msgstr "ລວມທັງໝົດ"
+
+#. module: spreadsheet_edition
+#. odoo-javascript
+#: code:addons/spreadsheet_edition/static/src/bundle/pivot/plugins/pivot_autofill_plugin.js:0
+#, python-format
+msgid "Unknown"
+msgstr "ບໍ່ຮູ້ຈັກ"
+
+#. module: spreadsheet_edition
+#. odoo-javascript
+#: code:addons/spreadsheet_edition/static/src/bundle/global_filters/components/filter_editor/date_filter_editor_side_panel.xml:0
+#, python-format
+msgid "Value options"
+msgstr "ຕົວເລືອກຄ່າ"
+
+#. module: spreadsheet_edition
+#. odoo-javascript
+#: code:addons/spreadsheet_edition/static/src/bundle/actions/version_history/side_panel/version_history_side_panel.xml:0
+#, python-format
+msgid "Version History"
+msgstr "ປະຫວັດລຸ້ນຕ່າງໆ"
+
+#. module: spreadsheet_edition
+#. odoo-javascript
+#: code:addons/spreadsheet_edition/static/src/assets/helpers.js:0
+#, python-format
+msgid "Week"
+msgstr "ອາທິດ"
+
+#. module: spreadsheet_edition
+#. odoo-javascript
+#: code:addons/spreadsheet_edition/static/src/assets/helpers.js:0
+#: code:addons/spreadsheet_edition/static/src/bundle/global_filters/components/filter_editor/date_filter_editor_side_panel.js:0
+#, python-format
+msgid "Year"
+msgstr "ປີ"
+
+#. module: spreadsheet_edition
+#. odoo-javascript
+#: code:addons/spreadsheet_edition/static/src/bundle/actions/spreadsheet_component.js:0
+#, python-format
+msgid "Yes"
+msgstr "ແມ່ນ"
+
+#. module: spreadsheet_edition
+#. odoo-python
+#: code:addons/spreadsheet_edition/models/spreadsheet_mixin.py:0
+#, python-format
+msgid "You are not allowed to access this spreadsheet."
+msgstr ""
+
+#. module: spreadsheet_edition
+#. odoo-javascript
+#: code:addons/spreadsheet_edition/static/src/bundle/pivot/side_panels/pivot_details_side_panel.js:0
+#, python-format
+msgid "ascending"
+msgstr "ຈາກໜ້ອຍຫາຫຼາຍ"
+
+#. module: spreadsheet_edition
+#. odoo-javascript
+#: code:addons/spreadsheet_edition/static/src/bundle/pivot/side_panels/pivot_details_side_panel.js:0
+#, python-format
+msgid "descending"
+msgstr "ຈາກຫຼາຍຫາໜ້ອຍ"
+
+#. module: spreadsheet_edition
+#. odoo-javascript
+#: code:addons/spreadsheet_edition/static/src/assets/components/spreadsheet_selector_dialog/spreadsheet_selector_dialog.js:0
+#, python-format
+msgid "graph"
+msgstr "ກຣາຟ"
+
+#. module: spreadsheet_edition
+#. odoo-javascript
+#: code:addons/spreadsheet_edition/static/src/bundle/pivot/pivot_dialog.xml:0
+#, python-format
+msgid "has no cell missing from this sheet"
+msgstr ""
+
+#. module: spreadsheet_edition
+#. odoo-javascript
+#: code:addons/spreadsheet_edition/static/src/assets/components/spreadsheet_selector_dialog/spreadsheet_selector_dialog.js:0
+#, python-format
+msgid "link"
+msgstr "ລິ້ງ"
+
+#. module: spreadsheet_edition
+#. odoo-javascript
+#: code:addons/spreadsheet_edition/static/src/assets/components/spreadsheet_selector_dialog/spreadsheet_selector_dialog.js:0
+#, python-format
+msgid "list"
+msgstr "ລາຍການ"
+
+#. module: spreadsheet_edition
+#. odoo-javascript
+#: code:addons/spreadsheet_edition/static/src/bundle/chart/side_panels/common/config_panel.js:0
+#: code:addons/spreadsheet_edition/static/src/bundle/list/side_panels/listing_details_side_panel.js:0
+#: code:addons/spreadsheet_edition/static/src/bundle/pivot/side_panels/pivot_details_side_panel.js:0
+#, python-format
+msgid "never"
+msgstr "ບໍ່ເຄີຍ"
+
+#. module: spreadsheet_edition
+#: model:ir.model.constraint,message:spreadsheet_edition.constraint_spreadsheet_revision_parent_revision_unique
+msgid "o-spreadsheet revision refused due to concurrency"
+msgstr ""
+
+#. module: spreadsheet_edition
+#. odoo-javascript
+#: code:addons/spreadsheet_edition/static/src/assets/components/spreadsheet_selector_dialog/spreadsheet_selector_dialog.js:0
+#, python-format
+msgid "pivot"
+msgstr "pivot"
+
+#. module: spreadsheet_edition
+#. odoo-javascript
+#: code:addons/spreadsheet_edition/static/src/assets/components/spreadsheet_selector_dialog/spreadsheet_selector_dialog.xml:0
+#, python-format
+msgid "records of the list."
+msgstr "ແຖວຂໍ້ມູນຂອງລາຍການ."
+
+#. module: spreadsheet_edition
+#: model:ir.model,name:spreadsheet_edition.model_ir_websocket
+msgid "websocket message handling"
+msgstr "ການຈັດການຂໍ້ຄວາມ websocket"

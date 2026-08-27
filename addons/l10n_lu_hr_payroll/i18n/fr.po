@@ -1,0 +1,1063 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+# * l10n_lu_hr_payroll
+#
+# Weblate <noreply-mt-weblate@weblate.org>, 2025, 2026.
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 17.0+e\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-04-03 19:08+0000\n"
+"PO-Revision-Date: 2026-06-26 16:09+0000\n"
+"Last-Translator: Weblate <noreply-mt-weblate@weblate.org>\n"
+"Language-Team: French <https://translate.odoo.com/projects/odoo-17-l10n/"
+"l10n_lu_hr_payroll/fr/>\n"
+"Language: fr\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=n > 1;\n"
+"X-Generator: Weblate 2026.6.1\n"
+
+#. module: l10n_lu_hr_payroll
+#: model:ir.actions.report,print_report_name:l10n_lu_hr_payroll.action_report_payslip_lux
+msgid "'Payslip - %s' % (object.employee_id.name)"
+msgstr "'Fiche de Paie - %s' % (object.employee_id.name)"
+
+#. module: l10n_lu_hr_payroll
+#: model_terms:hr.job,job_details:l10n_lu_hr_payroll.job_developer_luxembourg
+msgid "1 Onsite Interview"
+msgstr "1 entretien sur site"
+
+#. module: l10n_lu_hr_payroll
+#: model_terms:hr.job,job_details:l10n_lu_hr_payroll.job_developer_luxembourg
+msgid "1 Phone Call"
+msgstr "1 appel téléphonique"
+
+#. module: l10n_lu_hr_payroll
+#: model_terms:hr.job,website_description:l10n_lu_hr_payroll.job_developer_luxembourg
+msgid "12 days / year, including <br>6 of your choice."
+msgstr "12 jours / an, dont <br>6 de votre choix"
+
+#. module: l10n_lu_hr_payroll
+#: model:ir.model.fields.selection,name:l10n_lu_hr_payroll.selection__hr_employee__l10n_lu_tax_classification__1a
+msgid "1a"
+msgstr "1a"
+
+#. module: l10n_lu_hr_payroll
+#: model_terms:hr.job,job_details:l10n_lu_hr_payroll.job_developer_luxembourg
+msgid "2 open days"
+msgstr "2 journées portes ouvertes"
+
+#. module: l10n_lu_hr_payroll
+#: model_terms:hr.job,job_details:l10n_lu_hr_payroll.job_developer_luxembourg
+msgid "4 Days after Interview"
+msgstr "4 jours après l'entretien"
+
+#. module: l10n_lu_hr_payroll
+#: model_terms:hr.job,website_description:l10n_lu_hr_payroll.job_developer_luxembourg
+msgid "<small><b>READ</b></small>"
+msgstr "<small><b>LIRE</b></small>"
+
+#. module: l10n_lu_hr_payroll
+#: model_terms:hr.job,job_details:l10n_lu_hr_payroll.job_developer_luxembourg
+msgid "<span class=\"text-muted small\">Days to get an Offer</span>"
+msgstr "<span class=\"text-muted small\">Jour pour recevoir une offre</span>"
+
+#. module: l10n_lu_hr_payroll
+#: model_terms:hr.job,job_details:l10n_lu_hr_payroll.job_developer_luxembourg
+msgid "<span class=\"text-muted small\">Process</span>"
+msgstr "<span class=\"text-muted small\">Procédure</span>"
+
+#. module: l10n_lu_hr_payroll
+#: model_terms:hr.job,job_details:l10n_lu_hr_payroll.job_developer_luxembourg
+msgid "<span class=\"text-muted small\">Time to Answer</span>"
+msgstr "<span class=\"text-muted small\">Temps pour répondre</span>"
+
+#. module: l10n_lu_hr_payroll
+#: model_terms:ir.ui.view,arch_db:l10n_lu_hr_payroll.hr_contract_view_form
+msgid "<span>/ month</span>"
+msgstr "<span>/ mois</span>"
+
+#. module: l10n_lu_hr_payroll
+#: model_terms:ir.ui.view,arch_db:l10n_lu_hr_payroll.hr_contract_view_form
+msgid "<span>/ worked day</span>"
+msgstr "<span>/ jour presté</span>"
+
+#. module: l10n_lu_hr_payroll
+#: model_terms:ir.ui.view,arch_db:l10n_lu_hr_payroll.hr_contract_view_form
+msgid "<span>days / year</span>"
+msgstr "<span>jours / an</span>"
+
+#. module: l10n_lu_hr_payroll
+#: model_terms:ir.ui.view,arch_db:l10n_lu_hr_payroll.report_payslip_lux
+msgid "<strong>Company Social Security Number</strong>"
+msgstr ""
+
+#. module: l10n_lu_hr_payroll
+#: model_terms:ir.ui.view,arch_db:l10n_lu_hr_payroll.report_payslip_lux
+msgid "<strong>Tax Card Number</strong>"
+msgstr ""
+
+#. module: l10n_lu_hr_payroll
+#: model_terms:hr.job,website_description:l10n_lu_hr_payroll.job_developer_luxembourg
+msgid "A full-time position <br>Attractive salary package."
+msgstr "Un poste à temps plein <br>Un package salarial attrayant."
+
+#. module: l10n_lu_hr_payroll
+#: model_terms:hr.job,website_description:l10n_lu_hr_payroll.job_developer_luxembourg
+msgid "Achieve monthly sales objectives"
+msgstr "Atteindre les objectifs mensuels de vente"
+
+#. module: l10n_lu_hr_payroll
+#: model_terms:hr.job,website_description:l10n_lu_hr_payroll.job_developer_luxembourg
+msgid "Additional languages"
+msgstr "Langues additionnelles"
+
+#. module: l10n_lu_hr_payroll
+#: model_terms:hr.job,website_description:l10n_lu_hr_payroll.job_developer_luxembourg
+msgid "Administrative Work"
+msgstr "Travail administratif"
+
+#. module: l10n_lu_hr_payroll
+#: model_terms:ir.ui.view,arch_db:l10n_lu_hr_payroll.hr_contract_view_form
+msgid "Advantages"
+msgstr "Avantages"
+
+#. module: l10n_lu_hr_payroll
+#: model_terms:res.company,invoice_terms_html:l10n_lu_hr_payroll.res_company_lu
+msgid ""
+"All our contractual relations will be governed exclusively by Luxembourg law."
+msgstr ""
+
+#. module: l10n_lu_hr_payroll
+#: model:ir.model.fields,field_description:l10n_lu_hr_payroll.field_l10n_lu_situational_unemployment_wizard__amount
+msgid "Amount"
+msgstr "Montant"
+
+#. module: l10n_lu_hr_payroll
+#: model:ir.model.fields.selection,name:l10n_lu_hr_payroll.selection__l10n_lu_monthly_declaration_wizard__month__4
+msgid "April"
+msgstr "Avril"
+
+#. module: l10n_lu_hr_payroll
+#: model_terms:hr.job,website_description:l10n_lu_hr_payroll.job_developer_luxembourg
+msgid ""
+"As an employee of our company, you will <b>collaborate with each department\n"
+"                        to create and deploy disruptive products.</b> Come "
+"work at a growing company\n"
+"                        that offers great benefits with opportunities to "
+"moving forward and learn\n"
+"                        alongside accomplished leaders. We're seeking an "
+"experienced and outstanding\n"
+"                        member of staff.\n"
+"                        <br><br>\n"
+"                        This position is both <b>creative and rigorous</b> "
+"by nature you need to think\n"
+"                        outside the box. We expect the candidate to be "
+"proactive and have a \"get it done\"\n"
+"                        spirit. To be successful, you will have solid "
+"solving problem skills."
+msgstr ""
+"En tant qu'employé de notre société, vous <b>collaborerez avec chaque "
+"départment afin de créer et déployer des produits disruptifs. </b> Venez "
+"travailler dans une société en pleine croissance \n"
+"qui vous offre de chouettes avantages, ainsi que des opportunités de "
+"progression et d'apprentissage aux côtés de leaders accomplis. \n"
+"Nous recherchons un membre de notre équipe expérimenté.\n"
+"<br><br>\n"
+"Cette position est à la fois <b>créative et rigoureuse </b>, vous devez "
+"pouvoir réfléchir hors des habitudes. Nous attendons du candidat d'être "
+"proactif et d'avoir un esprit de battant. \n"
+"Pour y parvenir, vous aurez de solides compétences en résolution de "
+"problèmes."
+
+#. module: l10n_lu_hr_payroll
+#: model:ir.model.fields.selection,name:l10n_lu_hr_payroll.selection__l10n_lu_monthly_declaration_wizard__month__8
+msgid "August"
+msgstr "Août"
+
+#. module: l10n_lu_hr_payroll
+#: model_terms:hr.job,website_description:l10n_lu_hr_payroll.job_developer_luxembourg
+msgid "Autonomy"
+msgstr "Autonomie"
+
+#. module: l10n_lu_hr_payroll
+#: model_terms:hr.job,website_description:l10n_lu_hr_payroll.job_developer_luxembourg
+msgid "Bachelor Degree or Higher"
+msgstr "Diplôme de baccalauréat ou supérieur"
+
+#. module: l10n_lu_hr_payroll
+#: model:hr.salary.rule,name:l10n_lu_hr_payroll.l10n_lu_employees_gratification
+msgid "Basic Gratification"
+msgstr "Gratification de base"
+
+#. module: l10n_lu_hr_payroll
+#: model:ir.model.fields,field_description:l10n_lu_hr_payroll.field_l10n_lu_monthly_declaration_wizard__batch_ids
+msgid "Batch"
+msgstr "Lot"
+
+#. module: l10n_lu_hr_payroll
+#: model_terms:res.company,invoice_terms_html:l10n_lu_hr_payroll.res_company_lu
+msgid ""
+"Below text serves as a suggestion and doesn’t engage Odoo S.A. "
+"responsibility."
+msgstr ""
+"Le texte ci-dessous est donné à titre informatif et n'engage pas la "
+"responsabilité d'Odoo S.A.."
+
+#. module: l10n_lu_hr_payroll
+#: model:hr.salary.rule.category,name:l10n_lu_hr_payroll.hr_salary_rule_category_bik
+msgid "Benefit in Kind"
+msgstr ""
+
+#. module: l10n_lu_hr_payroll
+#: model:hr.salary.rule,name:l10n_lu_hr_payroll.l10n_lu_employees_atn_transport
+msgid "Benefit in Kind (Transportation)"
+msgstr ""
+
+#. module: l10n_lu_hr_payroll
+#: model:hr.salary.rule,name:l10n_lu_hr_payroll.l10n_lu_employees_atn_transport_VAT
+#: model:hr.salary.rule,name:l10n_lu_hr_payroll.l10n_lu_employees_atn_transport_VAT_2
+msgid "Benefit in Kind (Transportation) VAT"
+msgstr ""
+
+#. module: l10n_lu_hr_payroll
+#: model:hr.salary.rule,name:l10n_lu_hr_payroll.l10n_lu_employees_atn_transport_without_VAT
+#: model:hr.salary.rule,name:l10n_lu_hr_payroll.l10n_lu_employees_atn_transport_without_VAT_2
+msgid "Benefit in Kind (Transportation) without VAT"
+msgstr ""
+
+#. module: l10n_lu_hr_payroll
+#: model:hr.salary.rule,name:l10n_lu_hr_payroll.l10n_lu_employees_benefit_various_2
+msgid "Benefit in Kind (Various)"
+msgstr ""
+
+#. module: l10n_lu_hr_payroll
+#: model:hr.salary.rule,name:l10n_lu_hr_payroll.l10n_lu_employees_employee_ci_co2
+msgid "CI-CO2"
+msgstr ""
+
+#. module: l10n_lu_hr_payroll
+#: model:hr.salary.rule,name:l10n_lu_hr_payroll.l10n_lu_employees_employee_cis
+msgid "CIS"
+msgstr "CIS"
+
+#. module: l10n_lu_hr_payroll
+#: model:hr.salary.rule,name:l10n_lu_hr_payroll.l10n_lu_employees_cissm
+msgid "CISSM"
+msgstr ""
+
+#. module: l10n_lu_hr_payroll
+#: model:ir.model.fields,field_description:l10n_lu_hr_payroll.field_l10n_lu_monthly_declaration_wizard__can_generate
+msgid "Can Generate"
+msgstr "Peut générer"
+
+#. module: l10n_lu_hr_payroll
+#: model:hr.salary.rule,name:l10n_lu_hr_payroll.l10n_lu_employees_cash_sickness_fund
+msgid "Cash Sickness Fund"
+msgstr ""
+
+#. module: l10n_lu_hr_payroll
+#: model_terms:res.company,invoice_terms_html:l10n_lu_hr_payroll.res_company_lu
+msgid ""
+"Certain countries apply withholding at source on the amount of invoices, in "
+"accordance with their internal legislation. Any withholding at source will "
+"be paid by the client to the tax authorities. Under no circumstances can My "
+"Lux Company become involved in costs related to a country's legislation. The "
+"amount of the invoice will therefore be due to My Lux Company in its "
+"entirety and does not include any costs relating to the legislation of the "
+"country in which the client is located."
+msgstr ""
+
+#. module: l10n_lu_hr_payroll
+#: model_terms:ir.ui.view,arch_db:l10n_lu_hr_payroll.l10n_lu_monthly_declaration_view_form
+msgid "Close"
+msgstr "Fermer"
+
+#. module: l10n_lu_hr_payroll
+#: model:ir.model,name:l10n_lu_hr_payroll.model_res_company
+msgid "Companies"
+msgstr "Sociétés"
+
+#. module: l10n_lu_hr_payroll
+#: model:ir.model.fields,field_description:l10n_lu_hr_payroll.field_l10n_lu_monthly_declaration_wizard__company_id
+#: model:ir.model.fields,field_description:l10n_lu_hr_payroll.field_l10n_lu_situational_unemployment_wizard__company_id
+msgid "Company"
+msgstr "Société"
+
+#. module: l10n_lu_hr_payroll
+#: model_terms:ir.ui.view,arch_db:l10n_lu_hr_payroll.res_config_settings_view_form
+msgid "Company Information"
+msgstr "Informations de la société"
+
+#. module: l10n_lu_hr_payroll
+#: model:ir.model,name:l10n_lu_hr_payroll.model_res_config_settings
+msgid "Config Settings"
+msgstr "Paramètres de configuration"
+
+#. module: l10n_lu_hr_payroll
+#: model:hr.salary.rule,name:l10n_lu_hr_payroll.l10n_lu_employees_cotisation_base
+#: model:hr.salary.rule.category,name:l10n_lu_hr_payroll.hr_salary_rule_category_cotisation_base
+msgid "Cotisation Base"
+msgstr ""
+
+#. module: l10n_lu_hr_payroll
+#: model_terms:hr.job,website_description:l10n_lu_hr_payroll.job_developer_luxembourg
+msgid "Create content that will help our users on a daily basis"
+msgstr ""
+"Création de contenu qui aidera nos utilisateurs sur une base journalière"
+
+#. module: l10n_lu_hr_payroll
+#: model:ir.model.fields,field_description:l10n_lu_hr_payroll.field_l10n_lu_monthly_declaration_wizard__create_uid
+#: model:ir.model.fields,field_description:l10n_lu_hr_payroll.field_l10n_lu_situational_unemployment_wizard__create_uid
+msgid "Created by"
+msgstr "Créé par"
+
+#. module: l10n_lu_hr_payroll
+#: model:ir.model.fields,field_description:l10n_lu_hr_payroll.field_l10n_lu_monthly_declaration_wizard__create_date
+#: model:ir.model.fields,field_description:l10n_lu_hr_payroll.field_l10n_lu_situational_unemployment_wizard__create_date
+msgid "Created on"
+msgstr "Créé le"
+
+#. module: l10n_lu_hr_payroll
+#: model:ir.model.fields,field_description:l10n_lu_hr_payroll.field_l10n_lu_situational_unemployment_wizard__currency_id
+msgid "Currency"
+msgstr "Devise"
+
+#. module: l10n_lu_hr_payroll
+#: model_terms:hr.job,website_description:l10n_lu_hr_payroll.job_developer_luxembourg
+msgid "Customer Relationship"
+msgstr "Relation client"
+
+#. module: l10n_lu_hr_payroll
+#: model:ir.model.fields,field_description:l10n_lu_hr_payroll.field_l10n_lu_monthly_declaration_wizard__date_end
+msgid "Date End"
+msgstr "Date de fin"
+
+#. module: l10n_lu_hr_payroll
+#: model:ir.model.fields,field_description:l10n_lu_hr_payroll.field_l10n_lu_monthly_declaration_wizard__date_start
+msgid "Date Start"
+msgstr "Date de début"
+
+#. module: l10n_lu_hr_payroll
+#: model:ir.model.fields.selection,name:l10n_lu_hr_payroll.selection__l10n_lu_monthly_declaration_wizard__month__12
+msgid "December"
+msgstr "Décembre"
+
+#. module: l10n_lu_hr_payroll
+#: model:ir.model.fields,field_description:l10n_lu_hr_payroll.field_l10n_lu_monthly_declaration_wizard__decsal_file
+msgid "Decsal File"
+msgstr "Fichier DECSAL"
+
+#. module: l10n_lu_hr_payroll
+#: model:ir.model.fields,field_description:l10n_lu_hr_payroll.field_l10n_lu_monthly_declaration_wizard__decsal_name
+msgid "Decsal Name"
+msgstr "Nom DECSAL"
+
+#. module: l10n_lu_hr_payroll
+#: model:hr.salary.rule,name:l10n_lu_hr_payroll.l10n_lu_employees_dependency_insurance
+msgid "Dependency Insurance"
+msgstr ""
+
+#. module: l10n_lu_hr_payroll
+#: model_terms:hr.job,website_description:l10n_lu_hr_payroll.job_developer_luxembourg
+msgid "Discover our products."
+msgstr "Découvrez nos produits."
+
+#. module: l10n_lu_hr_payroll
+#: model:ir.model.fields,field_description:l10n_lu_hr_payroll.field_l10n_lu_monthly_declaration_wizard__display_name
+#: model:ir.model.fields,field_description:l10n_lu_hr_payroll.field_l10n_lu_situational_unemployment_wizard__display_name
+msgid "Display Name"
+msgstr "Nom affiché"
+
+#. module: l10n_lu_hr_payroll
+#: model_terms:hr.job,website_description:l10n_lu_hr_payroll.job_developer_luxembourg
+msgid ""
+"Each employee has a chance to see the impact of his work.\n"
+"                You can make a real contribution to the success of the "
+"company.\n"
+"                <br>\n"
+"                Several activities are often organized all over the year, "
+"such as weekly\n"
+"                sports sessions, team building events, monthly drink, and "
+"much more"
+msgstr ""
+
+#. module: l10n_lu_hr_payroll
+#: model_terms:hr.job,website_description:l10n_lu_hr_payroll.job_developer_luxembourg
+msgid "Eat &amp; Drink"
+msgstr "Manger & boire"
+
+#. module: l10n_lu_hr_payroll
+#: model:ir.model,name:l10n_lu_hr_payroll.model_hr_employee
+#: model:ir.model.fields,field_description:l10n_lu_hr_payroll.field_l10n_lu_situational_unemployment_wizard__employee_id
+msgid "Employee"
+msgstr "Employé"
+
+#. module: l10n_lu_hr_payroll
+#: model:ir.model,name:l10n_lu_hr_payroll.model_hr_contract
+msgid "Employee Contract"
+msgstr "Contrat de l'employé"
+
+#. module: l10n_lu_hr_payroll
+#: model:ir.model,name:l10n_lu_hr_payroll.model_l10n_lu_situational_unemployment_wizard
+msgid "Employee Situational Unemployment"
+msgstr "Chômage conjoncturel de l'employé"
+
+#. module: l10n_lu_hr_payroll
+#: model:hr.salary.rule,name:l10n_lu_hr_payroll.l10n_lu_employees_employee_tax_credit
+msgid "Employee Tax Credit"
+msgstr "Crédit d'Impôt Salarié"
+
+#. module: l10n_lu_hr_payroll
+#. odoo-python
+#: code:addons/l10n_lu_hr_payroll/models/hr_payslip.py:0
+#, python-format
+msgid "Employees without a defined tax classification"
+msgstr ""
+
+#. module: l10n_lu_hr_payroll
+#: model_terms:hr.job,website_description:l10n_lu_hr_payroll.job_developer_luxembourg
+msgid "Expand your knowledge of various business industries"
+msgstr "Élargissez vos connaissances de divers secteurs d'activité"
+
+#. module: l10n_lu_hr_payroll
+#: model_terms:hr.job,website_description:l10n_lu_hr_payroll.job_developer_luxembourg
+msgid "Experience in writing online content"
+msgstr "Expérience en rédaction de contenu en ligne."
+
+#. module: l10n_lu_hr_payroll
+#: model:hr.job,name:l10n_lu_hr_payroll.job_developer_luxembourg
+msgid "Experienced Developer LU"
+msgstr "Développeur Expérimenté LU"
+
+#. module: l10n_lu_hr_payroll
+#: model_terms:ir.ui.view,arch_db:l10n_lu_hr_payroll.hr_contract_view_form
+msgid "Extra Time Off"
+msgstr "Jours de congé supplémentaires"
+
+#. module: l10n_lu_hr_payroll
+#: model:ir.model.fields,field_description:l10n_lu_hr_payroll.field_hr_contract__l10n_lu_extra_holidays
+msgid "Extra Time Off (LU)"
+msgstr ""
+
+#. module: l10n_lu_hr_payroll
+#: model:ir.model.fields.selection,name:l10n_lu_hr_payroll.selection__l10n_lu_monthly_declaration_wizard__month__2
+msgid "February"
+msgstr "Février"
+
+#. module: l10n_lu_hr_payroll
+#: model_terms:hr.job,website_description:l10n_lu_hr_payroll.job_developer_luxembourg
+msgid "Fruit, coffee and <br>snacks provided."
+msgstr "Fruits, café et <br>snacks sont fournis."
+
+#. module: l10n_lu_hr_payroll
+#: model_terms:ir.ui.view,arch_db:l10n_lu_hr_payroll.l10n_lu_monthly_declaration_view_form
+msgid "Generate Declaration"
+msgstr "Générer la déclaration"
+
+#. module: l10n_lu_hr_payroll
+#: model_terms:hr.job,website_description:l10n_lu_hr_payroll.job_developer_luxembourg
+msgid "Google Adwords experience"
+msgstr "Expérience avec Google Adwords"
+
+#. module: l10n_lu_hr_payroll
+#: model:hr.salary.rule.category,name:l10n_lu_hr_payroll.hr_salary_rule_category_gratification
+msgid "Gratification"
+msgstr "Gratification"
+
+#. module: l10n_lu_hr_payroll
+#: model:hr.salary.rule,name:l10n_lu_hr_payroll.l10n_lu_employees_gratification_health_fund
+msgid "Gratification Health Fund"
+msgstr ""
+
+#. module: l10n_lu_hr_payroll
+#: model:hr.salary.rule,name:l10n_lu_hr_payroll.l10n_lu_employees_gratification_retirement_fund
+msgid "Gratification Retirement Fund"
+msgstr ""
+
+#. module: l10n_lu_hr_payroll
+#: model_terms:hr.job,website_description:l10n_lu_hr_payroll.job_developer_luxembourg
+msgid "Great team of smart people, in a friendly and open culture"
+msgstr ""
+"Belle équipe de personnes intelligentes, dans une ambiance chaleureuse et "
+"ouverte."
+
+#. module: l10n_lu_hr_payroll
+#: model:hr.salary.rule,name:l10n_lu_hr_payroll.l10n_lu_employees_gratification_gross_gratification
+msgid "Gross Gratification"
+msgstr "Gratification brute"
+
+#. module: l10n_lu_hr_payroll
+#: model:hr.salary.rule,name:l10n_lu_hr_payroll.l10n_lu_employees_health_fund
+msgid "Health Fund"
+msgstr ""
+
+#. module: l10n_lu_hr_payroll
+#: model_terms:hr.job,website_description:l10n_lu_hr_payroll.job_developer_luxembourg
+msgid "Highly creative and autonomous"
+msgstr "Hautement créatif et autonome"
+
+#. module: l10n_lu_hr_payroll
+#: model:ir.model.fields,field_description:l10n_lu_hr_payroll.field_l10n_lu_situational_unemployment_wizard__hours
+msgid "Hours"
+msgstr "Heures"
+
+#. module: l10n_lu_hr_payroll
+#: model:ir.model.fields,field_description:l10n_lu_hr_payroll.field_l10n_lu_monthly_declaration_wizard__id
+#: model:ir.model.fields,field_description:l10n_lu_hr_payroll.field_l10n_lu_situational_unemployment_wizard__id
+msgid "ID"
+msgstr "ID"
+
+#. module: l10n_lu_hr_payroll
+#: model_terms:res.company,invoice_terms_html:l10n_lu_hr_payroll.res_company_lu
+msgid ""
+"If a payment is still outstanding more than sixty (60) days after the due "
+"payment date, My Lux Company reserves the right to call on the services of a "
+"debt recovery company. All legal expenses will be payable by the client."
+msgstr ""
+
+#. module: l10n_lu_hr_payroll
+#: model_terms:res.company,invoice_terms_html:l10n_lu_hr_payroll.res_company_lu
+msgid ""
+"In order for it to be admissible, My Lux Company must be notified of any "
+"claim by means of a letter sent by recorded delivery to its registered "
+"office within 8 days of the delivery of the goods or the provision of the "
+"services."
+msgstr ""
+
+#. module: l10n_lu_hr_payroll
+#: model:hr.salary.rule.category,name:l10n_lu_hr_payroll.hr_salary_rule_category_insurance
+msgid "Insurance"
+msgstr "Assurance"
+
+#. module: l10n_lu_hr_payroll
+#: model:ir.model.fields.selection,name:l10n_lu_hr_payroll.selection__l10n_lu_monthly_declaration_wizard__month__1
+msgid "January"
+msgstr "Janvier"
+
+#. module: l10n_lu_hr_payroll
+#: model:ir.model.fields.selection,name:l10n_lu_hr_payroll.selection__l10n_lu_monthly_declaration_wizard__month__7
+msgid "July"
+msgstr "Juillet"
+
+#. module: l10n_lu_hr_payroll
+#: model:ir.model.fields.selection,name:l10n_lu_hr_payroll.selection__l10n_lu_monthly_declaration_wizard__month__6
+msgid "June"
+msgstr "Juin"
+
+#. module: l10n_lu_hr_payroll
+#: model:ir.model.fields,field_description:l10n_lu_hr_payroll.field_l10n_lu_monthly_declaration_wizard__write_uid
+#: model:ir.model.fields,field_description:l10n_lu_hr_payroll.field_l10n_lu_situational_unemployment_wizard__write_uid
+msgid "Last Updated by"
+msgstr "Dernière mise à jour par"
+
+#. module: l10n_lu_hr_payroll
+#: model:ir.model.fields,field_description:l10n_lu_hr_payroll.field_l10n_lu_monthly_declaration_wizard__write_date
+#: model:ir.model.fields,field_description:l10n_lu_hr_payroll.field_l10n_lu_situational_unemployment_wizard__write_date
+msgid "Last Updated on"
+msgstr "Dernière mise à jour le"
+
+#. module: l10n_lu_hr_payroll
+#: model_terms:hr.job,website_description:l10n_lu_hr_payroll.job_developer_luxembourg
+msgid "Lead the entire sales cycle"
+msgstr "Diriger l'ensemble du cycle de vente"
+
+#. module: l10n_lu_hr_payroll
+#: model:ir.actions.report,name:l10n_lu_hr_payroll.action_report_payslip_lux
+msgid "Lux: Payslip"
+msgstr "Lux: Fiche de Paie"
+
+#. module: l10n_lu_hr_payroll
+#: model:ir.ui.menu,name:l10n_lu_hr_payroll.menu_l10n_lu_hr_payroll_report
+msgid "Luxembourg"
+msgstr "Luxembourg"
+
+#. module: l10n_lu_hr_payroll
+#: model_terms:ir.ui.view,arch_db:l10n_lu_hr_payroll.res_config_settings_view_form
+msgid "Luxembourg Localization"
+msgstr "Localisation Luxembourg"
+
+#. module: l10n_lu_hr_payroll
+#: model:ir.model,name:l10n_lu_hr_payroll.model_l10n_lu_monthly_declaration_wizard
+msgid "Luxembourg: Monthly Declaration"
+msgstr "Luxembourg: déclaration mensuelle"
+
+#. module: l10n_lu_hr_payroll
+#: model:ir.model.fields.selection,name:l10n_lu_hr_payroll.selection__l10n_lu_monthly_declaration_wizard__month__3
+msgid "March"
+msgstr "Mars"
+
+#. module: l10n_lu_hr_payroll
+#: model_terms:hr.job,website_description:l10n_lu_hr_payroll.job_developer_luxembourg
+msgid "Master demos of our software"
+msgstr "Maîtriser les démonstrations de nos produits"
+
+#. module: l10n_lu_hr_payroll
+#: model:ir.model.fields.selection,name:l10n_lu_hr_payroll.selection__l10n_lu_monthly_declaration_wizard__month__5
+msgid "May"
+msgstr "Mai"
+
+#. module: l10n_lu_hr_payroll
+#: model:ir.model.fields,field_description:l10n_lu_hr_payroll.field_hr_contract__l10n_lu_meal_voucher_employer_cost
+msgid "Meal Voucher Employer Cost"
+msgstr ""
+
+#. module: l10n_lu_hr_payroll
+#: model:hr.salary.rule,name:l10n_lu_hr_payroll.l10n_lu_employees_gross_meal_vouchers
+#: model:hr.salary.rule,name:l10n_lu_hr_payroll.l10n_lu_employees_gross_meal_vouchers_2
+#: model_terms:ir.ui.view,arch_db:l10n_lu_hr_payroll.hr_contract_view_form
+msgid "Meal Vouchers"
+msgstr "Chèques repas"
+
+#. module: l10n_lu_hr_payroll
+#: model:ir.model.fields,field_description:l10n_lu_hr_payroll.field_hr_contract__l10n_lu_meal_voucher_amount
+msgid "Meal Vouchers (LU)"
+msgstr ""
+
+#. module: l10n_lu_hr_payroll
+#. odoo-python
+#: code:addons/l10n_lu_hr_payroll/wizard/l10n_lu_monthly_declaration_wizard.py:0
+#, python-format
+msgid "Missing amounts for situational unemployments"
+msgstr "Montant manquant pour le chômage conjoncturel"
+
+#. module: l10n_lu_hr_payroll
+#. odoo-python
+#: code:addons/l10n_lu_hr_payroll/wizard/l10n_lu_monthly_declaration_wizard.py:0
+#, python-format
+msgid "Missing company's social security or SECUline numbers"
+msgstr "Matricule de l'employeur ou numéro SECUline manquant"
+
+#. module: l10n_lu_hr_payroll
+#: model:ir.model.fields,field_description:l10n_lu_hr_payroll.field_l10n_lu_monthly_declaration_wizard__month
+msgid "Month"
+msgstr "Mois"
+
+#. module: l10n_lu_hr_payroll
+#: model:ir.model.fields,field_description:l10n_lu_hr_payroll.field_l10n_lu_situational_unemployment_wizard__monthly_declaration_id
+#: model_terms:ir.ui.view,arch_db:l10n_lu_hr_payroll.l10n_lu_monthly_declaration_view_form
+msgid "Monthly Declaration"
+msgstr "Déclaration mensuelle"
+
+#. module: l10n_lu_hr_payroll
+#. odoo-python
+#: code:addons/l10n_lu_hr_payroll/wizard/l10n_lu_monthly_declaration_wizard.py:0
+#: model:ir.actions.act_window,name:l10n_lu_hr_payroll.l10n_lu_hr_payroll_monthly_declaration_action
+#: model:ir.ui.menu,name:l10n_lu_hr_payroll.menu_l10n_lu_hr_payroll_monthly_declaration
+#, python-format
+msgid "Monthly Salary Declaration (DECSAL)"
+msgstr "Déclaration de salaire mensuelle (DECSAL)"
+
+#. module: l10n_lu_hr_payroll
+#: model_terms:hr.job,website_description:l10n_lu_hr_payroll.job_developer_luxembourg
+msgid "Must Have"
+msgstr "Compétences nécéssaires"
+
+#. module: l10n_lu_hr_payroll
+#: model_terms:res.company,invoice_terms_html:l10n_lu_hr_payroll.res_company_lu
+msgid ""
+"My Lux Company undertakes to do its best to supply performant services in "
+"due time in accordance with the agreed timeframes. However, none of its "
+"obligations can be considered as being an obligation to achieve results. My "
+"Lux Company cannot under any circumstances, be required by the client to "
+"appear as a third party in the context of any claim for damages filed "
+"against the client by an end consumer."
+msgstr ""
+
+#. module: l10n_lu_hr_payroll
+#: model_terms:hr.job,website_description:l10n_lu_hr_payroll.job_developer_luxembourg
+msgid "Negotiate and contract"
+msgstr "Négocier et conclure"
+
+#. module: l10n_lu_hr_payroll
+#: model:hr.salary.rule.category,name:l10n_lu_hr_payroll.hr_salary_rule_category_ded_net
+msgid "Net Deductions"
+msgstr ""
+
+#. module: l10n_lu_hr_payroll
+#: model:hr.salary.rule,name:l10n_lu_hr_payroll.l10n_lu_employees_gratification_net_gratification
+#: model:hr.salary.rule.category,name:l10n_lu_hr_payroll.hr_salary_rule_category_net_gratification
+msgid "Net Gratification"
+msgstr "Gratification nette"
+
+#. module: l10n_lu_hr_payroll
+#: model:hr.salary.rule,name:l10n_lu_hr_payroll.l10n_lu_employees_net_to_pay
+#: model:hr.salary.rule.category,name:l10n_lu_hr_payroll.hr_salary_rule_category_net_to_pay
+msgid "Net To Pay"
+msgstr "Net à payer"
+
+#. module: l10n_lu_hr_payroll
+#: model_terms:hr.job,website_description:l10n_lu_hr_payroll.job_developer_luxembourg
+msgid "Nice to have"
+msgstr "Agréable d'avoir"
+
+#. module: l10n_lu_hr_payroll
+#: model_terms:hr.job,website_description:l10n_lu_hr_payroll.job_developer_luxembourg
+msgid "No dumb managers, no stupid tools to use, no rigid working hours"
+msgstr ""
+"Pas de managers simplets, d'outils idiots à utiliser, d'heures de travail "
+"rigides"
+
+#. module: l10n_lu_hr_payroll
+#: model_terms:hr.job,website_description:l10n_lu_hr_payroll.job_developer_luxembourg
+msgid ""
+"No waste of time in enterprise processes, real responsibilities and autonomy"
+msgstr ""
+"Pas de perte de temps dans des processus internes, véritables responsabilité "
+"et autonomie"
+
+#. module: l10n_lu_hr_payroll
+#: model:ir.model.fields.selection,name:l10n_lu_hr_payroll.selection__l10n_lu_monthly_declaration_wizard__month__11
+msgid "November"
+msgstr "Novembre"
+
+#. module: l10n_lu_hr_payroll
+#: model:ir.model.fields.selection,name:l10n_lu_hr_payroll.selection__l10n_lu_monthly_declaration_wizard__month__10
+msgid "October"
+msgstr "Octobre"
+
+#. module: l10n_lu_hr_payroll
+#: model_terms:ir.ui.view,arch_db:l10n_lu_hr_payroll.res_config_settings_view_form
+msgid "Offical Company Information"
+msgstr "Informations officielles sur l'entreprise"
+
+#. module: l10n_lu_hr_payroll
+#: model:ir.model.fields,field_description:l10n_lu_hr_payroll.field_res_company__l10n_lu_official_social_security
+#: model:ir.model.fields,field_description:l10n_lu_hr_payroll.field_res_config_settings__l10n_lu_official_social_security
+msgid "Official Social Security"
+msgstr "Sécurité sociale officielle"
+
+#. module: l10n_lu_hr_payroll
+#: model_terms:hr.job,website_description:l10n_lu_hr_payroll.job_developer_luxembourg
+msgid "Our Product"
+msgstr "Notre produit"
+
+#. module: l10n_lu_hr_payroll
+#: model_terms:res.company,invoice_terms_html:l10n_lu_hr_payroll.res_company_lu
+msgid ""
+"Our invoices are payable within 21 working days, unless another payment "
+"timeframe is indicated on either the invoice or the order. In the event of "
+"non-payment by the due date, My Lux Company reserves the right to request a "
+"fixed interest payment amounting to 10% of the sum remaining due. My Lux "
+"Company will be authorized to suspend any provision of services without "
+"prior warning in the event of late payment."
+msgstr ""
+
+#. module: l10n_lu_hr_payroll
+#: model_terms:hr.job,website_description:l10n_lu_hr_payroll.job_developer_luxembourg
+msgid "Passion for software products"
+msgstr "Passion pour les produits logiciels"
+
+#. module: l10n_lu_hr_payroll
+#: model:ir.model,name:l10n_lu_hr_payroll.model_hr_payslip
+msgid "Pay Slip"
+msgstr "Fiche de Paie"
+
+#. module: l10n_lu_hr_payroll
+#: model:ir.model.fields,field_description:l10n_lu_hr_payroll.field_l10n_lu_situational_unemployment_wizard__payslip_id
+msgid "Payslip"
+msgstr "Fiche de Paie"
+
+#. module: l10n_lu_hr_payroll
+#: model_terms:hr.job,website_description:l10n_lu_hr_payroll.job_developer_luxembourg
+msgid "Perfect written English"
+msgstr "Anglais écrit parfait"
+
+#. module: l10n_lu_hr_payroll
+#: model_terms:hr.job,description:l10n_lu_hr_payroll.job_developer_luxembourg
+msgid ""
+"Perform assigned responsibilities, collaborate with team members, and adhere "
+"to company policies.\n"
+"        Strong communication, problem-solving, and work ethic required.\n"
+"        Adaptability, initiative, and willingness to learn are valued."
+msgstr ""
+"Assumez les responsabilités assignées, collaborez avec les membres de "
+"l'équipe et respectez les politiques de l'entreprise.\n"
+"De solides compétences en communication, en résolution de problèmes et une "
+"bonne éthique de travail sont requises.\n"
+"La capacité d'adaptation, l'esprit d'initiative et la volonté d'apprendre "
+"sont appréciés."
+
+#. module: l10n_lu_hr_payroll
+#: model_terms:ir.ui.view,arch_db:l10n_lu_hr_payroll.l10n_lu_monthly_declaration_view_form
+msgid "Period"
+msgstr "Période"
+
+#. module: l10n_lu_hr_payroll
+#: model_terms:hr.job,website_description:l10n_lu_hr_payroll.job_developer_luxembourg
+msgid "Perks"
+msgstr "Avantages"
+
+#. module: l10n_lu_hr_payroll
+#: model_terms:hr.job,website_description:l10n_lu_hr_payroll.job_developer_luxembourg
+msgid "Personal Evolution"
+msgstr "Évolution personnelle"
+
+#. module: l10n_lu_hr_payroll
+#: model_terms:hr.job,website_description:l10n_lu_hr_payroll.job_developer_luxembourg
+msgid "Play any sport with colleagues, <br>the bill is covered."
+msgstr "Faites du sport avec vos collègues, <br>la facture sera couverte."
+
+#. module: l10n_lu_hr_payroll
+#: model_terms:hr.job,website_description:l10n_lu_hr_payroll.job_developer_luxembourg
+msgid "Qualify the customer needs"
+msgstr "Qualifez les besoins du client"
+
+#. module: l10n_lu_hr_payroll
+#: model:hr.department,name:l10n_lu_hr_payroll.hr_department_rdlu
+msgid "RD LU"
+msgstr "RD LU"
+
+#. module: l10n_lu_hr_payroll
+#: model_terms:hr.job,website_description:l10n_lu_hr_payroll.job_developer_luxembourg
+msgid "Real responsibilities and challenges in a fast evolving company"
+msgstr ""
+"De vraies responsabilités et de vrais défis dans une société évoluant "
+"rapidement"
+
+#. module: l10n_lu_hr_payroll
+#: model_terms:hr.job,website_description:l10n_lu_hr_payroll.job_developer_luxembourg
+msgid "Responsibilities"
+msgstr "Responsabilités"
+
+#. module: l10n_lu_hr_payroll
+#: model:hr.salary.rule,name:l10n_lu_hr_payroll.l10n_lu_employees_retirement_fund
+msgid "Retirement Fund"
+msgstr ""
+
+#. module: l10n_lu_hr_payroll
+#: model:ir.model.fields,field_description:l10n_lu_hr_payroll.field_res_company__l10n_lu_seculine
+#: model:ir.model.fields,field_description:l10n_lu_hr_payroll.field_res_config_settings__l10n_lu_seculine
+msgid "SECUline number"
+msgstr ""
+
+#. module: l10n_lu_hr_payroll
+#: model_terms:res.company,invoice_terms_html:l10n_lu_hr_payroll.res_company_lu
+msgid "STANDARD TERMS AND CONDITIONS OF SALE"
+msgstr "CONDITIONS GENERALES DE VENTE"
+
+#. module: l10n_lu_hr_payroll
+#: model:ir.model.fields.selection,name:l10n_lu_hr_payroll.selection__l10n_lu_monthly_declaration_wizard__month__9
+msgid "September"
+msgstr "Septembre"
+
+#. module: l10n_lu_hr_payroll
+#: model:hr.work.entry.type,name:l10n_lu_hr_payroll.work_entry_type_situational_unemployment
+#: model:ir.model.fields,field_description:l10n_lu_hr_payroll.field_l10n_lu_monthly_declaration_wizard__situational_unemployment_ids
+#: model_terms:ir.ui.view,arch_db:l10n_lu_hr_payroll.l10n_lu_monthly_declaration_view_form
+msgid "Situational Unemployment"
+msgstr "Chômage conjoncturel"
+
+#. module: l10n_lu_hr_payroll
+#: model_terms:hr.job,website_description:l10n_lu_hr_payroll.job_developer_luxembourg
+msgid "Sport Activity"
+msgstr "Activité sportive"
+
+#. module: l10n_lu_hr_payroll
+#: model_terms:hr.job,website_description:l10n_lu_hr_payroll.job_developer_luxembourg
+msgid "Strong analytical skills"
+msgstr "Compétences analytiques avancées"
+
+#. module: l10n_lu_hr_payroll
+#: model:ir.model.fields,field_description:l10n_lu_hr_payroll.field_hr_employee__l10n_lu_tax_card_number
+msgid "Tax Card Number"
+msgstr ""
+
+#. module: l10n_lu_hr_payroll
+#: model:ir.model.fields,field_description:l10n_lu_hr_payroll.field_hr_employee__l10n_lu_tax_classification
+msgid "Tax Classification"
+msgstr "Classe d'impôt"
+
+#. module: l10n_lu_hr_payroll
+#: model:hr.salary.rule.category,name:l10n_lu_hr_payroll.hr_salary_rule_category_tax_credit
+msgid "Tax Credit"
+msgstr ""
+
+#. module: l10n_lu_hr_payroll
+#: model:hr.salary.rule,name:l10n_lu_hr_payroll.l10n_lu_employees_gratification_tax_on_non_period_revenue
+msgid "Tax On Non Period Revenue"
+msgstr ""
+
+#. module: l10n_lu_hr_payroll
+#: model:hr.salary.rule,name:l10n_lu_hr_payroll.l10n_lu_employees_taxable_amount
+#: model:hr.salary.rule.category,name:l10n_lu_hr_payroll.hr_salary_rule_category_taxable_amount
+msgid "Taxable Salary"
+msgstr "Salaire imposable"
+
+#. module: l10n_lu_hr_payroll
+#: model:hr.salary.rule.category,name:l10n_lu_hr_payroll.hr_salary_rule_category_taxes
+msgid "Taxes"
+msgstr "Taxes"
+
+#. module: l10n_lu_hr_payroll
+#: model_terms:hr.job,website_description:l10n_lu_hr_payroll.job_developer_luxembourg
+msgid "Technical Expertise"
+msgstr "Expertise technique"
+
+#. module: l10n_lu_hr_payroll
+#: model:hr.salary.rule,name:l10n_lu_hr_payroll.l10n_lu_employees_gross_tmp
+msgid "Temporary Gross"
+msgstr ""
+
+#. module: l10n_lu_hr_payroll
+#: model_terms:res.company,sign_terms:l10n_lu_hr_payroll.res_company_lu
+#: model_terms:res.company,sign_terms_html:l10n_lu_hr_payroll.res_company_lu
+msgid "Terms &amp; Conditions"
+msgstr "Conditions générales détaillées"
+
+#. module: l10n_lu_hr_payroll
+#: model:ir.model.fields,help:l10n_lu_hr_payroll.field_hr_contract__l10n_lu_atn_transport
+msgid "The amount includes VAT"
+msgstr ""
+
+#. module: l10n_lu_hr_payroll
+#: model_terms:res.company,invoice_terms_html:l10n_lu_hr_payroll.res_company_lu
+msgid ""
+"The client explicitly waives its own standard terms and conditions, even if "
+"these were drawn up after these standard terms and conditions of sale. In "
+"order to be valid, any derogation must be expressly agreed to in advance in "
+"writing."
+msgstr ""
+"Le client renonce expressément à ses propres conditions générales de vente, "
+"même si celles-ci ont été établies postérieurement aux présentes conditions "
+"générales de vente. Pour être valable, toute dérogation doit être "
+"expressément convenue au préalable par écrit."
+
+#. module: l10n_lu_hr_payroll
+#. odoo-python
+#: code:addons/l10n_lu_hr_payroll/wizard/l10n_lu_monthly_declaration_wizard.py:0
+#, python-format
+msgid ""
+"The following employees are missing an identification number:\n"
+" - %s"
+msgstr ""
+"Le numéro d'identification est manquant sur les employés suivants:\n"
+" - %s"
+
+#. module: l10n_lu_hr_payroll
+#: model_terms:ir.ui.view,arch_db:l10n_lu_hr_payroll.l10n_lu_monthly_declaration_view_form
+msgid "There are no payslip batches for the selected period."
+msgstr "Il n'y a pas de lot de fiches de paie pour la période sélectionnée"
+
+#. module: l10n_lu_hr_payroll
+#: model:hr.salary.rule,name:l10n_lu_hr_payroll.l10n_lu_employees_total_allowance
+msgid "Total Allowances"
+msgstr ""
+
+#. module: l10n_lu_hr_payroll
+#: model:hr.salary.rule.category,name:l10n_lu_hr_payroll.hr_salary_rule_category_total_deduction
+msgid "Total Deduction"
+msgstr ""
+
+#. module: l10n_lu_hr_payroll
+#: model:hr.salary.rule,name:l10n_lu_hr_payroll.l10n_lu_employees_total_deduction
+msgid "Total Deductions"
+msgstr ""
+
+#. module: l10n_lu_hr_payroll
+#: model:hr.salary.rule,name:l10n_lu_hr_payroll.l10n_lu_employees_total_tax_credit
+#: model:hr.salary.rule.category,name:l10n_lu_hr_payroll.hr_salary_rule_category_total_tax_credit
+msgid "Total Tax Credit"
+msgstr ""
+
+#. module: l10n_lu_hr_payroll
+#: model_terms:hr.job,website_description:l10n_lu_hr_payroll.job_developer_luxembourg
+msgid "Trainings"
+msgstr "Formations"
+
+#. module: l10n_lu_hr_payroll
+#: model:hr.salary.rule,name:l10n_lu_hr_payroll.l10n_lu_employees_transport_fees
+msgid "Transport Fees"
+msgstr ""
+
+#. module: l10n_lu_hr_payroll
+#: model:ir.model.fields,field_description:l10n_lu_hr_payroll.field_hr_employee__l10n_lu_travel_expense
+msgid "Travel Expense Monthly Compensation"
+msgstr ""
+
+#. module: l10n_lu_hr_payroll
+#: model_terms:ir.ui.view,arch_db:l10n_lu_hr_payroll.hr_employee_view_form
+msgid "Travel Expense Unit more information"
+msgstr ""
+
+#. module: l10n_lu_hr_payroll
+#: model:hr.leave.type,name:l10n_lu_hr_payroll.holiday_status_situational_unemployment
+msgid "Unemployment (Weather / Situational)"
+msgstr "Chômage (météo / circonstanciel)"
+
+#. module: l10n_lu_hr_payroll
+#: model_terms:hr.job,website_description:l10n_lu_hr_payroll.job_developer_luxembourg
+msgid "Valid work permit for Belgium"
+msgstr "Permis de travail valide pour la Belgique"
+
+#. module: l10n_lu_hr_payroll
+#: model:hr.salary.rule,name:l10n_lu_hr_payroll.l10n_lu_employees_vpa
+#: model:hr.salary.rule.category,name:l10n_lu_hr_payroll.hr_salary_rule_category_vpa
+#: model:ir.model.fields,field_description:l10n_lu_hr_payroll.field_hr_contract__l10n_lu_atn_transport
+msgid "Vehicle Package Allowance"
+msgstr ""
+
+#. module: l10n_lu_hr_payroll
+#: model:ir.model.fields,field_description:l10n_lu_hr_payroll.field_hr_contract__l10n_lu_wage_with_sacrifices
+msgid "Wage With Sacrifices (LU)"
+msgstr ""
+
+#. module: l10n_lu_hr_payroll
+#: model_terms:ir.ui.view,arch_db:l10n_lu_hr_payroll.hr_contract_view_form
+msgid "Wages With Sacrifices"
+msgstr ""
+
+#. module: l10n_lu_hr_payroll
+#: model_terms:hr.job,website_description:l10n_lu_hr_payroll.job_developer_luxembourg
+msgid "What We Offer"
+msgstr "Ce que nous offrons"
+
+#. module: l10n_lu_hr_payroll
+#: model_terms:hr.job,website_description:l10n_lu_hr_payroll.job_developer_luxembourg
+msgid "What's great in the job?"
+msgstr "Qu'est-ce qui est génial dans ce travail ?"
+
+#. module: l10n_lu_hr_payroll
+#: model:hr.salary.rule,name:l10n_lu_hr_payroll.l10n_lu_employees_withholding_taxes
+msgid "Withholding Taxes"
+msgstr "Précompte professionnel"
+
+#. module: l10n_lu_hr_payroll
+#: model:ir.model.fields,field_description:l10n_lu_hr_payroll.field_l10n_lu_monthly_declaration_wizard__year
+msgid "Year"
+msgstr "An"
+
+#. module: l10n_lu_hr_payroll
+#. odoo-python
+#: code:addons/l10n_lu_hr_payroll/wizard/l10n_lu_monthly_declaration_wizard.py:0
+#, python-format
+msgid "You must be logged in a Luxembourger company to use this feature"
+msgstr ""
+"Vous devez être connectés à une société Luxembourgeoise pour accéder à cette "
+"fonctionnalité"
+
+#. module: l10n_lu_hr_payroll
+#: model_terms:res.company,invoice_terms_html:l10n_lu_hr_payroll.res_company_lu
+msgid "You should update this document to reflect your T&amp;C."
+msgstr ""
+"Vous devriez mettre à jour ce document pour refléter vos conditions "
+"générales."
+
+#. module: l10n_lu_hr_payroll
+#: model_terms:ir.ui.view,arch_db:l10n_lu_hr_payroll.l10n_lu_monthly_declaration_view_form
+msgid "Your DECSAL file has been generated:"
+msgstr "Votre fichier DECSAL a été généré:"
+
+#. module: l10n_lu_hr_payroll
+#: model_terms:res.company,sign_terms:l10n_lu_hr_payroll.res_company_lu
+#: model_terms:res.company,sign_terms_html:l10n_lu_hr_payroll.res_company_lu
+msgid "Your conditions..."
+msgstr "Vos conditions..."
+
+#~ msgid "10%"
+#~ msgstr "10 %"
+
+#~ msgid "123456789"
+#~ msgstr "123456789"

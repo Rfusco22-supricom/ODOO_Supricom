@@ -1,0 +1,176 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<odoo>
+
+    <record id="multicert_felgt_settings_view_form" model="ir.ui.view">
+        <field name="name">res.config.settings</field>
+        <field name="active">True</field>
+        <field name="model">res.config.settings</field>
+        <field name="inherit_id" ref="account.res_config_settings_view_form"/>
+        <field name="arch" type="xml">
+            <xpath expr="//form//app[@name='account']" position="inside">
+                <block title="Facturación Electrónica" id="multicert_felgt_main_settings">
+                    <setting id="fel_gt_certifier" help="Seleccione el certificador a utilizar">
+                        <field name="fel_gt_certifier" required="1"/>
+                    </setting>
+                    <setting id="fel_gt_currency_from_invoice" help="Seleccione si la moneda en que será emitida la factura electrónica será en base a la moneda seleccionada en la factura">
+                        <field name="fel_gt_currency_from_invoice" required="1"/>
+                    </setting>
+                    <setting invisible="fel_gt_currency_from_invoice == True" id="fel_gt_invoice_currency" help="Seleccione la moneda en que será emitida la factura">
+                        <field required="fel_gt_currency_from_invoice == False" name="fel_gt_invoice_currency"/>
+                    </setting>
+                    <setting id="fel_gt_default_code_divider" help="Ingrese el caracter(es) que se utilizarán para separar la referencia interna del nombre del producto">
+                        <field name="fel_gt_default_code_divider"/>
+                    </setting>
+                    <setting id="fel_gt_invoice_line_name" help="Seleccione de donde se tomará la descripción de la línea de factura.">
+                        <field required="1" name="fel_gt_invoice_line_name"/>
+                    </setting>
+                    <setting id="fel_gt_price_tax_rounding" help="Ingrese el número de decimales a utilizar para redondear los precios e impuestos (Si es cero se usarán 2 decimales).">
+                        <field name="fel_gt_price_tax_rounding"/>
+                    </setting>
+                    <setting id="fel_gt_publish_onerror" help="Seleccione si desea publicar los asientos aún cuando existan errores de validación FEL reportados por SAT.">
+                        <field name="fel_gt_publish_onerror"/>
+                    </setting>
+                    <setting id="fel_gt_move_name" help="Seleccione si desea que el nombre de la factura lo establezca FEL (DTE + Número Factura).">
+                        <field name="fel_gt_move_name"/>
+                    </setting>
+                    <setting id="fel_gt_establishment_code" help="Ingrese el código del establecimiento por defecto.">
+                        <field name="fel_gt_establishment_code"/>
+                    </setting>
+                </block>
+                <block title="Configuración Factura" id="multicert_felgt_invoice_settings">
+                    <setting id="fel_gt_invoice_discount_column" help="Mostrar Columna de Descuento en Factura.">
+                        <field name="fel_gt_invoice_discount_column"/>
+                    </setting>
+                </block>
+                <block title="Configuración InFile" id="multicert_felgt_infile_settings" groups="multicert_felgt.felgt_group_manager" invisible="fel_gt_certifier != 'infile'">
+                    <setting id="fel_gt_infile_cert_method" help="Seleccione el método de Certificación de INFILE.">
+                        <field required="fel_gt_certifier == 'infile'" name="fel_gt_infile_cert_method"/>
+                    </setting>
+                    <setting id="fel_gt_infile_xml_url_direct" help="Ingrese la URL para la firma de método directo." invisible="fel_gt_infile_cert_method != 'direct'">
+                        <field required="fel_gt_certifier == 'infile' and fel_gt_infile_cert_method == 'direct'" invisible="fel_gt_infile_cert_method != 'direct'" name="fel_gt_infile_xml_url_direct"/>
+                    </setting>
+                    <setting id="fel_gt_infile_user" help="Ingrese el usuario proporcionado por INFILE.">
+                        <field required="fel_gt_certifier == 'infile'" name="fel_gt_infile_user"/>
+                    </setting>
+                    <setting id="fel_gt_infile_xml_key_signature" help="Ingrese la llave para la firma.">
+                        <field required="fel_gt_certifier == 'infile'" name="fel_gt_infile_xml_key_signature"/>
+                    </setting>
+                    <setting id="fel_gt_infile_xml_url_signature" help="Ingrese la URL para la firma." invisible="fel_gt_infile_cert_method != 'signature'">
+                        <field required="fel_gt_certifier == 'infile' and fel_gt_infile_cert_method == 'signature'" name="fel_gt_infile_xml_url_signature" invisible="fel_gt_infile_cert_method != 'signature'"/>
+                    </setting>
+                    <setting id="fel_gt_infile_key_certificate" help="Ingrese la llave para la certificación.">
+                        <field required="fel_gt_certifier == 'infile'" name="fel_gt_infile_key_certificate"/>
+                    </setting>
+                    <setting id="fel_gt_infile_url_certificate" help="Ingrese la URL para la certificación." invisible="fel_gt_infile_cert_method != 'signature'">
+                        <field required="fel_gt_certifier == 'infile' and fel_gt_infile_cert_method == 'signature'" name="fel_gt_infile_url_certificate" invisible="fel_gt_infile_cert_method != 'signature'"/>
+                    </setting>
+                    <setting id="fel_gt_infile_url_anulation" help="Ingrese la URL para la anulación de facturas." invisible="fel_gt_infile_cert_method != 'signature'">
+                        <field required="fel_gt_certifier == 'infile' and fel_gt_infile_cert_method == 'signature'" name="fel_gt_infile_url_anulation"/>
+                    </setting>
+                </block>
+                <block title="Configuración Guatefacturas" id="multicert_felgt_guatefacturas_settings" groups="multicert_felgt.felgt_group_manager" invisible="fel_gt_certifier != 'guatefacturas'">
+                    <setting id="fel_gt_guatefacturas_user" help="Ingrese el usuario proporcionado por Guatefacturas.">
+                        <field required="fel_gt_certifier == 'guatefacturas'" name="fel_gt_guatefacturas_user"/>
+                    </setting>
+                    <setting id="fel_gt_guatefacturas_password" help="Ingrese la contraseña proporcionada por Guatefacturas.">
+                        <field required="fel_gt_certifier == 'guatefacturas'" name="fel_gt_guatefacturas_password"/>
+                    </setting>
+                    <setting id="fel_gt_guatefacturas_auth_user" help="Ingrese el usuario de Autenticación HTTP proporcionado por Guatefacturas.">
+                        <field required="fel_gt_certifier == 'guatefacturas'" name="fel_gt_guatefacturas_auth_user"/>
+                    </setting>
+                    <setting id="fel_gt_guatefacturas_auth_password" help="Ingrese la contraseña de Autenticación HTTP proporcionada por Guatefacturas.">
+                        <field required="fel_gt_certifier == 'guatefacturas'" name="fel_gt_guatefacturas_auth_password"/>
+                    </setting>
+                    <setting id="fel_gt_guatefacturas_xml_url_signature" help="Ingrese la URL para la firma proporcionada por Guatefacturas.">
+                        <field required="fel_gt_certifier == 'guatefacturas'" name="fel_gt_guatefacturas_xml_url_signature"/>
+                    </setting>
+                </block>
+                <block title="Configuración G4S" id="multicert_felgt_g4s_settings" groups="multicert_felgt.felgt_group_manager" invisible="fel_gt_certifier != 'g4s'">
+                    <setting id="fel_gt_g4s_requestor" help="Ingrese el requestor proporcionado por G4S.">
+                        <field required="fel_gt_certifier == 'g4s'" name="fel_gt_g4s_requestor"/>
+                    </setting>
+                    <setting id="fel_gt_g4s_xml_url_signature" help="Ingrese la URL para la firma de G4S.">
+                        <field required="fel_gt_certifier == 'g4s'" name="fel_gt_g4s_xml_url_signature"/>
+                    </setting>
+                    <setting id="fel_gt_g4s_user" help="Ingrese el usuario proporcionado por G4S.">
+                        <field required="fel_gt_certifier == 'g4s'" name="fel_gt_g4s_user"/>
+                    </setting>
+                </block>
+                <block title="Configuración MegaPrint" id="multicert_felgt_megaprint_settings" groups="multicert_felgt.felgt_group_manager" invisible="fel_gt_certifier != 'megaprint'">
+                    <setting id="fel_gt_megaprint_user" help="Ingrese el Usuario proporcionado por MegaPrint.">
+                        <field required="fel_gt_certifier == 'megaprint'" name="fel_gt_megaprint_user"/>
+                    </setting>
+                    <setting id="fel_gt_megaprint_apikey" help="Ingrese el ApiKey proporcionado por MegaPrint.">
+                        <field required="fel_gt_certifier == 'megaprint'" name="fel_gt_megaprint_apikey"/>
+                    </setting>
+                    <setting id="fel_gt_megaprint_xml_url_signature" help="Ingrese la URL para el consumo del Api solicitaFirma proporcionado por MegaPrint.">
+                        <field required="fel_gt_certifier == 'megaprint'" name="fel_gt_megaprint_xml_url_signature"/>
+                    </setting>
+                    <setting id="fel_gt_megaprint_xml_url_verify" help="Ingrese la URL para el consumo del Api verificarDocumento proporcionado por MegaPrint.">
+                        <field required="fel_gt_certifier == 'megaprint'" name="fel_gt_megaprint_xml_url_verify"/>
+                    </setting>
+                    <setting id="fel_gt_megaprint_xml_url_registry" help="Ingrese la URL para el consumo del Api registrarDocumentoXML proporcionado por MegaPrint.">
+                        <field required="fel_gt_certifier == 'megaprint'" name="fel_gt_megaprint_xml_url_registry"/>
+                    </setting>
+                    <setting id="fel_gt_megaprint_xml_url_cancel" help="Ingrese la URL para el consumo del Api anularDocumentoXML proporcionado por MegaPrint.">
+                        <field required="fel_gt_certifier == 'megaprint'" name="fel_gt_megaprint_xml_url_cancel"/>
+                    </setting>
+                    <setting id="fel_gt_megaprint_xml_url_pdf" help="Ingrese la URL para el consumo del Api retornarPDF proporcionado por MegaPrint.">
+                        <field required="fel_gt_certifier == 'megaprint'" name="fel_gt_megaprint_xml_url_pdf"/>
+                    </setting>
+                    <setting id="fel_gt_megaprint_url_token" help="Ingrese la URL para el consumo del Api solicitarToken proporcionado por MegaPrint.">
+                        <field required="fel_gt_certifier == 'megaprint'" name="fel_gt_megaprint_url_token"/>
+                    </setting>
+                    <setting id="fel_gt_megaprint_token_expiry_date" help="Aquí podrá observar la vigencia del Token generado por MegaPrint.">
+                        <field name="fel_gt_megaprint_token_expiry_date"/>
+                    </setting>
+                    <setting id="fel_gt_megaprint_token" help="Aquí podrá observar el Token generado por MegaPrint">
+                        <field name="fel_gt_megaprint_token"/>
+                        <div class="mt16">
+                            <button name="generate_megaprint_token" type="object" string="Obtener Token" class="btn-secondary ps-2 w-100" icon="fa-refresh" title="Se enviará una solicitud a MegaPrint para la generación del Token."/>
+                        </div>
+                    </setting>
+                </block>
+                <block title="Configuración Digifact" id="multicert_felgt_digifact_settings" groups="multicert_felgt.felgt_group_manager" invisible="fel_gt_certifier != 'digifact'">
+                    <setting id="fel_gt_digifact_user" help="Ingrese el Usuario proporcionado por Digifact.">
+                        <field required="fel_gt_certifier == 'digifact'" name="fel_gt_digifact_user"/>
+                    </setting>
+                    <setting id="fel_gt_digifact_password" help="Ingrese el Password proporcionado por Digifact.">
+                        <field required="fel_gt_certifier == 'digifact'" name="fel_gt_digifact_password"/>
+                    </setting>
+                    <setting id="fel_gt_digifact_api_xml_url_signature" help="Ingrese la URL para el consumo del Api solicitaFirma proporcionado por Digifact.">
+                        <field required="fel_gt_certifier == 'digifact'" name="fel_gt_digifact_api_xml_url_signature"/>
+                    </setting>
+                    <setting id="fel_gt_digifact_api_pdf_url_signature" help="Ingrese la URL para el consumo del Api GetDocument proporcionado por Digifact.">
+                        <field required="fel_gt_certifier == 'digifact'" name="fel_gt_digifact_api_pdf_url_signature"/>
+                    </setting>
+                    <setting id="fel_gt_digifact_url_token" help="Ingrese la URL para el consumo del Api solicitarToken proporcionado por Digifact.">
+                        <field required="fel_gt_certifier == 'digifact'" name="fel_gt_digifact_url_token"/>
+                    </setting>
+                    <setting id="fel_gt_digifact_token_expiry_date" help="Aquí podrá observar la vigencia del Token generado por Digifact.">
+                        <field name="fel_gt_digifact_token_expiry_date"/>
+                    </setting>
+                    <setting id="fel_gt_digifact_token" help="Aquí podrá observar el Token generado por Digifact">
+                        <field name="fel_gt_digifact_token"/>
+                        <div class="mt16">
+                            <button name="generate_digifact_token" type="object" string="Obtener Token" class="btn-secondary ps-2 w-100" icon="fa-refresh" title="Se enviará una solicitud a Digifact para la generación del Token."/>
+                        </div>
+                    </setting>
+                    <setting id="fel_gt_digifact_url_token_nuc" help="Ingrese la URL para el consumo del Token NUC proporcionado por Digifact.">
+                        <field required="fel_gt_certifier == 'digifact'" name="fel_gt_digifact_url_token_nuc"/>
+                    </setting>
+                    <setting id="fel_gt_digifact_token_nuc_expiry_date" help="Aquí podrá observar la vigencia del Token NUC generado por Digifact.">
+                        <field name="fel_gt_digifact_token_nuc_expiry_date"/>
+                    </setting>
+                    <setting id="fel_gt_digifact_token_nuc" help="Aquí podrá observar el Token NUC generado por Digifact">
+                        <field name="fel_gt_digifact_token_nuc"/>
+                        <div class="mt16">
+                            <button name="generate_digifact_token_nuc" type="object" string="Obtener Token" class="btn-secondary ps-2 w-100" icon="fa-refresh" title="Se enviará una solicitud a Digifact para la generación del Token."/>
+                        </div>
+                    </setting>
+                </block>
+            </xpath>
+        </field>
+    </record>
+    
+</odoo>

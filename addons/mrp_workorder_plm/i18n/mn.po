@@ -1,0 +1,87 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+# * mrp_workorder_plm
+#
+# Weblate <noreply-mt-weblate@weblate.org>, 2025.
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 17.0+e\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2025-12-29 18:47+0000\n"
+"PO-Revision-Date: 2025-11-17 14:24+0000\n"
+"Last-Translator: Weblate <noreply-mt-weblate@weblate.org>\n"
+"Language-Team: Mongolian <https://translate.odoo.com/projects/odoo-17/"
+"mrp_workorder_plm/mn/>\n"
+"Language: mn\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: \n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+"X-Generator: Weblate 5.12.2\n"
+
+#. module: mrp_workorder_plm
+#. odoo-python
+#: code:addons/mrp_workorder_plm/wizard/propose_change.py:0
+#, python-format
+msgid "BoM feedback for not found step: %s (%s)"
+msgstr ""
+
+#. module: mrp_workorder_plm
+#: model:ir.model.fields,help:mrp_workorder_plm.field_mrp_eco_routing_change__test_type
+msgid "Defines the type of the quality control point."
+msgstr "Чанарын хяналтын цэгийн төрлийг тодорхойлно."
+
+#. module: mrp_workorder_plm
+#: model:ir.model,name:mrp_workorder_plm.model_mrp_eco_routing_change
+msgid "Eco Routing changes"
+msgstr "Эко шугамын өөрчлөлтүүд"
+
+#. module: mrp_workorder_plm
+#: model:ir.model,name:mrp_workorder_plm.model_mrp_eco
+msgid "Engineering Change Order (ECO)"
+msgstr ""
+
+#. module: mrp_workorder_plm
+#. odoo-python
+#: code:addons/mrp_workorder_plm/models/mrp_workorder.py:0
+#: code:addons/mrp_workorder_plm/wizard/propose_change.py:0
+#, python-format
+msgid "Instruction Suggestions (%(wo_name)s)"
+msgstr ""
+
+#. module: mrp_workorder_plm
+#. odoo-python
+#: code:addons/mrp_workorder_plm/models/mrp_workorder.py:0
+#, python-format
+msgid "New Step Suggestion: %s"
+msgstr ""
+
+#. module: mrp_workorder_plm
+#: model:ir.model,name:mrp_workorder_plm.model_mrp_production
+msgid "Production Order"
+msgstr "Үйлдвэрлэлийн захиалга"
+
+#. module: mrp_workorder_plm
+#: model:ir.model,name:mrp_workorder_plm.model_propose_change
+msgid "Propose a change in the production"
+msgstr "Үйлдвэрлэлийн ямар нэг зүйлийг өөрчлөх санал"
+
+#. module: mrp_workorder_plm
+#: model:ir.model,name:mrp_workorder_plm.model_quality_check
+msgid "Quality Check"
+msgstr "Чанарын Шалгалт"
+
+#. module: mrp_workorder_plm
+#: model:ir.model.fields,field_description:mrp_workorder_plm.field_mrp_eco_routing_change__quality_point_id
+msgid "Quality Point"
+msgstr "Чанарын оноо"
+
+#. module: mrp_workorder_plm
+#: model:ir.model.fields,field_description:mrp_workorder_plm.field_mrp_eco_routing_change__step
+msgid "Step"
+msgstr "Алхам"
+
+#. module: mrp_workorder_plm
+#: model:ir.model.fields,field_description:mrp_workorder_plm.field_mrp_eco_routing_change__test_type
+msgid "Step Type"
+msgstr ""

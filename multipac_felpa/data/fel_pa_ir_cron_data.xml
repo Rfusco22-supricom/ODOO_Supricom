@@ -1,0 +1,46 @@
+<?xml version="1.0" ?>
+<odoo>
+  <data noupdate="1">
+
+    <record id="fel_pa_contigency_reprocess" model="ir.cron">
+      <field name="state">code</field>
+      <field name="code">model.fel_pa_process_all_contigency()</field>
+      <field name="interval_type">minutes</field>
+      <field name="model_id" ref="model_account_move"/>
+      <field name="user_id" ref="base.user_root"/>
+      <field name="name">Panamá FEL: Contingency Process</field>
+      <field name="numbercall">-1</field>
+      <field name="priority">5</field>
+      <field name="doall">False</field>
+      <field name="active">True</field>
+      <field name="interval_number">10</field>
+    </record>
+
+    <record id="fel_pa_close_old_contigencies" model="ir.cron">
+        <field name="name">Panamá FEL: Close Old Contingencies</field>
+        <field name="model_id" ref="model_fel_pa_tools_contingency"/>
+        <field name="state">code</field>
+        <field name="code">model.close_old_contingencies()</field>
+        <field name="user_id" ref="base.user_root"/>
+        <field name="interval_number">1</field>
+        <field name="interval_type">hours</field>
+        <field name="numbercall">-1</field>
+        <field name="doall">False</field>
+        <field name="active">True</field>
+    </record>
+
+    <record id="fel_pa_send_offline_request" model="ir.cron">
+        <field name="name">Panamá FEL: Send Offline Requests</field>
+        <field name="model_id" ref="model_fel_pa_tools_api_request"/>
+        <field name="state">code</field>
+        <field name="code">model.send_pac_offline_request()</field>
+        <field name="user_id" ref="base.user_root"/>
+        <field name="interval_number">1</field>
+        <field name="interval_type">hours</field>
+        <field name="numbercall">-1</field>
+        <field name="doall">False</field>
+        <field name="active">True</field>
+    </record>
+
+  </data>
+</odoo>

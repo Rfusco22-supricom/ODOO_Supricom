@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <!-- VISTA FORM -->
+    <record id="view_bank_transaction_line_form" model="ir.ui.view">
+        <field name="name">bank.transaction.line.form</field>
+        <field name="model">bank.transaction.line</field>
+        <field name="arch" type="xml">
+            <form string="Transacción Bancaria API">
+                <header>
+                    <button name="action_create_payment" type="object" string="Registrar Pago en Odoo" class="btn-primary" invisible="state == 'reconciled'"/>
+                    <button name="action_mark_ignored" type="object" string="Marcar Ignorado" class="btn-secondary" invisible="state in ('reconciled', 'ignored')"/>
+                    <button name="action_mark_pending" type="object" string="Marcar Pendiente" class="btn-secondary" invisible="state == 'pending'"/>
+                    <field name="state" widget="statusbar" statusbar_visible="pending,reconciled,ignored"/>
+                </header>
+                <sheet>
+                    <div class="oe_title">
+                        <h1>
+                            <field name="payment_reference" placeholder="Referencia Bancaria..."/>
+                        </h1>
+                    </div>
+                    <group>
+                        <group string="Datos de la Transacción">
+                            <field name="trx_date"/>
+                            <field name="amount"/>
+                            <field name="currency_id" invisible="1"/>
+                            <field name="payment_type"/>
+                            <field name="journal_id"/>
+                            <field name="integration_account_id"/>
+                        </group>
+                        <group string="Datos del Emisor y Vinculación">
+                            <field name="origin_customer_id"/>
+                            <field name="origin_phone"/>
+                            <field name="origin_account"/>
+                            <field name="payment_id"/>
+                        </group>
+                    </group>
+                    <notebook>
+                        <page string="Payload Respuesta Bruta">
+                            <field name="raw_payload" readonly="1"/>
+                        </page>
+                    </notebook>
+                </sheet>
+            </form>
+        </field>
+    </record>
+
+    <!-- VISTA TREE -->
+    <record id="view_bank_transaction_line_tree" model="ir.ui.view">
+        <field name="name">bank.transaction.line.tree</field>
+        <field name="model">bank.transaction.line</field>
+        <field name="arch" type="xml">
+            <tree string="Transacciones Bancarias API" decoration-muted="state=='ignored'" decoration-success="state=='reconciled'" decoration-warning="state=='pending'">
+                <field name="trx_date"/>
+                <field name="payment_reference"/>
+                <field name="payment_type"/>
+                <field name="amount"/>
+                <field name="journal_id"/>
+                <field name="origin_customer_id"/>
+                <field name="origin_phone"/>
+                <field name="state" widget="badge" decoration-warning="state=='pending'" decoration-success="state=='reconciled'" decoration-muted="state=='ignored'"/>
+                <field name="payment_id"/>
+            </tree>
+        </field>
+    </record>
+
+    <!-- VISTA SEARCH -->
+    <record id="view_bank_transaction_line_search" model="ir.ui.view">
+        <field name="name">bank.transaction.line.search</field>
+        <field name="model">bank.transaction.line</field>
+        <field name="arch" type="xml">
+            <search string="Buscar Transacciones Bancarias">
+                <field name="payment_reference"/>
+                <field name="origin_customer_id"/>
+                <field name="origin_phone"/>
+                <field name="journal_id"/>
+                <filter string="Pendientes" name="pending" domain="[('state', '=', 'pending')]"/>
+                <filter string="Conciliados" name="reconciled" domain="[('state', '=', 'reconciled')]"/>
+                <filter string="Ignorados" name="ignored" domain="[('state', '=', 'ignored')]"/>
+                <group expand="0" string="Agrupar por">
+                    <filter string="Estado" name="group_state" context="{'group_by': 'state'}"/>
+                    <filter string="Tipo de Pago" name="group_payment_type" context="{'group_by': 'payment_type'}"/>
+                    <filter string="Diario" name="group_journal" context="{'group_by': 'journal_id'}"/>
+                    <filter string="Fecha" name="group_date" context="{'group_by': 'trx_date:day'}"/>
+                </group>
+            </search>
+        </field>
+    </record>
+
+    <!-- ACCIÓN -->
+    <record id="action_bank_transaction_line" model="ir.actions.act_window">
+        <field name="name">Transacciones Bancarias API</field>
+        <field name="res_model">bank.transaction.line</field>
+        <field name="view_mode">tree,form</field>
+        <field name="search_view_id" ref="view_bank_transaction_line_search"/>
+        <field name="context">{'search_default_pending': 1}</field>
+    </record>
+</odoo>

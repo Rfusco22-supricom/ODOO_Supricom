@@ -1,0 +1,13 @@
+<odoo>
+    <data>
+        <record id="action_report_invoice_custom_dual" model="ir.actions.report">
+            <field name="name">Factura Fiscal Dual</field>
+            <field name="model">account.move</field>
+            <field name="report_name">supricom_forma_libre_igtf.report_invoice_template_dual</field>
+            <field name="report_type">qweb-pdf</field>
+            <!-- Llamar al método get_report_name() -->
+            <field name="print_report_name">object.get_report_name()</field>
+            <field name="paperformat_id" ref="supricom_forma_libre_igtf.fiscal_format"/>
+        </record>
+    </data>
+</odoo>

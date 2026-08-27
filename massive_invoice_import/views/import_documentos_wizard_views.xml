@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data>
+        <record id="view_import_documentos_wizard_form" model="ir.ui.view">
+            <field name="name">import.documentos.wizard.form</field>
+            <field name="model">import.documentos.wizard</field>
+            <field name="arch" type="xml">
+                <form string="Importador Masivo de Facturas">
+                    <notebook>
+                        <page string="Datos del Archivo" name="file_data">
+                            <group>
+                                <field name="import_type" widget="radio"/>
+                                <field name="excel_file"/>
+                                <field name="product_id" options="{'no_create': True}"/>
+                                <field name="fallback_tax_id" options="{'no_create': True}"/>
+                            </group>
+                            <group>
+                                <group string="Diarios de Contabilidad">
+                                    <field name="journal_fiscal_id" options="{'no_create': True}"/>
+                                    <field name="journal_entrega_id" options="{'no_create': True}"/>
+                                </group>
+                            </group>
+                        </page>
+                        <page string="Mapeo de Columnas (Excel)" name="column_mapping">
+                            <group>
+                                <group string="Identificadores">
+                                    <field name="col_doc_num"/>
+                                    <field name="col_type"/>
+                                    <field name="col_company"/>
+                                </group>
+                                <group string="Datos del Cliente">
+                                    <field name="col_rif"/>
+                                    <field name="col_name"/>
+                                    <field name="col_vendedor"/>
+                                </group>
+                                <group string="Valores">
+                                    <field name="col_date"/>
+                                    <field name="col_total"/>
+                                </group>
+                            </group>
+                            <div class="text-muted">
+                                <p><strong>Nota:</strong> Los nombres de las columnas deben coincidir exactamente con los encabezados de su archivo Excel.</p>
+                            </div>
+                        </page>
+                    </notebook>
+                    <footer>
+                        <button name="import_file" string="Importar" type="object" class="btn-primary"/>
+                        <button string="Cancelar" class="btn-secondary" special="cancel"/>
+                    </footer>
+                </form>
+            </field>
+        </record>
+
+        <record id="action_import_documentos_wizard" model="ir.actions.act_window">
+            <field name="name">Importador Especial</field>
+            <field name="res_model">import.documentos.wizard</field>
+            <field name="view_mode">form</field>
+            <field name="target">new</field>
+            <field name="context">{'default_import_type': 'out_invoice'}</field>
+        </record>
+
+        <record id="action_import_documentos_wizard_proveedores" model="ir.actions.act_window">
+            <field name="name">Importador Especial (Proveedores)</field>
+            <field name="res_model">import.documentos.wizard</field>
+            <field name="view_mode">form</field>
+            <field name="target">new</field>
+            <field name="context">{'default_import_type': 'in_invoice'}</field>
+        </record>
+
+        <menuitem id="menu_import_documentos_wizard"
+                  name="Importador Especial"
+                  parent="account.menu_finance_receivables"
+                  action="action_import_documentos_wizard"
+                  sequence="100"/>
+
+        <menuitem id="menu_import_documentos_wizard_proveedores"
+                  name="Importador Especial"
+                  parent="account.menu_finance_payables"
+                  action="action_import_documentos_wizard_proveedores"
+                  sequence="100"/>
+    </data>
+</odoo>

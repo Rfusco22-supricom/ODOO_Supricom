@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <!-- Vista para account.payment -->
+    <record id="view_payment_form_igtf_nd" model="ir.ui.view">
+        <field name="name">account.payment.form.igtf.nd</field>
+        <field name="model">account.payment</field>
+        <field name="inherit_id" ref="account_dual_currency.account_payment_dual_currency"/>
+        <field name="arch" type="xml">
+            <!-- Ocultar botón "Editar tasa" -->
+            <xpath expr="//field[@name='custom_rate']" position="before">
+                <field name="homologacion_activa" invisible="1"/>
+            </xpath>
+            <xpath expr="//field[@name='custom_rate']" position="attributes">
+                <attribute name="invisible">homologacion_activa</attribute>
+            </xpath>
+            <!-- Agregar Nota de Débito IGTF después del asiento IGTF -->
+            <xpath expr="//field[@name='move_id_igtf_divisa']" position="after">
+                <field name="debit_note_igtf_id" readonly="1" invisible="not debit_note_igtf_id"/>
+            </xpath>
+        </field>
+    </record>
+
+    <!-- Vista para account.payment.register -->
+    <record id="view_account_payment_register_hide_igtf" model="ir.ui.view">
+        <field name="name">account.payment.register.hide.igtf</field>
+        <field name="model">account.payment.register</field>
+        <field name="inherit_id" ref="account_dual_currency.account_payment_register_dual_currency"/>
+        <field name="arch" type="xml">
+            <!-- Ocultar el Checkbox de aplicar IGTF -->
+            <xpath expr="//field[@name='aplicar_igtf_divisa']" position="attributes">
+                <attribute name="invisible">1</attribute>
+            </xpath>
+            <!-- Ocultar botón "Editar tasa" cuando homologación activa -->
+            <xpath expr="//field[@name='custom_rate']" position="before">
+                <field name="homologacion_activa" invisible="1"/>
+            </xpath>
+            <xpath expr="//field[@name='custom_rate']" position="attributes">
+                <attribute name="invisible">not is_ve_company or homologacion_activa</attribute>
+            </xpath>
+        </field>
+    </record>
+</odoo>

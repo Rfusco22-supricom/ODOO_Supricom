@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<odoo>
+
+    <record id="fel_pa_tools_msg_wizard_form_view" model="ir.ui.view">
+        <field name="name">fel_pa_tools_msg_wizard_form_view</field>
+        <field name="model">fel_pa.tools.msg_wizard</field>
+        <field name="arch" type="xml">
+            <form string="Message">
+                <div class="text-center">
+                    <field name="name"/>
+                </div>
+                <footer>
+                    <button string="OK" class="btn-primary" special="cancel" />
+                </footer>
+            </form>
+        </field>
+    </record>
+
+</odoo>

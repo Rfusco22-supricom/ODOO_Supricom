@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <!-- Add Commission Manager to user form -->
+    <record id="res_users_view_form_commission" model="ir.ui.view">
+        <field name="name">res.users.commission.manager.form</field>
+        <field name="model">res.users</field>
+        <field name="inherit_id" ref="base.view_users_form"/>
+        <field name="arch" type="xml">
+            <!-- Add a new page for Commissions settings -->
+            <xpath expr="//page[@name='access_rights']" position="after">
+                <page string="Comisiones" name="commissions_access">
+                    <group>
+                        <field name="is_commission_manager" widget="boolean_toggle"/>
+                    </group>
+                </page>
+            </xpath>
+        </field>
+    </record>
+</odoo>

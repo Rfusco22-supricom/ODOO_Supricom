@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <record id="generate_api_key_wizard_view_form" model="ir.ui.view">
+        <field name="name">rag_odoo_mcp_server.generate_api_key_wizard.form</field>
+        <field name="model">rag_odoo_mcp_server.generate_api_key_wizard</field>
+        <field name="arch" type="xml">
+            <form string="MCP token">
+                <group>
+                    <field name="token_type" readonly="1" optional="hide" nolabel="1"/>
+                    <field name="api_key_display" readonly="1" placeholder="Copy this key; it will not be shown again."/>
+                </group>
+                <footer>
+                    <button string="Close" class="btn-primary" special="cancel"/>
+                </footer>
+            </form>
+        </field>
+    </record>
+</odoo>

@@ -1,0 +1,4 @@
+id,name,model_id:id,group_id:id,perm_read,perm_write,perm_create,perm_unlink
+access_account_payment_split_wizard,account.payment.split.wizard,model_account_payment_split_wizard,account.group_account_user,1,1,1,1
+access_account_payment_split_line,account.payment.split.line,model_account_payment_split_line,account.group_account_user,1,1,1,1
+access_account_apply_exchange_diff_wizard,account.apply.exchange.diff.wizard,model_account_apply_exchange_diff_wizard,account.group_account_user,1,1,1,1

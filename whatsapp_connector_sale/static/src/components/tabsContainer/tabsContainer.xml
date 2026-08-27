@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<templates xml:space="preserve">
+
+    <t t-name="chatroom.TabsContainer" t-inherit="whatsapp_connector.chatroom.TabsContainer" t-inherit-mode="extension" owl="1">
+
+        <xpath expr="//t[@t-set-slot='tab_partner']" position="before">
+            <t t-set-slot="tab_lastes_sale" isVisible="env.saleAllowed()"
+                name="'tab_lastes_sale'" icon="'fa fa-bar-chart'"
+                id="'tab_lastes_sale'">
+                <div class="o_SaleIndicator">
+                    <t t-if="props.selectedConversation">
+                        <t t-if="props.selectedConversation.partner.id">
+                            <SaleIndicator partnerId="props.selectedConversation.partner.id" />
+                        </t>
+                        <t t-else="">
+                            <t t-set="message" t-value="emptyPartnerMsg" />
+                            <t t-call="chatroom.EmptyTab" />
+                        </t>
+                    </t>
+                    <t t-else="">
+                        <t t-call="chatroom.EmptyTab" />
+                    </t>
+                </div>
+            </t>
+        </xpath>
+
+        <xpath expr="//t[@t-set-slot='tab_partner']" position="after">
+            <t t-set-slot="tab_order" isVisible="env.saleAllowed()"
+                name="'tab_order'" icon="'fa fa-shopping-cart'"
+                id="'tab_order'" title="titles.tab_order">
+                <div class="o_SaleForm">
+                    <t t-set="tabComp" t-value="'SaleForm'" />
+                    <t t-call="chatroom.TabWithMyConversation" />
+                </div>
+            </t>
+        </xpath>
+    </t>
+
+</templates>

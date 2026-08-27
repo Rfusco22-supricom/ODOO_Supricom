@@ -1,0 +1,42 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+# * mrp_workorder_expiry
+#
+# Weblate <noreply-mt-weblate@weblate.org>, 2025.
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 17.0+e\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2025-12-29 18:47+0000\n"
+"PO-Revision-Date: 2025-11-17 14:24+0000\n"
+"Last-Translator: Weblate <noreply-mt-weblate@weblate.org>\n"
+"Language-Team: Mongolian <https://translate.odoo.com/projects/odoo-17/"
+"mrp_workorder_expiry/mn/>\n"
+"Language: mn\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: \n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+"X-Generator: Weblate 5.12.2\n"
+
+#. module: mrp_workorder_expiry
+#: model_terms:ir.ui.view,arch_db:mrp_workorder_expiry.quality_check_view_form_tablet_inherit_expiry
+msgid "<span class=\"fa fa-exclamation-triangle\"/> This lot is expired."
+msgstr ""
+"<span class=\"fa fa-exclamation-triangle\"/> Энэ цувралын дугаарын хугацаа "
+"дууссан."
+
+#. module: mrp_workorder_expiry
+#: model:ir.model.fields,field_description:mrp_workorder_expiry.field_quality_check__is_expired
+msgid "Product Expiry Alert"
+msgstr "Барааны дуусах хугацааны анхааруулга"
+
+#. module: mrp_workorder_expiry
+#: model:ir.model,name:mrp_workorder_expiry.model_quality_check
+msgid "Quality Check"
+msgstr "Чанарын Шалгалт"
+
+#. module: mrp_workorder_expiry
+#: model:ir.model.fields,help:mrp_workorder_expiry.field_quality_check__is_expired
+msgid "The Expiration Date has been reached."
+msgstr "Дуусах хугацаанд хүрсэн байна."

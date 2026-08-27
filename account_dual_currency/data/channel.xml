@@ -1,0 +1,10 @@
+<?xml version='1.0' encoding='utf-8'?>
+<odoo>
+    <data>
+        <record model="mail.channel" id="trm_channel">
+           <field name="name">Tasa de Cambio</field>
+           <field name="description">Información de la Tasa de Cambio.</field>
+           <field name="group_ids" eval="[Command.link(ref('base.group_user'))]"/>
+        </record>
+    </data>
+</odoo>

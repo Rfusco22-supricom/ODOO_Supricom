@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <!-- VISTA FORM -->
+    <record id="view_bank_integration_account_form" model="ir.ui.view">
+        <field name="name">bank.integration.account.form</field>
+        <field name="model">bank.integration.account</field>
+        <field name="arch" type="xml">
+            <form string="Cuenta de Integración Bancaria">
+                <header>
+                    <button name="action_test_connection" type="object" string="Probar Conexión Banco" class="btn-primary" icon="fa-wifi"/>
+                    <field name="active" widget="boolean_toggle"/>
+                </header>
+                <sheet>
+                    <div class="oe_title">
+                        <label for="name" class="oe_edit_only"/>
+                        <h1>
+                            <field name="name" placeholder="Ej. Mercantil Cuenta Principal 0105..."/>
+                        </h1>
+                    </div>
+                    <group>
+                        <group string="Configuración General">
+                            <field name="journal_id"/>
+                            <field name="bank_type"/>
+                            <field name="environment" widget="radio"/>
+                            <field name="company_id" groups="base.group_multi_company"/>
+                            <field name="company_partner_id" invisible="1"/>
+                        </group>
+                        <group string="Datos de Cuenta y Titular">
+                            <field name="bank_account_id"/>
+                            <field name="account_number"/>
+                            <field name="phone_number"/>
+                            <field name="customer_id"/>
+                        </group>
+                    </group>
+                    <notebook>
+                        <page string="Credenciales Búsqueda de Transferencias">
+                            <group>
+                                <group string="Autenticación API Transferencias">
+                                    <field name="transfer_client_id" password="True"/>
+                                    <field name="transfer_secret_key" password="True"/>
+                                </group>
+                                <group string="Identificadores Comercio Transferencias">
+                                    <field name="transfer_merchant_id"/>
+                                    <field name="integrator_id"/>
+                                    <field name="terminal_id"/>
+                                </group>
+                            </group>
+                        </page>
+                        <page string="Credenciales Pago Móvil C2P">
+                            <group>
+                                <group string="Autenticación API Pago Móvil C2P">
+                                    <field name="c2p_client_id" password="True"/>
+                                    <field name="c2p_secret_key" password="True"/>
+                                </group>
+                                <group string="Identificadores Comercio C2P">
+                                    <field name="c2p_merchant_id"/>
+                                </group>
+                            </group>
+                        </page>
+                        <page string="Servidor y URLs">
+                            <group>
+                                <field name="base_url_sandbox"/>
+                                <field name="base_url_prod"/>
+                            </group>
+                        </page>
+                    </notebook>
+                </sheet>
+            </form>
+        </field>
+    </record>
+
+    <!-- VISTA TREE -->
+    <record id="view_bank_integration_account_tree" model="ir.ui.view">
+        <field name="name">bank.integration.account.tree</field>
+        <field name="model">bank.integration.account</field>
+        <field name="arch" type="xml">
+            <tree string="Cuentas de Integración Bancaria">
+                <field name="name"/>
+                <field name="journal_id"/>
+                <field name="bank_type"/>
+                <field name="environment" widget="badge" decoration-info="environment=='sandbox'" decoration-success="environment=='production'"/>
+                <field name="account_number"/>
+                <field name="phone_number"/>
+                <field name="active" widget="boolean_toggle"/>
+            </tree>
+        </field>
+    </record>
+
+    <!-- VISTA SEARCH -->
+    <record id="view_bank_integration_account_search" model="ir.ui.view">
+        <field name="name">bank.integration.account.search</field>
+        <field name="model">bank.integration.account</field>
+        <field name="arch" type="xml">
+            <search string="Buscar Cuentas de Integración">
+                <field name="name"/>
+                <field name="journal_id"/>
+                <field name="account_number"/>
+                <field name="bank_type"/>
+                <filter string="Archivados" name="inactive" domain="[('active', '=', False)]"/>
+                <group expand="0" string="Agrupar por">
+                    <filter string="Banco" name="group_bank_type" context="{'group_by': 'bank_type'}"/>
+                    <filter string="Entorno" name="group_environment" context="{'group_by': 'environment'}"/>
+                    <filter string="Diario" name="group_journal" context="{'group_by': 'journal_id'}"/>
+                </group>
+            </search>
+        </field>
+    </record>
+
+    <!-- ACCIÓN -->
+    <record id="action_bank_integration_account" model="ir.actions.act_window">
+        <field name="name">Cuentas de Integración Bancaria</field>
+        <field name="res_model">bank.integration.account</field>
+        <field name="view_mode">tree,form</field>
+        <field name="search_view_id" ref="view_bank_integration_account_search"/>
+    </record>
+
+    <!-- PESTAÑA DE CONFIGURACIÓN API BANCO EN EL FORMULARIO DEL DIARIO -->
+    <record id="view_account_journal_form_inherit_bank_api" model="ir.ui.view">
+        <field name="name">account.journal.form.inherit.bank.api</field>
+        <field name="model">account.journal</field>
+        <field name="inherit_id" ref="account.view_account_journal_form"/>
+        <field name="arch" type="xml">
+            <notebook position="inside">
+                <page string="Integración API Banco" name="bank_api_integration" invisible="type != 'bank'">
+                    <group>
+                        <group string="Habilitación">
+                            <field name="bank_integration_enabled" widget="boolean_toggle"/>
+                            <field name="bank_type" invisible="not bank_integration_enabled"/>
+                            <field name="bank_environment" widget="radio" invisible="not bank_integration_enabled"/>
+                        </group>
+                        <group string="Datos de Cuenta y Titular" invisible="not bank_integration_enabled">
+                            <field name="bank_account_number"/>
+                            <field name="bank_phone_number"/>
+                            <field name="bank_customer_id"/>
+                        </group>
+                    </group>
+                    <notebook invisible="not bank_integration_enabled">
+                        <page string="API Búsqueda de Transferencias">
+                            <group>
+                                <group>
+                                    <field name="bank_transfer_client_id" password="True"/>
+                                    <field name="bank_transfer_secret_key" password="True"/>
+                                </group>
+                                <group>
+                                    <field name="bank_transfer_merchant_id"/>
+                                    <field name="bank_integrator_id"/>
+                                    <field name="bank_terminal_id"/>
+                                </group>
+                            </group>
+                        </page>
+                        <page string="API Pago Móvil C2P">
+                            <group>
+                                <group>
+                                    <field name="bank_c2p_client_id" password="True"/>
+                                    <field name="bank_c2p_secret_key" password="True"/>
+                                </group>
+                                <group>
+                                    <field name="bank_c2p_merchant_id"/>
+                                </group>
+                            </group>
+                        </page>
+                    </notebook>
+                    <div invisible="not bank_integration_enabled" class="mt-3">
+                        <button name="action_test_bank_connection" type="object" string="Probar Conexión Banco" class="btn-primary" icon="fa-wifi"/>
+                    </div>
+                </page>
+            </notebook>
+        </field>
+    </record>
+</odoo>

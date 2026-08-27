@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<templates>
+
+    <t t-name="appointment.resources_capacity_options">
+        <option value="0" t-att-selected="!asked_capacity &amp;&amp; 'selected'" data-placeholder-option="True">-</option>
+        <t t-foreach="[...Array(max_capacity).keys()].map(i => i + 1)" t-as="counter" t-key="counter_index">
+            <option t-att-value="counter" t-att-selected="counter == asked_capacity and 'selected'">
+                <t t-out="counter"/>
+            </option>
+        </t>
+    </t>
+
+    <t t-name="appointment.slots_list">
+        <span>Select a time</span>
+        <div class="o_slots_list row px-0">
+            <t t-foreach="slots" t-as="slot" t-key="slot_index">
+                <div t-attf-class="col-6 mt-2 #{slot_index % 2 == 0 ? 'pe-1' : 'ps-1'}">
+                    <button class="o_slot_hours d-flex btn btn-outline-primary align-items-center justify-content-center w-100 border"
+                        t-att-data-available_resources="getAvailableResources(slot)"
+                        t-attf-data-url-parameters="#{slot['url_parameters']}&amp;#{commonUrlParams}"
+                        t-out="slot['hours']"/>
+                </div>
+            </t>
+        </div>
+    </t>
+
+</templates>

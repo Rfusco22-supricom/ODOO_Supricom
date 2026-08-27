@@ -1,0 +1,468 @@
+<?xml version='1.0' encoding='utf-8'?>
+<odoo>
+    <data>
+
+        <record model="res.city" id="fel_pa_city_9">
+            <field name="name">BOCAS DEL TORO</field>
+            <field name="country_id" ref="base.pa"/>
+            <field name="state_id" ref="multipac_felpa.fel_pa_state_1"/>
+            <field name="fel_pa_code">1-1</field>
+        </record>
+        <record model="res.city" id="fel_pa_city_19">
+            <field name="name">CHANGUINOLA</field>
+            <field name="country_id" ref="base.pa"/>
+            <field name="state_id" ref="multipac_felpa.fel_pa_state_1"/>
+            <field name="fel_pa_code">1-2</field>
+        </record>
+        <record model="res.city" id="fel_pa_city_23">
+            <field name="name">CHIRIQUI GRANDE</field>
+            <field name="country_id" ref="base.pa"/>
+            <field name="state_id" ref="multipac_felpa.fel_pa_state_1"/>
+            <field name="fel_pa_code">1-3</field>
+        </record>
+        <record model="res.city" id="fel_pa_city_26">
+            <field name="name">COMARCA KUNA YALA</field>
+            <field name="country_id" ref="base.pa"/>
+            <field name="state_id" ref="multipac_felpa.fel_pa_state_10"/>
+            <field name="fel_pa_code">10-1</field>
+        </record>
+        <record model="res.city" id="fel_pa_city_16">
+            <field name="name">CEMACO</field>
+            <field name="country_id" ref="base.pa"/>
+            <field name="state_id" ref="multipac_felpa.fel_pa_state_11"/>
+            <field name="fel_pa_code">11-1</field>
+        </record>
+        <record model="res.city" id="fel_pa_city_63">
+            <field name="name">SAMBU</field>
+            <field name="country_id" ref="base.pa"/>
+            <field name="state_id" ref="multipac_felpa.fel_pa_state_11"/>
+            <field name="fel_pa_code">11-2</field>
+        </record>
+        <record model="res.city" id="fel_pa_city_8">
+            <field name="name">BESIKO</field>
+            <field name="country_id" ref="base.pa"/>
+            <field name="state_id" ref="multipac_felpa.fel_pa_state_12"/>
+            <field name="fel_pa_code">12-1</field>
+        </record>
+        <record model="res.city" id="fel_pa_city_32">
+            <field name="name">KANKINTU</field>
+            <field name="country_id" ref="base.pa"/>
+            <field name="state_id" ref="multipac_felpa.fel_pa_state_12"/>
+            <field name="fel_pa_code">12-6</field>
+        </record>
+        <record model="res.city" id="fel_pa_city_33">
+            <field name="name">KUSAPIN</field>
+            <field name="country_id" ref="base.pa"/>
+            <field name="state_id" ref="multipac_felpa.fel_pa_state_12"/>
+            <field name="fel_pa_code">12-7</field>
+        </record>
+        <record model="res.city" id="fel_pa_city_44">
+            <field name="name">MIRONO</field>
+            <field name="country_id" ref="base.pa"/>
+            <field name="state_id" ref="multipac_felpa.fel_pa_state_12"/>
+            <field name="fel_pa_code">12-2</field>
+        </record>
+        <record model="res.city" id="fel_pa_city_46">
+            <field name="name">MUNA</field>
+            <field name="country_id" ref="base.pa"/>
+            <field name="state_id" ref="multipac_felpa.fel_pa_state_12"/>
+            <field name="fel_pa_code">12-3</field>
+        </record>
+        <record model="res.city" id="fel_pa_city_48">
+            <field name="name">NOLE DUIMA</field>
+            <field name="country_id" ref="base.pa"/>
+            <field name="state_id" ref="multipac_felpa.fel_pa_state_12"/>
+            <field name="fel_pa_code">12-4</field>
+        </record>
+        <record model="res.city" id="fel_pa_city_49">
+            <field name="name">NURUM</field>
+            <field name="country_id" ref="base.pa"/>
+            <field name="state_id" ref="multipac_felpa.fel_pa_state_12"/>
+            <field name="fel_pa_code">12-5</field>
+        </record>
+        <record model="res.city" id="fel_pa_city_4">
+            <field name="name">ARRAIJAN</field>
+            <field name="country_id" ref="base.pa"/>
+            <field name="state_id" ref="multipac_felpa.fel_pa_state_13"/>
+            <field name="fel_pa_code">13-1</field>
+        </record>
+        <record model="res.city" id="fel_pa_city_14">
+            <field name="name">CAPIRA</field>
+            <field name="country_id" ref="base.pa"/>
+            <field name="state_id" ref="multipac_felpa.fel_pa_state_13"/>
+            <field name="fel_pa_code">13-2</field>
+        </record>
+        <record model="res.city" id="fel_pa_city_18">
+            <field name="name">CHAME</field>
+            <field name="country_id" ref="base.pa"/>
+            <field name="state_id" ref="multipac_felpa.fel_pa_state_13"/>
+            <field name="fel_pa_code">13-3</field>
+        </record>
+        <record model="res.city" id="fel_pa_city_34">
+            <field name="name">LA CHORRERA</field>
+            <field name="country_id" ref="base.pa"/>
+            <field name="state_id" ref="multipac_felpa.fel_pa_state_13"/>
+            <field name="fel_pa_code">13-4</field>
+        </record>
+        <record model="res.city" id="fel_pa_city_64">
+            <field name="name">SAN CARLOS</field>
+            <field name="country_id" ref="base.pa"/>
+            <field name="state_id" ref="multipac_felpa.fel_pa_state_13"/>
+            <field name="fel_pa_code">13-5</field>
+        </record>
+        <record model="res.city" id="fel_pa_city_1">
+            <field name="name">AGUADULCE</field>
+            <field name="country_id" ref="base.pa"/>
+            <field name="state_id" ref="multipac_felpa.fel_pa_state_2"/>
+            <field name="fel_pa_code">2-1</field>
+        </record>
+        <record model="res.city" id="fel_pa_city_3">
+            <field name="name">ANTON</field>
+            <field name="country_id" ref="base.pa"/>
+            <field name="state_id" ref="multipac_felpa.fel_pa_state_2"/>
+            <field name="fel_pa_code">2-2</field>
+        </record>
+        <record model="res.city" id="fel_pa_city_36">
+            <field name="name">LA PINTADA</field>
+            <field name="country_id" ref="base.pa"/>
+            <field name="state_id" ref="multipac_felpa.fel_pa_state_2"/>
+            <field name="fel_pa_code">2-3</field>
+        </record>
+        <record model="res.city" id="fel_pa_city_47">
+            <field name="name">NATA</field>
+            <field name="country_id" ref="base.pa"/>
+            <field name="state_id" ref="multipac_felpa.fel_pa_state_2"/>
+            <field name="fel_pa_code">2-4</field>
+        </record>
+        <record model="res.city" id="fel_pa_city_51">
+            <field name="name">OLA</field>
+            <field name="country_id" ref="base.pa"/>
+            <field name="state_id" ref="multipac_felpa.fel_pa_state_2"/>
+            <field name="fel_pa_code">2-5</field>
+        </record>
+        <record model="res.city" id="fel_pa_city_55">
+            <field name="name">PENONOME</field>
+            <field name="country_id" ref="base.pa"/>
+            <field name="state_id" ref="multipac_felpa.fel_pa_state_2"/>
+            <field name="fel_pa_code">2-6</field>
+        </record>
+        <record model="res.city" id="fel_pa_city_17">
+            <field name="name">CHAGRES</field>
+            <field name="country_id" ref="base.pa"/>
+            <field name="state_id" ref="multipac_felpa.fel_pa_state_3"/>
+            <field name="fel_pa_code">3-2</field>
+        </record>
+        <record model="res.city" id="fel_pa_city_25">
+            <field name="name">COLON</field>
+            <field name="country_id" ref="base.pa"/>
+            <field name="state_id" ref="multipac_felpa.fel_pa_state_3"/>
+            <field name="fel_pa_code">3-1</field>
+        </record>
+        <record model="res.city" id="fel_pa_city_29">
+            <field name="name">DONOSO</field>
+            <field name="country_id" ref="base.pa"/>
+            <field name="state_id" ref="multipac_felpa.fel_pa_state_3"/>
+            <field name="fel_pa_code">3-3</field>
+        </record>
+        <record model="res.city" id="fel_pa_city_59">
+            <field name="name">PORTOBELO</field>
+            <field name="country_id" ref="base.pa"/>
+            <field name="state_id" ref="multipac_felpa.fel_pa_state_3"/>
+            <field name="fel_pa_code">3-4</field>
+        </record>
+        <record model="res.city" id="fel_pa_city_70">
+            <field name="name">SANTA ISABEL</field>
+            <field name="country_id" ref="base.pa"/>
+            <field name="state_id" ref="multipac_felpa.fel_pa_state_3"/>
+            <field name="fel_pa_code">3-5</field>
+        </record>
+        <record model="res.city" id="fel_pa_city_2">
+            <field name="name">ALANJE</field>
+            <field name="country_id" ref="base.pa"/>
+            <field name="state_id" ref="multipac_felpa.fel_pa_state_4"/>
+            <field name="fel_pa_code">4-1</field>
+        </record>
+        <record model="res.city" id="fel_pa_city_7">
+            <field name="name">BARU</field>
+            <field name="country_id" ref="base.pa"/>
+            <field name="state_id" ref="multipac_felpa.fel_pa_state_4"/>
+            <field name="fel_pa_code">4-2</field>
+        </record>
+        <record model="res.city" id="fel_pa_city_10">
+            <field name="name">BOQUERON</field>
+            <field name="country_id" ref="base.pa"/>
+            <field name="state_id" ref="multipac_felpa.fel_pa_state_4"/>
+            <field name="fel_pa_code">4-3</field>
+        </record>
+        <record model="res.city" id="fel_pa_city_11">
+            <field name="name">BOQUETE</field>
+            <field name="country_id" ref="base.pa"/>
+            <field name="state_id" ref="multipac_felpa.fel_pa_state_4"/>
+            <field name="fel_pa_code">4-4</field>
+        </record>
+        <record model="res.city" id="fel_pa_city_12">
+            <field name="name">BUGABA</field>
+            <field name="country_id" ref="base.pa"/>
+            <field name="state_id" ref="multipac_felpa.fel_pa_state_4"/>
+            <field name="fel_pa_code">4-5</field>
+        </record>
+        <record model="res.city" id="fel_pa_city_27">
+            <field name="name">DAVID</field>
+            <field name="country_id" ref="base.pa"/>
+            <field name="state_id" ref="multipac_felpa.fel_pa_state_4"/>
+            <field name="fel_pa_code">4-6</field>
+        </record>
+        <record model="res.city" id="fel_pa_city_28">
+            <field name="name">DOLEGA</field>
+            <field name="country_id" ref="base.pa"/>
+            <field name="state_id" ref="multipac_felpa.fel_pa_state_4"/>
+            <field name="fel_pa_code">4-7</field>
+        </record>
+        <record model="res.city" id="fel_pa_city_30">
+            <field name="name">GUALACA</field>
+            <field name="country_id" ref="base.pa"/>
+            <field name="state_id" ref="multipac_felpa.fel_pa_state_4"/>
+            <field name="fel_pa_code">4-8</field>
+        </record>
+        <record model="res.city" id="fel_pa_city_60">
+            <field name="name">REMEDIOS</field>
+            <field name="country_id" ref="base.pa"/>
+            <field name="state_id" ref="multipac_felpa.fel_pa_state_4"/>
+            <field name="fel_pa_code">4-9</field>
+        </record>
+        <record model="res.city" id="fel_pa_city_61">
+            <field name="name">RENACIMIENTO</field>
+            <field name="country_id" ref="base.pa"/>
+            <field name="state_id" ref="multipac_felpa.fel_pa_state_4"/>
+            <field name="fel_pa_code">4-10</field>
+        </record>
+        <record model="res.city" id="fel_pa_city_65">
+            <field name="name">SAN FELIX</field>
+            <field name="country_id" ref="base.pa"/>
+            <field name="state_id" ref="multipac_felpa.fel_pa_state_4"/>
+            <field name="fel_pa_code">4-11</field>
+        </record>
+        <record model="res.city" id="fel_pa_city_67">
+            <field name="name">SAN LORENZO</field>
+            <field name="country_id" ref="base.pa"/>
+            <field name="state_id" ref="multipac_felpa.fel_pa_state_4"/>
+            <field name="fel_pa_code">4-12</field>
+        </record>
+        <record model="res.city" id="fel_pa_city_75">
+            <field name="name">TOLE</field>
+            <field name="country_id" ref="base.pa"/>
+            <field name="state_id" ref="multipac_felpa.fel_pa_state_4"/>
+            <field name="fel_pa_code">4-13</field>
+        </record>
+        <record model="res.city" id="fel_pa_city_20">
+            <field name="name">CHEPIGANA</field>
+            <field name="country_id" ref="base.pa"/>
+            <field name="state_id" ref="multipac_felpa.fel_pa_state_5"/>
+            <field name="fel_pa_code">5-1</field>
+        </record>
+        <record model="res.city" id="fel_pa_city_57">
+            <field name="name">PINOGANA</field>
+            <field name="country_id" ref="base.pa"/>
+            <field name="state_id" ref="multipac_felpa.fel_pa_state_5"/>
+            <field name="fel_pa_code">5-2</field>
+        </record>
+        <record model="res.city" id="fel_pa_city_24">
+            <field name="name">CHITRE</field>
+            <field name="country_id" ref="base.pa"/>
+            <field name="state_id" ref="multipac_felpa.fel_pa_state_6"/>
+            <field name="fel_pa_code">6-1</field>
+        </record>
+        <record model="res.city" id="fel_pa_city_37">
+            <field name="name">LAS MINAS</field>
+            <field name="country_id" ref="base.pa"/>
+            <field name="state_id" ref="multipac_felpa.fel_pa_state_6"/>
+            <field name="fel_pa_code">6-2</field>
+        </record>
+        <record model="res.city" id="fel_pa_city_40">
+            <field name="name">LOS POZOS</field>
+            <field name="country_id" ref="base.pa"/>
+            <field name="state_id" ref="multipac_felpa.fel_pa_state_6"/>
+            <field name="fel_pa_code">6-3</field>
+        </record>
+        <record model="res.city" id="fel_pa_city_50">
+            <field name="name">OCU</field>
+            <field name="country_id" ref="base.pa"/>
+            <field name="state_id" ref="multipac_felpa.fel_pa_state_6"/>
+            <field name="fel_pa_code">6-4</field>
+        </record>
+        <record model="res.city" id="fel_pa_city_53">
+            <field name="name">PARITA</field>
+            <field name="country_id" ref="base.pa"/>
+            <field name="state_id" ref="multipac_felpa.fel_pa_state_6"/>
+            <field name="fel_pa_code">6-5</field>
+        </record>
+        <record model="res.city" id="fel_pa_city_56">
+            <field name="name">PESE</field>
+            <field name="country_id" ref="base.pa"/>
+            <field name="state_id" ref="multipac_felpa.fel_pa_state_6"/>
+            <field name="fel_pa_code">6-6</field>
+        </record>
+        <record model="res.city" id="fel_pa_city_71">
+            <field name="name">SANTA MARIA</field>
+            <field name="country_id" ref="base.pa"/>
+            <field name="state_id" ref="multipac_felpa.fel_pa_state_6"/>
+            <field name="fel_pa_code">6-7</field>
+        </record>
+        <record model="res.city" id="fel_pa_city_31">
+            <field name="name">GUARARE</field>
+            <field name="country_id" ref="base.pa"/>
+            <field name="state_id" ref="multipac_felpa.fel_pa_state_7"/>
+            <field name="fel_pa_code">7-1</field>
+        </record>
+        <record model="res.city" id="fel_pa_city_39">
+            <field name="name">LAS TABLAS</field>
+            <field name="country_id" ref="base.pa"/>
+            <field name="state_id" ref="multipac_felpa.fel_pa_state_7"/>
+            <field name="fel_pa_code">7-2</field>
+        </record>
+        <record model="res.city" id="fel_pa_city_41">
+            <field name="name">LOS SANTOS</field>
+            <field name="country_id" ref="base.pa"/>
+            <field name="state_id" ref="multipac_felpa.fel_pa_state_7"/>
+            <field name="fel_pa_code">7-3</field>
+        </record>
+        <record model="res.city" id="fel_pa_city_42">
+            <field name="name">MACARACAS</field>
+            <field name="country_id" ref="base.pa"/>
+            <field name="state_id" ref="multipac_felpa.fel_pa_state_7"/>
+            <field name="fel_pa_code">7-4</field>
+        </record>
+        <record model="res.city" id="fel_pa_city_54">
+            <field name="name">PEDASI</field>
+            <field name="country_id" ref="base.pa"/>
+            <field name="state_id" ref="multipac_felpa.fel_pa_state_7"/>
+            <field name="fel_pa_code">7-5</field>
+        </record>
+        <record model="res.city" id="fel_pa_city_58">
+            <field name="name">POCRI</field>
+            <field name="country_id" ref="base.pa"/>
+            <field name="state_id" ref="multipac_felpa.fel_pa_state_7"/>
+            <field name="fel_pa_code">7-6</field>
+        </record>
+        <record model="res.city" id="fel_pa_city_76">
+            <field name="name">TONOSI</field>
+            <field name="country_id" ref="base.pa"/>
+            <field name="state_id" ref="multipac_felpa.fel_pa_state_7"/>
+            <field name="fel_pa_code">7-7</field>
+        </record>
+        <record model="res.city" id="fel_pa_city_6">
+            <field name="name">BALBOA</field>
+            <field name="country_id" ref="base.pa"/>
+            <field name="state_id" ref="multipac_felpa.fel_pa_state_8"/>
+            <field name="fel_pa_code">8-2</field>
+        </record>
+        <record model="res.city" id="fel_pa_city_21">
+            <field name="name">CHEPO</field>
+            <field name="country_id" ref="base.pa"/>
+            <field name="state_id" ref="multipac_felpa.fel_pa_state_8"/>
+            <field name="fel_pa_code">8-5</field>
+        </record>
+        <record model="res.city" id="fel_pa_city_22">
+            <field name="name">CHIMAN</field>
+            <field name="country_id" ref="base.pa"/>
+            <field name="state_id" ref="multipac_felpa.fel_pa_state_8"/>
+            <field name="fel_pa_code">8-6</field>
+        </record>
+        <record model="res.city" id="fel_pa_city_52">
+            <field name="name">PANAMÁ</field>
+            <field name="country_id" ref="base.pa"/>
+            <field name="state_id" ref="multipac_felpa.fel_pa_state_8"/>
+            <field name="fel_pa_code">8-8</field>
+        </record>
+        <record model="res.city" id="fel_pa_city_68">
+            <field name="name">SAN MIGUELITO</field>
+            <field name="country_id" ref="base.pa"/>
+            <field name="state_id" ref="multipac_felpa.fel_pa_state_8"/>
+            <field name="fel_pa_code">8-10</field>
+        </record>
+        <record model="res.city" id="fel_pa_city_74">
+            <field name="name">TABOGA</field>
+            <field name="country_id" ref="base.pa"/>
+            <field name="state_id" ref="multipac_felpa.fel_pa_state_8"/>
+            <field name="fel_pa_code">8-11</field>
+        </record>
+        <record model="res.city" id="fel_pa_city_5">
+            <field name="name">ATALAYA</field>
+            <field name="country_id" ref="base.pa"/>
+            <field name="state_id" ref="multipac_felpa.fel_pa_state_9"/>
+            <field name="fel_pa_code">9-1</field>
+        </record>
+        <record model="res.city" id="fel_pa_city_13">
+            <field name="name">CALOBRE</field>
+            <field name="country_id" ref="base.pa"/>
+            <field name="state_id" ref="multipac_felpa.fel_pa_state_9"/>
+            <field name="fel_pa_code">9-2</field>
+        </record>
+        <record model="res.city" id="fel_pa_city_15">
+            <field name="name">CAÑAZAS</field>
+            <field name="country_id" ref="base.pa"/>
+            <field name="state_id" ref="multipac_felpa.fel_pa_state_9"/>
+            <field name="fel_pa_code">9-3</field>
+        </record>
+        <record model="res.city" id="fel_pa_city_35">
+            <field name="name">LA MEZA</field>
+            <field name="country_id" ref="base.pa"/>
+            <field name="state_id" ref="multipac_felpa.fel_pa_state_9"/>
+            <field name="fel_pa_code">9-4</field>
+        </record>
+        <record model="res.city" id="fel_pa_city_38">
+            <field name="name">LAS PALMAS</field>
+            <field name="country_id" ref="base.pa"/>
+            <field name="state_id" ref="multipac_felpa.fel_pa_state_9"/>
+            <field name="fel_pa_code">9-5</field>
+        </record>
+        <record model="res.city" id="fel_pa_city_43">
+            <field name="name">MARIATO</field>
+            <field name="country_id" ref="base.pa"/>
+            <field name="state_id" ref="multipac_felpa.fel_pa_state_9"/>
+            <field name="fel_pa_code">9-12</field>
+        </record>
+        <record model="res.city" id="fel_pa_city_45">
+            <field name="name">MONTIJO</field>
+            <field name="country_id" ref="base.pa"/>
+            <field name="state_id" ref="multipac_felpa.fel_pa_state_9"/>
+            <field name="fel_pa_code">9-6</field>
+        </record>
+        <record model="res.city" id="fel_pa_city_62">
+            <field name="name">RIO DE JESUS</field>
+            <field name="country_id" ref="base.pa"/>
+            <field name="state_id" ref="multipac_felpa.fel_pa_state_9"/>
+            <field name="fel_pa_code">9-7</field>
+        </record>
+        <record model="res.city" id="fel_pa_city_66">
+            <field name="name">SAN FRANCISCO</field>
+            <field name="country_id" ref="base.pa"/>
+            <field name="state_id" ref="multipac_felpa.fel_pa_state_9"/>
+            <field name="fel_pa_code">9-8</field>
+        </record>
+        <record model="res.city" id="fel_pa_city_69">
+            <field name="name">SANTA FE</field>
+            <field name="country_id" ref="base.pa"/>
+            <field name="state_id" ref="multipac_felpa.fel_pa_state_9"/>
+            <field name="fel_pa_code">9-9</field>
+        </record>
+        <record model="res.city" id="fel_pa_city_72">
+            <field name="name">SANTIAGO</field>
+            <field name="country_id" ref="base.pa"/>
+            <field name="state_id" ref="multipac_felpa.fel_pa_state_9"/>
+            <field name="fel_pa_code">9-10</field>
+        </record>
+        <record model="res.city" id="fel_pa_city_73">
+            <field name="name">SONA</field>
+            <field name="country_id" ref="base.pa"/>
+            <field name="state_id" ref="multipac_felpa.fel_pa_state_9"/>
+            <field name="fel_pa_code">9-11</field>
+        </record>
+        <record model="res.city" id="fel_pa_city_74">
+            <field name="name">SANTA FE</field>
+            <field name="country_id" ref="base.pa"/>
+            <field name="state_id" ref="multipac_felpa.fel_pa_state_5"/>
+            <field name="fel_pa_code">5-3</field>
+        </record>
+    </data>
+</odoo>

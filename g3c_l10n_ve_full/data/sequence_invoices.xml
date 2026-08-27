@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data noupdate="1">
+        <record id="sequence_customer_invoice" model="ir.sequence">
+            <field name="name">secuencia factura de cliente</field>
+            <field name="code">g3c.customer.invoice.number</field>
+            <field eval="1" name="number_next"/>
+            <field eval="1" name="number_increment"/>
+            <field eval="False" name="use_date_range"/>
+            <field eval="True" name="company_id"/>
+            <field name="padding">6</field>
+        </record>
+        <!-- <record id="sequence_supplier_invoice" model="ir.sequence">
+            <field name="name">secuencia factura de proveedor</field>
+            <field name="code">g3c.supplier.invoice.number</field>
+            <field eval="1" name="number_next"/>
+            <field eval="1" name="number_increment"/>
+            <field eval="False" name="use_date_range"/>
+            <field eval="True" name="company_id"/>
+            <field name="padding">6</field>
+        </record> -->
+        <record id="sequence_nro_ctrl" model="ir.sequence">
+            <field name="name">secuencia nro de control</field>
+            <field name="code">g3c.nro.ctrl</field>
+            <field eval="1" name="number_next"/>
+            <field eval="1" name="number_increment"/>
+            <field eval="False" name="use_date_range"/>
+            <field eval="True" name="company_id"/>
+            <field name="padding">6</field>
+        </record>
+    </data>
+</odoo>

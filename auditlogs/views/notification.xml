@@ -1,0 +1,43 @@
+<odoo>
+    <record id="view_auditlog_config_form" model="ir.ui.view">
+        <field name="name">auditlog.config.form</field>
+        <field name="model">auditlog.config</field>
+        <field name="arch" type="xml">
+            <form string="Auditlog Configuration">
+                <sheet>
+                    <group>
+                        <field name="model_id" required="1"/>
+                        <field name="notify_on_delete" required="1"/>
+                        <field name="notify_on_update" required="1"/>
+                        <field name="alert_threshold" required="1"/>
+                        <field name="alert_timeframe" required="1"/>
+                    </group>
+                </sheet>
+            </form>
+        </field>
+    </record>
+    <record id="view_auditlog_config_tree" model="ir.ui.view">
+        <field name="name">auditlog.config.tree</field>
+        <field name="model">auditlog.config</field>
+        <field name="arch" type="xml">
+            <tree string="Auditlog Configuration">
+                <field name="model_id"/>
+                <field name="notify_on_delete"/>
+                <field name="notify_on_update"/>
+                <field name="alert_threshold"/>
+                <field name="alert_timeframe"/>
+            </tree>
+        </field>
+    </record>
+    <record id="action_auditlog_config" model="ir.actions.act_window">
+        <field name="name">Auditlog Configuration</field>
+        <field name="res_model">auditlog.config</field>
+        <field name="view_mode">tree,form</field>
+        <field name="view_id" ref="view_auditlog_config_tree"/>
+    </record>
+    <!-- <menuitem 
+        id="menu_auditlog_config" 
+        name="Auditlog Notification" 
+        parent="menu_audit" 
+        action="action_auditlog_config"/> -->
+</odoo>

@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<templates>
+    <t t-name="account_dual_currency.MulticurrencyReport">
+        <Dropdown togglerClass="'btn btn-secondary'">
+            <t t-set-slot="toggler">
+                <i class="fa fa-money"/> Moneda
+            </t>
+
+            <t t-foreach="Object.values(this.controller.options.currencies)" t-as="currency" t-key="currency_index">
+                <DropdownItem class="{ 'selected': currency.currency_selected }" onSelected="() => this.appliChangeCurrency(currency.currency_id)">
+                    <t t-out="currency.currency_name"/>
+                </DropdownItem>
+            </t>
+        </Dropdown>
+    </t>
+</templates>

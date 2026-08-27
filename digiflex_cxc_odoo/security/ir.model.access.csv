@@ -1,0 +1,4 @@
+id,name,model_id:id,group_id:id,perm_read,perm_write,perm_create,perm_unlink
+access_digiflex_cxc_report_user,digiflex.cxc.report.user,model_digiflex_cxc_report,account.group_account_invoice,1,1,1,0
+access_digiflex_cxc_report_manager,digiflex.cxc.report.manager,model_digiflex_cxc_report,account.group_account_user,1,1,1,0
+

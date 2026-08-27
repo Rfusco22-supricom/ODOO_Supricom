@@ -1,0 +1,38 @@
+<?xml version="1.0" ?>
+<odoo>
+
+    <record id="module_multipac_felpa_category" model="ir.module.category">
+        <field name="name">Panamá FEL Group</field>
+    </record>
+    <record id="felpa_group_user" model="res.groups">
+        <field name="name">FEL User</field>
+        <field name="category_id" ref="module_multipac_felpa_category"/>
+        <field eval="[(4, ref('base.group_user'))]" name="implied_ids"/>
+    </record>
+    <record id="felpa_group_manager" model="res.groups">
+        <field name="name">FEL Manager</field>
+        <field name="category_id" ref="module_multipac_felpa_category"/>
+        <field eval="[(4, ref('felpa_group_user'))]" name="implied_ids"/>
+        <field eval="[(4, ref('base.user_root'))]" name="users"/>
+    </record>
+
+    <record id="module_multipac_felpa_ruc_validator_category" model="ir.module.category">
+        <field name="name">Panamá FEL RUC Validator</field>
+    </record>
+    <record id="felpa_ruc_group_user" model="res.groups">
+        <field name="name">FEL RUC Validator User</field>
+        <field name="category_id" ref="module_multipac_felpa_category"/>
+        <field eval="[(4, ref('base.group_user'))]" name="implied_ids"/>
+    </record>
+
+    <record id="res_partner_portal_public_rule" model="ir.rule">
+        <field name="name">res_partner: portal/public: read access on my commercial partner</field>
+        <field name="model_id" ref="base.model_res_partner"/>
+        <field name="domain_force">['|', ('id', '!=', False), ('id', 'child_of', user.commercial_partner_id.id)]</field>
+        <field eval="[(4, ref('base.group_portal')), (4, ref('base.group_public'))]" name="groups"/>
+        <field eval="False" name="perm_create"/>
+        <field eval="False" name="perm_unlink"/>
+        <field eval="False" name="perm_write"/>
+    </record>
+
+</odoo>

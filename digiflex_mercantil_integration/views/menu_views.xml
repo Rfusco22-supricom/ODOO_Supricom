@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <!-- Menú de Cuentas de Integración bajo Contabilidad -> Configuración -->
+    <menuitem id="menu_bank_integration_account"
+              name="Cuentas de Integración Bancaria (API)"
+              parent="account.menu_finance_configuration"
+              action="action_bank_integration_account"
+              sequence="30"/>
+
+    <!-- Menú de Transacciones Bancarias API bajo Contabilidad -> Clientes -->
+    <menuitem id="menu_bank_transaction_line"
+              name="Transacciones Bancarias API"
+              parent="account.menu_finance_receivables"
+              action="action_bank_transaction_line"
+              sequence="25"/>
+</odoo>
+

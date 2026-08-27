@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+
+    <record id="view_commission_vendor_type_tree" model="ir.ui.view">
+        <field name="name">commission.vendor.type.tree</field>
+        <field name="model">commission.vendor.type</field>
+        <field name="arch" type="xml">
+            <tree string="Tipos de Vendedor">
+                <field name="name"/>
+                <field name="code"/>
+                <field name="country"/>
+                <field name="is_manager"/>
+                <field name="manager_role"/>
+                <field name="manager_commission_type"/>
+            </tree>
+        </field>
+    </record>
+
+    <record id="view_commission_vendor_type_form" model="ir.ui.view">
+        <field name="name">commission.vendor.type.form</field>
+        <field name="model">commission.vendor.type</field>
+        <field name="arch" type="xml">
+            <form string="Tipo de Vendedor">
+                <sheet>
+                    <group>
+                        <group string="Información General">
+                            <field name="name"/>
+                            <field name="code"/>
+                            <field name="country"/>
+                            <field name="company_id" options="{'no_create': True}"/>
+                        </group>
+                        <group string="Configuración Gerencial">
+                            <field name="is_manager"/>
+                            <field name="manager_role" invisible="not is_manager"/>
+                            <field name="manager_commission_type" invisible="not is_manager"/>
+                            <field name="manager_fixed_rate" invisible="not is_manager or manager_commission_type != 'fixed'"/>
+                        </group>
+                    </group>
+                    <notebook invisible="not is_manager">
+                        <page string="Vendedores Excluidos" name="excluded_users">
+                            <field name="excluded_user_ids" widget="many2many_tags" placeholder="Seleccione vendedores a excluir del cálculo gerencial..."/>
+                        </page>
+                        <page string="Escalas por Volumen" name="volume_ranges" invisible="manager_commission_type != 'volume_range'">
+                            <field name="volume_range_ids">
+                                <tree editable="bottom">
+                                    <field name="company_id" options="{'no_create': True}"/>
+                                    <field name="amount_from"/>
+                                    <field name="amount_to"/>
+                                    <field name="commission_percentage"/>
+                                </tree>
+                            </field>
+                        </page>
+                    </notebook>
+                </sheet>
+            </form>
+        </field>
+    </record>
+
+    <record id="action_commission_vendor_type" model="ir.actions.act_window">
+        <field name="name">Tipos de Vendedor</field>
+        <field name="res_model">commission.vendor.type</field>
+        <field name="view_mode">tree,form</field>
+    </record>
+
+    <menuitem id="menu_commission_vendor_type"
+              name="Tipos de Vendedor"
+              parent="supricom_commissions.menu_commission_config"
+              action="action_commission_vendor_type"
+              sequence="10"/>
+
+</odoo>

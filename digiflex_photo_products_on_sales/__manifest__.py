@@ -1,0 +1,23 @@
+{
+    'name': 'Fotos de Productos en Cotizaciones, Entregas y Reporte de Existencias',
+    'version': '17.0.1.0.0',
+    'category': 'Sales/Sales',
+    'summary': 'Muestra fotos de productos en cotizaciones, operaciones de entrega y genera reporte de existencias con/sin foto.',
+    'author': 'DIGIFLEX / Supricom',
+    'website': 'https://www.digiflex.com',
+    'license': 'LGPL-3',
+    'depends': ['sale_management', 'stock'],
+    'data': [
+        'security/ir.model.access.csv',
+        'wizard/stock_quantity_report_wizard_views.xml',
+        'views/sale_order_views.xml',
+        'views/stock_picking_views.xml',
+        'report/reports.xml',
+        'report/sale_report_templates.xml',
+        'report/stock_delivery_templates.xml',
+        'report/stock_quantity_report_templates.xml',
+    ],
+    'installable': True,
+    'application': False,
+    'auto_install': False,
+}

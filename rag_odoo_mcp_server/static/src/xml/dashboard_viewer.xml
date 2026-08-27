@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<templates xml:space="preserve">
+
+    <t t-name="rag_odoo_mcp_server.DashboardViewer">
+        <div class="o_action_manager rag_mcp_dashboard_viewer">
+            <div class="rag_mcp_dashboard_toolbar">
+                <div class="rag_mcp_dashboard_title">
+                    <h2 t-if="state.spec" t-esc="state.spec.name"/>
+                    <h2 t-else="">Dashboard</h2>
+                    <small t-if="state.spec and state.spec.description"
+                           t-esc="state.spec.description"/>
+                </div>
+                <div class="rag_mcp_dashboard_actions">
+                    <button class="btn btn-secondary" t-on-click="onRefresh">
+                        <i class="fa fa-refresh me-1"/>Refresh
+                    </button>
+                    <button class="btn btn-primary" t-on-click="onEdit">
+                        <i class="fa fa-pencil me-1"/>Edit
+                    </button>
+                </div>
+            </div>
+
+            <div t-if="state.loading" class="rag_mcp_dashboard_status">
+                Loading dashboard...
+            </div>
+            <div t-elif="state.error" class="rag_mcp_dashboard_status alert alert-danger">
+                <t t-esc="state.error"/>
+            </div>
+            <div t-elif="state.spec" class="rag_mcp_dashboard_grid">
+                <t t-foreach="state.spec.widgets" t-as="w" t-key="w.id + '-' + state.reloadKey">
+                    <DashboardWidget widget="w" orm="orm" action="action"/>
+                </t>
+                <div t-if="!state.spec.widgets.length"
+                     class="rag_mcp_dashboard_empty">
+                    No widgets yet. Click <em>Edit</em> to add one, or ask Claude.
+                </div>
+            </div>
+        </div>
+    </t>
+
+    <t t-name="rag_odoo_mcp_server.DashboardWidget">
+        <div class="rag_mcp_widget" t-att-style="layoutStyle">
+            <div class="rag_mcp_widget_header">
+                <span class="rag_mcp_widget_title" t-esc="props.widget.title"/>
+                <span class="rag_mcp_widget_type badge text-bg-light"
+                      t-esc="props.widget.widget_type"/>
+            </div>
+            <div class="rag_mcp_widget_body">
+                <!--
+                    For chart widgets the canvas must always be in the DOM so
+                    the useEffect-driven Chart.js draw can find it. We overlay
+                    the loading / error indicator instead of replacing it.
+                -->
+                <t t-if="['bar','line','pie','donut'].includes(props.widget.widget_type)">
+                    <div class="rag_mcp_widget_chart">
+                        <canvas t-ref="canvas"/>
+                    </div>
+                    <div t-if="state.loading"
+                         class="rag_mcp_widget_overlay">Loading...</div>
+                    <div t-elif="state.error"
+                         class="rag_mcp_widget_overlay text-danger small"
+                         t-esc="state.error"/>
+                </t>
+                <t t-elif="props.widget.widget_type === 'kpi'">
+                    <div t-if="state.loading" class="rag_mcp_widget_status">Loading...</div>
+                    <div t-elif="state.error"
+                         class="rag_mcp_widget_status text-danger small"
+                         t-esc="state.error"/>
+                    <div t-else="" class="rag_mcp_widget_kpi">
+                        <div class="rag_mcp_kpi_value" t-esc="state.kpiValue"/>
+                        <div class="rag_mcp_kpi_label" t-esc="state.kpiLabel"/>
+                    </div>
+                </t>
+                <t t-elif="['table','pivot'].includes(props.widget.widget_type)">
+                    <div t-if="state.loading" class="rag_mcp_widget_status">Loading...</div>
+                    <div t-elif="state.error"
+                         class="rag_mcp_widget_status text-danger small"
+                         t-esc="state.error"/>
+                    <div t-else="" class="rag_mcp_widget_table">
+                        <table class="table table-sm table-hover">
+                            <thead>
+                                <tr>
+                                    <th t-foreach="state.tableCols" t-as="c"
+                                        t-key="c" t-esc="c"/>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr t-foreach="state.tableRows" t-as="row"
+                                    t-key="row.id"
+                                    t-on-click="() => this.onRowClick(row.id)"
+                                    class="rag_mcp_table_row">
+                                    <td t-foreach="row._cells" t-as="cell"
+                                        t-key="cell_index" t-esc="cell"/>
+                                </tr>
+                            </tbody>
+                        </table>
+                        <div t-if="!state.tableRows.length"
+                             class="text-muted small">No records.</div>
+                    </div>
+                </t>
+            </div>
+        </div>
+    </t>
+
+</templates>

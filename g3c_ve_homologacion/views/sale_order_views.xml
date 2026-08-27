@@ -1,0 +1,46 @@
+<odoo>
+    <record id="view_order_form_fiscal_restrictions" model="ir.ui.view">
+        <field name="name">sale.order.form.fiscal.restrictions</field>
+        <field name="model">sale.order</field>
+        <field name="inherit_id" ref="sale.view_order_form"/>
+        <field name="arch" type="xml">
+            <!-- Campos de control al nivel del Formulario -->
+            <xpath expr="//form" position="inside">
+                <field name="homologacion_activa" invisible="1"/>
+                <field name="hide_sale_confirm" invisible="1"/>
+            </xpath>
+
+            <!-- Hacer readonly los impuestos en las líneas de pedido (solo si homologación activa) -->
+            <!-- Usamos 'parent.' para campos del modelo padre -->
+            <xpath expr="//field[@name='order_line']/tree/field[@name='tax_id']" position="attributes">
+                <attribute name="readonly">parent.homologacion_activa</attribute>
+                <attribute name="force_save">1</attribute>
+            </xpath>
+
+            <!-- Ocultar botones de confirmar -->
+            <xpath expr="(//header/button[@name='action_confirm'])[1]" position="attributes">
+                <attribute name="invisible" add="hide_sale_confirm and homologacion_activa" separator=" or "/>
+            </xpath>
+            <xpath expr="(//header/button[@name='action_confirm'])[2]" position="attributes">
+                <attribute name="invisible" add="hide_sale_confirm and homologacion_activa" separator=" or "/>
+            </xpath>
+
+            <!-- Ocultar TODOS los botones de enviar/vista previa cuando homologación activa -->
+            <xpath expr="(//button[@name='action_quotation_send'])[1]" position="attributes">
+                <attribute name="invisible" add="homologacion_activa" separator=" or "/>
+            </xpath>
+            <xpath expr="(//button[@name='action_quotation_send'])[2]" position="attributes">
+                <attribute name="invisible" add="homologacion_activa" separator=" or "/>
+            </xpath>
+            <xpath expr="(//button[@name='action_quotation_send'])[3]" position="attributes">
+                <attribute name="invisible" add="homologacion_activa" separator=" or "/>
+            </xpath>
+            <xpath expr="(//button[@name='action_quotation_send'])[4]" position="attributes">
+                <attribute name="invisible" add="homologacion_activa" separator=" or "/>
+            </xpath>
+            <xpath expr="//header//button[@name='action_preview_sale_order']" position="attributes">
+                <attribute name="invisible" add="homologacion_activa" separator=" or "/>
+            </xpath>
+        </field>
+    </record>
+</odoo>

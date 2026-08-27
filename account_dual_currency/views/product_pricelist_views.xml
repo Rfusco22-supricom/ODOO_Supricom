@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+
+    <record id="product_pricelist_view_inherit_account_dual_currency" model="ir.ui.view">
+        <field name="name">product.pricelist.form.inherit.account.dual.currency</field>
+        <field name="model">product.pricelist</field>
+        <field name="inherit_id" ref="product.product_pricelist_view"/>
+        <field name="arch" type="xml">
+            <xpath expr="//group[@name='pricelist_settings']" position="after">
+                <group>
+                    <button string="Actualizar precios Bs" name="update_price_bs" type="object" class="oe_highlight"/>
+                </group>
+            </xpath>
+            <xpath expr="//page[@name='pricelist_rules']//field[@name='price']" position="after">
+                <field name="currency_id_dif" invisible="1"/>
+                <field name="price_fixed_usd" widget='monetary' options="{'currency_field': 'currency_id_dif'}" />
+                <field name="price_fixed_usd_vat" widget='monetary' options="{'currency_field': 'currency_id_dif'}" readonly="1" />
+            </xpath>
+        </field>
+    </record>
+
+</odoo>

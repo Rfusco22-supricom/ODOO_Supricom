@@ -1,0 +1,338 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <!-- Pivot View -->
+    <record id="view_commission_settlement_line_pivot" model="ir.ui.view">
+        <field name="name">commission.settlement.line.pivot</field>
+        <field name="model">commission.settlement.line</field>
+        <field name="arch" type="xml">
+            <pivot string="Análisis de Comisiones" sample="1">
+                <field name="salesperson_id" type="row"/>
+                <field name="client_id" type="row"/>
+                <field name="product_id" type="row"/>
+                <field name="date" type="col" interval="month"/>
+                <field name="amount_paid" type="measure"/>
+                <field name="commission_amount" type="measure"/>
+                <field name="profitability" type="measure"/>
+            </pivot>
+        </field>
+    </record>
+
+    <!-- Graph View -->
+    <record id="view_commission_settlement_line_graph" model="ir.ui.view">
+        <field name="name">commission.settlement.line.graph</field>
+        <field name="model">commission.settlement.line</field>
+        <field name="arch" type="xml">
+            <graph string="Análisis de Comisiones" type="bar" sample="1">
+                <field name="salesperson_id"/>
+                <field name="commission_amount" type="measure"/>
+            </graph>
+        </field>
+    </record>
+
+    <!-- Search View -->
+    <record id="view_commission_settlement_line_search" model="ir.ui.view">
+        <field name="name">commission.settlement.line.search</field>
+        <field name="model">commission.settlement.line</field>
+        <field name="arch" type="xml">
+            <search string="Buscar Líneas de Comisión">
+                <field name="salesperson_id"/>
+                <field name="client_id"/>
+                <field name="product_id"/>
+                <group expand="1" string="Agrupar Por">
+                    <filter string="Vendedor" name="group_salesperson" context="{'group_by':'salesperson_id'}"/>
+                    <filter string="Cliente" name="group_client" context="{'group_by':'client_id'}"/>
+                    <filter string="Factura" name="group_invoice" context="{'group_by':'invoice_id'}"/>
+                    <filter string="País" name="group_country" context="{'group_by':'country_rel_id'}"/>
+                    <filter string="Mes" name="group_date" context="{'group_by':'date:month'}"/>
+                </group>
+            </search>
+        </field>
+    </record>
+
+    <!-- Line Tree View (for Analysis) -->
+    <record id="view_commission_settlement_line_tree" model="ir.ui.view">
+        <field name="name">commission.settlement.line.tree</field>
+        <field name="model">commission.settlement.line</field>
+        <field name="arch" type="xml">
+            <tree string="Detalle de Comisiones" create="0" edit="0" delete="0" decoration-muted="is_excluded">
+                <field name="client_id" optional="show"/>
+                <field name="product_id" optional="hide"/>
+                <field name="invoice_id" optional="show"/>
+                <field name="is_credit" optional="show"/>
+                <field name="invoice_date"/>
+                <field name="date" string="Fecha Aplicación"/>
+                <field name="amount_paid" sum="Total Base" string="Valor Pagado"/>
+                <field name="days_credit"/>
+                <field name="days_paid"/>
+                <field name="days_overdue" optional="show"/>
+                <field name="mora_penalty_factor" string="% Mora" widget="percentage" optional="show"/>
+                <field name="use_margin" column_invisible="True"/>
+
+                <field name="profitability" widget="percentage" optional="hide" column_invisible="not use_margin"/>
+                <field name="commission_pct" string="% a Pagar" widget="percentage"/>
+                <field name="is_overdue" string="Vencido" widget="boolean_toggle" optional="hide"/>
+                <field name="is_excluded" optional="show"/>
+                <field name="exclude_reason" optional="show"/>
+                <field name="commission_amount" sum="Total Comisión"/>
+                <field name="manager_commission" sum="Comisión Gerente" optional="show"/>
+            </tree>
+        </field>
+    </record>
+
+    <!-- Action for Analysis -->
+    <record id="action_commission_analysis" model="ir.actions.act_window">
+        <field name="name">Análisis de Comisiones</field>
+        <field name="res_model">commission.settlement.line</field>
+        <field name="view_mode">pivot,graph,tree</field>
+        <field name="search_view_id" ref="view_commission_settlement_line_search"/>
+        <field name="context">{'search_default_group_salesperson': 1}</field>
+    </record>
+
+    <!-- Settlement Views -->
+    <record id="view_commission_settlement_form" model="ir.ui.view">
+        <field name="name">commission.settlement.form</field>
+        <field name="model">commission.settlement</field>
+        <field name="arch" type="xml">
+            <form string="Liquidación de Comisión">
+                <header>
+                    <button name="action_validate" string="Validar" type="object" class="oe_highlight" invisible="state != 'draft'"/>
+                    <button name="action_recalculate_commission" string="Recalcular" type="object" invisible="state != 'draft'"/>
+                    <button name="action_export_excel_consolidated" string="Exportar Consolidado (Excel)" type="object" icon="fa-file-excel-o"/>
+                    <button name="action_reset_draft" string="Borrador" type="object" invisible="state != 'done'"/>
+                    <field name="state" widget="statusbar"/>
+                </header>
+                <sheet>
+                    <div class="oe_title">
+                        <h1><field name="name"/></h1>
+                    </div>
+                    <group>
+                        <group>
+                            <field name="salesperson_id"/>
+                            <field name="date_from"/>
+                            <field name="date_to"/>
+                            <field name="min_price_penalty_pct"/>
+                        </group>
+                        <group>
+                            <label for="target_amount"/>
+                            <div class="o_row">
+                                <field name="target_amount"/>
+                                <span class="oe_grey" invisible="not is_ve_company"> / </span>
+                                <field name="target_amount_ref" invisible="not is_ve_company"/>
+                            </div>
+                            
+                            <label for="total_collected"/>
+                            <div class="o_row">
+                                <field name="total_collected"/>
+                                <span class="oe_grey" invisible="not is_ve_company"> / </span>
+                                <field name="total_collected_ref" invisible="not is_ve_company"/>
+                            </div>
+
+                            <label for="total_invoiced"/>
+                            <div class="o_row">
+                                <field name="total_invoiced"/>
+                                <span class="oe_grey" invisible="not is_ve_company"> / </span>
+                                <field name="total_invoiced_ref" invisible="not is_ve_company"/>
+                            </div>
+
+                            <field name="achievement_pct" widget="percentage"/>
+
+                            <label for="total_commission"/>
+                            <div class="o_row">
+                                <field name="total_commission"/>
+                                <span class="oe_grey" invisible="not is_ve_company"> / </span>
+                                <field name="total_commission_ref" invisible="not is_ve_company"/>
+                            </div>
+                            
+                            <field name="currency_id" invisible="1"/>
+                            <field name="currency_id_ref" invisible="1"/>
+                            <field name="company_id" invisible="1"/>
+                            <field name="is_ve_company" invisible="1"/>
+                            <field name="use_margin" invisible="1"/>
+                        </group>
+                    </group>
+                    <notebook>
+                        <page string="Facturas del Mes" name="current_month_lines">
+                            <field name="current_month_line_ids">
+                                <tree editable="bottom" decoration-muted="is_excluded" decoration-warning="is_overdue and not is_excluded">
+                                    <field name="is_excluded" column_invisible="1"/>
+                                    <field name="date" string="Fecha Pago"/>
+                                    <field name="client_id"/>
+                                    <field name="invoice_id" optional="show" string="Factura" widget="many2one_clickable"/>
+                                    <field name="is_credit" optional="show"/>
+                                    <field name="invoice_date"/>
+                                    <field name="product_id"/>
+                                    <field name="amount_paid"/>
+                                    <field name="cost" column_invisible="not parent.use_margin" optional="hide"/>
+                                    <field name="profitability" widget="percentage" column_invisible="not parent.use_margin" optional="hide"/>
+                                    <field name="is_overdue" optional="hide"/>
+                                    <field name="days_overdue" optional="show" string="Días Mora"/>
+                                    <field name="mora_penalty_factor" widget="percentage" optional="show" string="Factor Mora (%)"/>
+                                    <field name="exclude_reason" optional="show"/>
+                                    <field name="commission_pct" widget="percentage"/>
+                                    <field name="deduction_pct" widget="percentage" optional="hide"/>
+                                    <field name="penalty_pct" widget="percentage" optional="hide"/>
+                                    <field name="commission_amount_usd" optional="hide" sum="commission_amount_usd" column_invisible="not parent.is_ve_company"/>
+                                    <field name="commission_amount" sum="Total Comisión"/>
+                                    <field name="currency_id" invisible="1"/>
+                                </tree>
+                            </field>
+                        </page>
+                        <page string="Cobranza Meses Anteriores" name="previous_month_lines">
+                            <field name="previous_month_line_ids">
+                                <tree editable="bottom" decoration-muted="is_excluded" decoration-warning="is_overdue and not is_excluded">
+                                    <field name="is_excluded" column_invisible="1"/>
+                                    <field name="date" string="Fecha Pago"/>
+                                    <field name="client_id"/>
+                                    <field name="invoice_id" optional="show" string="Factura" widget="many2one_clickable"/>
+                                    <field name="is_credit" optional="show"/>
+                                    <field name="invoice_date"/>
+                                    <field name="product_id"/>
+                                    <field name="amount_paid"/>
+                                    <field name="cost" column_invisible="not parent.use_margin" optional="hide"/>
+                                    <field name="profitability" widget="percentage" column_invisible="not parent.use_margin" optional="hide"/>
+                                    <field name="is_overdue" optional="hide"/>
+                                    <field name="days_overdue" optional="show" string="Días Mora"/>
+                                    <field name="mora_penalty_factor" widget="percentage" optional="show" string="Factor Mora (%)"/>
+                                    <field name="exclude_reason" optional="show"/>
+                                    <field name="commission_pct" widget="percentage"/>
+                                    <field name="deduction_pct" widget="percentage" optional="hide"/>
+                                    <field name="penalty_pct" widget="percentage" optional="hide"/>
+                                    <field name="commission_amount_usd" optional="hide" sum="commission_amount_usd" column_invisible="not parent.is_ve_company"/>
+                                    <field name="commission_amount" sum="Total Comisión"/>
+                                    <field name="currency_id" invisible="1"/>
+                                </tree>
+                            </field>
+                        </page>
+                        <page string="Pagos Comisionados" name="commissioned_payment_lines">
+                            <field name="line_ids" domain="[('is_excluded', '=', False)]">
+                                <tree editable="bottom" decoration-muted="is_excluded" decoration-warning="is_overdue and not is_excluded">
+                                    <field name="is_excluded" column_invisible="1"/>
+                                    <field name="date" string="Fecha Pago"/>
+                                    <field name="client_id"/>
+                                    <field name="invoice_id" optional="show" string="Factura" widget="many2one_clickable"/>
+                                    <field name="is_credit" optional="show"/>
+                                    <field name="invoice_date"/>
+                                    <field name="product_id"/>
+                                    <field name="amount_paid"/>
+                                    <field name="actual_amount_paid"/>
+                                    <field name="cost" column_invisible="not parent.use_margin" optional="hide"/>
+                                    <field name="profitability" widget="percentage" column_invisible="not parent.use_margin" optional="hide"/>
+                                    <field name="is_overdue" optional="hide"/>
+                                    <field name="exclude_reason" optional="show"/>
+                                    <field name="commission_pct" widget="percentage"/>
+                                    <field name="deduction_pct" widget="percentage" optional="hide"/>
+                                    <field name="penalty_pct" widget="percentage" optional="hide"/>
+                                    <field name="commission_amount_usd" optional="hide" sum="commission_amount_usd" column_invisible="not parent.is_ve_company"/>
+                                    <field name="commission_amount" sum="Total Comisión"/>
+                                    <field name="currency_id" invisible="1"/>
+                                </tree>
+                            </field>
+                        </page>
+                        <page string="Pagos Comisionados agrupados" name="grouped_commissioned_payment_lines">
+                            <field name="grouped_line_ids">
+                                <tree create="0" edit="0" delete="0">
+                                    <field name="date" string="Fecha Pago"/>
+                                    <field name="client_id"/>
+                                    <field name="invoice_id" optional="show" string="Factura" widget="many2one_clickable"/>
+                                    <field name="is_credit" optional="show"/>
+                                    <field name="invoice_date"/>
+                                    <field name="invoice_untaxed_amount" sum="Total Monto Factura"/>
+                                    <field name="amount_paid" string="Monto Pagado Agrupado" sum="Total Base Pagada"/>
+                                    <field name="actual_amount_paid" string="Monto Cobrado Agrupado" sum="Total Monto Cobrado"/>
+                                    <field name="days_overdue" optional="show" string="Días Mora"/>
+                                    <field name="mora_penalty_factor" widget="percentage" optional="show" string="Factor Mora (%)"/>
+                                    <field name="commission_pct" widget="percentage"/>
+                                    <field name="commission_amount_usd" optional="hide" sum="commission_amount_usd" column_invisible="not parent.is_ve_company"/>
+                                    <field name="commission_amount" sum="Total Comisión"/>
+                                    <field name="currency_id" invisible="1"/>
+                                </tree>
+                            </field>
+                        </page>
+                    </notebook>
+                </sheet>
+                <div class="oe_chatter">
+                    <field name="message_follower_ids"/>
+                    <field name="activity_ids"/>
+                    <field name="message_ids"/>
+                </div>
+            </form>
+        </field>
+    </record>
+
+    <record id="view_commission_settlement_tree" model="ir.ui.view">
+        <field name="name">commission.settlement.tree</field>
+        <field name="model">commission.settlement</field>
+        <field name="arch" type="xml">
+            <tree string="Liquidaciones">
+                <field name="name"/>
+                <field name="salesperson_id"/>
+                <field name="date_from"/>
+                <field name="date_to"/>
+                <field name="total_commission"/>
+                <field name="commission_amount_usd" sum="commission_amount_usd" optional="show"/>
+                <field name="is_ve_company" invisible="1"/>
+                <field name="state"/>
+            </tree>
+        </field>
+    </record>
+
+    <!-- Settlement Search View -->
+    <record id="view_commission_settlement_search" model="ir.ui.view">
+        <field name="name">commission.settlement.search</field>
+        <field name="model">commission.settlement</field>
+        <field name="arch" type="xml">
+            <search string="Buscar Liquidaciones">
+                <field name="name"/>
+                <field name="salesperson_id"/>
+                <field name="state"/>
+                <field name="date_from"/>
+                
+                <filter string="Borrador" name="state_draft" domain="[('state', '=', 'draft')]"/>
+                <filter string="Validado" name="state_done" domain="[('state', '=', 'done')]"/>
+                <separator/>
+                <filter string="Fecha Inicio" name="filter_date_from" date="date_from"/>
+                
+                <group expand="0" string="Agrupar Por">
+                    <filter string="Mes" name="group_date_month" context="{'group_by': 'date_from:month'}"/>
+                    <filter string="Año" name="group_date_year" context="{'group_by': 'date_from:year'}"/>
+                    <filter string="Vendedor" name="group_salesperson" context="{'group_by': 'salesperson_id'}"/>
+                    <filter string="Fecha Inicio" name="group_date_from" context="{'group_by': 'date_from'}"/>
+                    <filter string="Estado" name="group_state" context="{'group_by': 'state'}"/>
+                </group>
+            </search>
+        </field>
+    </record>
+
+    <record id="action_commission_settlement" model="ir.actions.act_window">
+        <field name="name">Liquidaciones de Comisión</field>
+        <field name="res_model">commission.settlement</field>
+        <field name="view_mode">tree,form</field>
+        <field name="search_view_id" ref="view_commission_settlement_search"/>
+        <field name="context">{'search_default_group_date_month': 1, 'search_default_group_salesperson': 1}</field>
+    </record>
+
+    <menuitem id="menu_commission_settlement"
+              name="Liquidaciones"
+              parent="supricom_commissions.menu_commission_root"
+              action="action_commission_settlement"
+              sequence="30"/>
+              
+    <menuitem id="menu_commission_analysis"
+              name="Análisis de Comisiones"
+              parent="supricom_commissions.menu_commission_root"
+              action="action_commission_analysis"
+              sequence="31"/>
+
+    <!-- Server Action: Recalcular Comisión -->
+    <record id="action_recalculate_commission_settlement" model="ir.actions.server">
+        <field name="name">Recalcular Comisión</field>
+        <field name="model_id" ref="model_commission_settlement"/>
+        <field name="binding_model_id" ref="model_commission_settlement"/>
+        <field name="binding_view_types">form,list</field>
+        <field name="state">code</field>
+        <field name="code">
+records.action_recalculate_commission()
+        </field>
+    </record>
+
+</odoo>

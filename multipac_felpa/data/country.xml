@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+
+    <function name="write" model="ir.model.data">
+        <function name="search" model="ir.model.data">
+            <value eval="[('module', '=', 'base'), ('name', '=', 'pa')]"/>
+        </function>
+        <value eval="{'noupdate': False}"/>
+    </function>
+
+    <record id="base.pa" model="res.country">
+        <field name="enforce_cities">1</field>
+        <field name="state_required">1</field>
+        <field name="address_view_id" ref="multipac_felpa.fel_pa_partner_address_form"/>
+        <field eval="'%(street)s %(street2)s\n%(city)s\n%(zip)s\n%(country_name)s'" name="address_format"/>
+    </record>
+
+    <function name="write" model="ir.model.data">
+        <function name="search" model="ir.model.data">
+            <value eval="[('module', '=', 'base'), ('name', '=', 'pa')]"/>
+        </function>
+        <value eval="{'noupdate': True}"/>
+    </function>
+    
+</odoo>

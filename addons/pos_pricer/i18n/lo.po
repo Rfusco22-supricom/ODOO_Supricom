@@ -1,0 +1,367 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+# * pos_pricer
+#
+# Weblate <noreply-mt-weblate@weblate.org>, 2026.
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 17.0+e\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2025-12-29 18:44+0000\n"
+"PO-Revision-Date: 2026-06-13 08:57+0000\n"
+"Last-Translator: Weblate <noreply-mt-weblate@weblate.org>\n"
+"Language-Team: Lao <https://translate.odoo.com/projects/odoo-17/pos_pricer/"
+"lo/>\n"
+"Language: lo\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: \n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"X-Generator: Weblate 2026.6.1\n"
+
+#. module: pos_pricer
+#: model:ir.model.constraint,message:pos_pricer.constraint_pricer_tag_name_unique
+#, fuzzy
+msgid "A Pricer tag with this barcode id already exists"
+msgstr "ມີປ້າຍ Pricer ທີ່ມີລະຫັດບາໂຄດນີ້ຢູ່ແລ້ວ"
+
+#. module: pos_pricer
+#: model:ir.model.fields,field_description:pos_pricer.field_pricer_tag__pricer_store_id
+#, fuzzy
+msgid "Associated Pricer Store"
+msgstr "ຮ້ານ Pricer ທີ່ກ່ຽວຂ້ອງ"
+
+#. module: pos_pricer
+#: model:ir.model.fields,field_description:pos_pricer.field_pricer_tag__product_id
+#, fuzzy
+msgid "Associated Product"
+msgstr "ສິນຄ້າທີ່ກ່ຽວຂ້ອງ"
+
+#. module: pos_pricer
+#: model:ir.model.fields,field_description:pos_pricer.field_pricer_store__auth_url
+#, fuzzy
+msgid "Auth Url"
+msgstr "URL ສຳລັບຢືນຢັນຕົວຕົນ"
+
+#. module: pos_pricer
+#: model:ir.model.fields,field_description:pos_pricer.field_pricer_store__create_or_update_products_url
+#, fuzzy
+msgid "Create Or Update Products Url"
+msgstr "URL ສ້າງ ຫຼື ອັບເດດສິນຄ້າ"
+
+#. module: pos_pricer
+#: model:ir.model.fields,field_description:pos_pricer.field_pricer_store__create_uid
+#: model:ir.model.fields,field_description:pos_pricer.field_pricer_tag__create_uid
+#, fuzzy
+msgid "Created by"
+msgstr "ສ້າງໂດຍ"
+
+#. module: pos_pricer
+#: model:ir.model.fields,field_description:pos_pricer.field_pricer_store__create_date
+#: model:ir.model.fields,field_description:pos_pricer.field_pricer_tag__create_date
+#, fuzzy
+msgid "Created on"
+msgstr "ສ້າງເມື່ອ"
+
+#. module: pos_pricer
+#: model:ir.model.fields,help:pos_pricer.field_pricer_store__last_update_datetime
+#, fuzzy
+msgid "Date and time of the last synchronization with Pricer"
+msgstr "ວັນທີ ແລະ ເວລາ ຂອງການຊິງໂຄໄນລ້າສຸດກັບ Pricer"
+
+#. module: pos_pricer
+#: model:ir.model.fields,field_description:pos_pricer.field_pricer_store__display_name
+#: model:ir.model.fields,field_description:pos_pricer.field_pricer_tag__display_name
+#, fuzzy
+msgid "Display Name"
+msgstr "ຊື່ທີ່ສະແດງ"
+
+#. module: pos_pricer
+#. odoo-python
+#: code:addons/pos_pricer/models/pricer_store.py:0
+#, python-format
+msgid "Error: %s - %s"
+msgstr ""
+
+#. module: pos_pricer
+#. odoo-python
+#: code:addons/pos_pricer/models/pricer_store.py:0
+#, fuzzy, python-format
+msgid "Error: check Pricer credentials"
+msgstr "ຂໍ້ຜິດພາດ: ກວດສອບຂໍ້ມູນການເຂົ້າລະບົບ Pricer"
+
+#. module: pos_pricer
+#. odoo-python
+#: code:addons/pos_pricer/models/pricer_store.py:0
+#, python-format
+msgid "Failed to unlink Pricer tag %s at API url %s"
+msgstr ""
+
+#. module: pos_pricer
+#: model:ir.model.fields,field_description:pos_pricer.field_pricer_store__id
+#: model:ir.model.fields,field_description:pos_pricer.field_pricer_tag__id
+#, fuzzy
+msgid "ID"
+msgstr "ລະຫັດ"
+
+#. module: pos_pricer
+#: model:ir.model.fields,help:pos_pricer.field_pricer_store__pricer_store_identifier
+#, fuzzy
+msgid "Identifier of the store in the Pricer system"
+msgstr "ຕົວລະບຸຂອງຮ້ານໃນລະບົບ Pricer"
+
+#. module: pos_pricer
+#: model:ir.model.fields,help:pos_pricer.field_pricer_tag__name
+#, fuzzy
+msgid "It is recommended to use a barcode scanner for input"
+msgstr "ແນະນຳໃຫ້ໃຊ້ເຄື່ອງສະແກນບາໂຄດເພື່ອປ້ອນຂໍ້ມູນ"
+
+#. module: pos_pricer
+#: model:ir.model.fields,field_description:pos_pricer.field_pricer_store__last_update_datetime
+#, fuzzy
+msgid "Last Update"
+msgstr "ອັບເດດຫຼ້າສຸດ"
+
+#. module: pos_pricer
+#: model:ir.model.fields,field_description:pos_pricer.field_pricer_store__last_update_status_message
+#, fuzzy
+msgid "Last Update Status"
+msgstr "ສະຖານະການອັບເດດຫຼ້າສຸດ"
+
+#. module: pos_pricer
+#: model:ir.model.fields,field_description:pos_pricer.field_pricer_store__write_uid
+#: model:ir.model.fields,field_description:pos_pricer.field_pricer_tag__write_uid
+#, fuzzy
+msgid "Last Updated by"
+msgstr "ແກ້ໄຂຫຼ້າສຸດໂດຍ"
+
+#. module: pos_pricer
+#: model:ir.model.fields,field_description:pos_pricer.field_pricer_store__write_date
+#: model:ir.model.fields,field_description:pos_pricer.field_pricer_tag__write_date
+#, fuzzy
+msgid "Last Updated on"
+msgstr "ແກ້ໄຂຫຼ້າສຸດເມື່ອ"
+
+#. module: pos_pricer
+#: model:ir.model.fields,field_description:pos_pricer.field_pricer_store__link_tags_url
+#, fuzzy
+msgid "Link Tags Url"
+msgstr "URL ເຊື່ອມຕໍ່ປ້າຍ"
+
+#. module: pos_pricer
+#: model:ir.model.fields,help:pos_pricer.field_pricer_store__pricer_login
+#, fuzzy
+msgid "Login of your Pricer account"
+msgstr "ຊື່ບັນຊີເຂົ້າໃຊ້ Pricer ຂອງທ່ານ"
+
+#. module: pos_pricer
+#: model:ir.actions.server,name:pos_pricer.pricer_sync_cron_ir_actions_server
+#, fuzzy
+msgid "POS Pricer: tags update synchronization "
+msgstr "POS Pricer: ການຊິງໂຄໄນການອັບເດດປ້າຍ "
+
+#. module: pos_pricer
+#: model:ir.model.fields,help:pos_pricer.field_pricer_store__pricer_password
+#, fuzzy
+msgid "Password of your Pricer account"
+msgstr "ລະຫັດຜ່ານບັນຊີ Pricer ຂອງທ່ານ"
+
+#. module: pos_pricer
+#: model:ir.ui.menu,name:pos_pricer.pos_menu_pricer_configuration
+#: model_terms:ir.ui.view,arch_db:pos_pricer.product_template_form_view_pricers
+#, fuzzy
+msgid "Pricer"
+msgstr "ໄພຣເຊີ (Pricer)"
+
+#. module: pos_pricer
+#: model:ir.model.fields,field_description:pos_pricer.field_product_product__pricer_display_price
+#: model:ir.model.fields,field_description:pos_pricer.field_product_template__pricer_display_price
+#, fuzzy
+msgid "Pricer Display Price"
+msgstr "ລາຄາທີ່ສະແດງໃນ Pricer"
+
+#. module: pos_pricer
+#: model:ir.model.fields,field_description:pos_pricer.field_pricer_store__pricer_login
+#, fuzzy
+msgid "Pricer Login"
+msgstr "ບັນຊີເຂົ້າໃຊ້ Pricer"
+
+#. module: pos_pricer
+#: model:ir.model.fields,field_description:pos_pricer.field_pricer_store__pricer_password
+#, fuzzy
+msgid "Pricer Password"
+msgstr "ລະຫັດຜ່ານ Pricer"
+
+#. module: pos_pricer
+#: model:ir.model.fields,field_description:pos_pricer.field_product_product__pricer_product_to_create_or_update
+#: model:ir.model.fields,field_description:pos_pricer.field_product_template__pricer_product_to_create_or_update
+#, fuzzy
+msgid "Pricer Product To Create Or Update"
+msgstr "ສິນຄ້າ Pricer ທີ່ຈະສ້າງ ຫຼື ອັບເດດ"
+
+#. module: pos_pricer
+#: model:ir.model.fields,field_description:pos_pricer.field_pricer_tag__pricer_product_to_link
+#, fuzzy
+msgid "Pricer Product To Link"
+msgstr "ສິນຄ້າ Pricer ທີ່ຈະເຊື່ອມຕໍ່"
+
+#. module: pos_pricer
+#: model:ir.model.fields,field_description:pos_pricer.field_product_product__pricer_store_id
+#: model:ir.model.fields,field_description:pos_pricer.field_product_template__pricer_store_id
+#: model_terms:ir.ui.view,arch_db:pos_pricer.pricer_pricer_store_form_view
+#: model_terms:ir.ui.view,arch_db:pos_pricer.pricer_pricer_store_view_list
+#, fuzzy
+msgid "Pricer Store"
+msgstr "ຮ້ານ Pricer"
+
+#. module: pos_pricer
+#: model:ir.model.fields,field_description:pos_pricer.field_pricer_store__pricer_store_identifier
+#, fuzzy
+msgid "Pricer Store ID"
+msgstr "ລະຫັດຮ້ານ Pricer"
+
+#. module: pos_pricer
+#. odoo-python
+#: code:addons/pos_pricer/models/pricer_store.py:0
+#, fuzzy, python-format
+msgid ""
+"Pricer Store ID must only contain lowercase a-z, 0-9 or '-' and not start "
+"with '-'"
+msgstr ""
+"ລະຫັດຮ້ານ Pricer ຕ້ອງປະກອບດ້ວຍຕົວພິມນ້ອຍ a-z, 0-9 ຫຼື '-' ເທົ່ານັ້ນ ແລະ ຫ້າມເລີ່ມຕົ້ນດ້ວຍ '-'"
+
+#. module: pos_pricer
+#: model:ir.model.fields,help:pos_pricer.field_pricer_store__name
+#, fuzzy
+msgid "Pricer Store name in Odoo database"
+msgstr "ຊື່ຮ້ານ Pricer ໃນຖານຂໍ້ມູນ Odoo"
+
+#. module: pos_pricer
+#: model:ir.model,name:pos_pricer.model_pricer_store
+#, fuzzy
+msgid "Pricer Store regrouping pricer tags"
+msgstr "ຮ້ານ Pricer ທີ່ລວມກຸ່ມປ້າຍ Pricer"
+
+#. module: pos_pricer
+#: model:ir.actions.act_window,name:pos_pricer.action_open_pricer_stores
+#: model:ir.ui.menu,name:pos_pricer.menu_pos_pricer_stores
+#, fuzzy
+msgid "Pricer Stores"
+msgstr "ຮ້ານ Pricer"
+
+#. module: pos_pricer
+#: model:ir.model.fields,field_description:pos_pricer.field_pricer_tag__name
+#, fuzzy
+msgid "Pricer Tag Barcode ID"
+msgstr "ລະຫັດບາໂຄດປ້າຍ Pricer"
+
+#. module: pos_pricer
+#: model:ir.actions.act_window,name:pos_pricer.action_open_pricer_tags
+#: model:ir.model.fields,field_description:pos_pricer.field_pricer_store__pricer_tag_ids
+#: model:ir.ui.menu,name:pos_pricer.menu_pos_pricer_tags
+#, fuzzy
+msgid "Pricer Tags"
+msgstr "ປ້າຍ Pricer"
+
+#. module: pos_pricer
+#: model:ir.model.fields,field_description:pos_pricer.field_pricer_store__pricer_tenant_name
+#, fuzzy
+msgid "Pricer Tenant Name"
+msgstr "ຊື່ Tenant ຂອງ Pricer"
+
+#. module: pos_pricer
+#: model:ir.model,name:pos_pricer.model_pricer_tag
+#, fuzzy
+msgid "Pricer electronic tag"
+msgstr "ປ້າຍເອເລັກໂຕຣນິກ Pricer"
+
+#. module: pos_pricer
+#: model_terms:ir.ui.view,arch_db:pos_pricer.pricer_pricer_tag_view_list
+#, fuzzy
+msgid "Pricer tag"
+msgstr "ປ້າຍ Pricer"
+
+#. module: pos_pricer
+#: model:ir.model.fields,field_description:pos_pricer.field_product_product__pricer_tag_ids
+#: model:ir.model.fields,field_description:pos_pricer.field_product_template__pricer_tag_ids
+#, fuzzy
+msgid "Pricer tags ids"
+msgstr "ລະຫັດປ້າຍ Pricer"
+
+#. module: pos_pricer
+#: model:ir.model,name:pos_pricer.model_product_template
+msgid "Product"
+msgstr "ສິນຄ້າ"
+
+#. module: pos_pricer
+#: model:ir.model.fields,field_description:pos_pricer.field_pricer_store__product_ids
+msgid "Products"
+msgstr "ສິນຄ້າ"
+
+#. module: pos_pricer
+#: model:ir.model.fields,help:pos_pricer.field_pricer_store__last_update_status_message
+#, fuzzy
+msgid "Status message of the last synchronization with Pricer"
+msgstr "ຂໍ້ຄວາມສະຖານະຂອງການຊິງໂຄໄນລ້າສຸດກັບ Pricer"
+
+#. module: pos_pricer
+#: model:ir.model.fields,field_description:pos_pricer.field_pricer_store__name
+#, fuzzy
+msgid "Store Name"
+msgstr "ຊື່ຮ້ານ"
+
+#. module: pos_pricer
+#. odoo-python
+#: code:addons/pos_pricer/models/pricer_tag.py:0
+#, fuzzy, python-format
+msgid ""
+"Tag id should be a 17 characters string composed of a letter followed by 16 "
+"digits"
+msgstr ""
+"ລະຫັດປ້າຍຄວນເປັນຂໍ້ຄວາມ 17 ຕົວອັກສອນ ທີ່ປະກອບດ້ວຍຕົວອັກສອນ 1 ຕົວ ແລະ ຕາມດ້ວຍຕົວເລກ 16 ຫຼັກ"
+
+#. module: pos_pricer
+#: model:ir.model.fields,help:pos_pricer.field_pricer_tag__pricer_store_id
+#: model:ir.model.fields,help:pos_pricer.field_product_product__pricer_store_id
+#: model:ir.model.fields,help:pos_pricer.field_product_template__pricer_store_id
+#, fuzzy
+msgid ""
+"This product will be linked to and displayed on the Pricer tags of the store"
+" selected here"
+msgstr "ສິນຄ້ານີ້ຈະຖືກເຊື່ອມຕໍ່ ແລະ ສະແດງໃນປ້າຍ Pricer ຂອງຮ້ານທີ່ເລືອກຢູ່ທີ່ນີ້"
+
+#. module: pos_pricer
+#: model:ir.model.fields,help:pos_pricer.field_product_product__pricer_tag_ids
+#: model:ir.model.fields,help:pos_pricer.field_product_template__pricer_tag_ids
+#, fuzzy
+msgid ""
+"This product will be linked to and displayed on the Pricer tags with ids "
+"listed here. It is recommended to use a barcode scanner"
+msgstr ""
+"ສິນຄ້ານີ້ຈະຖືກເຊື່ອມຕໍ່ ແລະ ສະແດງໃນປ້າຍ Pricer ທີ່ມີລະຫັດຕາມລາຍການນີ້. ແນະນຳໃຫ້ໃຊ້ເຄື່ອງສະແກນບາໂຄ"
+"ດ"
+
+#. module: pos_pricer
+#: model_terms:ir.ui.view,arch_db:pos_pricer.pricer_pricer_store_view_list
+#, fuzzy
+msgid "Update all tags"
+msgstr "ອັບເດດປ້າຍທັງໝົດ"
+
+#. module: pos_pricer
+#. odoo-python
+#: code:addons/pos_pricer/models/pricer_store.py:0
+#, fuzzy, python-format
+msgid "Update successfully sent to Pricer"
+msgstr "ສົ່ງການອັບເດດໄປຫາ Pricer ສຳເລັດແລ້ວ"
+
+#. module: pos_pricer
+#: model_terms:ir.ui.view,arch_db:pos_pricer.pricer_pricer_store_view_list
+#, fuzzy
+msgid "Update tags"
+msgstr "ອັບເດດປ້າຍ"
+
+#. module: pos_pricer
+#: model:ir.model.fields,help:pos_pricer.field_pricer_store__pricer_tenant_name
+#, fuzzy
+msgid "Your company identifier at Pricer"
+msgstr "ຕົວລະບຸບໍລິສັດຂອງທ່ານທີ່ Pricer"

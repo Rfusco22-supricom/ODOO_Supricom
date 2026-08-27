@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <template id="report_payroll_rules_document">
+        <t t-call="web.html_container">
+            <t t-foreach="docs" t-as="doc">
+                <t t-call="web.external_layout">
+                    <div class="page">
+                        <!-- Report Header -->
+                        <div class="text-center">
+                            <h2>Reporte de Reglas Salariales</h2>
+                            <h4>
+                                <span t-esc="report_type_label"/> —
+                                Desde <span t-esc="date_from"/> hasta <span t-esc="date_to"/>
+                            </h4>
+                            <p t-if="department != 'Todos'">
+                                <strong>Departamento:</strong> <span t-esc="department"/>
+                            </p>
+                        </div>
+
+                        <br/>
+
+                        <!-- Selección de Estructuras -->
+                        <div class="row mb-3">
+                            <div class="col-12">
+                                <strong>Estructuras Seleccionadas: </strong>
+                                <t t-foreach="doc.struct_ids" t-as="struct">
+                                    <span class="badge bg-secondary me-1"
+                                          t-esc="struct.name"/>
+                                </t>
+                            </div>
+                        </div>
+
+                        <!-- Reglas Salariales Seleccionadas -->
+                        <div class="row mb-3" t-if="doc.salary_rule_ids">
+                            <div class="col-12">
+                                <strong>Reglas Salariales Seleccionadas: </strong>
+                                <t t-foreach="doc.salary_rule_ids" t-as="rule">
+                                    <span class="badge bg-info me-1"
+                                          t-esc="rule.name"/>
+                                </t>
+                            </div>
+                        </div>
+
+                        <br/>
+
+                        <!-- DETAILED REPORT -->
+                        <t t-if="report_type == 'detailed'">
+                            <table class="table table-sm table-bordered" style="font-size: 10px; table-layout: fixed; width: 100%;">
+                                <thead style="display: table-header-group;">
+                                    <tr style="background-color: #d9edf7;">
+                                        <th style="width: 20%;">Empleado</th>
+                                        <th style="width: 10%;">Cédula/ID</th>
+                                        <th style="width: 14%;">Departamento</th>
+                                        <th style="width: 22%;">Regla Salarial</th>
+                                        <th style="width: 10%;">Código</th>
+                                        <th class="text-end" style="width: 10%;">Cantidad</th>
+                                        <th class="text-end" style="width: 14%;">Monto</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <t t-foreach="detail_lines" t-as="emp">
+                                        <t t-foreach="emp['rules']" t-as="rule">
+                                            <tr style="page-break-inside: avoid;">
+                                                <td>
+                                                    <t t-if="rule_index == 0">
+                                                        <strong t-esc="emp['employee_name']"/>
+                                                    </t>
+                                                </td>
+                                                <td>
+                                                    <t t-if="rule_index == 0">
+                                                        <span t-esc="emp['employee_id']"/>
+                                                    </t>
+                                                </td>
+                                                <td>
+                                                    <t t-if="rule_index == 0">
+                                                        <span t-esc="emp['department']"/>
+                                                    </t>
+                                                </td>
+                                                <td t-esc="rule['rule_name']"/>
+                                                <td t-esc="rule['rule_code']"/>
+                                                <td class="text-end"
+                                                    t-esc="'%.2f' % rule['quantity']"/>
+                                                <td class="text-end"
+                                                    t-esc="'%.2f' % rule['amount']"/>
+                                            </tr>
+                                        </t>
+                                        <!-- Employee subtotal -->
+                                        <tr class="fw-bold" style="background-color: #f0f0f0; page-break-inside: avoid;">
+                                            <td colspan="6" class="text-end">
+                                                Subtotal <span t-esc="emp['employee_name']"/>:
+                                            </td>
+                                            <td class="text-end"
+                                                t-esc="'%.2f' % emp['employee_total']"/>
+                                        </tr>
+                                    </t>
+                                </tbody>
+                                <tfoot style="display: table-footer-group;">
+                                    <tr class="fw-bold" style="background-color: #d9edf7;">
+                                        <td colspan="6" class="text-end">
+                                            <strong>TOTAL GENERAL:</strong>
+                                        </td>
+                                        <td class="text-end">
+                                            <strong t-esc="'%.2f' % grand_total"/>
+                                        </td>
+                                    </tr>
+                                </tfoot>
+                            </table>
+                        </t>
+
+                        <!-- CONSOLIDATED REPORT -->
+                        <t t-if="report_type == 'consolidated'">
+                            <table class="table table-sm table-bordered" style="font-size: 10px; table-layout: fixed; width: 100%;">
+                                <thead style="display: table-header-group;">
+                                    <tr style="background-color: #d9edf7;">
+                                        <th style="width: 35%;">Regla Salarial</th>
+                                        <th style="width: 20%;">Código</th>
+                                        <th class="text-end" style="width: 20%;">Total Empleados</th>
+                                        <th class="text-end" style="width: 25%;">Monto Total</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <t t-foreach="consolidated_lines" t-as="rule">
+                                        <tr style="page-break-inside: avoid;">
+                                            <td t-esc="rule['rule_name']"/>
+                                            <td t-esc="rule['rule_code']"/>
+                                            <td class="text-end"
+                                                t-esc="rule['employee_count']"/>
+                                            <td class="text-end"
+                                                t-esc="'%.2f' % rule['total_amount']"/>
+                                        </tr>
+                                    </t>
+                                </tbody>
+                                <tfoot style="display: table-footer-group;">
+                                    <tr class="fw-bold" style="background-color: #d9edf7;">
+                                        <td colspan="3" class="text-end">
+                                            <strong>TOTAL GENERAL:</strong>
+                                        </td>
+                                        <td class="text-end">
+                                            <strong t-esc="'%.2f' % grand_total"/>
+                                        </td>
+                                    </tr>
+                                </tfoot>
+                            </table>
+                        </t>
+
+                        <!-- Footer info -->
+                        <div class="mt-4 text-muted" style="font-size: 9px;">
+                            <p>
+                                Generado por: <span t-esc="env.user.name"/> |
+                                Fecha de generación:
+                                <span t-esc="print_date"/>
+                            </p>
+                        </div>
+                    </div>
+                </t>
+            </t>
+        </t>
+    </template>
+</odoo>

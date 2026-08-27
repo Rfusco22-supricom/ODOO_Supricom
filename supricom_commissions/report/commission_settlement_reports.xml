@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+
+    <!-- 1. Reporte Detallado (Por Vendedor) -->
+    <record id="action_report_settlement_detail" model="ir.actions.report">
+        <field name="name">Liquidación de Comisiones (Detallado)</field>
+        <field name="model">commission.settlement</field>
+        <field name="report_type">qweb-pdf</field>
+        <field name="report_name">supricom_commissions.report_settlement_detail</field>
+        <field name="report_file">supricom_commissions.report_settlement_detail</field>
+        <field name="print_report_name">'Liquidacion_Detalle_%s' % object.name</field>
+        <field name="binding_model_id" ref="model_commission_settlement"/>
+        <field name="binding_type">report</field>
+    </record>
+
+    <!-- 2. Reporte Consolidado (Resumen de Varios) -->
+    <record id="action_report_settlement_summary" model="ir.actions.report">
+        <field name="name">Resumen de Liquidaciones (Consolidado)</field>
+        <field name="model">commission.settlement</field>
+        <field name="report_type">qweb-pdf</field>
+        <field name="report_name">supricom_commissions.report_settlement_summary</field>
+        <field name="report_file">supricom_commissions.report_settlement_summary</field>
+        <field name="print_report_name">'Liquidacion_Resumen_%s' % (object.date_from)</field>
+        <field name="binding_model_id" ref="model_commission_settlement"/>
+        <field name="binding_type">report</field>
+    </record>
+
+</odoo>

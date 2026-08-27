@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data>
+
+        <!-- Add Inverse Rate to Currency Rate Tree/Form inside Currency Form -->
+        <!-- Currency Rate is usually shown inside a One2many or a separate action. 
+             In Odoo 17, it is often via a smart button 'Rates'. 
+             The view for res.currency.rate key is 'base.view_currency_rate_tree'. -->
+        
+        <record id="view_currency_rate_tree_inherit_bcv" model="ir.ui.view">
+            <field name="name">res.currency.rate.tree.inherit.bcv</field>
+            <field name="model">res.currency.rate</field>
+            <field name="inherit_id" ref="base.view_currency_rate_tree"/>
+            <field name="arch" type="xml">
+                <field name="rate" position="after">
+                    <field name="inverse_rate"/>
+                </field>
+            </field>
+        </record>
+
+        <record id="view_currency_rate_form_inherit_bcv" model="ir.ui.view">
+            <field name="name">res.currency.rate.form.inherit.bcv</field>
+            <field name="model">res.currency.rate</field>
+            <field name="inherit_id" ref="base.view_currency_rate_form"/>
+            <field name="arch" type="xml">
+                <field name="rate" position="after">
+                    <field name="inverse_rate"/>
+                </field>
+            </field>
+        </record>
+    </data>
+</odoo>

@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <record id="view_bank_transaction_select_wizard_form" model="ir.ui.view">
+        <field name="name">bank.transaction.select.wizard.form</field>
+        <field name="model">bank.transaction.select.wizard</field>
+        <field name="arch" type="xml">
+            <form string="Consultar e Seleccionar Ingreso Bancario">
+                <sheet>
+                    <field name="partner_id" invisible="1"/>
+                    <group>
+                        <group>
+                            <field name="journal_id"/>
+                            <field name="date_from"/>
+                            <field name="date_to"/>
+                        </group>
+                        <group>
+                            <field name="payment_reference"/>
+                            <field name="amount"/>
+                            <field name="currency_id" invisible="1"/>
+                        </group>
+                    </group>
+                    <div>
+                        <button name="action_fetch_live_bank" type="object" string="Consultar Banco en Vivo" class="btn-primary" icon="fa-refresh"/>
+                    </div>
+                    <notebook>
+                        <page string="Ingresos Encontrados">
+                            <field name="line_ids" mode="tree" context="{'default_partner_id': partner_id}">
+                                <tree string="Transacciones" create="false" edit="false" delete="false">
+                                    <field name="trx_date"/>
+                                    <field name="payment_reference"/>
+                                    <field name="payment_type"/>
+                                    <field name="amount"/>
+                                    <field name="origin_phone"/>
+                                    <field name="origin_customer_id"/>
+                                    <field name="state" widget="badge" decoration-warning="state=='pending'" decoration-success="state=='reconciled'"/>
+                                </tree>
+                            </field>
+                        </page>
+                    </notebook>
+                    <group>
+                        <field name="selected_line_id" domain="[('id', 'in', line_ids)]" options="{'no_create': True}"/>
+                    </group>
+                </sheet>
+                <footer>
+                    <button name="action_confirm_selection" string="Seleccionar y Capturar en Pago" type="object" class="btn-primary"/>
+                    <button string="Cancelar" class="btn-secondary" special="cancel"/>
+                </footer>
+            </form>
+        </field>
+    </record>
+
+    <record id="action_bank_transaction_select_wizard" model="ir.actions.act_window">
+        <field name="name">Consultar Ingresos Bancarios</field>
+        <field name="res_model">bank.transaction.select.wizard</field>
+        <field name="view_mode">form</field>
+        <field name="target">new</field>
+    </record>
+</odoo>

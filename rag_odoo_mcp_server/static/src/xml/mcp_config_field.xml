@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<templates xml:space="preserve">
+
+    <t t-name="rag_odoo_mcp_server.McpConfigBlockField">
+        <div class="o_mcp_config_block">
+            <div class="o_mcp_config_toolbar">
+                <small class="text-muted">claude_desktop_config.json</small>
+                <button type="button" class="btn btn-sm btn-primary o_mcp_config_copy" t-on-click="onCopy">
+                    <i class="fa fa-clipboard me-1"/>
+                    <t t-esc="state.copied ? 'Copied!' : 'Copy'"/>
+                </button>
+            </div>
+            <pre class="o_mcp_config_pre"><t t-esc="value"/></pre>
+        </div>
+    </t>
+
+</templates>

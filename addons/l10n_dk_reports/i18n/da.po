@@ -1,0 +1,790 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+# * l10n_dk_reports
+#
+# "Dylan Kiss (dyki)" <dyki@odoo.com>, 2025.
+# Weblate <noreply-mt-weblate@weblate.org>, 2025.
+# Odoo Translation Bot <c3p@odoo.com>, 2026.
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 17.0+e\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-03-28 15:57+0000\n"
+"PO-Revision-Date: 2026-05-02 08:03+0000\n"
+"Last-Translator: Odoo Translation Bot <c3p@odoo.com>\n"
+"Language-Team: Danish <https://translate.odoo.com/projects/odoo-17-l10n/"
+"l10n_dk_reports/da/>\n"
+"Language: da\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: \n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+"X-Generator: Weblate 5.17\n"
+
+#. module: l10n_dk_reports
+#: model:account.report.line,name:l10n_dk_reports.account_report_bs_a
+msgid "ASSETS"
+msgstr "AKTIVER"
+
+#. module: l10n_dk_reports
+#: model:account.report.line,name:l10n_dk_reports.account_report_bs_a_fa_ifa_aifa
+msgid "Acquired intangible fixed assets"
+msgstr "Erhvervede immaterielle anlægsaktiver"
+
+#. module: l10n_dk_reports
+#: model:account.report.line,name:l10n_dk_reports.account_report_pl_pla_gpl_ee_oee_ae
+msgid "Administrative expenses"
+msgstr "Administrationsomkostninger"
+
+#. module: l10n_dk_reports
+#: model:account.report.line,name:l10n_dk_reports.account_report_pl_pla_opl_aditifa
+msgid ""
+"Amortization, depreciation and impairment of tangible and intangible fixed "
+"assets"
+msgstr "Af- og nedskrivninger af materielle og immaterielle anlægsaktiver"
+
+#. module: l10n_dk_reports
+#: model:account.report.column,name:l10n_dk_reports.account_financial_report_ec_sales_goods
+msgid "Amount of goods"
+msgstr "Mængde af varer"
+
+#. module: l10n_dk_reports
+#: model:account.report.column,name:l10n_dk_reports.account_financial_report_ec_sales_service
+msgid "Amount of services"
+msgstr "Mængde af tjenester"
+
+#. module: l10n_dk_reports
+#: model:account.report.column,name:l10n_dk_reports.account_financial_report_ec_sales_tri
+msgid "Amount of third party sales"
+msgstr "Mængden af tredjepartssalg"
+
+#. module: l10n_dk_reports
+#. odoo-python
+#: code:addons/l10n_dk_reports/models/account_general_ledger.py:0
+#, python-format
+msgid "An account number is needed to export the SAF-T"
+msgstr "Et kontonummer er nødvendigt for at eksportere SAF-T"
+
+#. module: l10n_dk_reports
+#: model:ir.model,name:l10n_dk_reports.model_ir_attachment
+msgid "Attachment"
+msgstr "Vedhæftning"
+
+#. module: l10n_dk_reports
+#: model:account.report.column,name:l10n_dk_reports.account_report_bs_column
+#: model:account.report.column,name:l10n_dk_reports.account_report_pl_column
+msgid "Balance"
+msgstr "Balance"
+
+#. module: l10n_dk_reports
+#: model:account.report,name:l10n_dk_reports.account_report_bs
+msgid "Balance Sheet"
+msgstr "Balance"
+
+#. module: l10n_dk_reports
+#: model:account.report.line,name:l10n_dk_reports.account_report_bs_el_ltl_beplt
+msgid "Bills of exchange payable (long-term)"
+msgstr "Vekselgæld (langfristet)"
+
+#. module: l10n_dk_reports
+#: model:account.report.line,name:l10n_dk_reports.account_report_bs_el_stl_bepst
+msgid "Bills of exchange payable (short-term)"
+msgstr "Vekselgæld (kortfristet)"
+
+#. module: l10n_dk_reports
+#. odoo-python
+#: code:addons/l10n_dk_reports/models/account_general_ledger.py:0
+#: code:addons/l10n_dk_reports/models/account_sales_report.py:0
+#, python-format
+msgid "CSV"
+msgstr "CSV"
+
+#. module: l10n_dk_reports
+#: model:account.report.line,name:l10n_dk_reports.account_report_bs_a_ca_cce
+msgid "Cash and cash equivalents"
+msgstr "Likvide beholdninger"
+
+#. module: l10n_dk_reports
+#: model:account.report.line,name:l10n_dk_reports.account_report_pl_pla_gpl_cifgwip
+msgid "Change in inventories of finished goods and work in progress"
+msgstr "Ændring i lagre af færdigvarer og varer under fremstilling"
+
+#. module: l10n_dk_reports
+#. odoo-python
+#: code:addons/l10n_dk_reports/models/account_sales_report.py:0
+#, python-format
+msgid "Change the VAT number"
+msgstr "Skift momsnummer"
+
+#. module: l10n_dk_reports
+#: model:account.report.line,name:l10n_dk_reports.account_report_bs_a_fa_ifa_cdpipsradp
+msgid ""
+"Completed development projects, including patents and similar rights arising "
+"from development projects"
+msgstr ""
+"Færdiggjort udviklingsprojekter, herunder patenter og lignende rettigheder, "
+"der stammer fra udviklingsprojekter"
+
+#. module: l10n_dk_reports
+#: model:account.report.line,name:l10n_dk_reports.account_report_bs_a_ca_r_cwip
+msgid "Contract work in progress"
+msgstr "Igangværende arbejder for fremmed regning"
+
+#. module: l10n_dk_reports
+#: model:account.report.line,name:l10n_dk_reports.account_report_bs_el_stl_cwipst
+msgid "Contract work in progress (short-term)"
+msgstr "Igangværende arbejder for fremmed regning (kortfristet)"
+
+#. module: l10n_dk_reports
+#: model:account.report.line,name:l10n_dk_reports.account_report_bs_el_ltl_cdydilt
+msgid "Convertible and dividend-yielding debt instruments (long-term)"
+msgstr "Konvertible og udbyttegivende gældsbreve (langfristet)"
+
+#. module: l10n_dk_reports
+#: model:account.report.line,name:l10n_dk_reports.account_report_bs_el_stl_cdydist
+msgid "Convertible and dividend-yielding debt instruments (short-term)"
+msgstr "Konvertible og udbyttegivende gældsbreve (kortfristet)"
+
+#. module: l10n_dk_reports
+#: model:account.report.line,name:l10n_dk_reports.account_report_pl_pla_gpl_ee_crmc
+msgid "Costs of raw materials and consumables"
+msgstr "Omkostninger til råvarer og hjælpematerialer"
+
+#. module: l10n_dk_reports
+#: model:account.report.column,name:l10n_dk_reports.account_financial_report_ec_sales_country
+msgid "Country Code"
+msgstr "Landekode"
+
+#. module: l10n_dk_reports
+#: model:account.report.line,name:l10n_dk_reports.account_report_bs_a_ca
+msgid "Current assets"
+msgstr "Omsætningsaktiver"
+
+#. module: l10n_dk_reports
+#. odoo-python
+#: code:addons/l10n_dk_reports/models/account_sales_report.py:0
+#, python-format
+msgid "Customer's VAT cannot be empty"
+msgstr "Kundens moms kan ikke være tom"
+
+#. module: l10n_dk_reports
+#: model:account.report.line,name:l10n_dk_reports.account_report_bs_el_ltl_driblt
+msgid "Debt raised by issuance of bonds (long-term)"
+msgstr "Gæld, der er optaget ved udstedelse af obligationer (langfristet)"
+
+#. module: l10n_dk_reports
+#: model:account.report.line,name:l10n_dk_reports.account_report_bs_el_stl_dribst
+msgid "Debt raised by issuance of bonds (short-term)"
+msgstr "Gæld, der er optaget ved udstedelse af obligationer (kortfristet)"
+
+#. module: l10n_dk_reports
+#: model:account.report.line,name:l10n_dk_reports.account_report_bs_el_ltl_dilt
+msgid "Deferred income (long-term)"
+msgstr "Periodeafgrænsningsposter (langfristet)"
+
+#. module: l10n_dk_reports
+#: model:account.report.line,name:l10n_dk_reports.account_report_bs_el_stl_dist
+msgid "Deferred income (short-term)"
+msgstr "Periodeafgrænsningsposter (kortfristet)"
+
+#. module: l10n_dk_reports
+#: model:ir.model,name:l10n_dk_reports.model_l10n_dk_ec_sales_report_handler
+msgid "Denmark EC Sales Report Custom Handler"
+msgstr "Danmark EC-salgsrapport tilpasset håndtering"
+
+#. module: l10n_dk_reports
+#: model:account.report.line,name:l10n_dk_reports.account_report_bs_a_fa_ifa_dpippifa
+msgid ""
+"Development projects in progress and prepayments for intangible fixed assets"
+msgstr ""
+"Udviklingsprojekter under udførelse og forudbetalinger for immaterielle "
+"anlægsaktiver"
+
+#. module: l10n_dk_reports
+#: model:account.report,name:l10n_dk_reports.denmark_ec_sales_report
+msgid "EC Sales List"
+msgstr "EC Salgsliste"
+
+#. module: l10n_dk_reports
+#: model:account.report.line,name:l10n_dk_reports.account_report_bs_el
+msgid "EQUITY AND LIABILITIES"
+msgstr "PASSIVER"
+
+#. module: l10n_dk_reports
+#: model:account.report.line,name:l10n_dk_reports.account_report_bs_el_e
+msgid "Equity"
+msgstr "Egenkapital"
+
+#. module: l10n_dk_reports
+#: model:account.report.line,name:l10n_dk_reports.account_report_pl_pla_gpl_ee
+msgid "External expenses"
+msgstr "Eksterne omkostninger"
+
+#. module: l10n_dk_reports
+#: model:account.report.line,name:l10n_dk_reports.account_report_pl_pla_opl_fvaip
+msgid "Fair value adjustment of investment properties"
+msgstr "Dagsværdiregulering af investeringsejendomme"
+
+#. module: l10n_dk_reports
+#: model:account.report.line,name:l10n_dk_reports.account_report_pl_pla_plbt_mfe_fege
+msgid "Financial expenses from group enterprises"
+msgstr "Finansielle omkostninger, der hidrører fra tilknyttede virksomheder"
+
+#. module: l10n_dk_reports
+#: model:account.report.line,name:l10n_dk_reports.account_report_bs_a_fa_ffa
+msgid "Financial fixed assets"
+msgstr "Finansielle anlægsaktiver"
+
+#. module: l10n_dk_reports
+#: model:account.report.line,name:l10n_dk_reports.account_report_bs_a_fa_tfa_fla
+msgid "Financially leased assets"
+msgstr "Finansielt leasede aktiver"
+
+#. module: l10n_dk_reports
+#: model:account.report.line,name:l10n_dk_reports.account_report_bs_a_fa
+msgid "Fixed assets"
+msgstr "Anlægsaktiver"
+
+#. module: l10n_dk_reports
+#: model:ir.model,name:l10n_dk_reports.model_account_general_ledger_report_handler
+msgid "General Ledger Custom Handler"
+msgstr "Brugerdefineret behandlingsfunktion for hovedbog"
+
+#. module: l10n_dk_reports
+#: model:account.report.line,name:l10n_dk_reports.account_report_bs_a_fa_ifa_g
+msgid "Goodwill"
+msgstr "Goodwill"
+
+#. module: l10n_dk_reports
+#: model:account.report.line,name:l10n_dk_reports.account_report_pl_pla_gpl
+msgid "Gross profit/loss"
+msgstr "Bruttofortjeneste/Bruttotab"
+
+#. module: l10n_dk_reports
+#: model:account.report.line,name:l10n_dk_reports.account_report_pl_pla_plbt_ifa
+msgid "Impairment of financial assets"
+msgstr "Nedskrivning af finansielle aktiver"
+
+#. module: l10n_dk_reports
+#: model:account.report.line,name:l10n_dk_reports.account_report_pl_pla_plbt_iigea_iia
+msgid "Income from investments in associates"
+msgstr "Indtægter af kapitalandele i associerede virksomheder"
+
+#. module: l10n_dk_reports
+#: model:account.report.line,name:l10n_dk_reports.account_report_pl_pla_plbt_iigea_iige
+msgid "Income from investments in group enterprises"
+msgstr "Indtægter af kapitalandele i tilknyttede virksomheder"
+
+#. module: l10n_dk_reports
+#: model:account.report.line,name:l10n_dk_reports.account_report_pl_pla_plbt_iigea
+msgid "Income from investments in group enterprises and associates"
+msgstr "Indtægter af kapitalandele i tilknyttede og associerede virksomheder"
+
+#. module: l10n_dk_reports
+#: model:account.report.line,name:l10n_dk_reports.account_report_pl_pla_plbt_ioisrfa
+msgid ""
+"Income from other investments, securities and receivables that are fixed "
+"assets"
+msgstr ""
+"Indtægter af andre kapitalandele, værdipapirer og tilgodehavender, der er "
+"anlægsaktiver"
+
+#. module: l10n_dk_reports
+#: model:account.report.line,name:l10n_dk_reports.account_report_pl_pla_plbt_iigea_ipi
+msgid "Income from participating interests"
+msgstr "Indtægter af kapitalinteresser"
+
+#. module: l10n_dk_reports
+#: model:account.report.line,name:l10n_dk_reports.account_report_bs_a_fa_ifa
+msgid "Intangible fixed assets"
+msgstr "Immaterielle anlægsaktiver"
+
+#. module: l10n_dk_reports
+#: model:account.report.line,name:l10n_dk_reports.account_report_bs_a_ca_i
+msgid "Inventories"
+msgstr "Varebeholdninger"
+
+#. module: l10n_dk_reports
+#: model:account.report.line,name:l10n_dk_reports.account_report_bs_a_fa_tfa_ip
+msgid "Investment properties"
+msgstr "Investeringsejendomme"
+
+#. module: l10n_dk_reports
+#: model:account.report.line,name:l10n_dk_reports.account_report_bs_a_fa_tfa_ipuc
+msgid "Investment properties under construction"
+msgstr "Investeringsejendomme under opførelse"
+
+#. module: l10n_dk_reports
+#: model:account.report.line,name:l10n_dk_reports.account_report_bs_a_fa_ffa_ia
+msgid "Investments in associates"
+msgstr "Kapitalandele i associerede virksomheder"
+
+#. module: l10n_dk_reports
+#: model:account.report.line,name:l10n_dk_reports.account_report_bs_a_ca_si_ige
+#: model:account.report.line,name:l10n_dk_reports.account_report_bs_a_fa_ffa_ige
+msgid "Investments in group enterprises"
+msgstr "Kapitalandele i tilknyttede virksomheder"
+
+#. module: l10n_dk_reports
+#: model:ir.model,name:l10n_dk_reports.model_account_journal
+msgid "Journal"
+msgstr "Journal"
+
+#. module: l10n_dk_reports
+#: model:account.report.line,name:l10n_dk_reports.account_report_bs_a_fa_tfa_lb
+msgid "Land and buildings"
+msgstr "Grunde og bygninger"
+
+#. module: l10n_dk_reports
+#: model:account.report.line,name:l10n_dk_reports.account_report_bs_a_fa_tfa_li
+msgid "Leasehold improvements"
+msgstr "Indretning af lejede lokaler"
+
+#. module: l10n_dk_reports
+#: model:account.report.line,name:l10n_dk_reports.account_report_bs_el_ltl
+msgid "Long-term liabilities"
+msgstr "Langfristede gældsforpligtelser"
+
+#. module: l10n_dk_reports
+#: model:account.report.line,name:l10n_dk_reports.account_report_bs_a_ca_i_mggr
+msgid "Manufactured goods and goods for resale"
+msgstr "Fremstillede varer og handelsvarer"
+
+#. module: l10n_dk_reports
+#: model:account.report.line,name:l10n_dk_reports.account_report_pl_pla_plbt_mfe
+msgid "Miscellaneous financial expenses"
+msgstr "Øvrige finansielle omkostninger"
+
+#. module: l10n_dk_reports
+#: model_terms:ir.ui.view,arch_db:l10n_dk_reports.saft_template
+msgid "Moms"
+msgstr "Moms"
+
+#. module: l10n_dk_reports
+#: model:account.report.line,name:l10n_dk_reports.account_report_pl_pla_gpl_nr
+msgid "Net revenue"
+msgstr "Nettoomsætning"
+
+#. module: l10n_dk_reports
+#. odoo-python
+#: code:addons/l10n_dk_reports/models/account_sales_report.py:0
+#, python-format
+msgid "No CVR number associated with your company."
+msgstr "Der er ikke tilknyttet noget CVR-nummer til din virksomhed."
+
+#. module: l10n_dk_reports
+#: model:account.report.line,name:l10n_dk_reports.account_report_pl_pla_opl
+msgid "Operating profit/loss"
+msgstr "Driftsresultat"
+
+#. module: l10n_dk_reports
+#: model:account.report.line,name:l10n_dk_reports.account_report_pl_pla_gpl_ee_oee
+msgid "Other external expenses"
+msgstr "Andre eksterne omkostninger"
+
+#. module: l10n_dk_reports
+#: model:account.report.line,name:l10n_dk_reports.account_report_pl_pla_plbt_mfe_ofe
+msgid "Other financial expenses"
+msgstr "Andre finansielle omkostninger"
+
+#. module: l10n_dk_reports
+#: model:account.report.line,name:l10n_dk_reports.account_report_pl_pla_plbt_ofi
+msgid "Other financial income"
+msgstr "Andre finansielle indtægter"
+
+#. module: l10n_dk_reports
+#: model:account.report.line,name:l10n_dk_reports.account_report_pl_pla_plbt_ofige
+msgid "Other financial income from group enterprises"
+msgstr "Andre finansielle indtægter fra tilknyttede virksomheder"
+
+#. module: l10n_dk_reports
+#: model:account.report.line,name:l10n_dk_reports.account_report_bs_a_fa_tfa_offte
+msgid "Other fixtures and fittings, tools and equipment"
+msgstr "Andre anlæg, driftsmateriel og inventar"
+
+#. module: l10n_dk_reports
+#: model:account.report.line,name:l10n_dk_reports.account_report_bs_a_fa_tfa_offtemucao
+msgid ""
+"Other fixtures and fittings, tools and equipment, mixed use (Class A only)"
+msgstr ""
+"Andre anlæg, driftsmateriel og inventar blandet benyttet (kun klasse A)"
+
+#. module: l10n_dk_reports
+#: model:account.report.line,name:l10n_dk_reports.account_report_pl_pla_opl_ooe
+msgid "Other operating expenses"
+msgstr "Andre driftsomkostninger"
+
+#. module: l10n_dk_reports
+#: model:account.report.line,name:l10n_dk_reports.account_report_pl_pla_gpl_ooi
+msgid "Other operating income"
+msgstr "Andre driftsindtægter"
+
+#. module: l10n_dk_reports
+#: model:account.report.line,name:l10n_dk_reports.account_report_bs_el_ltl_optpsscplt
+msgid ""
+"Other payables, including taxes payable and social security contributions "
+"payable (long-term)"
+msgstr ""
+"Anden gæld, herunder skyldige skatter og skyldige bidrag til social sikring "
+"(langfristet)"
+
+#. module: l10n_dk_reports
+#: model:account.report.line,name:l10n_dk_reports.account_report_bs_el_stl_optpsscpst
+msgid ""
+"Other payables, including taxes payable and social security contributions "
+"payable (short-term)"
+msgstr ""
+"Anden gæld, herunder skyldige skatter og skyldige bidrag til social sikring "
+"(kortfristet)"
+
+#. module: l10n_dk_reports
+#: model:account.report.line,name:l10n_dk_reports.account_report_bs_el_p_op
+msgid "Other provisions"
+msgstr "Andre hensatte forpligtelser"
+
+#. module: l10n_dk_reports
+#: model:account.report.line,name:l10n_dk_reports.account_report_bs_a_ca_r_orca
+msgid "Other receivables (current asset)"
+msgstr "Andre tilgodehavender (omsætningsaktiv)"
+
+#. module: l10n_dk_reports
+#: model:account.report.line,name:l10n_dk_reports.account_report_bs_a_fa_ffa_orfa
+msgid "Other receivables (fixed asset)"
+msgstr "Andre tilgodehavender (anlægsaktiv)"
+
+#. module: l10n_dk_reports
+#: model:account.report.line,name:l10n_dk_reports.account_report_bs_el_e_or
+msgid "Other reserves"
+msgstr "Andre reserver"
+
+#. module: l10n_dk_reports
+#: model:account.report.line,name:l10n_dk_reports.account_report_bs_a_ca_si_ose
+#: model:account.report.line,name:l10n_dk_reports.account_report_bs_a_fa_ffa_osi
+msgid "Other securities and investments"
+msgstr "Andre værdipapirer og kapitalandele"
+
+#. module: l10n_dk_reports
+#: model:account.report.line,name:l10n_dk_reports.account_report_pl_pla_sc_ossc
+msgid "Other social security costs"
+msgstr "Andre omkostninger til social sikring"
+
+#. module: l10n_dk_reports
+#: model:account.report.line,name:l10n_dk_reports.account_report_pl_pla_ply_ot
+msgid "Other taxes"
+msgstr "Andre skatter"
+
+#. module: l10n_dk_reports
+#: model:account.report.line,name:l10n_dk_reports.account_report_pl_pla_gpl_owc
+msgid "Own work capitalized"
+msgstr "Arbejde udført for egen regning og opført under aktiver"
+
+#. module: l10n_dk_reports
+#: model:account.report.line,name:l10n_dk_reports.account_report_pl_pla
+msgid "PROFIT AND LOSS ACCOUNT"
+msgstr "RESULTATOPGØRELSE"
+
+#. module: l10n_dk_reports
+#: model:account.report.line,name:l10n_dk_reports.account_report_bs_a_fa_ffa_pi
+msgid "Participating interests"
+msgstr "Kapitalinteresser"
+
+#. module: l10n_dk_reports
+#: model:account.report.line,name:l10n_dk_reports.account_report_bs_el_ltl_pcilt
+msgid "Payables to credit institutions (long-term)"
+msgstr "Gæld til kreditinstitutter (langfristet)"
+
+#. module: l10n_dk_reports
+#: model:account.report.line,name:l10n_dk_reports.account_report_bs_el_stl_pcist
+msgid "Payables to credit institutions (short-term)"
+msgstr "Gæld til kreditinstitutter (kortfristet)"
+
+#. module: l10n_dk_reports
+#: model:account.report.line,name:l10n_dk_reports.account_report_bs_el_ltl_pgelt
+msgid "Payables to group enterprises (long-term)"
+msgstr "Gæld til tilknyttede virksomheder (langfristet)"
+
+#. module: l10n_dk_reports
+#: model:account.report.line,name:l10n_dk_reports.account_report_bs_el_stl_pgest
+msgid "Payables to group enterprises (short-term)"
+msgstr "Gæld til tilknyttede virksomheder (kortfristet)"
+
+#. module: l10n_dk_reports
+#: model:account.report.line,name:l10n_dk_reports.account_report_bs_el_ltl_ppilt
+msgid "Payables to participating interests (long-term)"
+msgstr "Gæld til kapitalinteresser (langfristet)"
+
+#. module: l10n_dk_reports
+#: model:account.report.line,name:l10n_dk_reports.account_report_bs_el_stl_ppist
+msgid "Payables to participating interests (short-term)"
+msgstr "Gæld til kapitalinteresser (kortfristet)"
+
+#. module: l10n_dk_reports
+#: model:account.report.line,name:l10n_dk_reports.account_report_pl_pla_sc_p
+msgid "Pensions"
+msgstr "Pensioner"
+
+#. module: l10n_dk_reports
+#: model:account.report.line,name:l10n_dk_reports.account_report_bs_a_fa_tfa_pm
+msgid "Plant and machinery"
+msgstr "Produktionsanlæg og maskiner"
+
+#. module: l10n_dk_reports
+#: model:account.report.line,name:l10n_dk_reports.account_report_pl_pla_gpl_ee_oee_pc
+msgid "Premises costs"
+msgstr "Lokaleomkostninger"
+
+#. module: l10n_dk_reports
+#: model:account.report.line,name:l10n_dk_reports.account_report_bs_a_ca_r_p
+msgid "Prepayments"
+msgstr "Periodeafgrænsningsposter"
+
+#. module: l10n_dk_reports
+#: model:account.report.line,name:l10n_dk_reports.account_report_bs_a_ca_i_pg
+msgid "Prepayments for goods"
+msgstr "Forudbetalinger for varer"
+
+#. module: l10n_dk_reports
+#: model:account.report.line,name:l10n_dk_reports.account_report_bs_el_ltl_prclt
+msgid "Prepayments received from customers (long-term)"
+msgstr "Modtagne forudbetalinger fra kunder (langfristet)"
+
+#. module: l10n_dk_reports
+#: model:account.report.line,name:l10n_dk_reports.account_report_bs_el_stl_prcst
+msgid "Prepayments received from customers (short-term)"
+msgstr "Modtagne forudbetalinger fra kunder (kortfristet)"
+
+#. module: l10n_dk_reports
+#: model:account.report,name:l10n_dk_reports.account_report_pl
+#: model:ir.actions.client,name:l10n_dk_reports.action_account_report_pl
+msgid "Profit and Loss"
+msgstr "RESULTATOPGØRELSE"
+
+#. module: l10n_dk_reports
+#: model:account.report.line,name:l10n_dk_reports.account_report_pl_pla_plbt
+msgid "Profit/loss before tax"
+msgstr "Resultat før skat"
+
+#. module: l10n_dk_reports
+#: model:account.report.line,name:l10n_dk_reports.account_report_bs_el_e_ply
+#: model:account.report.line,name:l10n_dk_reports.account_report_pl_pla_ply
+msgid "Profit/loss for the year"
+msgstr "Årets resultat"
+
+#. module: l10n_dk_reports
+#: model:account.report.line,name:l10n_dk_reports.account_report_bs_el_e_pdre
+msgid "Proposed dividend recognized in equity"
+msgstr "Foreslået udbytte indregnet under egenkapitalen"
+
+#. module: l10n_dk_reports
+#: model:account.report.line,name:l10n_dk_reports.account_report_bs_el_p_pdt
+msgid "Provision for deferred tax"
+msgstr "Hensættelse til udskudt skat"
+
+#. module: l10n_dk_reports
+#: model:account.report.line,name:l10n_dk_reports.account_report_bs_el_p
+msgid "Provisions"
+msgstr "Hensatte forpligtelser"
+
+#. module: l10n_dk_reports
+#: model:account.report.line,name:l10n_dk_reports.account_report_bs_el_p_ppso
+msgid "Provisions for pensions and similar obligations"
+msgstr "Hensættelser til pensioner og lignende forpligtelser"
+
+#. module: l10n_dk_reports
+#: model:account.report.line,name:l10n_dk_reports.account_report_bs_a_ca_i_rmc
+msgid "Raw materials and consumables"
+msgstr "Råvarer og hjælpematerialer"
+
+#. module: l10n_dk_reports
+#: model:account.report.line,name:l10n_dk_reports.account_report_bs_a_ca_r
+msgid "Receivables"
+msgstr "Tilgodehavender"
+
+#. module: l10n_dk_reports
+#: model:account.report.line,name:l10n_dk_reports.account_report_bs_a_ca_r_raca
+msgid "Receivables from associates (current asset)"
+msgstr "Tilgodehavender hos associerede virksomheder (omsætningsaktiv)"
+
+#. module: l10n_dk_reports
+#: model:account.report.line,name:l10n_dk_reports.account_report_bs_a_fa_ffa_rafa
+msgid "Receivables from associates (fixed asset)"
+msgstr "Tilgodehavender hos associerede virksomheder (anlægsaktiv)"
+
+#. module: l10n_dk_reports
+#: model:account.report.line,name:l10n_dk_reports.account_report_bs_a_ca_r_rcuscsp
+msgid "Receivables from called up share capital and share premium"
+msgstr "Krav på indbetaling af virksomhedskapital og overkurs"
+
+#. module: l10n_dk_reports
+#: model:account.report.line,name:l10n_dk_reports.account_report_bs_a_ca_r_rgeca
+msgid "Receivables from group enterprises (current asset)"
+msgstr "Tilgodehavender hos tilknyttede virksomheder (omsætningsaktiv)"
+
+#. module: l10n_dk_reports
+#: model:account.report.line,name:l10n_dk_reports.account_report_bs_a_fa_ffa_rgefa
+msgid "Receivables from group enterprises (fixed asset)"
+msgstr "Tilgodehavender hos tilknyttede virksomheder (anlægsaktiv)"
+
+#. module: l10n_dk_reports
+#: model:account.report.line,name:l10n_dk_reports.account_report_bs_a_ca_r_romca
+msgid "Receivables from owners and management (current asset)"
+msgstr "Tilgodehavender hos virksomhedsdeltagere og ledelse (omsætningsaktiv)"
+
+#. module: l10n_dk_reports
+#: model:account.report.line,name:l10n_dk_reports.account_report_bs_a_fa_ffa_romfa
+msgid "Receivables from owners and management (fixed asset)"
+msgstr "Tilgodehavender hos virksomhedsdeltagere og ledelse (anlægsaktiv)"
+
+#. module: l10n_dk_reports
+#: model:account.report.line,name:l10n_dk_reports.account_report_bs_a_ca_r_rpica
+msgid "Receivables from participating interests (current asset)"
+msgstr "Tilgodehavender hos kapitalinteresser (omsætningsaktiv)"
+
+#. module: l10n_dk_reports
+#: model:account.report.line,name:l10n_dk_reports.account_report_bs_a_fa_ffa_rpifa
+msgid "Receivables from participating interests (fixed asset)"
+msgstr "Tilgodehavender hos kapitalinteresser (anlægsaktiv)"
+
+#. module: l10n_dk_reports
+#: model:account.report.line,name:l10n_dk_reports.account_report_bs_el_e_rr
+msgid "Reserve for revaluations"
+msgstr "Reserve for opskrivninger"
+
+#. module: l10n_dk_reports
+#: model:account.report.line,name:l10n_dk_reports.account_report_bs_el_e_re
+msgid "Retained earnings"
+msgstr "Overført resultat"
+
+#. module: l10n_dk_reports
+#. odoo-python
+#: code:addons/l10n_dk_reports/models/account_general_ledger.py:0
+#, python-format
+msgid "SAF-T"
+msgstr "SAF-T"
+
+#. module: l10n_dk_reports
+#: model:account.report.line,name:l10n_dk_reports.account_report_pl_pla_gpl_ee_oee_sc
+msgid "Sales costs"
+msgstr "Salgsomkostninger"
+
+#. module: l10n_dk_reports
+#: model:account.report.line,name:l10n_dk_reports.account_report_bs_a_ca_si
+msgid "Securities and investments"
+msgstr "Værdipapirer og kapitalandele"
+
+#. module: l10n_dk_reports
+#: model:account.report.line,name:l10n_dk_reports.account_report_bs_el_e_sc
+msgid "Share capital"
+msgstr "Virksomhedskapital"
+
+#. module: l10n_dk_reports
+#: model:account.report.line,name:l10n_dk_reports.account_report_pl_pla_plbt_splgea_spla
+msgid "Share of profit/loss from associates"
+msgstr "Resultatandele, der hidrører fra associerede virksomheder"
+
+#. module: l10n_dk_reports
+#: model:account.report.line,name:l10n_dk_reports.account_report_pl_pla_plbt_splgea_splge
+msgid "Share of profit/loss from group enterprises"
+msgstr "Resultatandele, der hidrører fra tilknyttede virksomheder"
+
+#. module: l10n_dk_reports
+#: model:account.report.line,name:l10n_dk_reports.account_report_pl_pla_plbt_splgea
+msgid "Share of profit/loss from group enterprises and associates"
+msgstr ""
+"Resultatandele, der hidrører fra tilknyttede og associerede virksomheder"
+
+#. module: l10n_dk_reports
+#: model:account.report.line,name:l10n_dk_reports.account_report_pl_pla_plbt_splgea_splpi
+msgid "Share of profit/loss from participating interests"
+msgstr "Resultatandele, der hidrører fra kapitalinteresser"
+
+#. module: l10n_dk_reports
+#: model:account.report.line,name:l10n_dk_reports.account_report_bs_el_e_sp
+msgid "Share premium"
+msgstr "Overkurs ved emission"
+
+#. module: l10n_dk_reports
+#: model:account.report.line,name:l10n_dk_reports.account_report_bs_el_stl
+msgid "Short-term liabilities"
+msgstr "Kortfristede gældsforpligtelser"
+
+#. module: l10n_dk_reports
+#: model:account.report.line,name:l10n_dk_reports.account_report_pl_pla_opl_sc
+msgid "Staff costs"
+msgstr "Personaleomkostninger"
+
+#. module: l10n_dk_reports
+#: model:account.report.line,name:l10n_dk_reports.account_report_bs_a_fa_tfa
+msgid "Tangible fixed assets"
+msgstr "Materielle anlægsaktiver"
+
+#. module: l10n_dk_reports
+#: model:account.report.line,name:l10n_dk_reports.account_report_bs_a_fa_tfa_tfaipptfa
+msgid ""
+"Tangible fixed assets in progress and prepayments for tangible fixed assets"
+msgstr ""
+"Materielle anlægsaktiver under udførelse og forudbetalinger for materielle "
+"anlægsaktiver"
+
+#. module: l10n_dk_reports
+#: model:account.report.line,name:l10n_dk_reports.account_report_pl_pla_ply_tply
+msgid "Tax on profit/loss for the year"
+msgstr "Skat af årets resultat"
+
+#. module: l10n_dk_reports
+#: model_terms:ir.ui.view,arch_db:l10n_dk_reports.account_journal_dashboard_kanban_view
+msgid "This bank journal needs to have a bank account number set."
+msgstr "Der skal angives et bankkontonummer på denne bankjournal."
+
+#. module: l10n_dk_reports
+#: model:account.report.column,name:l10n_dk_reports.account_financial_report_ec_sales_balance
+msgid "Total"
+msgstr "I alt"
+
+#. module: l10n_dk_reports
+#: model:account.report.line,name:l10n_dk_reports.account_report_bs_el_ltl_tplt
+msgid "Trade payables (long-term)"
+msgstr "Leverandører af varer og tjenesteydelser (langfristet)"
+
+#. module: l10n_dk_reports
+#: model:account.report.line,name:l10n_dk_reports.account_report_bs_el_stl_tpst
+msgid "Trade payables (short-term)"
+msgstr "Leverandører af varer og tjenesteydelser (kortfristet)"
+
+#. module: l10n_dk_reports
+#: model:account.report.line,name:l10n_dk_reports.account_report_bs_a_ca_r_tr
+msgid "Trade receivables"
+msgstr "Tilgodehavender fra salg og tjenesteydelser"
+
+#. module: l10n_dk_reports
+#: model_terms:ir.ui.view,arch_db:l10n_dk_reports.saft_template
+msgid "VAT"
+msgstr "Moms"
+
+#. module: l10n_dk_reports
+#: model:account.report.column,name:l10n_dk_reports.account_financial_report_ec_sales_vat
+msgid "VAT Number"
+msgstr "Momsnummer"
+
+#. module: l10n_dk_reports
+#: model:account.report.line,name:l10n_dk_reports.account_report_pl_pla_opl_sc_ws
+msgid "Wages and salaries"
+msgstr "Lønninger"
+
+#. module: l10n_dk_reports
+#: model:account.report.line,name:l10n_dk_reports.account_report_bs_a_ca_i_wip
+msgid "Work in progress"
+msgstr "Varer under fremstilling"
+
+#. module: l10n_dk_reports
+#: model:account.report.line,name:l10n_dk_reports.account_report_pl_pla_opl_wcaenw
+msgid "Write-down of current assets exceeding normal write-downs"
+msgstr ""
+"Nedskrivning af omsætningsaktiver, som overstiger normale nedskrivninger"
+
+#. module: l10n_dk_reports
+#. odoo-python
+#: code:addons/l10n_dk_reports/models/account_general_ledger.py:0
+#, python-format
+msgid "XML"
+msgstr "XML"

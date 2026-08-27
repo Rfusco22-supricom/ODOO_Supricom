@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+
+    <record id="view_commission_settlement_wizard_form" model="ir.ui.view">
+        <field name="name">commission.settlement.wizard.form</field>
+        <field name="model">commission.settlement.wizard</field>
+        <field name="arch" type="xml">
+            <form string="Liquidación de Comisiones">
+                <group>
+                    <group>
+                        <field name="company_id" options="{'no_create': True}"/>
+                        <field name="date_from"/>
+                        <field name="date_to"/>
+                        <field name="min_price_penalty_pct" widget="percentage"/>
+                    </group>
+                </group>
+                <footer>
+                    <button name="action_generate_settlement" string="Generar Liquidación" type="object" class="btn-primary"/>
+                    <button name="action_print_report" string="Imprimir PDF (Vista Previa)" type="object" class="btn-secondary"/>
+                    <button string="Cancelar" class="btn-secondary" special="cancel"/>
+                </footer>
+            </form>
+        </field>
+    </record>
+
+    <record id="action_commission_settlement_wizard" model="ir.actions.act_window">
+        <field name="name">Liquidación de Comisiones</field>
+        <field name="res_model">commission.settlement.wizard</field>
+        <field name="view_mode">form</field>
+        <field name="target">new</field>
+    </record>
+
+    <menuitem id="menu_commission_settlement_wizard"
+              name="Liquidación de Comisiones"
+              parent="supricom_commissions.menu_commission_root"
+              action="action_commission_settlement_wizard"
+              sequence="80"/>
+
+</odoo>

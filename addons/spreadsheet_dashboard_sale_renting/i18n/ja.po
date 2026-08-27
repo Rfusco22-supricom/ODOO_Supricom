@@ -1,0 +1,231 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+# * spreadsheet_dashboard_sale_renting
+#
+# Translators:
+# Wil Odoo, 2023
+# Ryoko Tsuda <ryoko@quartile.co>, 2023
+# "Junko Augias (juau)" <juau@odoo.com>, 2026.
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 17.0+e\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2025-12-29 18:48+0000\n"
+"PO-Revision-Date: 2026-01-17 17:31+0000\n"
+"Last-Translator: \"Junko Augias (juau)\" <juau@odoo.com>\n"
+"Language-Team: Japanese <https://translate.odoo.com/projects/odoo-17/"
+"spreadsheet_dashboard_sale_renting/ja/>\n"
+"Language: ja\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: \n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"X-Generator: Weblate 5.14.3\n"
+
+#. module: spreadsheet_dashboard_sale_renting
+#. odoo-javascript
+#: code:addons/spreadsheet_dashboard_sale_renting/data/files/rental_dashboard.json:0
+#, python-format
+msgid "Category"
+msgstr "カテゴリー"
+
+#. module: spreadsheet_dashboard_sale_renting
+#. odoo-javascript
+#: code:addons/spreadsheet_dashboard_sale_renting/data/files/rental_dashboard.json:0
+#, python-format
+msgid "Current"
+msgstr "流動"
+
+#. module: spreadsheet_dashboard_sale_renting
+#. odoo-javascript
+#: code:addons/spreadsheet_dashboard_sale_renting/data/files/rental_dashboard.json:0
+#, python-format
+msgid "Customer"
+msgstr "顧客"
+
+#. module: spreadsheet_dashboard_sale_renting
+#. odoo-javascript
+#: code:addons/spreadsheet_dashboard_sale_renting/data/files/rental_dashboard.json:0
+#, python-format
+msgid "Daily Rentals"
+msgstr "日替わりレンタル"
+
+#. module: spreadsheet_dashboard_sale_renting
+#. odoo-javascript
+#: code:addons/spreadsheet_dashboard_sale_renting/data/files/rental_dashboard.json:0
+#, python-format
+msgid "KPI"
+msgstr "KPI"
+
+#. module: spreadsheet_dashboard_sale_renting
+#. odoo-javascript
+#: code:addons/spreadsheet_dashboard_sale_renting/data/files/rental_dashboard.json:0
+#, python-format
+msgid "Ordered"
+msgstr "注文済"
+
+#. module: spreadsheet_dashboard_sale_renting
+#. odoo-javascript
+#: code:addons/spreadsheet_dashboard_sale_renting/data/files/rental_dashboard.json:0
+#, python-format
+msgid "Ordered Qty"
+msgstr "オーダ数"
+
+#. module: spreadsheet_dashboard_sale_renting
+#. odoo-javascript
+#: code:addons/spreadsheet_dashboard_sale_renting/data/files/rental_dashboard.json:0
+#, python-format
+msgid "Orders"
+msgstr "オーダ"
+
+#. module: spreadsheet_dashboard_sale_renting
+#. odoo-javascript
+#: code:addons/spreadsheet_dashboard_sale_renting/data/files/rental_dashboard.json:0
+#, python-format
+msgid "Period"
+msgstr "期間"
+
+#. module: spreadsheet_dashboard_sale_renting
+#. odoo-javascript
+#: code:addons/spreadsheet_dashboard_sale_renting/data/files/rental_dashboard.json:0
+#, python-format
+msgid "Picked-up Qty"
+msgstr "ピックアップ済数量"
+
+#. module: spreadsheet_dashboard_sale_renting
+#. odoo-javascript
+#: code:addons/spreadsheet_dashboard_sale_renting/data/files/rental_dashboard.json:0
+#, python-format
+msgid "Previous"
+msgstr "前へ"
+
+#. module: spreadsheet_dashboard_sale_renting
+#. odoo-javascript
+#: code:addons/spreadsheet_dashboard_sale_renting/data/files/rental_dashboard.json:0
+#, python-format
+msgid "Product"
+msgstr "プロダクト"
+
+#. module: spreadsheet_dashboard_sale_renting
+#. odoo-javascript
+#: code:addons/spreadsheet_dashboard_sale_renting/data/files/rental_dashboard.json:0
+#, python-format
+msgid "Product Category"
+msgstr "プロダクトカテゴリ"
+
+#. module: spreadsheet_dashboard_sale_renting
+#. odoo-javascript
+#: code:addons/spreadsheet_dashboard_sale_renting/data/files/rental_dashboard.json:0
+#, python-format
+msgid "Quotations"
+msgstr "見積"
+
+#. module: spreadsheet_dashboard_sale_renting
+#: model:spreadsheet.dashboard,name:spreadsheet_dashboard_sale_renting.spreadsheet_dashboard_rental
+msgid "Rental"
+msgstr "レンタル"
+
+#. module: spreadsheet_dashboard_sale_renting
+#. odoo-javascript
+#: code:addons/spreadsheet_dashboard_sale_renting/data/files/rental_dashboard.json:0
+#, python-format
+msgid "Rental Analysis by Customer"
+msgstr "顧客別レンタル分析"
+
+#. module: spreadsheet_dashboard_sale_renting
+#. odoo-javascript
+#: code:addons/spreadsheet_dashboard_sale_renting/data/files/rental_dashboard.json:0
+#, python-format
+msgid "Rental Analysis by Product"
+msgstr "プロダクト別レンタル分析"
+
+#. module: spreadsheet_dashboard_sale_renting
+#. odoo-javascript
+#: code:addons/spreadsheet_dashboard_sale_renting/data/files/rental_dashboard.json:0
+#, python-format
+msgid "Rental Analysis by Product Category"
+msgstr "プロダクトカテゴリ別レンタル分析"
+
+#. module: spreadsheet_dashboard_sale_renting
+#. odoo-javascript
+#: code:addons/spreadsheet_dashboard_sale_renting/data/files/rental_dashboard.json:0
+#, python-format
+msgid "Rental Analysis by Salesman"
+msgstr "営業員別レンタル分析"
+
+#. module: spreadsheet_dashboard_sale_renting
+#. odoo-javascript
+#: code:addons/spreadsheet_dashboard_sale_renting/data/files/rental_dashboard.json:0
+#, python-format
+msgid "Rentals"
+msgstr "レンタル"
+
+#. module: spreadsheet_dashboard_sale_renting
+#. odoo-javascript
+#: code:addons/spreadsheet_dashboard_sale_renting/data/files/rental_dashboard.json:0
+#, python-format
+msgid "Returned Qty"
+msgstr "返却数"
+
+#. module: spreadsheet_dashboard_sale_renting
+#. odoo-javascript
+#: code:addons/spreadsheet_dashboard_sale_renting/data/files/rental_dashboard.json:0
+#, python-format
+msgid "Revenue"
+msgstr "収益"
+
+#. module: spreadsheet_dashboard_sale_renting
+#. odoo-javascript
+#: code:addons/spreadsheet_dashboard_sale_renting/data/files/rental_dashboard.json:0
+#, python-format
+msgid "Salesperson"
+msgstr "販売担当者"
+
+#. module: spreadsheet_dashboard_sale_renting
+#. odoo-javascript
+#: code:addons/spreadsheet_dashboard_sale_renting/data/files/rental_dashboard.json:0
+#, python-format
+msgid "Top Customers"
+msgstr "トップ顧客"
+
+#. module: spreadsheet_dashboard_sale_renting
+#. odoo-javascript
+#: code:addons/spreadsheet_dashboard_sale_renting/data/files/rental_dashboard.json:0
+#, python-format
+msgid "Top Product Categories"
+msgstr "トッププロダクトカテゴリ"
+
+#. module: spreadsheet_dashboard_sale_renting
+#. odoo-javascript
+#: code:addons/spreadsheet_dashboard_sale_renting/data/files/rental_dashboard.json:0
+#, python-format
+msgid "Top Products"
+msgstr "トッププロダクト"
+
+#. module: spreadsheet_dashboard_sale_renting
+#. odoo-javascript
+#: code:addons/spreadsheet_dashboard_sale_renting/data/files/rental_dashboard.json:0
+#, python-format
+msgid "Top Salespeople"
+msgstr "トップ販売担当"
+
+#. module: spreadsheet_dashboard_sale_renting
+#. odoo-javascript
+#: code:addons/spreadsheet_dashboard_sale_renting/data/files/rental_dashboard.json:0
+#, python-format
+msgid "rental stats - current"
+msgstr "レンタルステータス - 現状"
+
+#. module: spreadsheet_dashboard_sale_renting
+#. odoo-javascript
+#: code:addons/spreadsheet_dashboard_sale_renting/data/files/rental_dashboard.json:0
+#, python-format
+msgid "rental stats - previous"
+msgstr "レンタルステータス - 以前"
+
+#. module: spreadsheet_dashboard_sale_renting
+#. odoo-javascript
+#: code:addons/spreadsheet_dashboard_sale_renting/data/files/rental_dashboard.json:0
+#, python-format
+msgid "since last period"
+msgstr "前期間から"

@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <record id="view_b2b_client_config_form" model="ir.ui.view">
+        <field name="name">b2b.client.config.form</field>
+        <field name="model">b2b.client.config</field>
+        <field name="arch" type="xml">
+            <form string="Configuración Cliente B2B">
+                <header>
+                    <button name="action_generate_new_key" 
+                            string="Regenerar API Key" 
+                            type="object" 
+                            class="btn-secondary"
+                            confirm="¿Está seguro de regenerar la API Key? El cliente perderá el acceso hasta actualizar su token."/>
+                </header>
+                <sheet>
+                    <div class="oe_title">
+                        <h1>
+                            <field name="name" placeholder="Ej: Digiflex C.A."/>
+                        </h1>
+                    </div>
+                    <group>
+                        <group string="Datos Principales">
+                            <field name="partner_id"/>
+                            <field name="pricelist_id"/>
+                        </group>
+                        <group string="Autenticación &amp; Permisos">
+                            <field name="api_key"/>
+                            <field name="auto_confirm_orders"/>
+                            <field name="active"/>
+                        </group>
+                    </group>
+                </sheet>
+            </form>
+        </field>
+    </record>
+
+    <record id="view_b2b_client_config_tree" model="ir.ui.view">
+        <field name="name">b2b.client.config.tree</field>
+        <field name="model">b2b.client.config</field>
+        <field name="arch" type="xml">
+            <tree string="Clientes B2B Autenticados">
+                <field name="name"/>
+                <field name="partner_id"/>
+                <field name="pricelist_id"/>
+                <field name="auto_confirm_orders"/>
+                <field name="active"/>
+            </tree>
+        </field>
+    </record>
+
+    <record id="action_b2b_client_config" model="ir.actions.act_window">
+        <field name="name">Clientes B2B</field>
+        <field name="res_model">b2b.client.config</field>
+        <field name="view_mode">tree,form</field>
+        <field name="help" type="html">
+            <p class="o_view_nocontent_smiling_face">
+                Registre y configure clientes B2B autorizados para conectarse vía API.
+            </p>
+        </field>
+    </record>
+
+    <menuitem id="menu_b2b_client_config_root"
+              name="Clientes B2B"
+              parent="sale.menu_sale_config"
+              action="action_b2b_client_config"
+              sequence="50"/>
+</odoo>

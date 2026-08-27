@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data>
+        <record id="account_payment_register_dual_currency" model="ir.ui.view">
+            <field name="name">Dual Currency: account.payment.register.form</field>
+            <field name="model">account.payment.register</field>
+            <field name="inherit_id" ref="account.view_account_payment_register_form"/>
+            <field name="arch" type="xml">
+                <xpath expr="//field[@name='payment_date']" position="attributes">
+                    <attribute name="invisible">1</attribute>
+                </xpath>
+                <xpath expr="//label[@for='amount']" position="before">
+                    <field name="is_ve_company" invisible="1"/>
+                    <field name="amount_residual_usd" readonly="1" invisible="not is_ve_company"/>
+                    <field name="tax_invoice" readonly="1" invisible="not is_ve_company"/>
+                    <field invisible="not is_ve_company" name="custom_rate" widget="boolean_toggle" groups="account_dual_currency.group_edit_trm"/>
+                    <field name="payment_date"/>
+                    <field name="tax_today_readonly" invisible="1"/>
+                    <field name="tax_today" readonly="tax_today_readonly" force_save="1" invisible="not is_ve_company"/>
+                </xpath>
+                <xpath expr="//field[@name='payment_difference_handling']" position="after">
+                    <label for="journal_id_dif" invisible="payment_difference_handling == 'open' or not is_ve_company"/>
+                    <field invisible="payment_difference_handling == 'open' or not is_ve_company" name="journal_id_dif"/>
+                </xpath>
+                <xpath expr="//field[@name='journal_id']" position="after">
+                    <field name="currency_id_name" invisible="1"/>
+                    <field name="aplicar_igtf_divisa" 
+                           invisible="currency_id_name in ('VES', 'VEF', 'BS', 'Bs.') or not is_ve_company" 
+                           string="¿Aplicar IGTF (3%)?"/>
+                    <div colspan="2" invisible="not aplicar_igtf_divisa or currency_id_name in ('VES', 'VEF', 'BS', 'Bs.') or not is_ve_company" class="alert alert-info" role="alert" style="margin-bottom: 10px;">
+                        <group>
+                            <field name="journal_igtf_id" domain="[('type', 'in', ('bank', 'cash'))]" required="aplicar_igtf_divisa" widget="selection"/>
+                            <field name="igtf_divisa_porcentage" readonly="1"/>
+                            <field name="mount_igtf" readonly="1"/>
+                            <field name="amount_total_pagar" style="color: red; font-weight: bold;"/>
+                        </group>
+                    </div>
+                </xpath>
+                <xpath expr="//field[@name='currency_id']" position="after">
+                    <!-- Eliminamos la ubicación anterior para evitar duplicidad si existiera -->
+                </xpath>
+                <xpath expr="//group[@name='group3']" position="attributes">
+                    <attribute name="invisible">payment_difference == 0.0 and payment_difference_bs == 0.0</attribute>
+                </xpath>
+                <xpath expr="//field[@name='payment_difference']" position="attributes">
+                    <attribute name="invisible">payment_difference == 0.0</attribute>
+                    <attribute name="style">
+                        color: red;</attribute>
+                </xpath>
+                <xpath expr="//field[@name='payment_difference']" position="before">
+                    <field force_save="1" invisible="payment_difference != 0.0 or currency_id_name == 'VEF' and payment_difference_bs == 0.0 or not is_ve_company" name="payment_difference_bs" readonly="1"/>
+                </xpath></field>
+        </record>
+    </data>
+</odoo>

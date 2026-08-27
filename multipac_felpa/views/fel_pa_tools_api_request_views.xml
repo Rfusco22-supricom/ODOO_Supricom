@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<odoo>
+    
+    <record id="fel_pa_tools_api_request_tree" model="ir.ui.view">
+        <field name="name">fel_pa_tools_api_request_tree</field>
+        <field name="active">True</field>
+        <field name="model">fel_pa.tools.api_request</field>
+        <field name="arch" type="xml">
+            <tree default_order="create_date desc" create="0" edit="0" delete="0">
+                <field name="name"/>
+                <field name="response_result"/>
+                <field name="create_uid"/>
+                <field name="create_date"/>
+            </tree>
+        </field>
+    </record>
+
+    <record id="fel_pa_tools_api_request_form" model="ir.ui.view">
+        <field name="name">fel_pa_tools_api_request_form</field>
+        <field name="active">True</field>
+        <field name="model">fel_pa.tools.api_request</field>
+        <field name="arch" type="xml">
+            <form create="0" edit="0" delete="0">
+                <header>
+                    <field name="state" widget="statusbar" statusbar_visible="draft,in_queue,sent,done"/>
+                </header>
+                <sheet>
+                    <h1 class="mt0">
+                        <field name="name" readonly="1" class="oe_inline"/>
+                    </h1>
+                    <group>
+                        <group>
+                            <field name="fel_pa_pac"/>
+                            <field name="url"/>
+                        </group>
+                    </group>
+                    <notebook>
+                        <page name="response_text" string="Reponse Text">
+                            <group colspan="2">
+                                <field name="response_text" widget="ace"/>
+                            </group>
+                            <group>
+                                <field name="response_message"/>
+                                <field name="response_code"/>
+                                <field name="response_result"/>
+                            </group>
+                        </page>
+                        <page name="request" string="Request">
+                            <group>
+                                <group colspan="2">
+                                    <field name="payload" widget="ace"/>
+                                </group>
+                            </group>
+                        </page>
+                        
+                    </notebook>
+                </sheet>
+                <div class="o_attachment_preview"/>
+                <div class="oe_chatter">
+                    <field groups="base.group_user" name="message_follower_ids"/>
+                    <field name="activity_ids"/>
+                    <field name="message_ids"/>
+                </div>
+            </form>
+        </field>
+    </record>
+
+    <record id="action_fel_pa_tools_api_request" model="ir.actions.act_window">
+        <field name="name">Panamá FEL Api Requests</field>
+        <field name="res_model">fel_pa.tools.api_request</field>
+        <field name="view_mode">tree,form</field>
+    </record>
+
+</odoo>

@@ -1,0 +1,56 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+# * stock_account_enterprise
+#
+# Translators:
+# Wil Odoo, 2023
+#
+# Nusara Boonma <nuboo@odoo.com>, 2026.
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 17.0+e\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2025-12-29 18:48+0000\n"
+"PO-Revision-Date: 2026-05-16 08:04+0000\n"
+"Last-Translator: Nusara Boonma <nuboo@odoo.com>\n"
+"Language-Team: Thai <https://translate.odoo.com/projects/odoo-17/"
+"stock_account_enterprise/th/>\n"
+"Language: th\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: \n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"X-Generator: Weblate 5.17\n"
+
+#. module: stock_account_enterprise
+#: model:ir.model.fields,help:stock_account_enterprise.field_stock_report__valuation
+msgid ""
+"Note that you can only access this value in the read_group, only the sum "
+"operator is supported"
+msgstr ""
+"โปรดทราบว่าคุณสามารถเข้าถึงมูลค่านี้ได้เฉพาะในกลุ่ม read_group เท่านั้น "
+"รองรับเฉพาะตัวดำเนินการผลรวมเท่านั้น"
+
+#. module: stock_account_enterprise
+#: model:ir.model.fields,help:stock_account_enterprise.field_stock_report__stock_value
+msgid ""
+"Note that you can only access this value in the read_group, only the sum "
+"operator is supported and only date_done is used from the domain"
+msgstr ""
+"โปรดทราบว่าคุณสามารถเข้าถึงมูลค่านี้ได้เฉพาะในกลุ่ม read_group เท่านั้น "
+"รองรับตัวดำเนินการผลรวมเท่านั้น และใช้ date_done จากโดเมนเท่านั้น"
+
+#. module: stock_account_enterprise
+#: model:ir.model,name:stock_account_enterprise.model_stock_report
+msgid "Stock Report"
+msgstr "รายงานสต็อก"
+
+#. module: stock_account_enterprise
+#: model:ir.model.fields,field_description:stock_account_enterprise.field_stock_report__stock_value
+msgid "Total Valuation of Inventory"
+msgstr "การประเมินมูลค่ารวมของคลังสินค้า"
+
+#. module: stock_account_enterprise
+#: model:ir.model.fields,field_description:stock_account_enterprise.field_stock_report__valuation
+msgid "Valuation of Inventory using a Domain"
+msgstr "การประเมินมูลค่าคลังสินค้าโดยใช้โดเมน"

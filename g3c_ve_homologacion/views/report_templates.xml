@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <!-- 
+        Heredar los valid layouts estándar para inyectar el mensaje fiscal 
+        solo en reportes de inventario (aquellos cuyo modelo contiene "stock")
+        Condicionado a que la homologación esté activa en la compañía.
+    -->
+
+    <!-- Layout Standard -->
+    <template id="external_layout_standard_fiscal_disclaimer" inherit_id="web.external_layout_standard">
+        <xpath expr="//div[contains(@t-attf-class, 'header')]" position="inside">
+            <!-- Marca de agua para TODOS los estados de sale.order -->
+            <t t-if="o and (o._name == 'sale.order') and o.company_id.homologacion_activa">
+                <div class="watermark" style="position:absolute;opacity:0.05;font-size:8em;width:100%;text-align:center;z-index:9999;top:400px;transform:rotate(-45deg);pointer-events:none;">
+                    NO FISCAL
+                </div>
+            </t>
+        </xpath>
+        <xpath expr="//div[contains(@t-attf-class, 'footer')]" position="inside">
+            <t t-if="o and (o._name == 'sale.order' or 'stock' in o._name) and o.company_id.homologacion_activa">
+                <div class="text-center mb-2" style="font-weight: bold; font-size: 14px; margin-bottom: 5px;">
+                    <t t-if="o._name == 'sale.order'">
+                        <span t-if="o.state in ['draft', 'sent']">Presupuesto No Fiscal</span>
+                        <span t-else="">Orden de Venta No Fiscal</span>
+                        <br/>
+                    </t>
+                    Documento sin derecho a crédito fiscal
+                </div>
+                <div t-if="o._name == 'account.move'" class="text-center" style="font-size: 10px;">
+                    Hora de emisión: <span t-esc="o.create_date.strftime('%H:%M:%S')"/>
+                </div>
+            </t>
+        </xpath>
+    </template>
+
+    <!-- Layout Striped -->
+    <template id="external_layout_striped_fiscal_disclaimer" inherit_id="web.external_layout_striped">
+        <xpath expr="//div[contains(@t-attf-class, 'header')]" position="inside">
+            <t t-if="o and (o._name == 'sale.order') and o.company_id.homologacion_activa">
+                <div class="watermark" style="position:absolute;opacity:0.05;font-size:8em;width:100%;text-align:center;z-index:9999;top:400px;transform:rotate(-45deg);pointer-events:none;">
+                    NO FISCAL
+                </div>
+            </t>
+        </xpath>
+        <xpath expr="//div[contains(@t-attf-class, 'footer')]" position="inside">
+             <t t-if="o and (o._name == 'sale.order' or 'stock' in o._name) and o.company_id.homologacion_activa">
+                <div class="text-center mb-2" style="font-weight: bold; font-size: 14px; margin-bottom: 5px;">
+                    <t t-if="o._name == 'sale.order'">
+                        <span t-if="o.state in ['draft', 'sent']">Presupuesto No Fiscal</span>
+                        <span t-else="">Orden de Venta No Fiscal</span>
+                        <br/>
+                    </t>
+                    Documento sin derecho a crédito fiscal
+                </div>
+            </t>
+        </xpath>
+    </template>
+
+    <!-- Layout Bold -->
+    <template id="external_layout_bold_fiscal_disclaimer" inherit_id="web.external_layout_bold">
+        <xpath expr="//div[contains(@t-attf-class, 'header')]" position="inside">
+            <t t-if="o and (o._name == 'sale.order') and o.company_id.homologacion_activa">
+                <div class="watermark" style="position:absolute;opacity:0.05;font-size:8em;width:100%;text-align:center;z-index:9999;top:400px;transform:rotate(-45deg);pointer-events:none;">
+                    NO FISCAL
+                </div>
+            </t>
+        </xpath>
+        <xpath expr="//div[contains(@t-attf-class, 'footer')]" position="inside">
+             <t t-if="o and (o._name == 'sale.order' or 'stock' in o._name) and o.company_id.homologacion_activa">
+                <div class="text-center mb-2" style="font-weight: bold; font-size: 14px; margin-bottom: 5px;">
+                    <t t-if="o._name == 'sale.order'">
+                        <span t-if="o.state in ['draft', 'sent']">Presupuesto No Fiscal</span>
+                        <span t-else="">Orden de Venta No Fiscal</span>
+                        <br/>
+                    </t>
+                    Documento sin derecho a crédito fiscal
+                </div>
+            </t>
+        </xpath>
+    </template>
+
+    <!-- Layout Boxed -->
+    <template id="external_layout_boxed_fiscal_disclaimer" inherit_id="web.external_layout_boxed">
+        <xpath expr="//div[contains(@t-attf-class, 'header')]" position="inside">
+            <t t-if="o and (o._name == 'sale.order') and o.company_id.homologacion_activa">
+                <div class="watermark" style="position:absolute;opacity:0.05;font-size:8em;width:100%;text-align:center;z-index:9999;top:400px;transform:rotate(-45deg);pointer-events:none;">
+                    NO FISCAL
+                </div>
+            </t>
+        </xpath>
+        <xpath expr="//div[contains(@t-attf-class, 'footer')]" position="inside">
+             <t t-if="o and (o._name == 'sale.order' or 'stock' in o._name) and o.company_id.homologacion_activa">
+                <div class="text-center mb-2" style="font-weight: bold; font-size: 14px; margin-bottom: 5px;">
+                    <t t-if="o._name == 'sale.order'">
+                        <span t-if="o.state in ['draft', 'sent']">Presupuesto No Fiscal</span>
+                        <span t-else="">Orden de Venta No Fiscal</span>
+                        <br/>
+                    </t>
+                    Documento sin derecho a crédito fiscal
+                </div>
+            </t>
+        </xpath>
+    </template>
+
+    <!-- Guía de Despacho Title in Delivery Slip -->
+    <template id="report_delivery_document_guia_despacho" inherit_id="stock.report_delivery_document">
+        <xpath expr="//div[hasclass('page')]/h2" position="before">
+            <h2 class="mt0" t-if="o.company_id.homologacion_activa">Guía de Despacho</h2>
+        </xpath>
+    </template>
+
+    <!-- Modificación del Reporte de Pedido (Sale Order) -->
+    <template id="report_saleorder_document_no_fiscal_title" inherit_id="sale.report_saleorder_document">
+        <!-- Cambiar Título Orden -> Pedido (solo si homologación activa) -->
+        <xpath expr="//div[hasclass('page')]/h2" position="replace">
+            <h2 class="mt-4">
+                <t t-if="doc.company_id.homologacion_activa">
+                    <span t-if="env.context.get('proforma', False) or is_pro_forma">Pro-Forma Invoice # </span>
+                    <span t-elif="doc.state in ['draft','sent']">Presupuesto # </span>
+                    <span t-else="">Pedido # </span>
+                </t>
+                <t t-else="">
+                    <span t-if="env.context.get('proforma', False) or is_pro_forma">Pro-Forma Invoice # </span>
+                    <span t-elif="doc.state in ['draft','sent']">Quotation # </span>
+                    <span t-else="">Order # </span>
+                </t>
+                <span t-field="doc.name"/>
+            </h2>
+        </xpath>
+        
+        <!-- Ocultar Totales solo si NO es presupuesto (draft/sent) y homolgación activa -->
+        <xpath expr="//div[@name='so_total_summary']" position="attributes">
+            <attribute name="t-att-style">"display: none !important;" if doc.company_id.homologacion_activa and doc.state not in ['draft', 'sent'] else ""</attribute>
+        </xpath>
+    </template>
+
+</odoo>

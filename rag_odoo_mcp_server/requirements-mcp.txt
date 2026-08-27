@@ -1,0 +1,8 @@
+# Dependencies for running the RAG Odoo MCP server (standalone).
+# Install: pip install -r requirements-mcp.txt
+# Then run: python -m rag_odoo_mcp_server.mcp_server --host 0.0.0.0 --port 8000
+
+mcp[sse]>=1.0.0
+starlette>=0.27.0
+uvicorn>=0.15.0
+psycopg2-binary>=2.9.0

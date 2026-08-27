@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <record id="view_account_payment_split_wizard_form" model="ir.ui.view">
+        <field name="name">account.payment.split.wizard.form</field>
+        <field name="model">account.payment.split.wizard</field>
+        <field name="arch" type="xml">
+            <form string="Asignación Avanzada de Pagos">
+                <sheet>
+                    <div class="alert alert-primary" role="alert" invisible="not is_inter_company">
+                        <div class="d-flex align-items-center">
+                            <i class="fa fa-building fa-2x mr-3" title="Inter-Compañía"/>
+                            <div>
+                                <strong>MODO INTER-COMPAÑÍA</strong><br/>
+                                Pago en <strong><field name="payment_company_id" readonly="1"/></strong> 
+                                → Facturas en <strong><field name="filter_company_id" readonly="1"/></strong>.<br/>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="alert alert-warning" role="alert" invisible="is_inter_company or not is_third_party_payment">
+                        <div class="d-flex align-items-center">
+                            <i class="fa fa-users fa-2x mr-3" title="Pago de Terceros"/>
+                            <div>
+                                <strong>PAGO DE TERCEROS</strong><br/>
+                                El cliente del pago es diferente al de las facturas. 
+                                Se generará un asiento puente de reclasificación de deuda.
+                            </div>
+                        </div>
+                    </div>
+
+                    <group>
+                        <!-- COLUMNA IZQUIERDA: CONFIGURACION Y FILTROS -->
+                        <group string="Filtros de Facturas">
+                            <field name="invoice_id" invisible="1"/>
+                            <field name="selected_invoice_ids" invisible="1"/>
+                            <field name="search_mode" widget="boolean_toggle"/>
+                            <field name="filter_partner_id" 
+                                   readonly="not search_mode" 
+                                   options="{'no_create': True, 'no_open': True}"
+                                   force_save="1"/>
+                            <field name="filter_company_id" 
+                                   groups="base.group_multi_company" 
+                                   readonly="not search_mode"
+                                   force_save="1"
+                                   options="{'no_create': True}"/> 
+                            <field name="search_ref" placeholder="Buscar ref de pago..." invisible="not search_mode"/>
+                        </group>
+
+                        <!-- COLUMNA DERECHA: SELECCION DE PAGO -->
+                        <group string="Pago a Distribuir">
+                            <field name="payment_type_filter" invisible="1"/>
+                            <!-- Pago Filtrado por Partner (Default) -->
+                            <field name="payment_id" 
+                                   string="Pago Seleccionado"
+                                   options="{'no_create': True, 'no_open': True}" 
+                                   domain="[('state', '=', 'posted'), ('is_reconciled', '=', False), ('partner_id', '=', filter_partner_id), ('payment_type', '=', payment_type_filter)]"
+                                   invisible="search_mode"/>
+                            
+                            <!-- Pago Global (Busqueda por Referencia) -->
+                            <field name="payment_id" 
+                                   string="Pago (Búsqueda Global)"
+                                   options="{'no_create': True, 'no_open': True}" 
+                                   domain="[('state', '=', 'posted'), ('is_reconciled', '=', False), ('payment_type', '=', payment_type_filter)]"
+                                   invisible="not search_mode"/>
+                            <field name="payment_currency_id" invisible="1"/>
+                            <field name="payment_company_id" invisible="1"/>
+                            <field name="payment_amount_available" widget="monetary" decoration-bf="1"/>
+                            
+                            <field name="is_inter_company" invisible="1"/>
+                            <field name="is_third_party_payment" invisible="1"/>
+                        </group>
+                    </group>
+
+                    <!-- SECCION CENTRAL: TOTALES -->
+                    <div class="p-3 bg-light border rounded mb-3">
+                        <div class="row align-items-center">
+                            <div class="col-6">
+                                <label for="amount_to_apply" class="h5"/>
+                                <div class="d-flex align-items-center">
+                                    <field name="amount_to_apply" widget="monetary" readonly="1" class="oe_inline h2 text-primary mr-2"/>
+                                    <span class="text-muted mx-2">|</span>
+                                    <span class="small text-muted mr-1">Equivalente a Tasa Factura: </span>
+                                    <field name="total_amount_converted" widget="monetary" readonly="1" class="h4 text-secondary"/>
+                                </div>
+                            </div>
+                            <div class="col-6">
+                                <field name="progress_html" widget="html"/>
+                            </div>
+                        </div>
+                        <div class="row mt-2">
+                             <div class="col-12 text-muted">
+                                 Saldo Restante del Pago: 
+                                 <field name="remaining_payment_balance" widget="monetary" decoration-info="1" class="font-weight-bold"/>
+                             </div>
+                        </div>
+                    </div>
+
+                    <!-- LISTA DE FACTURAS -->
+                    <notebook>
+                        <page string="Facturas a Pagar">
+                            <field name="line_ids" nolabel="1">
+                                <tree string="Facturas" editable="bottom" create="0" delete="0">
+                                    <field name="invoice_id" readonly="1" force_save="1"/>
+                                    <field name="currency_id" column_invisible="1"/>
+                                    <field name="amount_residual" string="Deuda Original" optional="show"/>
+                                    
+                                    <field name="payment_currency_id" column_invisible="1"/>
+                                    <field name="payment_date" column_invisible="1" force_save="1"/>
+                                    <field name="company_currency_id" column_invisible="1"/>
+                                    <field name="amount_to_pay" widget="monetary" sum="Total Asignado" decoration-bf="amount_to_pay > 0"/>
+                                    <field name="amount_converted" widget="monetary" optional="show" decoration-muted="amount_converted == 0"/>
+                                    <field name="est_exchange_diff" widget="monetary" optional="show" decoration-danger="est_exchange_diff &lt; 0" decoration-success="est_exchange_diff &gt; 0"/>
+                                </tree>
+                            </field>
+                        </page>
+                    </notebook>
+
+                    <footer>
+                        <button string="Confirmar Distribución" name="action_confirm_split" type="object" class="btn-primary" data-hotkey="q"/>
+                        <button string="Cancelar" class="btn-secondary" special="cancel" data-hotkey="z"/>
+                    </footer>
+                </sheet>
+            </form>
+        </field>
+    </record>
+
+    <record id="action_account_payment_split_wizard" model="ir.actions.act_window">
+        <field name="name">Asignación Avanzada de Pagos</field>
+        <field name="res_model">account.payment.split.wizard</field>
+        <field name="view_mode">form</field>
+        <field name="target">new</field>
+    </record>
+</odoo>

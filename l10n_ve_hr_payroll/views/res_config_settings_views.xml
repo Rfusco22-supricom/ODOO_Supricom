@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <record id="res_config_settings_view_form_inherit_ve_payroll" model="ir.ui.view">
+        <field name="name">res.config.settings.view.form.inherit.ve.payroll</field>
+        <field name="model">res.config.settings</field>
+        <field name="inherit_id" ref="hr_payroll.res_config_settings_view_form"/>
+        <field name="arch" type="xml">
+            <xpath expr="//app[@name='hr_payroll']" position="inside">
+                <block title="Localización Venezuela" id="bcv_interest_rate_block">
+                    <setting id="bcv_interest_rate_setting" title="Tasa de interés del BCV" help="Configuración de la tasa de interés del BCV para cálculos de prestaciones.">
+                        <div class="content-group">
+                            <div class="row mt16">
+                                <label for="bcv_interest_rate" class="col-lg-3 o_light_label"/>
+                                <field name="bcv_interest_rate"/>
+                            </div>
+                        </div>
+                    </setting>
+                </block>
+            </xpath>
+        </field>
+    </record>
+</odoo>

@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <record id="view_credit_extension_wizard_form" model="ir.ui.view">
+        <field name="name">spiff.credit.extension.wizard.form</field>
+        <field name="model">spiff.credit.extension.wizard</field>
+        <field name="arch" type="xml">
+            <form string="Extensión de Crédito">
+                <sheet>
+                    <group>
+                        <p class="oe_grey">
+                            El pedido contiene productos de la marca <b><field name="brand_id" readonly="1" options="{'no_open': True}"/></b>, 
+                            la cual otorga una extensión de crédito.
+                        </p>
+                        <group>
+                            <field name="current_term_id" readonly="1"/>
+                            <field name="new_days" readonly="1"/>
+                        </group>
+                    </group>
+                    <footer>
+                        <button name="action_create_term_and_confirm" string="Crear Término y Confirmar" type="object" class="oe_highlight"/>
+                        <button name="action_confirm_without_extension" string="Confirmar sin Extensión" type="object" class="secondary"/>
+                        <button string="Cancelar" class="btn-secondary" special="cancel"/>
+                    </footer>
+                </sheet>
+            </form>
+        </field>
+    </record>
+</odoo>

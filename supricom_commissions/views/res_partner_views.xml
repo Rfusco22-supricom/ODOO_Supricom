@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+
+    <record id="view_partner_form_inherit_supricom_commissions" model="ir.ui.view">
+        <field name="name">res.partner.form.inherit.supricom.commissions</field>
+        <field name="model">res.partner</field>
+        <field name="inherit_id" ref="base.view_partner_form"/>
+        <field name="priority">50</field>
+        <field name="arch" type="xml">
+            
+            <!-- Pestaña dedicada para Configuración de Vendedor -->
+            <xpath expr="//page[@name='internal_notes']" position="before">
+                <page string="📊 Vendedor y Comisiones" name="vendor_commissions_info">
+                    <group>
+                        <group string="Estado de Vendedor" name="vendor_status_group">
+                            <field name="is_vendor" widget="boolean_toggle" 
+                                   string="¿Es Vendedor?"/>
+                        </group>
+                        <group string="Clasificación" name="vendor_type_group" invisible="not is_vendor">
+                            <field name="vendor_type_id" 
+                                   string="Tipo de Vendedor"
+                                   placeholder="Seleccione un tipo..."
+                                   required="is_vendor"
+                                   options="{'no_create': True, 'no_quick_create': True}"/>
+                        </group>
+                    </group>
+                    
+                    <!-- Panel informativo cuando ES vendedor -->
+                    <div invisible="not is_vendor" class="alert alert-success" role="alert" 
+                         style="margin: 16px 0; padding: 16px; border-radius: 8px; border-left: 4px solid #28a745;">
+                        <h4 style="margin: 0 0 8px 0; color: #155724;">
+                            <i class="fa fa-check-circle"/> Vendedor Activo
+                        </h4>
+                        <p style="margin: 0; color: #155724;">
+                            Este contacto está habilitado para el cálculo de comisiones según las reglas del sistema.
+                        </p>
+                    </div>
+                    
+                    <!-- Panel informativo cuando NO es vendedor -->
+                    <div invisible="is_vendor" class="alert alert-secondary" role="alert"
+                         style="margin: 16px 0; padding: 16px; border-radius: 8px; background-color: #f8f9fa; border-left: 4px solid #6c757d;">
+                        <h4 style="margin: 0 0 8px 0; color: #495057;">
+                            <i class="fa fa-info-circle"/> No es Vendedor
+                        </h4>
+                        <p style="margin: 0; color: #6c757d;">
+                            Active la opción "¿Es Vendedor?" si desea que este contacto participe en el sistema de comisiones.
+                        </p>
+                    </div>
+                </page>
+            </xpath>
+            
+
+            
+        </field>
+    </record>
+
+</odoo>
+

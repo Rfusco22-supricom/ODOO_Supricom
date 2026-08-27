@@ -1,0 +1,443 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+# * social_instagram
+#
+# Weblate <noreply-mt-weblate@weblate.org>, 2025, 2026.
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 17.0+e\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-03-13 18:46+0000\n"
+"PO-Revision-Date: 2026-07-05 14:09+0000\n"
+"Last-Translator: Weblate <noreply-mt-weblate@weblate.org>\n"
+"Language-Team: Hindi <https://translate.odoo.com/projects/odoo-17/"
+"social_instagram/hi/>\n"
+"Language: hi\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: \n"
+"Plural-Forms: nplurals=2; plural=n > 1;\n"
+"X-Generator: Weblate 2026.6.1\n"
+
+#. module: social_instagram
+#. odoo-python
+#: code:addons/social_instagram/models/social_live_post.py:0
+#, python-format
+msgid ""
+"- Check permissions: Your site's robots.txt might be blocking Instagram from "
+"accessing the media folder (make sure /social_instagram is not blocked)."
+msgstr ""
+"- अनुमतियां जाँचें: आपकी साइट का robots.txt इंस्टाग्राम को मीडिया फ़ोल्डर तक पहुंचने से "
+"रोक सकता है (सुनिश्चित करें कि /social_instagram ब्लॉक नहीं है)।"
+
+#. module: social_instagram
+#. odoo-python
+#: code:addons/social_instagram/models/social_live_post.py:0
+#, python-format
+msgid ""
+"- Check your connection: Your server may be offline or temporarily "
+"unreachable."
+msgstr ""
+"- अपना कनेक्शन जांचें: आपका सर्वर ऑफ़लाइन हो सकता है या अस्थायी रूप से अनुपलब्ध हो सकता है।"
+
+#. module: social_instagram
+#. odoo-python
+#: code:addons/social_instagram/models/social_live_post.py:0
+#, python-format
+msgid ""
+"- Check your file: Ensure it isn't corrupted and is from 320 to 1440 pixels "
+"wide, 8MB maximum, aspect ratio between 4:5 and 1.91:1."
+msgstr ""
+"- अपनी फ़ाइल जांचें: सुनिश्चित करें कि यह खराब नहीं है और 320 से 1440 पिक्सेल चौड़ी है, "
+"अधिकतम 8MB है, और आस्पेक्ट रेशियो 4:5 और 1.91:1 के बीच है।"
+
+#. module: social_instagram
+#: model_terms:ir.ui.view,arch_db:social_instagram.instagram_preview
+msgid "34 SECONDS AGO"
+msgstr "34 सेकंड पहले"
+
+#. module: social_instagram
+#: model_terms:ir.ui.view,arch_db:social_instagram.social_stream_post_view_kanban
+msgid "<i class=\"fa fa-comments me-1\" title=\"Comments\"/>"
+msgstr "<i class=\"fa fa-comments me-1\" title=\"Comments\"/>"
+
+#. module: social_instagram
+#: model_terms:ir.ui.view,arch_db:social_instagram.social_stream_post_view_kanban
+msgid "<i class=\"fa fa-heart me-1\" title=\"Likes\"/>"
+msgstr "<i class=\"fa fa-heart me-1\" title=\"Likes\"/>"
+
+#. module: social_instagram
+#: model_terms:ir.ui.view,arch_db:social_instagram.instagram_preview
+msgid "<span class=\"fw-bold pe-1\">My_instagram_page</span>"
+msgstr "<span class=\"fw-bold pe-1\">My_instagram_page</span>"
+
+#. module: social_instagram
+#: model_terms:ir.ui.view,arch_db:social_instagram.instagram_preview
+msgid "<span class=\"mt-1 fw-bold\">My Instagram Page</span>"
+msgstr "<span class=\"mt-1 fw-bold\">मेरा Instagram पेज</span>"
+
+#. module: social_instagram
+#: model_terms:ir.ui.view,arch_db:social_instagram.instagram_preview
+msgid ""
+"<span>Your image has to be within the 4:5 and the 1.91:1 aspect ratio as "
+"required by Instagram.</span><br/>\n"
+"                <span>We don't automatically resize your image to avoid "
+"undesired result.</span><br/>\n"
+"                <span>More information on:</span>"
+msgstr ""
+
+#. module: social_instagram
+#: model:ir.model.fields,field_description:social_instagram.field_social_post__instagram_access_token
+#: model:ir.model.fields,field_description:social_instagram.field_social_post_template__instagram_access_token
+msgid "Access Token"
+msgstr "ऐक्सेस टोकन"
+
+#. module: social_instagram
+#. odoo-python
+#: code:addons/social_instagram/models/social_post.py:0
+#: model_terms:ir.ui.view,arch_db:social_instagram.instagram_preview
+#, python-format
+msgid "An image is required when posting on Instagram."
+msgstr ""
+
+#. module: social_instagram
+#: model_terms:ir.ui.view,arch_db:social_instagram.res_config_settings_view_form
+msgid "App ID"
+msgstr "ऐप आईडी"
+
+#. module: social_instagram
+#: model_terms:ir.ui.view,arch_db:social_instagram.res_config_settings_view_form
+msgid "App Secret"
+msgstr "ऐप सीक्रेट"
+
+#. module: social_instagram
+#. odoo-javascript
+#: code:addons/social_instagram/static/src/xml/social_instagram_templates.xml:0
+#: model_terms:ir.ui.view,arch_db:social_instagram.social_stream_post_view_kanban
+#, python-format
+msgid "Author Image"
+msgstr "लेखक की इमेज"
+
+#. module: social_instagram
+#: model:ir.model.fields,help:social_instagram.field_res_config_settings__instagram_use_own_account
+msgid ""
+"Check this if you want to use your personal Instagram Developer Account "
+"instead of the provided one."
+msgstr ""
+"अगर आप दिए गए खाते के बजाय अपना व्यक्तिगत Instagram डेवलपर खाता उपयोग करना चाहते "
+"हैं, तो इसे चुनें।"
+
+#. module: social_instagram
+#: model:ir.model,name:social_instagram.model_res_config_settings
+msgid "Config Settings"
+msgstr "कॉन्फ़िगरेशन सेटिंग"
+
+#. module: social_instagram
+#. odoo-python
+#: code:addons/social_instagram/controllers/main.py:0
+#, python-format
+msgid "Could not find any account to add."
+msgstr "जोड़ने के लिए कोई खाता नहीं मिला।"
+
+#. module: social_instagram
+#: model:ir.model.fields,field_description:social_instagram.field_social_post__display_instagram_preview
+#: model:ir.model.fields,field_description:social_instagram.field_social_post_template__display_instagram_preview
+msgid "Display Instagram Preview"
+msgstr "Instagram प्रीव्यू दिखाएं"
+
+#. module: social_instagram
+#: model:ir.model.fields,help:social_instagram.field_social_account__instagram_facebook_account_id
+msgid ""
+"Facebook Account ID provided by the Facebook API, this should never be set "
+"manually.\n"
+"        The Instagram (\"Professional\") account is always linked to a "
+"Facebook account."
+msgstr ""
+"Facebook खाता आईडी जो Facebook API द्वारा प्रदान की जाती है, इसे कभी भी मैन्युअल रूप "
+"से सेट नहीं किया जाना चाहिए.\n"
+"        Instagram (\"प्रोफ़ेशनल\") खाता हमेशा एक Facebook खाते से जुड़ा होता है।"
+
+#. module: social_instagram
+#: model:ir.model.fields.selection,name:social_instagram.selection__social_media__media_type__instagram
+#: model:social.media,name:social_instagram.social_media_instagram
+msgid "Instagram"
+msgstr "Instagram"
+
+#. module: social_instagram
+#: model:ir.model.fields,field_description:social_instagram.field_social_account__instagram_access_token
+msgid "Instagram Access Token"
+msgstr "Instagram ऐक्सेस टोकन"
+
+#. module: social_instagram
+#: model:ir.model.fields,help:social_instagram.field_social_account__instagram_access_token
+msgid ""
+"Instagram Access Token provided by the Facebook API, this should never be "
+"set manually.\n"
+"        It's used to authenticate requests when posting to or reading "
+"information from this account."
+msgstr ""
+"Facebook API द्वारा प्रदान किया गया Instagram ऐक्सेस टोकन, इसे कभी भी मैन्युअल रूप से "
+"सेट नहीं किया जाना चाहिए.\n"
+"        इसका उपयोग इस खाते पर पोस्ट करते समय या इस खाते से जानकारी पढ़ते समय अनुरोधों "
+"को प्रमाणित करने के लिए किया जाता है।"
+
+#. module: social_instagram
+#: model:ir.model.fields,field_description:social_instagram.field_social_account__instagram_account_id
+msgid "Instagram Account ID"
+msgstr "Instagram खाते की आईडी"
+
+#. module: social_instagram
+#: model:ir.model.fields,help:social_instagram.field_social_account__instagram_account_id
+msgid ""
+"Instagram Account ID provided by the Facebook API, this should never be set "
+"manually."
+msgstr ""
+"Facebook API द्वारा प्रदान किया गया Instagram अकाउंट आईडी, इसे कभी भी मैन्युअल रूप से "
+"सेट नहीं किया जाना चाहिए।"
+
+#. module: social_instagram
+#: model:ir.model.fields,field_description:social_instagram.field_res_config_settings__instagram_app_id
+msgid "Instagram App ID"
+msgstr "Instagram ऐप की आईडी"
+
+#. module: social_instagram
+#: model:ir.model.fields,field_description:social_instagram.field_res_config_settings__instagram_client_secret
+msgid "Instagram App Secret"
+msgstr "Instagram ऐप सीक्रेट"
+
+#. module: social_instagram
+#. odoo-javascript
+#: code:addons/social_instagram/static/src/js/stream_post_kanban_record.js:0
+#: model:ir.model.fields,field_description:social_instagram.field_social_stream_post__instagram_comments_count
+#, python-format
+msgid "Instagram Comments"
+msgstr "Instagram पर कमेंट"
+
+#. module: social_instagram
+#: model_terms:ir.ui.view,arch_db:social_instagram.res_config_settings_view_form
+msgid "Instagram Developer Account"
+msgstr "Instagram डेवलपर खाता"
+
+#. module: social_instagram
+#: model:ir.model.fields,field_description:social_instagram.field_social_account__instagram_facebook_account_id
+msgid "Instagram Facebook Account ID"
+msgstr "Instagram Facebook खाता आईडी"
+
+#. module: social_instagram
+#: model:ir.model.fields,field_description:social_instagram.field_social_stream_post__instagram_facebook_author_id
+msgid "Instagram Facebook Author ID"
+msgstr "Instagram Facebook लेखक आईडी"
+
+#. module: social_instagram
+#: model:ir.model.fields,field_description:social_instagram.field_social_post__instagram_image_id
+#: model:ir.model.fields,field_description:social_instagram.field_social_post_template__instagram_image_id
+msgid "Instagram Image"
+msgstr ""
+
+#. module: social_instagram
+#: model:ir.model.fields,field_description:social_instagram.field_social_stream_post__instagram_likes_count
+msgid "Instagram Likes"
+msgstr "Instagram लाइक"
+
+#. module: social_instagram
+#: model:ir.model.fields,field_description:social_instagram.field_social_live_post__instagram_post_id
+#: model:ir.model.fields,field_description:social_instagram.field_social_stream_post__instagram_post_id
+msgid "Instagram Post ID"
+msgstr "Instagram पोस्ट आईडी"
+
+#. module: social_instagram
+#: model:ir.model.fields,field_description:social_instagram.field_social_stream_post__instagram_post_link
+msgid "Instagram Post URL"
+msgstr "Instagram पोस्ट यूआरएल"
+
+#. module: social_instagram
+#: model:social.stream.type,name:social_instagram.stream_type_instagram_posts
+msgid "Instagram Posts"
+msgstr "Instagram पोस्ट"
+
+#. module: social_instagram
+#: model:ir.model.fields,field_description:social_instagram.field_social_post__instagram_preview
+#: model:ir.model.fields,field_description:social_instagram.field_social_post_template__instagram_preview
+msgid "Instagram Preview"
+msgstr "Instagram प्रीव्यू"
+
+#. module: social_instagram
+#. odoo-python
+#: code:addons/social_instagram/controllers/main.py:0
+#, python-format
+msgid "Instagram did not provide a valid access token."
+msgstr "Instagram ने एक वैध ऐक्सेस टोकन प्रदान नहीं किया।"
+
+#. module: social_instagram
+#. odoo-javascript
+#: code:addons/social_instagram/static/src/xml/social_instagram_templates.xml:0
+#, python-format
+msgid "Likes"
+msgstr "लाइक"
+
+#. module: social_instagram
+#: model:ir.model.fields,field_description:social_instagram.field_social_media__media_type
+msgid "Media Type"
+msgstr "मीडिया टाइप"
+
+#. module: social_instagram
+#. odoo-python
+#: code:addons/social_instagram/models/social_post.py:0
+#: model_terms:ir.ui.view,arch_db:social_instagram.instagram_preview
+#, python-format
+msgid "Only .jpg/.jpeg images can be posted on Instagram."
+msgstr ""
+
+#. module: social_instagram
+#: model_terms:ir.ui.view,arch_db:social_instagram.instagram_preview
+msgid "Only the first attached image will be posted on Instagram."
+msgstr ""
+
+#. module: social_instagram
+#. odoo-python
+#: code:addons/social_instagram/models/social_stream_post.py:0
+#, python-format
+msgid ""
+"Please confirm that commenting is enabled for this post on the platform."
+msgstr ""
+"कृपया पुष्टि करें कि प्लेटफ़ॉर्म पर इस पोस्ट के लिए कमेंट करने की सुविधा चालू है।"
+
+#. module: social_instagram
+#: model_terms:ir.ui.view,arch_db:social_instagram.instagram_preview
+msgid "Post Image"
+msgstr "इमेज पोस्ट करें"
+
+#. module: social_instagram
+#. odoo-python
+#: code:addons/social_instagram/controllers/main.py:0
+#, python-format
+msgid "Read More about Instagram Accounts"
+msgstr "Instagram खातों के बारे में और पढ़ें"
+
+#. module: social_instagram
+#: model:ir.model,name:social_instagram.model_social_account
+msgid "Social Account"
+msgstr "सोशल अकाउंट"
+
+#. module: social_instagram
+#: model:ir.model,name:social_instagram.model_social_live_post
+msgid "Social Live Post"
+msgstr "सोशल लाइव पोस्ट"
+
+#. module: social_instagram
+#: model:ir.model,name:social_instagram.model_social_media
+msgid "Social Media"
+msgstr "सोशल मीडिया"
+
+#. module: social_instagram
+#: model:ir.model,name:social_instagram.model_social_post
+msgid "Social Post"
+msgstr "सोशल पोस्ट"
+
+#. module: social_instagram
+#: model:ir.model,name:social_instagram.model_social_post_template
+msgid "Social Post Template"
+msgstr "सोशल पोस्ट टेम्पलेट"
+
+#. module: social_instagram
+#: model:ir.model,name:social_instagram.model_social_stream
+msgid "Social Stream"
+msgstr "सोशल स्ट्रीम"
+
+#. module: social_instagram
+#: model:ir.model,name:social_instagram.model_social_stream_post
+msgid "Social Stream Post"
+msgstr "सोशल स्ट्रीम पोस्ट"
+
+#. module: social_instagram
+#: model:ir.model.fields,help:social_instagram.field_social_stream_post__instagram_facebook_author_id
+msgid ""
+"The Facebook ID of this Instagram post author, used to fetch the profile "
+"picture."
+msgstr ""
+"इस Instagram पोस्ट के लेखक की Facebook आईडी, जिसका उपयोग प्रोफ़ाइल पिक्चर प्राप्त "
+"करने के लिए किया जाता है।"
+
+#. module: social_instagram
+#. odoo-python
+#: code:addons/social_instagram/controllers/main.py:0
+#, python-format
+msgid "There was a authentication issue during your request."
+msgstr "आपकी अनुरोध के दौरान प्रमाणीकरण में कोई समस्या हुई।"
+
+#. module: social_instagram
+#. odoo-python
+#: code:addons/social_instagram/controllers/main.py:0
+#, python-format
+msgid "Unauthorized. Please contact your administrator."
+msgstr "अनधिकृत. कृपया अपने एडमिन से संपर्क करें।"
+
+#. module: social_instagram
+#: model:ir.model.fields,field_description:social_instagram.field_res_config_settings__instagram_use_own_account
+msgid "Use your own Instagram Account"
+msgstr "अपना Instagram खाता उपयोग करें"
+
+#. module: social_instagram
+#: model:ir.model.fields,help:social_instagram.field_social_post__instagram_access_token
+#: model:ir.model.fields,help:social_instagram.field_social_post_template__instagram_access_token
+msgid "Used to allow access to Instagram to retrieve the post image"
+msgstr ""
+"पोस्ट इमेज प्राप्त करने के लिए Instagram के ऐक्सेस की अनुमति देने के लिए उपयोग किया जाता है"
+
+#. module: social_instagram
+#: model:ir.model.fields,help:social_instagram.field_social_media__media_type
+msgid ""
+"Used to make comparisons when we need to restrict some features to a "
+"specific media ('facebook', 'twitter', ...)."
+msgstr ""
+
+#. module: social_instagram
+#. odoo-python
+#: code:addons/social_instagram/models/social_media.py:0
+#, python-format
+msgid "You don't have an active subscription. Please buy one here: %s"
+msgstr "आपका कोई ऐक्टिव सब्सक्रिप्शन नहीं है. कृपया यहां एक खरीदें: %s"
+
+#. module: social_instagram
+#. odoo-python
+#: code:addons/social_instagram/controllers/main.py:0
+#, python-format
+msgid ""
+"You need to link your Instagram page to your Facebook account to post with "
+"Odoo Social.\n"
+" Please create one and make sure it is linked to your account."
+msgstr ""
+"Odoo सोशल के साथ पोस्ट करने के लिए आपको अपना Instagram पेज अपने Facebook अकाउंट से "
+"लिंक करना होगा.\n"
+" कृपया एक पेज बनाएं और सुनिश्चित करें कि यह आपके खाते से जुड़ा हुआ हो।"
+
+#. module: social_instagram
+#. odoo-python
+#: code:addons/social_instagram/models/social_post.py:0
+#: model_terms:ir.ui.view,arch_db:social_instagram.instagram_preview
+#, python-format
+msgid "Your image appears to be corrupted, please try loading it again."
+msgstr "आपकी इमेज खराब लग रही है, कृपया इसे फिर से लोड करने का प्रयास करें।"
+
+#. module: social_instagram
+#. odoo-python
+#: code:addons/social_instagram/models/social_post.py:0
+#, python-format
+msgid ""
+"Your image has to be within the 4:5 and the 1.91:1 aspect ratio as required "
+"by Instagram."
+msgstr ""
+
+#. module: social_instagram
+#. odoo-python
+#: code:addons/social_instagram/models/social_live_post.py:0
+#, python-format
+msgid ""
+"Your media didn't go through. This is usually caused by one of the following:"
+msgstr ""
+"आपका मीडिया आगे नहीं बढ़ पाया. आमतौर पर ऐसा नीचे दिए गए किसी एक वजह से होता है:"
+
+#. module: social_instagram
+#: model_terms:ir.ui.view,arch_db:social_instagram.instagram_preview
+msgid "https://www.facebook.com/help/instagram/1631821640426723"
+msgstr ""

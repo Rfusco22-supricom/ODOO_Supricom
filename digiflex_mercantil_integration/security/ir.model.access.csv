@@ -1,0 +1,11 @@
+id,name,model_id:id,group_id:id,perm_read,perm_write,perm_create,perm_unlink
+access_bank_integration_account_user,bank.integration.account.user,model_bank_integration_account,group_bank_integration_user,1,1,1,1
+access_bank_integration_account_manager,bank.integration.account.manager,model_bank_integration_account,group_bank_integration_manager,1,1,1,1
+access_bank_integration_account_acc_user,bank.integration.account.acc.user,model_bank_integration_account,account.group_account_user,1,1,1,1
+access_bank_integration_account_acc_manager,bank.integration.account.acc.manager,model_bank_integration_account,account.group_account_manager,1,1,1,1
+access_bank_transaction_line_user,bank.transaction.line.user,model_bank_transaction_line,group_bank_integration_user,1,1,1,1
+access_bank_transaction_line_manager,bank.transaction.line.manager,model_bank_transaction_line,group_bank_integration_manager,1,1,1,1
+access_bank_transaction_line_acc_user,bank.transaction.line.acc.user,model_bank_transaction_line,account.group_account_user,1,1,1,1
+access_bank_transaction_line_acc_manager,bank.transaction.line.acc.manager,model_bank_transaction_line,account.group_account_manager,1,1,1,1
+access_bank_transaction_select_wizard_user,bank.transaction.select.wizard.user,model_bank_transaction_select_wizard,group_bank_integration_user,1,1,1,1
+access_bank_transaction_select_wizard_acc_user,bank.transaction.select.wizard.acc.user,model_bank_transaction_select_wizard,account.group_account_user,1,1,1,1

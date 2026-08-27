@@ -1,0 +1,202 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data>
+        <!-- Product Template Form View -->
+        <record id="product_template_form_view_procurement_button_inherit_storage" model="ir.ui.view">
+            <field name="name">product.template.form.procurement.button.inherit.storage</field>
+            <field name="model">product.template</field>
+            <field name="inherit_id" ref="stock.product_template_form_view_procurement_button"/>
+            <field name="arch" type="xml">
+                <!-- Inyectar campo indicador de grupo dentro de t[@groups='stock.group_stock_user'] antes de los botones -->
+                <xpath expr="//div[@name='button_box']/t[@groups='stock.group_stock_user']/field[@name='show_on_hand_qty_status_button']" position="before">
+                    <field name="is_global_stock_hidden" invisible="1"/>
+                </xpath>
+
+                <!-- Ocultar botón nativo A la mano en button_box (stat button) si pertenece al grupo de restricción -->
+                <xpath expr="//div[@name='button_box']//button[@name='action_update_quantity_on_hand']" position="attributes">
+                    <attribute name="invisible">not show_on_hand_qty_status_button or is_global_stock_hidden</attribute>
+                </xpath>
+
+                <!-- Ocultar botón nativo A la mano en header si pertenece al grupo de restricción -->
+                <xpath expr="//header/button[@name='action_update_quantity_on_hand']" position="attributes">
+                    <attribute name="invisible">type != 'product' or is_global_stock_hidden</attribute>
+                </xpath>
+
+                <!-- Ocultar botón nativo Pronosticado si pertenece al grupo de restricción -->
+                <xpath expr="//div[@name='button_box']//button[@name='action_product_tmpl_forecast_report']" position="attributes">
+                    <attribute name="invisible">not show_forecasted_qty_status_button or is_global_stock_hidden</attribute>
+                </xpath>
+
+                <!-- Agregar botón inteligente de Stock en Ubicación -->
+                <xpath expr="//div[@name='button_box']/t[@groups='stock.group_stock_user']" position="inside">
+                    <button type="object"
+                        name="action_open_storage_location_quants"
+                        invisible="not show_on_hand_qty_status_button"
+                        class="oe_stat_button" icon="fa-cubes"
+                        groups="stock.group_stock_user">
+                        <div class="o_field_widget o_stat_info">
+                            <span class="o_stat_value d-flex gap-1">
+                                <field name="qty_available_storage" nolabel="1" class="oe_inline"/>
+                                <field name="uom_name" class="oe_inline"/>
+                            </span>
+                            <span class="o_stat_text">Stock Ubicación</span>
+                        </div>
+                    </button>
+                </xpath>
+            </field>
+        </record>
+
+        <!-- Product Product Form View -->
+        <record id="product_form_view_procurement_button_inherit_storage" model="ir.ui.view">
+            <field name="name">product.product.form.procurement.button.inherit.storage</field>
+            <field name="model">product.product</field>
+            <field name="inherit_id" ref="stock.product_form_view_procurement_button"/>
+            <field name="arch" type="xml">
+                <!-- Inyectar campo indicador de grupo dentro de t[@groups='stock.group_stock_user'] antes de los botones -->
+                <xpath expr="//div[@name='button_box']/t[@groups='stock.group_stock_user']/field[@name='show_on_hand_qty_status_button']" position="before">
+                    <field name="is_global_stock_hidden" invisible="1"/>
+                </xpath>
+
+                <!-- Ocultar botón nativo A la mano en button_box (stat button) si pertenece al grupo de restricción -->
+                <xpath expr="//div[@name='button_box']//button[@name='action_update_quantity_on_hand']" position="attributes">
+                    <attribute name="invisible">not show_on_hand_qty_status_button or is_global_stock_hidden</attribute>
+                </xpath>
+
+                <!-- Ocultar botón nativo A la mano en header si pertenece al grupo de restricción -->
+                <xpath expr="//header/button[@name='action_update_quantity_on_hand']" position="attributes">
+                    <attribute name="invisible">type != 'product' or is_global_stock_hidden</attribute>
+                </xpath>
+
+                <!-- Ocultar botón nativo Pronosticado si pertenece al grupo de restricción -->
+                <xpath expr="//div[@name='button_box']//button[@name='action_product_forecast_report']" position="attributes">
+                    <attribute name="invisible">not show_forecasted_qty_status_button or is_global_stock_hidden</attribute>
+                </xpath>
+
+                <!-- Agregar botón inteligente de Stock en Ubicación -->
+                <xpath expr="//div[@name='button_box']/t[@groups='stock.group_stock_user']" position="inside">
+                    <button type="object"
+                        name="action_open_storage_location_quants"
+                        invisible="not show_on_hand_qty_status_button"
+                        class="oe_stat_button" icon="fa-cubes"
+                        groups="stock.group_stock_user">
+                        <div class="o_field_widget o_stat_info">
+                            <span class="o_stat_value d-flex gap-1">
+                                <field name="qty_available_storage" nolabel="1" class="oe_inline"/>
+                                <field name="uom_name" class="oe_inline"/>
+                            </span>
+                            <span class="o_stat_text">Stock Ubicación</span>
+                        </div>
+                    </button>
+                </xpath>
+            </field>
+        </record>
+
+        <!-- Product Template Kanban Stock View -->
+        <record id="product_template_kanban_stock_view_inherit_storage" model="ir.ui.view">
+            <field name="name">product.template.kanban.stock.view.inherit.storage</field>
+            <field name="model">product.template</field>
+            <field name="inherit_id" ref="stock.product_template_kanban_stock_view"/>
+            <field name="arch" type="xml">
+                <xpath expr="//kanban" position="inside">
+                    <field name="is_global_stock_hidden"/>
+                    <field name="qty_available_storage"/>
+                </xpath>
+                <xpath expr="//t[@groups='stock.group_stock_user']" position="replace">
+                    <t groups="stock.group_stock_user">
+                        <div t-if="record.show_on_hand_qty_status_button.raw_value">
+                            <t t-if="record.is_global_stock_hidden.raw_value">
+                                <span>Stock Ubicación: </span>
+                                <field name="qty_available_storage"/> <field name="uom_id"/>
+                            </t>
+                            <t t-else="">
+                                <span>On hand: </span>
+                                <field name="qty_available"/> <field name="uom_id"/>
+                            </t>
+                        </div>
+                    </t>
+                </xpath>
+            </field>
+        </record>
+
+        <!-- Product Template Dual Currency Kanban View Inherit (Hides 'Disponible:' from account_dual_currency) -->
+        <record id="product_template_dual_currency_kanban_inherit_storage" model="ir.ui.view">
+            <field name="name">product.template.dual_currency.kanban.inherit.storage</field>
+            <field name="model">product.template</field>
+            <field name="inherit_id" ref="account_dual_currency.product_template_dual_currency_kanban"/>
+            <field name="arch" type="xml">
+                <xpath expr="//kanban" position="inside">
+                    <field name="is_global_stock_hidden"/>
+                </xpath>
+                <xpath expr="//div[@name='product_virtual_available']" position="replace">
+                    <div t-if="!record.is_global_stock_hidden.raw_value" class="mt-1" name="product_virtual_available">
+                        Disponible:
+                        <field name="virtual_available"/>
+                    </div>
+                </xpath>
+            </field>
+        </record>
+
+        <!-- Product Product Dual Currency Kanban View Inherit (Hides 'A mano:' and 'Disponible:' from account_dual_currency) -->
+        <record id="os_product_kanban_view_inherit_storage" model="ir.ui.view">
+            <field name="name">product.product.inherit.view.kanban.storage</field>
+            <field name="model">product.product</field>
+            <field name="inherit_id" ref="account_dual_currency.os_product_kanban_view_inherit"/>
+            <field name="arch" type="xml">
+                <xpath expr="//kanban" position="inside">
+                    <field name="is_global_stock_hidden"/>
+                </xpath>
+                <xpath expr="//div[@name='product_qty_available']" position="replace">
+                    <div t-if="!record.is_global_stock_hidden.raw_value" class="mt-1" name="product_qty_available">
+                        A mano:
+                        <field name="qty_available"/>
+                        <field name="uom_id"/>
+                    </div>
+                </xpath>
+                <xpath expr="//div[@name='product_virtual_available']" position="replace">
+                    <div t-if="!record.is_global_stock_hidden.raw_value" class="mt-1" name="product_virtual_available">
+                        Disponible:
+                        <field name="virtual_available"/>
+                    </div>
+                </xpath>
+            </field>
+        </record>
+
+        <!-- Product Template Tree View Inherit -->
+        <record id="view_stock_product_template_tree_inherit_storage" model="ir.ui.view">
+            <field name="name">product.template.stock.tree.inherit.storage</field>
+            <field name="model">product.template</field>
+            <field name="inherit_id" ref="stock.view_stock_product_template_tree"/>
+            <field name="arch" type="xml">
+                <xpath expr="//field[@name='qty_available']" position="before">
+                    <field name="is_global_stock_hidden" column_invisible="True"/>
+                    <field name="qty_available_storage" string="Stock Ubicación" optional="show" groups="stock.group_stock_user"/>
+                </xpath>
+                <xpath expr="//field[@name='qty_available']" position="attributes">
+                    <attribute name="invisible">is_global_stock_hidden</attribute>
+                </xpath>
+                <xpath expr="//field[@name='virtual_available']" position="attributes">
+                    <attribute name="invisible">is_global_stock_hidden</attribute>
+                </xpath>
+            </field>
+        </record>
+
+        <!-- Product Product Tree View Inherit -->
+        <record id="view_stock_product_tree_inherit_storage" model="ir.ui.view">
+            <field name="name">product.product.stock.tree.inherit.storage</field>
+            <field name="model">product.product</field>
+            <field name="inherit_id" ref="stock.view_stock_product_tree"/>
+            <field name="arch" type="xml">
+                <xpath expr="//field[@name='qty_available']" position="before">
+                    <field name="is_global_stock_hidden" column_invisible="True"/>
+                    <field name="qty_available_storage" string="Stock Ubicación" optional="show" groups="stock.group_stock_user"/>
+                </xpath>
+                <xpath expr="//field[@name='qty_available']" position="attributes">
+                    <attribute name="invisible">is_global_stock_hidden</attribute>
+                </xpath>
+                <xpath expr="//field[@name='virtual_available']" position="attributes">
+                    <attribute name="invisible">is_global_stock_hidden</attribute>
+                </xpath>
+            </field>
+        </record>
+    </data>
+</odoo>

@@ -1,0 +1,520 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+# * l10n_ro_hr_payroll
+#
+# Weblate <noreply-mt-weblate@weblate.org>, 2025.
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 17.0+e\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2025-12-29 19:03+0000\n"
+"PO-Revision-Date: 2025-12-13 17:21+0000\n"
+"Last-Translator: Weblate <noreply-mt-weblate@weblate.org>\n"
+"Language-Team: Romanian <https://translate.odoo.com/projects/odoo-17-l10n/"
+"l10n_ro_hr_payroll/ro/>\n"
+"Language: ro\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=3; plural=n==1 ? 0 : (n==0 || (n%100 > 0 && n%100 < "
+"20)) ? 1 : 2;\n"
+"X-Generator: Weblate 5.14.3\n"
+
+#. module: l10n_ro_hr_payroll
+#: model:ir.actions.report,print_report_name:l10n_ro_hr_payroll.action_report_payslip_ro
+msgid "'Payslip - %s' % (object.employee_id.name)"
+msgstr "„Stat de salarii - %s” % (object.employee_id.name)"
+
+#. module: l10n_ro_hr_payroll
+#: model_terms:hr.job,job_details:l10n_ro_hr_payroll.job_developer_romania
+msgid "1 Onsite Interview"
+msgstr "1 Interviu la sediu"
+
+#. module: l10n_ro_hr_payroll
+#: model_terms:hr.job,job_details:l10n_ro_hr_payroll.job_developer_romania
+msgid "1 Phone Call"
+msgstr "1 Apel telefonic"
+
+#. module: l10n_ro_hr_payroll
+#: model_terms:hr.job,website_description:l10n_ro_hr_payroll.job_developer_romania
+msgid "12 days / year, including <br>6 of your choice."
+msgstr "12 zile / an, inclusiv <br>6 alese de tine."
+
+#. module: l10n_ro_hr_payroll
+#: model_terms:hr.job,job_details:l10n_ro_hr_payroll.job_developer_romania
+msgid "2 open days"
+msgstr "2 zile deschise"
+
+#. module: l10n_ro_hr_payroll
+#: model_terms:hr.job,job_details:l10n_ro_hr_payroll.job_developer_romania
+msgid "4 Days after Interview"
+msgstr "4 zile după interviu"
+
+#. module: l10n_ro_hr_payroll
+#: model_terms:hr.job,website_description:l10n_ro_hr_payroll.job_developer_romania
+msgid "<small><b>READ</b></small>"
+msgstr "<small><b>CITIRE</b></small>"
+
+#. module: l10n_ro_hr_payroll
+#: model_terms:hr.job,job_details:l10n_ro_hr_payroll.job_developer_romania
+msgid "<span class=\"text-muted small\">Days to get an Offer</span>"
+msgstr ""
+"<span class=\"text-muted small\">Zile până la obținerea unei oferte</span>"
+
+#. module: l10n_ro_hr_payroll
+#: model_terms:hr.job,job_details:l10n_ro_hr_payroll.job_developer_romania
+msgid "<span class=\"text-muted small\">Process</span>"
+msgstr "<span class=\"text-muted small\">Proces</span>"
+
+#. module: l10n_ro_hr_payroll
+#: model_terms:hr.job,job_details:l10n_ro_hr_payroll.job_developer_romania
+msgid "<span class=\"text-muted small\">Time to Answer</span>"
+msgstr "<span class=\"text-muted small\">Timp de răspuns</span>"
+
+#. module: l10n_ro_hr_payroll
+#: model_terms:hr.job,website_description:l10n_ro_hr_payroll.job_developer_romania
+msgid "A full-time position <br>Attractive salary package."
+msgstr "O poziție full-time <br>Un pachet salarial atractiv."
+
+#. module: l10n_ro_hr_payroll
+#: model_terms:hr.job,website_description:l10n_ro_hr_payroll.job_developer_romania
+msgid "Achieve monthly sales objectives"
+msgstr "Atingeți obiectivele de vânzare lunare"
+
+#. module: l10n_ro_hr_payroll
+#: model_terms:hr.job,website_description:l10n_ro_hr_payroll.job_developer_romania
+msgid "Additional languages"
+msgstr "Limbi suplimentare"
+
+#. module: l10n_ro_hr_payroll
+#: model_terms:hr.job,website_description:l10n_ro_hr_payroll.job_developer_romania
+msgid "Administrative Work"
+msgstr "Muncă administrativă"
+
+#. module: l10n_ro_hr_payroll
+#: model_terms:res.company,invoice_terms_html:l10n_ro_hr_payroll.res_company_ro
+msgid ""
+"All our contractual relations will be governed exclusively by Romania law."
+msgstr ""
+
+#. module: l10n_ro_hr_payroll
+#: model_terms:hr.job,website_description:l10n_ro_hr_payroll.job_developer_romania
+msgid ""
+"As an employee of our company, you will <b>collaborate with each department\n"
+"                        to create and deploy disruptive products.</b> Come "
+"work at a growing company\n"
+"                        that offers great benefits with opportunities to "
+"moving forward and learn\n"
+"                        alongside accomplished leaders. We're seeking an "
+"experienced and outstanding\n"
+"                        member of staff.\n"
+"                        <br><br>\n"
+"                        This position is both <b>creative and rigorous</b> "
+"by nature you need to think\n"
+"                        outside the box. We expect the candidate to be "
+"proactive and have a \"get it done\"\n"
+"                        spirit. To be successful, you will have solid "
+"solving problem skills."
+msgstr ""
+"Ca angajat al companiei noastre, vei <b>colabora cu fiecare departament "
+"pentru a crea și implementa produse inovatoare.</b> Vino să lucrezi într-o "
+"companie în creștere care oferă beneficii excelente și oportunități de "
+"dezvoltare și învățare alături de lideri consacrați. Căutăm un membru de "
+"echipă cu experiență și de excepție.<br><br>Această poziție este atât "
+"<b>creativă cât și riguroasă</b> prin natura sa, trebuie să gândești "
+"„outside the box”. Ne așteptăm ca persoana să fie proactivă și să aibă "
+"spiritul „get it done”. Pentru a avea succes, vei avea abilități solide de "
+"rezolvare a problemelor."
+
+#. module: l10n_ro_hr_payroll
+#: model_terms:hr.job,website_description:l10n_ro_hr_payroll.job_developer_romania
+msgid "Autonomy"
+msgstr "Autonomie"
+
+#. module: l10n_ro_hr_payroll
+#: model_terms:hr.job,website_description:l10n_ro_hr_payroll.job_developer_romania
+msgid "Bachelor Degree or Higher"
+msgstr "Licență sau mai mult"
+
+#. module: l10n_ro_hr_payroll
+#: model_terms:res.company,invoice_terms_html:l10n_ro_hr_payroll.res_company_ro
+msgid ""
+"Below text serves as a suggestion and doesn’t engage Odoo S.A. "
+"responsibility."
+msgstr ""
+"Textul de mai jos servește ca sugestie și nu implică responsabilitatea Odoo "
+"S.A."
+
+#. module: l10n_ro_hr_payroll
+#: model_terms:res.company,invoice_terms_html:l10n_ro_hr_payroll.res_company_ro
+msgid ""
+"Certain countries apply withholding at source on the amount of invoices, in "
+"accordance with their internal legislation. Any withholding at source will "
+"be paid by the client to the tax authorities. Under no circumstances can My "
+"Romanian Company become involved in costs related to a country's "
+"legislation. The amount of the invoice will therefore be due to My Romanian "
+"Company in its entirety and does not include any costs relating to the "
+"legislation of the country in which the client is located."
+msgstr ""
+
+#. module: l10n_ro_hr_payroll
+#: model_terms:hr.job,website_description:l10n_ro_hr_payroll.job_developer_romania
+msgid "Create content that will help our users on a daily basis"
+msgstr "Creați conținut care va ajuta utilizatorii noștri zilnic"
+
+#. module: l10n_ro_hr_payroll
+#: model_terms:hr.job,website_description:l10n_ro_hr_payroll.job_developer_romania
+msgid "Customer Relationship"
+msgstr "Relația cu clienții"
+
+#. module: l10n_ro_hr_payroll
+#: model_terms:hr.job,website_description:l10n_ro_hr_payroll.job_developer_romania
+msgid "Discover our products."
+msgstr "Descoperă produsele noastre."
+
+#. module: l10n_ro_hr_payroll
+#: model_terms:hr.job,website_description:l10n_ro_hr_payroll.job_developer_romania
+msgid ""
+"Each employee has a chance to see the impact of his work.\n"
+"                You can make a real contribution to the success of the "
+"company.\n"
+"                <br>\n"
+"                Several activities are often organized all over the year, "
+"such as weekly\n"
+"                sports sessions, team building events, monthly drink, and "
+"much more"
+msgstr ""
+
+#. module: l10n_ro_hr_payroll
+#: model_terms:hr.job,website_description:l10n_ro_hr_payroll.job_developer_romania
+msgid "Eat &amp; Drink"
+msgstr "Mâncare &amp; Băutură"
+
+#. module: l10n_ro_hr_payroll
+#: model:ir.model,name:l10n_ro_hr_payroll.model_hr_contract
+msgid "Employee Contract"
+msgstr "Contract angajat"
+
+#. module: l10n_ro_hr_payroll
+#: model_terms:hr.job,website_description:l10n_ro_hr_payroll.job_developer_romania
+msgid "Expand your knowledge of various business industries"
+msgstr "Extindeți-vă cunoștințele despre diverse industrii de afaceri"
+
+#. module: l10n_ro_hr_payroll
+#: model_terms:hr.job,website_description:l10n_ro_hr_payroll.job_developer_romania
+msgid "Experience in writing online content"
+msgstr "Experiență în scrierea de conținut online"
+
+#. module: l10n_ro_hr_payroll
+#: model:hr.job,name:l10n_ro_hr_payroll.job_developer_romania
+msgid "Experienced Developer RO"
+msgstr ""
+
+#. module: l10n_ro_hr_payroll
+#: model_terms:hr.job,website_description:l10n_ro_hr_payroll.job_developer_romania
+msgid "Fruit, coffee and <br>snacks provided."
+msgstr "Fructe, cafea și <br> gustări oferite."
+
+#. module: l10n_ro_hr_payroll
+#: model_terms:hr.job,website_description:l10n_ro_hr_payroll.job_developer_romania
+msgid "Google Adwords experience"
+msgstr "Experiență Google Adwords"
+
+#. module: l10n_ro_hr_payroll
+#: model_terms:hr.job,website_description:l10n_ro_hr_payroll.job_developer_romania
+msgid "Great team of smart people, in a friendly and open culture"
+msgstr ""
+"Echipă grozavă de oameni deștepți, într-o cultură prietenoasă și deschisă"
+
+#. module: l10n_ro_hr_payroll
+#: model_terms:hr.job,website_description:l10n_ro_hr_payroll.job_developer_romania
+msgid "Highly creative and autonomous"
+msgstr "Foarte creativ și autonom"
+
+#. module: l10n_ro_hr_payroll
+#: model_terms:res.company,invoice_terms_html:l10n_ro_hr_payroll.res_company_ro
+msgid ""
+"If a payment is still outstanding more than sixty (60) days after the due "
+"payment date, My Romanian Company reserves the right to call on the services "
+"of a debt recovery company. All legal expenses will be payable by the client."
+msgstr ""
+
+#. module: l10n_ro_hr_payroll
+#: model_terms:res.company,invoice_terms_html:l10n_ro_hr_payroll.res_company_ro
+msgid ""
+"In order for it to be admissible, My Romanian Company must be notified of "
+"any claim by means of a letter sent by recorded delivery to its registered "
+"office within 8 days of the delivery of the goods or the provision of the "
+"services."
+msgstr ""
+
+#. module: l10n_ro_hr_payroll
+#: model:hr.salary.rule,name:l10n_ro_hr_payroll.l10n_ro_employee_salary_income_tax
+#: model:hr.salary.rule.category,name:l10n_ro_hr_payroll.l10n_ro_income_tax_category
+msgid "Income Tax"
+msgstr "Impozitul pe venit"
+
+#. module: l10n_ro_hr_payroll
+#: model_terms:hr.job,website_description:l10n_ro_hr_payroll.job_developer_romania
+msgid "Lead the entire sales cycle"
+msgstr "Conduce întregul ciclu de vânzări"
+
+#. module: l10n_ro_hr_payroll
+#: model_terms:hr.job,website_description:l10n_ro_hr_payroll.job_developer_romania
+msgid "Master demos of our software"
+msgstr "Demonstrații Master ale software-ului nostru"
+
+#. module: l10n_ro_hr_payroll
+#: model_terms:hr.job,website_description:l10n_ro_hr_payroll.job_developer_romania
+msgid "Must Have"
+msgstr "Trebuie să aibă"
+
+#. module: l10n_ro_hr_payroll
+#: model_terms:res.company,invoice_terms_html:l10n_ro_hr_payroll.res_company_ro
+msgid ""
+"My Romanian Company undertakes to do its best to supply performant services "
+"in due time in accordance with the agreed timeframes. However, none of its "
+"obligations can be considered as being an obligation to achieve results. My "
+"Romanian Company cannot under any circumstances, be required by the client "
+"to appear as a third party in the context of any claim for damages filed "
+"against the client by an end consumer."
+msgstr ""
+
+#. module: l10n_ro_hr_payroll
+#: model_terms:hr.job,website_description:l10n_ro_hr_payroll.job_developer_romania
+msgid "Negotiate and contract"
+msgstr "Negociază și contractează"
+
+#. module: l10n_ro_hr_payroll
+#: model_terms:hr.job,website_description:l10n_ro_hr_payroll.job_developer_romania
+msgid "Nice to have"
+msgstr "Dorit"
+
+#. module: l10n_ro_hr_payroll
+#: model_terms:hr.job,website_description:l10n_ro_hr_payroll.job_developer_romania
+msgid "No dumb managers, no stupid tools to use, no rigid working hours"
+msgstr ""
+"Fără manageri proști, fără instrumente stupide de folosit, fără ore de lucru "
+"rigide"
+
+#. module: l10n_ro_hr_payroll
+#: model_terms:hr.job,website_description:l10n_ro_hr_payroll.job_developer_romania
+msgid ""
+"No waste of time in enterprise processes, real responsibilities and autonomy"
+msgstr ""
+"Fără pierderi de timp în procesele de afaceri, responsabilități reale și "
+"autonomie"
+
+#. module: l10n_ro_hr_payroll
+#: model:ir.model.fields.selection,name:l10n_ro_hr_payroll.selection__hr_contract__l10n_ro_work_type__1
+msgid "Normal Conditions"
+msgstr "Condiții normale"
+
+#. module: l10n_ro_hr_payroll
+#: model_terms:hr.job,website_description:l10n_ro_hr_payroll.job_developer_romania
+msgid "Our Product"
+msgstr "Produsul Nostru"
+
+#. module: l10n_ro_hr_payroll
+#: model_terms:res.company,invoice_terms_html:l10n_ro_hr_payroll.res_company_ro
+msgid ""
+"Our invoices are payable within 21 working days, unless another payment "
+"timeframe is indicated on either the invoice or the order. In the event of "
+"non-payment by the due date, My Romanian Company reserves the right to "
+"request a fixed interest payment amounting to 10% of the sum remaining due. "
+"My Romanian Company will be authorized to suspend any provision of services "
+"without prior warning in the event of late payment."
+msgstr ""
+
+#. module: l10n_ro_hr_payroll
+#: model:ir.model.fields.selection,name:l10n_ro_hr_payroll.selection__hr_contract__l10n_ro_work_type__2
+msgid "Particular Conditions"
+msgstr "Condiții speciale"
+
+#. module: l10n_ro_hr_payroll
+#: model_terms:hr.job,website_description:l10n_ro_hr_payroll.job_developer_romania
+msgid "Passion for software products"
+msgstr "Pasiune pentru produse software"
+
+#. module: l10n_ro_hr_payroll
+#: model:hr.salary.rule.category,name:l10n_ro_hr_payroll.l10n_ro_pension_category
+msgid "Pension Contribution"
+msgstr "Contribuția la pensie"
+
+#. module: l10n_ro_hr_payroll
+#: model:hr.salary.rule,name:l10n_ro_hr_payroll.l10n_ro_employee_salary_pension
+msgid "Pension Contributions"
+msgstr "Contribuții la pensie"
+
+#. module: l10n_ro_hr_payroll
+#: model_terms:hr.job,website_description:l10n_ro_hr_payroll.job_developer_romania
+msgid "Perfect written English"
+msgstr "Engleză perfectă scrisă"
+
+#. module: l10n_ro_hr_payroll
+#: model_terms:hr.job,description:l10n_ro_hr_payroll.job_developer_romania
+msgid ""
+"Perform assigned responsibilities, collaborate with team members, and adhere "
+"to company policies.\n"
+"        Strong communication, problem-solving, and work ethic required.\n"
+"        Adaptability, initiative, and willingness to learn are valued."
+msgstr ""
+"Să îndeplinească responsabilitățile atribuite, să colaboreze cu membrii "
+"echipei și să adere la politicile companiei.\n"
+"        Comunicarea, rezolvarea problemelor și etica muncii trebuie să fie "
+"solide.\n"
+"        Sunt apreciate adaptabilitatea, inițiativa și dorința de a învăța."
+
+#. module: l10n_ro_hr_payroll
+#: model_terms:hr.job,website_description:l10n_ro_hr_payroll.job_developer_romania
+msgid "Perks"
+msgstr "Avantaje"
+
+#. module: l10n_ro_hr_payroll
+#: model_terms:hr.job,website_description:l10n_ro_hr_payroll.job_developer_romania
+msgid "Personal Evolution"
+msgstr "Evoluție personală"
+
+#. module: l10n_ro_hr_payroll
+#: model_terms:hr.job,website_description:l10n_ro_hr_payroll.job_developer_romania
+msgid "Play any sport with colleagues, <br>the bill is covered."
+msgstr "Joacă orice sport cu colegii, <br>factura este acoperită."
+
+#. module: l10n_ro_hr_payroll
+#: model_terms:hr.job,website_description:l10n_ro_hr_payroll.job_developer_romania
+msgid "Qualify the customer needs"
+msgstr "Calificați nevoile clientului"
+
+#. module: l10n_ro_hr_payroll
+#: model:hr.department,name:l10n_ro_hr_payroll.hr_department_rdro
+msgid "RD RO"
+msgstr ""
+
+#. module: l10n_ro_hr_payroll
+#: model_terms:hr.job,website_description:l10n_ro_hr_payroll.job_developer_romania
+msgid "Real responsibilities and challenges in a fast evolving company"
+msgstr "Responsabilități și provocări reale într-o companie cu evoluție rapidă"
+
+#. module: l10n_ro_hr_payroll
+#: model_terms:hr.job,website_description:l10n_ro_hr_payroll.job_developer_romania
+msgid "Responsibilities"
+msgstr "Responsabilități"
+
+#. module: l10n_ro_hr_payroll
+#: model:ir.actions.report,name:l10n_ro_hr_payroll.action_report_payslip_ro
+msgid "Romania: Payslip"
+msgstr "România: Stat de plată"
+
+#. module: l10n_ro_hr_payroll
+#: model_terms:res.company,invoice_terms_html:l10n_ro_hr_payroll.res_company_ro
+msgid "STANDARD TERMS AND CONDITIONS OF SALE"
+msgstr "TERMENI ȘI CONDIȚII STANDARD DE VÂNZARE"
+
+#. module: l10n_ro_hr_payroll
+#: model:hr.salary.rule.category,name:l10n_ro_hr_payroll.l10n_ro_cas_category
+msgid "Security Contribution (CAS)"
+msgstr "Contribuția de Asigurări Sociale (CAS)"
+
+#. module: l10n_ro_hr_payroll
+#: model:hr.salary.rule,name:l10n_ro_hr_payroll.l10n_ro_employee_salary_cas
+msgid "Security Contributions (CAS)"
+msgstr "Contribuții de Asigurări Sociale (CAS)"
+
+#. module: l10n_ro_hr_payroll
+#: model:hr.salary.rule,name:l10n_ro_hr_payroll.l10n_ro_employee_salary_cass
+#: model:hr.salary.rule.category,name:l10n_ro_hr_payroll.l10n_ro_cass_category
+msgid "Social Health Insurance (CASS)"
+msgstr "Asigurare Socială de Sănătate (CASS)"
+
+#. module: l10n_ro_hr_payroll
+#: model:ir.model.fields.selection,name:l10n_ro_hr_payroll.selection__hr_contract__l10n_ro_work_type__3
+msgid "Special Conditions"
+msgstr "Condiții speciale"
+
+#. module: l10n_ro_hr_payroll
+#: model_terms:hr.job,website_description:l10n_ro_hr_payroll.job_developer_romania
+msgid "Sport Activity"
+msgstr "Activitate sportivă"
+
+#. module: l10n_ro_hr_payroll
+#: model_terms:hr.job,website_description:l10n_ro_hr_payroll.job_developer_romania
+msgid "Strong analytical skills"
+msgstr "Abilități analitice puternice"
+
+#. module: l10n_ro_hr_payroll
+#: model_terms:hr.job,website_description:l10n_ro_hr_payroll.job_developer_romania
+msgid "Technical Expertise"
+msgstr "Expertiză tehnică"
+
+#. module: l10n_ro_hr_payroll
+#: model_terms:res.company,sign_terms:l10n_ro_hr_payroll.res_company_ro
+#: model_terms:res.company,sign_terms_html:l10n_ro_hr_payroll.res_company_ro
+msgid "Terms &amp; Conditions"
+msgstr "Terms &amp; Conditions"
+
+#. module: l10n_ro_hr_payroll
+#: model_terms:res.company,invoice_terms_html:l10n_ro_hr_payroll.res_company_ro
+msgid ""
+"The client explicitly waives its own standard terms and conditions, even if "
+"these were drawn up after these standard terms and conditions of sale. In "
+"order to be valid, any derogation must be expressly agreed to in advance in "
+"writing."
+msgstr ""
+"Clientul renunță în mod expres la propriii termeni și condiții standard, "
+"chiar dacă aceștia au fost redactați după acești termeni și condiții "
+"standard de vânzare. Pentru a fi valabilă, orice derogare trebuie să fie "
+"convenită expres în prealabil, în scris."
+
+#. module: l10n_ro_hr_payroll
+#: model_terms:hr.job,website_description:l10n_ro_hr_payroll.job_developer_romania
+msgid "Trainings"
+msgstr "Instruiri"
+
+#. module: l10n_ro_hr_payroll
+#: model:hr.salary.rule.category,name:l10n_ro_hr_payroll.l10n_ro_unemployed_disabled_category
+msgid "Unemployed Disabled People Contribution"
+msgstr "Contribuția pentru persoanele cu dizabilități neangajate"
+
+#. module: l10n_ro_hr_payroll
+#: model:hr.salary.rule,name:l10n_ro_hr_payroll.l10n_ro_employee_salary_unemployed_disabled
+msgid "Unemployed Disabled People Contributions"
+msgstr "Contribuțiile pentru persoanele cu dizabilități neangajate"
+
+#. module: l10n_ro_hr_payroll
+#: model_terms:hr.job,website_description:l10n_ro_hr_payroll.job_developer_romania
+msgid "Valid work permit for Belgium"
+msgstr "Permis de muncă valabil pentru Belgia"
+
+#. module: l10n_ro_hr_payroll
+#: model_terms:hr.job,website_description:l10n_ro_hr_payroll.job_developer_romania
+msgid "What We Offer"
+msgstr "Ce oferim"
+
+#. module: l10n_ro_hr_payroll
+#: model_terms:hr.job,website_description:l10n_ro_hr_payroll.job_developer_romania
+msgid "What's great in the job?"
+msgstr "Ce este bun in job?"
+
+#. module: l10n_ro_hr_payroll
+#: model:hr.salary.rule,name:l10n_ro_hr_payroll.l10n_ro_employee_salary_cam
+#: model:hr.salary.rule.category,name:l10n_ro_hr_payroll.l10n_ro_cam_category
+msgid "Work Insurance (CAM)"
+msgstr "Contribuţia asiguratorie pentru muncă (CAM)"
+
+#. module: l10n_ro_hr_payroll
+#: model:ir.model.fields,field_description:l10n_ro_hr_payroll.field_hr_contract__l10n_ro_work_type
+msgid "Work type"
+msgstr "Tip muncă"
+
+#. module: l10n_ro_hr_payroll
+#: model_terms:res.company,invoice_terms_html:l10n_ro_hr_payroll.res_company_ro
+msgid "You should update this document to reflect your T&amp;C."
+msgstr ""
+"Ar trebui să actualizați acest document pentru a reflecta Termenii și "
+"Condițiile."
+
+#. module: l10n_ro_hr_payroll
+#: model_terms:res.company,sign_terms:l10n_ro_hr_payroll.res_company_ro
+#: model_terms:res.company,sign_terms_html:l10n_ro_hr_payroll.res_company_ro
+msgid "Your conditions..."
+msgstr "Condițiile dumneavoastră..."

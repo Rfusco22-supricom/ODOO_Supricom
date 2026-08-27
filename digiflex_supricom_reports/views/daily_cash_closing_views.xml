@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+
+    <!-- Tree View for Cierre de Caja Diario (Matching Image 1) -->
+    <record id="view_daily_cash_closing_tree" model="ir.ui.view">
+        <field name="name">account.payment.daily.cash.closing.tree</field>
+        <field name="model">account.payment</field>
+        <field name="arch" type="xml">
+            <tree string="Cierre de Caja Diario" create="true" edit="false" sample="1" decoration-info="state == 'draft'" decoration-muted="state == 'cancel'">
+                <header>
+                    <button name="action_post" type="object" string="Confirmar" class="btn btn-primary"/>
+                </header>
+                <field name="company_currency_id" column_invisible="True"/>
+                <field name="suitable_journal_ids" column_invisible="True"/>
+                <field name="available_payment_method_line_ids" column_invisible="True"/>
+                <field name="date" string="Fecha"/>
+                <field name="name" string="Número"/>
+                <field name="journal_id" string="Diario"/>
+                <field name="salesperson_id" string="Vendedor" widget="many2one_avatar_user"/>
+                <field name="payment_method_line_id" string="Método de pago"/>
+                <field name="partner_id" string="Cliente"/>
+                <field name="amount" widget="monetary" string="Importe" sum="Total"/>
+                <field name="currency_id" string="Moneda" optional="hide"/>
+                <field name="company_id" optional="hide" groups="base.group_multi_company"/>
+                <field name="state" string="Estado" widget="badge" decoration-info="state == 'draft'" decoration-success="state == 'posted'"/>
+            </tree>
+        </field>
+    </record>
+
+    <!-- Pivot View for Cierre de Caja -->
+    <record id="view_daily_cash_closing_pivot" model="ir.ui.view">
+        <field name="name">account.payment.daily.cash.closing.pivot</field>
+        <field name="model">account.payment</field>
+        <field name="arch" type="xml">
+            <pivot string="Resumen de Cuadre de Caja" disable_linking="false">
+                <field name="journal_id" type="row"/>
+                <field name="payment_method_line_id" type="row"/>
+                <field name="date" interval="month" type="col"/>
+                <field name="amount" type="measure"/>
+            </pivot>
+        </field>
+    </record>
+
+    <!-- Graph View for Cierre de Caja -->
+    <record id="view_daily_cash_closing_graph" model="ir.ui.view">
+        <field name="name">account.payment.daily.cash.closing.graph</field>
+        <field name="model">account.payment</field>
+        <field name="arch" type="xml">
+            <graph string="Cuadre por Diario" type="bar" sample="1">
+                <field name="journal_id"/>
+                <field name="amount" type="measure"/>
+            </graph>
+        </field>
+    </record>
+
+    <!-- Search View for Cierre de Caja Diario (Matching Image 1 filters) -->
+    <record id="view_daily_cash_closing_search" model="ir.ui.view">
+        <field name="name">account.payment.daily.cash.closing.search</field>
+        <field name="model">account.payment</field>
+        <field name="arch" type="xml">
+            <search string="Buscar Pagos / Cierre de Caja">
+                <field name="name" string="Número / Documento" filter_domain="['|', ('name', 'ilike', self), ('partner_id', 'ilike', self)]"/>
+                <field name="partner_id" string="Cliente"/>
+                <field name="salesperson_id" string="Vendedor"/>
+                <field name="journal_id" string="Diario"/>
+                <field name="payment_method_line_id" string="Método de pago"/>
+
+                <separator/>
+                <filter string="Tipo de contacto = Cliente" name="customer_payments" domain="[('partner_type', '=', 'customer')]"/>
+                <filter string="Transferencia interna es no establecido" name="no_internal_transfer" domain="[('is_internal_transfer', '=', False)]"/>
+
+                <separator/>
+                <filter string="Confirmados" name="filter_posted" domain="[('state', '=', 'posted')]"/>
+                <filter string="Borradores" name="filter_draft" domain="[('state', '=', 'draft')]"/>
+
+                <separator/>
+                <filter string="Fecha de Registro (Confirmación)" name="filter_date" date="date"/>
+                <filter string="Pagos de Hoy" name="filter_today" domain="[('date', '=', context_today().strftime('%Y-%m-%d'))]"/>
+
+                <group expand="1" string="Agrupar por">
+                    <filter string="Fecha: Mes" name="group_by_date_month" domain="[]" context="{'group_by': 'date:month'}"/>
+                    <filter string="Fecha: Día" name="group_by_date_day" domain="[]" context="{'group_by': 'date:day'}"/>
+                    <filter string="Diario" name="group_by_journal" domain="[]" context="{'group_by': 'journal_id'}"/>
+                    <filter string="Vendedor" name="group_by_salesperson" domain="[]" context="{'group_by': 'salesperson_id'}"/>
+                    <filter string="Método de pago" name="group_by_payment_method" domain="[]" context="{'group_by': 'payment_method_line_id'}"/>
+                    <filter string="Cliente" name="group_by_partner" domain="[]" context="{'group_by': 'partner_id'}"/>
+                    <filter string="Estado" name="group_by_state" domain="[]" context="{'group_by': 'state'}"/>
+                    <filter string="Compañía" name="group_by_company" domain="[]" context="{'group_by': 'company_id'}" groups="base.group_multi_company"/>
+                </group>
+            </search>
+        </field>
+    </record>
+
+    <!-- Action Window: Cierre de Caja Diario -->
+    <record id="action_daily_cash_closing" model="ir.actions.act_window">
+        <field name="name">Cierre de Caja Diario</field>
+        <field name="res_model">account.payment</field>
+        <field name="view_mode">tree,pivot,graph,kanban,form</field>
+        <field name="search_view_id" ref="view_daily_cash_closing_search"/>
+        <field name="view_ids" eval="[(5, 0, 0),
+            (0, 0, {'view_mode': 'tree', 'view_id': ref('view_daily_cash_closing_tree')}),
+            (0, 0, {'view_mode': 'pivot', 'view_id': ref('view_daily_cash_closing_pivot')}),
+            (0, 0, {'view_mode': 'graph', 'view_id': ref('view_daily_cash_closing_graph')}),
+            (0, 0, {'view_mode': 'form', 'view_id': ref('account.view_account_payment_form')})
+        ]"/>
+        <field name="context">{
+            'search_default_group_by_date_month': 1,
+            'search_default_group_by_journal': 2,
+            'search_default_customer_payments': 1,
+            'search_default_no_internal_transfer': 1,
+            'default_payment_type': 'inbound',
+            'default_partner_type': 'customer',
+            'default_move_journal_types': ('bank', 'cash'),
+        }</field>
+        <field name="help" type="html">
+            <p class="o_view_nocontent_smiling_face">
+                No hay pagos registrados para este criterio de búsqueda.
+            </p>
+            <p>
+                Esta vista permite cuadrar y verificar todos los cobros recibidos clasificados por Diario y Método de Pago.
+            </p>
+        </field>
+    </record>
+
+</odoo>

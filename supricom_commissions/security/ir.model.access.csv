@@ -1,0 +1,17 @@
+id,name,model_id:id,group_id:id,perm_read,perm_write,perm_create,perm_unlink
+access_commission_vendor_type,commission.vendor.type,model_commission_vendor_type,base.group_user,1,1,1,1
+access_commission_monthly_target,commission.monthly.target,model_commission_monthly_target,base.group_user,1,1,1,1
+access_commission_matrix,commission.matrix,model_commission_matrix,base.group_user,1,1,1,1
+access_commission_collection_matrix,commission.collection.matrix,model_commission_collection_matrix,base.group_user,1,1,1,1
+access_commission_manager_volume_range,commission.manager.volume.range,model_commission_manager_volume_range,base.group_user,1,1,1,1
+access_commission_fixed_expense,commission.fixed.expense,model_commission_fixed_expense,base.group_user,1,1,1,1
+access_commission_override_log,commission.override.log,model_commission_override_log,supricom_commissions.group_commission_manager,1,1,1,1
+access_commission_settlement_wizard,commission.settlement.wizard,model_commission_settlement_wizard,base.group_user,1,1,1,1
+access_commission_settlement,commission.settlement,model_commission_settlement,base.group_user,1,1,1,1
+access_commission_settlement_line,commission.settlement.line,model_commission_settlement_line,base.group_user,1,1,1,1
+access_commission_settlement_grouped_line,commission.settlement.grouped.line,model_commission_settlement_grouped_line,base.group_user,1,1,1,1
+access_commission_monthly_closing,commission.monthly.closing,model_commission_monthly_closing,base.group_user,1,0,0,0
+access_commission_monthly_closing_manager,commission.monthly.closing,model_commission_monthly_closing,supricom_commissions.group_commission_manager,1,1,1,1
+access_account_untaxed_collection_report,account.untaxed.collection.report,model_account_untaxed_collection_report,base.group_user,1,1,1,1
+access_account_untaxed_collection_report_all,account.untaxed.collection.report,model_account_untaxed_collection_report,,1,1,1,1
+

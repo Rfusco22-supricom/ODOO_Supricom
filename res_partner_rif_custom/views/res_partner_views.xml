@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <record id="view_partner_form_inherit_rif" model="ir.ui.view">
+        <field name="name">res.partner.form.inherit.rif</field>
+        <field name="model">res.partner</field>
+        <field name="inherit_id" ref="base.view_partner_form"/>
+        <field name="arch" type="xml">
+            <!-- Ocultamos el campo RIF original donde sea que esté para evitar duplicados -->
+            <xpath expr="//field[@name='rif']" position="attributes">
+                <attribute name="invisible">1</attribute>
+            </xpath>
+            
+            <!-- Inyectamos nuestro campo proxy después del Tax ID (vat) -->
+            <xpath expr="//field[@name='vat']" position="after">
+                <field name="country_code" invisible="1"/>
+                <label for="rif_display" string="rut" invisible="country_code != 'PA'"/>
+                <label for="rif_display" string="RIF" invisible="country_code == 'PA'"/>
+                <field name="rif_display" nolabel="1"/>
+            </xpath>
+        </field>
+    </record>
+</odoo>

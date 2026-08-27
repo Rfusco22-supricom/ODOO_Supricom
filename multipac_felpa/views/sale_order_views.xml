@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<odoo>
+    <record id="multipac_felpa_sale_order_form_inherit" model="ir.ui.view">
+        <field name="name">multipac_felpa.sale.order.form.inherit</field>
+        <field name="model">sale.order</field>
+        <field name="inherit_id" ref="sale.view_order_form"/>
+        <field name="arch" type="xml">
+            <xpath expr="//field[@name='note']" position="after">
+                <field name="fel_pa_active" invisible="1"/>
+                <label for="fel_pa_interes_information" string="Términos y Condiciones Factura (FEL Panamá)" class="fw-bold mt-2" invisible="not fel_pa_active"/>
+                <field name="fel_pa_interes_information" placeholder="Ingrese los términos y condiciones / información de intereses que se mostrarán en la factura a generar (Panamá FEL)..." nolabel="1" colspan="2" invisible="not fel_pa_active" readonly="state in ('done', 'cancel')"/>
+            </xpath>
+        </field>
+    </record>
+</odoo>

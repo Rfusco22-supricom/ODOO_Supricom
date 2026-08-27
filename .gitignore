@@ -1,0 +1,12 @@
+*.pdf
+*.png
+*.jpg
+*.jpeg
+*.zip
+*.tar.gz
+*.dump
+*.html
+__pycache__/
+*.pyc
+*.pyo
+scratch/

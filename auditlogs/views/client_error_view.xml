@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<odoo>
+    <record id="view_auditlog_client_error_form" model="ir.ui.view">
+        <field name="name">auditlog.client.error.form</field>
+        <field name="model">auditlog.client.error</field>
+        <field name="arch" type="xml">
+            <form string="Error de Cliente">
+                <sheet>
+                    <group>
+                        <group>
+                            <field name="create_date" readonly="1" string="Fecha de Creación"/>
+                            <field name="client_timestamp" readonly="1" string="Hora del Cliente"/>
+                            <field name="user_id" readonly="1" string="Usuario"/>
+                            <field name="url" readonly="1" string="URL"/>
+                        </group>
+                        <group>
+                            <field name="name" readonly="1" string="Nombre del Error"/>
+                            <field name="user_agent" readonly="1" string="Agente de Usuario"/>
+                            <field name="device_type" readonly="1" string="Tipo de Dispositivo"/>
+                        </group>
+                    </group>
+                    <group string="Detalles del Error">
+                        <field name="message" readonly="1" string="Mensaje"/>
+                        <field name="stack_trace" readonly="1" string="Traza de la Pila"/>
+                    </group>
+                </sheet>
+            </form>
+        </field>
+    </record>
+
+    <record id="view_auditlog_client_error_tree" model="ir.ui.view">
+        <field name="name">auditlog.client.error.tree</field>
+        <field name="model">auditlog.client.error</field>
+        <field name="arch" type="xml">
+            <tree create="false" edit="false" delete="false">
+                <field name="create_date" string="Fecha de Creación"/>
+                <field name="client_timestamp" string="Hora del Cliente"/>
+                <field name="user_id" string="Usuario"/>
+                <field name="name" string="Nombre del Error"/>
+                <field name="device_type" string="Tipo de Dispositivo"/>
+                <field name="url" string="URL"/>
+            </tree>
+        </field>
+    </record>
+
+    <record id="view_auditlog_client_error_search" model="ir.ui.view">
+        <field name="name">auditlog.client.error.search</field>
+        <field name="model">auditlog.client.error</field>
+        <field name="arch" type="xml">
+            <search string="Errores de Cliente">
+                <field name="name" string="Nombre del Error"/>
+                <field name="message" string="Mensaje"/>
+                <field name="user_id" string="Usuario"/>
+                <field name="url" string="URL"/>
+                <group expand="0" string="Group By">
+                    <filter string="Usuario" name="group_by_user" context="{'group_by': 'user_id'}"/>
+                    <filter string="Fecha" name="group_by_date" context="{'group_by': 'create_date'}"/>
+                    <filter string="Nombre del Error" name="group_by_name" context="{'group_by': 'name'}"/>
+                </group>
+            </search>
+        </field>
+    </record>
+
+    <record id="action_auditlog_client_error" model="ir.actions.act_window">
+        <field name="name">Errores de Cliente</field>
+        <field name="res_model">auditlog.client.error</field>
+        <field name="view_mode">tree,form</field>
+        <field name="search_view_id" ref="view_auditlog_client_error_search"/>
+    </record>
+
+    <menuitem
+        id="menu_auditlog_client_error"
+        name="Errores de Cliente"
+        parent="menu_audit"
+        action="action_auditlog_client_error"
+        sequence="30"
+    />
+</odoo>

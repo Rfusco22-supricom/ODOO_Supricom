@@ -1,0 +1,46 @@
+{
+    'name': 'G3C - Homologación Fiscal Venezolana',
+    'version': '17.0.1.1.6',
+    'summary': 'Restricciones fiscales para la homologación en Venezuela',
+    'author': 'Digiflex',
+    'category': 'Accounting/Localizations',
+    'depends': [
+        'account',
+        'sale',
+        'purchase',
+        'stock',
+        'point_of_sale',
+        'l10n_ve_full',
+        'account_dual_currency',
+        'logicacero_igtf',
+        'forma_libre',
+        'delivery_warning_seniat',
+        'auditlogs',
+    ],
+    'data': [
+        'views/res_company_views.xml',
+        'views/account_move_views.xml',
+        'views/sale_order_views.xml',
+        'views/purchase_order_views.xml',
+        'views/account_payment_views.xml',
+        'views/account_journal_views.xml',
+        'views/account_payment_term_views.xml',
+        'views/res_config_settings_views.xml',
+        'views/product_template_views.xml',
+        'views/report_templates.xml',
+
+        'data/report_data.xml',
+
+        'security/ir_rule.xml',
+    ],
+    'assets': {
+        'point_of_sale._assets_pos': [
+            'g3c_ve_homologacion/static/src/app/payment_screen/payment_screen.js',
+            'g3c_ve_homologacion/static/src/app/receipt_screen/receipt_screen.js',
+            'g3c_ve_homologacion/static/src/app/receipt_screen/receipt_screen.css',
+        ],
+    },
+    'installable': True,
+    'application': False,
+    'license': 'LGPL-3',
+}

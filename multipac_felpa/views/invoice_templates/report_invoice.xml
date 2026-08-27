@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+
+    <template id="fel_pa_report_invoice_document" inherit_id="account.report_invoice_document" primary="True">
+        <xpath expr="//div[@id='informations']" position="inside">
+            <div t-attf-class="#{'col-auto col-3 mw-100' if report_type != 'html' else 'col'} mb-2" t-if="o.fel_pa_document_number" name="dte_number">
+                <strong>Número:</strong><br/>
+                <span t-if="o.fel_pa_document_number" t-field="o.fel_pa_document_number">INV/2023/0001</span>
+            </div>
+            <div t-attf-class="#{'col-auto col-3 mw-100' if report_type != 'html' else 'col'} mb-2" t-if="o.fel_pa_document_code" name="serie">
+                <strong>Sucursal/Punto:</strong><br/>
+                <span t-if="o.fel_pa_document_code" t-field="o.fel_pa_document_code">Sucursal/Punto</span>
+            </div>
+        </xpath>
+
+        <xpath expr="//div[@id='payment_term']" position="after">
+            <t t-call="multipac_felpa.report_invoice_fel_pac"/>
+        </xpath>
+    </template>
+
+    <template id="report_invoice" inherit_id="account.report_invoice">
+        <xpath expr='//t[@t-call="account.report_invoice_document"]' position="after">
+            <t t-elif="o._get_name_invoice_report() == 'multipac_felpa.fel_pa_report_invoice_document'"
+               t-call="multipac_felpa.fel_pa_report_invoice_document"
+               t-lang="lang"/>
+            <t t-elif="o._get_name_invoice_report() == 'multipac_felpa.fel_pa_report_invoice'"
+               t-call="multipac_felpa.fel_pa_report_invoice"
+               t-lang="lang"/>
+        </xpath>
+    </template>
+
+    <!-- Configuración condicional del término de pago según res.company -->
+    <template id="remove_payment_term_native_invoice" inherit_id="account.report_invoice_document">
+        <xpath expr="//div[@id='payment_term']" position="attributes">
+            <attribute name="t-if">o.company_id.fel_pa_is_show_payment_notes and o.invoice_payment_term_id.note</attribute>
+        </xpath>
+    </template>
+
+    <!-- Remoción del término de pago del template nativo de cotizaciones/ventas (Sale Order) -->
+    <template id="remove_payment_term_native_saleorder" inherit_id="sale.report_saleorder_document">
+        <xpath expr="//p[@t-if='not is_html_empty(doc.payment_term_id.note)']" position="replace"/>
+    </template>
+
+</odoo>

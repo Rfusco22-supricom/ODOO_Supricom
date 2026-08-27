@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <record id="view_multi_brand_warning_form" model="ir.ui.view">
+        <field name="name">spiff.multi.brand.warning.form</field>
+        <field name="model">spiff.multi.brand.warning</field>
+        <field name="arch" type="xml">
+            <form string="Advertencia de Múltiples Marcas">
+                <sheet>
+                    <div class="alert alert-warning" role="alert">
+                        <p>
+                            <strong>⚠️ Atención:</strong> Este pedido contiene múltiples marcas 
+                            (<field name="brand_names" readonly="1"/>).
+                        </p>
+                        <p>
+                            La extensión de crédito sugerida <strong>NO se aplicará</strong> automáticamente 
+                            porque la política requiere que el pedido sea de una única marca autorizada.
+                        </p>
+                    </div>
+                    <footer>
+                        <button name="action_confirm_anyway" string="Entendido, Confirmar Pedido" type="object" class="oe_highlight"/>
+                        <button string="Cancelar" class="btn-secondary" special="cancel"/>
+                    </footer>
+                </sheet>
+            </form>
+        </field>
+    </record>
+</odoo>

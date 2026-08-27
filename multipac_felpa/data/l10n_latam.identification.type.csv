@@ -1,0 +1,8 @@
+id,name,sequence,is_vat,country_id
+l10n_latam_base.it_vat,RUC,0,TRUE,
+multipac_felpa.it_ec,End Consumer,2,FALSE,
+multipac_felpa.it_gob,Government,3,TRUE,
+l10n_latam_base.it_pass,Passport,4,FALSE,
+multipac_felpa.it_for,Foreing,5,FALSE,
+l10n_latam_base.it_fid,Foreing ID,6,FALSE,
+multipac_felpa.it_other,Other,7,FALSE,

@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+
+    <record id="view_commission_monthly_target_tree" model="ir.ui.view">
+        <field name="name">commission.monthly.target.tree</field>
+        <field name="model">commission.monthly.target</field>
+        <field name="arch" type="xml">
+            <tree string="Metas Mensuales" decoration-info="state == 'draft'" decoration-muted="state == 'done'">
+                <field name="name"/>
+                <field name="target_type"/>
+                <field name="vendedor_id" optional="show"/>
+                <field name="team_id" optional="show"/>
+                <field name="date_from"/>
+                <field name="date_to"/>
+                <field name="amount_target"/>
+                <field name="achievement_percentage" optional="hide"/>
+                <field name="state" widget="badge" decoration-info="state == 'draft'" decoration-success="state == 'done'"/>
+                <field name="company_id" groups="base.group_multi_company" optional="hide"/>
+                <field name="currency_id" optional="hide"/>
+            </tree>
+        </field>
+    </record>
+
+    <record id="view_commission_monthly_target_form" model="ir.ui.view">
+        <field name="name">commission.monthly.target.form</field>
+        <field name="model">commission.monthly.target</field>
+        <field name="arch" type="xml">
+            <form string="Meta Mensual">
+                <header>
+                    <field name="state" widget="statusbar" statusbar_visible="draft,done"/>
+                </header>
+                <sheet>
+                    <group>
+                        <group>
+                            <field name="target_type" readonly="state == 'done'"/>
+                            <field name="vendedor_id" invisible="target_type != 'individual'" required="target_type == 'individual'" readonly="state == 'done'"/>
+                            <field name="team_id" invisible="target_type != 'branch'" required="target_type == 'branch'" readonly="state == 'done'"/>
+                        </group>
+                        <group>
+                            <field name="date_from" readonly="state == 'done'"/>
+                            <field name="date_to" readonly="state == 'done'"/>
+                            <field name="amount_target" readonly="state == 'done'"/>
+                            <field name="achievement_percentage" invisible="state != 'done'"/>
+                            <field name="currency_id" readonly="state == 'done'"/>
+                            <field name="company_id" groups="base.group_multi_company" readonly="state == 'done'"/>
+                        </group>
+                    </group>
+                </sheet>
+            </form>
+        </field>
+    </record>
+
+    <record id="view_commission_monthly_target_search" model="ir.ui.view">
+        <field name="name">commission.monthly.target.search</field>
+        <field name="model">commission.monthly.target</field>
+        <field name="arch" type="xml">
+            <search string="Buscar Metas Mensuales">
+                <field name="name"/>
+                <field name="vendedor_id"/>
+                <field name="team_id"/>
+                <field name="date_from"/>
+                <filter string="Tipo: Sucursal" name="filter_branch" domain="[('target_type', '=', 'branch')]"/>
+                <filter string="Tipo: Individual" name="filter_individual" domain="[('target_type', '=', 'individual')]"/>
+                <separator/>
+                <filter string="Estado: Cerrado" name="filter_done" domain="[('state', '=', 'done')]"/>
+                <filter string="Estado: Borrador" name="filter_draft" domain="[('state', '=', 'draft')]"/>
+                <group expand="1" string="Agrupar Por">
+                    <filter string="Mes" name="group_by_month" context="{'group_by':'date_from:month'}"/>
+                    <filter string="Vendedor" name="group_by_vendedor" context="{'group_by':'vendedor_id'}"/>
+                    <filter string="Sucursal" name="group_by_team" context="{'group_by':'team_id'}"/>
+                    <filter string="Estado" name="group_by_state" context="{'group_by':'state'}"/>
+                </group>
+            </search>
+        </field>
+    </record>
+
+    <record id="action_commission_monthly_target" model="ir.actions.act_window">
+        <field name="name">Metas Mensuales</field>
+        <field name="res_model">commission.monthly.target</field>
+        <field name="view_mode">tree,form</field>
+        <field name="context">{'search_default_group_by_month': 1, 'search_default_group_by_vendedor': 1}</field>
+    </record>
+
+    <menuitem id="menu_commission_monthly_target"
+              name="Metas Mensuales"
+              parent="supricom_commissions.menu_commission_config"
+              action="action_commission_monthly_target"
+              sequence="20"/>
+
+</odoo>

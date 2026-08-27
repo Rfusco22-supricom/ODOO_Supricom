@@ -1,0 +1,605 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+# * spreadsheet_dashboard_crm
+#
+# Weblate <noreply-mt-weblate@weblate.org>, 2026.
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 17.0+e\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2025-12-29 18:48+0000\n"
+"PO-Revision-Date: 2026-06-13 08:27+0000\n"
+"Last-Translator: Weblate <noreply-mt-weblate@weblate.org>\n"
+"Language-Team: Lao <https://translate.odoo.com/projects/odoo-17/"
+"spreadsheet_dashboard_crm/lo/>\n"
+"Language: lo\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: \n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"X-Generator: Weblate 2026.6.1\n"
+
+#. module: spreadsheet_dashboard_crm
+#. odoo-javascript
+#: code:addons/spreadsheet_dashboard_crm/data/files/leads_dashboard.json:0
+#, python-format
+msgid " days"
+msgstr " ມື້"
+
+#. module: spreadsheet_dashboard_crm
+#. odoo-javascript
+#: code:addons/spreadsheet_dashboard_crm/data/files/leads_dashboard.json:0
+#: code:addons/spreadsheet_dashboard_crm/data/files/pipeline_dashboard.json:0
+#, python-format
+msgid "# Leads"
+msgstr "# ລີດ"
+
+#. module: spreadsheet_dashboard_crm
+#. odoo-javascript
+#: code:addons/spreadsheet_dashboard_crm/data/files/leads_dashboard.json:0
+#, python-format
+msgid "Average Deal Size"
+msgstr "ຂະໜາດຂໍ້ຕົກລົງສະເລ່ຍ"
+
+#. module: spreadsheet_dashboard_crm
+#. odoo-javascript
+#: code:addons/spreadsheet_dashboard_crm/data/files/leads_dashboard.json:0
+#, python-format
+msgid "Average deal size"
+msgstr "ຂະໜາດຂໍ້ຕົກລົງສະເລ່ຍ"
+
+#. module: spreadsheet_dashboard_crm
+#: model:spreadsheet.dashboard.group,name:spreadsheet_dashboard_crm.spreadsheet_dashboard_group_crm
+msgid "CRM"
+msgstr "CRM"
+
+#. module: spreadsheet_dashboard_crm
+#. odoo-javascript
+#: code:addons/spreadsheet_dashboard_crm/data/files/leads_dashboard.json:0
+#, python-format
+msgid "Campaign"
+msgstr "ແຄມເປນ"
+
+#. module: spreadsheet_dashboard_crm
+#. odoo-javascript
+#: code:addons/spreadsheet_dashboard_crm/data/files/pipeline_dashboard.json:0
+#, python-format
+msgid "City"
+msgstr "ນະຄອນ/ເມືອງ"
+
+#. module: spreadsheet_dashboard_crm
+#. odoo-javascript
+#: code:addons/spreadsheet_dashboard_crm/data/files/leads_dashboard.json:0
+#, python-format
+msgid "Close Rate"
+msgstr "ອັດຕາການປິດການຂາຍ"
+
+#. module: spreadsheet_dashboard_crm
+#. odoo-javascript
+#: code:addons/spreadsheet_dashboard_crm/data/files/leads_dashboard.json:0
+#, python-format
+msgid "Close rate"
+msgstr "ອັດຕາການປິດການຂາຍ"
+
+#. module: spreadsheet_dashboard_crm
+#. odoo-javascript
+#: code:addons/spreadsheet_dashboard_crm/data/files/pipeline_dashboard.json:0
+#, python-format
+msgid "Closed"
+msgstr "ປິດແລ້ວ"
+
+#. module: spreadsheet_dashboard_crm
+#. odoo-javascript
+#: code:addons/spreadsheet_dashboard_crm/data/files/pipeline_dashboard.json:0
+#, python-format
+msgid "Closed count"
+msgstr "ຈຳນວນທີ່ປິດແລ້ວ"
+
+#. module: spreadsheet_dashboard_crm
+#. odoo-javascript
+#: code:addons/spreadsheet_dashboard_crm/data/files/pipeline_dashboard.json:0
+#, python-format
+msgid "Closed revenue"
+msgstr "ລາຍໄດ້ທີ່ປິດໄດ້"
+
+#. module: spreadsheet_dashboard_crm
+#. odoo-javascript
+#: code:addons/spreadsheet_dashboard_crm/data/files/leads_dashboard.json:0
+#: code:addons/spreadsheet_dashboard_crm/data/files/pipeline_dashboard.json:0
+#, python-format
+msgid "Country"
+msgstr "ປະເທດ"
+
+#. module: spreadsheet_dashboard_crm
+#. odoo-javascript
+#: code:addons/spreadsheet_dashboard_crm/data/files/pipeline_dashboard.json:0
+#, python-format
+msgid "Current"
+msgstr "ປະຈຸບັນ"
+
+#. module: spreadsheet_dashboard_crm
+#. odoo-javascript
+#: code:addons/spreadsheet_dashboard_crm/data/files/leads_dashboard.json:0
+#, python-format
+msgid "Current period"
+msgstr "ຊ່ວງເວລາປະຈຸບັນ"
+
+#. module: spreadsheet_dashboard_crm
+#. odoo-javascript
+#: code:addons/spreadsheet_dashboard_crm/data/files/leads_dashboard.json:0
+#, python-format
+msgid "Days to Assign"
+msgstr "ຈຳນວນມື້ໃນການມອບໝາຍ"
+
+#. module: spreadsheet_dashboard_crm
+#. odoo-javascript
+#: code:addons/spreadsheet_dashboard_crm/data/files/leads_dashboard.json:0
+#, python-format
+msgid "Days to Win"
+msgstr "ຈຳນວນມື້ທີ່ຊະນະ"
+
+#. module: spreadsheet_dashboard_crm
+#. odoo-javascript
+#: code:addons/spreadsheet_dashboard_crm/data/files/leads_dashboard.json:0
+#, python-format
+msgid "Days to assign"
+msgstr "ຈຳນວນມື້ໃນການມອບໝາຍ"
+
+#. module: spreadsheet_dashboard_crm
+#. odoo-javascript
+#: code:addons/spreadsheet_dashboard_crm/data/files/leads_dashboard.json:0
+#, python-format
+msgid "Days to win"
+msgstr "ຈຳນວນມື້ທີ່ຊະນະ"
+
+#. module: spreadsheet_dashboard_crm
+#. odoo-javascript
+#: code:addons/spreadsheet_dashboard_crm/data/files/pipeline_dashboard.json:0
+#, python-format
+msgid "Expected"
+msgstr "ຄາດວ່າ"
+
+#. module: spreadsheet_dashboard_crm
+#. odoo-javascript
+#: code:addons/spreadsheet_dashboard_crm/data/files/pipeline_dashboard.json:0
+#, python-format
+msgid "Expected Closing"
+msgstr "ຄາດໝາຍມື້ປິດ"
+
+#. module: spreadsheet_dashboard_crm
+#. odoo-javascript
+#: code:addons/spreadsheet_dashboard_crm/data/files/pipeline_dashboard.json:0
+#, python-format
+msgid "Expected count"
+msgstr "ຈຳນວນຄາດການ"
+
+#. module: spreadsheet_dashboard_crm
+#. odoo-javascript
+#: code:addons/spreadsheet_dashboard_crm/data/files/pipeline_dashboard.json:0
+#, python-format
+msgid "Expected revenue"
+msgstr "ລາຍໄດ້ຄາດການ"
+
+#. module: spreadsheet_dashboard_crm
+#. odoo-javascript
+#: code:addons/spreadsheet_dashboard_crm/data/files/leads_dashboard.json:0
+#: code:addons/spreadsheet_dashboard_crm/data/files/pipeline_dashboard.json:0
+#, python-format
+msgid "KPI"
+msgstr "KPI"
+
+#. module: spreadsheet_dashboard_crm
+#: model:spreadsheet.dashboard,name:spreadsheet_dashboard_crm.dashboard_leads
+msgid "Leads"
+msgstr "ລູກຄ້າຄາດຫວັງ"
+
+#. module: spreadsheet_dashboard_crm
+#. odoo-javascript
+#: code:addons/spreadsheet_dashboard_crm/data/files/leads_dashboard.json:0
+#, python-format
+msgid "Leads by Month"
+msgstr "ຜູ້ມີທ່າແຮງຕາມເດືອນ"
+
+#. module: spreadsheet_dashboard_crm
+#. odoo-javascript
+#: code:addons/spreadsheet_dashboard_crm/data/files/leads_dashboard.json:0
+#, python-format
+msgid "Lost Reason"
+msgstr "ເຫດຜົນທີ່ເສຍໄປ"
+
+#. module: spreadsheet_dashboard_crm
+#. odoo-javascript
+#: code:addons/spreadsheet_dashboard_crm/data/files/leads_dashboard.json:0
+#: code:addons/spreadsheet_dashboard_crm/data/files/pipeline_dashboard.json:0
+#, python-format
+msgid "Medium"
+msgstr "ປານກາງ"
+
+#. module: spreadsheet_dashboard_crm
+#. odoo-javascript
+#: code:addons/spreadsheet_dashboard_crm/data/files/pipeline_dashboard.json:0
+#, python-format
+msgid "Open opportunities"
+msgstr "ໂອກາດທີ່ຍັງເປີດຢູ່"
+
+#. module: spreadsheet_dashboard_crm
+#. odoo-javascript
+#: code:addons/spreadsheet_dashboard_crm/data/files/pipeline_dashboard.json:0
+#, python-format
+msgid "Opportunity"
+msgstr "ໂອກາດການຂາຍ"
+
+#. module: spreadsheet_dashboard_crm
+#. odoo-javascript
+#: code:addons/spreadsheet_dashboard_crm/data/files/pipeline_dashboard.json:0
+#, python-format
+msgid "Percentage closed"
+msgstr "ເປີເຊັນທີ່ປິດໄດ້"
+
+#. module: spreadsheet_dashboard_crm
+#. odoo-javascript
+#: code:addons/spreadsheet_dashboard_crm/data/files/leads_dashboard.json:0
+#: code:addons/spreadsheet_dashboard_crm/data/files/pipeline_dashboard.json:0
+#, python-format
+msgid "Period"
+msgstr "ໄລຍະເວລາ"
+
+#. module: spreadsheet_dashboard_crm
+#: model:spreadsheet.dashboard,name:spreadsheet_dashboard_crm.dashboard_pipeline
+msgid "Pipeline"
+msgstr "ຂະບວນການຂາຍ (Pipeline)"
+
+#. module: spreadsheet_dashboard_crm
+#. odoo-javascript
+#: code:addons/spreadsheet_dashboard_crm/data/files/pipeline_dashboard.json:0
+#, python-format
+msgid "Pipeline Stages"
+msgstr "ຂັ້ນຕອນຂະບວນການຂາຍ"
+
+#. module: spreadsheet_dashboard_crm
+#. odoo-javascript
+#: code:addons/spreadsheet_dashboard_crm/data/files/pipeline_dashboard.json:0
+#, python-format
+msgid "Previous"
+msgstr "ກ່ອນໜ້າ"
+
+#. module: spreadsheet_dashboard_crm
+#. odoo-javascript
+#: code:addons/spreadsheet_dashboard_crm/data/files/leads_dashboard.json:0
+#, python-format
+msgid "Previous period"
+msgstr "ໄລຍະກ່ອນໜ້າ"
+
+#. module: spreadsheet_dashboard_crm
+#. odoo-javascript
+#: code:addons/spreadsheet_dashboard_crm/data/files/leads_dashboard.json:0
+#: code:addons/spreadsheet_dashboard_crm/data/files/pipeline_dashboard.json:0
+#, python-format
+msgid "Revenue"
+msgstr "ລາຍຮັບ"
+
+#. module: spreadsheet_dashboard_crm
+#. odoo-javascript
+#: code:addons/spreadsheet_dashboard_crm/data/files/leads_dashboard.json:0
+#: code:addons/spreadsheet_dashboard_crm/data/files/pipeline_dashboard.json:0
+#, python-format
+msgid "Sales Team"
+msgstr "ທີມງານຂາຍ"
+
+#. module: spreadsheet_dashboard_crm
+#. odoo-javascript
+#: code:addons/spreadsheet_dashboard_crm/data/files/leads_dashboard.json:0
+#: code:addons/spreadsheet_dashboard_crm/data/files/pipeline_dashboard.json:0
+#, python-format
+msgid "Salesperson"
+msgstr "ພະນັກງານຂາຍ"
+
+#. module: spreadsheet_dashboard_crm
+#. odoo-javascript
+#: code:addons/spreadsheet_dashboard_crm/data/files/leads_dashboard.json:0
+#: code:addons/spreadsheet_dashboard_crm/data/files/pipeline_dashboard.json:0
+#, python-format
+msgid "Source"
+msgstr "ແຫຼ່ງທີ່ມາ"
+
+#. module: spreadsheet_dashboard_crm
+#. odoo-javascript
+#: code:addons/spreadsheet_dashboard_crm/data/files/pipeline_dashboard.json:0
+#, python-format
+msgid "Stage"
+msgstr "ຂັ້ນຕອນ"
+
+#. module: spreadsheet_dashboard_crm
+#. odoo-javascript
+#: code:addons/spreadsheet_dashboard_crm/data/files/leads_dashboard.json:0
+#, python-format
+msgid "Tag"
+msgstr "ແທັກ"
+
+#. module: spreadsheet_dashboard_crm
+#. odoo-javascript
+#: code:addons/spreadsheet_dashboard_crm/data/files/leads_dashboard.json:0
+#, python-format
+msgid "Tags"
+msgstr "ແທັກ"
+
+#. module: spreadsheet_dashboard_crm
+#. odoo-javascript
+#: code:addons/spreadsheet_dashboard_crm/data/files/pipeline_dashboard.json:0
+#, python-format
+msgid "To close"
+msgstr "ທີ່ຈະປິດ"
+
+#. module: spreadsheet_dashboard_crm
+#. odoo-javascript
+#: code:addons/spreadsheet_dashboard_crm/data/files/leads_dashboard.json:0
+#, python-format
+msgid "Top Campaigns"
+msgstr "ແຄມເປນຍອດນິຍົມ"
+
+#. module: spreadsheet_dashboard_crm
+#. odoo-javascript
+#: code:addons/spreadsheet_dashboard_crm/data/files/pipeline_dashboard.json:0
+#, python-format
+msgid "Top Cities"
+msgstr "ເມືອງຍອດນິຍົມ"
+
+#. module: spreadsheet_dashboard_crm
+#. odoo-javascript
+#: code:addons/spreadsheet_dashboard_crm/data/files/leads_dashboard.json:0
+#: code:addons/spreadsheet_dashboard_crm/data/files/pipeline_dashboard.json:0
+#, python-format
+msgid "Top Countries"
+msgstr "ປະເທດອັນດັບຕົ້ນໆ"
+
+#. module: spreadsheet_dashboard_crm
+#. odoo-javascript
+#: code:addons/spreadsheet_dashboard_crm/data/files/leads_dashboard.json:0
+#, python-format
+msgid "Top Lost Reasons"
+msgstr "ເຫດຜົນທີ່ເສຍໄປຍອດນິຍົມ"
+
+#. module: spreadsheet_dashboard_crm
+#. odoo-javascript
+#: code:addons/spreadsheet_dashboard_crm/data/files/leads_dashboard.json:0
+#: code:addons/spreadsheet_dashboard_crm/data/files/pipeline_dashboard.json:0
+#, python-format
+msgid "Top Mediums"
+msgstr "ຊ່ອງທາງຍອດນິຍົມ"
+
+#. module: spreadsheet_dashboard_crm
+#. odoo-javascript
+#: code:addons/spreadsheet_dashboard_crm/data/files/pipeline_dashboard.json:0
+#, python-format
+msgid "Top Opportunities"
+msgstr "ໂອກາດຍອດນິຍົມ"
+
+#. module: spreadsheet_dashboard_crm
+#. odoo-javascript
+#: code:addons/spreadsheet_dashboard_crm/data/files/leads_dashboard.json:0
+#: code:addons/spreadsheet_dashboard_crm/data/files/pipeline_dashboard.json:0
+#, python-format
+msgid "Top Sales Teams"
+msgstr "ທີມງານຂາຍດີເດັ່ນ"
+
+#. module: spreadsheet_dashboard_crm
+#. odoo-javascript
+#: code:addons/spreadsheet_dashboard_crm/data/files/leads_dashboard.json:0
+#: code:addons/spreadsheet_dashboard_crm/data/files/pipeline_dashboard.json:0
+#, python-format
+msgid "Top Salespeople"
+msgstr "ພະນັກງານຂາຍດີເດັ່ນ"
+
+#. module: spreadsheet_dashboard_crm
+#. odoo-javascript
+#: code:addons/spreadsheet_dashboard_crm/data/files/leads_dashboard.json:0
+#: code:addons/spreadsheet_dashboard_crm/data/files/pipeline_dashboard.json:0
+#, python-format
+msgid "Top Sources"
+msgstr "ແຫຼ່ງທີ່ມາຍອດນິຍົມ"
+
+#. module: spreadsheet_dashboard_crm
+#. odoo-javascript
+#: code:addons/spreadsheet_dashboard_crm/data/files/leads_dashboard.json:0
+#, python-format
+msgid "Top Tags"
+msgstr "ແທັກຍອດນິຍົມ"
+
+#. module: spreadsheet_dashboard_crm
+#. odoo-javascript
+#: code:addons/spreadsheet_dashboard_crm/data/files/leads_dashboard.json:0
+#, python-format
+msgid "Total days to assign"
+msgstr "ມື້ທັງໝົດໃນການມອບໝາຍ"
+
+#. module: spreadsheet_dashboard_crm
+#. odoo-javascript
+#: code:addons/spreadsheet_dashboard_crm/data/files/leads_dashboard.json:0
+#, python-format
+msgid "Total days to win"
+msgstr "ມື້ທັງໝົດທີ່ຊະນະ"
+
+#. module: spreadsheet_dashboard_crm
+#. odoo-javascript
+#: code:addons/spreadsheet_dashboard_crm/data/files/leads_dashboard.json:0
+#, python-format
+msgid "Total leads"
+msgstr "ຜູ້ມີທ່າແຮງທັງໝົດ"
+
+#. module: spreadsheet_dashboard_crm
+#. odoo-javascript
+#: code:addons/spreadsheet_dashboard_crm/data/files/leads_dashboard.json:0
+#, python-format
+msgid "Won leads"
+msgstr "ຜູ້ມີທ່າແຮງທີ່ຊະນະ"
+
+#. module: spreadsheet_dashboard_crm
+#. odoo-javascript
+#: code:addons/spreadsheet_dashboard_crm/data/files/leads_dashboard.json:0
+#, python-format
+msgid "average deal size - current"
+msgstr ""
+
+#. module: spreadsheet_dashboard_crm
+#. odoo-javascript
+#: code:addons/spreadsheet_dashboard_crm/data/files/leads_dashboard.json:0
+#, python-format
+msgid "average deal size - previous"
+msgstr ""
+
+#. module: spreadsheet_dashboard_crm
+#. odoo-javascript
+#: code:addons/spreadsheet_dashboard_crm/data/files/leads_dashboard.json:0
+#, python-format
+msgid "close rate - current"
+msgstr ""
+
+#. module: spreadsheet_dashboard_crm
+#. odoo-javascript
+#: code:addons/spreadsheet_dashboard_crm/data/files/leads_dashboard.json:0
+#, python-format
+msgid "close rate - previous"
+msgstr ""
+
+#. module: spreadsheet_dashboard_crm
+#. odoo-javascript
+#: code:addons/spreadsheet_dashboard_crm/data/files/leads_dashboard.json:0
+#, python-format
+msgid "days to - current"
+msgstr ""
+
+#. module: spreadsheet_dashboard_crm
+#. odoo-javascript
+#: code:addons/spreadsheet_dashboard_crm/data/files/leads_dashboard.json:0
+#, python-format
+msgid "days to - previous"
+msgstr ""
+
+#. module: spreadsheet_dashboard_crm
+#. odoo-javascript
+#: code:addons/spreadsheet_dashboard_crm/data/files/pipeline_dashboard.json:0
+#, python-format
+msgid "expected - current"
+msgstr ""
+
+#. module: spreadsheet_dashboard_crm
+#. odoo-javascript
+#: code:addons/spreadsheet_dashboard_crm/data/files/pipeline_dashboard.json:0
+#, python-format
+msgid "expected - previous"
+msgstr ""
+
+#. module: spreadsheet_dashboard_crm
+#. odoo-javascript
+#: code:addons/spreadsheet_dashboard_crm/data/files/leads_dashboard.json:0
+#, python-format
+msgid "last period"
+msgstr "ໄລຍະເວລາກ່ອນໜ້າ"
+
+#. module: spreadsheet_dashboard_crm
+#. odoo-javascript
+#: code:addons/spreadsheet_dashboard_crm/data/files/pipeline_dashboard.json:0
+#, python-format
+msgid "list opps"
+msgstr ""
+
+#. module: spreadsheet_dashboard_crm
+#. odoo-javascript
+#: code:addons/spreadsheet_dashboard_crm/data/files/leads_dashboard.json:0
+#: code:addons/spreadsheet_dashboard_crm/data/files/pipeline_dashboard.json:0
+#, python-format
+msgid "since last period"
+msgstr "ຕັ້ງແຕ່ໄລຍະເວລາກ່ອນໜ້າ"
+
+#. module: spreadsheet_dashboard_crm
+#. odoo-javascript
+#: code:addons/spreadsheet_dashboard_crm/data/files/leads_dashboard.json:0
+#, python-format
+msgid "to campaign"
+msgstr ""
+
+#. module: spreadsheet_dashboard_crm
+#. odoo-javascript
+#: code:addons/spreadsheet_dashboard_crm/data/files/pipeline_dashboard.json:0
+#, python-format
+msgid "to close"
+msgstr "ທີ່ຈະປິດ"
+
+#. module: spreadsheet_dashboard_crm
+#. odoo-javascript
+#: code:addons/spreadsheet_dashboard_crm/data/files/pipeline_dashboard.json:0
+#, python-format
+msgid "top cities"
+msgstr ""
+
+#. module: spreadsheet_dashboard_crm
+#. odoo-javascript
+#: code:addons/spreadsheet_dashboard_crm/data/files/leads_dashboard.json:0
+#: code:addons/spreadsheet_dashboard_crm/data/files/pipeline_dashboard.json:0
+#, python-format
+msgid "top countries"
+msgstr ""
+
+#. module: spreadsheet_dashboard_crm
+#. odoo-javascript
+#: code:addons/spreadsheet_dashboard_crm/data/files/leads_dashboard.json:0
+#, python-format
+msgid "top lost reasons"
+msgstr ""
+
+#. module: spreadsheet_dashboard_crm
+#. odoo-javascript
+#: code:addons/spreadsheet_dashboard_crm/data/files/leads_dashboard.json:0
+#, python-format
+msgid "top medium"
+msgstr ""
+
+#. module: spreadsheet_dashboard_crm
+#. odoo-javascript
+#: code:addons/spreadsheet_dashboard_crm/data/files/pipeline_dashboard.json:0
+#, python-format
+msgid "top mediums"
+msgstr ""
+
+#. module: spreadsheet_dashboard_crm
+#. odoo-javascript
+#: code:addons/spreadsheet_dashboard_crm/data/files/leads_dashboard.json:0
+#: code:addons/spreadsheet_dashboard_crm/data/files/pipeline_dashboard.json:0
+#, python-format
+msgid "top sales team"
+msgstr ""
+
+#. module: spreadsheet_dashboard_crm
+#. odoo-javascript
+#: code:addons/spreadsheet_dashboard_crm/data/files/pipeline_dashboard.json:0
+#, python-format
+msgid "top salespeople"
+msgstr ""
+
+#. module: spreadsheet_dashboard_crm
+#. odoo-javascript
+#: code:addons/spreadsheet_dashboard_crm/data/files/leads_dashboard.json:0
+#, python-format
+msgid "top salesperson"
+msgstr ""
+
+#. module: spreadsheet_dashboard_crm
+#. odoo-javascript
+#: code:addons/spreadsheet_dashboard_crm/data/files/leads_dashboard.json:0
+#, python-format
+msgid "top source"
+msgstr ""
+
+#. module: spreadsheet_dashboard_crm
+#. odoo-javascript
+#: code:addons/spreadsheet_dashboard_crm/data/files/pipeline_dashboard.json:0
+#, python-format
+msgid "top sources"
+msgstr ""
+
+#. module: spreadsheet_dashboard_crm
+#. odoo-javascript
+#: code:addons/spreadsheet_dashboard_crm/data/files/leads_dashboard.json:0
+#, python-format
+msgid "top tags"
+msgstr ""

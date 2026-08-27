@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <template id="report_igtf_template">
+        <t t-call="web.html_container">
+            <t t-call="web.external_layout">
+                <style>
+                    .igtf-header {
+                        text-align: center;
+                        margin-bottom: 20px;
+                    }
+                    .igtf-table {
+                        width: 100%;
+                        border-collapse: collapse;
+                        font-size: 12px;
+                    }
+                    .igtf-table th {
+                        border-bottom: 2px solid black;
+                        text-align: left;
+                        padding: 5px;
+                    }
+                    .igtf-table td {
+                        padding: 5px;
+                        border-bottom: 1px solid #eee;
+                    }
+                    .text-right { text-align: right; }
+                    .header-info {
+                        width: 100%;
+                        font-size: 12px;
+                        margin-bottom: 20px;
+                    }
+                </style>
+                <div class="page">
+                    <!-- Title and Header Info -->
+                    <div class="igtf-header">
+                        <h4>LISTADO DE IGTF PERCIBIDO</h4>
+                        <span>fecha: Desde <t t-esc="date_from" t-options='{"widget": "date"}'/> Hasta <t t-esc="date_to" t-options='{"widget": "date"}'/></span>
+                    </div>
+
+                    <div class="header-info">
+                        <div style="float: right; text-align: right;">
+                            Usuario: <span t-esc="user.name"/><br/>
+                            Fecha: <span t-esc="context_timestamp(datetime.datetime.now()).strftime('%d/%m/%Y %H:%M:%S')"/>
+                        </div>
+                        <div style="clear: both;"/>
+                    </div>
+
+                    <!-- Table -->
+                    <table class="igtf-table">
+                        <thead>
+                            <tr>
+                                <th>Tipo</th>
+                                <th>Nro.documento</th>
+                                <th>Fecha</th>
+                                <th>Descripción</th>
+                                <th class="text-center">Nro de Operación</th>
+                                <th class="text-center">Base I.G.T.F</th>
+                                <th class="text-center">% I.G.T.F</th>
+                                <th class="text-center">I.G.T.F. percibido</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <t t-set="total_operations" t-value="0"/>
+                            <t t-set="total_amount" t-value="0"/>
+                            <tr t-foreach="report_lines" t-as="line">
+                                <t t-set="pay" t-value="line['payment']"/>
+                                <td><span t-esc="line['doc_type']"/></td>
+                                <td><span t-esc="line['doc_name']"/></td>
+                                <td><span t-field="pay.date"/></td>
+                                <td><span t-field="pay.partner_id.name"/></td>
+                                <td class="text-center">
+                                    <t t-set="total_operations" t-value="total_operations + 1"/>
+                                    <span t-esc="line_index + 1"/>
+                                </td>
+                                <td class="text-right">
+                                    <span t-esc="line['igtf_base_amount']" t-options='{"widget": "float", "precision": 2}'/>
+                                </td>
+                                <td class="text-right">3.00</td>
+                                <td class="text-right">
+                                    <t t-set="total_amount" t-value="total_amount + line['igtf_amount']"/>
+                                    <span t-esc="line['igtf_amount']" t-options='{"widget": "float", "precision": 2}'/>
+                                </td>
+                            </tr>
+                        </tbody>
+                        <tfoot>
+                             <tr>
+                                <td colspan="4" class="text-right"><strong>Cantidad de Operaciones: <span t-esc="total_operations"/></strong></td>
+                                <td colspan="3" class="text-right"><strong>Total I.G.T.F Percibido:</strong></td>
+                                <td class="text-right"><strong><span t-esc="total_amount" t-options='{"widget": "float", "precision": 2}'/></strong></td>
+                            </tr>
+                        </tfoot>
+                    </table>
+                </div>
+            </t>
+        </t>
+    </template>
+</odoo>

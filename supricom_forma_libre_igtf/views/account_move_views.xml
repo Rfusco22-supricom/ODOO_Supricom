@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <record id="view_invoice_form_with_print_button_supricom" model="ir.ui.view">
+        <field name="name">account.move.form.with.print.button.supricom</field>
+        <field name="model">account.move</field>
+        <field name="inherit_id" ref="account.view_move_form"/>
+        <field name="arch" type="xml">
+            <xpath expr="//form" position="inside">
+                <field name="show_print_dual_button" invisible="1"/>
+            </xpath>
+            <xpath expr="//header" position="inside">
+                <!-- Botón para Factura -->
+                <button name="action_print_invoice_custom_dual"
+                        type="object"
+                        string="Imprimir Factura Forma Libre"
+                        class="btn-primary"
+                        invisible="not show_print_dual_button or debit_origin_id"/>
+
+                <!-- Botón para Nota de Crédito -->
+                <button name="action_print_invoice_custom_dual"
+                        type="object"
+                        string="Imprimir NC Forma Libre"
+                        class="btn-primary"
+                        invisible="move_type != 'out_refund'"/>
+
+                <!-- Botón para Nota de Débito -->
+                <button name="action_print_invoice_custom_dual"
+                        type="object"
+                        string="Imprimir ND Forma Libre"
+                        class="btn-primary"
+                        invisible="move_type != 'out_invoice' or not debit_origin_id"/>
+            </xpath>
+        </field>
+    </record>
+</odoo>

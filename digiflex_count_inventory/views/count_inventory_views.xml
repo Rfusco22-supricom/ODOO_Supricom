@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <!-- Sequence for Count Inventory -->
+    <record id="seq_digiflex_count_inventory" model="ir.sequence">
+        <field name="name">Secuencia Conteo Inventario</field>
+        <field name="code">digiflex.count.inventory</field>
+        <field name="prefix">CNT/%(year)s/%(month)s/</field>
+        <field name="padding">4</field>
+        <field name="company_id" eval="False"/>
+    </record>
+
+    <!-- Tree View -->
+    <record id="view_digiflex_count_inventory_tree" model="ir.ui.view">
+        <field name="name">digiflex.count.inventory.tree</field>
+        <field name="model">digiflex.count.inventory</field>
+        <field name="arch" type="xml">
+            <tree string="Conteos de Inventario" decoration-info="state == 'draft'" decoration-warning="state == 'in_progress'" decoration-success="state == 'closed'" decoration-muted="state == 'cancelled'">
+                <field name="name"/>
+                <field name="date"/>
+                <field name="sales_target_date" optional="show"/>
+                <field name="location_id"/>
+                <field name="count_type"/>
+                <field name="employee_ids" widget="many2many_tags"/>
+                <field name="hide_theoretical_qty"/>
+                <field name="total_items"/>
+                <field name="total_differences"/>
+                <field name="state" widget="badge" decoration-info="state == 'draft'" decoration-warning="state == 'in_progress'" decoration-success="state == 'closed'" decoration-muted="state == 'cancelled'"/>
+                <field name="company_id" groups="base.group_multi_company"/>
+            </tree>
+        </field>
+    </record>
+
+    <!-- Form View con Chatter y Gestión de Actividades -->
+    <record id="view_digiflex_count_inventory_form" model="ir.ui.view">
+        <field name="name">digiflex.count.inventory.form</field>
+        <field name="model">digiflex.count.inventory</field>
+        <field name="arch" type="xml">
+            <form string="Conteo de Inventario">
+                <header>
+                    <button name="action_start" string="Iniciar Conteo y Asignar Actividad" type="object" class="oe_highlight" invisible="state != 'draft'"/>
+                    <button name="action_open_assign_wizard" string="Asignación Masiva por Filtro / Marca" type="object" class="btn-outline-primary" invisible="state == 'closed'"/>
+                    <button name="action_schedule_activities" string="Planificar/Reenviar Actividad" type="object" class="btn-outline-secondary" invisible="state != 'in_progress'"/>
+                    <button name="action_create_stock_quant_adjustment" string="Registrar Resumen en Chatter" type="object" class="oe_highlight" invisible="state in ['draft', 'cancelled'] or adjustment_applied"/>
+                    <button string="Resumen Registrado en Chatter" class="btn-success" disabled="1" invisible="not adjustment_applied"/>
+                    <button name="action_close" string="Cierre General de Sesión" type="object" class="btn-success" invisible="state != 'in_progress'"/>
+                    <button name="action_print_report" string="Imprimir PDF" type="object" class="btn-secondary" invisible="state == 'draft'"/>
+                    <button name="action_cancel" string="Cancelar" type="object" invisible="state in ['closed', 'cancelled']"/>
+                    <field name="state" widget="statusbar" statusbar_visible="draft,in_progress,closed"/>
+                </header>
+                <sheet>
+                    <field name="adjustment_applied" invisible="1"/>
+                    <div class="oe_title">
+                        <h1>
+                            <field name="name" readonly="1"/>
+                        </h1>
+                    </div>
+                    <group>
+                        <group>
+                            <field name="location_id" readonly="state != 'draft'"/>
+                            <field name="count_type" readonly="state != 'draft'"/>
+                            <field name="sales_target_date" invisible="count_type != 'daily'" readonly="state != 'draft'"/>
+                            <field name="hide_theoretical_qty" readonly="state != 'draft'"/>
+                        </group>
+                        <group>
+                            <field name="date" readonly="state != 'draft'"/>
+                            <field name="user_id" readonly="1"/>
+                            <field name="employee_ids" widget="many2many_tags" readonly="state == 'closed'"/>
+                            <field name="company_id" groups="base.group_multi_company" readonly="1"/>
+                        </group>
+                    </group>
+                    <notebook>
+                        <page string="Detalle de Productos" name="lines">
+                            <field name="line_ids" readonly="state == 'closed'">
+                                <tree editable="bottom" decoration-danger="difference_state == 'missing'" decoration-info="difference_state == 'surplus'" decoration-success="difference_state == 'match'">
+                                    <field name="product_id" readonly="1"/>
+                                    <field name="product_uom_id"/>
+                                    <field name="theoretical_qty" readonly="1" column_invisible="parent.hide_theoretical_qty"/>
+                                    <field name="counted_qty"/>
+                                    <field name="difference_qty" readonly="1" column_invisible="parent.hide_theoretical_qty"/>
+                                    <field name="difference_state" widget="badge" decoration-danger="difference_state == 'missing'" decoration-info="difference_state == 'surplus'" decoration-success="difference_state == 'match'" column_invisible="parent.hide_theoretical_qty"/>
+                                    <field name="assigned_employee_id"/>
+                                    <field name="notes"/>
+                                </tree>
+                            </field>
+                        </page>
+                    </notebook>
+                </sheet>
+                <div class="oe_chatter">
+                    <field name="message_follower_ids"/>
+                    <field name="activity_ids"/>
+                    <field name="message_ids"/>
+                </div>
+            </form>
+        </field>
+    </record>
+
+    <!-- Action Window Backend (SOLO PARA ADMINISTRADORES) -->
+    <record id="action_digiflex_count_inventory_backend" model="ir.actions.act_window">
+        <field name="name">Sesiones y Actividades de Conteo</field>
+        <field name="res_model">digiflex.count.inventory</field>
+        <field name="view_mode">tree,form</field>
+        <field name="groups_id" eval="[(6, 0, [ref('digiflex_count_inventory.group_count_inventory_manager')])]"/>
+        <field name="help" type="html">
+            <p class="o_view_nocontent_smiling_face">
+                Cree una nueva sesión de conteo de inventario cuantitativo y asígnele la actividad al operador responsable.
+            </p>
+        </field>
+    </record>
+</odoo>

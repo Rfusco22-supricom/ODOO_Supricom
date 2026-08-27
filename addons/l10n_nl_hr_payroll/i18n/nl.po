@@ -1,0 +1,591 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+# * l10n_nl_hr_payroll
+#
+# Weblate <noreply-mt-weblate@weblate.org>, 2025.
+# Bren Driesen <brdri@odoo.com>, 2026.
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 17.0+e\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2025-12-29 19:02+0000\n"
+"PO-Revision-Date: 2026-05-23 17:20+0000\n"
+"Last-Translator: Bren Driesen <brdri@odoo.com>\n"
+"Language-Team: Dutch <https://translate.odoo.com/projects/odoo-17-l10n/"
+"l10n_nl_hr_payroll/nl/>\n"
+"Language: nl\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: \n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+"X-Generator: Weblate 5.17\n"
+
+#. module: l10n_nl_hr_payroll
+#: model:ir.actions.report,print_report_name:l10n_nl_hr_payroll.action_report_payslip_nl
+msgid "'Payslip - %s' % (object.employee_id.name)"
+msgstr "'Loonstrook - %s' % (object.employee_id.name)"
+
+#. module: l10n_nl_hr_payroll
+#: model_terms:hr.job,job_details:l10n_nl_hr_payroll.job_developer_dutch
+msgid "1 Onsite Interview"
+msgstr "1 sollicitatiegesprek op locatie"
+
+#. module: l10n_nl_hr_payroll
+#: model_terms:hr.job,job_details:l10n_nl_hr_payroll.job_developer_dutch
+msgid "1 Phone Call"
+msgstr "1 telefoongesprek"
+
+#. module: l10n_nl_hr_payroll
+#: model_terms:hr.job,website_description:l10n_nl_hr_payroll.job_developer_dutch
+msgid "12 days / year, including <br>6 of your choice."
+msgstr "12 dagen / jaar, waarvan <br>6 naar keuze."
+
+#. module: l10n_nl_hr_payroll
+#: model_terms:hr.job,job_details:l10n_nl_hr_payroll.job_developer_dutch
+msgid "2 open days"
+msgstr "2 dagen"
+
+#. module: l10n_nl_hr_payroll
+#: model:ir.model.fields,field_description:l10n_nl_hr_payroll.field_hr_contract__l10n_nl_30_percent
+msgid "30% Exemption"
+msgstr "30%-regeling"
+
+#. module: l10n_nl_hr_payroll
+#: model_terms:hr.job,job_details:l10n_nl_hr_payroll.job_developer_dutch
+msgid "4 Days after Interview"
+msgstr "4 dagen na sollicitatiegesprek"
+
+#. module: l10n_nl_hr_payroll
+#: model_terms:hr.job,website_description:l10n_nl_hr_payroll.job_developer_dutch
+msgid "<small><b>READ</b></small>"
+msgstr "<small><b>LEES</b></small>"
+
+#. module: l10n_nl_hr_payroll
+#: model_terms:hr.job,job_details:l10n_nl_hr_payroll.job_developer_dutch
+msgid "<span class=\"text-muted small\">Days to get an Offer</span>"
+msgstr ""
+"<span class=\"text-muted small\">Dagen om een aanbieding te krijgen</span>"
+
+#. module: l10n_nl_hr_payroll
+#: model_terms:hr.job,job_details:l10n_nl_hr_payroll.job_developer_dutch
+msgid "<span class=\"text-muted small\">Process</span>"
+msgstr "<span class=\"text-muted small\">Proces</span>"
+
+#. module: l10n_nl_hr_payroll
+#: model_terms:hr.job,job_details:l10n_nl_hr_payroll.job_developer_dutch
+msgid "<span class=\"text-muted small\">Time to Answer</span>"
+msgstr "<span class=\"text-muted small\">Tijd om te antwoorden</span>"
+
+#. module: l10n_nl_hr_payroll
+#: model_terms:hr.job,website_description:l10n_nl_hr_payroll.job_developer_dutch
+msgid "A full-time position <br>Attractive salary package."
+msgstr "Een fulltime functie <br>Aantrekkelijk salarispakket."
+
+#. module: l10n_nl_hr_payroll
+#: model_terms:hr.job,website_description:l10n_nl_hr_payroll.job_developer_dutch
+msgid "Achieve monthly sales objectives"
+msgstr "Bereik maandelijkse verkoopdoelstellingen"
+
+#. module: l10n_nl_hr_payroll
+#: model_terms:hr.job,website_description:l10n_nl_hr_payroll.job_developer_dutch
+msgid "Additional languages"
+msgstr "Aanvullende talen"
+
+#. module: l10n_nl_hr_payroll
+#: model_terms:hr.job,website_description:l10n_nl_hr_payroll.job_developer_dutch
+msgid "Administrative Work"
+msgstr "Administratief werk"
+
+#. module: l10n_nl_hr_payroll
+#: model_terms:res.company,invoice_terms_html:l10n_nl_hr_payroll.res_company_nl
+msgid ""
+"All our contractual relations will be governed exclusively by Netherlands "
+"law."
+msgstr ""
+"Al onze contractuele contacten worden uitsluitend beheerst door Nederlands "
+"recht."
+
+#. module: l10n_nl_hr_payroll
+#: model_terms:hr.job,website_description:l10n_nl_hr_payroll.job_developer_dutch
+msgid ""
+"As an employee of our company, you will <b>collaborate with each department\n"
+"                        to create and deploy disruptive products.</b> Come "
+"work at a growing company\n"
+"                        that offers great benefits with opportunities to "
+"moving forward and learn\n"
+"                        alongside accomplished leaders. We're seeking an "
+"experienced and outstanding\n"
+"                        member of staff.\n"
+"                        <br><br>\n"
+"                        This position is both <b>creative and rigorous</b> "
+"by nature you need to think\n"
+"                        outside the box. We expect the candidate to be "
+"proactive and have a \"get it done\"\n"
+"                        spirit. To be successful, you will have solid "
+"solving problem skills."
+msgstr ""
+"Als werknemer van ons bedrijf <b>werk je samen met elke afdeling\n"
+"om ontwrichtende producten te maken en in te zetten. </b>Kom werken bij een "
+"groeiend bedrijf\n"
+"                     dat grote voordelen biedt met kansen om vooruit te "
+"komen en te leren\n"
+"                     naast bekwame leiders. We zoeken een ervaren en "
+"uitstekende\n"
+"                     werknemer.\n"
+"                     <br><br>\n"
+"                      Deze functie is zowel <b> creatief als rigoureus</b> "
+"van aard, je moet outside-the-box denken.\n"
+"                      We verwachten dat de sollicitant proactief is en een "
+"'get it done' mentaliteit heeft.\n"
+"                      Om succesvol te zijn, moet je beschikken over grote "
+"probleemoplossende vaardigheden."
+
+#. module: l10n_nl_hr_payroll
+#: model_terms:hr.job,website_description:l10n_nl_hr_payroll.job_developer_dutch
+msgid "Autonomy"
+msgstr "Autonomie"
+
+#. module: l10n_nl_hr_payroll
+#: model_terms:hr.job,website_description:l10n_nl_hr_payroll.job_developer_dutch
+msgid "Bachelor Degree or Higher"
+msgstr "Bachelordiploma of hoger"
+
+#. module: l10n_nl_hr_payroll
+#: model_terms:res.company,invoice_terms_html:l10n_nl_hr_payroll.res_company_nl
+msgid ""
+"Below text serves as a suggestion and doesn’t engage Odoo S.A. "
+"responsibility."
+msgstr ""
+"Onderstaande tekst dient als suggestie en geeft Odoo S.A. geen "
+"verantwoordelijkheid."
+
+#. module: l10n_nl_hr_payroll
+#: model_terms:res.company,invoice_terms_html:l10n_nl_hr_payroll.res_company_nl
+msgid ""
+"Certain countries apply withholding at source on the amount of invoices, in "
+"accordance with their internal legislation. Any withholding at source will "
+"be paid by the client to the tax authorities. Under no circumstances can My "
+"Dutch Company become involved in costs related to a country's legislation. "
+"The amount of the invoice will therefore be due to My Dutch Company in its "
+"entirety and does not include any costs relating to the legislation of the "
+"country in which the client is located."
+msgstr ""
+"Bepaalde landen passen bronbelasting toe op het factuurbedrag, in "
+"overeenstemming met hun nationale wetgeving. Elke bronbelasting wordt door "
+"de klant rechtstreeks afgedragen aan de belastingdienst. My Dutch Company "
+"kan onder geen enkele omstandigheid worden betrokken bij kosten die "
+"voortvloeien uit de wetgeving van een land. Het factuurbedrag is dan ook "
+"volledig verschuldigd aan My Dutch Company en omvat geen kosten die verband "
+"houden met de wetgeving van het land waar de klant gevestigd is."
+
+#. module: l10n_nl_hr_payroll
+#: model_terms:hr.job,website_description:l10n_nl_hr_payroll.job_developer_dutch
+msgid "Create content that will help our users on a daily basis"
+msgstr "Maak inhoud die onze gebruikers dagelijks zal helpen"
+
+#. module: l10n_nl_hr_payroll
+#: model_terms:hr.job,website_description:l10n_nl_hr_payroll.job_developer_dutch
+msgid "Customer Relationship"
+msgstr "Klantrelatie"
+
+#. module: l10n_nl_hr_payroll
+#: model:hr.salary.rule,name:l10n_nl_hr_payroll.l10n_nl_disability_insurance
+msgid "Disability Insurance (WAO/WIA)"
+msgstr "Arbeidsongeschiktheidsverzekering (WAO/WIA)"
+
+#. module: l10n_nl_hr_payroll
+#: model_terms:hr.job,website_description:l10n_nl_hr_payroll.job_developer_dutch
+msgid "Discover our products."
+msgstr "Ontdek onze producten."
+
+#. module: l10n_nl_hr_payroll
+#: model_terms:hr.job,website_description:l10n_nl_hr_payroll.job_developer_dutch
+#, fuzzy
+msgid ""
+"Each employee has a chance to see the impact of his work.\n"
+"                You can make a real contribution to the success of the "
+"company.\n"
+"                <br>\n"
+"                Several activities are often organized all over the year, "
+"such as weekly\n"
+"                sports sessions, team building events, monthly drink, and "
+"much more"
+msgstr ""
+"Elke werknemer heeft de kans om de impact van zijn werk te zien.\n"
+"                    Je kunt een echte bijdrage leveren aan het succes van "
+"het bedrijf.\n"
+"                   <br>\n"
+"                    Het hele jaar door worden er vaak verschillende "
+"activiteiten georganiseerd, zoals wekelijkse\n"
+"                    sportsessies, teambuildingevenementen, maandelijkse "
+"borrels en nog veel meer"
+
+#. module: l10n_nl_hr_payroll
+#: model_terms:hr.job,website_description:l10n_nl_hr_payroll.job_developer_dutch
+msgid "Eat &amp; Drink"
+msgstr "Eten &amp; Drinken"
+
+#. module: l10n_nl_hr_payroll
+#: model:ir.model,name:l10n_nl_hr_payroll.model_hr_contract
+msgid "Employee Contract"
+msgstr "Werknemerscontract"
+
+#. module: l10n_nl_hr_payroll
+#: model:hr.salary.rule.category,name:l10n_nl_hr_payroll.hr_salary_rule_category_social_security_employee
+msgid "Employee Social Security Deductions"
+msgstr "Socialezekerheidsbijdragen werknemer"
+
+#. module: l10n_nl_hr_payroll
+#: model:hr.salary.rule.category,name:l10n_nl_hr_payroll.hr_salary_rule_category_social_security_employer
+msgid "Employer Social Security Deductions"
+msgstr "Socialezekerheidsbijdragen werkgever"
+
+#. module: l10n_nl_hr_payroll
+#: model_terms:hr.job,website_description:l10n_nl_hr_payroll.job_developer_dutch
+msgid "Expand your knowledge of various business industries"
+msgstr "Vergroot je kennis van verschillende bedrijfssectoren"
+
+#. module: l10n_nl_hr_payroll
+#: model_terms:hr.job,website_description:l10n_nl_hr_payroll.job_developer_dutch
+msgid "Experience in writing online content"
+msgstr "Ervaring in het schrijven van online content"
+
+#. module: l10n_nl_hr_payroll
+#: model:hr.job,name:l10n_nl_hr_payroll.job_developer_dutch
+msgid "Experienced Developer NL"
+msgstr "Ervaren ontwikkelaar NL"
+
+#. module: l10n_nl_hr_payroll
+#: model_terms:hr.job,website_description:l10n_nl_hr_payroll.job_developer_dutch
+msgid "Fruit, coffee and <br>snacks provided."
+msgstr "Fruit, koffie en <br>snacks worden voorzien."
+
+#. module: l10n_nl_hr_payroll
+#: model_terms:hr.job,website_description:l10n_nl_hr_payroll.job_developer_dutch
+msgid "Google Adwords experience"
+msgstr "Ervaring in Google Adwords"
+
+#. module: l10n_nl_hr_payroll
+#: model_terms:hr.job,website_description:l10n_nl_hr_payroll.job_developer_dutch
+msgid "Great team of smart people, in a friendly and open culture"
+msgstr "Geweldig team van slimme mensen, in een vriendelijke en open cultuur"
+
+#. module: l10n_nl_hr_payroll
+#: model:hr.salary.rule,name:l10n_nl_hr_payroll.l10n_nl_health_insurance
+msgid "Health Insurance (Zvw)"
+msgstr "Zorgverzekering (Zvw)"
+
+#. module: l10n_nl_hr_payroll
+#: model_terms:hr.job,website_description:l10n_nl_hr_payroll.job_developer_dutch
+msgid "Highly creative and autonomous"
+msgstr "Zeer creatief en zelfstandig"
+
+#. module: l10n_nl_hr_payroll
+#: model_terms:res.company,invoice_terms_html:l10n_nl_hr_payroll.res_company_nl
+msgid ""
+"If a payment is still outstanding more than sixty (60) days after the due "
+"payment date, My Dutch Company reserves the right to call on the services of "
+"a debt recovery company. All legal expenses will be payable by the client."
+msgstr ""
+"Indien een betaling meer dan zestig (60) dagen na de vervaldatum nog "
+"openstaat, behoudt My Dutch Company zich het recht voor om een beroep te "
+"doen op een incassobureau. Alle juridische kosten zijn voor rekening van de "
+"klant."
+
+#. module: l10n_nl_hr_payroll
+#: model_terms:res.company,invoice_terms_html:l10n_nl_hr_payroll.res_company_nl
+msgid ""
+"In order for it to be admissible, My Dutch Company must be notified of any "
+"claim by means of a letter sent by recorded delivery to its registered "
+"office within 8 days of the delivery of the goods or the provision of the "
+"services."
+msgstr ""
+"Om ontvankelijk te zijn, moet My Dutch Company binnen 8 dagen na de levering "
+"van de goederen of de levering van de diensten op de hoogte worden gesteld "
+"van elke claim door middel van een aangetekend schrijven naar haar "
+"maatschappelijke zetel."
+
+#. module: l10n_nl_hr_payroll
+#: model:hr.salary.rule.category,name:l10n_nl_hr_payroll.hr_salary_rule_category_income_tax
+msgid "Income Tax"
+msgstr "Inkomstenbelasting"
+
+#. module: l10n_nl_hr_payroll
+#: model:hr.salary.rule,name:l10n_nl_hr_payroll.l10n_nl_income_tax
+msgid "Income Tax Due"
+msgstr "Verschuldigde inkomstenbelasting"
+
+#. module: l10n_nl_hr_payroll
+#: model_terms:hr.job,website_description:l10n_nl_hr_payroll.job_developer_dutch
+msgid "Lead the entire sales cycle"
+msgstr "Leid de volledige verkoopcyclus"
+
+#. module: l10n_nl_hr_payroll
+#: model:hr.salary.rule,name:l10n_nl_hr_payroll.l10n_nl_long_medical_care_insurance
+msgid "Long Medical Care Insurance (Wlz)"
+msgstr "Langdurige zorgverzekering (Wlz)"
+
+#. module: l10n_nl_hr_payroll
+#: model_terms:hr.job,website_description:l10n_nl_hr_payroll.job_developer_dutch
+msgid "Master demos of our software"
+msgstr "Beheers demo's van je software"
+
+#. module: l10n_nl_hr_payroll
+#: model_terms:hr.job,website_description:l10n_nl_hr_payroll.job_developer_dutch
+msgid "Must Have"
+msgstr "Vereist"
+
+#. module: l10n_nl_hr_payroll
+#: model_terms:res.company,invoice_terms_html:l10n_nl_hr_payroll.res_company_nl
+msgid ""
+"My Dutch Company undertakes to do its best to supply performant services in "
+"due time in accordance with the agreed timeframes. However, none of its "
+"obligations can be considered as being an obligation to achieve results. My "
+"Dutch Company cannot under any circumstances, be required by the client to "
+"appear as a third party in the context of any claim for damages filed "
+"against the client by an end consumer."
+msgstr ""
+"My Dutch Company verbindt zich ertoe haar best te doen om tijdige en goede "
+"diensten te leveren in overeenstemming met de overeengekomen termijnen. Geen "
+"van haar verplichtingen kan echter worden beschouwd als een "
+"resultaatsverplichting. My Dutch Company kan in geen geval door de klant "
+"worden verplicht om als derde partij op te treden in het kader van een "
+"vordering tot schadevergoeding die door een eindconsument tegen de klant "
+"wordt ingediend."
+
+#. module: l10n_nl_hr_payroll
+#: model:ir.actions.report,name:l10n_nl_hr_payroll.action_report_payslip_nl
+msgid "NL: Payslip"
+msgstr "NL: Loonstrook"
+
+#. module: l10n_nl_hr_payroll
+#: model_terms:hr.job,website_description:l10n_nl_hr_payroll.job_developer_dutch
+msgid "Negotiate and contract"
+msgstr "Onderhandelen en contracten afsluiten"
+
+#. module: l10n_nl_hr_payroll
+#: model_terms:hr.job,website_description:l10n_nl_hr_payroll.job_developer_dutch
+msgid "Nice to have"
+msgstr "Leuk om te hebben"
+
+#. module: l10n_nl_hr_payroll
+#: model_terms:hr.job,website_description:l10n_nl_hr_payroll.job_developer_dutch
+msgid "No dumb managers, no stupid tools to use, no rigid working hours"
+msgstr ""
+"Geen domme managers, geen domme tools om te gebruiken, geen rigide werktijden"
+
+#. module: l10n_nl_hr_payroll
+#: model_terms:hr.job,website_description:l10n_nl_hr_payroll.job_developer_dutch
+msgid ""
+"No waste of time in enterprise processes, real responsibilities and autonomy"
+msgstr ""
+"Geen tijdverspilling in bedrijfsprocessen, echte verantwoordelijkheden en "
+"autonomie"
+
+#. module: l10n_nl_hr_payroll
+#: model:hr.salary.rule,name:l10n_nl_hr_payroll.l10n_nl_old_age_insurance
+msgid "Old Age Insurance (AOW)"
+msgstr "Ouderdomsverzekering (AOW)"
+
+#. module: l10n_nl_hr_payroll
+#: model_terms:hr.job,website_description:l10n_nl_hr_payroll.job_developer_dutch
+msgid "Our Product"
+msgstr "Ons product"
+
+#. module: l10n_nl_hr_payroll
+#: model_terms:res.company,invoice_terms_html:l10n_nl_hr_payroll.res_company_nl
+msgid ""
+"Our invoices are payable within 21 working days, unless another payment "
+"timeframe is indicated on either the invoice or the order. In the event of "
+"non-payment by the due date, My Dutch Company reserves the right to request "
+"a fixed interest payment amounting to 10% of the sum remaining due. My Dutch "
+"Company will be authorized to suspend any provision of services without "
+"prior warning in the event of late payment."
+msgstr ""
+"Onze facturen zijn te betalen binnen 21 werkdagen, tenzij een andere "
+"betalingstermijn is aangegeven op de factuur of de order. Bij niet-betaling "
+"op de vervaldag behoudt My Dutch Company zich het recht voor om een vaste "
+"rente van 10% op het openstaande bedrag aan te rekenen. My Dutch Company is "
+"gerechtigd om bij laattijdige betaling zonder voorafgaande waarschuwing de "
+"levering van diensten op te schorten."
+
+#. module: l10n_nl_hr_payroll
+#: model_terms:hr.job,website_description:l10n_nl_hr_payroll.job_developer_dutch
+msgid "Passion for software products"
+msgstr "Passie voor software producten"
+
+#. module: l10n_nl_hr_payroll
+#: model:ir.model,name:l10n_nl_hr_payroll.model_hr_payslip
+msgid "Pay Slip"
+msgstr "Loonstrook"
+
+#. module: l10n_nl_hr_payroll
+#: model_terms:hr.job,website_description:l10n_nl_hr_payroll.job_developer_dutch
+msgid "Perfect written English"
+msgstr "Perfect geschreven Engels"
+
+#. module: l10n_nl_hr_payroll
+#: model_terms:hr.job,description:l10n_nl_hr_payroll.job_developer_dutch
+msgid ""
+"Perform assigned responsibilities, collaborate with team members, and adhere "
+"to company policies.\n"
+"        Strong communication, problem-solving, and work ethic required.\n"
+"        Adaptability, initiative, and willingness to learn are valued."
+msgstr ""
+"Voer toegewezen verantwoordelijkheden uit, werk samen met teamleden en houd "
+"je aan het bedrijfsbeleid. \n"
+"Sterke communicatie, probleemoplossend denken en werkethiek zijn vereist. \n"
+"Aanpassingsvermogen, initiatiefname en bereidheid om te leren worden "
+"geapprecieerd."
+
+#. module: l10n_nl_hr_payroll
+#: model_terms:hr.job,website_description:l10n_nl_hr_payroll.job_developer_dutch
+msgid "Perks"
+msgstr "Voordelen"
+
+#. module: l10n_nl_hr_payroll
+#: model_terms:hr.job,website_description:l10n_nl_hr_payroll.job_developer_dutch
+msgid "Personal Evolution"
+msgstr "Persoonlijke ontwikkeling"
+
+#. module: l10n_nl_hr_payroll
+#: model_terms:hr.job,website_description:l10n_nl_hr_payroll.job_developer_dutch
+msgid "Play any sport with colleagues, <br>the bill is covered."
+msgstr "Samen met collega's sporten, <br>de rekening is gedekt."
+
+#. module: l10n_nl_hr_payroll
+#: model_terms:hr.job,website_description:l10n_nl_hr_payroll.job_developer_dutch
+msgid "Qualify the customer needs"
+msgstr "Kwalificeer de behoeften van de klant"
+
+#. module: l10n_nl_hr_payroll
+#: model:hr.department,name:l10n_nl_hr_payroll.hr_department_rdnl
+msgid "RD NL"
+msgstr "RD NL"
+
+#. module: l10n_nl_hr_payroll
+#: model_terms:hr.job,website_description:l10n_nl_hr_payroll.job_developer_dutch
+msgid "Real responsibilities and challenges in a fast evolving company"
+msgstr ""
+"Echte verantwoordelijkheden en uitdagingen in een snel groeiend bedrijf"
+
+#. module: l10n_nl_hr_payroll
+#: model_terms:hr.job,website_description:l10n_nl_hr_payroll.job_developer_dutch
+msgid "Responsibilities"
+msgstr "Verantwoordelijkheden"
+
+#. module: l10n_nl_hr_payroll
+#: model:hr.salary.rule,name:l10n_nl_hr_payroll.l10n_nl_return_to_work_fund
+msgid "Return to Work Fund - Average (Whk)"
+msgstr "Werkhervattingskas - Gemiddeld (Whk)"
+
+#. module: l10n_nl_hr_payroll
+#: model_terms:res.company,invoice_terms_html:l10n_nl_hr_payroll.res_company_nl
+msgid "STANDARD TERMS AND CONDITIONS OF SALE"
+msgstr "ALGEMENE VOORWAARDEN"
+
+#. module: l10n_nl_hr_payroll
+#: model_terms:hr.job,website_description:l10n_nl_hr_payroll.job_developer_dutch
+msgid "Sport Activity"
+msgstr "Sportactiviteit"
+
+#. module: l10n_nl_hr_payroll
+#: model_terms:hr.job,website_description:l10n_nl_hr_payroll.job_developer_dutch
+msgid "Strong analytical skills"
+msgstr "Sterke analytische vaardigheden"
+
+#. module: l10n_nl_hr_payroll
+#: model:hr.salary.rule,name:l10n_nl_hr_payroll.l10n_nl_survivor_dependant_insurance
+msgid "Survivor Dependant Insurance (Anw)"
+msgstr "Nabestaandenverzekering (Anw)"
+
+#. module: l10n_nl_hr_payroll
+#: model:hr.salary.rule,name:l10n_nl_hr_payroll.l10n_nl_taxable_income
+#: model:hr.salary.rule.category,name:l10n_nl_hr_payroll.hr_salary_rule_category_taxable_income
+msgid "Taxable Income"
+msgstr "Belastbaar inkomen"
+
+#. module: l10n_nl_hr_payroll
+#: model_terms:hr.job,website_description:l10n_nl_hr_payroll.job_developer_dutch
+msgid "Technical Expertise"
+msgstr "Technische expertise"
+
+#. module: l10n_nl_hr_payroll
+#: model_terms:res.company,sign_terms:l10n_nl_hr_payroll.res_company_nl
+#: model_terms:res.company,sign_terms_html:l10n_nl_hr_payroll.res_company_nl
+msgid "Terms &amp; Conditions"
+msgstr "Algemene voorwaarden"
+
+#. module: l10n_nl_hr_payroll
+#: model:ir.model.fields,help:l10n_nl_hr_payroll.field_hr_contract__l10n_nl_30_percent
+msgid ""
+"The 30% reimbursement ruling (also known as the 30% facility) is a tax "
+"advantage for highly skilled migrants moving to the Netherlands for a "
+"specific employment role. When the necessary conditions are met, the "
+"employer can grant a tax-free allowance equivalent to 30% of the gross "
+"salary subject to Dutch payroll tax. This reimbursement is intended as "
+"compensation for the extra costs that international employees can incur when "
+"moving to a new country for their work. "
+msgstr ""
+"De 30%-teruggaveregeling (ook bekend als de 30%-regeling) is een "
+"belastingvoordeel voor hoogopgeleide buitenlandse werknemers die naar "
+"Nederland verhuizen voor een specifieke functie. Als er aan de nodige "
+"voorwaarden wordt voldaan, kan de werkgever een belastingvrije vergoeding "
+"toekennen ter hoogte van 30% van het brutoloon waarover Nederlandse "
+"loonbelasting wordt geheven. Deze vergoeding is een compensatie voor de "
+"extra kosten die internationale werknemers kunnen maken als ze voor hun werk "
+"naar een nieuw land verhuizen. "
+
+#. module: l10n_nl_hr_payroll
+#: model_terms:res.company,invoice_terms_html:l10n_nl_hr_payroll.res_company_nl
+msgid ""
+"The client explicitly waives its own standard terms and conditions, even if "
+"these were drawn up after these standard terms and conditions of sale. In "
+"order to be valid, any derogation must be expressly agreed to in advance in "
+"writing."
+msgstr ""
+"De opdrachtgever doet uitdrukkelijk afstand van zijn eigen "
+"standaardvoorwaarden, ook indien deze zijn opgesteld na deze algemene "
+"voorwaarden. Om geldig te zijn, moet elke afwijking vooraf uitdrukkelijk "
+"schriftelijk worden overeengekomen."
+
+#. module: l10n_nl_hr_payroll
+#: model_terms:hr.job,website_description:l10n_nl_hr_payroll.job_developer_dutch
+msgid "Trainings"
+msgstr "Trainings"
+
+#. module: l10n_nl_hr_payroll
+#: model:hr.salary.rule,name:l10n_nl_hr_payroll.l10n_nl_unemployment_insurance
+msgid "Unemployment Insurance (WW)"
+msgstr "Werkloosheidsverzekering (WW)"
+
+#. module: l10n_nl_hr_payroll
+#: model:hr.salary.rule,name:l10n_nl_hr_payroll.l10n_nl_ww_sector_fund
+msgid "Unemployment Insurance Sector Fund (WW)"
+msgstr "Sectorfonds voor Werkloosheidsverzekering (WW)"
+
+#. module: l10n_nl_hr_payroll
+#: model_terms:hr.job,website_description:l10n_nl_hr_payroll.job_developer_dutch
+msgid "Valid work permit for Belgium"
+msgstr "Geldig werkvisum voor België"
+
+#. module: l10n_nl_hr_payroll
+#: model_terms:hr.job,website_description:l10n_nl_hr_payroll.job_developer_dutch
+msgid "What We Offer"
+msgstr "Wat wij aanbieden"
+
+#. module: l10n_nl_hr_payroll
+#: model_terms:hr.job,website_description:l10n_nl_hr_payroll.job_developer_dutch
+msgid "What's great in the job?"
+msgstr "Wat is geweldig aan de baan?"
+
+#. module: l10n_nl_hr_payroll
+#: model_terms:res.company,invoice_terms_html:l10n_nl_hr_payroll.res_company_nl
+msgid "You should update this document to reflect your T&amp;C."
+msgstr "Je moet dit document bijwerken om je T&C weer te geven."
+
+#. module: l10n_nl_hr_payroll
+#: model_terms:res.company,sign_terms:l10n_nl_hr_payroll.res_company_nl
+#: model_terms:res.company,sign_terms_html:l10n_nl_hr_payroll.res_company_nl
+msgid "Your conditions..."
+msgstr "Je voorwaarden..."

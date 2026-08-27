@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo noupdate="1">
+    <!--
+        Feature-flag group toggled by Settings → RAG Odoo MCP Server → CRM Manager.
+        Brief menus and the "Claude Lead Brief" / "Claude brief" buttons require this
+        group, so they only appear when the checkbox is ON. The checkbox handler in
+        res.config.settings adds/removes this group from all internal users when saved.
+    -->
+    <record id="group_crm_manager" model="res.groups">
+        <field name="name">RAG Odoo MCP Server / CRM Manager</field>
+        <field name="category_id" ref="base.module_category_hidden"/>
+        <field name="comment">Grants access to lead-generation and mailing-campaign briefs (Claude lead brief, Claude campaign brief). Managed by the CRM Manager toggle in Settings → RAG Odoo MCP Server.</field>
+    </record>
+</odoo>

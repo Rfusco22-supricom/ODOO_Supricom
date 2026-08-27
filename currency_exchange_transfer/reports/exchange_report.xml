@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <record id="action_report_currency_exchange" model="ir.actions.report">
+        <field name="name">Exchange/Transfer Details</field>
+        <field name="model">currency.exchange.move</field>
+        <field name="report_type">qweb-pdf</field>
+        <field name="report_name">currency_exchange_transfer.report_exchange_details</field>
+        <field name="report_file">currency_exchange_transfer.report_exchange_details</field>
+        <field name="print_report_name">'Exchange - %s' % (object.name)</field>
+        <field name="binding_model_id" ref="model_currency_exchange_move"/>
+        <field name="binding_type">report</field>
+    </record>
+
+    <template id="report_exchange_details">
+        <t t-call="web.html_container">
+            <t t-foreach="docs" t-as="o">
+                <t t-call="web.external_layout">
+                    <div class="page">
+                        <h2>Currency Exchange / Transfer</h2>
+                        <h3><span t-field="o.name"/></h3>
+                        
+                        <div class="row mt32 mb32">
+                            <div class="col-6">
+                                <strong>Date:</strong> <span t-field="o.date"/>
+                            </div>
+                            <div class="col-6">
+                                <strong>Status:</strong> <span t-field="o.state"/>
+                            </div>
+                        </div>
+
+                        <div class="row mt32">
+                            <div class="col-6">
+                                <h4>Origin (Sent)</h4>
+                                <p>
+                                    <strong>Journal:</strong> <span t-field="o.journal_origin_id"/><br/>
+                                    <strong>Amount:</strong> <span t-field="o.amount_origin" t-options='{"widget": "monetary", "display_currency": o.currency_origin_id}'/>
+                                </p>
+                            </div>
+                            <div class="col-6">
+                                <h4>Destination (Received)</h4>
+                                <p>
+                                    <strong>Journal:</strong> <span t-field="o.journal_dest_id"/><br/>
+                                    <strong>Amount:</strong> <span t-field="o.amount_dest" t-options='{"widget": "monetary", "display_currency": o.currency_dest_id}'/>
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="row mt32">
+                            <div class="col-12">
+                                <h4>Accounting Entries</h4>
+                                <table class="table table-sm">
+                                    <thead>
+                                        <tr>
+                                            <th>Date</th>
+                                            <th>Number</th>
+                                            <th>Reference</th>
+                                            <th>Journal</th>
+                                            <th>Status</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr t-foreach="o.move_ids" t-as="move">
+                                            <td><span t-field="move.date"/></td>
+                                            <td><span t-field="move.name"/></td>
+                                            <td><span t-field="move.ref"/></td>
+                                            <td><span t-field="move.journal_id"/></td>
+                                            <td><span t-field="move.state"/></td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                </t>
+            </t>
+        </t>
+    </template>
+</odoo>

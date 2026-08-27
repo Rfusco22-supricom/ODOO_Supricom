@@ -1,0 +1,41 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<odoo>
+    <data>
+        <record id="extra_account_move_venezuela_g3c" model="ir.ui.view">
+            <field name="name">Extra account.move Venezuela G3C</field>
+            <field name="model">account.move</field>
+            <field name="inherit_id" ref="l10n_ve_full.extra_account_move_venezuela"/>
+            <field name="arch" type="xml">
+                <!-- AGREGAR COMENTARIO DE PRUEBA -->
+                <xpath expr="//field[@name='partner_id']" position="attributes">
+                    <attribute name="readonly">0</attribute>
+                </xpath>
+            </field>
+        </record>
+        <record id="extra_account_move_venezuela_inherit" model="ir.ui.view">
+            <field name="name">Extra account.move Venezuela inherit</field>
+            <field name="model">account.move</field>
+            <field name="inherit_id" ref="l10n_ve_full.extra_account_move_venezuela"/>
+            <field name="arch" type="xml">
+                <xpath expr="//field[@name='nro_ctrl']" position="after">
+                    <!-- required="move_type  in  ('out_invoice', 'out_refund', 'out_receipt') and not sin_cred" -->
+                    <field name="customer_invoice_number" force_save="1" string="Número de Factura de Cliente" required="0" readonly="1" invisible="move_type not in  ('out_invoice', 'out_refund', 'out_receipt')" context ="{'res_partner_search_mode': 'customer'}"/>
+                </xpath>
+                <!-- <xpath expr="//field[@name='supplier_invoice_number']" position="attributes">
+                    <attribute name="readonly">1</attribute>
+                    <attribute name="required">0</attribute>
+                </xpath> -->
+                <xpath expr="//field[@name='nro_ctrl']" position="attributes">
+                    <attribute name="readonly">move_type  in  ('out_invoice', 'out_refund', 'out_receipt')</attribute>
+                    <attribute name="required">move_type != 'entry' and move_type not in  ('out_invoice', 'out_refund', 'out_receipt')</attribute>
+                </xpath>
+                <xpath expr="//field[@name='sin_cred']" position="attributes">
+                    <attribute name="readonly">0</attribute>
+                    <attribute name="force_save">1</attribute>
+                </xpath>
+
+                
+            </field>
+        </record>
+    </data>
+</odoo>

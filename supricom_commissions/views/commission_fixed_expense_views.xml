@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+
+    <record id="view_commission_fixed_expense_tree" model="ir.ui.view">
+        <field name="name">commission.fixed.expense.tree</field>
+        <field name="model">commission.fixed.expense</field>
+        <field name="arch" type="xml">
+            <tree string="Gastos Fijos">
+                <field name="date_from"/>
+                <field name="date_to"/>
+                <field name="amount"/>
+                <field name="deduction_percentage" widget="percentage"/>
+                <field name="company_id" groups="base.group_multi_company"/>
+                <field name="currency_id" column_invisible="True"/>
+            </tree>
+        </field>
+    </record>
+
+    <record id="view_commission_fixed_expense_form" model="ir.ui.view">
+        <field name="name">commission.fixed.expense.form</field>
+        <field name="model">commission.fixed.expense</field>
+        <field name="arch" type="xml">
+            <form string="Gasto Fijo">
+                <header>
+                    <button name="action_calculate_deduction" string="Calcular Deducción" type="object" class="oe_highlight"/>
+                </header>
+                <sheet>
+                    <group>
+                        <field name="date_from"/>
+                        <field name="date_to"/>
+                        <field name="currency_id"/>
+                        <field name="amount"/>
+                        <field name="deduction_percentage" widget="percentage"/>
+                        <field name="company_id" groups="base.group_multi_company"/>
+                    </group>
+                </sheet>
+            </form>
+        </field>
+    </record>
+
+    <record id="action_commission_fixed_expense" model="ir.actions.act_window">
+        <field name="name">Gastos Fijos</field>
+        <field name="res_model">commission.fixed.expense</field>
+        <field name="view_mode">tree,form</field>
+    </record>
+
+    <menuitem id="menu_commission_fixed_expense"
+              name="Gastos Fijos"
+              parent="supricom_commissions.menu_commission_config"
+              action="action_commission_fixed_expense"
+              sequence="30"/>
+
+</odoo>

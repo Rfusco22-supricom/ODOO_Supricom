@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    
+    <!-- TREE VIEW -->
+    <record id="view_currency_exchange_config_tree" model="ir.ui.view">
+        <field name="name">currency.exchange.config.tree</field>
+        <field name="model">currency.exchange.config</field>
+        <field name="arch" type="xml">
+            <tree string="Configuración">
+                <field name="company_id"/>
+                <field name="transfer_account_id"/>
+                <field name="profit_loss_account_id"/>
+                <field name="journal_id"/>
+            </tree>
+        </field>
+    </record>
+
+    <!-- FORM VIEW -->
+    <record id="view_currency_exchange_config_form" model="ir.ui.view">
+        <field name="name">currency.exchange.config.form</field>
+        <field name="model">currency.exchange.config</field>
+        <field name="arch" type="xml">
+            <form string="Configuración">
+                <sheet>
+                    <div class="oe_title">
+                        <h1>
+                            <field name="company_id" options="{'no_create': True}" readonly="1" force_save="1"/> 
+                            <!-- Usually user wants to create one for their company. 
+                                 Default allows creation. User can't edit company if they only have ONE allowed. -->
+                        </h1>
+                    </div>
+                    <group>
+                        <group string="Cuentas Predeterminadas">
+                            <field name="transfer_account_id" help="Cuenta usada para movimientos transitorios (Puente)"/>
+                            <field name="profit_loss_account_id" help="Cuenta para registrar Ganancia/Perdida por cambio"/>
+                        </group>
+                        <group string="Opcional">
+                            <field name="journal_id" help="Diario usado para el asiento de diferencial"/>
+                        </group>
+                    </group>
+                </sheet>
+            </form>
+        </field>
+    </record>
+
+    <!-- ACTION -->
+    <record id="action_currency_exchange_config_model" model="ir.actions.act_window">
+        <field name="name">Configuración</field>
+        <field name="res_model">currency.exchange.config</field>
+        <field name="view_mode">tree,form</field>
+        <field name="help" type="html">
+          <p class="o_view_nocontent_smiling_face">
+            Definir configuración contable para Compra/Transferencia
+          </p>
+        </field>
+    </record>
+
+    <!-- MENU -->
+    <menuitem id="menu_currency_exchange_config" 
+              name="Configuración" 
+              parent="menu_currency_exchange_root" 
+              sequence="100" 
+              action="action_currency_exchange_config_model"
+              groups="currency_exchange_transfer.group_currency_exchange_manager"/>
+</odoo>

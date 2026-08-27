@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <record id="view_company_form_inherit_commissions" model="ir.ui.view">
+        <field name="name">res.company.form.inherit.commissions</field>
+        <field name="model">res.company</field>
+        <field name="inherit_id" ref="base.view_company_form"/>
+        <field name="arch" type="xml">
+            <xpath expr="//notebook" position="inside">
+                <page string="Comisiones" name="commissions_settings">
+                    <group>
+                        <group string="Reglas de Cumplimiento y Metas">
+                            <field name="commission_min_target_pct" string="% Meta Mínima de Ventas"/>
+                            <field name="commission_max_target_cap" string="Tope Máximo de Meta (%)"/>
+                            <field name="commission_use_targets"/>
+                            <field name="commission_target_mode" widget="radio" invisible="not commission_use_targets"/>
+                            <field name="commission_base_type" widget="radio"/>
+                        </group>
+                        <group string="Políticas de Cobranza y Gracia">
+                            <field name="commission_grace_days" string="Días de Gracia en Contado / Mora"/>
+                            <field name="commission_strict_full_payment" string="Exigir Pago 100% Completo"/>
+                            <field name="commission_payment_tolerance" string="Tolerancia de Pago (%)"/>
+                            <field name="commission_credit_threshold" widget="monetary" string="Umbral de Crédito"/>
+                        </group>
+                    </group>
+                </page>
+            </xpath>
+        </field>
+    </record>
+</odoo>

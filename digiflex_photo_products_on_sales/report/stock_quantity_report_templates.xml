@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <template id="report_stock_qty">
+        <t t-call="web.html_container">
+            <t t-call="web.external_layout">
+                <div class="page">
+                    <div class="text-center mb-4">
+                        <h2>Reporte de Existencias de Inventario</h2>
+                        <h5 t-if="wizard and wizard.company_id" t-esc="wizard.company_id.name"/>
+                    </div>
+
+                    <!-- Resumen de Filtros -->
+                    <div class="row mb-3" style="font-size: 0.9em; background-color: #f8f9fa; padding: 10px; border-radius: 5px;">
+                        <div class="col-6">
+                            <strong>Modalidad:</strong> <span t-esc="'Con Foto' if show_image else 'Sin Foto'"/><br/>
+                            <strong>Filtro Existencia:</strong> <span t-esc="'Solo cantidad > 0' if (wizard and wizard.only_with_stock) else 'Todos los ítems'"/>
+                        </div>
+                        <div class="col-6 text-end">
+                            <strong>Fecha de Emisión:</strong> <span t-esc="context_timestamp(datetime.datetime.now()).strftime('%d/%m/%Y %H:%M:%S')"/>
+                        </div>
+                    </div>
+
+                    <!-- Tabla de Productos -->
+                    <table class="table table-sm table-bordered mt-3" style="font-size: 0.85em; width: 100%;">
+                        <thead>
+                            <tr style="background-color: #343a40; color: #ffffff;">
+                                <th t-if="show_image" class="text-center" style="width: 70px;">Imagen</th>
+                                <th style="width: 15%;">Ref. Interna</th>
+                                <th>Producto</th>
+                                <th>Categoría</th>
+                                <th>Ubicación</th>
+                                <th class="text-end" style="width: 12%;">Cant. a Mano</th>
+                                <th class="text-end" style="width: 12%;">Reservado</th>
+                                <th class="text-end" style="width: 12%;">Disponible</th>
+                                <th class="text-center" style="width: 8%;">UdM</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <t t-foreach="lines" t-as="line">
+                                <tr>
+                                    <td t-if="show_image" class="text-center align-middle" style="padding: 2px;">
+                                        <t t-if="line['image']">
+                                            <img t-att-src="image_data_uri(line['image'])" style="max-height: 55px; max-width: 55px; object-fit: contain; border-radius: 3px;" alt="Foto"/>
+                                        </t>
+                                        <t t-else="">
+                                            <span class="text-muted" style="font-size: 0.8em;">Sin Foto</span>
+                                        </t>
+                                    </td>
+                                    <td class="align-middle"><span t-esc="line['default_code']"/></td>
+                                    <td class="align-middle"><strong><span t-esc="line['product_name']"/></strong></td>
+                                    <td class="align-middle"><span t-esc="line['category']"/></td>
+                                    <td class="align-middle"><span t-esc="line['location']"/></td>
+                                    <td class="text-end align-middle"><span t-esc="'%.2f' % line['quantity']"/></td>
+                                    <td class="text-end align-middle"><span t-esc="'%.2f' % line['reserved_quantity']"/></td>
+                                    <td class="text-end align-middle">
+                                        <strong t-attf-class="{{ 'text-success' if line['available_quantity'] > 0 else 'text-danger' }}">
+                                            <span t-esc="'%.2f' % line['available_quantity']"/>
+                                        </strong>
+                                    </td>
+                                    <td class="text-center align-middle"><span t-esc="line['uom']"/></td>
+                                </tr>
+                            </t>
+                        </tbody>
+                    </table>
+                </div>
+            </t>
+        </t>
+    </template>
+</odoo>

@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<templates>
+
+    <t t-name="account_dual_currency.MulticurrencyReportFilter" t-inherit="account_reports.AccountReportFilters" t-inherit-mode="extension">
+        
+        <xpath expr="//." position="inside">
+
+            <div id="filter_account" t-if="this.controller.options.selected_account_type.length > 0">
+                <Dropdown togglerClass="'btn btn-secondary'">
+                    <t t-set-slot="toggler">
+                        <i class="fa fa-percent me-1"/>Cuenta
+                    </t>
+
+                    <div class="dropdown-item">
+                        <label>Cuenta</label>
+                        <MultiRecordSelector 
+                            t-props="Object.assign(
+                                getMultiRecordSelectorProps('account.account','account_ids'),
+                                { domain: [['account_type','in', this.controller.options.selected_account_type]] }
+                            )"/>
+                    </div>
+                </Dropdown>
+            </div>
+        
+        </xpath>
+        
+        <xpath expr="//." position="inside">
+            <t t-if="'curr_conversion' in this.controller.options">
+                <div id="filter_multicurrency">
+                    <t t-call="account_dual_currency.MulticurrencyReport"/>
+                </div>
+            </t>
+        </xpath>
+    </t>
+  
+    <!-- <t t-name="account_dual_currency.SalesTeamReportFilter" t-inherit="account_reports.AccountReportFilterAccountType" t-inherit-mode="extension">
+        <xpath expr="//Dropdown" position="inside">
+            
+            <div class="dropdown-divider"/>
+            <div class="dropdown-item">
+                <label>Cuenta</label>
+                <MultiRecordSelector t-props="getMultiRecordSelectorProps('account.account', 'account_ids')"/>
+            </div>
+        </xpath>
+    </t> -->
+
+</templates>

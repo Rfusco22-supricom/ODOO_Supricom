@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data>
+        <record id="category_digiflex_stock" model="ir.module.category">
+            <field name="name">Restricciones de Stock DIGIFLEX</field>
+            <field name="description">Grupos de acceso para restricción de visualización de stock</field>
+            <field name="sequence">20</field>
+        </record>
+
+        <record id="group_hide_global_stock" model="res.groups">
+            <field name="name">Ocultar Stock Global A la Mano</field>
+            <field name="category_id" ref="category_digiflex_stock"/>
+            <field name="comment">Los usuarios pertenecientes a este grupo no verán el botón inteligente nativo de Stock Global A la Mano en la ficha del producto.</field>
+        </record>
+    </data>
+</odoo>

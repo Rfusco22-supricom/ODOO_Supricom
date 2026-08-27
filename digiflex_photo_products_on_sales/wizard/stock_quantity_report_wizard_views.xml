@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <record id="view_stock_quantity_report_wizard_form" model="ir.ui.view">
+        <field name="name">stock.quantity.report.wizard.form</field>
+        <field name="model">stock.quantity.report.wizard</field>
+        <field name="arch" type="xml">
+            <form string="Reporte de Existencias (Con/Sin Foto)">
+                <group>
+                    <group>
+                        <field name="company_id" options="{'no_create': True}"/>
+                        <field name="show_image" widget="boolean_toggle"/>
+                        <field name="only_with_stock" widget="boolean_toggle"/>
+                    </group>
+                    <group>
+                        <field name="location_ids" widget="many2many_tags" options="{'no_create': True}"/>
+                        <field name="category_ids" widget="many2many_tags" options="{'no_create': True}"/>
+                        <field name="product_ids" widget="many2many_tags" options="{'no_create': True}"/>
+                    </group>
+                </group>
+                <footer>
+                    <button name="action_print_report" string="Imprimir PDF" type="object" class="btn-primary" icon="fa-print"/>
+                    <button string="Cancelar" class="btn-secondary" special="cancel"/>
+                </footer>
+            </form>
+        </field>
+    </record>
+
+    <record id="action_stock_quantity_report_wizard" model="ir.actions.act_window">
+        <field name="name">Reporte de Existencias (Con/Sin Foto)</field>
+        <field name="res_model">stock.quantity.report.wizard</field>
+        <field name="view_mode">form</field>
+        <field name="target">new</field>
+    </record>
+
+    <menuitem id="menu_stock_quantity_report_photo"
+              name="Existencias (Con/Sin Foto)"
+              action="action_stock_quantity_report_wizard"
+              parent="stock.menu_warehouse_report"
+              sequence="100"/>
+</odoo>

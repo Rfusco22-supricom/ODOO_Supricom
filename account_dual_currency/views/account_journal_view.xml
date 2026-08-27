@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <record id="view_account_journal_form_inherit_dual_currency" model="ir.ui.view">
+        <field name="name">account.journal.form.inherit.dual.currency</field>
+        <field name="model">account.journal</field>
+        <field name="inherit_id" ref="account.view_account_journal_form"/>
+        <field name="arch" type="xml">
+            <xpath expr="//field[@name='type']" position="after">
+                <field name="exclude_from_dual_currency"/>
+            </xpath>
+        </field>
+    </record>
+</odoo>

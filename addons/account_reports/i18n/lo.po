@@ -1,0 +1,3486 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+# * account_reports
+#
+# Translators:
+# Martin Trigaux <mat@odoo.com>, 2017
+# ki dvd <soutsakhone.d@gmail.com>, 2017
+# Weblate <noreply-mt-weblate@weblate.org>, 2026.
+# Bone NI <bounkirdni@gmail.com>, 2026.
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 11.0+e\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2023-05-16 16:02+0000\n"
+"PO-Revision-Date: 2026-06-20 02:58+0000\n"
+"Last-Translator: Bone NI <bounkirdni@gmail.com>\n"
+"Language-Team: Lao <https://translate.odoo.com/projects/odoo-17/"
+"account_reports/lo/>\n"
+"Language: lo\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: \n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"X-Generator: Weblate 2026.6.1\n"
+
+#. module: account_reports
+#. odoo-python
+#: code:addons/account_reports/models/account_report.py:0
+#, python-format
+msgid " and %s others"
+msgstr " ແລະ ອື່ນໆ %s"
+
+#. module: account_reports
+#. odoo-python
+#: code:addons/account_reports/models/account_report.py:0
+#, python-format
+msgid " and one other"
+msgstr " ແລະ ອື່ນໆອີກ 1 ລາຍການ"
+
+#. module: account_reports
+#. odoo-javascript
+#: code:addons/account_reports/static/src/components/bank_reconciliation_report/account_report.xml:0
+#, python-format
+msgid "\" account balance is affected by"
+msgstr "\" ຍອດເຫຼືອບັນຊີໄດ້ຮັບຜົນກະທົບໂດຍ"
+
+#. module: account_reports
+#. odoo-python
+#: code:addons/account_reports/models/account_bank_reconciliation_report.py:0
+#, python-format
+msgid "%s for Transactions(+) imported from your online bank account (dated today) that are not yet reconciled in Odoo (Waiting the final reconciliation allowing finding the right account)"
+msgstr ""
+"%s ສໍາລັບ ລາຍການເຄື່ອນໄຫວ(+) ທີ່ນໍາເຂົ້າຈາກບັນຊີທະນາຄານອອນລາຍຂອງທ່ານ (ລົງວັນທີມື້ນີ້) ທີ່ຍັງບໍ່ທັນໄດ້ກວ"
+"ດສອບພິສູດຍອດໃນ Odoo (ກຳລັງຖ້າການກວດສອບພິສູດຍອດຂັ້ນສຸດທ້າຍ ເພື່ອຊອກຫາບັນຊີທີ່ຖືກຕ້ອງ)"
+
+#. module: account_reports
+#. odoo-python
+#: code:addons/account_reports/models/account_bank_reconciliation_report.py:0
+#, python-format
+msgid "%s for Transactions(-) imported from your online bank account (dated today) that are not yet reconciled in Odoo (Waiting the final reconciliation allowing finding the right account)"
+msgstr ""
+"%s ສໍາລັບ ລາຍການເຄື່ອນໄຫວ(-) ທີ່ນໍາເຂົ້າຈາກບັນຊີທະນາຄານອອນລາຍຂອງທ່ານ (ລົງວັນທີມື້ນີ້) ທີ່ຍັງບໍ່ທັນໄດ້ກວ"
+"ດສອບພິສູດຍອດໃນ Odoo (ກຳລັງຖ້າການກວດສອບພິສູດຍອດຂັ້ນສຸດທ້າຍ ເພື່ອຊອກຫາບັນຊີທີ່ຖືກຕ້ອງ)"
+
+#. module: account_reports
+#. odoo-python
+#: code:addons/account_reports/models/account_report.py:0
+#, python-format
+msgid "%s is not a numeric value"
+msgstr "%s ບໍ່ແມ່ນຄ່າຕົວເລກ"
+
+#. module: account_reports
+#. odoo-python
+#: code:addons/account_reports/models/account_report.py:0
+#, python-format
+msgid "'Open General Ledger' caret option is only available form report lines targetting accounts."
+msgstr ""
+"ຕົວເລືອກ 'ເປີດບັນຊີແຍກປະເພດທົ່ວໄປ' ສາມາດໃຊ້ໄດ້ສະເພາະກັບແຖວລາຍງານທີ່ກຳນົດເປົ້າໝາຍໃສ່ບັນຊີເທົ່ານັ້ນ."
+
+#. module: account_reports
+#. odoo-python
+#: code:addons/account_reports/models/account_report.py:0
+#, python-format
+msgid "'View Bank Statement' caret option is only available for report lines targeting bank statements."
+msgstr ""
+"ຕົວເລືອກ 'ເບິ່ງໃບແຈ້ງຍອດທະນາຄານ' ສາມາດໃຊ້ໄດ້ສະເພາະກັບແຖວລາຍງານທີ່ກຳນົດເປົ້າໝາຍໃສ່ໃບແຈ້ງຍອດທະ"
+"ນາຄານເທົ່ານັ້ນ."
+
+#. module: account_reports
+#. odoo-python
+#: code:addons/account_reports/models/account_report.py:0
+#, python-format
+msgid "'external' engine does not support groupby, limit nor offset."
+msgstr "ລະບົບ 'ພາຍນອກ' ບໍ່ຮອງຮັບ groupby, limit ຫຼື offset."
+
+#. module: account_reports
+#. odoo-python
+#: code:addons/account_reports/models/account_report.py:0
+#, python-format
+msgid "(%s lines)"
+msgstr "(%s ແຖວ)"
+
+#. module: account_reports
+#. odoo-python
+#: code:addons/account_reports/models/account_bank_reconciliation_report.py:0
+#, python-format
+msgid "(+) Outstanding Receipts"
+msgstr "(+) ເງິນຮັບທີ່ຍັງຄ້າງ"
+
+#. module: account_reports
+#. odoo-python
+#: code:addons/account_reports/models/account_bank_reconciliation_report.py:0
+#, python-format
+msgid "(-) Outstanding Payments"
+msgstr "(-) ເງິນຈ່າຍທີ່ຍັງຄ້າງ"
+
+#. module: account_reports
+#. odoo-python
+#: code:addons/account_reports/models/account_report.py:0
+#, python-format
+msgid "(1 line)"
+msgstr "(1 ແຖວ)"
+
+#. module: account_reports
+#. odoo-python
+#: code:addons/account_reports/models/account_report.py:0
+#, python-format
+msgid "(No Group)"
+msgstr "(ບໍ່ມີກຸ່ມ)"
+
+#. module: account_reports
+#: model_terms:ir.ui.view,arch_db:account_reports.journal_report_pdf_export_filters
+msgid ", Grouped by month"
+msgstr ", ກຸ່ມຕາມເດືອນ"
+
+#. module: account_reports
+#: model_terms:ir.ui.view,arch_db:account_reports.journal_report_pdf_export_filters
+msgid ", Sorted by date"
+msgstr ", ຮຽງຕາມວັນທີ"
+
+#. module: account_reports
+#: model_terms:ir.ui.view,arch_db:account_reports.journal_report_pdf_export_filters
+msgid ", Sorted by number"
+msgstr ", ຮຽງຕາມເລກທີ"
+
+#. module: account_reports
+#: model_terms:ir.ui.view,arch_db:account_reports.view_move_form_vat_return
+msgid "-> Check your tax report"
+msgstr "-> ກວດກາບົດລາຍງານພາສີຂອງທ່ານ"
+
+#. module: account_reports
+#: model_terms:ir.ui.view,arch_db:account_reports.view_move_form_vat_return
+msgid "-> Refresh"
+msgstr "-> ໂຫຼດໃໝ່"
+
+#. module: account_reports
+#: model:account.report.column,name:account_reports.aged_payable_report_period1
+#: model:account.report.column,name:account_reports.aged_receivable_report_period1
+msgid "1-30"
+msgstr "1-30"
+
+#. module: account_reports
+#: model:account.report.column,name:account_reports.aged_payable_report_period2
+#: model:account.report.column,name:account_reports.aged_receivable_report_period2
+msgid "31-60"
+msgstr "31-60"
+
+#. module: account_reports
+#: model:account.report.column,name:account_reports.aged_payable_report_period3
+#: model:account.report.column,name:account_reports.aged_receivable_report_period3
+msgid "61-90"
+msgstr "61-90"
+
+#. module: account_reports
+#: model:account.report.column,name:account_reports.aged_payable_report_period4
+#: model:account.report.column,name:account_reports.aged_receivable_report_period4
+msgid "91-120"
+msgstr "91-120"
+
+#. module: account_reports
+#: model_terms:ir.ui.view,arch_db:account_reports.pdf_export_filters
+msgid "<br/>Companies:"
+msgstr "<br/>ບໍລິສັດ:"
+
+#. module: account_reports
+#: model_terms:ir.ui.view,arch_db:account_reports.pdf_export_main
+msgid "<span class=\"o_account_reports_footnote_icons\"><i class=\"fa fa-fw fa-trash-o\" role=\"img\" aria-label=\"Delete\" title=\"Delete\"/></span>"
+msgstr ""
+"<span class=\"o_account_reports_footnote_icons\"><i class=\"fa fa-fw fa-"
+"trash-o\" role=\"img\" aria-label=\"Delete\" title=\"ລຶບ\"/></span>"
+
+#. module: account_reports
+#: model_terms:ir.ui.view,arch_db:account_reports.partner_view_buttons
+msgid "<span class=\"o_stat_text\">Partner Ledger</span>"
+msgstr "<span class=\"o_stat_text\">ບັນຊີແຍກປະເພດຄູ່ຄ້າ</span>"
+
+#. module: account_reports
+#: model_terms:ir.ui.view,arch_db:account_reports.journal_report_pdf_export_line
+msgid "=&gt; Audit"
+msgstr "=&gt; ກວດສອບ"
+
+#. module: account_reports
+#. odoo-javascript
+#: code:addons/account_reports/static/src/components/journal_report/line/line.xml:0
+#, python-format
+msgid "=> Audit"
+msgstr "=> ກວດສອບ"
+
+#. module: account_reports
+#. odoo-javascript
+#: code:addons/account_reports/static/src/components/journal_report/line_name.xml:0
+#, python-format
+msgid "=> Journal Items"
+msgstr "=> ລາຍການບັນຊີປະຈຳວັນ"
+
+#. module: account_reports
+#: model:ir.model.constraint,message:account_reports.constraint_account_report_horizontal_group_name_uniq
+msgid "A horizontal group with the same name already exists."
+msgstr "ມີກຸ່ມທາງຂວາງທີ່ມີຊື່ດຽວກັນນີ້ຢູ່ແລ້ວ."
+
+#. module: account_reports
+#. odoo-python
+#: code:addons/account_reports/models/account_tax.py:0
+#, python-format
+msgid "A tax unit can only be created between companies sharing the same main currency."
+msgstr ""
+"ໜ່ວຍງານພາສີສາມາດສ້າງຂຶ້ນໄດ້ລະຫວ່າງບໍລິສັດທີ່ໃຊ້ສະກຸນເງິນຫຼັກດຽວກັນເທົ່ານັ້ນ."
+
+#. module: account_reports
+#. odoo-python
+#: code:addons/account_reports/models/account_tax.py:0
+#, python-format
+msgid "A tax unit must contain a minimum of two companies. You might want to delete the unit."
+msgstr ""
+"ໜ່ວຍງານພາສີຕ້ອງປະກອບມີຢ່າງໜ້ອຍສອງບໍລິສັດ. ທ່ານອາດຈະຕ້ອງການລຶບໜ່ວຍງານນີ້ອອກ."
+
+#. module: account_reports
+#: model:account.report.line,name:account_reports.account_financial_report_total_assets0
+msgid "ASSETS"
+msgstr "ຊັບສິນ"
+
+#. module: account_reports
+#. odoo-python
+#: code:addons/account_reports/models/account_journal_report.py:0
+#: code:addons/account_reports/wizard/multicurrency_revaluation.py:0
+#: model:account.report.column,name:account_reports.aged_payable_report_account_name
+#: model:account.report.column,name:account_reports.aged_receivable_report_account_name
+#: model:account.report.column,name:account_reports.journal_report_communication
+#: model:account.report.column,name:account_reports.partner_ledger_report_account_code
+#: model:ir.model,name:account_reports.model_account_account
+#, python-format
+msgid "Account"
+msgstr "ບັນຊີ"
+
+#. module: account_reports
+#: model:ir.model,name:account_reports.model_account_chart_template
+msgid "Account Chart Template"
+msgstr "ແບບຜັງບັນຊີ"
+
+#. module: account_reports
+#. odoo-python
+#: code:addons/account_reports/models/account_report.py:0
+#, python-format
+msgid "Account Code"
+msgstr "ລະຫັດບັນຊີ"
+
+#. module: account_reports
+#: model:ir.model.fields,field_description:account_reports.field_res_company__account_display_representative_field
+msgid "Account Display Representative Field"
+msgstr "ຟິວສະແດງຕົວແທນບັນຊີ"
+
+#. module: account_reports
+#: model:ir.model,name:account_reports.model_account_report_custom_handler
+msgid "Account Report Custom Handler"
+msgstr "ຕົວຈັດການລາຍງານບັນຊີແບບກຳນົດເອງ"
+
+#. module: account_reports
+#: model:ir.model,name:account_reports.model_account_report_footnote
+msgid "Account Report Footnote"
+msgstr "ໝາຍເຫດທ້າຍລາຍງານບັນຊີ"
+
+#. module: account_reports
+#: model:ir.model,name:account_reports.model_account_tax_report_handler
+msgid "Account Report Handler for Tax Reports"
+msgstr "ຕົວຈັດການລາຍງານບັນຊີສຳລັບລາຍງານພາສີ"
+
+#. module: account_reports
+#: model:ir.model.fields,field_description:account_reports.field_res_partner__account_represented_company_ids
+#: model:ir.model.fields,field_description:account_reports.field_res_users__account_represented_company_ids
+msgid "Account Represented Company"
+msgstr "ບໍລິສັດທີ່ບັນຊີເປັນຕົວແທນ"
+
+#. module: account_reports
+#: model:ir.model.fields,field_description:account_reports.field_res_company__account_revaluation_journal_id
+msgid "Account Revaluation Journal"
+msgstr "ບັນຊີປະຈຳວັນການຕີລາຄາບັນຊີໃໝ່"
+
+#. module: account_reports
+#. odoo-javascript
+#: code:addons/account_reports/static/src/components/account_report/filters/filter_account_type.xml:0
+#, python-format
+msgid "Account:"
+msgstr "ບັນຊີ:"
+
+#. module: account_reports
+#: model:ir.model.fields,field_description:account_reports.field_res_company__account_representative_id
+msgid "Accounting Firm"
+msgstr "ບໍລິສັດບັນຊີ"
+
+#. module: account_reports
+#: model:ir.model,name:account_reports.model_account_report
+msgid "Accounting Report"
+msgstr "ບົດລາຍງານການບັນຊີ"
+
+#. module: account_reports
+#: model:ir.model,name:account_reports.model_account_report_line
+msgid "Accounting Report Line"
+msgstr "ແຖວບົດລາຍງານການບັນຊີ"
+
+#. module: account_reports
+#: model:ir.actions.act_window,name:account_reports.action_account_report_tree
+#: model:ir.ui.menu,name:account_reports.menu_action_account_report_tree
+#: model_terms:ir.ui.view,arch_db:account_reports.view_account_report_search
+msgid "Accounting Reports"
+msgstr "ບົດລາຍງານການບັນຊີ"
+
+#. module: account_reports
+#. odoo-javascript
+#: code:addons/account_reports/static/src/components/account_report/filters/filter_analytic.xml:0
+#: code:addons/account_reports/static/src/components/account_report/filters/filter_analytic_groupby.xml:0
+#, python-format
+msgid "Accounts"
+msgstr "ບັນຊີ"
+
+#. module: account_reports
+#: model_terms:ir.ui.view,arch_db:account_reports.account_report_form
+msgid "Accounts Coverage Report"
+msgstr "ບົດລາຍງານການກວມເອົາບັນຊີ"
+
+#. module: account_reports
+#: model:account.report.line,name:account_reports.multicurrency_revaluation_to_adjust
+msgid "Accounts To Adjust"
+msgstr "ບັນຊີທີ່ຕ້ອງປັບປຸງ"
+
+#. module: account_reports
+#. odoo-python
+#: code:addons/account_reports/models/account_report.py:0
+#, python-format
+msgid "Accounts coverage"
+msgstr "ການກວມເອົາບັນຊີ"
+
+#. module: account_reports
+#: model:ir.model.fields,field_description:account_reports.field_mail_activity_type__category
+msgid "Action"
+msgstr "ການດຳເນີນການ"
+
+#. module: account_reports
+#: model:ir.model.fields,help:account_reports.field_mail_activity_type__category
+msgid "Actions may trigger specific behavior like opening calendar view or automatically mark as done when a document is uploaded"
+msgstr ""
+"ການດຳເນີນການອາດຈະກະຕຸ້ນພຶດຕິກຳສະເພາະ ເຊັ່ນ: ການເປີດເບິ່ງປະຕິທິນ ຫຼື ໝາຍວ່າສຳເລັດໂດຍອັດຕະໂນມັດເມື່"
+"ອມີການອັບໂຫຼດເອກະສານ"
+
+#. module: account_reports
+#: model:ir.model,name:account_reports.model_mail_activity
+msgid "Activity"
+msgstr "ກິດຈະກຳ"
+
+#. module: account_reports
+#: model:ir.model,name:account_reports.model_mail_activity_type
+msgid "Activity Type"
+msgstr "ປະເພດກິດຈະກຳ"
+
+#. module: account_reports
+#: model:ir.model.fields,field_description:account_reports.field_res_company__totals_below_sections
+#: model:ir.model.fields,field_description:account_reports.field_res_config_settings__totals_below_sections
+msgid "Add totals below sections"
+msgstr "ເພີ່ມຍອດລວມໄວ້ລຸ່ມໝວດ"
+
+#. module: account_reports
+#: model:account.report.column,name:account_reports.multicurrency_revaluation_report_adjustment
+msgid "Adjustment"
+msgstr "ການປັບປຸງ"
+
+#. module: account_reports
+#. odoo-python
+#: code:addons/account_reports/models/account_multicurrency_revaluation_report.py:0
+#, python-format
+msgid "Adjustment Entry"
+msgstr "ລາຍການປັບປຸງ"
+
+#. module: account_reports
+#. odoo-python
+#: code:addons/account_reports/models/account_cash_flow_report.py:0
+#, python-format
+msgid "Advance Payments received from customers"
+msgstr "ເງິນຈ່າຍລ່ວງໜ້າທີ່ໄດ້ຮັບຈາກລູກຄ້າ"
+
+#. module: account_reports
+#. odoo-python
+#: code:addons/account_reports/models/account_cash_flow_report.py:0
+#, python-format
+msgid "Advance payments made to suppliers"
+msgstr "ເງິນຈ່າຍລ່ວງໜ້າໃຫ້ກັບຜູ້ສະໜອງ"
+
+#. module: account_reports
+#: model_terms:ir.ui.view,arch_db:account_reports.account_report_form
+msgid "Advanced"
+msgstr "ຂັ້ນສູງ"
+
+#. module: account_reports
+#: model:ir.model,name:account_reports.model_account_aged_partner_balance_report_handler
+msgid "Aged Partner Balance Custom Handler"
+msgstr "ຕົວຈັດການຍອດເຫຼືອຄູ່ຄ້າຕາມອາຍຸແບບກຳນົດເອງ"
+
+#. module: account_reports
+#: model:account.report,name:account_reports.aged_payable_report
+#: model:account.report.line,name:account_reports.aged_payable_line
+#: model:ir.actions.client,name:account_reports.action_account_report_ap
+#: model:ir.ui.menu,name:account_reports.menu_action_account_report_aged_payable
+msgid "Aged Payable"
+msgstr "ເຈົ້າໜີ້ຕາມອາຍຸໜີ້"
+
+#. module: account_reports
+#: model:ir.model,name:account_reports.model_account_aged_payable_report_handler
+msgid "Aged Payable Custom Handler"
+msgstr "ຕົວຈັດການເຈົ້າໜີ້ຕາມອາຍຸໜີ້ແບບກຳນົດເອງ"
+
+#. module: account_reports
+#: model_terms:ir.ui.view,arch_db:account_reports.account_reports_journal_dashboard_kanban_view
+msgid "Aged Payables"
+msgstr "ເຈົ້າໜີ້ຕາມອາຍຸໜີ້"
+
+#. module: account_reports
+#: model:account.report,name:account_reports.aged_receivable_report
+#: model:account.report.line,name:account_reports.aged_receivable_line
+#: model:ir.actions.client,name:account_reports.action_account_report_ar
+#: model:ir.ui.menu,name:account_reports.menu_action_account_report_aged_receivable
+msgid "Aged Receivable"
+msgstr "ລູກໜີ້ຕາມອາຍຸໜີ້"
+
+#. module: account_reports
+#: model:ir.model,name:account_reports.model_account_aged_receivable_report_handler
+msgid "Aged Receivable Custom Handler"
+msgstr "ຕົວຈັດການລູກໜີ້ຕາມອາຍຸໜີ້ແບບກຳນົດເອງ"
+
+#. module: account_reports
+#: model_terms:ir.ui.view,arch_db:account_reports.account_reports_journal_dashboard_kanban_view
+msgid "Aged Receivables"
+msgstr "ລູກໜີ້ຕາມອາຍຸໜີ້"
+
+#. module: account_reports
+#. odoo-javascript
+#: code:addons/account_reports/static/src/components/account_report/filters/filter_fiscal_position.xml:0
+#: model_terms:ir.ui.view,arch_db:account_reports.pdf_export_filters
+#, python-format
+msgid "All"
+msgstr "ທັງໝົດ"
+
+#. module: account_reports
+#. odoo-python
+#: code:addons/account_reports/models/account_report.py:0
+#, python-format
+msgid "All Journals"
+msgstr "ບັນຊີປະຈຳວັນທັງໝົດ"
+
+#. module: account_reports
+#. odoo-python
+#: code:addons/account_reports/models/account_report.py:0
+#, python-format
+msgid "All Payable"
+msgstr "ເຈົ້າໜີ້ທັງໝົດ"
+
+#. module: account_reports
+#. odoo-python
+#: code:addons/account_reports/models/account_report.py:0
+#, python-format
+msgid "All Receivable"
+msgstr "ລູກໜີ້ທັງໝົດ"
+
+#. module: account_reports
+#. odoo-python
+#: code:addons/account_reports/models/account_report.py:0
+#, python-format
+msgid "All receivable/payable"
+msgstr "ລູກໜີ້/ເຈົ້າໜີ້ທັງໝົດ"
+
+#. module: account_reports
+#: model:account.report.column,name:account_reports.account_financial_report_ec_sales_amount
+#: model:account.report.column,name:account_reports.bank_reconciliation_report_amount
+msgid "Amount"
+msgstr "ຈຳນວນເງິນ"
+
+#. module: account_reports
+#: model:account.report.column,name:account_reports.aged_payable_report_amount_currency
+#: model:account.report.column,name:account_reports.aged_receivable_report_amount_currency
+#: model:account.report.column,name:account_reports.bank_reconciliation_report_amount_currency
+#: model:account.report.column,name:account_reports.partner_ledger_report_amount_currency
+msgid "Amount Currency"
+msgstr "ຈຳນວນເງິນຕາ"
+
+#. module: account_reports
+#. odoo-python
+#: code:addons/account_reports/models/account_journal_report.py:0
+#, python-format
+msgid "Amount In Currency"
+msgstr "ຈຳນວນເປັນເງິນຕາ"
+
+#. module: account_reports
+#. odoo-python
+#: code:addons/account_reports/models/account_journal_report.py:0
+#, python-format
+msgid "Amount in currency: %s"
+msgstr "ຈຳນວນເປັນເງິນຕາ: %s"
+
+#. module: account_reports
+#: model_terms:ir.ui.view,arch_db:account_reports.pdf_export_filters
+msgid "Analytic Accounts:"
+msgstr "ບັນຊີວິເຄາະ:"
+
+#. module: account_reports
+#. odoo-javascript
+#: code:addons/account_reports/static/src/components/account_report/filters/filter_analytic.xml:0
+#, python-format
+msgid "Analytic Filter"
+msgstr "ຕົວກັ່ນຕອງວິເຄາະ"
+
+#. module: account_reports
+#. odoo-javascript
+#: code:addons/account_reports/static/src/components/account_report/filters/filter_analytic_groupby.xml:0
+#: model:ir.model.fields,field_description:account_reports.field_account_report__filter_analytic_groupby
+#, python-format
+msgid "Analytic Group By"
+msgstr "ກຸ່ມວິເຄາະໂດຍ"
+
+#. module: account_reports
+#: model_terms:ir.ui.view,arch_db:account_reports.pdf_export_filters
+msgid "Analytic Plans:"
+msgstr "ແຜນວິເຄາະ:"
+
+#. module: account_reports
+#. odoo-javascript
+#: code:addons/account_reports/static/src/components/account_report/footnote/dialog/footnote_dialog.js:0
+#: code:addons/account_reports/static/src/components/account_report/line_name/line_name.xml:0
+#, python-format
+msgid "Annotate"
+msgstr "ຂຽນຄໍາອະທິບາຍ"
+
+#. module: account_reports
+#. odoo-javascript
+#: code:addons/account_reports/static/src/components/account_report/filters/filter_comparison.xml:0
+#: code:addons/account_reports/static/src/components/account_report/filters/filter_date.xml:0
+#: code:addons/account_reports/static/src/components/multicurrency_revaluation_report/filters/filter_exchange_rate.xml:0
+#, python-format
+msgid "Apply"
+msgstr "ນຳໃຊ້"
+
+#. module: account_reports
+#. odoo-python
+#: code:addons/account_reports/models/account_report.py:0
+#, python-format
+msgid "As of %s"
+msgstr "ນະວັນທີ %s"
+
+#. module: account_reports
+#: model:account.report.column,name:account_reports.aged_payable_report_period0
+#: model:account.report.column,name:account_reports.aged_receivable_report_period0
+msgid "At Date"
+msgstr "ໃນວັນທີ"
+
+#. module: account_reports
+#. odoo-python
+#: code:addons/account_reports/models/account_generic_tax_report.py:0
+#, python-format
+msgid "Audit"
+msgstr "ກວດສອບ"
+
+#. module: account_reports
+#: model:ir.ui.menu,name:account_reports.account_reports_audit_reports_menu
+msgid "Audit Reports"
+msgstr "ບົດລາຍງານການກວດສອບ"
+
+#. module: account_reports
+#: model:account.report.line,name:account_reports.account_financial_report_executivesummary_avgcre0
+msgid "Average creditors days"
+msgstr "ສະເລ່ຍມື້ຊຳລະເຈົ້າໜີ້"
+
+#. module: account_reports
+#: model:account.report.line,name:account_reports.account_financial_report_executivesummary_avdebt0
+msgid "Average debtors days"
+msgstr "ສະເລ່ຍມື້ເກັບໜີ້ລູກໜີ້"
+
+#. module: account_reports
+#. odoo-python
+#: code:addons/account_reports/models/account_journal_report.py:0
+#, python-format
+msgid "B: %s"
+msgstr "B: %s"
+
+#. module: account_reports
+#. odoo-python
+#: code:addons/account_reports/models/account_journal_report.py:0
+#: model:account.report.column,name:account_reports.balance_sheet_balance
+#: model:account.report.column,name:account_reports.cash_flow_report_balance
+#: model:account.report.column,name:account_reports.executive_summary_column
+#: model:account.report.column,name:account_reports.general_ledger_report_balance
+#: model:account.report.column,name:account_reports.partner_ledger_report_balance
+#: model:account.report.column,name:account_reports.profit_and_loss_column
+#, python-format
+msgid "Balance"
+msgstr "ຍອດເຫຼືອ"
+
+#. module: account_reports
+#: model:account.report,name:account_reports.balance_sheet
+#: model:account.report.line,name:account_reports.account_financial_report_executivesummary_balancesheet0
+#: model:ir.actions.client,name:account_reports.action_account_report_bs
+#: model:ir.ui.menu,name:account_reports.menu_action_account_report_balance_sheet
+msgid "Balance Sheet"
+msgstr "ໃບສະຫຼຸບຊັບສົມບັດ"
+
+#. module: account_reports
+#: model:account.report.column,name:account_reports.multicurrency_revaluation_report_balance_current
+msgid "Balance at Current Rate"
+msgstr "ຍອດເຫຼືອຕາມອັດຕາປັດຈຸບັນ"
+
+#. module: account_reports
+#: model:account.report.column,name:account_reports.multicurrency_revaluation_report_balance_operation
+msgid "Balance at Operation Rate"
+msgstr "ຍອດເຫຼືອຕາມອັດຕາຕອນເຮັດລາຍການ"
+
+#. module: account_reports
+#: model:account.report.column,name:account_reports.multicurrency_revaluation_report_balance_currency
+msgid "Balance in Foreign Currency"
+msgstr "ຍອດເຫຼືອເປັນເງິນຕາຕ່າງປະເທດ"
+
+#. module: account_reports
+#. odoo-javascript
+#: code:addons/account_reports/static/src/components/aged_partner_balance/line_name/line_name.xml:0
+#, python-format
+msgid "Balance is bad"
+msgstr "ຍອດເຫຼືອບໍ່ດີ"
+
+#. module: account_reports
+#. odoo-javascript
+#: code:addons/account_reports/static/src/components/aged_partner_balance/line_name/line_name.xml:0
+#, python-format
+msgid "Balance is good"
+msgstr "ຍອດເຫຼືອດິ"
+
+#. module: account_reports
+#. odoo-javascript
+#: code:addons/account_reports/static/src/components/aged_partner_balance/line_name/line_name.xml:0
+#, python-format
+msgid "Balance is normal"
+msgstr "ຍອດເຫຼືອປົກກະຕິ"
+
+#. module: account_reports
+#. odoo-python
+#: code:addons/account_reports/models/account_bank_reconciliation_report.py:0
+#, python-format
+msgid "Balance of %s"
+msgstr "ຍອດເຫຼືອຂອງ %s"
+
+#. module: account_reports
+#. odoo-python
+#: code:addons/account_reports/models/account_generic_tax_report.py:0
+#, python-format
+msgid "Balance tax advance payment account"
+msgstr "ຍອດເຫຼືອບັນຊີເງິນຈ່າຍລ່ວງໜ້າພາສີ"
+
+#. module: account_reports
+#. odoo-python
+#: code:addons/account_reports/models/account_generic_tax_report.py:0
+#, python-format
+msgid "Balance tax current account (payable)"
+msgstr "ຍອດເຫຼືອບັນຊີເງິນຝາກພາສີ (ເຈົ້າໜີ້)"
+
+#. module: account_reports
+#. odoo-python
+#: code:addons/account_reports/models/account_generic_tax_report.py:0
+#, python-format
+msgid "Balance tax current account (receivable)"
+msgstr "ຍອດເຫຼືອບັນຊີເງິນຝາກພາສີ (ລູກໜີ້)"
+
+#. module: account_reports
+#: model:ir.actions.client,name:account_reports.action_account_report_bank_reconciliation
+msgid "Bank Reconciliation"
+msgstr "ການກວດສອບພິສູດຍອດທະນາຄານ"
+
+#. module: account_reports
+#: model:account.report,name:account_reports.bank_reconciliation_report
+msgid "Bank Reconciliation Report"
+msgstr "ບົດລາຍງານການກວດສອບພິສູດຍອດທະນາຄານ"
+
+#. module: account_reports
+#: model:ir.model,name:account_reports.model_account_bank_reconciliation_report_handler
+msgid "Bank Reconciliation Report Custom Handler"
+msgstr "ຕົວຈັດການບົດລາຍງານການກວດສອບພິສູດຍອດທະນາຄານແບບກຳນົດເອງ"
+
+#. module: account_reports
+#: model:account.report.line,name:account_reports.account_financial_report_bank_view0
+msgid "Bank and Cash Accounts"
+msgstr "ບັນຊີທະນາຄານ ແລະ ເງິນສົດ"
+
+#. module: account_reports
+#: model:ir.model,name:account_reports.model_bank_rec_widget
+msgid "Bank reconciliation widget for a single statement line"
+msgstr "ວິດເຈັດການກວດສອບພິສູດຍອດທະນາຄານສຳລັບແຖວໃບແຈ້ງຍອດດຽວ"
+
+#. module: account_reports
+#. odoo-python
+#. odoo-javascript
+#: code:addons/account_reports/models/account_general_ledger.py:0
+#: code:addons/account_reports/static/src/components/journal_report/line/line.xml:0
+#: model_terms:ir.ui.view,arch_db:account_reports.journal_report_pdf_export_line
+#, python-format
+msgid "Base Amount"
+msgstr "ຈຳນວນເງິນພື້ນຖານ"
+
+#. module: account_reports
+#. odoo-javascript
+#: code:addons/account_reports/static/src/components/account_report/footnote/dialog/footnote_dialog.xml:0
+#: code:addons/account_reports/static/src/components/aged_partner_balance/dialog/expected_date_dialog.xml:0
+#: model_terms:ir.ui.view,arch_db:account_reports.view_account_multicurrency_revaluation_wizard
+#: model_terms:ir.ui.view,arch_db:account_reports.view_report_export_wizard
+#, python-format
+msgid "Cancel"
+msgstr "ຍົກເລີກ"
+
+#. module: account_reports
+#. odoo-python
+#: code:addons/account_reports/models/account_generic_tax_report.py:0
+#, python-format
+msgid "Cannot audit tax from another model than account.tax."
+msgstr "ບໍ່ສາມາດກວດສອບພາສີຈາກໂມເດວອື່ນນອກຈາກ account.tax ໄດ້."
+
+#. module: account_reports
+#. odoo-python
+#: code:addons/account_reports/models/account_report.py:0
+#, python-format
+msgid "Cannot generate carryover values for all fiscal positions at once!"
+msgstr "ບໍ່ສາມາດສ້າງຄ່າຍົກໄປສຳລັບທຸກຕຳແໜ່ງງົບປະມານໃນບາດດຽວໄດ້!"
+
+#. module: account_reports
+#. odoo-javascript
+#: code:addons/account_reports/static/src/components/account_report/line_cell/popover/carryover_popover.xml:0
+#, python-format
+msgid "Carryover"
+msgstr "ຍົກໄປ"
+
+#. module: account_reports
+#. odoo-python
+#: code:addons/account_reports/models/account_report.py:0
+#, python-format
+msgid "Carryover adjustment for tax unit"
+msgstr "ການປັບປຸງຄ່າຍົກໄປສຳລັບໜ່ວຍງານພາສີ"
+
+#. module: account_reports
+#. odoo-python
+#: code:addons/account_reports/models/account_report.py:0
+#, python-format
+msgid "Carryover can only be generated for a single column group."
+msgstr "ຄ່າຍົກໄປສາມາດສ້າງໄດ້ສຳລັບກຸ່ມຖັນດຽວເທົ່ານັ້ນ."
+
+#. module: account_reports
+#. odoo-python
+#: code:addons/account_reports/models/account_report.py:0
+#, python-format
+msgid "Carryover from %s to %s"
+msgstr "ຍົກໄປຈາກ %s ຫາ %s"
+
+#. module: account_reports
+#: model:account.report.line,name:account_reports.account_financial_report_executivesummary_cash0
+msgid "Cash"
+msgstr "ເງິນສົດ"
+
+#. module: account_reports
+#: model:ir.model,name:account_reports.model_account_cash_flow_report_handler
+msgid "Cash Flow Report Custom Handler"
+msgstr "ຕົວຈັດການບົດລາຍງານກະແສເງິນສົດແບບກຳນົດເອງ"
+
+#. module: account_reports
+#: model:account.report,name:account_reports.cash_flow_report
+#: model:ir.actions.client,name:account_reports.action_account_report_cs
+#: model:ir.ui.menu,name:account_reports.menu_action_account_report_cash_flow
+msgid "Cash Flow Statement"
+msgstr "ບົດລາຍງານກະແສເງິນສົດ"
+
+#. module: account_reports
+#. odoo-python
+#: code:addons/account_reports/models/account_cash_flow_report.py:0
+#, python-format
+msgid "Cash and cash equivalents, beginning of period"
+msgstr "ເງິນສົດ ແລະ ລາຍການທຽບເທົ່າເງິນສົດ, ຕົ້ນງວດ"
+
+#. module: account_reports
+#. odoo-python
+#: code:addons/account_reports/models/account_cash_flow_report.py:0
+#, python-format
+msgid "Cash and cash equivalents, closing balance"
+msgstr "ເງິນສົດ ແລະ ລາຍການທຽບເທົ່າເງິນສົດ, ຍອດປິດ"
+
+#. module: account_reports
+#. odoo-python
+#: code:addons/account_reports/models/account_cash_flow_report.py:0
+#, python-format
+msgid "Cash flows from financing activities"
+msgstr "ກະແສເງິນສົດຈາກກິດຈະກຳຈັດຫາທຶນ"
+
+#. module: account_reports
+#. odoo-python
+#: code:addons/account_reports/models/account_cash_flow_report.py:0
+#, python-format
+msgid "Cash flows from investing & extraordinary activities"
+msgstr "ກະແສເງິນສົດຈາກກິດຈະກຳການລົງທຶນ ແລະ ກິດຈະກຳພິເສດ"
+
+#. module: account_reports
+#. odoo-python
+#: code:addons/account_reports/models/account_cash_flow_report.py:0
+#, python-format
+msgid "Cash flows from operating activities"
+msgstr "ກະແສເງິນສົດຈາກກິດຈະກຳດຳເນີນງານ"
+
+#. module: account_reports
+#. odoo-python
+#: code:addons/account_reports/models/account_cash_flow_report.py:0
+#, python-format
+msgid "Cash flows from unclassified activities"
+msgstr "ກະແສເງິນສົດຈາກກິດຈະກຳທີ່ບໍ່ໄດ້ຈັດປະເພດ"
+
+#. module: account_reports
+#. odoo-python
+#: code:addons/account_reports/models/account_cash_flow_report.py:0
+#, python-format
+msgid "Cash in"
+msgstr "ເງິນສົດເຂົ້າ"
+
+#. module: account_reports
+#. odoo-python
+#: code:addons/account_reports/models/account_cash_flow_report.py:0
+#, python-format
+msgid "Cash out"
+msgstr "ເງິນສົດອອກ"
+
+#. module: account_reports
+#. odoo-python
+#: code:addons/account_reports/models/account_cash_flow_report.py:0
+#, python-format
+msgid "Cash paid for operating activities"
+msgstr "ເງິນສົດທີ່ຈ່າຍສຳລັບກິດຈະກຳດຳເນີນງານ"
+
+#. module: account_reports
+#: model:account.report.line,name:account_reports.account_financial_report_executivesummary_cash_received0
+msgid "Cash received"
+msgstr "ເງິນສົດທີ່ໄດ້ຮັບ"
+
+#. module: account_reports
+#. odoo-python
+#: code:addons/account_reports/models/account_cash_flow_report.py:0
+#, python-format
+msgid "Cash received from operating activities"
+msgstr "ເງິນສົດທີ່ໄດ້ຮັບຈາກກິດຈະກຳດຳເນີນງານ"
+
+#. module: account_reports
+#: model:account.report.line,name:account_reports.account_financial_report_executivesummary_cash_spent0
+msgid "Cash spent"
+msgstr "ເງິນສົດທີ່ໃຊ້ຈ່າຍ"
+
+#. module: account_reports
+#: model:account.report.line,name:account_reports.account_financial_report_executivesummary_cash_surplus0
+msgid "Cash surplus"
+msgstr "ເງິນສົດສ່ວນເກີນ"
+
+#. module: account_reports
+#: model:ir.model,name:account_reports.model_account_change_lock_date
+msgid "Change Lock Date"
+msgstr "ປ່ຽນວັນທີລັອກ"
+
+#. module: account_reports
+#. odoo-javascript
+#: code:addons/account_reports/static/src/components/aged_partner_balance/line_name/line_name.js:0
+#, python-format
+msgid "Change expected date"
+msgstr "ປ່ຽນວັນທີທີ່ຄາດໄວ້"
+
+#. module: account_reports
+#. odoo-javascript
+#: code:addons/account_reports/static/src/components/aged_partner_balance/line_name/line_name.xml:0
+#, python-format
+msgid "Change expected payment date"
+msgstr "ປ່ຽນວັນທີຊຳລະທີ່ຄາດໄວ້"
+
+#. module: account_reports
+#. odoo-python
+#: code:addons/account_reports/models/account_generic_tax_report.py:0
+#, python-format
+msgid "Closing Entry"
+msgstr "ລາຍການປິດຕົວເລກ"
+
+#. module: account_reports
+#: model:account.report.line,name:account_reports.account_financial_report_executivesummary_closing_bank_balance0
+msgid "Closing bank balance"
+msgstr "ຍອດປິດບັນຊີທະນາຄານ"
+
+#. module: account_reports
+#. odoo-javascript
+#: code:addons/account_reports/static/src/components/sales_report/filters/filter_code.xml:0
+#, python-format
+msgid "Codes:"
+msgstr "ລະຫັດ:"
+
+#. module: account_reports
+#: model_terms:ir.ui.view,arch_db:account_reports.account_report_form
+msgid "Columns"
+msgstr "ຖັນ"
+
+#. module: account_reports
+#: model:account.report.column,name:account_reports.general_ledger_report_communication
+msgid "Communication"
+msgstr "ການຕິດຕໍ່ສື່ສານ"
+
+#. module: account_reports
+#: model:ir.model,name:account_reports.model_res_company
+#: model:ir.model.fields,field_description:account_reports.field_account_tax_unit__company_ids
+msgid "Companies"
+msgstr "ບໍລິສັດ"
+
+#. module: account_reports
+#: model:ir.model.fields,field_description:account_reports.field_account_multicurrency_revaluation_wizard__company_id
+msgid "Company"
+msgstr "ບໍລິສັດ"
+
+#. module: account_reports
+#. odoo-python
+#: code:addons/account_reports/models/account_tax.py:0
+#, python-format
+msgid "Company %s already belongs to a tax unit in %s. A company can at most be part of one tax unit per country."
+msgstr ""
+"ບໍລິສັດ %s ສັງກັດໃນໜ່ວຍງານພາສີໃນ %s ແລ້ວ. ບໍລິສັດໜຶ່ງສາມາດເປັນສ່ວນໜຶ່ງຂອງໜ່ວຍງານພາສີໄດ້ພຽງແຫ່ງດຽວຕໍ່"
+"ໜຶ່ງປະເທດ."
+
+#. module: account_reports
+#: model_terms:ir.ui.view,arch_db:account_reports.pdf_export_filters
+msgid "Company Currency:"
+msgstr "ສະກຸນເງິນຂອງບໍລິສັດ:"
+
+#. module: account_reports
+#. odoo-javascript
+#: code:addons/account_reports/static/src/components/account_report/filters/filter_tax_unit.xml:0
+#, python-format
+msgid "Company Only"
+msgstr "ສະເພາະບໍລິສັດ"
+
+#. module: account_reports
+#. odoo-python
+#: code:addons/account_reports/models/account_report.py:0
+#, python-format
+msgid "Company Settings"
+msgstr "ການຕັ້ງຄ່າບໍລິສັດ"
+
+#. module: account_reports
+#. odoo-javascript
+#: code:addons/account_reports/static/src/components/account_report/filters/filter_comparison.xml:0
+#, python-format
+msgid "Comparison:"
+msgstr "ການປຽບທຽບ:"
+
+#. module: account_reports
+#: model:ir.model,name:account_reports.model_res_config_settings
+msgid "Config Settings"
+msgstr "ການຕັ້ງຄ່າລະບົບ"
+
+#. module: account_reports
+#. odoo-python
+#: code:addons/account_reports/models/account_generic_tax_report.py:0
+#, python-format
+msgid "Configure your TAX accounts - %s"
+msgstr "ຕັ້ງຄ່າບັນຊີພາສີຂອງທ່ານ - %s"
+
+#. module: account_reports
+#: model_terms:ir.ui.view,arch_db:account_reports.res_config_settings_view_form
+msgid "Configure your tax accounts"
+msgstr "ຕັ້ງຄ່າບັນຊີພາສີຂອງທ່ານ"
+
+#. module: account_reports
+#: model:ir.model,name:account_reports.model_res_partner
+msgid "Contact"
+msgstr "ຜູ້ຕິດຕໍ່"
+
+#. module: account_reports
+#: model:account.report.line,name:account_reports.account_financial_report_cost_sales0
+#: model:account.report.line,name:account_reports.account_financial_report_executivesummary_direct_costs0
+msgid "Cost of Revenue"
+msgstr "ຕົ້ນທຶນຂອງລາຍໄດ້"
+
+#. module: account_reports
+#. odoo-python
+#: code:addons/account_reports/models/account_report.py:0
+#, python-format
+msgid "Could not expand term %s while evaluating formula %s"
+msgstr "ບໍ່ສາມາດຂະຫຍາຍຄຳສັບ %s ໃນຂະນະທີ່ຄິດໄລ່ສູດ %s"
+
+#. module: account_reports
+#. odoo-python
+#: code:addons/account_reports/models/account_report.py:0
+#, python-format
+msgid "Could not parse account_code formula from token '%s'"
+msgstr "ບໍ່ສາມາດວິເຄາະສູດ account_code ຈາກ token '%s'"
+
+#. module: account_reports
+#. odoo-javascript
+#: code:addons/account_reports/static/src/components/journal_report/line/line.xml:0
+#: model:ir.model.fields,field_description:account_reports.field_account_tax_unit__country_id
+#: model_terms:ir.ui.view,arch_db:account_reports.journal_report_pdf_export_line
+#: model_terms:ir.ui.view,arch_db:account_reports.view_account_report_search
+#, python-format
+msgid "Country"
+msgstr "ປະເທດ"
+
+#. module: account_reports
+#: model:account.report.column,name:account_reports.account_financial_report_ec_sales_country
+msgid "Country Code"
+msgstr "ລະຫັດປະເທດ"
+
+#. module: account_reports
+#: model_terms:ir.ui.view,arch_db:account_reports.view_account_multicurrency_revaluation_wizard
+msgid "Create Entry"
+msgstr "ສ້າງລາຍການ"
+
+#. module: account_reports
+#: model:ir.actions.server,name:account_reports.action_create_report_menu
+msgid "Create Menu Item"
+msgstr "ສ້າງລາຍການເມນູ"
+
+#. module: account_reports
+#: model:ir.model.fields,field_description:account_reports.field_account_multicurrency_revaluation_wizard__create_uid
+#: model:ir.model.fields,field_description:account_reports.field_account_report_footnote__create_uid
+#: model:ir.model.fields,field_description:account_reports.field_account_report_horizontal_group__create_uid
+#: model:ir.model.fields,field_description:account_reports.field_account_report_horizontal_group_rule__create_uid
+#: model:ir.model.fields,field_description:account_reports.field_account_reports_export_wizard__create_uid
+#: model:ir.model.fields,field_description:account_reports.field_account_reports_export_wizard_format__create_uid
+#: model:ir.model.fields,field_description:account_reports.field_account_tax_unit__create_uid
+msgid "Created by"
+msgstr "ສ້າງໂດຍ"
+
+#. module: account_reports
+#: model:ir.model.fields,field_description:account_reports.field_account_multicurrency_revaluation_wizard__create_date
+#: model:ir.model.fields,field_description:account_reports.field_account_report_footnote__create_date
+#: model:ir.model.fields,field_description:account_reports.field_account_report_horizontal_group__create_date
+#: model:ir.model.fields,field_description:account_reports.field_account_report_horizontal_group_rule__create_date
+#: model:ir.model.fields,field_description:account_reports.field_account_reports_export_wizard__create_date
+#: model:ir.model.fields,field_description:account_reports.field_account_reports_export_wizard_format__create_date
+#: model:ir.model.fields,field_description:account_reports.field_account_tax_unit__create_date
+msgid "Created on"
+msgstr "ສ້າງເມື່ອ"
+
+#. module: account_reports
+#. odoo-python
+#: code:addons/account_reports/models/account_journal_report.py:0
+#: code:addons/account_reports/wizard/multicurrency_revaluation.py:0
+#: model:account.report.column,name:account_reports.general_ledger_report_credit
+#: model:account.report.column,name:account_reports.journal_report_debit
+#: model:account.report.column,name:account_reports.partner_ledger_report_credit
+#: model:account.report.column,name:account_reports.trial_balance_report_credit
+#, python-format
+msgid "Credit"
+msgstr "ເງິນມີ"
+
+#. module: account_reports
+#: model:account.report.column,name:account_reports.aged_payable_report_currency
+#: model:account.report.column,name:account_reports.aged_receivable_report_currency
+#: model:account.report.column,name:account_reports.bank_reconciliation_report_currency
+#: model:account.report.column,name:account_reports.general_ledger_report_amount_currency
+msgid "Currency"
+msgstr "ເງິນຕາ"
+
+#. module: account_reports
+#. odoo-python
+#: code:addons/account_reports/models/account_multicurrency_revaluation_report.py:0
+#, python-format
+msgid "Currency Rates (%s)"
+msgstr "ອັດຕາແລກປ່ຽນ (%s)"
+
+#. module: account_reports
+#: model:account.report.line,name:account_reports.account_financial_report_current_assets0
+#: model:account.report.line,name:account_reports.account_financial_report_current_assets_view0
+msgid "Current Assets"
+msgstr "ຊັບສິນໝູນວຽນ"
+
+#. module: account_reports
+#: model:account.report.line,name:account_reports.account_financial_report_current_liabilities0
+#: model:account.report.line,name:account_reports.account_financial_report_current_liabilities1
+msgid "Current Liabilities"
+msgstr "ໜີ້ສິນໝູນວຽນ"
+
+#. module: account_reports
+#: model:account.report.line,name:account_reports.account_financial_current_year_earnings_line_2
+msgid "Current Year Allocated Earnings"
+msgstr "ກຳໄລຈັດສັນໃນປີປັດຈຸບັນ"
+
+#. module: account_reports
+#: model:account.report.line,name:account_reports.account_financial_current_year_earnings_line_1
+msgid "Current Year Earnings"
+msgstr "ກຳໄລໃນປີປັດຈຸບັນ"
+
+#. module: account_reports
+#: model:account.report.line,name:account_reports.account_financial_current_year_earnings0
+msgid "Current Year Unallocated Earnings"
+msgstr "ກຳໄລທີ່ບໍ່ທັນໄດ້ຈັດສັນໃນປີປັດຈຸບັນ"
+
+#. module: account_reports
+#: model:account.report.line,name:account_reports.account_financial_report_executivesummary_ca_to_l0
+msgid "Current assets to liabilities"
+msgstr "ອັດຕາສ່ວນຊັບສິນໝູນວຽນຕໍ່ໜີ້ສິນ"
+
+#. module: account_reports
+#. odoo-javascript
+#: code:addons/account_reports/static/src/components/account_report/filters/filter_comparison.xml:0
+#: code:addons/account_reports/static/src/components/account_report/filters/filter_date.xml:0
+#, python-format
+msgid "Custom"
+msgstr "ກຳນົດເອງ"
+
+#. module: account_reports
+#: model:ir.model.fields,field_description:account_reports.field_account_report__custom_handler_model_id
+msgid "Custom Handler Model"
+msgstr "ໂມເດວຕົວຈັດການແບບກຳນົດເອງ"
+
+#. module: account_reports
+#: model:ir.model.fields,field_description:account_reports.field_account_report__custom_handler_model_name
+msgid "Custom Handler Model Name"
+msgstr "ຊື່ໂມເດວຕົວຈັດການແບບກຳນົດເອງ"
+
+#. module: account_reports
+#: model:account.report.column,name:account_reports.bank_reconciliation_report_date
+#: model:account.report.column,name:account_reports.general_ledger_report_date
+#: model:ir.model.fields,field_description:account_reports.field_account_multicurrency_revaluation_wizard__date
+msgid "Date"
+msgstr "ວັນທີ"
+
+#. module: account_reports
+#. odoo-javascript
+#: code:addons/account_reports/static/src/components/account_report/filters/filter_comparison.xml:0
+#: code:addons/account_reports/static/src/components/account_report/filters/filter_date.xml:0
+#, python-format
+msgid "Date :"
+msgstr "ວັນທີ :"
+
+#. module: account_reports
+#. odoo-javascript
+#: code:addons/account_reports/static/src/components/account_report/filters/filters.js:0
+#, python-format
+msgid "Date cannot be empty"
+msgstr "ວັນທີບໍ່ສາມາດຫວ່າງເປົ່າໄດ້"
+
+#. module: account_reports
+#. odoo-python
+#: code:addons/account_reports/models/account_journal_report.py:0
+#: code:addons/account_reports/wizard/multicurrency_revaluation.py:0
+#: model:account.report.column,name:account_reports.general_ledger_report_debit
+#: model:account.report.column,name:account_reports.journal_report_amount_currency
+#: model:account.report.column,name:account_reports.partner_ledger_report_debit
+#: model:account.report.column,name:account_reports.trial_balance_report_debit
+#, python-format
+msgid "Debit"
+msgstr "ເງິນຕ້ອງ"
+
+#. module: account_reports
+#: model_terms:ir.ui.view,arch_db:account_reports.account_report_expression_form
+msgid "Definition"
+msgstr "ຄຳນິຍາມ"
+
+#. module: account_reports
+#: model:ir.model.fields,field_description:account_reports.field_res_company__account_tax_periodicity
+msgid "Delay units"
+msgstr "ຫົວໜ່ວຍການຊັກຊ້າ"
+
+#. module: account_reports
+#: model:account.report.line,name:account_reports.account_financial_report_depreciation0
+msgid "Depreciation"
+msgstr "ຄ່າຫຼຸ້ຍຫ້ຽນ"
+
+#. module: account_reports
+#: model:ir.model.fields,field_description:account_reports.field_account_multicurrency_revaluation_wizard__display_name
+#: model:ir.model.fields,field_description:account_reports.field_account_report_footnote__display_name
+#: model:ir.model.fields,field_description:account_reports.field_account_report_horizontal_group__display_name
+#: model:ir.model.fields,field_description:account_reports.field_account_report_horizontal_group_rule__display_name
+#: model:ir.model.fields,field_description:account_reports.field_account_reports_export_wizard__display_name
+#: model:ir.model.fields,field_description:account_reports.field_account_reports_export_wizard_format__display_name
+#: model:ir.model.fields,field_description:account_reports.field_account_tax_unit__display_name
+msgid "Display Name"
+msgstr "ຊື່ສະແດງ"
+
+#. module: account_reports
+#: model:ir.model.fields,field_description:account_reports.field_account_reports_export_wizard__doc_name
+msgid "Documents Name"
+msgstr "ຊື່ເອກະສານ"
+
+#. module: account_reports
+#: model:ir.model.fields,field_description:account_reports.field_account_report_horizontal_group_rule__domain
+msgid "Domain"
+msgstr "ໂດເມນ"
+
+#. module: account_reports
+#. odoo-javascript
+#: code:addons/account_reports/static/src/components/account_report/filters/filter_fiscal_position.xml:0
+#, python-format
+msgid "Domestic"
+msgstr "ພາຍໃນປະເທດ"
+
+#. module: account_reports
+#: model_terms:ir.ui.view,arch_db:account_reports.res_config_settings_view_form
+msgid "Download the Data Inalterability Check Report"
+msgstr "ດາວໂຫຼດບົດລາຍງານການກວດສອບຄວາມບໍ່ປ່ຽນແປງຂອງຂໍ້ມູນ"
+
+#. module: account_reports
+#: model:account.report.column,name:account_reports.partner_ledger_report_date_maturity
+msgid "Due Date"
+msgstr "ວັນຄົບກຳນົດ"
+
+#. module: account_reports
+#: model:ir.actions.client,name:account_reports.action_account_report_sales
+#: model:ir.ui.menu,name:account_reports.menu_action_account_report_sales
+msgid "EC Sales List"
+msgstr "ລາຍຊື່ການຂາຍ EC"
+
+#. module: account_reports
+#: model:ir.model,name:account_reports.model_account_ec_sales_report_handler
+msgid "EC Sales Report Custom Handler"
+msgstr "ຕົວຈັດການບົດລາຍງານການຂາຍ EC ແບບກຳນົດເອງ"
+
+#. module: account_reports
+#. odoo-python
+#: code:addons/account_reports/models/account_sales_report.py:0
+#, python-format
+msgid "EC tax on non EC countries"
+msgstr "ພາສີ EC ໃນປະເທດທີ່ບໍ່ແມ່ນ EC"
+
+#. module: account_reports
+#. odoo-python
+#: code:addons/account_reports/models/account_sales_report.py:0
+#, python-format
+msgid "EC tax on same country"
+msgstr "ພາສີ EC ໃນປະເທດດຽວກັນ"
+
+#. module: account_reports
+#: model:account.report.line,name:account_reports.account_financial_report_equity0
+msgid "EQUITY"
+msgstr "ສ່ວນຂອງເຈົ້າຂອງ"
+
+#. module: account_reports
+#. odoo-python
+#: code:addons/account_reports/models/account_report.py:0
+#, python-format
+msgid "Editing a manual report line is not allowed in multivat setup when displaying data from all fiscal positions."
+msgstr ""
+"ການແກ້ໄຂແຖວລາຍງານດ້ວຍຕົນເອງບໍ່ໄດ້ຮັບອະນຸຍາດໃນການຕັ້ງຄ່າຫຼາຍພາສີ ເມື່ອສະແດງຂໍ້ມູນຈາກທຸກຕຳແໜ່ງງົບປະມ"
+"ານ."
+
+#. module: account_reports
+#. odoo-python
+#: code:addons/account_reports/models/account_report.py:0
+#, python-format
+msgid "Editing a manual report line is not allowed when multiple companies are selected."
+msgstr "ການແກ້ໄຂແຖວລາຍງານດ້ວຍຕົນເອງບໍ່ໄດ້ຮັບອະນຸຍາດ ເມື່ອເລືອກຫຼາຍບໍລິສັດ."
+
+#. module: account_reports
+#. odoo-python
+#: code:addons/account_reports/models/account_trial_balance_report.py:0
+#, python-format
+msgid "End Balance"
+msgstr "ຍອດປິດ"
+
+#. module: account_reports
+#. odoo-javascript
+#: code:addons/account_reports/static/src/components/account_report/filters/filter_comparison.xml:0
+#: code:addons/account_reports/static/src/components/account_report/filters/filter_date.xml:0
+#, python-format
+msgid "End Date :"
+msgstr "ວັນທີສິ້ນສຸດ :"
+
+#. module: account_reports
+#. odoo-javascript
+#: code:addons/account_reports/static/src/components/account_report/filters/filter_date.xml:0
+#, python-format
+msgid "End of Last Financial Year"
+msgstr "ທ້າຍປີການເງິນທີ່ຜ່ານມາ"
+
+#. module: account_reports
+#. odoo-javascript
+#: code:addons/account_reports/static/src/components/account_report/filters/filter_date.xml:0
+#, python-format
+msgid "End of Last Month"
+msgstr "ທ້າຍເດືອນທີ່ຜ່ານມາ"
+
+#. module: account_reports
+#. odoo-javascript
+#: code:addons/account_reports/static/src/components/account_report/filters/filter_date.xml:0
+#, python-format
+msgid "End of Last Quarter"
+msgstr "ທ້າຍໄຕມາດທີ່ຜ່ານມາ"
+
+#. module: account_reports
+#. odoo-python
+#: code:addons/account_reports/models/account_journal_report.py:0
+#, python-format
+msgid "Ending Balance:"
+msgstr "ຍອດເຫຼືອປິດ:"
+
+#. module: account_reports
+#. odoo-python
+#: code:addons/account_reports/models/account_sales_report.py:0
+#, python-format
+msgid "Entries with partners with no VAT"
+msgstr "ລາຍການກັບຄູ່ຄ້າທີ່ບໍ່ມີເລກປະຈຳຕົວພາສີ"
+
+#. module: account_reports
+#. odoo-python
+#: code:addons/account_reports/models/account_report.py:0
+#, python-format
+msgid "Error message"
+msgstr "ຂໍ້ຄວາມຜິດພາດ"
+
+#. module: account_reports
+#. odoo-javascript
+#: code:addons/account_reports/static/src/components/multicurrency_revaluation_report/filters/filter_exchange_rate.xml:0
+#, python-format
+msgid "Exchange Rates"
+msgstr "ອັດຕາແລກປ່ຽນ"
+
+#. module: account_reports
+#: model:ir.model.fields,field_description:account_reports.field_account_account__exclude_provision_currency_ids
+msgid "Exclude Provision Currency"
+msgstr "ຍົກເວັ້ນສະກຸນເງິນສຳຮອງ"
+
+#. module: account_reports
+#: model:account.report.line,name:account_reports.multicurrency_revaluation_excluded
+msgid "Excluded Accounts"
+msgstr "ບັນຊີທີ່ຖືກຍົກເວັ້ນ"
+
+#. module: account_reports
+#: model:account.report,name:account_reports.executive_summary
+#: model:ir.actions.client,name:account_reports.action_account_report_exec_summary
+#: model:ir.ui.menu,name:account_reports.menu_action_account_report_exec_summary
+msgid "Executive Summary"
+msgstr "ບົດສະຫຼຸບຜູ້ບໍລິຫານ"
+
+#. module: account_reports
+#: model:account.report.column,name:account_reports.aged_payable_report_expected_date
+#: model:account.report.column,name:account_reports.aged_receivable_report_expected_date
+#: model:ir.model.fields,field_description:account_reports.field_account_move_line__expected_pay_date
+msgid "Expected Date"
+msgstr "ວັນທີທີ່ຄາດໄວ້"
+
+#. module: account_reports
+#: model:ir.model.fields,help:account_reports.field_account_move_line__expected_pay_date
+msgid "Expected payment date as manually set through the customer statement(e.g: if you had the customer on the phone and want to remember the date he promised he would pay)"
+msgstr ""
+"ວັນທີຊຳລະທີ່ຄາດໄວ້ ເຊິ່ງຕັ້ງຄ່າດ້ວຍຕົນເອງຜ່ານໃບແຈ້ງຍອດລູກຄ້າ (ຕົວຢ່າງ: ຖ້າທ່ານໄດ້ໂທຫາລູກຄ້າ ແລະ ຕ້ອງກ"
+"ານຈົດຈຳວັນທີທີ່ລາວສັນຍາວ່າຈະຊຳລະ)"
+
+#. module: account_reports
+#. odoo-python
+#: code:addons/account_reports/models/account_aged_partner_balance.py:0
+#, python-format
+msgid "Expected payment date for journal item \"%s\" has been changed from %s to %s on journal entry \"%s\""
+msgstr ""
+"ວັນທີຊຳລະທີ່ຄາດໄວ້ສຳລັບລາຍການບັນຊີ \"%s\" ໄດ້ຖືກປ່ຽນຈາກ %s ເປັນ %s ໃນໃບຕາດິນ \"%s\""
+
+#. module: account_reports
+#: model:ir.model.fields,field_description:account_reports.field_account_multicurrency_revaluation_wizard__expense_provision_account_id
+msgid "Expense Account"
+msgstr "ບັນຊີລາຍຈ່າຍ"
+
+#. module: account_reports
+#: model:ir.model.fields,field_description:account_reports.field_res_company__account_revaluation_expense_provision_account_id
+msgid "Expense Provision Account"
+msgstr "ບັນຊີສຳຮອງລາຍຈ່າຍ"
+
+#. module: account_reports
+#. odoo-python
+#: code:addons/account_reports/wizard/multicurrency_revaluation.py:0
+#, python-format
+msgid "Expense Provision for %s"
+msgstr "ການສຳຮອງລາຍຈ່າຍສຳລັບ %s"
+
+#. module: account_reports
+#: model:account.report.line,name:account_reports.account_financial_report_executivesummary_expenses0
+#: model:account.report.line,name:account_reports.account_financial_report_expense0
+#: model:account.report.line,name:account_reports.account_financial_report_less_expenses0
+msgid "Expenses"
+msgstr "ລາຍຈ່າຍ"
+
+#. module: account_reports
+#. odoo-python
+#: code:addons/account_reports/models/account_report.py:0
+#: model_terms:ir.ui.view,arch_db:account_reports.view_report_export_wizard
+#, python-format
+msgid "Export"
+msgstr "ສົ່ງອອກ"
+
+#. module: account_reports
+#: model:ir.model,name:account_reports.model_account_reports_export_wizard_format
+msgid "Export format for accounting's reports"
+msgstr "ຮູບແບບການສົ່ງອອກສຳລັບບົດລາຍງານການບັນຊີ"
+
+#. module: account_reports
+#: model:ir.model.fields,field_description:account_reports.field_account_reports_export_wizard__export_format_ids
+msgid "Export to"
+msgstr "ສົ່ງອອກເປັນ"
+
+#. module: account_reports
+#: model:ir.model,name:account_reports.model_account_reports_export_wizard
+msgid "Export wizard for accounting's reports"
+msgstr "ຕົວຊ່ວຍສົ່ງອອກສຳລັບບົດລາຍງານການບັນຊີ"
+
+#. module: account_reports
+#: model_terms:ir.ui.view,arch_db:account_reports.account_report_expression_form
+msgid "Expression"
+msgstr "ສູດຄິດໄລ່"
+
+#. module: account_reports
+#: model:ir.model.fields,field_description:account_reports.field_account_report_horizontal_group_rule__field_name
+msgid "Field"
+msgstr "ຟິວ"
+
+#. module: account_reports
+#. odoo-python
+#: code:addons/account_reports/models/account_report.py:0
+#, python-format
+msgid "Field %s does not exist on account.move.line."
+msgstr "ຟິວ %s ບໍ່ມີຢູ່ໃນ account.move.line."
+
+#. module: account_reports
+#. odoo-python
+#: code:addons/account_reports/models/account_report.py:0
+#, python-format
+msgid "Field %s of account.move.line is not stored, and hence cannot be used in a groupby expression"
+msgstr ""
+"ຟິວ %s ຂອງ account.move.line ບໍ່ໄດ້ຖືກເກັບໄວ້, ດັ່ງນັ້ນຈຶ່ງບໍ່ສາມາດໃຊ້ໃນສູດ groupby ໄດ້"
+
+#. module: account_reports
+#. odoo-python
+#: code:addons/account_reports/models/account_report.py:0
+#, python-format
+msgid "Field 'Custom Handler Model' can only reference records inheriting from [%s]."
+msgstr ""
+"ຟິວ 'ໂມເດວຕົວຈັດການແບບກຳນົດເອງ' ສາມາດອ້າງອີງໃສ່ບັນທຶກທີ່ສືບທອດມາຈາກ [%s] ເທົ່ານັ້ນ."
+
+#. module: account_reports
+#: model_terms:ir.ui.view,arch_db:account_reports.pdf_export_filters
+msgid "Filter:"
+msgstr "ຕົວກັ່ນຕອງ:"
+
+#. module: account_reports
+#: model_terms:ir.ui.view,arch_db:account_reports.account_report_form
+msgid "Filters"
+msgstr "ຕົວກັ່ນຕອງ"
+
+#. module: account_reports
+#. odoo-javascript
+#: code:addons/account_reports/static/src/components/account_report/filters/filter_fiscal_position.xml:0
+#, python-format
+msgid "Fiscal Position:"
+msgstr "ຕຳແໜ່ງງົບປະມານ:"
+
+#. module: account_reports
+#: model:ir.model.fields,field_description:account_reports.field_account_tax_unit__fpos_synced
+msgid "Fiscal Positions Synchronised"
+msgstr "ຕຳແໜ່ງງົບປະມານທີ່ຖືກເຊື່ອມຕໍ່ແລ້ວ"
+
+#. module: account_reports
+#: model_terms:ir.ui.view,arch_db:account_reports.view_tax_unit_form
+msgid "Fiscal Positions should apply to all companies of the tax unit. You may want to"
+msgstr "ຕຳແໜ່ງງົບປະມານຄວນນຳໃຊ້ກັບທຸກບໍລິສັດໃນໜ່ວຍງານພາສີ. ທ່ານອາດຈະຕ້ອງການ"
+
+#. module: account_reports
+#: model:ir.model.fields,field_description:account_reports.field_account_report__footnotes_ids
+msgid "Footnotes"
+msgstr "ໝາຍເຫດທ້າຍລາຍງານ"
+
+#. module: account_reports
+#. odoo-python
+#: code:addons/account_reports/wizard/multicurrency_revaluation.py:0
+#, python-format
+msgid "Foreign currencies adjustment entry as of %s"
+msgstr "ລາຍການປັບປຸງເງິນຕາຕ່າງປະເທດ ນະວັນທີ %s"
+
+#. module: account_reports
+#. odoo-python
+#: code:addons/account_reports/models/account_report.py:0
+#, python-format
+msgid ""
+"From %s\n"
+"to  %s"
+msgstr ""
+"ຈາກ %s\n"
+"ຫາ  %s"
+
+#. module: account_reports
+#: model:ir.model.fields,field_description:account_reports.field_account_reports_export_wizard_format__fun_param
+msgid "Function Parameter"
+msgstr "ພາຣາມິເຕີຂອງຟັງຊັນ"
+
+#. module: account_reports
+#: model:ir.model.fields,field_description:account_reports.field_account_reports_export_wizard_format__fun_to_call
+msgid "Function to Call"
+msgstr "ຟັງຊັນທີ່ຈະເອີ້ນໃຊ້"
+
+#. module: account_reports
+#. odoo-python
+#: code:addons/account_reports/models/account_report.py:0
+#: code:addons/account_reports/models/account_trial_balance_report.py:0
+#: model:account.report,name:account_reports.general_ledger_report
+#: model:ir.actions.client,name:account_reports.action_account_report_general_ledger
+#: model:ir.ui.menu,name:account_reports.menu_action_account_report_general_ledger
+#, python-format
+msgid "General Ledger"
+msgstr "ບັນຊີແຍກປະເພດທົ່ວໄປ"
+
+#. module: account_reports
+#: model:ir.model,name:account_reports.model_account_general_ledger_report_handler
+msgid "General Ledger Custom Handler"
+msgstr "ຕົວຈັດການບັນຊີແຍກປະເພດທົ່ວໄປແບບກຳນົດເອງ"
+
+#. module: account_reports
+#. odoo-python
+#: code:addons/account_reports/wizard/report_export_wizard.py:0
+#, python-format
+msgid "Generated Documents"
+msgstr "ເອກະສານທີ່ຖືກສ້າງຂຶ້ນ"
+
+#. module: account_reports
+#: model:account.report,name:account_reports.generic_ec_sales_report
+msgid "Generic EC Sales List"
+msgstr "ລາຍຊື່ການຂາຍ EC ທົ່ວໄປ"
+
+#. module: account_reports
+#: model:ir.model,name:account_reports.model_account_generic_tax_report_handler
+msgid "Generic Tax Report Custom Handler"
+msgstr "ຕົວຈັດການບົດລາຍງານພາສີທົ່ວໄປແບບກຳນົດເອງ"
+
+#. module: account_reports
+#: model:ir.model,name:account_reports.model_account_generic_tax_report_handler_account_tax
+msgid "Generic Tax Report Custom Handler (Account -> Tax)"
+msgstr "ຕົວຈັດການບົດລາຍງານພາສີທົ່ວໄປ (ບັນຊີ -> ພາສີ)"
+
+#. module: account_reports
+#: model:ir.model,name:account_reports.model_account_generic_tax_report_handler_tax_account
+msgid "Generic Tax Report Custom Handler (Tax -> Account)"
+msgstr "ຕົວຈັດການບົດລາຍງານພາສີທົ່ວໄປ (ພາສີ -> ບັນຊີ)"
+
+#. module: account_reports
+#. odoo-python
+#: code:addons/account_reports/models/account_sales_report.py:0
+#, python-format
+msgid "Goods"
+msgstr "ສິນຄ້າ"
+
+#. module: account_reports
+#. odoo-javascript
+#: code:addons/account_reports/static/src/components/journal_report/line/line.xml:0
+#: model_terms:ir.ui.view,arch_db:account_reports.journal_report_pdf_export_line
+#, python-format
+msgid "Grid"
+msgstr "ຕາຕະລາງ"
+
+#. module: account_reports
+#: model:account.report.line,name:account_reports.account_financial_report_gross_profit0
+msgid "Gross Profit"
+msgstr "ກຳໄລເບື້ອງຕົ້ນ"
+
+#. module: account_reports
+#: model:account.report.line,name:account_reports.account_financial_report_executivesummary_gross_profit0
+msgid "Gross profit"
+msgstr "ກຳໄລເບື້ອງຕົ້ນ"
+
+#. module: account_reports
+#: model:account.report.line,name:account_reports.account_financial_report_executivesummary_gpmargin0
+msgid "Gross profit margin (gross profit / operating income)"
+msgstr "ອັດຕາກຳໄລເບື້ອງຕົ້ນ (ກຳໄລເບື້ອງຕົ້ນ / ລາຍໄດ້ຈາກການດຳເນີນງານ)"
+
+#. module: account_reports
+#: model_terms:ir.ui.view,arch_db:account_reports.view_account_report_search
+msgid "Group By"
+msgstr "ກຸ່ມໂດຍ"
+
+#. module: account_reports
+#. odoo-javascript
+#: code:addons/account_reports/static/src/components/journal_report/filter_extra_options.xml:0
+#, python-format
+msgid "Group By Months"
+msgstr "ກຸ່ມຕາມເດືອນ"
+
+#. module: account_reports
+#: model_terms:ir.ui.view,arch_db:account_reports.account_report_horizontal_group_form
+msgid "Group Name"
+msgstr "ຊື່ກຸ່ມ"
+
+#. module: account_reports
+#: model_terms:ir.ui.view,arch_db:account_reports.pdf_export_filters
+msgid "Groupby:"
+msgstr "ກຸ່ມໂດຍ:"
+
+#. module: account_reports
+#. odoo-javascript
+#: code:addons/account_reports/static/src/components/account_report/filters/filter_extra_options.xml:0
+#, python-format
+msgid "Hierarchy and Subtotals"
+msgstr "ລຳດັບຂັ້ນ ແລະ ຍອດລວມຍ່ອຍ"
+
+#. module: account_reports
+#: model:ir.model.fields,field_description:account_reports.field_account_report_horizontal_group_rule__horizontal_group_id
+msgid "Horizontal Group"
+msgstr "ກຸ່ມທາງຂວາງ"
+
+#. module: account_reports
+#. odoo-javascript
+#: code:addons/account_reports/static/src/components/account_report/filters/filter_horizontal_groups.xml:0
+#, python-format
+msgid "Horizontal Group:"
+msgstr "ກຸ່ມທາງຂວາງ:"
+
+#. module: account_reports
+#: model:ir.actions.act_window,name:account_reports.action_account_report_horizontal_groups
+#: model:ir.model.fields,field_description:account_reports.field_account_report__horizontal_group_ids
+#: model:ir.ui.menu,name:account_reports.menu_action_account_report_horizontal_groups
+msgid "Horizontal Groups"
+msgstr "ກຸ່ມທາງຂວາງ"
+
+#. module: account_reports
+#: model:ir.model,name:account_reports.model_account_report_horizontal_group
+msgid "Horizontal group for reports"
+msgstr "ກຸ່ມທາງຂວາງສຳລັບບົດລາຍງານ"
+
+#. module: account_reports
+#: model:ir.model,name:account_reports.model_account_report_horizontal_group_rule
+msgid "Horizontal group rule for reports"
+msgstr "ກົດລະບຽບກຸ່ມທາງຂວາງສຳລັບບົດລາຍງານ"
+
+#. module: account_reports
+#: model_terms:ir.ui.view,arch_db:account_reports.res_config_settings_view_form
+msgid "How often tax returns have to be made"
+msgstr "ຄວາມຖີ່ໃນການຍື່ນພາສີ"
+
+#. module: account_reports
+#: model:ir.model.fields,field_description:account_reports.field_account_multicurrency_revaluation_wizard__id
+#: model:ir.model.fields,field_description:account_reports.field_account_report_footnote__id
+#: model:ir.model.fields,field_description:account_reports.field_account_report_horizontal_group__id
+#: model:ir.model.fields,field_description:account_reports.field_account_report_horizontal_group_rule__id
+#: model:ir.model.fields,field_description:account_reports.field_account_reports_export_wizard__id
+#: model:ir.model.fields,field_description:account_reports.field_account_reports_export_wizard_format__id
+#: model:ir.model.fields,field_description:account_reports.field_account_tax_unit__id
+msgid "ID"
+msgstr "ລະຫັດ"
+
+#. module: account_reports
+#. odoo-javascript
+#: code:addons/account_reports/static/src/components/journal_report/line/line.xml:0
+#: model_terms:ir.ui.view,arch_db:account_reports.journal_report_pdf_export_line
+#, python-format
+msgid "Impact On Grid"
+msgstr "ຜົນກະທົບຕໍ່ຕາຕະລາງ"
+
+#. module: account_reports
+#. odoo-javascript
+#: code:addons/account_reports/static/src/components/journal_report/line/line.xml:0
+#, python-format
+msgid "Impacted Tax Grids"
+msgstr "ຕາຕະລາງພາສີທີ່ໄດ້ຮັບຜົນກະທົບ"
+
+#. module: account_reports
+#: model_terms:ir.ui.view,arch_db:account_reports.journal_report_pdf_export_line
+msgid ""
+"Impacted Tax Grids\n"
+"                                        &amp;nbsp;"
+msgstr ""
+"ຕາຕະລາງພາສີທີ່ໄດ້ຮັບຜົນກະທົບ\n"
+"                                        &amp;nbsp;"
+
+#. module: account_reports
+#. odoo-javascript
+#: code:addons/account_reports/static/src/components/account_report/filters/filter_extra_options.xml:0
+#, python-format
+msgid "Include Analytic Simulations"
+msgstr "ລວມການຈຳລອງວິເຄາະ"
+
+#. module: account_reports
+#. odoo-javascript
+#: code:addons/account_reports/static/src/components/account_report/filters/filter_extra_options.xml:0
+#, python-format
+msgid "Include Draft Entries"
+msgstr "ລວມລາຍການສະບັບຮ່າງ"
+
+#. module: account_reports
+#. odoo-javascript
+#: code:addons/account_reports/static/src/components/journal_report/filter_extra_options.xml:0
+#, python-format
+msgid "Include Payments"
+msgstr "ລວມການຊຳລະເງິນ"
+
+#. module: account_reports
+#. odoo-python
+#: code:addons/account_reports/models/account_bank_reconciliation_report.py:0
+#, python-format
+msgid "Including Unreconciled Bank Statement Payments"
+msgstr "ລວມທັງການຊຳລະເງິນໃນໃບແຈ້ງຍອດທະນາຄານທີ່ຍັງບໍ່ທັນໄດ້ກວດສອບພິສູດຍອດ"
+
+#. module: account_reports
+#. odoo-python
+#: code:addons/account_reports/models/account_bank_reconciliation_report.py:0
+#, python-format
+msgid "Including Unreconciled Bank Statement Receipts"
+msgstr "ລວມທັງການຮັບເງິນໃນໃບແຈ້ງຍອດທະນາຄານທີ່ຍັງບໍ່ທັນໄດ້ກວດສອບພິສູດຍອດ"
+
+#. module: account_reports
+#: model:account.report.line,name:account_reports.account_financial_report_executivesummary_income0
+#: model:account.report.line,name:account_reports.account_financial_report_totalincome0
+msgid "Income"
+msgstr "ລາຍໄດ້"
+
+#. module: account_reports
+#: model:ir.model.fields,field_description:account_reports.field_account_multicurrency_revaluation_wizard__income_provision_account_id
+msgid "Income Account"
+msgstr "ບັນຊີລາຍໄດ້"
+
+#. module: account_reports
+#: model:ir.model.fields,field_description:account_reports.field_res_company__account_revaluation_income_provision_account_id
+msgid "Income Provision Account"
+msgstr "ບັນຊີສຳຮອງລາຍໄດ້"
+
+#. module: account_reports
+#. odoo-python
+#: code:addons/account_reports/wizard/multicurrency_revaluation.py:0
+#, python-format
+msgid "Income Provision for %s"
+msgstr "ການຕັ້ງສຳຮອງລາຍຮັບ ສຳລັບ %s"
+
+#. module: account_reports
+#. odoo-python
+#: code:addons/account_reports/models/account_bank_reconciliation_report.py:0
+#, python-format
+msgid "Inconsistent Statements"
+msgstr "ໃບແຈ້ງຍອດບໍ່ສອດຄ່ອງກັນ"
+
+#. module: account_reports
+#. odoo-python
+#: code:addons/account_reports/models/account_report.py:0
+#, python-format
+msgid "Inconsistent data: more than one external value at the same date for a 'most_recent' external line."
+msgstr ""
+"ຂໍ້ມູນບໍ່ສອດຄ່ອງກັນ: ມີຄ່າຈາກພາຍນອກຫຼາຍກວ່າໜຶ່ງຄ່າໃນວັນທີດຽວກັນ ສຳລັບລາຍການພາຍນອກແບບ 'ລ້າສຸດ'."
+
+#. module: account_reports
+#. odoo-python
+#: code:addons/account_reports/models/account_report.py:0
+#, python-format
+msgid "Inconsistent report_id in options dictionary. Options says %s; report is %s."
+msgstr ""
+"report_id ບໍ່ສອດຄ່ອງກັນໃນພາກສ່ວນຕົວເລືອກ. ຕົວເລືອກລະບຸ %s; ແຕ່ບົດລາຍງານແມ່ນ %s."
+
+#. module: account_reports
+#. odoo-python
+#: code:addons/account_reports/models/account_report.py:0
+#: code:addons/account_reports/models/account_trial_balance_report.py:0
+#, python-format
+msgid "Initial Balance"
+msgstr "ຍອດຍົກມາ"
+
+#. module: account_reports
+#. odoo-javascript
+#: code:addons/account_reports/static/src/components/account_report/footnote/dialog/footnote_dialog.xml:0
+#, python-format
+msgid "Insert foot note here"
+msgstr "ປ້ອນໝາຍເຫດທ້າຍໜ້າຢູ່ນີ້"
+
+#. module: account_reports
+#. odoo-javascript
+#: code:addons/account_reports/static/src/components/sales_report/account_report.xml:0
+#, python-format
+msgid "Intra-community taxes are applied on"
+msgstr "ພາສີພາຍໃນປະຊາຄົມໄດ້ຖືກນຳໃຊ້ກັບ"
+
+#. module: account_reports
+#. odoo-python
+#: code:addons/account_reports/models/account_report.py:0
+#, python-format
+msgid "Invalid token '%s' in account_codes formula '%s'"
+msgstr "Token '%s' ບໍ່ຖືກຕ້ອງໃນສູດລະຫັດບັນຊີ '%s'"
+
+#. module: account_reports
+#: model:account.report.column,name:account_reports.aged_payable_report_invoice_date
+#: model:account.report.column,name:account_reports.aged_receivable_report_invoice_date
+msgid "Invoice Date"
+msgstr "ວັນທີໃບເກັບເງິນ"
+
+#. module: account_reports
+#: model:ir.model.fields,field_description:account_reports.field_account_report__is_account_coverage_report_available
+msgid "Is Account Coverage Report Available"
+msgstr "ບົດລາຍງານການກວດສອບບັນຊີພ້ອມໃຊ້ງານຫຼືບໍ່"
+
+#. module: account_reports
+#: model:account.report.column,name:account_reports.partner_ledger_report_journal_code
+msgid "JRNL"
+msgstr "ສມວ"
+
+#. module: account_reports
+#: model:ir.model,name:account_reports.model_account_journal
+#: model:ir.model.fields,field_description:account_reports.field_account_financial_year_op__account_tax_periodicity_journal_id
+#: model:ir.model.fields,field_description:account_reports.field_account_multicurrency_revaluation_wizard__journal_id
+#: model:ir.model.fields,field_description:account_reports.field_res_company__account_tax_periodicity_journal_id
+#: model:ir.model.fields,field_description:account_reports.field_res_config_settings__account_tax_periodicity_journal_id
+#: model_terms:ir.ui.view,arch_db:account_reports.res_config_settings_view_form
+#: model_terms:ir.ui.view,arch_db:account_reports.setup_financial_year_opening_form
+msgid "Journal"
+msgstr "ສະມຸດລາຍວັນ"
+
+#. module: account_reports
+#: model:ir.model,name:account_reports.model_account_move
+msgid "Journal Entry"
+msgstr "ລາຍການບັນທຶກບັນຊີ"
+
+#. module: account_reports
+#. odoo-python
+#: code:addons/account_reports/models/account_report.py:0
+#, python-format
+msgid "Journal Groups"
+msgstr "ກຸ່ມສະມຸດລາຍວັນ"
+
+#. module: account_reports
+#: model:ir.model,name:account_reports.model_account_move_line
+msgid "Journal Item"
+msgstr "ລາຍການຍ່ອຍບັນຊີ"
+
+#. module: account_reports
+#. odoo-python
+#: code:addons/account_reports/models/account_bank_reconciliation_report.py:0
+#: code:addons/account_reports/models/account_report.py:0
+#: code:addons/account_reports/models/account_trial_balance_report.py:0
+#, python-format
+msgid "Journal Items"
+msgstr "ລາຍການຍ່ອຍບັນຊີ"
+
+#. module: account_reports
+#. odoo-python
+#: code:addons/account_reports/models/account_generic_tax_report.py:0
+#: code:addons/account_reports/models/account_journal_report.py:0
+#, python-format
+msgid "Journal Items for Tax Audit"
+msgstr "ລາຍການຍ່ອຍບັນຊີສຳລັບການກວດສອບພາສີ"
+
+#. module: account_reports
+#: model:account.report,name:account_reports.journal_report
+#: model:ir.actions.client,name:account_reports.action_account_report_ja
+#: model:ir.ui.menu,name:account_reports.menu_action_account_report_ja
+msgid "Journal Report"
+msgstr "ບົດລາຍງານສະມຸດລາຍວັນ"
+
+#. module: account_reports
+#: model:ir.model,name:account_reports.model_account_journal_report_handler
+msgid "Journal Report Custom Handler"
+msgstr "ຕົວຈັດການບົດລາຍງານສະມຸດລາຍວັນແບບກຳນົດເອງ"
+
+#. module: account_reports
+#. odoo-python
+#: code:addons/account_reports/models/account_generic_tax_report.py:0
+#, python-format
+msgid "Journal items with archived tax tags"
+msgstr "ລາຍການຍ່ອຍບັນຊີທີ່ມີແທັກພາສີທີ່ຖືກຈັດເກັບແລ້ວ"
+
+#. module: account_reports
+#. odoo-javascript
+#: code:addons/account_reports/static/src/components/account_report/filters/filter_journal.xml:0
+#: model_terms:ir.ui.view,arch_db:account_reports.pdf_export_filters
+#, python-format
+msgid "Journals:"
+msgstr "ສະມຸດລາຍວັນ:"
+
+#. module: account_reports
+#: model:account.report.line,name:account_reports.account_financial_report_liabilities_view0
+msgid "LIABILITIES"
+msgstr "ໜີ້ສິນ"
+
+#. module: account_reports
+#: model:account.report.line,name:account_reports.account_financial_report_liabilities_and_equity_view0
+msgid "LIABILITIES + EQUITY"
+msgstr "ໜີ້ສິນ + ສ່ວນຂອງເຈົ້າຂອງ"
+
+#. module: account_reports
+#. odoo-python
+#: code:addons/account_reports/models/account_journal_report.py:0
+#: code:addons/account_reports/wizard/multicurrency_revaluation.py:0
+#: model:account.report.column,name:account_reports.bank_reconciliation_report_label
+#: model:account.report.column,name:account_reports.journal_report_partner_name
+#, python-format
+msgid "Label"
+msgstr "ຄຳອະທິບາຍ"
+
+#. module: account_reports
+#. odoo-javascript
+#: code:addons/account_reports/static/src/components/account_report/filters/filter_date.xml:0
+#, python-format
+msgid "Last Financial Year"
+msgstr "ປີງົບປະມານແລ້ວ"
+
+#. module: account_reports
+#. odoo-javascript
+#: code:addons/account_reports/static/src/components/account_report/filters/filter_date.xml:0
+#, python-format
+msgid "Last Month"
+msgstr "ເດືອນແລ້ວ"
+
+#. module: account_reports
+#. odoo-javascript
+#: code:addons/account_reports/static/src/components/account_report/filters/filter_date.xml:0
+#, python-format
+msgid "Last Quarter"
+msgstr "ງວດແລ້ວ"
+
+#. module: account_reports
+#: model_terms:ir.ui.view,arch_db:account_reports.account_reports_journal_dashboard_kanban_view
+msgid "Last Statement balance + Transactions since statement"
+msgstr "ຍອດຄົງເຫຼືອໃບແຈ້ງຍອດລ້າສຸດ + ລາຍການເຄື່ອນໄຫວຫຼັງຈາກໃບແຈ້ງຍອດ"
+
+#. module: account_reports
+#: model:ir.model.fields,field_description:account_reports.field_account_multicurrency_revaluation_wizard__write_uid
+#: model:ir.model.fields,field_description:account_reports.field_account_report_footnote__write_uid
+#: model:ir.model.fields,field_description:account_reports.field_account_report_horizontal_group__write_uid
+#: model:ir.model.fields,field_description:account_reports.field_account_report_horizontal_group_rule__write_uid
+#: model:ir.model.fields,field_description:account_reports.field_account_reports_export_wizard__write_uid
+#: model:ir.model.fields,field_description:account_reports.field_account_reports_export_wizard_format__write_uid
+#: model:ir.model.fields,field_description:account_reports.field_account_tax_unit__write_uid
+msgid "Last Updated by"
+msgstr "ອັບເດດລ້າສຸດໂດຍ"
+
+#. module: account_reports
+#: model:ir.model.fields,field_description:account_reports.field_account_multicurrency_revaluation_wizard__write_date
+#: model:ir.model.fields,field_description:account_reports.field_account_report_footnote__write_date
+#: model:ir.model.fields,field_description:account_reports.field_account_report_horizontal_group__write_date
+#: model:ir.model.fields,field_description:account_reports.field_account_report_horizontal_group_rule__write_date
+#: model:ir.model.fields,field_description:account_reports.field_account_reports_export_wizard__write_date
+#: model:ir.model.fields,field_description:account_reports.field_account_reports_export_wizard_format__write_date
+#: model:ir.model.fields,field_description:account_reports.field_account_tax_unit__write_date
+msgid "Last Updated on"
+msgstr "ອັບເດດລ້າສຸດເມື່ອ"
+
+#. module: account_reports
+#: model:ir.model.fields,field_description:account_reports.field_account_report_footnote__line_id
+msgid "Line"
+msgstr "ລາຍການ"
+
+#. module: account_reports
+#. odoo-javascript
+#: code:addons/account_reports/static/src/components/account_report/line/popover/debug_popover.xml:0
+#, python-format
+msgid "Line without formula"
+msgstr "ລາຍການທີ່ບໍ່ມີສູດ"
+
+#. module: account_reports
+#: model_terms:ir.ui.view,arch_db:account_reports.account_report_form
+msgid "Lines"
+msgstr "ລາຍການ"
+
+#. module: account_reports
+#. odoo-python
+#: code:addons/account_reports/models/account_report.py:0
+#, python-format
+msgid "Load more..."
+msgstr "ໂຫຼດເພີ່ມເຕີມ..."
+
+#. module: account_reports
+#: model:ir.model.fields,field_description:account_reports.field_account_tax_unit__main_company_id
+msgid "Main Company"
+msgstr "ບໍລິສັດຫຼັກ"
+
+#. module: account_reports
+#: model:ir.model.fields,help:account_reports.field_account_tax_unit__main_company_id
+msgid "Main company of this unit; the one actually reporting and paying the taxes."
+msgstr "ບໍລິສັດຫຼັກຂອງໜ່ວຍງານນີ້; ເປັນຜູ້ທີ່ລາຍງານ ແລະ ຊຳລະພາສີຕົວຈິງ."
+
+#. module: account_reports
+#. odoo-python
+#: code:addons/account_reports/models/account_multicurrency_revaluation_report.py:0
+#: model_terms:ir.ui.view,arch_db:account_reports.view_account_multicurrency_revaluation_wizard
+#, python-format
+msgid "Make Adjustment Entry"
+msgstr "ສ້າງລາຍການປັບປຸງບັນຊີ"
+
+#. module: account_reports
+#. odoo-python
+#: code:addons/account_reports/models/account_report.py:0
+#, python-format
+msgid "Manual value"
+msgstr "ຄ່າທີ່ປ້ອນເອງ"
+
+#. module: account_reports
+#. odoo-python
+#: code:addons/account_reports/models/account_report.py:0
+#, python-format
+msgid "Manual values"
+msgstr "ຄ່າທີ່ປ້ອນເອງ"
+
+#. module: account_reports
+#: model:account.report.column,name:account_reports.partner_ledger_report_matching_number
+msgid "Matching Number"
+msgstr "ເລກທີ່ຈັບຄູ່"
+
+#. module: account_reports
+#: model:ir.model.fields,help:account_reports.field_account_tax_unit__company_ids
+msgid "Members of this unit"
+msgstr "ສະມາຊິກຂອງໜ່ວຍງານນີ້"
+
+#. module: account_reports
+#. odoo-python
+#: code:addons/account_reports/models/account_report.py:0
+#, python-format
+msgid "Method '%s' must start with the '%s' prefix."
+msgstr "ວິທີການ '%s' ຕ້ອງເລີ່ມຕົ້ນດ້ວຍຄຳນຳໜ້າ '%s'."
+
+#. module: account_reports
+#: model:ir.model.fields,field_description:account_reports.field_account_report_horizontal_group_rule__res_model_name
+msgid "Model"
+msgstr "ໂມເດວ"
+
+#. module: account_reports
+#: model:ir.model,name:account_reports.model_account_multicurrency_revaluation_report_handler
+msgid "Multicurrency Revaluation Report Custom Handler"
+msgstr "ຕົວຈັດການບົດລາຍງານການຕີລາຄາເງິນຕາຄືນໃໝ່ແບບກຳນົດເອງ"
+
+#. module: account_reports
+#: model:ir.model,name:account_reports.model_account_multicurrency_revaluation_wizard
+msgid "Multicurrency Revaluation Wizard"
+msgstr "ຕົວຊ່ວຍການຕີລາຄາເງິນຕາຄືນໃໝ່"
+
+#. module: account_reports
+#. odoo-python
+#: code:addons/account_reports/models/res_company.py:0
+#, python-format
+msgid ""
+"Multiple draft tax closing entries exist for fiscal position %s after %s. There should be at most one. \n"
+" %s"
+msgstr ""
+"ມີລາຍການປິດພາສີສະບັບຮ່າງຫຼາຍລາຍການສຳລັບຕຳແໜ່ງງົບປະມານ %s ຫຼັງຈາກ %s. ຄວນມີພຽງລາຍການດຽວເທົ່າ"
+"ນັ້ນ. \n"
+" %s"
+
+#. module: account_reports
+#. odoo-python
+#: code:addons/account_reports/models/res_company.py:0
+#, python-format
+msgid ""
+"Multiple draft tax closing entries exist for your domestic region after %s. There should be at most one. \n"
+" %s"
+msgstr ""
+"ມີລາຍການປິດພາສີສະບັບຮ່າງຫຼາຍລາຍການສຳລັບພາກພື້ນພາຍໃນປະເທດຂອງທ່ານຫຼັງຈາກ %s. ຄວນມີພຽງລາຍການດ"
+"ຽວເທົ່ານັ້ນ. \n"
+" %s"
+
+#. module: account_reports
+#. odoo-python
+#. odoo-javascript
+#: code:addons/account_reports/models/account_general_ledger.py:0
+#: code:addons/account_reports/models/account_journal_report.py:0
+#: code:addons/account_reports/static/src/components/journal_report/line/line.xml:0
+#: model:ir.model.fields,field_description:account_reports.field_account_report_horizontal_group__name
+#: model:ir.model.fields,field_description:account_reports.field_account_reports_export_wizard_format__name
+#: model:ir.model.fields,field_description:account_reports.field_account_tax_unit__name
+#: model_terms:ir.ui.view,arch_db:account_reports.journal_report_pdf_export_line
+#: model_terms:ir.ui.view,arch_db:account_reports.view_tax_unit_form
+#, python-format
+msgid "Name"
+msgstr "ຊື່"
+
+#. module: account_reports
+#: model:ir.model.fields,help:account_reports.field_account_reports_export_wizard__doc_name
+msgid "Name to give to the generated documents."
+msgstr "ຊື່ທີ່ຈະໃຊ້ສຳລັບເອກະສານທີ່ສ້າງຂຶ້ນ."
+
+#. module: account_reports
+#: model:account.report.line,name:account_reports.account_financial_report_executivesummary_profit0
+#: model:account.report.line,name:account_reports.account_financial_report_net_profit0
+msgid "Net Profit"
+msgstr "ກຳໄລສຸດທິ"
+
+#. module: account_reports
+#: model:account.report.line,name:account_reports.account_financial_report_executivesummary_net_assets0
+msgid "Net assets"
+msgstr "ຊັບສິນສຸດທິ"
+
+#. module: account_reports
+#. odoo-python
+#: code:addons/account_reports/models/account_cash_flow_report.py:0
+#, python-format
+msgid "Net increase in cash and cash equivalents"
+msgstr "ການເພີ່ມຂຶ້ນສຸດທິຂອງເງິນສົດ ແລະ ທຽບເທົ່າເງິນສົດ"
+
+#. module: account_reports
+#: model:account.report.line,name:account_reports.account_financial_report_executivesummary_npmargin0
+msgid "Net profit margin (net profit / income)"
+msgstr "ອັດຕາກຳໄລສຸດທິ (ກຳໄລສຸດທິ / ລາຍຮັບ)"
+
+#. module: account_reports
+#. odoo-javascript
+#: code:addons/account_reports/static/src/components/account_report/line_cell/popover/edit_popover.xml:0
+#, python-format
+msgid "No"
+msgstr "ບໍ່"
+
+#. module: account_reports
+#. odoo-javascript
+#: code:addons/account_reports/static/src/components/account_report/filters/filter_comparison.xml:0
+#, python-format
+msgid "No Comparison"
+msgstr "ບໍ່ມີການປຽບທຽບ"
+
+#. module: account_reports
+#. odoo-python
+#: code:addons/account_reports/models/account_report.py:0
+#, python-format
+msgid "No VAT number associated with your company. Please define one."
+msgstr ""
+"ບໍ່ມີເລກປະຈຳຕົວຜູ້ເສຍພາສີທີ່ກ່ຽວຂ້ອງກັບບໍລິສັດຂອງທ່ານ. ກະລຸນາກຳນົດເລກໃດໜຶ່ງ."
+
+#. module: account_reports
+#. odoo-python
+#: code:addons/account_reports/wizard/multicurrency_revaluation.py:0
+#, python-format
+msgid "No adjustment needed"
+msgstr "ບໍ່ຈຳເປັນຕ້ອງມີການປັບປຸງ"
+
+#. module: account_reports
+#. odoo-python
+#: code:addons/account_reports/wizard/multicurrency_revaluation.py:0
+#, python-format
+msgid "No provision needed was found."
+msgstr "ບໍ່ພົບການຕັ້ງສຳຮອງທີ່ຈຳເປັນ."
+
+#. module: account_reports
+#. odoo-python
+#: code:addons/account_reports/models/account_report.py:0
+#, python-format
+msgid "Non Trade Partners"
+msgstr "ຄູ່ຄ້າທີ່ບໍ່ແມ່ນການຄ້າ"
+
+#. module: account_reports
+#. odoo-python
+#: code:addons/account_reports/models/account_report.py:0
+#, python-format
+msgid "Non Trade Payable"
+msgstr "ເຈົ້າໜີ້ອື່ນທີ່ບໍ່ແມ່ນການຄ້າ"
+
+#. module: account_reports
+#. odoo-python
+#: code:addons/account_reports/models/account_report.py:0
+#, python-format
+msgid "Non Trade Receivable"
+msgstr "ລູກໜີ້ອື່ນທີ່ບໍ່ແມ່ນການຄ້າ"
+
+#. module: account_reports
+#. odoo-javascript
+#: code:addons/account_reports/static/src/components/account_report/filters/filter_horizontal_groups.xml:0
+#: model_terms:ir.ui.view,arch_db:account_reports.pdf_export_filters
+#, python-format
+msgid "None"
+msgstr "ບໍ່ມີ"
+
+#. module: account_reports
+#. odoo-javascript
+#: code:addons/account_reports/static/src/components/account_report/filters/filter_comparison.xml:0
+#, python-format
+msgid "Number of periods :"
+msgstr "ຈຳນວນຮອບເວລາ :"
+
+#. module: account_reports
+#. odoo-javascript
+#: code:addons/account_reports/static/src/components/account_report/filters/filters.js:0
+#, python-format
+msgid "Number of periods cannot be smaller than 1"
+msgstr "ຈຳນວນຮອບເວລາບໍ່ສາມາດນ້ອຍກວ່າ 1"
+
+#. module: account_reports
+#: model:account.report.line,name:account_reports.account_financial_report_off_sheet
+msgid "OFF BALANCE SHEET ACCOUNTS"
+msgstr "ບັນຊີພົ້ນໃບສະຫຼຸບຊັບສົມບັດ"
+
+#. module: account_reports
+#. odoo-javascript
+#: code:addons/account_reports/static/src/components/account_report/filters/filters.js:0
+#, python-format
+msgid "Odoo Warning"
+msgstr "ການແຈ້ງເຕືອນຈາກ Odoo"
+
+#. module: account_reports
+#: model:account.report.column,name:account_reports.aged_payable_report_period5
+#: model:account.report.column,name:account_reports.aged_receivable_report_period5
+msgid "Older"
+msgstr "ເກົ່າກວ່າ"
+
+#. module: account_reports
+#. odoo-python
+#: code:addons/account_reports/wizard/report_export_wizard.py:0
+#, python-format
+msgid "One of the formats chosen can not be exported in the DMS"
+msgstr "ໜຶ່ງໃນຮູບແບບທີ່ເລືອກບໍ່ສາມາດສົ່ງອອກໄປຍັງ DMS ໄດ້"
+
+#. module: account_reports
+#. odoo-python
+#: code:addons/account_reports/models/account_move.py:0
+#, python-format
+msgid "Only Billing Administrators are allowed to change lock dates!"
+msgstr ""
+"ສະເພາະຜູ້ບໍລິຫານລະບົບການຮຽກເກັບເງິນເທົ່ານັ້ນທີ່ໄດ້ຮັບອະນຸຍາດໃຫ້ປ່ຽນວັນທີປິດງວດ!"
+
+#. module: account_reports
+#. odoo-javascript
+#: code:addons/account_reports/static/src/components/account_report/filters/filter_extra_options.xml:0
+#, python-format
+msgid "Only Show Unreconciled Entries"
+msgstr "ສະແດງສະເພາະລາຍການທີ່ຍັງບໍ່ທັນໄດ້ກວດສອບຍອດ"
+
+#. module: account_reports
+#. odoo-javascript
+#: code:addons/account_reports/static/src/components/aged_partner_balance/line_name/line_name.xml:0
+#: code:addons/account_reports/static/src/components/partner_ledger/line_name.xml:0
+#, python-format
+msgid "Open"
+msgstr "ເປີດ"
+
+#. module: account_reports
+#: model:ir.model,name:account_reports.model_account_financial_year_op
+msgid "Opening Balance of Financial Year"
+msgstr "ຍອດເປີດຂອງປີງົບປະມານ"
+
+#. module: account_reports
+#: model:account.report.line,name:account_reports.account_financial_report_income0
+msgid "Operating Income"
+msgstr "ລາຍຮັບຈາກການດຳເນີນງານ"
+
+#. module: account_reports
+#: model_terms:ir.ui.view,arch_db:account_reports.account_report_expression_form
+#: model_terms:ir.ui.view,arch_db:account_reports.account_report_form
+msgid "Options"
+msgstr "ຕົວເລືອກ"
+
+#. module: account_reports
+#. odoo-javascript
+#: code:addons/account_reports/static/src/components/account_report/filters/filter_extra_options.xml:0
+#, python-format
+msgid "Options:"
+msgstr "ຕົວເລືອກ:"
+
+#. module: account_reports
+#: model:account.report.line,name:account_reports.account_financial_report_other_income0
+msgid "Other Income"
+msgstr "ລາຍຮັບອື່ນໆ"
+
+#. module: account_reports
+#. odoo-python
+#: code:addons/account_reports/models/account_bank_reconciliation_report.py:0
+#: model_terms:ir.ui.view,arch_db:account_reports.account_reports_journal_dashboard_kanban_view
+#, python-format
+msgid "Outstanding Payments/Receipts"
+msgstr "ລາຍການຈ່າຍ/ຮັບ ທີ່ຄ້າງກວດສອບ"
+
+#. module: account_reports
+#. odoo-python
+#: code:addons/account_reports/models/account_report.py:0
+#, python-format
+msgid "PDF"
+msgstr "PDF"
+
+#. module: account_reports
+#: model:ir.model.fields,field_description:account_reports.field_account_reports_export_wizard__report_id
+msgid "Parent Report Id"
+msgstr "ID ບົດລາຍງານຫຼັກ"
+
+#. module: account_reports
+#: model:ir.model.fields,field_description:account_reports.field_account_reports_export_wizard_format__export_wizard_id
+msgid "Parent Wizard"
+msgstr "ຕົວຊ່ວຍຫຼັກ"
+
+#. module: account_reports
+#: model:account.report.column,name:account_reports.general_ledger_report_partner_name
+msgid "Partner"
+msgstr "ຄູ່ຄ້າ"
+
+#. module: account_reports
+#: model_terms:ir.ui.view,arch_db:account_reports.pdf_export_filters
+msgid "Partner Categories:"
+msgstr "ໝວດໝູ່ຄູ່ຄ້າ:"
+
+#. module: account_reports
+#. odoo-python
+#: code:addons/account_reports/models/res_partner.py:0
+#: model:account.report,name:account_reports.partner_ledger_report
+#: model:ir.actions.client,name:account_reports.action_account_report_partner_ledger
+#: model:ir.ui.menu,name:account_reports.menu_action_account_report_partner_ledger
+#, python-format
+msgid "Partner Ledger"
+msgstr "ບັນຊີແຍກປະເພດຄູ່ຄ້າ"
+
+#. module: account_reports
+#: model:ir.model,name:account_reports.model_account_partner_ledger_report_handler
+msgid "Partner Ledger Custom Handler"
+msgstr "ຕົວຈັດການບົດລາຍງານບັນຊີແຍກປະເພດຄູ່ຄ້າແບບກຳນົດເອງ"
+
+#. module: account_reports
+#: model:ir.ui.menu,name:account_reports.account_reports_partners_reports_menu
+msgid "Partner Reports"
+msgstr "ບົດລາຍງານຄູ່ຄ້າ"
+
+#. module: account_reports
+#. odoo-javascript
+#: code:addons/account_reports/static/src/components/partner_ledger/line_name.xml:0
+#, python-format
+msgid "Partner ledger is bad"
+msgstr "ບັນຊີແຍກປະເພດຄູ່ຄ້າຜິດປົກກະຕິ"
+
+#. module: account_reports
+#. odoo-javascript
+#: code:addons/account_reports/static/src/components/partner_ledger/line_name.xml:0
+#, python-format
+msgid "Partner ledger is good"
+msgstr "ບັນຊີແຍກປະເພດຄູ່ຄ້າປົກກະຕິດີ"
+
+#. module: account_reports
+#. odoo-javascript
+#: code:addons/account_reports/static/src/components/partner_ledger/line_name.xml:0
+#, python-format
+msgid "Partner ledger is normal"
+msgstr "ບັນຊີແຍກປະເພດຄູ່ຄ້າເປັນປົກກະຕິ"
+
+#. module: account_reports
+#. odoo-javascript
+#: code:addons/account_reports/static/src/components/account_report/filters/filter_partner.xml:0
+#, python-format
+msgid "Partners"
+msgstr "ຄູ່ຄ້າ"
+
+#. module: account_reports
+#: model_terms:ir.ui.view,arch_db:account_reports.pdf_export_filters
+msgid "Partners:"
+msgstr "ຄູ່ຄ້າ:"
+
+#. module: account_reports
+#. odoo-python
+#: code:addons/account_reports/models/account_aged_partner_balance.py:0
+#: code:addons/account_reports/models/account_report.py:0
+#, python-format
+msgid "Payable"
+msgstr "ເຈົ້າໜີ້"
+
+#. module: account_reports
+#. odoo-python
+#: code:addons/account_reports/models/account_generic_tax_report.py:0
+#, python-format
+msgid "Payable tax amount"
+msgstr "ຈຳນວນພາສີທີ່ຕ້ອງຈ່າຍ"
+
+#. module: account_reports
+#: model:account.report.line,name:account_reports.account_financial_report_current_liabilities_payable
+#: model:account.report.line,name:account_reports.account_financial_report_executivesummary_creditors0
+msgid "Payables"
+msgstr "ເຈົ້າໜີ້"
+
+#. module: account_reports
+#: model:account.report.line,name:account_reports.account_financial_report_executivesummary_performance0
+msgid "Performance"
+msgstr "ຜົນການດຳເນີນງານ"
+
+#. module: account_reports
+#: model:ir.model.fields,field_description:account_reports.field_res_config_settings__account_tax_periodicity
+#: model:ir.model.fields,help:account_reports.field_account_financial_year_op__account_tax_periodicity
+#: model:ir.model.fields,help:account_reports.field_res_company__account_tax_periodicity
+#: model:ir.model.fields,help:account_reports.field_res_config_settings__account_tax_periodicity
+#: model_terms:ir.ui.view,arch_db:account_reports.res_config_settings_view_form
+#: model_terms:ir.ui.view,arch_db:account_reports.setup_financial_year_opening_form
+msgid "Periodicity"
+msgstr "ຮອບເວລາ"
+
+#. module: account_reports
+#: model:ir.model.fields,field_description:account_reports.field_account_financial_year_op__account_tax_periodicity
+msgid "Periodicity in month"
+msgstr "ຮອບເວລາເປັນເດືອນ"
+
+#. module: account_reports
+#. odoo-javascript
+#: code:addons/account_reports/static/src/components/account_report/filters/filter_analytic_groupby.xml:0
+#, python-format
+msgid "Plans"
+msgstr "ແຜນການ"
+
+#. module: account_reports
+#. odoo-javascript
+#: code:addons/account_reports/static/src/components/generic_tax_report/account_report.xml:0
+#, python-format
+msgid "Please note that the report may include some rounding differences towards the bookings."
+msgstr ""
+"ກະລຸນາສັງເກດວ່າ ບົດລາຍງານອາດຈະມີຄວາມແຕກຕ່າງຈາກການປັດເສດເມື່ອທຽບກັບການບັນທຶກບັນຊີ."
+
+#. module: account_reports
+#. odoo-python
+#: code:addons/account_reports/models/account_generic_tax_report.py:0
+#, python-format
+msgid "Please specify the accounts necessary for the Tax Closing Entry."
+msgstr "ກະລຸນາລະບຸບັນຊີທີ່ຈຳເປັນສຳລັບການບັນທຶກປິດພາສີ."
+
+#. module: account_reports
+#: model:account.report.line,name:account_reports.account_financial_report_fixed_assets_view0
+msgid "Plus Fixed Assets"
+msgstr "ບວກ ຊັບສິນຄົງທີ່"
+
+#. module: account_reports
+#: model:account.report.line,name:account_reports.account_financial_report_non_current_assets_view0
+msgid "Plus Non-current Assets"
+msgstr "ບວກ ຊັບສິນບໍ່ໝູນວຽນ"
+
+#. module: account_reports
+#: model:account.report.line,name:account_reports.account_financial_report_non_current_liabilities0
+msgid "Plus Non-current Liabilities"
+msgstr "ບວກ ໜີ້ສິນບໍ່ໝູນວຽນ"
+
+#. module: account_reports
+#: model:account.report.line,name:account_reports.account_financial_report_executivesummary_position0
+msgid "Position"
+msgstr "ຕຳແໜ່ງ"
+
+#. module: account_reports
+#. odoo-javascript
+#: code:addons/account_reports/static/src/components/account_report/line_cell/popover/edit_popover.xml:0
+#, python-format
+msgid "Post"
+msgstr "ລົງບັນຊີ"
+
+#. module: account_reports
+#: model_terms:ir.ui.view,arch_db:account_reports.journal_report_pdf_export_filters
+msgid "Posted Entries only"
+msgstr "ສະເພາະລາຍການທີ່ລົງບັນຊີແລ້ວ"
+
+#. module: account_reports
+#: model_terms:ir.ui.view,arch_db:account_reports.journal_report_pdf_export_filters
+msgid "Posted and Draft Entries"
+msgstr "ລາຍການທີ່ລົງບັນຊີແລ້ວ ແລະ ສະບັບຮ່າງ"
+
+#. module: account_reports
+#: model:account.report.line,name:account_reports.account_financial_report_prepayements0
+msgid "Prepayments"
+msgstr "ລາຍຈ່າຍລ່ວງໜ້າ"
+
+#. module: account_reports
+#: model:ir.model.fields,field_description:account_reports.field_account_multicurrency_revaluation_wizard__preview_data
+msgid "Preview Data"
+msgstr "ເບິ່ງຕົວຢ່າງຂໍ້ມູນ"
+
+#. module: account_reports
+#. odoo-javascript
+#: code:addons/account_reports/static/src/components/account_report/filters/filter_comparison.xml:0
+#, python-format
+msgid "Previous Period"
+msgstr "ຮອບເວລາຜ່ານມາ"
+
+#. module: account_reports
+#: model:account.report.line,name:account_reports.account_financial_previous_year_earnings0
+msgid "Previous Years Unallocated Earnings"
+msgstr "ກຳໄລສະສົມທີ່ຍັງບໍ່ທັນໄດ້ຈັດສັນຂອງປີກ່ອນໆ"
+
+#. module: account_reports
+#: model_terms:ir.ui.view,arch_db:account_reports.view_account_multicurrency_revaluation_wizard
+msgid "Proceed with caution as there might be an existing adjustment for this period ("
+msgstr ""
+"ດຳເນີນການດ້ວຍຄວາມລະມັດລະວັງ ເນື່ອງຈາກອາດຈະມີການປັບປຸງທີ່ມີຢູ່ແລ້ວສຳລັບຮອບເວລານີ້ ("
+
+#. module: account_reports
+#: model:account.report,name:account_reports.profit_and_loss
+#: model:ir.actions.client,name:account_reports.action_account_report_pl
+#: model:ir.ui.menu,name:account_reports.menu_action_account_report_profit_and_loss
+msgid "Profit and Loss"
+msgstr "ໃບລາຍງານຜົນໄດ້ຮັບ (ກຳໄລ-ຂາດທຶນ)"
+
+#. module: account_reports
+#: model:account.report.line,name:account_reports.account_financial_report_executivesummary_profitability0
+msgid "Profitability"
+msgstr "ຄວາມສາມາດໃນການສ້າງກຳໄລ"
+
+#. module: account_reports
+#: model_terms:ir.ui.view,arch_db:account_reports.view_move_form_vat_return
+msgid "Proposition of tax closing journal entry."
+msgstr "ຂໍ້ສະເໜີຂອງການບັນທຶກສະມຸດລາຍວັນປິດພາສີ."
+
+#. module: account_reports
+#. odoo-python
+#: code:addons/account_reports/wizard/multicurrency_revaluation.py:0
+#, python-format
+msgid "Provision for %(for_cur)s (1 %(comp_cur)s = %(rate)s %(for_cur)s)"
+msgstr "ການຕັ້ງສຳຮອງສຳລັບ %(for_cur)s (1 %(comp_cur)s = %(rate)s %(for_cur)s)"
+
+#. module: account_reports
+#. odoo-python
+#: code:addons/account_reports/models/account_aged_partner_balance.py:0
+#: code:addons/account_reports/models/account_report.py:0
+#, python-format
+msgid "Receivable"
+msgstr "ລູກໜີ້"
+
+#. module: account_reports
+#. odoo-python
+#: code:addons/account_reports/models/account_generic_tax_report.py:0
+#, python-format
+msgid "Receivable tax amount"
+msgstr "ຈຳນວນພາສີທີ່ຕ້ອງຮັບ"
+
+#. module: account_reports
+#: model:account.report.line,name:account_reports.account_financial_report_executivesummary_debtors0
+#: model:account.report.line,name:account_reports.account_financial_report_receivable0
+msgid "Receivables"
+msgstr "ລູກໜີ້"
+
+#. module: account_reports
+#. odoo-javascript
+#: code:addons/account_reports/static/src/components/aged_partner_balance/line_name/line_name.xml:0
+#: code:addons/account_reports/static/src/components/partner_ledger/line_name.xml:0
+#, python-format
+msgid "Reconcile"
+msgstr "ກວດສອບຍອດ"
+
+#. module: account_reports
+#: model_terms:ir.ui.view,arch_db:account_reports.account_reports_journal_dashboard_kanban_view
+msgid "Reconciliation Report"
+msgstr "ບົດລາຍງານການກວດສອບຍອດ"
+
+#. module: account_reports
+#: model:account.report.column,name:account_reports.partner_ledger_report_ref
+msgid "Ref"
+msgstr "ເລກອ້າງອີງ"
+
+#. module: account_reports
+#: model:ir.model.fields,field_description:account_reports.field_account_financial_year_op__account_tax_periodicity_reminder_day
+#: model:ir.model.fields,field_description:account_reports.field_res_config_settings__account_tax_periodicity_reminder_day
+#: model_terms:ir.ui.view,arch_db:account_reports.res_config_settings_view_form
+#: model_terms:ir.ui.view,arch_db:account_reports.setup_financial_year_opening_form
+msgid "Reminder"
+msgstr "ການເຕືອນ"
+
+#. module: account_reports
+#: model:ir.model.fields,field_description:account_reports.field_account_report_footnote__report_id
+#: model_terms:ir.ui.view,arch_db:account_reports.account_report_form
+msgid "Report"
+msgstr "ບົດລາຍງານ"
+
+#. module: account_reports
+#: model_terms:ir.ui.view,arch_db:account_reports.account_report_line_form
+msgid "Report Line"
+msgstr "ແຖວບົດລາຍງານ"
+
+#. module: account_reports
+#. odoo-python
+#: code:addons/account_reports/models/account_report.py:0
+#, python-format
+msgid "Report lines mentioning the account code"
+msgstr "ແຖວບົດລາຍງານທີ່ອ້າງເຖິງລະຫັດບັນຊີ"
+
+#. module: account_reports
+#. odoo-javascript
+#: code:addons/account_reports/static/src/components/account_report/filters/filter_variant.xml:0
+#, python-format
+msgid "Report:"
+msgstr "ບົດລາຍງານ:"
+
+#. module: account_reports
+#: model_terms:ir.ui.view,arch_db:account_reports.res_config_settings_view_form
+msgid "Reporting"
+msgstr "ການລາຍງານ"
+
+#. module: account_reports
+#: model:ir.model.fields,field_description:account_reports.field_account_report_horizontal_group__report_ids
+msgid "Reports"
+msgstr "ບົດລາຍງານ"
+
+#. module: account_reports
+#: model:account.report.line,name:account_reports.account_financial_retained_earnings0
+msgid "Retained Earnings"
+msgstr "ກຳໄລສະສົມ"
+
+#. module: account_reports
+#: model:account.report.line,name:account_reports.account_financial_report_executivesummary_return_investment0
+msgid "Return on investments (net profit / assets)"
+msgstr "ຜົນຕອບແທນຈາກການລົງທຶນ (ກຳໄລສຸດທິ / ຊັບສິນ)"
+
+#. module: account_reports
+#: model:ir.model.fields,field_description:account_reports.field_account_multicurrency_revaluation_wizard__reversal_date
+msgid "Reversal Date"
+msgstr "ວັນທີກັບລາຍການ"
+
+#. module: account_reports
+#. odoo-python
+#: code:addons/account_reports/wizard/multicurrency_revaluation.py:0
+#, python-format
+msgid "Reversal of: %s"
+msgstr "ການກັບລາຍການຂອງ: %s"
+
+#. module: account_reports
+#: model_terms:ir.ui.view,arch_db:account_reports.view_account_report_search
+msgid "Root Report"
+msgstr "ບົດລາຍງານຫຼັກ"
+
+#. module: account_reports
+#: model:ir.model.fields,field_description:account_reports.field_account_report_horizontal_group__rule_ids
+msgid "Rules"
+msgstr "ກົດລະບຽບ"
+
+#. module: account_reports
+#: model_terms:ir.ui.view,arch_db:account_reports.account_reports_journal_dashboard_kanban_view
+msgid "Running Balance"
+msgstr "ຍອດສະສົມ"
+
+#. module: account_reports
+#. odoo-javascript
+#: code:addons/account_reports/static/src/components/account_report/filters/filter_comparison.xml:0
+#, python-format
+msgid "Same Period Last Year"
+msgstr "ໄລຍະດຽວກັນຂອງປີກ່ອນ"
+
+#. module: account_reports
+#. odoo-python
+#. odoo-javascript
+#: code:addons/account_reports/models/account_report.py:0
+#: code:addons/account_reports/static/src/components/account_report/footnote/dialog/footnote_dialog.xml:0
+#: code:addons/account_reports/static/src/components/aged_partner_balance/dialog/expected_date_dialog.xml:0
+#, python-format
+msgid "Save"
+msgstr "ບັນທຶກ"
+
+#. module: account_reports
+#. odoo-javascript
+#: code:addons/account_reports/static/src/components/account_report/search_bar/search_bar.xml:0
+#, python-format
+msgid "Search line"
+msgstr "ຄົ້ນຫາລາຍການ"
+
+#. module: account_reports
+#. odoo-python
+#: code:addons/account_reports/models/account_sales_report.py:0
+#, python-format
+msgid "Services"
+msgstr "ການບໍລິການ"
+
+#. module: account_reports
+#: model_terms:ir.ui.view,arch_db:account_reports.view_account_coa
+msgid "Setup"
+msgstr "ຕັ້ງຄ່າ"
+
+#. module: account_reports
+#: model:account.report.line,name:account_reports.account_financial_report_executivesummary_st_cash_forecast0
+msgid "Short term cash forecast"
+msgstr "ການພະຍາກອນເງິນສົດໄລຍະສັ້ນ"
+
+#. module: account_reports
+#: model:ir.model.fields,field_description:account_reports.field_account_multicurrency_revaluation_wizard__show_warning_move_id
+msgid "Show Warning Move"
+msgstr "ສະແດງການເຄື່ອນໄຫວທີ່ແຈ້ງເຕືອນ"
+
+#. module: account_reports
+#: model_terms:ir.ui.view,arch_db:account_reports.view_move_form_vat_return
+msgid "Some controls failed."
+msgstr "ການກວດສອບບາງຢ່າງບໍ່ສຳເລັດ."
+
+#. module: account_reports
+#. odoo-javascript
+#: code:addons/account_reports/static/src/components/journal_report/filter_extra_options.xml:0
+#, python-format
+msgid "Sort By Date"
+msgstr "ຈັດລຽງຕາມວັນທີ"
+
+#. module: account_reports
+#: model:ir.model.fields,help:account_reports.field_res_company__account_representative_id
+msgid "Specify an Accounting Firm that will act as a representative when exporting reports."
+msgstr "ລະບຸບໍລິສັດບັນຊີທີ່ຈະເຮັດໜ້າທີ່ເປັນຕົວແທນເມື່ອສົ່ງອອກບົດລາຍງານ."
+
+#. module: account_reports
+#. odoo-javascript
+#: code:addons/account_reports/static/src/components/account_report/filters/filter_comparison.xml:0
+#: code:addons/account_reports/static/src/components/account_report/filters/filter_date.xml:0
+#, python-format
+msgid "Start Date :"
+msgstr "ວັນທີເລີ່ມຕົ້ນ :"
+
+#. module: account_reports
+#: model:ir.model.fields,field_description:account_reports.field_res_company__account_tax_periodicity_reminder_day
+msgid "Start from"
+msgstr "ເລີ່ມຈາກ"
+
+#. module: account_reports
+#. odoo-python
+#: code:addons/account_reports/models/account_journal_report.py:0
+#, python-format
+msgid "Starting Balance:"
+msgstr "ຍອດເປີດບັນຊີ:"
+
+#. module: account_reports
+#. odoo-python
+#: code:addons/account_reports/models/account_journal_report.py:0
+#, python-format
+msgid "T: %s"
+msgstr "T: %s"
+
+#. module: account_reports
+#. odoo-javascript
+#: code:addons/account_reports/static/src/components/account_report/filters/filter_partner.xml:0
+#, python-format
+msgid "Tags"
+msgstr "ແທັກ"
+
+#. module: account_reports
+#. odoo-python
+#. odoo-javascript
+#: code:addons/account_reports/models/account_general_ledger.py:0
+#: code:addons/account_reports/static/src/components/journal_report/line/line.xml:0
+#: model_terms:ir.ui.view,arch_db:account_reports.journal_report_pdf_export_line
+#, python-format
+msgid "Tax Amount"
+msgstr "ຈຳນວນພາສີ"
+
+#. module: account_reports
+#: model:ir.model.fields,field_description:account_reports.field_account_bank_statement_line__tax_closing_end_date
+#: model:ir.model.fields,field_description:account_reports.field_account_move__tax_closing_end_date
+#: model:ir.model.fields,field_description:account_reports.field_account_payment__tax_closing_end_date
+msgid "Tax Closing End Date"
+msgstr "ວັນທີສິ້ນສຸດການປິດພາສີ"
+
+#. module: account_reports
+#. odoo-python
+#: code:addons/account_reports/models/account_general_ledger.py:0
+#, python-format
+msgid "Tax Declaration"
+msgstr "ການແຈ້ງພາສີ"
+
+#. module: account_reports
+#. odoo-python
+#: code:addons/account_reports/models/account_journal_report.py:0
+#, python-format
+msgid "Tax Grids"
+msgstr "ຕາຕະລາງພາສີ"
+
+#. module: account_reports
+#: model:ir.model.fields,field_description:account_reports.field_account_tax_unit__vat
+msgid "Tax ID"
+msgstr "ເລກປະຈຳຕົວຜູ້ເສຍພາສີ"
+
+#. module: account_reports
+#. odoo-python
+#: code:addons/account_reports/models/account_generic_tax_report.py:0
+#, python-format
+msgid "Tax Paid Adjustment"
+msgstr "ການປັບປຸງພາສີທີ່ຈ່າຍແລ້ວ"
+
+#. module: account_reports
+#. odoo-python
+#: code:addons/account_reports/models/account_generic_tax_report.py:0
+#, python-format
+msgid "Tax Received Adjustment"
+msgstr "ການປັບປຸງພາສີທີ່ໄດ້ຮັບ"
+
+#. module: account_reports
+#: model:ir.actions.client,name:account_reports.action_account_report_gt
+#: model:ir.ui.menu,name:account_reports.menu_action_account_report_gt
+#: model:mail.activity.type,name:account_reports.tax_closing_activity_type
+#: model:mail.activity.type,summary:account_reports.tax_closing_activity_type
+#: model_terms:ir.ui.view,arch_db:account_reports.view_move_form_vat_return
+msgid "Tax Report"
+msgstr "ບົດລາຍງານພາສີ"
+
+#. module: account_reports
+#: model:ir.model.fields,field_description:account_reports.field_account_bank_statement_line__tax_report_control_error
+#: model:ir.model.fields,field_description:account_reports.field_account_move__tax_report_control_error
+#: model:ir.model.fields,field_description:account_reports.field_account_payment__tax_report_control_error
+msgid "Tax Report Control Error"
+msgstr "ຂໍ້ຜິດພາດໃນການຄວບຄຸມບົດລາຍງານພາສີ"
+
+#. module: account_reports
+#: model_terms:ir.ui.view,arch_db:account_reports.setup_financial_year_opening_form
+msgid "Tax Return"
+msgstr "ໃບແຈ້ງພາສີ"
+
+#. module: account_reports
+#: model_terms:ir.ui.view,arch_db:account_reports.res_config_settings_view_form
+msgid "Tax Return Periodicity"
+msgstr "ຮອບເວລາການແຈ້ງພາສີ"
+
+#. module: account_reports
+#: model:ir.model,name:account_reports.model_account_tax_unit
+#: model_terms:ir.ui.view,arch_db:account_reports.view_tax_unit_form
+msgid "Tax Unit"
+msgstr "ໜ່ວຍງານພາສີ"
+
+#. module: account_reports
+#. odoo-javascript
+#: code:addons/account_reports/static/src/components/account_report/filters/filter_tax_unit.xml:0
+#, python-format
+msgid "Tax Unit:"
+msgstr "ໜ່ວຍງານພາສີ:"
+
+#. module: account_reports
+#: model:ir.actions.act_window,name:account_reports.action_view_tax_units
+#: model:ir.model.fields,field_description:account_reports.field_res_company__account_tax_unit_ids
+#: model:ir.ui.menu,name:account_reports.menu_view_tax_units
+msgid "Tax Units"
+msgstr "ໜ່ວຍງານພາສີ"
+
+#. module: account_reports
+#: model:ir.model.fields.selection,name:account_reports.selection__mail_activity_type__category__tax_report
+msgid "Tax report"
+msgstr "ບົດລາຍງານພາສີ"
+
+#. module: account_reports
+#. odoo-python
+#: code:addons/account_reports/models/res_company.py:0
+#, python-format
+msgid "Tax return for %s%s"
+msgstr "ໃບແຈ້ງພາສີສຳລັບ %s%s"
+
+#. module: account_reports
+#. odoo-python
+#: code:addons/account_reports/models/res_company.py:0
+#, python-format
+msgid "Tax return from %s to %s%s"
+msgstr "ໃບແຈ້ງພາສີຈາກ %s ຫາ %s%s"
+
+#. module: account_reports
+#. odoo-python
+#: code:addons/account_reports/models/account_journal_report.py:0
+#, python-format
+msgid "Taxes"
+msgstr "ພາສີ"
+
+#. module: account_reports
+#. odoo-javascript
+#: code:addons/account_reports/static/src/components/journal_report/line/line.xml:0
+#, python-format
+msgid "Taxes Applied"
+msgstr "ພາສີທີ່ນຳໃຊ້"
+
+#. module: account_reports
+#: model_terms:ir.ui.view,arch_db:account_reports.journal_report_pdf_export_line
+msgid ""
+"Taxes Applied\n"
+"                            &amp;nbsp;"
+msgstr ""
+"ພາສີທີ່ນຳໃຊ້\n"
+"                            &amp;nbsp;"
+
+#. module: account_reports
+#: model:ir.model.fields,help:account_reports.field_account_tax_unit__fpos_synced
+msgid "Technical field indicating whether Fiscal Positions exist for all companies in the unit"
+msgstr ""
+"ຟີວທາງເຕັກນິກທີ່ລະບຸວ່າຕຳແໜ່ງງົບປະມານມີຢູ່ສຳລັບທຸກໆບໍລິສັດໃນໜ່ວຍງານຫຼືບໍ່"
+
+#. module: account_reports
+#: model:ir.model,name:account_reports.model_ir_actions_account_report_download
+msgid "Technical model for accounting report downloads"
+msgstr "ໂມເດວທາງເຕັກນິກສຳລັບການດາວໂຫຼດບົດລາຍງານບັນຊີ"
+
+#. module: account_reports
+#: model:ir.model.fields,field_description:account_reports.field_account_report_footnote__text
+msgid "Text"
+msgstr "ຂໍ້ຄວາມ"
+
+#. module: account_reports
+#. odoo-python
+#: code:addons/account_reports/models/account_report.py:0
+#, python-format
+msgid "The Accounts Coverage Report is not available for this report."
+msgstr "ບົດລາຍງານການກວດສອບບັນຊີບໍ່ພ້ອມໃຊ້ງານສຳລັບບົດລາຍງານນີ້."
+
+#. module: account_reports
+#. odoo-python
+#: code:addons/account_reports/models/account_bank_reconciliation_report.py:0
+#, python-format
+msgid "The Book balance in Odoo dated today"
+msgstr "ຍອດຄົງເຫຼືອໃນບັນຊີຂອງ Odoo ທີ່ລົງວັນທີມື້ນີ້"
+
+#. module: account_reports
+#. odoo-python
+#: code:addons/account_reports/models/account_tax.py:0
+#, python-format
+msgid "The country detected for this VAT number does not match the one set on this Tax Unit."
+msgstr ""
+"ປະເທດທີ່ກວດພົບສຳລັບເລກປະຈຳຕົວຜູ້ເສຍພາສີນີ້ ບໍ່ກົງກັບປະເທດທີ່ຕັ້ງໄວ້ໃນໜ່ວຍງານພາສີນີ້."
+
+#. module: account_reports
+#: model:ir.model.fields,help:account_reports.field_account_tax_unit__country_id
+msgid "The country in which this tax unit is used to group your companies' tax reports declaration."
+msgstr ""
+"ປະເທດທີ່ໃຊ້ໜ່ວຍງານພາສີນີ້ນີ້ເພື່ອຈັດກຸ່ມການແຈ້ງບົດລາຍງານພາສີຂອງບໍລິສັດທ່ານ."
+
+#. module: account_reports
+#. odoo-python
+#: code:addons/account_reports/models/account_bank_reconciliation_report.py:0
+#, python-format
+msgid "The current balance in the General Ledger %s doesn't match the balance of your last bank statement %s leading to an unexplained difference of %s."
+msgstr ""
+"ຍອດຄົງເຫຼືອປັດຈຸບັນໃນບັນຊີແຍກປະເພດທົ່ວໄປ %s ບໍ່ກົງກັບຍອດຄົງເຫຼືອຂອງໃບແຈ້ງຍອດທະນາຄານລ້າສຸດ %s ເຮັດໃ"
+"ຫ້ມີສ່ວນຕ່າງ %s ທີ່ບໍ່ສາມາດອະທິບາຍໄດ້."
+
+#. module: account_reports
+#: model:ir.model.fields,help:account_reports.field_account_tax_unit__vat
+msgid "The identifier to be used when submitting a report for this unit."
+msgstr "ຕົວລະບຸທີ່ຈະໃຊ້ໃນເວລາສົ່ງບົດລາຍງານສຳລັບໜ່ວຍງານນີ້."
+
+#. module: account_reports
+#. odoo-python
+#: code:addons/account_reports/models/account_tax.py:0
+#, python-format
+msgid "The main company of a tax unit has to be part of it."
+msgstr "ບໍລິສັດຫຼັກຂອງໜ່ວຍງານພາສີ ຕ້ອງເປັນສ່ວນໜຶ່ງຂອງໜ່ວຍງານນັ້ນ."
+
+#. module: account_reports
+#. odoo-python
+#: code:addons/account_reports/models/account_journal_report.py:0
+#, python-format
+msgid "The selected report line does not target a Journal Entry or a Journal Item."
+msgstr ""
+"ແຖວບົດລາຍງານທີ່ເລືອກ ບໍ່ໄດ້ອ້າງອີງເຖິງລາຍການບັນທຶກບັນຊີ ຫຼື ລາຍການຍ່ອຍບັນຊີ."
+
+#. module: account_reports
+#: model:ir.model.fields,help:account_reports.field_res_company__account_tax_unit_ids
+msgid "The tax units this company belongs to."
+msgstr "ໜ່ວຍງານພາສີທີ່ບໍລິສັດນີ້ເປັນສະມາຊິກ."
+
+#. module: account_reports
+#. odoo-javascript
+#: code:addons/account_reports/static/src/components/account_report/account_report.xml:0
+#, python-format
+msgid "There are"
+msgstr "ມີ"
+
+#. module: account_reports
+#. odoo-javascript
+#: code:addons/account_reports/static/src/components/bank_reconciliation_report/account_report.xml:0
+#, python-format
+msgid "There are some"
+msgstr "ມີບາງ"
+
+#. module: account_reports
+#. odoo-javascript
+#: code:addons/account_reports/static/src/components/account_report/filters/filter_date.xml:0
+#, python-format
+msgid "This Financial Year"
+msgstr "ປີງົບປະມານນີ້"
+
+#. module: account_reports
+#. odoo-javascript
+#: code:addons/account_reports/static/src/components/account_report/filters/filter_date.xml:0
+#, python-format
+msgid "This Month"
+msgstr "ເດືອນນີ້"
+
+#. module: account_reports
+#. odoo-javascript
+#: code:addons/account_reports/static/src/components/account_report/filters/filter_date.xml:0
+#, python-format
+msgid "This Quarter"
+msgstr "ງວດນີ້"
+
+#. module: account_reports
+#. odoo-python
+#: code:addons/account_reports/models/account_report.py:0
+#, python-format
+msgid "This account exists in the Chart of Accounts but is not mentioned in any line of the report"
+msgstr "ບັນຊີນີ້ມີຢູ່ໃນຜັງບັນຊີ ແຕ່ບໍ່ໄດ້ຖືກກ່າວເຖິງໃນແຖວໃດໆຂອງບົດລາຍງານ"
+
+#. module: account_reports
+#. odoo-python
+#: code:addons/account_reports/models/account_report.py:0
+#, python-format
+msgid "This account is reported in a line of the report but does not exist in the Chart of Accounts"
+msgstr "ບັນຊີນີ້ຖືກລາຍງານໃນແຖວຂອງບົດລາຍງານ ແຕ່ບໍ່ມີຢູ່ໃນຜັງບັນຊີ"
+
+#. module: account_reports
+#. odoo-python
+#: code:addons/account_reports/models/account_report.py:0
+#, python-format
+msgid "This account is reported in multiple lines of the report"
+msgstr "ບັນຊີນີ້ຖືກລາຍງານໃນຫຼາຍແຖວຂອງບົດລາຍງານ"
+
+#. module: account_reports
+#. odoo-python
+#: code:addons/account_reports/models/account_report.py:0
+#, python-format
+msgid "This account is reported multiple times on the same line of the report"
+msgstr "ບັນຊີນີ້ຖືກລາຍງານຫຼາຍຄັ້ງໃນແຖວດຽວກັນຂອງບົດລາຍງານ"
+
+#. module: account_reports
+#: model_terms:ir.ui.view,arch_db:account_reports.res_config_settings_view_form
+msgid "This allows you to choose the position of totals in your financial reports."
+msgstr "ນີ້ຊ່ວຍໃຫ້ທ່ານສາມາດເລືອກຕຳແໜ່ງຂອງຍອດລວມໃນບົດລາຍງານການເງິນຂອງທ່ານ."
+
+#. module: account_reports
+#. odoo-javascript
+#: code:addons/account_reports/static/src/components/generic_tax_report/account_report.xml:0
+#, python-format
+msgid "This company is part of a tax unit. You're currently not viewing the whole unit; to change that, tick the \"aggregate\" option of \"tax unit\" menu."
+msgstr ""
+"ບໍລິສັດນີ້ເປັນສ່ວນໜຶ່ງຂອງໜ່ວຍງານພາສີ. ປະຈຸບັນທ່ານບໍ່ໄດ້ເບິ່ງທັງໝົດໜ່ວຍງານ; ເພື່ອປ່ຽນແປງສິ່ງນັ້ນ, ໃຫ້ໝາຍເລືອກ"
+"ຕົວເລືອກ \"ລວມຍອດ\" (aggregate) ໃນເມນູ \"ໜ່ວຍງານພາສີ\"."
+
+#. module: account_reports
+#. odoo-python
+#: code:addons/account_reports/models/account_generic_tax_report.py:0
+#, python-format
+msgid "This period is already closed for company %s"
+msgstr "ຮອບເວລານີ້ຖືກປິດແລ້ວສຳລັບບໍລິສັດ %s"
+
+#. module: account_reports
+#. odoo-javascript
+#: code:addons/account_reports/static/src/components/multicurrency_revaluation_report/account_report.xml:0
+#, python-format
+msgid "This report only displays the data of the active company."
+msgstr "ບົດລາຍງານນີ້ສະແດງສະເພາະຂໍ້ມູນຂອງບໍລິສັດທີ່ກຳລັງໃຊ້ງານຢູ່ເທົ່ານັ້ນ."
+
+#. module: account_reports
+#. odoo-javascript
+#: code:addons/account_reports/static/src/components/account_report/filters/filter_date.xml:0
+#, python-format
+msgid "Today"
+msgstr "ມື້ນີ້"
+
+#. module: account_reports
+#. odoo-python
+#: code:addons/account_reports/models/account_general_ledger.py:0
+#: code:addons/account_reports/models/account_partner_ledger.py:0
+#: code:addons/account_reports/models/account_sales_report.py:0
+#: model:account.report.column,name:account_reports.aged_payable_report_total
+#: model:account.report.column,name:account_reports.aged_receivable_report_total
+#, python-format
+msgid "Total"
+msgstr "ລວມທັງໝົດ"
+
+#. module: account_reports
+#. odoo-python
+#: code:addons/account_reports/models/account_bank_reconciliation_report.py:0
+#: code:addons/account_reports/models/account_report.py:0
+#, python-format
+msgid "Total %s"
+msgstr "ລວມ %s"
+
+#. module: account_reports
+#. odoo-python
+#: code:addons/account_reports/models/account_report.py:0
+#, python-format
+msgid "Trade Partners"
+msgstr "ຄູ່ຄ້າທາງການຄ້າ"
+
+#. module: account_reports
+#. odoo-python
+#: code:addons/account_reports/models/account_bank_reconciliation_report.py:0
+#, python-format
+msgid "Transactions that were entered into Odoo, but not yet reconciled (Payments triggered by invoices/bills or manually)"
+msgstr ""
+"ລາຍການເຄື່ອນໄຫວທີ່ປ້ອນເຂົ້າໃນ Odoo ແຕ່ຍັງບໍ່ທັນໄດ້ກວດສອບຍອດ (ການຊຳລະທີ່ເກີດຈາກໃບເກັບເງິນ/ບິນ ຫຼື ປ້"
+"ອນເອງ)"
+
+#. module: account_reports
+#. odoo-python
+#: code:addons/account_reports/models/account_bank_reconciliation_report.py:0
+#, python-format
+msgid "Transactions(+) that were entered into Odoo, but not yet reconciled (Payments triggered by invoices/refunds or manually)"
+msgstr ""
+"ລາຍການເຄື່ອນໄຫວ(+) ທີ່ປ້ອນເຂົ້າໃນ Odoo ແຕ່ຍັງບໍ່ທັນໄດ້ກວດສອບຍອດ (ການຊຳລະທີ່ເກີດຈາກໃບເກັບເງິນ/ກາ"
+"ນຄືນເງິນ ຫຼື ປ້ອນເອງ)"
+
+#. module: account_reports
+#. odoo-python
+#: code:addons/account_reports/models/account_bank_reconciliation_report.py:0
+#, python-format
+msgid "Transactions(-) that were entered into Odoo, but not yet reconciled (Payments triggered by bills/credit notes or manually)"
+msgstr ""
+"ລາຍການເຄື່ອນໄຫວ(-) ທີ່ປ້ອນເຂົ້າໃນ Odoo ແຕ່ຍັງບໍ່ທັນໄດ້ກວດສອບຍອດ (ການຊຳລະທີ່ເກີດຈາກບິນ/ໃບຫຼຸດໜີ້ ຫຼື "
+"ປ້ອນເອງ)"
+
+#. module: account_reports
+#: model:account.report,name:account_reports.trial_balance_report
+#: model:ir.actions.client,name:account_reports.action_account_report_coa
+#: model:ir.ui.menu,name:account_reports.menu_action_account_report_coa
+msgid "Trial Balance"
+msgstr "ໃບດຸ່ນດ່ຽງ"
+
+#. module: account_reports
+#: model:ir.model,name:account_reports.model_account_trial_balance_report_handler
+msgid "Trial Balance Custom Handler"
+msgstr "ຕົວຈັດການບົດລາຍງານໃບດຸ່ນດ່ຽງແບບກຳນົດເອງ"
+
+#. module: account_reports
+#. odoo-python
+#: code:addons/account_reports/models/account_sales_report.py:0
+#, python-format
+msgid "Triangular"
+msgstr "ສາມລ່ຽມ"
+
+#. module: account_reports
+#. odoo-python
+#: code:addons/account_reports/models/account_report.py:0
+#, python-format
+msgid "Trying to expand a group for a line which was not generated by a report line: %s"
+msgstr "ກຳລັງພະຍາຍາມຂະຫຍາຍກຸ່ມສຳລັບແຖວທີ່ບໍ່ໄດ້ຖືກສ້າງຂຶ້ນໂດຍແຖວບົດລາຍງານ: %s"
+
+#. module: account_reports
+#. odoo-python
+#: code:addons/account_reports/models/account_report.py:0
+#, python-format
+msgid "Trying to expand a line without an expansion function."
+msgstr "ກຳລັງພະຍາຍາມຂະຫຍາຍແຖວໂດຍບໍ່ມີຟັງຊັນການຂະຫຍາຍ."
+
+#. module: account_reports
+#. odoo-python
+#: code:addons/account_reports/models/account_report.py:0
+#, python-format
+msgid "Trying to expand groupby results on lines without a groupby value."
+msgstr "ກຳລັງພະຍາຍາມຂະຫຍາຍຜົນລັດ groupby ໃນແຖວທີ່ບໍ່ມີຄ່າ groupby."
+
+#. module: account_reports
+#. odoo-python
+#: code:addons/account_reports/models/account_journal_report.py:0
+#, python-format
+msgid "Trying to use the journal line expand function on a line that is not linked to a journal."
+msgstr ""
+"ກຳລັງພະຍາຍາມໃຊ້ຟັງຊັນຂະຫຍາຍແຖວສະມຸດລາຍວັນໃນແຖວທີ່ບໍ່ໄດ້ເຊື່ອມໂຍງກັບສະມຸດລາຍວັນ."
+
+#. module: account_reports
+#: model:account.report.line,name:account_reports.account_financial_unaffected_earnings0
+msgid "Unallocated Earnings"
+msgstr "ກຳໄລທີ່ຍັງບໍ່ທັນໄດ້ຈັດສັນ"
+
+#. module: account_reports
+#. odoo-javascript
+#: code:addons/account_reports/static/src/components/account_report/filters/filter_extra_options.xml:0
+#, python-format
+msgid "Unfold All"
+msgstr "ຂະຫຍາຍທັງໝົດ"
+
+#. module: account_reports
+#. odoo-python
+#: code:addons/account_reports/models/account_report.py:0
+#, python-format
+msgid "Unknown"
+msgstr "ບໍ່ລະບຸ"
+
+#. module: account_reports
+#. odoo-python
+#: code:addons/account_reports/models/account_partner_ledger.py:0
+#: code:addons/account_reports/models/account_sales_report.py:0
+#, python-format
+msgid "Unknown Partner"
+msgstr "ບໍ່ລະບຸຄູ່ຄ້າ"
+
+#. module: account_reports
+#. odoo-python
+#: code:addons/account_reports/models/account_report.py:0
+#, python-format
+msgid "Unknown bound criterium: %s"
+msgstr "ບໍ່ຮູ້ຈັກເງື່ອນໄຂຂອບເຂດ: %s"
+
+#. module: account_reports
+#. odoo-python
+#: code:addons/account_reports/models/account_report.py:0
+#, python-format
+msgid "Unknown date scope: %s"
+msgstr "ບໍ່ຮູ້ຈັກຂອບເຂດວັນທີ: %s"
+
+#. module: account_reports
+#: model:account.report,name:account_reports.multicurrency_revaluation_report
+#: model:ir.actions.client,name:account_reports.action_account_report_multicurrency_revaluation
+#: model:ir.ui.menu,name:account_reports.menu_action_account_report_multicurrency_revaluation
+msgid "Unrealized Currency Gains/Losses"
+msgstr "ກຳໄລ/ຂາດທຶນຈາກອັດຕາແລກປ່ຽນທີ່ຍັງບໍ່ທັນເກີດຂຶ້ນຈິງ"
+
+#. module: account_reports
+#: model:account.report.column,name:account_reports.account_financial_report_ec_sales_vat
+msgid "VAT Number"
+msgstr "ເລກປະຈຳຕົວຜູ້ເສຍພາສີ"
+
+#. module: account_reports
+#. odoo-python
+#: code:addons/account_reports/models/account_move.py:0
+#, python-format
+msgid "Vat closing from %s to %s"
+msgstr "ການປິດພາສີມູນຄ່າເພີ່ມຈາກ %s ຫາ %s"
+
+#. module: account_reports
+#. odoo-python
+#: code:addons/account_reports/models/account_report.py:0
+#, python-format
+msgid "View Bank Statement"
+msgstr "ເບິ່ງໃບແຈ້ງຍອດທະນາຄານ"
+
+#. module: account_reports
+#. odoo-javascript
+#: code:addons/account_reports/static/src/components/account_report/line_cell/popover/carryover_popover.xml:0
+#, python-format
+msgid "View Carryover Lines"
+msgstr "ເບິ່ງລາຍການຍົກໄປ"
+
+#. module: account_reports
+#. odoo-python
+#: code:addons/account_reports/models/account_report.py:0
+#, python-format
+msgid "View Journal Entry"
+msgstr "ເບິ່ງລາຍການບັນທຶກບັນຊີ"
+
+#. module: account_reports
+#. odoo-python
+#: code:addons/account_reports/models/account_report.py:0
+#: code:addons/account_reports/models/account_sales_report.py:0
+#, python-format
+msgid "View Partner"
+msgstr "ເບິ່ງຄູ່ຄ້າ"
+
+#. module: account_reports
+#. odoo-python
+#: code:addons/account_reports/models/account_report.py:0
+#, python-format
+msgid "View Payment"
+msgstr "ເບິ່ງການຊຳລະ"
+
+#. module: account_reports
+#: model_terms:ir.ui.view,arch_db:account_reports.res_config_settings_view_form
+msgid "When ticked, totals and subtotals appear below the sections of the report"
+msgstr ""
+"ເມື່ອໝາຍເລືອກ, ຍອດລວມ ແລະ ຍອດລວມຍ່ອຍຈະສະແດງຢູ່ລຸ່ມພາກສ່ວນຕ່າງໆຂອງບົດລາຍງານ"
+
+#. module: account_reports
+#: model:ir.model.fields,help:account_reports.field_res_company__totals_below_sections
+#: model:ir.model.fields,help:account_reports.field_res_config_settings__totals_below_sections
+msgid "When ticked, totals and subtotals appear below the sections of the report."
+msgstr ""
+"ເມື່ອໝາຍເລືອກ, ຍອດລວມ ແລະ ຍອດລວມຍ່ອຍຈະສະແດງຢູ່ລຸ່ມພາກສ່ວນຕ່າງໆຂອງບົດລາຍງານ."
+
+#. module: account_reports
+#: model:ir.model.fields,help:account_reports.field_account_account__exclude_provision_currency_ids
+msgid "Whether or not we have to make provisions for the selected foreign currencies."
+msgstr "ພວກເຮົາຈຳເປັນຕ້ອງຕັ້ງສຳຮອງສຳລັບເງິນຕາຕ່າງປະເທດທີ່ເລືອກຫຼືບໍ່."
+
+#. module: account_reports
+#. odoo-python
+#: code:addons/account_reports/models/account_general_ledger.py:0
+#, python-format
+msgid "Wrong ID for general ledger line to expand: %s"
+msgstr "ID ບໍ່ຖືກຕ້ອງສຳລັບແຖວບັນຊີແຍກປະເພດທົ່ວໄປທີ່ຈະຂະຫຍາຍ: %s"
+
+#. module: account_reports
+#. odoo-python
+#: code:addons/account_reports/models/account_partner_ledger.py:0
+#, python-format
+msgid "Wrong ID for partner ledger line to expand: %s"
+msgstr "ID ບໍ່ຖືກຕ້ອງສຳລັບແຖວບັນຊີແຍກປະເພດຄູ່ຄ້າທີ່ຈະຂະຫຍາຍ: %s"
+
+#. module: account_reports
+#. odoo-python
+#: code:addons/account_reports/models/account_report.py:0
+#, python-format
+msgid "Wrong format for if_other_expr_above/if_other_expr_below formula: %s"
+msgstr "ຮູບແບບບໍ່ຖືກຕ້ອງສຳລັບສູດ if_other_expr_above/if_other_expr_below: %s"
+
+#. module: account_reports
+#. odoo-python
+#: code:addons/account_reports/models/account_report.py:0
+#, python-format
+msgid "XLSX"
+msgstr "XLSX"
+
+#. module: account_reports
+#. odoo-javascript
+#: code:addons/account_reports/static/src/components/account_report/line_cell/popover/edit_popover.xml:0
+#, python-format
+msgid "Yes"
+msgstr "ແມ່ນ"
+
+#. module: account_reports
+#. odoo-javascript
+#: code:addons/account_reports/static/src/components/multicurrency_revaluation_report/account_report.xml:0
+#, python-format
+msgid "You are using custom exchange rates."
+msgstr "ທ່ານກຳລັງໃຊ້ອັດຕາແລກປ່ຽນແບບກຳນົດເອງ."
+
+#. module: account_reports
+#. odoo-python
+#: code:addons/account_reports/models/account_move.py:0
+#, python-format
+msgid "You cannot reset this closing entry to draft, as it would delete carryover values impacting the tax report of a locked period. To do this, you first need to modify you tax return lock date."
+msgstr ""
+"ທ່ານບໍ່ສາມາດປ່ຽນລາຍການປິດນີ້ກັບເປັນສະບັບຮ່າງໄດ້ ເນື່ອງຈາກມັນຈະລຶບຄ່າຍົກໄປທີ່ມີຜົນກະທົບຕໍ່ບົດລາຍງານພາສີຂອ"
+"ງຮອບເວລາທີ່ຖືກປິດງວດແລ້ວ. ເພື່ອເຮັດສິ່ງນີ້, ກະລຸນາປ່ຽນວັນທີປິດງວດການແຈ້ງພາສີຂອງທ່ານກ່ອນ."
+
+#. module: account_reports
+#: model_terms:ir.ui.view,arch_db:account_reports.pdf_export_main
+msgid "[Draft]"
+msgstr "[ສະບັບຮ່າງ]"
+
+#. module: account_reports
+#. odoo-javascript
+#: code:addons/account_reports/static/src/components/sales_report/account_report.xml:0
+#, python-format
+msgid "addressed to"
+msgstr "ສົ່ງເຖິງ"
+
+#. module: account_reports
+#: model:ir.model.fields.selection,name:account_reports.selection__res_company__account_tax_periodicity__year
+msgid "annually"
+msgstr "ປະຈຳປີ"
+
+#. module: account_reports
+#. odoo-python
+#: code:addons/account_reports/models/account_aged_partner_balance.py:0
+#, python-format
+msgid "any"
+msgstr "ໃດໜຶ່ງ"
+
+#. module: account_reports
+#: model_terms:ir.ui.view,arch_db:account_reports.res_config_settings_view_form
+#: model_terms:ir.ui.view,arch_db:account_reports.setup_financial_year_opening_form
+msgid "days after period"
+msgstr "ມື້ຫຼັງຈາກຮອບເວລາ"
+
+#. module: account_reports
+#: model:ir.model.fields.selection,name:account_reports.selection__res_company__account_tax_periodicity__2_months
+msgid "every 2 months"
+msgstr "ທຸກໆ 2 ເດືອນ"
+
+#. module: account_reports
+#: model:ir.model.fields.selection,name:account_reports.selection__res_company__account_tax_periodicity__4_months
+msgid "every 4 months"
+msgstr "ທຸກໆ 4 ເດືອນ"
+
+#. module: account_reports
+#. odoo-javascript
+#: code:addons/account_reports/static/src/components/bank_reconciliation_report/account_report.xml:0
+#, python-format
+msgid "having a starting balance different from the previous ending balance."
+msgstr "ມີຍອດເປີດທີ່ແຕກຕ່າງຈາກຍອດປິດທີ່ຜ່ານມາ."
+
+#. module: account_reports
+#. odoo-javascript
+#: code:addons/account_reports/static/src/components/account_report/line_cell/popover/carryover_popover.xml:0
+#, python-format
+msgid "in the next period."
+msgstr "ໃນຮອບເວລາຖັດໄປ."
+
+#. module: account_reports
+#. odoo-javascript
+#: code:addons/account_reports/static/src/components/sales_report/account_report.xml:0
+#, python-format
+msgid "invoices"
+msgstr "ໃບເກັບເງິນ"
+
+#. module: account_reports
+#. odoo-javascript
+#: code:addons/account_reports/static/src/components/bank_reconciliation_report/account_report.xml:0
+#, python-format
+msgid "journal items"
+msgstr "ລາຍການຍ່ອຍບັນຊີ"
+
+#. module: account_reports
+#: model:ir.model.fields.selection,name:account_reports.selection__res_company__account_tax_periodicity__monthly
+msgid "monthly"
+msgstr "ປະຈຳເດືອນ"
+
+#. module: account_reports
+#. odoo-python
+#: code:addons/account_reports/models/account_report.py:0
+#, python-format
+msgid "n/a"
+msgstr "ບໍ່ມີ"
+
+#. module: account_reports
+#. odoo-javascript
+#: code:addons/account_reports/static/src/components/sales_report/account_report.xml:0
+#, python-format
+msgid "partners"
+msgstr "ຄູ່ຄ້າ"
+
+#. module: account_reports
+#. odoo-javascript
+#: code:addons/account_reports/static/src/components/account_report/account_report.xml:0
+#, python-format
+msgid "prior or included in this period."
+msgstr "ກ່ອນໜ້າ ຫຼື ລວມຢູ່ໃນຮອບເວລານີ້."
+
+#. module: account_reports
+#: model:ir.model.fields.selection,name:account_reports.selection__res_company__account_tax_periodicity__trimester
+msgid "quarterly"
+msgstr "ທຸກງວດ"
+
+#. module: account_reports
+#: model:ir.model.fields.selection,name:account_reports.selection__res_company__account_tax_periodicity__semester
+msgid "semi-annually"
+msgstr "ທຸກເຄິ່ງປີ"
+
+#. module: account_reports
+#. odoo-javascript
+#: code:addons/account_reports/static/src/components/bank_reconciliation_report/account_report.xml:0
+#, python-format
+msgid "statements"
+msgstr "ໃບແຈ້ງຍອດ"
+
+#. module: account_reports
+#: model_terms:ir.ui.view,arch_db:account_reports.view_tax_unit_form
+msgid "synchronize fiscal positions"
+msgstr "ຊິງຄ໌ຂໍ້ມູນຕຳແໜ່ງງົບປະມານ"
+
+#. module: account_reports
+#. odoo-python
+#: code:addons/account_reports/models/account_tax.py:0
+#, python-format
+msgid "tax unit [%s]"
+msgstr "ໜ່ວຍງານພາສີ [%s]"
+
+#. module: account_reports
+#. odoo-javascript
+#: code:addons/account_reports/static/src/components/sales_report/account_report.xml:0
+#, python-format
+msgid "that are not established abroad."
+msgstr "ທີ່ບໍ່ໄດ້ຕັ້ງຢູ່ຕ່າງປະເທດ."
+
+#. module: account_reports
+#. odoo-javascript
+#: code:addons/account_reports/static/src/components/account_report/account_report.xml:0
+#, python-format
+msgid "unposted Journal Entries"
+msgstr "ລາຍການບັນທຶກບັນຊີທີ່ຍັງບໍ່ທັນລົງບັນຊີ"
+
+#. module: account_reports
+#. odoo-javascript
+#: code:addons/account_reports/static/src/components/account_report/line_cell/popover/carryover_popover.xml:0
+#, python-format
+msgid "were carried over to this line from previous period."
+msgstr "ຖືກຍົກຍອດມາທີ່ແຖວນີ້ຈາກຮອບເວລາຜ່ານມາ."
+
+#. module: account_reports
+#. odoo-javascript
+#: code:addons/account_reports/static/src/components/bank_reconciliation_report/account_report.xml:0
+#, python-format
+msgid "which doesn't result from a bank statement nor payments."
+msgstr "ເຊິ່ງບໍ່ໄດ້ເກີດມາຈາກໃບແຈ້ງຍອດທະນາຄານ ຫຼື ການຊຳລະ."
+
+#. module: account_reports
+#. odoo-javascript
+#: code:addons/account_reports/static/src/components/sales_report/account_report.xml:0
+#, python-format
+msgid "who are not established in any of the EC countries."
+msgstr "ຜູ້ທີ່ບໍ່ໄດ້ຕັ້ງຢູ່ໃນປະເທດກຸ່ມ EC ໃດໆ."
+
+#. module: account_reports
+#. odoo-javascript
+#: code:addons/account_reports/static/src/components/account_report/line_cell/popover/carryover_popover.xml:0
+#, python-format
+msgid "will be carried over to"
+msgstr "ຈະຖືກຍົກຍອດໄປທີ່"
+
+#. module: account_reports
+#. odoo-javascript
+#: code:addons/account_reports/static/src/components/account_report/line_cell/popover/carryover_popover.xml:0
+#, python-format
+msgid "will be carried over to this line in the next period."
+msgstr "ຈະຖືກຍົກຍອດມາທີ່ແຖວນີ້ໃນຮອບເວລາຖັດໄປ."
+
+#. module: account_reports
+#. odoo-javascript
+#: code:addons/account_reports/static/src/components/sales_report/account_report.xml:0
+#, python-format
+msgid "without a valid intra-community VAT number."
+msgstr "ໂດຍບໍ່ມີເລກປະຈຳຕົວຜູ້ເສຍພາສີພາຍໃນປະຊາຄົມທີ່ຖືກຕ້ອງ."
+
+#. module: account_reports
+#. odoo-javascript
+#: code:addons/account_reports/static/src/components/aged_partner_balance/line_name/line_name.xml:0
+#: code:addons/account_reports/static/src/components/general_ledger/line_name.xml:0
+#: code:addons/account_reports/static/src/components/partner_ledger/line_name.xml:0
+#, python-format
+msgid "⇒ Journal Items"
+msgstr "⇒ ລາຍການຍ່ອຍບັນຊີ"
+
+#. module: account_reports
+#. odoo-javascript
+#: code:addons/account_reports/static/src/components/multicurrency_revaluation_report/account_report.xml:0
+#, python-format
+msgid "⇒ Reset to Odoo’s Rate"
+msgstr "⇒ ຕັ້ງຄ່າຄືນເປັນອັດຕາຂອງ Odoo"

@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data>
+        <!-- Este archivo se mantiene intencionalmente vacío.
+             El label dinámico del VAT se controla vía res.country.vat_label (data/res_country_vat_label.xml).
+             Si se necesita cambiar la UI de res.company en el futuro, agregar aquí la herencia correspondiente. -->
+    </data>
+</odoo>

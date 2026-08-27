@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <record id="paperformat_igtf_landscape" model="report.paperformat">
+        <field name="name">IGTF Landscape</field>
+        <field name="default" eval="True"/>
+        <field name="format">A4</field>
+        <field name="page_height">0</field>
+        <field name="page_width">0</field>
+        <field name="orientation">Landscape</field>
+        <field name="margin_top">10</field>
+        <field name="margin_bottom">10</field>
+        <field name="margin_left">7</field>
+        <field name="margin_right">7</field>
+        <field name="header_line" eval="False"/>
+        <field name="header_spacing">35</field>
+        <field name="dpi">90</field>
+    </record>
+
+    <record id="action_report_igtf" model="ir.actions.report">
+        <field name="name">Listado de IGTF Percibido</field>
+        <field name="model">igtf.report.wizard</field>
+        <field name="report_type">qweb-pdf</field>
+        <field name="report_name">logicacero_igtf.report_igtf_template</field>
+        <field name="report_file">logicacero_igtf.report_igtf_template</field>
+        <field name="binding_model_id" ref="model_igtf_report_wizard"/>
+        <field name="binding_type">report</field>
+        <field name="paperformat_id" ref="paperformat_igtf_landscape"/>
+    </record>
+</odoo>

@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<odoo>
+
+    <record id="multipac_felpa_account_move_tree_inherit" model="ir.ui.view">
+        <field name="name">multipac_felpa_account_move_tree_inherit</field>
+        <field name="active">True</field>
+        <field name="model">account.move</field>
+        <field name="inherit_id" ref="account.view_invoice_tree"/>
+        <field name="arch" type="xml">
+            <xpath expr="//field[@name='name']" position="after">
+                <field name="fel_pa_document_number" optional="hide"/>
+            </xpath>
+            <xpath expr="//field[@name='state']" position="after">
+                <field decoration-danger="fel_pa_state in ('rejected','cancelled')" decoration-info="fel_pa_state == 'draft'" decoration-success="fel_pa_state == 'accepted'" decoration-warning="fel_pa_state == 'contingency'" name="fel_pa_state" widget="badge" optional="hide"/>
+            </xpath>
+        </field>
+    </record>
+
+    <record id="multipac_felpa_account_move_form_inherit" model="ir.ui.view">
+        <field name="name">multipac_felpa_account_move_form_inherit</field>
+        <field name="active">True</field>
+        <field name="model">account.move</field>
+        <field name="inherit_id" ref="account.view_move_form"/>
+        <field name="type">form</field>
+        <field name="arch" type="xml">
+            <xpath expr="//sheet/div[2]" position="before">
+                <div>
+                    <field name="fel_pa_qr" widget="image" class="oe_avatar" options="{'size': [75, 75]}" invisible="not fel_pa_qr"/>
+                </div>
+            </xpath>
+            <field name="name" position="after">
+				<h3><field name="fel_pa_document_code" nolabel="1" readonly="1" invisible="not fel_pa_cufe"/> <field name="fel_pa_document_number" nolabel="1" readonly="1" invisible="not fel_pa_cufe"/></h3>
+			</field>
+            <xpath expr="//field[@name='invoice_date']" position="after">
+                <field domain="[('report_name', 'ilike', '%invoice_template%')]" name="fel_pa_report_template_id" options="{'no_create': True}"/>
+                <field invisible="1" name="fel_pa_report_template_id1"/>
+            </xpath>
+            <xpath expr="//widget[@name='web_ribbon']" position="after">
+                <field invisible="1" name="fel_pa_state"/>
+                <widget invisible="fel_pa_state in ('draft','accepted','rejected','cancelled') or payment_state in ('paid', 'in_payment')" bg_color="bg-warning" name="web_ribbon" title="Contingency FEL"/>
+                <widget invisible="fel_pa_state not in ('cancelled') or payment_state in ('paid', 'in_payment')" bg_color="bg-danger" name="web_ribbon" title="Cancel FEL"/>
+                <widget invisible="fel_pa_state in ('draft','accepted','contingency','cancelled') or payment_state in ('paid', 'in_payment')" bg_color="bg-danger" name="web_ribbon" title="Error en datos FEL"/>
+            </xpath>
+            <xpath expr="//button[@name='button_draft']" position="attributes">
+                <attribute name="invisible">not show_reset_to_draft_button or (company_id.name in ('Supricom, S.A', 'Ofimaster Panama', 'OFFICE SOLUTIONS CENTER 2004, C.A. - A', 'SUPRICOM CCS 21, C.A. - A', 'DISTRIBUIDORA SUPRICOM,CA') and move_type in ('out_invoice', 'out_refund') and state != 'draft')</attribute>
+            </xpath>
+            <xpath expr="//button[@name='button_draft']" position="after">
+                <field name="fel_pa_state" invisible="1"/>
+                <button invisible="move_type == 'out_refund' or state not in ('posted')" groups="account.group_account_invoice" name="action_referenced_debit_note" string="Debit Note Referenced" type="object"/>
+                <button invisible="fel_pa_state not in ('rejected')" groups="account.group_account_invoice" name="fel_pa_handle_online" string="Process FEL" type="object"/>
+                <button invisible="fel_pa_state in ('accepted', 'cancelled') or state != 'posted'" groups="account.group_account_invoice" name="action_sync_fel_pa_document" string="Sync FEL PAC" type="object" confirm="¿Desea intentar sincronizar este documento con el PAC? Úselo si el PAC indica que el documento está duplicado."/>
+                <button invisible="fel_pa_state not in ('accepted','cancelled')" groups="account.group_account_invoice" name="fel_pa_pdf_download" string="Download FEL PDF" type="object"/>
+                <button name="fel_pa_cancel_wizard" string="Cancel FEL" type="object" groups="multipac_felpa.felpa_group_user" invisible="state == 'posted' or not fel_pa_cufe"/>
+            </xpath>
+            <xpath expr="//field[@name='invoice_vendor_bill_id']" position="after">
+                <label for="fel_pa_payment_method_id" string="Panamá FEL Payment Method" invisible="not fel_pa_active"/>
+                <field name="fel_pa_payment_method_id" nolabel="1" invisible="not fel_pa_active" options="{'no_create': True, 'no_create_edit':True}"/>
+            </xpath>
+            <xpath expr="//field[@name='narration']" position="after">
+                <field name="fel_pa_interes_information" placeholder="Panamá FEL Interes Information" colspan="2" nolabel="1" invisible="not fel_pa_active" readonly="state != 'draft'"/>
+            </xpath>
+            <xpath expr="//page[@id='other_tab']" position="after">
+                <field name="fel_pa_active" invisible="1"/>
+                <page string="Panamá FEL" invisible="move_type not in ('in_invoice','out_invoice','out_refund') or not fel_pa_active" readonly="state in ('posted','cancel')">
+                    <group>
+                        <group string="FEL Invoice Information">
+                            <field name="fel_pa_certify" widget="boolean_toggle" readonly="state != 'draft'"/>
+                            <button invisible="state not in ('posted') or fel_pa_certify or fel_pa_cufe" groups="account.group_account_invoice" name="fel_pa_process_after_post" string="Process FEL" type="object" colspan="2"/>
+                            <field name="fel_pa_emission_type" readonly="state != 'draft'"/>
+                            <field name="fel_pa_document_type_id" readonly="state != 'draft'" options="{'no_create': True, 'no_create_edit':True}"/>
+                            <field name="fel_pa_contingency_id" readonly="1" options="{'no_create': True, 'no_create_edit':True}" invisible="not fel_pa_contingency_id"/>
+                            <field name="fel_pa_operation_nature" readonly="state != 'draft'"/>
+                            <field name="fel_pa_operation_destination" readonly="state != 'draft'"/>
+                            <field name="fel_pa_sale_type" readonly="state != 'draft'"/>
+                        </group>
+                        <group string="FEL Certification" invisible="not fel_pa_document_number">
+                            <field name="fel_pa_issue_date" readonly="1"/>
+                            <field name="fel_pa_document_code" readonly="1"/>
+                            <field name="fel_pa_document_number" readonly="1"/>
+                            <field name="fel_pa_cufe" readonly="fel_pa_state == 'accepted'"/>
+                            <field name="fel_pa_qr_url" readonly="1"/>
+                            <field name="fel_pa_date_reception" readonly="1"/>
+                            <field name="fel_pa_pdf_download_count" readonly="1"/>
+                        </group>
+                        <group string="FEL Actions" invisible="not fel_pa_cufe">
+                            <button name="fel_pa_document_state" string="Document State" type="object" colspan="2" invisible="fel_pa_state not in ('accepted','cancelled','contingency') or fel_pa_pac == 'efacturapty'"/>
+                            <button name="fel_pa_pdf_download" string="Download PDF" type="object" colspan="2" invisible="fel_pa_state not in ('accepted','cancelled','contingency')"/>
+                            <button name="fel_pa_xml_download" string="Download XML" type="object" colspan="2" invisible="fel_pa_state not in ('accepted','cancelled','contingency')"/>
+                            <field name="fel_pa_pac" invisible="1"/>
+                            <button name="fel_pa_send_email" string="Send Email by PAC" type="object" colspan="2" invisible="fel_pa_state not in ('accepted','cancelled','contingency') or fel_pa_pac not in ['the_factory_hka', 'ebi']"/>
+                            <button name="fel_pa_email_tracking" string="Email Sent by PAC" type="object" colspan="2" invisible="fel_pa_state not in ('accepted','cancelled','contingency') or fel_pa_pac not in ['the_factory_hka', 'ebi']"/>
+                        </group>
+                        <group string="FEL Invoice References">
+                            <field name="fel_pa_document_references_ids" readonly="state != 'draft'" widget="many2many_tags"/>
+                        </group>
+                    </group>
+                </page>
+            </xpath>
+        </field>
+    </record>
+
+    <record id="multipac_felpa_account_move_search_inherit" model="ir.ui.view">
+        <field name="name">multipac_felpa_account_move_search_inherit</field>
+        <field name="model">account.move</field>
+        <field name="inherit_id" ref="account.view_account_invoice_filter"/>
+        <field name="arch" type="xml">
+            <field name="name" position="attributes">
+                <attribute name="filter_domain">[
+                    '|', '|', '|', '|', '|',
+                    ('name', 'ilike', self),
+                    ('invoice_origin', 'ilike', self),
+                    ('ref', 'ilike', self),
+                    ('payment_reference', 'ilike', self),
+                    ('partner_id', 'child_of', self),
+                    ('fel_pa_cufe', 'ilike', self),
+                    ('fel_pa_document_number', 'ilike', self),
+                ]</attribute>
+            </field>
+        </field>
+    </record>
+
+    <record id="fel_pa_action_cancel_masive" model="ir.actions.server">
+        <field name="name">Cancel FE</field>
+        <field name="model_id" ref="model_account_move" />
+        <field name="binding_model_id" ref="model_account_move" />
+        <field name="state">code</field>
+        <field name="code">
+            if records:
+            action = records.fel_pa_cancel_wizard()
+        </field>
+    </record>
+
+</odoo>

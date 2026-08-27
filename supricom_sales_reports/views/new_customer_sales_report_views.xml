@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <record id="view_new_customer_sales_report_pivot" model="ir.ui.view">
+        <field name="name">supricom.new.customer.sales.report.pivot</field>
+        <field name="model">supricom.new.customer.sales.report</field>
+        <field name="arch" type="xml">
+            <pivot string="Clientes Nuevos y su Primera Compra" disable_linking="False">
+                <field name="first_order_date" interval="month" type="row"/>
+                <field name="partner_id" type="row"/>
+                <field name="first_order_amount" type="measure"/>
+            </pivot>
+        </field>
+    </record>
+
+    <record id="view_new_customer_sales_report_graph" model="ir.ui.view">
+        <field name="name">supricom.new.customer.sales.report.graph</field>
+        <field name="model">supricom.new.customer.sales.report</field>
+        <field name="arch" type="xml">
+            <graph string="Clientes Nuevos y su Primera Compra">
+                <field name="first_order_date" interval="month"/>
+                <field name="first_order_amount" type="measure"/>
+            </graph>
+        </field>
+    </record>
+
+    <record id="view_new_customer_sales_report_tree" model="ir.ui.view">
+        <field name="name">supricom.new.customer.sales.report.tree</field>
+        <field name="model">supricom.new.customer.sales.report</field>
+        <field name="arch" type="xml">
+            <tree string="Detalle de Clientes Nuevos" create="false" edit="false" delete="false">
+                <field name="partner_id"/>
+                <field name="first_order_date"/>
+                <field name="first_order_id" widget="many2one"/>
+                <field name="first_order_amount"/>
+                <field name="company_id" groups="base.group_multi_company"/>
+                <button name="action_open_order" type="object" string="Abrir Orden" icon="fa-arrow-right"/>
+            </tree>
+        </field>
+    </record>
+
+    <record id="action_new_customer_sales_report" model="ir.actions.act_window">
+        <field name="name">Clientes Nuevos y su Primera Compra</field>
+        <field name="res_model">supricom.new.customer.sales.report</field>
+        <field name="view_mode">pivot,graph</field>
+    </record>
+
+    <menuitem id="menu_new_customer_sales_report"
+              name="Clientes Nuevos"
+              action="action_new_customer_sales_report"
+              parent="sale.menu_sale_report"
+              sequence="20"/>
+</odoo>

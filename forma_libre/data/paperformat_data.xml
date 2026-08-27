@@ -1,0 +1,16 @@
+<odoo>
+    <record id="fiscal_format" model="report.paperformat">
+        <field name="name">Media Carta Fiscal</field>
+        <field name="format">custom</field>
+        <field name="page_height">190</field> <!-- Altura en mm (19.0 cm) -->
+        <field name="page_width">154</field> <!-- Ancho en mm (15.4 cm) -->
+        <field name="margin_top">22</field> <!-- Margen superior simétrico para el encabezado de Forma Libre -->
+        <field name="margin_bottom">5</field> <!-- Margen inferior exacto -->
+        <field name="margin_left">5</field> <!-- Margen izquierdo -->
+        <field name="margin_right">5</field> <!-- Margen derecho -->
+        <field name="header_line" eval="False"/>
+        <field name="header_spacing">0</field>
+        <field name="orientation">Portrait</field>
+        <field name="dpi">90</field>
+    </record>
+</odoo>

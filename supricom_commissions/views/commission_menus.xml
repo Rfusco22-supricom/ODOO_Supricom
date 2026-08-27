@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <!-- Main Commission Menu (Parent) -->
+    <menuitem id="menu_commission_root"
+              name="Comisiones"
+              web_icon="supricom_commissions,static/description/icon.png"
+              sequence="20"/>
+
+    <menuitem id="menu_commission_config"
+              name="Configuración"
+              parent="menu_commission_root"
+              sequence="100"/>
+
+    <!-- Matriz de Cobranza (Morosidad) -->
+    <menuitem id="menu_commission_collection_matrix"
+              name="Matriz de Cobranza (Morosidad)"
+              parent="menu_commission_config"
+              action="action_commission_collection_matrix"
+              sequence="25"/>
+
+    <!-- Escala Gerencial por Volumen -->
+    <menuitem id="menu_commission_manager_volume_range"
+              name="Escala Gerencial por Volumen"
+              parent="menu_commission_config"
+              action="action_commission_manager_volume_range"
+              sequence="26"/>
+</odoo>

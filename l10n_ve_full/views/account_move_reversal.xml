@@ -1,0 +1,18 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<odoo>
+    <data>
+        <record id="view_account_move_reversal_inherit" model="ir.ui.view">
+            <field name="name">account.move.reversal.form.inherit</field>
+            <field name="model">account.move.reversal</field>
+            <field name="inherit_id" ref="account.view_account_move_reversal"/>
+            <field name="arch" type="xml">
+                <xpath expr="//field[@name='date']" position="after">
+                    <p class="text-warning">
+                        <b>Aviso de Homologación:</b> Solo se permite la emisión de Notas de Crédito (Reembolso). La opción de re-facturar automáticamente está restringida para cumplir con la normativa SENIAT.
+                    </p>
+                    <field name="supplier_invoice_number" invisible="move_type not in ('out_invoice', 'in_invoice')"/>
+                </xpath>
+            </field>
+        </record>
+    </data>
+</odoo>

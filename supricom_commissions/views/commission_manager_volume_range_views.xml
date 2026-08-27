@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <!-- Form View -->
+    <record id="view_commission_manager_volume_range_form" model="ir.ui.view">
+        <field name="name">commission.manager.volume.range.form</field>
+        <field name="model">commission.manager.volume.range</field>
+        <field name="arch" type="xml">
+            <form string="Escala Gerencial por Volumen">
+                <sheet>
+                    <group>
+                        <group string="Configuración del Rol">
+                            <field name="company_id" options="{'no_create': True}"/>
+                            <field name="vendor_type_id" domain="[('is_manager', '=', True)]"/>
+                        </group>
+                        <group string="Tramo de Volumen y % Comisión">
+                            <field name="amount_from"/>
+                            <field name="amount_to"/>
+                            <field name="commission_percentage"/>
+                        </group>
+                    </group>
+                </sheet>
+            </form>
+        </field>
+    </record>
+
+    <!-- Tree View -->
+    <record id="view_commission_manager_volume_range_tree" model="ir.ui.view">
+        <field name="name">commission.manager.volume.range.tree</field>
+        <field name="model">commission.manager.volume.range</field>
+        <field name="arch" type="xml">
+            <tree string="Escala Gerencial por Volumen" editable="bottom">
+                <field name="company_id" options="{'no_create': True}"/>
+                <field name="vendor_type_id" domain="[('is_manager', '=', True)]"/>
+                <field name="amount_from"/>
+                <field name="amount_to"/>
+                <field name="commission_percentage"/>
+            </tree>
+        </field>
+    </record>
+
+    <!-- Action -->
+    <record id="action_commission_manager_volume_range" model="ir.actions.act_window">
+        <field name="name">Escala Gerencial por Volumen</field>
+        <field name="res_model">commission.manager.volume.range</field>
+        <field name="view_mode">tree,form</field>
+        <field name="help" type="html">
+            <p class="o_view_nocontent_smiling_face">
+                Crea una escala de comisión gerencial por volumen de facturación/cobranza.
+            </p>
+            <p>
+                Utilizado para la Gerencia de Valencia (ej. &lt; $800k = 0.20%, $800k-$1.5M = 0.30%, $1.5M-$2M = 0.40%, &gt;= $2M = 0.50%).
+            </p>
+        </field>
+    </record>
+</odoo>

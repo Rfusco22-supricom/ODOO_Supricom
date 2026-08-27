@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data>
+
+        <!-- Product Template View Inheritance -->
+        <record id="multipac_felpa_product_template_form_inherit" model="ir.ui.view">
+            <field name="name">multipac_felpa_product_template_form_inherit</field>
+            <field name="model">product.template</field>
+            <field name="inherit_id" ref="product.product_template_only_form_view"/>
+            <field name="priority">99</field>
+            <field name="arch" type="xml">
+                <xpath expr="//page[@name='general_information']" position="after">
+                    <field name="is_panama_company" invisible="1"/>
+                    <page name="fel_pa_product_info" string="Panamá FEL Configuration" groups="multipac_felpa.felpa_group_user" invisible="not is_panama_company">
+                        <group string="Basic Configuration">
+                            <field name="fel_pa_exclude_from_invoice"/>
+                            <field name="fel_pa_unspsc_category_id"/>
+                            <field name="fel_pa_info_item"/>
+                            <field name="fel_pa_product_type"/>
+                        </group>
+                        <group string="Vehicle FEL Configuration" invisible="fel_pa_product_type != 'vehicle'">
+                            <group>
+                                <field name="fel_pa_chassis"/>
+                                <field name="fel_pa_color_code"/>
+                                <field name="fel_pa_color_name"/>
+                                <field name="fel_pa_engine_power"/>
+                                <field name="fel_pa_engine_capacity"/>
+                                <field name="fel_pa_net_weight"/>
+                                <field name="fel_pa_gross_weight"/>
+                                <field name="fel_pa_fuel_type"/>
+                                <field name="fel_pa_engine_number"/>
+                                <field name="fel_pa_traction_capacity"/>
+                            </group>
+                            <group>
+                                <field name="fel_pa_axle_distance"/>
+                                <field name="fel_pa_model_year"/>
+                                <field name="fel_pa_manufacture_year"/>
+                                <field name="fel_pa_paint_type"/>
+                                <field name="fel_pa_paint_nodef"/>
+                                <field name="fel_pa_vehicle_type"/>
+                                <field name="fel_pa_vehicle_usage"/>
+                                <field name="fel_pa_vehicle_condition"/>
+                                <field name="fel_pa_passenger_capacity"/>
+                            </group>
+                        </group>
+                    </page>
+                </xpath>
+            </field>
+        </record>
+
+        <!-- Product View Inheritance -->
+        <record id="multipac_felpa_product_product_form_inherit" model="ir.ui.view">
+            <field name="name">multipac_felpa_product_product_form_inherit</field>
+            <field name="model">product.product</field>
+            <field name="inherit_id" ref="product.product_normal_form_view"/>
+            <field name="priority">99</field>
+            <field name="arch" type="xml">
+                <xpath expr="//page[@name='general_information']" position="after">
+                    <field name="is_panama_company" invisible="1"/>
+                    <page name="fel_pa_product_info" string="Panamá FEL Configuration" groups="multipac_felpa.felpa_group_user" invisible="not is_panama_company">
+                        <group string="Basic Configuration">
+                            <field name="fel_pa_exclude_from_invoice"/>
+                            <field name="fel_pa_unspsc_category_id"/>
+                            <field name="fel_pa_info_item"/>
+                            <field name="fel_pa_product_type"/>
+                        </group>
+                        <group string="Vehicle FEL Configuration" invisible="fel_pa_product_type != 'vehicle'">
+                            <group>
+                                <field name="fel_pa_chassis"/>
+                                <field name="fel_pa_color_code"/>
+                                <field name="fel_pa_color_name"/>
+                                <field name="fel_pa_engine_power"/>
+                                <field name="fel_pa_engine_capacity"/>
+                                <field name="fel_pa_net_weight"/>
+                                <field name="fel_pa_gross_weight"/>
+                                <field name="fel_pa_fuel_type"/>
+                                <field name="fel_pa_engine_number"/>
+                                <field name="fel_pa_traction_capacity"/>
+                            </group>
+                            <group>
+                                <field name="fel_pa_axle_distance"/>
+                                <field name="fel_pa_model_year"/>
+                                <field name="fel_pa_manufacture_year"/>
+                                <field name="fel_pa_paint_type"/>
+                                <field name="fel_pa_paint_nodef"/>
+                                <field name="fel_pa_vehicle_type"/>
+                                <field name="fel_pa_vehicle_usage"/>
+                                <field name="fel_pa_vehicle_condition"/>
+                                <field name="fel_pa_passenger_capacity"/>
+                            </group>
+                        </group>
+                    </page>
+                </xpath>
+            </field>
+        </record>
+
+    </data>
+</odoo>

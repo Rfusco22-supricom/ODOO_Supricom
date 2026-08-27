@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data noupdate="0">
+        <!-- 
+            Esta función ejecuta la migración de amount_usd cada vez que se actualiza el módulo.
+            La función migrate_amount_usd actualiza las reconciliaciones parciales existentes
+            que tienen amount_usd = 0, calculando el valor correcto basándose en la tasa de cambio.
+        -->
+        <function model="account.partial.reconcile" 
+                 name="_migrate_amount_usd_data"/>
+    </data>
+</odoo>

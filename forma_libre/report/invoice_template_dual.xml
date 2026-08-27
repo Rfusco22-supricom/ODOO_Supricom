@@ -1,0 +1,459 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<odoo>
+    <template id="report_invoice_template_dual">
+        <t t-name="forma_libre.report_invoice_template_dual">
+            <t t-call="web.html_container">
+                <t t-foreach="docs" t-as="doc">
+                    <t t-set="is_special_company" t-value="doc.company_id.id in [9, 10]"/>
+                <html lang="es">
+                <head>
+					<meta charset="UTF-8" />
+					<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+				</head>
+                <body>
+                    <t t-set="lines_list" t-value="doc.invoice_line_ids"/>
+                    <t t-set="chunk_size" t-value="27"/>
+                    <t t-set="total_lines" t-value="len(lines_list)"/>
+                    <t t-set="range_chunks" t-value="[lines_list[i:i+chunk_size] for i in range(0, total_lines, chunk_size)]"/>
+                    <t t-set="total_pages" t-value="len(range_chunks) or 1"/>
+
+                    <t t-foreach="range_chunks" t-as="page_lines">
+                        <div class="page" t-att-style="'position: relative; height: 162mm; ' + ('page-break-after: always;' if not page_lines_last else '')">
+                            <main t-att-style="'font-family: \'Open Sans\', sans-serif;' + (' line-height: 1;' if is_special_company else '')">
+                                <t t-set="v_tax" t-value="doc.get_visual_tax_data()"/>
+
+                        <!-- Datos del Cliente y Factura -->
+                        <table style="width: 100%; margin-bottom: 5px;">
+                            <tr>
+                                <!-- Columna del Cliente -->
+                                <td style="width: 50%; vertical-align: top; padding-right: 10px; font-size: 9px;">
+                                    <p><strong>Cliente:</strong> <t t-esc="doc.partner_id.name or ''"/></p>
+                                    <p><strong>R.I.F:</strong> <t t-esc="doc.partner_id.vat or ''"/></p>
+                                    <p><strong>Direccion:</strong> <t t-esc="doc.partner_id.contact_address or ''"/></p>
+                                    <p><strong>Telefono:</strong> <t t-esc="doc.partner_id.phone or ''"/></p>
+                                </td>
+                                <!-- Columna de Factura -->
+                                <td style="width: 50%; text-align: right; vertical-align: top; font-size: 9px;">
+                                    <p>
+                                        <strong>
+                                            <t t-if="doc.move_type == 'out_invoice'">
+                                            <t t-if="doc.debit_origin_id">Nota de Debito:</t>
+                                            <t t-else=""><span>Numero de Factura:</span></t>
+                                            </t>
+                                            <t t-elif="doc.move_type == 'out_refund'">Nota de Credito:</t>
+                                        </strong>
+                                        <t t-esc="doc.name or ''"/>
+                                    </p>
+
+                                    <!-- Documento Afectado -->
+                                    <t t-if="doc.move_type == 'out_refund' and doc.reversed_entry_id">
+                                        <p><strong>Documento Afectado:</strong> <t t-esc="doc.reversed_entry_id.name"/></p>
+                                    </t>
+                                    <t t-if="doc.move_type == 'out_refund' and doc.reversed_entry_id">
+                                        <p><strong>Fecha de Documento Afectado:</strong> <t t-esc="doc.reversed_entry_id.date.strftime('%d/%m/%Y')"/></p>
+                                    </t>
+                                    <t t-if="doc.move_type == 'out_invoice' and doc.debit_origin_id">
+                                        <p><strong>Documento Afectado:</strong> <t t-esc="doc.debit_origin_id.name"/></p>
+                                    </t>
+                                    <t t-if="doc.move_type == 'out_invoice' and doc.debit_origin_id">
+                                        <p><strong>Fecha de Documento Afectado:</strong> <t t-esc="doc.debit_origin_id.date.strftime('%d/%m/%Y')"/></p>
+                                    </t>
+
+                                    <p><strong>Fecha de Emision:</strong> <t t-esc="doc.get_vet_timestamp()"/></p>
+                                    <p><strong>Hoja:</strong> <t t-esc="page_lines_index + 1"/>/<t t-esc="total_pages"/></p>
+                                </td>
+                            </tr>
+                        </table>
+
+                        <!-- Tabla de Productos -->
+                        <table class="table table-sm" t-att-style="'width: 100%; border-collapse: collapse; line-height: 1.05; font-size: ' + ('7.5px' if is_special_company else '8px') + ';'">
+                                <thead>
+                                    <tr>
+                                        <t t-if="any(line.product_id and line.product_id.default_code for line in doc.invoice_line_ids)">
+                                            <th t-att-style="'text-align: left; width: 15%;' + (' padding: 1px 2px;' if is_special_company else '')">Codigo</th>
+                                        </t>
+                                        <th t-att-style="'text-align: left;' + (' padding: 1px 2px;' if is_special_company else '')">Descripcion</th>
+                                        <th t-att-style="'text-align: right; width: 8%;' + (' padding: 1px 2px;' if is_special_company else '')">Cantidad</th>
+                                        <th t-att-style="'text-align: right; width: 10%;' + (' padding: 1px 2px;' if is_special_company else '')">Precio</th>
+                                         <t t-if="any(line.discount and line.discount != 0 for line in doc.invoice_line_ids)">
+                                            <th t-att-style="'text-align: center; width: 8%;' + (' padding: 1px 2px;' if is_special_company else '')">Dscto %</th>
+                                        </t>
+                                        <th t-att-style="'text-align: right; width: 12%;' + (' padding: 1px 2px;' if is_special_company else '')">Total</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr t-foreach="page_lines" t-as="line" style="vertical-align: top;">
+                                    <!-- Código solo si existe -->
+                                    <t t-if="any(l.product_id and l.product_id.default_code for l in doc.invoice_line_ids)">
+                                        <td t-att-style="'border: none; text-align: left; font-size: ' + ('8px' if is_special_company else '9px') + '; vertical-align: top;' + (' padding: 1px 2px;' if is_special_company else '')">
+                                            <t t-if="line.product_id and line.product_id.default_code">
+                                                <t t-esc="line.product_id.default_code"/>
+                                            </t>
+                                        </td>
+                                    </t>
+
+                                    <!-- Producto con descripción incluida -->
+                                    <td t-att-style="'border: none; text-align: left; font-size: ' + ('8px' if is_special_company else '9px') + ';' + (' padding: 1px 2px;' if is_special_company else '')">
+                                        <t t-esc="line.product_id.name or ''"/>
+                                        <t t-if="not is_special_company">
+                                            <t t-if="line.name and line.name.strip() != (line.product_id.name or '').strip()">
+                                                <br/>
+                                                <span style="font-size: 8px;">
+                                                    <t t-esc="line.name"/>
+                                                </span>
+                                            </t>
+                                        </t>
+                                        <t t-if="line.alicuota">
+                                            <t t-if="v_tax.get('is_fictitious')">
+                                                <span> <t t-esc="line.alicuota.replace('( E )', '( G )').replace('(E)', '(G)')"/></span>
+                                            </t>
+                                            <t t-else="">
+                                                <span> <t t-esc="line.alicuota"/></span>
+                                            </t>
+                                        </t>
+                                    </td>
+
+                                    <td t-att-style="'border: none; text-align: right; font-size: ' + ('8px' if is_special_company else '9px') + '; vertical-align: top;' + (' padding: 1px 2px;' if is_special_company else '')">
+                                        <t t-esc="'%0.2f' % (line.quantity or 0.0)"/>
+                                    </td>
+                                    <td t-att-style="'border: none; text-align: right; font-size: ' + ('8px' if is_special_company else '9px') + '; vertical-align: top;' + (' padding: 1px 2px;' if is_special_company else '')">
+                                        <t t-esc="'{:,.2f}'.format(line.price_unit).replace(',', 'X').replace('.', ',').replace('X', '.')"/>
+                                    </td>
+                                    <t t-if="any(l.discount and l.discount != 0 for l in doc.invoice_line_ids)">
+                                    <td t-att-style="'border: none; text-align: center; font-size: ' + ('8px' if is_special_company else '9px') + '; vertical-align: top;' + (' padding: 1px 2px;' if is_special_company else '')">
+                                    <t t-esc="line.discount if line.discount != 0 else ''"/>
+                                    </td>
+                                     </t>
+
+                                    <td t-att-style="'border: none; text-align: right; font-size: ' + ('8px' if is_special_company else '9px') + '; vertical-align: top;' + (' padding: 1px 2px;' if is_special_company else '')">
+                                        <t t-esc="'{:,.2f}'.format(line.price_subtotal).replace(',', 'X').replace('.', ',').replace('X', '.')"/>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+
+                        <!-- Indicador Marca de Agua Reimpresión -->
+                        <div style="width: 100%; text-align: center; margin-top: 15px; font-size: 12px; position: relative;">
+                            <t t-if="doc.print_count &gt; 1">
+                                <div style="
+                                    position: absolute;
+                                    top: 30px;
+                                    left: 108px;
+                                    transform: translate(-50%, -50%);
+                                    font-size: 16px;
+                                    color: rgba(255, 0, 0, 0.07);
+                                    font-weight: 900;
+                                    z-index: -1;
+                                    white-space: nowrap;
+                                    pointer-events: none;
+                                    text-align: center;
+                                ">
+                                    REIMPRESION - SIN DERECHO A CREDITO FISCAL
+                                </div>
+                            </t>
+                            <t t-else=""/>
+                        </div>
+
+                        <!-- Bloque de Montos (Totales en Bolívares y Dólares) ANCLADO AL BOTTOM DE CADA HOJA -->
+                        <div t-att-style="'position: absolute; bottom: 0px; left: 0px; width: 100%; text-align: center; border: 1px solid black; background: white; ' + ('font-size: 7.5px; padding: 2px;' if is_special_company else 'font-size: 8px; padding: 3px;')">
+                            <table t-att-style="'width: 100%; border-collapse: collapse; font-size: ' + ('7.5px' if is_special_company else '8px') + ';'">
+                                <t t-set="is_usd_company" t-value="doc.company_id.id in [9, 10] and doc.currency_id.name == 'USD'"/>
+                                <thead>
+                                    <t t-if="is_usd_company">
+                                        <tr>
+                                            <th colspan="2" style="border-right: 1px solid black; border-bottom: 1px solid black;">Monto en Dolares (US$.)</th>
+                                            <th colspan="2" style="border-bottom: 1px solid black;">Monto en Bolivares (Bs.)</th>
+                                        </tr>
+                                    </t>
+                                    <t t-else="">
+                                        <tr>
+                                            <th colspan="2" style="border-right: 1px solid black; border-bottom: 1px solid black;">Monto en Bolivares (Bs.)</th>
+                                            <th colspan="2" style="border-bottom: 1px solid black;">Monto en Dolares (US$.)</th>
+                                        </tr>
+                                    </t>
+                                </thead>
+                                <tbody>
+                                    <!-- Sub-Total -->
+                                    <tr>
+                                        <t t-if="is_usd_company">
+                                            <td><strong>Sub-Total:</strong></td>
+                                            <td style="border-right: 1px solid black; text-align: right; padding-right: 10px;">
+                                                <t t-esc="'{:,.2f}'.format((doc.total_imponible_usd or 0.0) + (doc.tax_exento_usd or 0.0)).replace(',', 'X').replace('.', ',').replace('X', '.')"/>
+                                            </td>
+                                            <td><strong>Sub-Total Ref:</strong></td>
+                                            <td style="text-align: right;">
+                                                <t t-esc="'{:,.2f}'.format((doc.total_imponible or 0.0) + (doc.tax_exento or 0.0)).replace(',', 'X').replace('.', ',').replace('X', '.')"/>
+                                            </td>
+                                        </t>
+                                        <t t-else="">
+                                            <td><strong>Sub-Total:</strong></td>
+                                            <td style="border-right: 1px solid black; text-align: right; padding-right: 10px;">
+                                                <t t-esc="'{:,.2f}'.format((doc.total_imponible or 0.0) + (doc.tax_exento or 0.0)).replace(',', 'X').replace('.', ',').replace('X', '.')"/>
+                                            </td>
+                                            <td><strong>Sub-Total Ref:</strong></td>
+                                            <td style="text-align: right;">
+                                                <t t-esc="'{:,.2f}'.format((doc.total_imponible_usd or 0.0) + (doc.tax_exento_usd or 0.0)).replace(',', 'X').replace('.', ',').replace('X', '.')"/>
+                                            </td>
+                                        </t>
+                                    </tr>
+
+                                    <!-- Total Exento -->
+                                    <t t-if="(doc.tax_exento or 0.0) != 0.0 or (doc.tax_exento_usd or 0.0) != 0.0">
+                                    <tr>
+                                        <t t-if="is_usd_company">
+                                            <td><strong>Total Exento:</strong></td>
+                                            <td style="border-right: 1px solid black; text-align: right; padding-right: 10px;">
+                                                <t t-esc="'{:,.2f}'.format(doc.tax_exento_usd or 0.0).replace(',', 'X').replace('.', ',').replace('X', '.')"/>
+                                            </td>
+                                            <td><strong>Total Exento Ref:</strong></td>
+                                            <td style="text-align: right;">
+                                                <t t-esc="'{:,.2f}'.format(doc.tax_exento or 0.0).replace(',', 'X').replace('.', ',').replace('X', '.')"/>
+                                            </td>
+                                        </t>
+                                        <t t-else="">
+                                            <td><strong>Total Exento:</strong></td>
+                                            <td style="border-right: 1px solid black; text-align: right; padding-right: 10px;">
+                                                <t t-esc="'{:,.2f}'.format(doc.tax_exento or 0.0).replace(',', 'X').replace('.', ',').replace('X', '.')"/>
+                                            </td>
+                                            <td><strong>Total Exento Ref:</strong></td>
+                                            <td style="text-align: right;">
+                                                <t t-esc="'{:,.2f}'.format(doc.tax_exento_usd or 0.0).replace(',', 'X').replace('.', ',').replace('X', '.')"/>
+                                            </td>
+                                        </t>
+                                        </tr>
+                                    </t>
+
+                                    <!-- Base Imponible -->
+                                    <tr>
+                                        <t t-if="is_usd_company">
+                                            <td><strong>Base Imponible:</strong></td>
+                                            <td style="border-right: 1px solid black; text-align: right; padding-right: 10px;">
+                                                <t t-esc="'{:,.2f}'.format(doc.total_imponible_usd or v_tax['base_16_usd']).replace(',', 'X').replace('.', ',').replace('X', '.')"/>
+                                            </td>
+                                            <td><strong>Base Imponible Ref:</strong></td>
+                                            <td style="text-align: right;">
+                                                <t t-esc="'{:,.2f}'.format(doc.total_imponible or v_tax['base_16_bs']).replace(',', 'X').replace('.', ',').replace('X', '.')"/>
+                                            </td>
+                                        </t>
+                                        <t t-else="">
+                                            <td><strong>Base Imponible:</strong></td>
+                                            <td style="border-right: 1px solid black; text-align: right; padding-right: 10px;">
+                                                <t t-esc="'{:,.2f}'.format(doc.total_imponible or v_tax['base_16_bs']).replace(',', 'X').replace('.', ',').replace('X', '.')"/>
+                                            </td>
+                                            <td><strong>Base Imponible Ref:</strong></td>
+                                            <td style="text-align: right;">
+                                                <t t-esc="'{:,.2f}'.format(doc.total_imponible_usd or v_tax['base_16_usd']).replace(',', 'X').replace('.', ',').replace('X', '.')"/>
+                                            </td>
+                                        </t>
+                                    </tr>
+
+                                    <!-- IVA 8% -->
+                                    <t t-if="doc.tax_8 != 0 or doc.tax_8_usd != 0">
+                                        <tr>
+                                            <t t-if="is_usd_company">
+                                                <td>
+                                                    <strong>IVA 8% Sobre 
+                                                        <t t-esc="'{:,.2f}'.format(doc.base_8_usd or 0.0).replace(',', 'X').replace('.', ',').replace('X', '.')"/> :
+                                                    </strong>
+                                                </td>
+                                                <td style="border-right: 1px solid black; text-align: right; padding-right: 10px;">
+                                                    <t t-esc="'{:,.2f}'.format(doc.tax_8_usd or 0.0).replace(',', 'X').replace('.', ',').replace('X', '.')"/>
+                                                </td>
+                                                <td>
+                                                    <strong>IVA 8% Ref Sobre 
+                                                        <t t-esc="'{:,.2f}'.format(doc.base_8 or 0.0).replace(',', 'X').replace('.', ',').replace('X', '.')"/>:
+                                                    </strong>
+                                                </td>
+                                                <td style="text-align: right;">
+                                                    <t t-esc="'{:,.2f}'.format(doc.tax_8 or 0.0).replace(',', 'X').replace('.', ',').replace('X', '.')"/>
+                                                </td>
+                                            </t>
+                                            <t t-else="">
+                                                <td>
+                                                    <strong>IVA 8% Sobre 
+                                                        <t t-esc="'{:,.2f}'.format(doc.base_8 or 0.0).replace(',', 'X').replace('.', ',').replace('X', '.')"/> :
+                                                    </strong>
+                                                </td>
+                                                <td style="border-right: 1px solid black; text-align: right; padding-right: 10px;">
+                                                    <t t-esc="'{:,.2f}'.format(doc.tax_8 or 0.0).replace(',', 'X').replace('.', ',').replace('X', '.')"/>
+                                                </td>
+                                                <td>
+                                                    <strong>IVA 8% Ref Sobre 
+                                                        <t t-esc="'{:,.2f}'.format(doc.base_8_usd or 0.0).replace(',', 'X').replace('.', ',').replace('X', '.')"/>:
+                                                    </strong>
+                                                </td>
+                                                <td style="text-align: right;">
+                                                    <t t-esc="'{:,.2f}'.format(doc.tax_8_usd or 0.0).replace(',', 'X').replace('.', ',').replace('X', '.')"/>
+                                                </td>
+                                            </t>
+                                        </tr>
+                                    </t>
+
+                                    <!-- IVA 16% -->
+                                    <tr>
+                                        <t t-if="is_usd_company">
+                                            <td>
+                                                <strong>IVA 16% Sobre 
+                                                    <t t-esc="'{:,.2f}'.format(v_tax['base_16_usd']).replace(',', 'X').replace('.', ',').replace('X', '.')"/> :
+                                                </strong>
+                                            </td>
+                                            <td style="border-right: 1px solid black; text-align: right; padding-right: 10px;">
+                                                <t t-esc="'{:,.2f}'.format(v_tax['tax_16_usd']).replace(',', 'X').replace('.', ',').replace('X', '.')"/>
+                                            </td>
+                                            <td>
+                                                <strong>IVA 16% Ref Sobre 
+                                                    <t t-esc="'{:,.2f}'.format(v_tax['base_16_bs']).replace(',', 'X').replace('.', ',').replace('X', '.')"/>:
+                                                </strong>
+                                            </td>
+                                            <td style="text-align: right;">
+                                                <t t-esc="'{:,.2f}'.format(v_tax['tax_16_bs']).replace(',', 'X').replace('.', ',').replace('X', '.')"/>
+                                            </td>
+                                        </t>
+                                        <t t-else="">
+                                            <td>
+                                                <strong>IVA 16% Sobre 
+                                                    <t t-esc="'{:,.2f}'.format(v_tax['base_16_bs']).replace(',', 'X').replace('.', ',').replace('X', '.')"/> :
+                                                </strong>
+                                            </td>
+                                            <td style="border-right: 1px solid black; text-align: right; padding-right: 10px;">
+                                                <t t-esc="'{:,.2f}'.format(v_tax['tax_16_bs']).replace(',', 'X').replace('.', ',').replace('X', '.')"/>
+                                            </td>
+                                            <td>
+                                                <strong>IVA 16% Ref Sobre 
+                                                    <t t-esc="'{:,.2f}'.format(v_tax['base_16_usd']).replace(',', 'X').replace('.', ',').replace('X', '.')"/>:
+                                                </strong>
+                                            </td>
+                                            <td style="text-align: right;">
+                                                <t t-esc="'{:,.2f}'.format(v_tax['tax_16_usd']).replace(',', 'X').replace('.', ',').replace('X', '.')"/>
+                                            </td>
+                                        </t>
+                                    </tr>
+
+                                    <!-- IVA 31% -->
+                                    <t t-if="doc.tax_31 != 0 or doc.tax_31_usd != 0">
+                                        <tr>
+                                            <t t-if="is_usd_company">
+                                                <td>
+                                                    <strong>IVA 15% + 16% Sobre 
+                                                        <t t-esc="'{:,.2f}'.format(doc.base_31_usd or 0.0).replace(',', 'X').replace('.', ',').replace('X', '.')"/> :
+                                                    </strong>
+                                                </td>
+                                                <td style="border-right: 1px solid black; text-align: right; padding-right: 10px;">
+                                                    <t t-esc="'{:,.2f}'.format(doc.tax_31_usd or 0.0).replace(',', 'X').replace('.', ',').replace('X', '.')"/>
+                                                </td>
+                                                <td>
+                                                    <strong>IVA 15% + 16% Ref Sobre 
+                                                        <t t-esc="'{:,.2f}'.format(doc.base_31 or 0.0).replace(',', 'X').replace('.', ',').replace('X', '.')"/>:
+                                                    </strong>
+                                                </td>
+                                                <td style="text-align: right;">
+                                                    <t t-esc="'{:,.2f}'.format(doc.tax_31 or 0.0).replace(',', 'X').replace('.', ',').replace('X', '.')"/>
+                                                </td>
+                                            </t>
+                                            <t t-else="">
+                                                <td>
+                                                    <strong>IVA 15% + 16% Sobre 
+                                                        <t t-esc="'{:,.2f}'.format(doc.base_31 or 0.0).replace(',', 'X').replace('.', ',').replace('X', '.')"/> :
+                                                    </strong>
+                                                </td>
+                                                <td style="border-right: 1px solid black; text-align: right; padding-right: 10px;">
+                                                    <t t-esc="'{:,.2f}'.format(doc.tax_31 or 0.0).replace(',', 'X').replace('.', ',').replace('X', '.')"/>
+                                                </td>
+                                                <td>
+                                                    <strong>IVA 15% + 16% Ref Sobre 
+                                                        <t t-esc="'{:,.2f}'.format(doc.base_31_usd or 0.0).replace(',', 'X').replace('.', ',').replace('X', '.')"/>:
+                                                    </strong>
+                                                </td>
+                                                <td style="text-align: right;">
+                                                    <t t-esc="'{:,.2f}'.format(doc.tax_31_usd or 0.0).replace(',', 'X').replace('.', ',').replace('X', '.')"/>
+                                                </td>
+                                            </t>
+                                        </tr>
+                                    </t>
+
+                                    <!-- IGTF Sugerido -->
+                                    <t t-set="igtf_already_applied" t-value="doc.company_id.igtf_product_id and doc.invoice_line_ids.filtered(lambda l: l.product_id == doc.company_id.igtf_product_id)"/>
+                                    <tr>
+                                        <t t-if="is_usd_company">
+                                            <td><strong>IGTF 3% Sugerido:</strong></td>
+                                            <td style="border-right: 1px solid black; text-align: right; padding-right: 10px;">
+                                                <t t-if="igtf_already_applied">0,00</t>
+                                                <t t-else=""><t t-esc="'{:,.2f}'.format((doc.igtf_amount_suggested or 0.0)).replace(',', 'X').replace('.', ',').replace('X', '.')"/></t>
+                                            </td>
+                                            <td><strong>IGTF 3% Sugerido Ref:</strong></td>
+                                            <td style="text-align: right;">
+                                                <t t-if="igtf_already_applied">0,00</t>
+                                                <t t-else=""><t t-esc="'{:,.2f}'.format((doc.igtf_amount_suggested_bs or 0.0)).replace(',', 'X').replace('.', ',').replace('X', '.')"/></t>
+                                            </td>
+                                        </t>
+                                        <t t-else="">
+                                            <td><strong>IGTF 3% Sugerido:</strong></td>
+                                            <td style="border-right: 1px solid black; text-align: right; padding-right: 10px;">
+                                                <t t-if="igtf_already_applied">0,00</t>
+                                                <t t-else=""><t t-esc="'{:,.2f}'.format(doc.igtf_amount_suggested_bs or 0.0).replace(',', 'X').replace('.', ',').replace('X', '.')"/></t>
+                                            </td>
+                                            <td><strong>IGTF 3% Sugerido Ref:</strong></td>
+                                            <td style="text-align: right;">
+                                                <t t-if="igtf_already_applied">0,00</t>
+                                                <t t-else=""><t t-esc="'{:,.2f}'.format(doc.igtf_amount_suggested or 0.0).replace(',', 'X').replace('.', ',').replace('X', '.')"/></t>
+                                            </td>
+                                        </t>
+                                    </tr>
+
+                                    <!-- Total General -->
+                                    <tr>
+                                        <t t-if="is_usd_company">
+                                            <td><strong>Total General US$:</strong></td>
+                                            <td style="border-right: 1px solid black; text-align: right; padding-right: 10px;">
+                                                <t t-esc="'{:,.2f}'.format(v_tax.get('total_usd', doc.subtotal_usd or 0.0)).replace(',', 'X').replace('.', ',').replace('X', '.')"/>
+                                            </td>
+                                            <td><strong>Total General Ref Bs.:</strong></td>
+                                            <td style="text-align: right;">
+                                                <t t-esc="'{:,.2f}'.format(v_tax.get('total_bs', doc.subtotal or 0.0)).replace(',', 'X').replace('.', ',').replace('X', '.')"/>
+                                            </td>
+                                        </t>
+                                        <t t-else="">
+                                            <td><strong>Total General Bs.:</strong></td>
+                                            <td style="border-right: 1px solid black; text-align: right; padding-right: 10px;">
+                                                <t t-esc="'{:,.2f}'.format(v_tax.get('total_bs', doc.subtotal or 0.0)).replace(',', 'X').replace('.', ',').replace('X', '.')"/>
+                                            </td>
+                                            <td><strong>Total General Ref:</strong></td>
+                                            <td style="text-align: right;">
+                                                <t t-esc="'{:,.2f}'.format(v_tax.get('total_usd', doc.subtotal_usd or 0.0)).replace(',', 'X').replace('.', ',').replace('X', '.')"/>
+                                            </td>
+                                        </t>
+                                    </tr>
+
+                                    <tr>
+                                        <td colspan="4" style="text-align: left; padding-top: 3px; border-top: 1px solid black;">
+                                            <p style="margin: 0; font-size: 7.5px;"><strong>
+                                                En caso de pagar la totalidad de la factura o porcion con moneda extranjera, se cobrara el 3% de IGTF segun Gaceta Oficial 42.339 de fecha 25/02/2022
+                                            </strong></p>
+
+                                            <p style="margin: 0; margin-top: 1px; font-size: 7.5px;"><strong>
+                                                Tasa Vigente al <span t-field="doc.invoice_date" t-options='{"widget": "date", "format": "dd/MM/yyyy"}'/> segun el BCV:
+                                                <span t-field="doc.tax_today" t-options='{"widget": "float", "precision": 4}'/>
+                                            </strong></p>
+                                            
+                                            <hr style="margin: 2px 0;" />
+                                            <p style="margin: 0; font-size: 6.5px;">
+                                                FACTURA SEGUN CONVENIO CAMBIARIO N°1 GOE N°6.405 DE FECHA 07/09/2018. FACTURA CALCULADA A LA TASA BCV ACTUAL Bs. POR US$
+                                                DOLAR <span t-field="doc.tax_today" t-options='{"widget": "float", "precision": 4}'/> PARA EFECTOS DEL IVA DE CONFORMIDAD CON LO ESTABLECIDO EN EL ARTICULO 116 DEL BCV.
+                                                PAGARA EN BOLIVARES A LA TASA BCV DEL DIA.
+                                            </p>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+
+                    </main>
+                        </div>
+                    </t>
+                </body>
+            </html>
+        </t>
+    </t>
+</t>
+</template>
+</odoo>

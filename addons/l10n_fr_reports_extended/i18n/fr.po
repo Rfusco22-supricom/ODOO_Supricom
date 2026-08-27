@@ -1,0 +1,317 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+# * l10n_fr_reports_extended
+#
+# Weblate <noreply-mt-weblate@weblate.org>, 2025.
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 17.0+e\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2025-12-29 19:01+0000\n"
+"PO-Revision-Date: 2025-11-18 13:55+0000\n"
+"Last-Translator: Weblate <noreply-mt-weblate@weblate.org>\n"
+"Language-Team: French <https://translate.odoo.com/projects/odoo-17-l10n/"
+"l10n_fr_reports_extended/fr/>\n"
+"Language: fr\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=n > 1;\n"
+"X-Generator: Weblate 5.12.2\n"
+
+#. module: l10n_fr_reports_extended
+#. odoo-python
+#: code:addons/l10n_fr_reports_extended/wizard/l10n_fr_send_vat_report.py:0
+#, python-format
+msgid "%(report_common_name)s_reimbursement_%(index)s"
+msgstr "%(report_common_name)s_remboursement_%(index)s"
+
+#. module: l10n_fr_reports_extended
+#: model_terms:ir.ui.view,arch_db:l10n_fr_reports_extended.view_l10n_fr_reports_report_form
+msgid ""
+"<span invisible=\"vat_amount\">\n"
+"                        There is no amount in your Tax report, Odoo will "
+"send an empty declaration (check box \"declaration of nil\" checked)\n"
+"                    </span>\n"
+"                    <span invisible=\"not has_wrongly_configured_account\">\n"
+"                        Some accounts are wrongly configured. For the VAT "
+"declaration we need an account number and\n"
+"                        the BIC code.\n"
+"                    </span>\n"
+"                    <span invisible=\"bank_account_line_count &lt;= 3\">\n"
+"                        You can't use more than 3 accounts.\n"
+"                    </span>\n"
+"                    <span invisible=\"is_vat_due or computed_vat_amount "
+"&gt;= vat_amount\"> The VAT amount does not match to the amount you want to "
+"receive.<br/> If you proceed without matching the VAT\n"
+"                        amount, the difference will be carried over to the "
+"next period. </span>\n"
+"                    <span invisible=\"not is_vat_due or computed_vat_amount "
+"&gt;= vat_amount\">\n"
+"                        The VAT amount does not match to the amount you have "
+"to pay to the administration.\n"
+"                    </span>"
+msgstr ""
+
+#. module: l10n_fr_reports_extended
+#: model:ir.model,name:l10n_fr_reports_extended.model_account_report_async_export
+msgid "Account Report Async Export"
+msgstr "Exportation asynchrone du rapport de compte"
+
+#. module: l10n_fr_reports_extended
+#. odoo-python
+#: code:addons/l10n_fr_reports_extended/wizard/l10n_fr_send_vat_report.py:0
+#, python-format
+msgid "All the selected bank accounts should have an IBAN and a bic code."
+msgstr ""
+"Tous les comptes bancaires sélectionnés doivent avoir un IBAN et un code BIC."
+
+#. module: l10n_fr_reports_extended
+#: model_terms:ir.ui.view,arch_db:l10n_fr_reports_extended.view_l10n_fr_reports_report_form
+msgid "Amount"
+msgstr "Montant"
+
+#. module: l10n_fr_reports_extended
+#: model_terms:ir.ui.view,arch_db:l10n_fr_reports_extended.view_l10n_fr_reports_report_form
+msgid "Amount to pay"
+msgstr "Montant à payer"
+
+#. module: l10n_fr_reports_extended
+#: model_terms:ir.ui.view,arch_db:l10n_fr_reports_extended.view_l10n_fr_reports_report_form
+msgid "Amount to receive"
+msgstr "Montant à percevoir"
+
+#. module: l10n_fr_reports_extended
+#: model_terms:ir.ui.view,arch_db:l10n_fr_reports_extended.view_l10n_fr_reports_report_form
+msgid "BIC"
+msgstr "BIC"
+
+#. module: l10n_fr_reports_extended
+#: model:ir.model.fields,field_description:l10n_fr_reports_extended.field_l10n_fr_reports_send_vat_report_bank_account_line__bank_bic
+msgid "BIC Code"
+msgstr "Code BIC"
+
+#. module: l10n_fr_reports_extended
+#: model:ir.model.fields,field_description:l10n_fr_reports_extended.field_l10n_fr_reports_send_vat_report_bank_account_line__bank_id
+msgid "Bank"
+msgstr "Banque"
+
+#. module: l10n_fr_reports_extended
+#: model:ir.model.fields,field_description:l10n_fr_reports_extended.field_l10n_fr_reports_send_vat_report__bank_account_line_ids
+msgid "Bank Account Line"
+msgstr "Ligne de compte bancaire"
+
+#. module: l10n_fr_reports_extended
+#: model:ir.model.fields,field_description:l10n_fr_reports_extended.field_l10n_fr_reports_send_vat_report__bank_account_line_count
+msgid "Bank Account Line Count"
+msgstr "Nombre de lignes du compte bancaire"
+
+#. module: l10n_fr_reports_extended
+#: model:ir.model,name:l10n_fr_reports_extended.model_l10n_fr_reports_send_vat_report_bank_account_line
+msgid "Bank Account Line for French Vat Report"
+msgstr "Ligne de compte bancaire pour les déclarations TVA en France"
+
+#. module: l10n_fr_reports_extended
+#: model:ir.model.fields,field_description:l10n_fr_reports_extended.field_l10n_fr_reports_send_vat_report_bank_account_line__bank_partner_id
+msgid "Bank Partner"
+msgstr "Banque partenaire"
+
+#. module: l10n_fr_reports_extended
+#. odoo-python
+#: code:addons/l10n_fr_reports_extended/wizard/l10n_fr_send_vat_report.py:0
+#, python-format
+msgid "Carryover reimbursement from %(date_from)s to %(date_to)s"
+msgstr "Report du remboursement du %(date_from)s au %(date_to)s"
+
+#. module: l10n_fr_reports_extended
+#: model:ir.model.fields,field_description:l10n_fr_reports_extended.field_account_report_async_export__company_id
+msgid "Company"
+msgstr "Société"
+
+#. module: l10n_fr_reports_extended
+#: model:ir.model.fields,field_description:l10n_fr_reports_extended.field_l10n_fr_reports_send_vat_report_bank_account_line__company_partner_id
+msgid "Company Partner"
+msgstr "Société partenaire"
+
+#. module: l10n_fr_reports_extended
+#: model:ir.model.fields,field_description:l10n_fr_reports_extended.field_l10n_fr_reports_send_vat_report__computed_vat_amount
+msgid "Computed Vat Amount"
+msgstr "Montant calculé de la TVA"
+
+#. module: l10n_fr_reports_extended
+#: model:ir.model.fields,field_description:l10n_fr_reports_extended.field_l10n_fr_reports_send_vat_report_bank_account_line__create_uid
+msgid "Created by"
+msgstr "Créé par"
+
+#. module: l10n_fr_reports_extended
+#: model:ir.model.fields,field_description:l10n_fr_reports_extended.field_l10n_fr_reports_send_vat_report_bank_account_line__create_date
+msgid "Created on"
+msgstr "Créé le"
+
+#. module: l10n_fr_reports_extended
+#: model:ir.model.fields,field_description:l10n_fr_reports_extended.field_l10n_fr_reports_send_vat_report__currency_id
+#: model:ir.model.fields,field_description:l10n_fr_reports_extended.field_l10n_fr_reports_send_vat_report_bank_account_line__currency_id
+msgid "Currency"
+msgstr "Devise"
+
+#. module: l10n_fr_reports_extended
+#: model:ir.model.fields,field_description:l10n_fr_reports_extended.field_l10n_fr_reports_send_vat_report_bank_account_line__display_name
+msgid "Display Name"
+msgstr "Nom affiché"
+
+#. module: l10n_fr_reports_extended
+#: model:ir.model,name:l10n_fr_reports_extended.model_l10n_fr_report_handler
+msgid "French Report Custom Handler"
+msgstr "Gestionnaire personnalisé du rapport français"
+
+#. module: l10n_fr_reports_extended
+#: model:ir.model.fields,field_description:l10n_fr_reports_extended.field_l10n_fr_reports_send_vat_report__has_wrongly_configured_account
+msgid "Has Wrongly Configured Account"
+msgstr "Compte mal configuré"
+
+#. module: l10n_fr_reports_extended
+#: model:ir.model.fields,field_description:l10n_fr_reports_extended.field_l10n_fr_reports_send_vat_report_bank_account_line__account_number
+#: model_terms:ir.ui.view,arch_db:l10n_fr_reports_extended.view_l10n_fr_reports_report_form
+msgid "IBAN"
+msgstr "IBAN"
+
+#. module: l10n_fr_reports_extended
+#: model:ir.model.fields,field_description:l10n_fr_reports_extended.field_l10n_fr_reports_send_vat_report_bank_account_line__id
+msgid "ID"
+msgstr "ID"
+
+#. module: l10n_fr_reports_extended
+#: model:ir.model.fields,field_description:l10n_fr_reports_extended.field_l10n_fr_reports_send_vat_report__is_vat_due
+msgid "Is Vat Due"
+msgstr "TVA due"
+
+#. module: l10n_fr_reports_extended
+#: model:ir.model.fields,field_description:l10n_fr_reports_extended.field_l10n_fr_reports_send_vat_report_bank_account_line__is_wrongly_configured
+msgid "Is Wrongly Configured"
+msgstr "Est mal configuré"
+
+#. module: l10n_fr_reports_extended
+#: model_terms:ir.ui.view,arch_db:l10n_fr_reports_extended.view_l10n_fr_reports_report_form
+msgid "It seems you're trying to"
+msgstr "Il semble que vous essayez"
+
+#. module: l10n_fr_reports_extended
+#: model:ir.model.fields,field_description:l10n_fr_reports_extended.field_l10n_fr_reports_send_vat_report_bank_account_line__l10n_fr_send_vat_report_id
+msgid "L10N Fr Send Vat Report"
+msgstr "Envoyer la déclaration TVA"
+
+#. module: l10n_fr_reports_extended
+#: model:ir.model.fields,field_description:l10n_fr_reports_extended.field_l10n_fr_reports_send_vat_report_bank_account_line__write_uid
+msgid "Last Updated by"
+msgstr "Dernière mise à jour par"
+
+#. module: l10n_fr_reports_extended
+#: model:ir.model.fields,field_description:l10n_fr_reports_extended.field_l10n_fr_reports_send_vat_report_bank_account_line__write_date
+msgid "Last Updated on"
+msgstr "Dernière mise à jour le"
+
+#. module: l10n_fr_reports_extended
+#: model:ir.model,name:l10n_fr_reports_extended.model_l10n_fr_reports_send_vat_report
+msgid "Send VAT Report Wizard"
+msgstr "Wizard d'envoi du rapport de TVA"
+
+#. module: l10n_fr_reports_extended
+#: model:ir.model.fields,help:l10n_fr_reports_extended.field_l10n_fr_reports_send_vat_report_bank_account_line__bank_bic
+msgid "Sometimes called BIC or Swift."
+msgstr "Parfois appelé BIC ou SWIFT."
+
+#. module: l10n_fr_reports_extended
+#. odoo-python
+#: code:addons/l10n_fr_reports_extended/models/account_report_async_export.py:0
+#, python-format
+msgid "Tax Report Error: %s"
+msgstr "Tax Report Erreur: %s"
+
+#. module: l10n_fr_reports_extended
+#. odoo-python
+#: code:addons/l10n_fr_reports_extended/wizard/l10n_fr_send_vat_report.py:0
+#, python-format
+msgid "The xml file generated contains an invalid character: '%s'"
+msgstr "Le fichier xml généré contient un caractère invalide: '%s'"
+
+#. module: l10n_fr_reports_extended
+#. odoo-python
+#: code:addons/l10n_fr_reports_extended/wizard/l10n_fr_send_vat_report.py:0
+#, python-format
+msgid "VAT receivable"
+msgstr "TVA recevable"
+
+#. module: l10n_fr_reports_extended
+#: model_terms:ir.ui.view,arch_db:l10n_fr_reports_extended.view_l10n_fr_reports_report_form
+msgid "VAT to pay"
+msgstr "TVA à payer"
+
+#. module: l10n_fr_reports_extended
+#: model_terms:ir.ui.view,arch_db:l10n_fr_reports_extended.view_l10n_fr_reports_report_form
+msgid "VAT to receive"
+msgstr "TVA à recevoir"
+
+#. module: l10n_fr_reports_extended
+#: model:ir.model.fields,field_description:l10n_fr_reports_extended.field_l10n_fr_reports_send_vat_report__vat_amount
+#: model:ir.model.fields,field_description:l10n_fr_reports_extended.field_l10n_fr_reports_send_vat_report_bank_account_line__vat_amount
+msgid "Vat Amount"
+msgstr "Montant de la TVA"
+
+#. module: l10n_fr_reports_extended
+#. odoo-python
+#: code:addons/l10n_fr_reports_extended/wizard/l10n_fr_send_vat_report.py:0
+#, python-format
+msgid "You can use maximum 3 accounts."
+msgstr "Vous pouvez utiliser un maximum de 3 comptes."
+
+#. module: l10n_fr_reports_extended
+#. odoo-python
+#: code:addons/l10n_fr_reports_extended/wizard/l10n_fr_send_vat_report.py:0
+#, python-format
+msgid "You can't set an amount with a negative value or a value set to 0."
+msgstr ""
+"Vous ne pouvez pas définir un montant dont la valeur est négative ou égale à "
+"0."
+
+#. module: l10n_fr_reports_extended
+#. odoo-python
+#: code:addons/l10n_fr_reports_extended/models/tax_report.py:0
+#, python-format
+msgid ""
+"You need to complete the tax closing process for this period before "
+"submitting the report to the French administration."
+msgstr ""
+"Terminez le processus de clôture fiscale pour cette période afin de "
+"soumettre le rapport à l'administration française."
+
+#. module: l10n_fr_reports_extended
+#: model_terms:ir.ui.view,arch_db:l10n_fr_reports_extended.view_l10n_fr_reports_report_form
+msgid "by"
+msgstr "par"
+
+#. module: l10n_fr_reports_extended
+#: model_terms:ir.ui.view,arch_db:l10n_fr_reports_extended.view_l10n_fr_reports_report_form
+msgid ""
+"more money than the\n"
+"                        amount due"
+msgstr ""
+
+#. module: l10n_fr_reports_extended
+#: model_terms:ir.ui.view,arch_db:l10n_fr_reports_extended.view_l10n_fr_reports_report_form
+msgid "receive"
+msgstr "de recevoir"
+
+#. module: l10n_fr_reports_extended
+#: model_terms:ir.ui.view,arch_db:l10n_fr_reports_extended.view_l10n_fr_reports_report_form
+msgid "send"
+msgstr "d'envoyer"
+
+#. module: l10n_fr_reports_extended
+#: model_terms:ir.ui.view,arch_db:l10n_fr_reports_extended.view_l10n_fr_reports_report_form
+msgid "the administration."
+msgstr "l'administration."
+
+#. module: l10n_fr_reports_extended
+#: model_terms:ir.ui.view,arch_db:l10n_fr_reports_extended.view_l10n_fr_reports_report_form
+msgid "to"
+msgstr "à"

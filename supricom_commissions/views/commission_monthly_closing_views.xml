@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <record id="view_commission_monthly_closing_tree" model="ir.ui.view">
+        <field name="name">commission.monthly.closing.tree</field>
+        <field name="model">commission.monthly.closing</field>
+        <field name="arch" type="xml">
+            <tree string="Cierres Mensuales" create="false" edit="false">
+                <field name="date"/>
+                <field name="salesperson_id"/>
+                <field name="target_amount" widget="monetary"/>
+                <field name="total_collected" widget="monetary"/>
+                <field name="total_invoiced" widget="monetary"/>
+                <field name="achievement_pct" widget="percentage"/>
+            </tree>
+        </field>
+    </record>
+
+    <record id="view_commission_monthly_closing_form" model="ir.ui.view">
+        <field name="name">commission.monthly.closing.form</field>
+        <field name="model">commission.monthly.closing</field>
+        <field name="arch" type="xml">
+            <form string="Cierre Mensual" create="false" edit="false">
+                <sheet>
+                    <group>
+                        <group>
+                            <field name="date"/>
+                            <field name="salesperson_id"/>
+                        </group>
+                        <group>
+                            <field name="target_amount" widget="monetary"/>
+                            <field name="total_collected" widget="monetary"/>
+                            <field name="total_invoiced" widget="monetary"/>
+                            <field name="achievement_pct" widget="percentage"/>
+                        </group>
+                    </group>
+                </sheet>
+            </form>
+        </field>
+    </record>
+
+    <record id="action_commission_monthly_closing" model="ir.actions.act_window">
+        <field name="name">Cierres Mensuales</field>
+        <field name="res_model">commission.monthly.closing</field>
+        <field name="view_mode">tree,form</field>
+        <field name="help" type="html">
+            <p class="o_view_nocontent_smiling_face">
+                No hay cierres mensuales registrados.
+            </p>
+            <p>
+                Los cierres se generan automáticamente al validar liquidaciones de comisiones.
+            </p>
+        </field>
+    </record>
+
+    <!-- Menu Item (Under Main Root -> Configuration? Or Main Root -> Analysis? -->
+    <!-- Let's put it under Analysis or just under root if simple module -->
+    <menuitem id="menu_commission_monthly_closing"
+              name="Cierres Mensuales"
+              parent="supricom_commissions.menu_commission_root"
+              action="action_commission_monthly_closing"
+              sequence="70"/>
+</odoo>

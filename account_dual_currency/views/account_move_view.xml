@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data>
+        <record id="account_move_form_inherit_views" model="ir.ui.view">
+            <field name="name">account_move_form_inherit_views</field>
+            <field name="model">account.move</field>
+            <field name="inherit_id" ref="account.view_move_form" />
+            <field name="arch" type="xml">
+                <xpath expr="//div[@name='journal_div']" position="after">
+                    <field name="is_ve_company" invisible="1"/>
+                    <field
+                        invisible="move_type not in ('out_invoice', 'out_refund', 'out_receipt', 'in_invoice', 'in_refund', 'in_receipt') or not is_ve_company"
+                        name="acuerdo_moneda" />
+                    <field name="currency_id_dif" readonly="1" invisible="not is_ve_company"/>
+                    <field name="name_rate" string="Moneda de Referencia" invisible="not is_ve_company"/>
+                    <field name="edit_trm"  widget="boolean_toggle" groups="account_dual_currency.group_edit_trm" readonly="state != 'draft'" invisible="not is_ve_company"/>
+                    <field name="tax_today_readonly" string="Tax Today Read Only?" invisible="1"/>
+                    <field name="tax_today" string="Tasa" readonly="tax_today_readonly" force_save="1" invisible="not is_ve_company"/>
+                    <field invisible="1" name="same_currency" />
+                </xpath>
+                <xpath expr="//field[@name='invoice_line_ids']/tree/field[@name='price_unit']"
+                    position="after">
+                    <field name="price_unit_usd" options="{'currency_field': 'currency_id_dif'}"
+                        widget="monetary" column_invisible="parent.is_ve_company == False" />
+                    <field invisible="1" name="currency_id_dif" readonly="1" />
+                </xpath>
+                <xpath expr="//field[@name='invoice_line_ids']/tree/field[@name='price_subtotal']"
+                    position="after">
+                    <field name="price_subtotal_usd" options="{'currency_field': 'currency_id_dif'}"
+                        widget="monetary" column_invisible="parent.is_ve_company == False" />
+                </xpath>
+                <xpath expr="//field[@name='line_ids']/tree/field[@name='credit']" position="after">
+                    <field invisible="display_type in ('line_section', 'line_note')" column_invisible="parent.is_ve_company == False"
+                        name="tax_today" string="Tasa" />
+                    <field invisible="1" name="currency_id_dif" readonly="1" />
+                    <field invisible="display_type in ('line_section', 'line_note')" column_invisible="parent.is_ve_company == False"
+                        name="debit_usd" options="{'currency_field': 'currency_id_dif'}"
+                        sum="Débito Total $" widget="monetary" />
+                    <field invisible="display_type in ('line_section', 'line_note')" column_invisible="parent.is_ve_company == False"
+                        name="credit_usd" options="{'currency_field': 'currency_id_dif'}"
+                        sum="Crédito Total $" widget="monetary" />
+                    <field invisible="1" name="balance_usd" />
+                    <field name="amount_residual_usd" optional="hide"
+                        options="{'currency_field': 'currency_id_dif'}" readonly="1" column_invisible="parent.is_ve_company == False"
+                        widget="monetary" />
+                </xpath>
+                <xpath expr="//group[hasclass('oe_invoice_lines_tab')]//group[@colspan='8']"
+                    position="attributes">
+                    <attribute name="colspan">4</attribute>
+                </xpath>
+                <xpath expr="//group[hasclass('oe_invoice_lines_tab')]//group[@colspan='4']"
+                    position="attributes">
+                    <attribute name="colspan">4</attribute>
+                </xpath>
+                <xpath expr="//group[hasclass('oe_invoice_lines_tab')]//group[last()]" position="before">
+                    <group colspan="4" invisible="not is_ve_company">
+                        <group class="oe_subtotal_footer"
+                            invisible="same_currency == False or move_type not in ('out_invoice', 'out_refund', 'in_invoice', 'in_refund', 'out_receipt', 'in_receipt')">
+                            <field name="amount_untaxed_usd"
+                                options="{'currency_field': 'currency_id_dif'}" widget="monetary" />
+                            <field name="amount_tax_usd"
+                                options="{'currency_field': 'currency_id_dif'}" widget="monetary" />
+                            <field class="oe_subtotal_footer_separator" name="amount_total_usd"
+                                options="{'currency_field': 'currency_id_dif'}" widget="monetary" />
+                            <field colspan="2" name="invoice_payments_widget_usd" nolabel="1"
+                                widget="payment" />
+                            <field class="oe_subtotal_footer_separator" invisible="state == 'draft'"
+                                name="amount_residual_usd"
+                                options="{'currency_field': 'currency_id_dif'}" widget="monetary" />
+                        </group>
+                        <group class="oe_subtotal_footer"
+                            invisible="same_currency == True or move_type not in ('out_invoice', 'out_refund', 'in_invoice', 'in_refund', 'out_receipt', 'in_receipt')">
+                            <field name="amount_untaxed_bs" />
+                            <field name="amount_tax_bs" />
+                            <field class="oe_subtotal_footer_separator" name="amount_total_bs" />
+                            <field colspan="2" name="invoice_payments_widget_bs" nolabel="1"
+                                widget="payment" />
+                        </group>
+                    </group>
+                </xpath>
+                <!-- <xpath expr="//field[@name='invoice_outstanding_credits_debits_widget']"
+                position="attributes">
+                    <attribute name="class">
+                        o_inner_group grid oe_subtotal_footer oe_right col-lg-7</attribute>
+                </xpath> -->
+            </field>
+        </record>
+        <record id="account_move_tree_inherit_views" model="ir.ui.view">
+            <field name="name">account_move_tree_inherit_views</field>
+            <field name="model">account.move</field>
+            <field name="inherit_id" ref="account.view_invoice_tree" />
+            <field name="arch" type="xml">
+                <xpath expr="//field[@name='amount_total_signed']" position="after">
+                    <field invisible="1" name="currency_id_dif" readonly="1" />
+                    <field name="is_ve_company" column_invisible="True" />
+                    <field name="amount_total_usd" sum="Total Ref." invisible="not is_ve_company" />
+                </xpath>
+                <xpath expr="//field[@name='amount_total_in_currency_signed']" position="attributes">
+                    <attribute name="invisible">1</attribute>
+                </xpath>
+            </field>
+        </record>
+    </data>
+</odoo>

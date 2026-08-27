@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+
+    <record id="view_commission_matrix_tree" model="ir.ui.view">
+        <field name="name">commission.matrix.tree</field>
+        <field name="model">commission.matrix</field>
+        <field name="arch" type="xml">
+            <tree string="Matriz de Comisiones" editable="bottom">
+                <field name="vendor_type_id"/>
+                <field name="target_achievement_pct" widget="percentage"/>
+                <field name="commission_percentage" widget="percentage"/>
+            </tree>
+        </field>
+    </record>
+
+    <record id="action_commission_matrix" model="ir.actions.act_window">
+        <field name="name">Matriz de Comisiones</field>
+        <field name="res_model">commission.matrix</field>
+        <field name="view_mode">tree</field>
+    </record>
+
+    <menuitem id="menu_commission_matrix"
+              name="Matriz de Comisiones"
+              parent="supricom_commissions.menu_commission_config"
+              action="action_commission_matrix"
+              sequence="20"/>
+
+</odoo>

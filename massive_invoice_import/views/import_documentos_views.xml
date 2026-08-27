@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data>
+        <!-- Sequence -->
+        <record id="seq_import_documentos" model="ir.sequence">
+            <field name="name">Importación Masiva</field>
+            <field name="code">import.documentos</field>
+            <field name="prefix">IMP/</field>
+            <field name="padding">5</field>
+            <field name="company_id" eval="False"/>
+        </record>
+
+        <!-- Form View -->
+        <record id="view_import_documentos_form" model="ir.ui.view">
+            <field name="name">import.documentos.form</field>
+            <field name="model">import.documentos</field>
+            <field name="arch" type="xml">
+                <form string="Importación Masiva">
+                    <header>
+                        <button name="action_process_file" string="Procesar Archivo" type="object" class="btn-primary" 
+                                invisible="state != 'draft'"/>
+                        <button name="action_process_batch_manually" string="Procesar Lote Manualmente" type="object" class="btn-secondary"
+                                invisible="state != 'processing'"/>
+                        <field name="state" widget="statusbar" statusbar_visible="draft,processing,done"/>
+                    </header>
+                    <sheet>
+                        <div class="oe_title">
+                            <h1>
+                                <field name="name"/>
+                            </h1>
+                        </div>
+                        <group>
+                            <group>
+                                <field name="import_type" readonly="state != 'draft'" widget="radio"/>
+                                <field name="excel_file" readonly="state != 'draft'"/>
+                                <field name="product_id" options="{'no_create': True}" readonly="state != 'draft'"/>
+                                <field name="fallback_tax_id" options="{'no_create': True}" readonly="state != 'draft'"/>
+                                <field name="currency_id" options="{'no_create': True}" readonly="state != 'draft'"/>
+                            </group>
+                            <group>
+                                <field name="create_date" readonly="1"/>
+                                <field name="create_uid" readonly="1"/>
+                            </group>
+                        </group>
+                        
+                        <!-- Progress Bar Section -->
+                        <div invisible="state == 'draft'">
+                            <label for="progress"/>
+                            <field name="progress" widget="progressbar"/>
+                        </div>
+
+                        <notebook>
+                            <page string="Configuración de Diarios" name="journals">
+                                <group>
+                                    <group>
+                                        <field name="journal_fiscal_id" options="{'no_create': True}" readonly="state != 'draft'"/>
+                                        <field name="journal_entrega_id" options="{'no_create': True}" readonly="state != 'draft'"/>
+                                    </group>
+                                </group>
+                            </page>
+                            <page string="Mapeo de Columnas" name="mapping">
+                                <group>
+                                    <group string="Identificadores">
+                                        <field name="col_doc_num" readonly="state != 'draft'"/>
+                                        <field name="col_nro_ctrl" readonly="state != 'draft'"/>
+                                        <field name="odoo_field_nro_ctrl" readonly="state != 'draft'"/>
+                                        <field name="col_type" readonly="state != 'draft'"/>
+                                        <field name="col_company" readonly="state != 'draft'"/>
+                                    </group>
+                                    <group string="Datos del Cliente">
+                                        <field name="col_rif" readonly="state != 'draft'"/>
+                                        <field name="col_name" readonly="state != 'draft'"/>
+                                        <field name="col_vendedor" readonly="state != 'draft'"/>
+                                    </group>
+                                    <group string="Valores">
+                                        <field name="col_date" readonly="state != 'draft'"/>
+                                    </group>
+                                    <group string="Detalle de Líneas de Factura">
+                                        <field name="col_prod_id" readonly="state != 'draft'"/>
+                                        <field name="col_qty" readonly="state != 'draft'"/>
+                                        <field name="col_price" readonly="state != 'draft'"/>
+                                        <field name="col_discount" readonly="state != 'draft'"/>
+                                    </group>
+                                </group>
+                            </page>
+                            <page string="Log de Errores" name="log">
+                                <field name="log_notes"/>
+                            </page>
+                        </notebook>
+                    </sheet>
+                    <div class="oe_chatter">
+                        <field name="message_follower_ids"/>
+                        <field name="activity_ids"/>
+                        <field name="message_ids"/>
+                    </div>
+                </form>
+            </field>
+        </record>
+
+        <!-- Tree View -->
+        <record id="view_import_documentos_tree" model="ir.ui.view">
+            <field name="name">import.documentos.tree</field>
+            <field name="model">import.documentos</field>
+            <field name="arch" type="xml">
+                <tree string="Importaciones">
+                    <field name="name"/>
+                    <field name="create_date"/>
+                    <field name="create_uid"/>
+                    <field name="state" widget="badge" decoration-info="state == 'draft'" decoration-warning="state == 'processing'" decoration-success="state == 'done'" decoration-danger="state == 'failed'"/>
+                    <field name="progress" widget="progressbar"/>
+                </tree>
+            </field>
+        </record>
+
+        <!-- Action -->
+        <record id="action_import_documentos" model="ir.actions.act_window">
+            <field name="name">Importador Masivo</field>
+            <field name="res_model">import.documentos</field>
+            <field name="view_mode">tree,form</field>
+            <field name="context">{'default_import_type': 'out_invoice'}</field>
+        </record>
+
+        <record id="action_import_documentos_proveedores" model="ir.actions.act_window">
+            <field name="name">Importador Masivo (Proveedores)</field>
+            <field name="res_model">import.documentos</field>
+            <field name="view_mode">tree,form</field>
+            <field name="context">{'default_import_type': 'in_invoice'}</field>
+            <field name="domain">[('import_type', '=', 'in_invoice')]</field>
+        </record>
+
+        <!-- Menu -->
+        <menuitem id="menu_import_documentos"
+                  name="Importador Especial (Historial)"
+                  parent="account.menu_finance_receivables"
+                  action="action_import_documentos"
+                  sequence="100"/>
+
+        <menuitem id="menu_import_documentos_proveedores"
+                  name="Importador Especial (Historial)"
+                  parent="account.menu_finance_payables"
+                  action="action_import_documentos_proveedores"
+                  sequence="100"/>
+    </data>
+</odoo>

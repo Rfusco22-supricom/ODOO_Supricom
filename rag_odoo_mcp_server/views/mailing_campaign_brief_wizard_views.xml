@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <record id="mailing_campaign_brief_wizard_view_form" model="ir.ui.view">
+        <field name="name">rag_odoo_mcp_server.mailing_campaign_brief_wizard.form</field>
+        <field name="model">rag_odoo_mcp_server.mailing_campaign_brief_wizard</field>
+        <field name="arch" type="xml">
+            <form string="Claude campaign brief">
+                <sheet>
+
+                    <div class="alert alert-info mb-3" role="alert">
+                        Define what Claude should generate. Save the brief, then ask Claude
+                        to <strong>call mailing_get_campaign_brief</strong> and it will build
+                        the campaign immediately — no further input needed.
+                    </div>
+
+                    <!-- Title -->
+                    <group>
+                        <field name="brief_title" placeholder="Name this brief"/>
+                    </group>
+
+                    <!-- Products -->
+                    <separator string="Products to promote"/>
+                    <group>
+                        <field name="product_ids"
+                               widget="many2many_tags"
+                               nolabel="1"
+                               options="{'no_open': True}"
+                               placeholder="Select one or more products..."/>
+                    </group>
+
+                    <!-- Campaign style -->
+                    <separator string="Campaign style"/>
+                    <group>
+                        <group>
+                            <field name="campaign_goal"/>
+                            <field name="campaign_tone"/>
+                            <field name="cta_text"/>
+                        </group>
+                        <group>
+                            <field name="extra_instructions"
+                                   placeholder="Discount codes, seasonal angle, forbidden words..."/>
+                        </group>
+                    </group>
+
+                    <!-- Audience -->
+                    <separator string="Target audience"/>
+                    <group>
+                        <group>
+                            <field name="contact_list_ids"
+                                   widget="many2many_tags"
+                                   options="{'no_open': True}"
+                                   placeholder="Pick mailing lists..."/>
+                        </group>
+                        <group>
+                            <field name="target_audience"
+                                   placeholder="Demographics, interests, purchase history, geographic focus..."/>
+                        </group>
+                    </group>
+
+                    <!-- Custom images -->
+                    <separator string="Custom images (optional)"/>
+                    <p class="text-muted" style="font-size:12px;margin:0 0 8px 0;">
+                        Upload images Claude should embed in the campaign
+                        (brand logo override, product shots, promo banners).
+                        They will be saved as public URLs and passed to Claude.
+                    </p>
+                    <field name="image_ids" nolabel="1">
+                        <tree editable="bottom">
+                            <field name="image"
+                                   widget="image"
+                                   string="Image"
+                                   options="{'size': [80, 80], 'preview_image': 'image'}"
+                                   filename="image_filename"/>
+                            <field name="image_filename" invisible="1"/>
+                            <field name="description" string="Usage hint"/>
+                        </tree>
+                    </field>
+
+                    <!-- Scheduling -->
+                    <separator string="Scheduling"/>
+                    <group>
+                        <group>
+                            <field name="schedule_type" widget="radio"
+                                   options="{'horizontal': true}"/>
+                            <field name="schedule_date"
+                                   invisible="schedule_type != 'scheduled'"
+                                   required="schedule_type == 'scheduled'"/>
+                        </group>
+                        <group>
+                            <field name="utm_campaign_id"
+                                   options="{'no_open': True}"/>
+                        </group>
+                    </group>
+
+                    <footer>
+                        <button name="action_save_brief_for_mcp"
+                                type="object"
+                                string="Save for Claude (MCP)"
+                                class="btn-primary"
+                                data-hotkey="q"/>
+                        <button string="Cancel"
+                                class="btn-secondary"
+                                special="cancel"
+                                data-hotkey="x"/>
+                    </footer>
+
+                </sheet>
+            </form>
+        </field>
+    </record>
+</odoo>

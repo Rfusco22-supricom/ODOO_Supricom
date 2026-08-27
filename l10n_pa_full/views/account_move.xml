@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data>
+        <record id="view_account_move_form_panama" model="ir.ui.view">
+            <field name="name">account.move.form.panama</field>
+            <field name="model">account.move</field>
+            <field name="inherit_id" ref="account.view_move_form"/>
+            <field name="priority">100</field>
+            <field name="arch" type="xml">
+                <xpath expr="//field[@name='partner_id']" position="after">
+                    <field name="is_panama" invisible="1"/>
+                    <field name="ruc" string="RUC" readonly="1" 
+                           invisible="not is_panama or move_type not in ('out_invoice', 'out_refund', 'out_receipt', 'in_invoice', 'in_refund', 'in_receipt')"/>
+                </xpath>
+            </field>
+        </record>
+    </data>
+</odoo>

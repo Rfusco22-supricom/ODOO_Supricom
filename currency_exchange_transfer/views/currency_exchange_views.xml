@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+
+    <!-- FORM VIEW -->
+    <record id="view_currency_exchange_move_form" model="ir.ui.view">
+        <field name="name">currency.exchange.move.form</field>
+        <field name="model">currency.exchange.move</field>
+        <field name="arch" type="xml">
+            <form string="Intercambio de Divisas">
+                <header>
+                    <button name="action_send" string="Enviar Dinero" type="object" class="oe_highlight" invisible="state != 'draft'"/>
+                    
+                    <!-- Receive Button: Hidden if state != posted OR context says so -->
+                    <button name="action_receive" string="Recibir Dinero" type="object" class="oe_highlight" 
+                            invisible="state != 'posted' or context.get('hide_receive_button')"/>
+                    
+                    <button name="action_cancel" string="Cancelar" type="object" invisible="state not in ('draft', 'posted')"/>
+                    <field name="state" widget="statusbar" statusbar_visible="draft,posted,done"/>
+                </header>
+                <sheet>
+                    <div class="oe_title">
+                        <h1>
+                            <field name="name" readonly="1"/>
+                        </h1>
+                    </div>
+                    <group>
+                        <group string="Origen (Salida)">
+                            <field name="date" readonly="state != 'draft'"/>
+                            <field name="journal_origin_id" options="{'no_create': True}" readonly="state != 'draft'"/>
+                            <field name="currency_origin_id" invisible="1"/>
+                            <field name="amount_origin" widget="monetary" options="{'currency_field': 'currency_origin_id'}" readonly="state != 'draft'"/>
+                        </group>
+                        <group string="Destino (Entrada)">
+                            <field name="journal_dest_id" options="{'no_create': True}" readonly="state != 'draft'"/>
+                            <field name="currency_dest_id" invisible="1"/>
+                            <field name="amount_dest" widget="monetary" options="{'currency_field': 'currency_dest_id'}" readonly="state != 'draft'"/>
+                        </group>
+                    </group>
+                    <group string="Configuración Contable">
+                        <field name="company_id" invisible="1"/>
+                        <field name="transfer_account_id" options="{'no_create': True}" readonly="1" force_save="1" />
+                        <field name="profit_loss_account_id" options="{'no_create': True}" readonly="1" force_save="1" />
+                    </group>
+                    <notebook>
+                        <page string="Asientos Contables">
+                            <field name="move_ids" readonly="1"/>
+                        </page>
+                    </notebook>
+                </sheet>
+                <div class="oe_chatter">
+                    <field name="message_follower_ids"/>
+                    <field name="activity_ids"/>
+                    <field name="message_ids"/>
+                </div>
+            </form>
+        </field>
+    </record>
+
+    <!-- TREE VIEW -->
+    <record id="view_currency_exchange_move_tree" model="ir.ui.view">
+        <field name="name">currency.exchange.move.tree</field>
+        <field name="model">currency.exchange.move</field>
+        <field name="arch" type="xml">
+            <tree string="Intercambio de Divisas">
+                <field name="name"/>
+                <field name="date"/>
+                <field name="journal_origin_id"/>
+                <field name="amount_origin" widget="monetary" options="{'currency_field': 'currency_origin_id'}"/>
+                <field name="journal_dest_id"/>
+                <field name="amount_dest" widget="monetary" options="{'currency_field': 'currency_dest_id'}"/>
+                <field name="state" widget="badge" decoration-info="state == 'draft'" decoration-warning="state == 'posted'" decoration-success="state == 'done'"/>
+                <field name="currency_origin_id" invisible="1"/>
+                <field name="currency_dest_id" invisible="1"/>
+            </tree>
+        </field>
+    </record>
+
+    <!-- SEARCH VIEW -->
+     <record id="view_currency_exchange_move_search" model="ir.ui.view">
+        <field name="name">currency.exchange.move.search</field>
+        <field name="model">currency.exchange.move</field>
+        <field name="arch" type="xml">
+            <search>
+                <field name="name"/>
+                <field name="journal_origin_id"/>
+                <field name="journal_dest_id"/>
+                <filter string="Borrador" name="draft" domain="[('state', '=', 'draft')]"/>
+                <filter string="En Proceso (Enviado)" name="posted" domain="[('state', '=', 'posted')]"/>
+                <filter string="Realizado" name="done" domain="[('state', '=', 'done')]"/>
+            </search>
+        </field>
+    </record>
+
+    <!-- ACTION: ENVIADOS (Send Money) -->
+    <record id="action_currency_exchange_send" model="ir.actions.act_window">
+        <field name="name">Enviados</field>
+        <field name="res_model">currency.exchange.move</field>
+        <field name="view_mode">tree,form</field>
+        <field name="domain">[('state', 'in', ('draft', 'posted', 'cancel'))]</field> <!-- Show created and sent, but not finalized/received (maybe users want to see history though? User said "Quede en la vista de enviado") -->
+        <!-- Actually, if validated = done, it's "Received". So "Enviado" implies Draft or In Process. -->
+        <field name="context">{'default_state': 'draft', 'hide_receive_button': True}</field>
+        <field name="help" type="html">
+          <p class="o_view_nocontent_smiling_face">
+            Registrar un nuevo Envío
+          </p>
+        </field>
+    </record>
+
+    <!-- ACTION: POR RECIBIR (Receive Money) -->
+    <record id="action_currency_exchange_receive" model="ir.actions.act_window">
+        <field name="name">Por Recibir</field>
+        <field name="res_model">currency.exchange.move</field>
+        <field name="view_mode">tree,form</field>
+        <field name="domain">[('state', '=', 'posted')]</field> <!-- Only show what needs receiving -->
+        <field name="context">{'create': False, 'edit': False}</field> <!-- Usually shouldn't create from here? Or maybe yes. -->
+        <field name="help" type="html">
+          <p class="o_view_nocontent_smiling_face">
+            No hay transferencias pendientes por recibir.
+          </p>
+        </field>
+    </record>
+    
+    <!-- ACTION: ALL (History/Archive - Optional, maybe for Managers) -->
+    <record id="action_currency_exchange_all" model="ir.actions.act_window">
+        <field name="name">Todas las Operaciones</field>
+        <field name="res_model">currency.exchange.move</field>
+        <field name="view_mode">tree,form</field>
+    </record>
+
+
+    <!-- MENUS -->
+    <menuitem id="menu_currency_exchange_root" name="Compra/Transferencia" sequence="10" web_icon="account,static/description/icon.png" groups="currency_exchange_transfer.group_currency_exchange_user"/>
+    
+    <menuitem id="menu_currency_exchange_send" name="Enviados" parent="menu_currency_exchange_root" sequence="1" action="action_currency_exchange_send"/>
+    <menuitem id="menu_currency_exchange_receive" name="Recibidos" parent="menu_currency_exchange_root" sequence="2" action="action_currency_exchange_receive"/>
+    
+    <!-- Optional: All operations for review -->
+    <menuitem id="menu_currency_exchange_all" name="Historial Completo" parent="menu_currency_exchange_root" sequence="3" action="action_currency_exchange_all" groups="currency_exchange_transfer.group_currency_exchange_manager"/>
+
+
+    <!-- JOURNAL VIEW EXTENSION -->
+    <record id="view_account_journal_form_inherit_currency_exchange" model="ir.ui.view">
+        <field name="name">account.journal.form.currency.exchange</field>
+        <field name="model">account.journal</field>
+        <field name="inherit_id" ref="account.view_account_journal_form"/>
+        <field name="arch" type="xml">
+            <xpath expr="//page[@name='advanced_settings']" position="inside">
+                <group string="Compra/Transferencia de Divisas">
+                    <field name="inbound_transfer_auth_user_ids" widget="many2many_tags"/>
+                </group>
+            </xpath>
+        </field>
+    </record>
+
+</odoo>

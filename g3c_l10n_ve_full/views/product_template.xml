@@ -1,0 +1,50 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<odoo>
+<data>
+    <record id="view_product_template_inherit" model="ir.ui.view">
+        <field name="name">product.template.form.inherit</field>
+        <field name="model">product.template</field>
+        <field name="inherit_id" ref="product.product_template_form_view"/>
+        <field name="arch" type="xml">
+            <xpath expr="//form" position="inside">
+                <field name="is_standard_price_invisible" invisible="1" />
+            </xpath>
+            <xpath expr="//field[@name='standard_price']" position="attributes">
+                <attribute name="invisible">is_standard_price_invisible</attribute>
+            </xpath>
+
+            <xpath expr="//label[@for='standard_price']" position="attributes">
+                <attribute name="invisible">is_standard_price_invisible</attribute>
+            </xpath>
+
+            <xpath expr="//field[@name='uom_name']" position="attributes">
+                <attribute name="invisible">is_standard_price_invisible</attribute>
+            </xpath>
+
+            <xpath expr="//div[@name='standard_price_uom']/span" position="attributes">
+                <attribute name="invisible">is_standard_price_invisible</attribute>
+            </xpath>
+
+            <xpath expr="//label[@for='standard_price_usd']" position="attributes">
+                <attribute name="invisible">is_standard_price_invisible or not is_ve_company</attribute>
+            </xpath>
+
+            <xpath expr="//field[@name='standard_price_usd']" position="attributes">
+                <attribute name="invisible">is_standard_price_invisible or not is_ve_company</attribute>
+            </xpath>
+
+        </field>
+    </record>
+
+    <record id="view_product_supplierinfo_tree_hide_price" model="ir.ui.view">
+        <field name="name">product.supplierinfo.tree.dynamic.hide.price</field>
+        <field name="model">product.supplierinfo</field>
+        <field name="inherit_id" ref="product.product_supplierinfo_tree_view"/>
+        <field name="arch" type="xml">
+            <xpath expr="//field[@name='price']" position="attributes">
+                <attribute name="groups">g3c_l10n_ve_full.group_allow_change_price_purchase</attribute>
+            </xpath>
+        </field>
+    </record>
+</data>
+</odoo>

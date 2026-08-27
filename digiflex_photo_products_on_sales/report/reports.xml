@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <record id="action_report_stock_quantity_photo" model="ir.actions.report">
+        <field name="name">Reporte de Existencias (Con/Sin Foto)</field>
+        <field name="model">stock.quantity.report.wizard</field>
+        <field name="report_type">qweb-pdf</field>
+        <field name="report_name">digiflex_photo_products_on_sales.report_stock_qty</field>
+        <field name="report_file">digiflex_photo_products_on_sales.report_stock_qty</field>
+        <field name="print_report_name">'Reporte_Existencias_' + (object.company_id.name or '')</field>
+        <field name="binding_model_id" ref="model_stock_quantity_report_wizard"/>
+        <field name="binding_type">report</field>
+    </record>
+</odoo>

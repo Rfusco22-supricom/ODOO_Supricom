@@ -1,0 +1,106 @@
+<odoo>
+    <template id="report_invoice_template">
+        <t t-name="supricom_forma_libre_igtf.report_invoice_template">
+            <t t-call="web.html_container">
+                <t t-foreach="docs" t-as="doc">
+                    <t t-set="lines_list" t-value="doc.invoice_line_ids"/>
+                    <t t-set="chunk_size" t-value="15"/>
+                    <t t-set="total_lines" t-value="len(lines_list)"/>
+                    <t t-set="range_chunks" t-value="[lines_list[i:i+chunk_size] for i in range(0, total_lines, chunk_size)]"/>
+                    <t t-set="total_pages" t-value="len(range_chunks) or 1"/>
+                    
+                    <t t-foreach="range_chunks" t-as="page_lines">
+                        <div class="page" t-att-style="'page-break-after: always;' if not page_lines_last else ''">
+                            <main style="font-family: 'Open Sans', sans-serif;">
+                        
+                        <!-- Datos del Cliente y Factura -->
+                        <table style="width: 100%; margin-bottom: 5px;">
+                            <tr>
+                                <td style="width: 50%; vertical-align: top; padding-right: 10px; font-size: 9px;">
+                                    <p><strong>Cliente:</strong> <t t-esc="doc.partner_id.name or ''"/></p>
+                                    <p><strong>R.I.F:</strong> <t t-esc="doc.partner_id.vat or ''"/></p>
+                                    <p><strong>Direccion:</strong> <t t-esc="doc.partner_id.contact_address or ''"/></p>
+                                    <p><strong>Telefono:</strong> <t t-esc="doc.partner_id.phone or ''"/></p>
+                                </td>
+                                <td style="width: 50%; text-align: right; vertical-align: top; font-size: 9px;">
+                                    <p><strong>Nro. Factura:</strong> <t t-esc="doc.name or ''"/></p>
+                                    <p><strong>Fecha:</strong> <t t-esc="doc.invoice_date or ''"/></p>
+                                    <p><strong>Hoja:</strong> <t t-esc="page_lines_index + 1"/>/<t t-esc="total_pages"/></p>
+                                </td>
+                            </tr>
+                        </table>
+
+                        <!-- Tabla de Productos -->
+                        <table class="table table-sm" style="width: 100%; border-collapse: collapse; font-size: 9px;">
+                            <thead>
+                                <tr>
+                                    <th style="text-align: left;">Codigo</th>
+                                    <th style="text-align: left;">Producto</th>
+                                    <th style="text-align: right;">Cantidad</th>
+                                    <th style="text-align: right;">Precio</th>
+                                    <th style="text-align: right;">Desc.%</th>
+                                    <th style="text-align: right;">Total</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr t-foreach="page_lines" t-as="line">
+                                    <td style="border: none; text-align: left; font-size: 9px;">
+                                        <t t-esc="line.product_id.default_code or ''"/>
+                                    </td>
+                                    <td style="border: none; text-align: left; font-size: 9px;">
+                                        <t t-esc="line.product_id.name or ''"/>
+                                    </td>
+                                    <td style="border: none; text-align: right; font-size: 9px;">
+                                        <t t-esc="'%0.2f' % (line.quantity or 0.0)"/>
+                                    </td>
+                                    <td style="border: none; text-align: right; font-size: 9px;">
+                                        <t t-esc="'%0.2f' % ((line.price_unit * (doc.tax_today or 1.0)) or 0.0)"/>
+                                    </td>
+                                    <td style="border: none; text-align: right; font-size: 9px;">
+                                        <t t-esc="'%0.2f' % (line.discount or 0.0)"/>%
+                                    </td>
+                                    <td style="border: none; text-align: right; font-size: 9px;">
+                                        <t t-esc="'%0.2f' % ((line.price_subtotal * (doc.tax_today or 1.0)) or 0.0)"/>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+
+                        <!-- Términos y Condiciones (Izquierda) -->
+                        <div style="position: fixed; bottom: 10px; left: 10px; width: 52%; font-size: 9px; display: block !important;">
+                            <p><strong>No se aceptan devoluciones pasado el mes de la fecha de expedicion</strong></p>
+                            <p>
+                                Segun providencia SNAT/2022/000013 de fecha 03/03/2022.
+                                <t t-set="igtf_already_applied" t-value="doc.company_id.igtf_product_id and doc.invoice_line_ids.filtered(lambda l: l.product_id == doc.company_id.igtf_product_id)"/>
+                                <strong>IGTF 3%:</strong> <t t-if="igtf_already_applied">0,00</t><t t-else=""><t t-esc="'%0.2f' % ((doc.amount_total_bs or 0.0) * 0.03)"/></t>
+                            </p>
+                        </div>
+
+                        <!-- Totales (Derecha - Repetido en TODAS las hojas) -->
+                        <div style="position: fixed; bottom: 10px; right: 10px; width: 48%; text-align: right; font-size: 9px; display: block !important;">
+                            <p><strong>Subtotal:</strong> <t t-esc="'%0.2f' % (doc.amount_untaxed_bs or 0.0)"/></p>
+                            <p><strong>IVA:</strong> <t t-esc="'%0.2f' % (doc.amount_tax_bs or 0.0)"/></p>
+                            <t t-if="doc.currency_id.name == 'USD'">
+                                <t t-set="igtf_already_applied" t-value="doc.company_id.igtf_product_id and doc.invoice_line_ids.filtered(lambda l: l.product_id == doc.company_id.igtf_product_id)"/>
+                                <t t-if="igtf_already_applied">
+                                    <p><strong>IGTF 3% Sugerido:</strong> 0,00</p>
+                                </t>
+                                <t t-elif="doc.is_cash_payment_term">
+                                    <t t-set="igtf_base" t-value="doc.amount_pay_usd or 0.0"/>
+                                    <p><strong>IGTF 3% (Pago Contado):</strong> <t t-esc="'%0.2f' % (igtf_base * 0.03)"/></p>
+                                </t>
+                                <t t-else="">
+                                    <p><strong>IGTF 3% Sugerido:</strong> <t t-esc="'%0.2f' % (doc.igtf_amount_suggested_bs or 0.0)"/></p>
+                                </t>
+                            </t>
+                            <p><strong>Total:</strong> <t t-esc="'%0.2f' % (doc.amount_total_bs or 0.0)"/></p>
+                        </div>
+
+                    </main>
+                        </div>
+                    </t>
+                </t>
+            </t>
+        </t>
+    </template>
+</odoo>

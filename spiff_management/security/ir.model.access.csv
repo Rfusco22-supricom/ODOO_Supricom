@@ -1,0 +1,8 @@
+id,name,model_id:id,group_id:id,perm_read,perm_write,perm_create,perm_unlink
+access_spiff_brand,spiff.brand,model_spiff_brand,base.group_user,1,1,1,1
+access_spiff_incentive,spiff.incentive,model_spiff_incentive,base.group_user,1,1,1,1
+access_spiff_calculation,spiff.calculation,model_spiff_calculation,base.group_user,1,1,1,1
+access_spiff_calculation_line,spiff.calculation.line,model_spiff_calculation_line,base.group_user,1,1,1,1
+access_spiff_calculation_line_detail,spiff.calculation.line.detail,model_spiff_calculation_line_detail,base.group_user,1,0,1,1
+access_spiff_credit_extension_wizard,spiff.credit.extension.wizard,model_spiff_credit_extension_wizard,base.group_user,1,1,1,1
+access_spiff_multi_brand_warning,spiff.multi.brand.warning,model_spiff_multi_brand_warning,base.group_user,1,1,1,1

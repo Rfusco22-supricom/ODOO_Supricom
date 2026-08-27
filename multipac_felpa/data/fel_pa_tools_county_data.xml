@@ -1,0 +1,3817 @@
+<?xml version='1.0' encoding='utf-8'?>
+<odoo>
+    <data>
+
+        <record id="fel_pa_county_1" model="fel_pa.tools.county">
+            <field name="name">24 DE DICIEMBRE</field>
+            <field name="fel_pa_code">8-8-21</field>
+            <field name="city_id" ref="multipac_felpa.fel_pa_city_52"/>
+        </record>
+        
+        <record id="fel_pa_county_2" model="fel_pa.tools.county">
+            <field name="name">ACHIOTE</field>
+            <field name="fel_pa_code">3-2-2</field>
+            <field name="city_id" ref="multipac_felpa.fel_pa_city_17"/>
+        </record>
+        
+        <record id="fel_pa_county_3" model="fel_pa.tools.county">
+            <field name="name">AGUA BUENA</field>
+            <field name="fel_pa_code">7-3-13</field>
+            <field name="city_id" ref="multipac_felpa.fel_pa_city_41"/>
+        </record>
+        
+        <record id="fel_pa_county_4" model="fel_pa.tools.county">
+            <field name="name">AGUA DE SALUD</field>
+            <field name="fel_pa_code">12-5-2</field>
+            <field name="city_id" ref="multipac_felpa.fel_pa_city_49"/>
+        </record>
+        
+        <!--<record id="fel_pa_county_5" model="fel_pa.tools.county">
+            <field name="name">AGUA FRIA</field>
+            <field name="fel_pa_code">5-1-13</field>
+            <field name="city_id" ref="multipac_felpa.fel_pa_city_20"/>
+        </record>-->
+        
+        <record id="fel_pa_county_6" model="fel_pa.tools.county">
+            <field name="name">AGUADULCE (CABECERA)</field>
+            <field name="fel_pa_code">2-1-1</field>
+            <field name="city_id" ref="multipac_felpa.fel_pa_city_1"/>
+        </record>
+        
+        <record id="fel_pa_county_7" model="fel_pa.tools.county">
+            <field name="name">AILIGANDI</field>
+            <field name="fel_pa_code">10-1-2</field>
+            <field name="city_id" ref="multipac_felpa.fel_pa_city_26"/>
+        </record>
+        
+        <record id="fel_pa_county_8" model="fel_pa.tools.county">
+            <field name="name">ALANJE (CABECERA)</field>
+            <field name="fel_pa_code">4-1-1</field>
+            <field name="city_id" ref="multipac_felpa.fel_pa_city_2"/>
+        </record>
+        
+        <record id="fel_pa_county_9" model="fel_pa.tools.county">
+            <field name="name">ALCALDE DIAZ</field>
+            <field name="fel_pa_code">8-8-23</field>
+            <field name="city_id" ref="multipac_felpa.fel_pa_city_52"/>
+        </record>
+        
+        <record id="fel_pa_county_10" model="fel_pa.tools.county">
+            <field name="name">ALMIRANTE</field>
+            <field name="fel_pa_code">1-2-2</field>
+            <field name="city_id" ref="multipac_felpa.fel_pa_city_19"/>
+        </record>
+        
+        <record id="fel_pa_county_11" model="fel_pa.tools.county">
+            <field name="name">ALTO BOQUETE</field>
+            <field name="fel_pa_code">4-4-4</field>
+            <field name="city_id" ref="multipac_felpa.fel_pa_city_11"/>
+        </record>
+        
+        <record id="fel_pa_county_12" model="fel_pa.tools.county">
+            <field name="name">ALTO CABALLERO</field>
+            <field name="fel_pa_code">12-3-2</field>
+            <field name="city_id" ref="multipac_felpa.fel_pa_city_46"/>
+        </record>
+        
+        <record id="fel_pa_county_13" model="fel_pa.tools.county">
+            <field name="name">ALTO DE JESUS</field>
+            <field name="fel_pa_code">12-5-3</field>
+            <field name="city_id" ref="multipac_felpa.fel_pa_city_49"/>
+        </record>
+        
+        <record id="fel_pa_county_14" model="fel_pa.tools.county">
+            <field name="name">ALTOS DE GUERA</field>
+            <field name="fel_pa_code">7-7-2</field>
+            <field name="city_id" ref="multipac_felpa.fel_pa_city_76"/>
+        </record>
+        
+        <record id="fel_pa_county_15" model="fel_pa.tools.county">
+            <field name="name">AMADOR</field>
+            <field name="fel_pa_code">13-4-3</field>
+            <field name="city_id" ref="multipac_felpa.fel_pa_city_34"/>
+        </record>
+        
+        <record id="fel_pa_county_16" model="fel_pa.tools.county">
+            <field name="name">AMELIA DENIS DE ICAZA</field>
+            <field name="fel_pa_code">8-10-1</field>
+            <field name="city_id" ref="multipac_felpa.fel_pa_city_68"/>
+        </record>
+        
+        <record id="fel_pa_county_17" model="fel_pa.tools.county">
+            <field name="name">ANCON</field>
+            <field name="fel_pa_code">8-8-14</field>
+            <field name="city_id" ref="multipac_felpa.fel_pa_city_52"/>
+        </record>
+        
+        <record id="fel_pa_county_18" model="fel_pa.tools.county">
+            <field name="name">ANTON (CABECERA)</field>
+            <field name="fel_pa_code">2-2-1</field>
+            <field name="city_id" ref="multipac_felpa.fel_pa_city_3"/>
+        </record>
+        
+        <record id="fel_pa_county_19" model="fel_pa.tools.county">
+            <field name="name">ARENAS</field>
+            <field name="fel_pa_code">9-6-2</field>
+            <field name="city_id" ref="multipac_felpa.fel_pa_city_45"/>
+        </record>
+        
+        <record id="fel_pa_county_20" model="fel_pa.tools.county">
+            <field name="name">ARENAS</field>
+            <field name="fel_pa_code">9-12-2</field>
+            <field name="city_id" ref="multipac_felpa.fel_pa_city_43"/>
+        </record>
+        
+        <record id="fel_pa_county_21" model="fel_pa.tools.county">
+            <field name="name">ARNULFO ARIAS</field>
+            <field name="fel_pa_code">8-10-6</field>
+            <field name="city_id" ref="multipac_felpa.fel_pa_city_68"/>
+        </record>
+        
+        <record id="fel_pa_county_22" model="fel_pa.tools.county">
+            <field name="name">AROSEMENA</field>
+            <field name="fel_pa_code">13-4-4</field>
+            <field name="city_id" ref="multipac_felpa.fel_pa_city_34"/>
+        </record>
+        
+        <record id="fel_pa_county_23" model="fel_pa.tools.county">
+            <field name="name">ARRAIJAN (CABECERA)</field>
+            <field name="fel_pa_code">13-1-1</field>
+            <field name="city_id" ref="multipac_felpa.fel_pa_city_4"/>
+        </record>
+        
+        <record id="fel_pa_county_24" model="fel_pa.tools.county">
+            <field name="name">ASERRIO DE GARICHE</field>
+            <field name="fel_pa_code">4-5-2</field>
+            <field name="city_id" ref="multipac_felpa.fel_pa_city_12"/>
+        </record>
+        
+        <record id="fel_pa_county_25" model="fel_pa.tools.county">
+            <field name="name">ATALAYA (CABECERA)</field>
+            <field name="fel_pa_code">9-1-1</field>
+            <field name="city_id" ref="multipac_felpa.fel_pa_city_5"/>
+        </record>
+        
+        <record id="fel_pa_county_26" model="fel_pa.tools.county">
+            <field name="name">BACO</field>
+            <field name="fel_pa_code">4-2-4</field>
+            <field name="city_id" ref="multipac_felpa.fel_pa_city_7"/>
+        </record>
+        
+        <record id="fel_pa_county_27" model="fel_pa.tools.county">
+            <field name="name">BAGALA</field>
+            <field name="fel_pa_code">4-3-2</field>
+            <field name="city_id" ref="multipac_felpa.fel_pa_city_10"/>
+        </record>
+        
+        <record id="fel_pa_county_28" model="fel_pa.tools.county">
+            <field name="name">BAHIA AZUL</field>
+            <field name="fel_pa_code">12-7-2</field>
+            <field name="city_id" ref="multipac_felpa.fel_pa_city_33"/>
+        </record>
+        
+        <record id="fel_pa_county_29" model="fel_pa.tools.county">
+            <field name="name">BAHIA HONDA</field>
+            <field name="fel_pa_code">7-4-2</field>
+            <field name="city_id" ref="multipac_felpa.fel_pa_city_42"/>
+        </record>
+        
+        <record id="fel_pa_county_30" model="fel_pa.tools.county">
+            <field name="name">BAHIA HONDA</field>
+            <field name="fel_pa_code">9-11-2</field>
+            <field name="city_id" ref="multipac_felpa.fel_pa_city_73"/>
+        </record>
+        
+        <record id="fel_pa_county_31" model="fel_pa.tools.county">
+            <field name="name">BAJO BOQUETE (CABECERA)</field>
+            <field name="fel_pa_code">4-4-1</field>
+            <field name="city_id" ref="multipac_felpa.fel_pa_city_11"/>
+        </record>
+        
+        <record id="fel_pa_county_32" model="fel_pa.tools.county">
+            <field name="name">BAJO CORRAL</field>
+            <field name="fel_pa_code">7-2-2</field>
+            <field name="city_id" ref="multipac_felpa.fel_pa_city_39"/>
+        </record>
+        
+        <record id="fel_pa_county_33" model="fel_pa.tools.county">
+            <field name="name">BAJOS DE GUERA</field>
+            <field name="fel_pa_code">7-4-3</field>
+            <field name="city_id" ref="multipac_felpa.fel_pa_city_42"/>
+        </record>
+        
+        <record id="fel_pa_county_34" model="fel_pa.tools.county">
+            <field name="name">BAKAMA</field>
+            <field name="fel_pa_code">12-3-3</field>
+            <field name="city_id" ref="multipac_felpa.fel_pa_city_46"/>
+        </record>
+        
+        <record id="fel_pa_county_35" model="fel_pa.tools.county">
+            <field name="name">BARNIZAL</field>
+            <field name="fel_pa_code">9-2-2</field>
+            <field name="city_id" ref="multipac_felpa.fel_pa_city_13"/>
+        </record>
+        
+        <record id="fel_pa_county_36" model="fel_pa.tools.county">
+            <field name="name">BARRIO BALBOA</field>
+            <field name="fel_pa_code">13-4-1</field>
+            <field name="city_id" ref="multipac_felpa.fel_pa_city_34"/>
+        </record>
+        
+        <record id="fel_pa_county_37" model="fel_pa.tools.county">
+            <field name="name">BARRIO COLON</field>
+            <field name="fel_pa_code">13-4-2</field>
+            <field name="city_id" ref="multipac_felpa.fel_pa_city_34"/>
+        </record>
+        
+        <record id="fel_pa_county_38" model="fel_pa.tools.county">
+            <field name="name">BARRIO NORTE</field>
+            <field name="fel_pa_code">3-1-1</field>
+            <field name="city_id" ref="multipac_felpa.fel_pa_city_25"/>
+        </record>
+        
+        <record id="fel_pa_county_39" model="fel_pa.tools.county">
+            <field name="name">BARRIO SUR</field>
+            <field name="fel_pa_code">3-1-2</field>
+            <field name="city_id" ref="multipac_felpa.fel_pa_city_25"/>
+        </record>
+        
+        <record id="fel_pa_county_40" model="fel_pa.tools.county">
+            <field name="name">BARRIOS UNIDOS</field>
+            <field name="fel_pa_code">2-1-5</field>
+            <field name="city_id" ref="multipac_felpa.fel_pa_city_1"/>
+        </record>
+        
+        <record id="fel_pa_county_41" model="fel_pa.tools.county">
+            <field name="name">BASTIMENTOS</field>
+            <field name="fel_pa_code">1-1-2</field>
+            <field name="city_id" ref="multipac_felpa.fel_pa_city_9"/>
+        </record>
+        
+        <record id="fel_pa_county_42" model="fel_pa.tools.county">
+            <field name="name">BAYANO</field>
+            <field name="fel_pa_code">7-2-3</field>
+            <field name="city_id" ref="multipac_felpa.fel_pa_city_39"/>
+        </record>
+        
+        <record id="fel_pa_county_43" model="fel_pa.tools.county">
+            <field name="name">BEJUCO</field>
+            <field name="fel_pa_code">13-3-2</field>
+            <field name="city_id" ref="multipac_felpa.fel_pa_city_18"/>
+        </record>
+        
+        <record id="fel_pa_county_44" model="fel_pa.tools.county">
+            <field name="name">BELISARIO FRIAS</field>
+            <field name="fel_pa_code">8-10-7</field>
+            <field name="city_id" ref="multipac_felpa.fel_pa_city_68"/>
+        </record>
+        
+        <record id="fel_pa_county_45" model="fel_pa.tools.county">
+            <field name="name">BELISARIO PORRAS</field>
+            <field name="fel_pa_code">8-10-2</field>
+            <field name="city_id" ref="multipac_felpa.fel_pa_city_68"/>
+        </record>
+        
+        <record id="fel_pa_county_46" model="fel_pa.tools.county">
+            <field name="name">BELLA VISTA</field>
+            <field name="fel_pa_code">8-8-7</field>
+            <field name="city_id" ref="multipac_felpa.fel_pa_city_52"/>
+        </record>
+        
+        <record id="fel_pa_county_47" model="fel_pa.tools.county">
+            <field name="name">BELLA VISTA</field>
+            <field name="fel_pa_code">4-13-2</field>
+            <field name="city_id" ref="multipac_felpa.fel_pa_city_75"/>
+        </record>
+        
+        <record id="fel_pa_county_48" model="fel_pa.tools.county">
+            <field name="name">BETANIA</field>
+            <field name="fel_pa_code">8-8-6</field>
+            <field name="city_id" ref="multipac_felpa.fel_pa_city_52"/>
+        </record>
+        
+        <record id="fel_pa_county_49" model="fel_pa.tools.county">
+            <field name="name">BIJAGUAL</field>
+            <field name="fel_pa_code">4-6-2</field>
+            <field name="city_id" ref="multipac_felpa.fel_pa_city_27"/>
+        </record>
+        
+        <record id="fel_pa_county_50" model="fel_pa.tools.county">
+            <field name="name">BISIRA (CABECERA)</field>
+            <field name="fel_pa_code">12-6-1</field>
+            <field name="city_id" ref="multipac_felpa.fel_pa_city_32"/>
+        </record>
+        
+        <record id="fel_pa_county_51" model="fel_pa.tools.county">
+            <field name="name">BISVALLES</field>
+            <field name="fel_pa_code">9-4-2</field>
+            <field name="city_id" ref="multipac_felpa.fel_pa_city_35"/>
+        </record>
+        
+        <record id="fel_pa_county_52" model="fel_pa.tools.county">
+            <field name="name">BOCA CHICA</field>
+            <field name="fel_pa_code">4-12-2</field>
+            <field name="city_id" ref="multipac_felpa.fel_pa_city_67"/>
+        </record>
+        
+        <record id="fel_pa_county_53" model="fel_pa.tools.county">
+            <field name="name">BOCA DE BALSA</field>
+            <field name="fel_pa_code">12-1-2</field>
+            <field name="city_id" ref="multipac_felpa.fel_pa_city_8"/>
+        </record>
+        
+        <record id="fel_pa_county_54" model="fel_pa.tools.county">
+            <field name="name">BOCA DE CUPE</field>
+            <field name="fel_pa_code">5-2-2</field>
+            <field name="city_id" ref="multipac_felpa.fel_pa_city_57"/>
+        </record>
+        
+        <record id="fel_pa_county_55" model="fel_pa.tools.county">
+            <field name="name">BOCA DEL MONTE</field>
+            <field name="fel_pa_code">4-12-3</field>
+            <field name="city_id" ref="multipac_felpa.fel_pa_city_67"/>
+        </record>
+        
+        <record id="fel_pa_county_56" model="fel_pa.tools.county">
+            <field name="name">BOCAS DEL TORO (CABECERA)</field>
+            <field name="fel_pa_code">1-1-1</field>
+            <field name="city_id" ref="multipac_felpa.fel_pa_city_9"/>
+        </record>
+        
+        <record id="fel_pa_county_57" model="fel_pa.tools.county">
+            <field name="name">BOQUERON (CABECERA)</field>
+            <field name="fel_pa_code">4-3-1</field>
+            <field name="city_id" ref="multipac_felpa.fel_pa_city_10"/>
+        </record>
+        
+        <record id="fel_pa_county_58" model="fel_pa.tools.county">
+            <field name="name">BORO</field>
+            <field name="fel_pa_code">9-4-3</field>
+            <field name="city_id" ref="multipac_felpa.fel_pa_city_35"/>
+        </record>
+        
+        <record id="fel_pa_county_59" model="fel_pa.tools.county">
+            <field name="name">BREÑON</field>
+            <field name="fel_pa_code">4-10-2</field>
+            <field name="city_id" ref="multipac_felpa.fel_pa_city_61"/>
+        </record>
+        
+        <record id="fel_pa_county_60" model="fel_pa.tools.county">
+            <field name="name">BRUJAS</field>
+            <field name="fel_pa_code">8-6-2</field>
+            <field name="city_id" ref="multipac_felpa.fel_pa_city_22"/>
+        </record>
+        
+        <record id="fel_pa_county_61" model="fel_pa.tools.county">
+            <field name="name">BUENA VISTA</field>
+            <field name="fel_pa_code">3-1-3</field>
+            <field name="city_id" ref="multipac_felpa.fel_pa_city_25"/>
+        </record>
+        
+        <record id="fel_pa_county_62" model="fel_pa.tools.county">
+            <field name="name">BUENOS AIRES</field>
+            <field name="fel_pa_code">13-3-3</field>
+            <field name="city_id" ref="multipac_felpa.fel_pa_city_18"/>
+        </record>
+        
+        <record id="fel_pa_county_63" model="fel_pa.tools.county">
+            <field name="name">BUENOS AIRES (CABECERA)</field>
+            <field name="fel_pa_code">12-5-1</field>
+            <field name="city_id" ref="multipac_felpa.fel_pa_city_49"/>
+        </record>
+        
+        <record id="fel_pa_county_64" model="fel_pa.tools.county">
+            <field name="name">BUGABA</field>
+            <field name="fel_pa_code">4-5-3</field>
+            <field name="city_id" ref="multipac_felpa.fel_pa_city_12"/>
+        </record>
+        
+        <record id="fel_pa_county_65" model="fel_pa.tools.county">
+            <field name="name">BURI</field>
+            <field name="fel_pa_code">12-6-2</field>
+            <field name="city_id" ref="multipac_felpa.fel_pa_city_32"/>
+        </record>
+        
+        <record id="fel_pa_county_66" model="fel_pa.tools.county">
+            <field name="name">BURUNGA</field>
+            <field name="fel_pa_code">13-1-2</field>
+            <field name="city_id" ref="multipac_felpa.fel_pa_city_4"/>
+        </record>
+        
+        <record id="fel_pa_county_67" model="fel_pa.tools.county">
+            <field name="name">CABALLERO</field>
+            <field name="fel_pa_code">2-2-10</field>
+            <field name="city_id" ref="multipac_felpa.fel_pa_city_3"/>
+        </record>
+        
+        <record id="fel_pa_county_68" model="fel_pa.tools.county">
+            <field name="name">CABUYA</field>
+            <field name="fel_pa_code">13-3-4</field>
+            <field name="city_id" ref="multipac_felpa.fel_pa_city_18"/>
+        </record>
+        
+        <record id="fel_pa_county_69" model="fel_pa.tools.county">
+            <field name="name">CABUYA</field>
+            <field name="fel_pa_code">6-5-2</field>
+            <field name="city_id" ref="multipac_felpa.fel_pa_city_53"/>
+        </record>
+        
+        <record id="fel_pa_county_70" model="fel_pa.tools.county">
+            <field name="name">CABUYA</field>
+            <field name="fel_pa_code">2-2-2</field>
+            <field name="city_id" ref="multipac_felpa.fel_pa_city_3"/>
+        </record>
+        
+        <record id="fel_pa_county_71" model="fel_pa.tools.county">
+            <field name="name">CACIQUE</field>
+            <field name="fel_pa_code">3-4-2</field>
+            <field name="city_id" ref="multipac_felpa.fel_pa_city_59"/>
+        </record>
+        
+        <record id="fel_pa_county_72" model="fel_pa.tools.county">
+            <field name="name">CAIMITILLO</field>
+            <field name="fel_pa_code">8-8-24</field>
+            <field name="city_id" ref="multipac_felpa.fel_pa_city_52"/>
+        </record>
+        
+        <record id="fel_pa_county_73" model="fel_pa.tools.county">
+            <field name="name">CAIMITO</field>
+            <field name="fel_pa_code">13-2-2</field>
+            <field name="city_id" ref="multipac_felpa.fel_pa_city_14"/>
+        </record>
+        
+        <record id="fel_pa_county_74" model="fel_pa.tools.county">
+            <field name="name">CALDERA</field>
+            <field name="fel_pa_code">4-4-2</field>
+            <field name="city_id" ref="multipac_felpa.fel_pa_city_11"/>
+        </record>
+        
+        <record id="fel_pa_county_75" model="fel_pa.tools.county">
+            <field name="name">CALIDONIA</field>
+            <field name="fel_pa_code">9-11-3</field>
+            <field name="city_id" ref="multipac_felpa.fel_pa_city_73"/>
+        </record>
+        
+        <record id="fel_pa_county_76" model="fel_pa.tools.county">
+            <field name="name">CALOBRE (CABECERA)</field>
+            <field name="fel_pa_code">9-2-1</field>
+            <field name="city_id" ref="multipac_felpa.fel_pa_city_13"/>
+        </record>
+        
+        <record id="fel_pa_county_77" model="fel_pa.tools.county">
+            <field name="name">CALOVEBORA</field>
+            <field name="fel_pa_code">9-9-2</field>
+            <field name="city_id" ref="multipac_felpa.fel_pa_city_69"/>
+        </record>
+        
+        <record id="fel_pa_county_78" model="fel_pa.tools.county">
+            <field name="name">CALOVEBORA O SANTA CATALINA</field>
+            <field name="fel_pa_code">12-7-3</field>
+            <field name="city_id" ref="multipac_felpa.fel_pa_city_33"/>
+        </record>
+        
+        <record id="fel_pa_county_79" model="fel_pa.tools.county">
+            <field name="name">CAMARON ARRIBA</field>
+            <field name="fel_pa_code">12-1-3</field>
+            <field name="city_id" ref="multipac_felpa.fel_pa_city_8"/>
+        </record>
+        
+        <record id="fel_pa_county_80" model="fel_pa.tools.county">
+            <field name="name">CAMBUTAL</field>
+            <field name="fel_pa_code">7-7-10</field>
+            <field name="city_id" ref="multipac_felpa.fel_pa_city_76"/>
+        </record>
+        
+        <record id="fel_pa_county_81" model="fel_pa.tools.county">
+            <field name="name">CAMOGANTI</field>
+            <field name="fel_pa_code">5-1-2</field>
+            <field name="city_id" ref="multipac_felpa.fel_pa_city_20"/>
+        </record>
+        
+        <record id="fel_pa_county_82" model="fel_pa.tools.county">
+            <field name="name">CAMPANA</field>
+            <field name="fel_pa_code">13-2-3</field>
+            <field name="city_id" ref="multipac_felpa.fel_pa_city_14"/>
+        </record>
+        
+        <record id="fel_pa_county_83" model="fel_pa.tools.county">
+            <field name="name">CANTA GALLO</field>
+            <field name="fel_pa_code">4-1-8</field>
+            <field name="city_id" ref="multipac_felpa.fel_pa_city_2"/>
+        </record>
+        
+        <record id="fel_pa_county_84" model="fel_pa.tools.county">
+            <field name="name">CANTO DEL LLANO</field>
+            <field name="fel_pa_code">9-10-7</field>
+            <field name="city_id" ref="multipac_felpa.fel_pa_city_72"/>
+        </record>
+        
+        <record id="fel_pa_county_85" model="fel_pa.tools.county">
+            <field name="name">CAPELLANIA</field>
+            <field name="fel_pa_code">2-4-2</field>
+            <field name="city_id" ref="multipac_felpa.fel_pa_city_47"/>
+        </record>
+        
+        <record id="fel_pa_county_86" model="fel_pa.tools.county">
+            <field name="name">CAPIRA (CABECERA)</field>
+            <field name="fel_pa_code">13-2-1</field>
+            <field name="city_id" ref="multipac_felpa.fel_pa_city_14"/>
+        </record>
+        
+        <record id="fel_pa_county_87" model="fel_pa.tools.county">
+            <field name="name">CAPURI</field>
+            <field name="fel_pa_code">6-3-2</field>
+            <field name="city_id" ref="multipac_felpa.fel_pa_city_40"/>
+        </record>
+        
+        <record id="fel_pa_county_88" model="fel_pa.tools.county">
+            <field name="name">CARLOS SANTANA AVILA</field>
+            <field name="fel_pa_code">9-10-9</field>
+            <field name="city_id" ref="multipac_felpa.fel_pa_city_72"/>
+        </record>
+        
+        <record id="fel_pa_county_89" model="fel_pa.tools.county">
+            <field name="name">CASCABEL</field>
+            <field name="fel_pa_code">12-2-2</field>
+            <field name="city_id" ref="multipac_felpa.fel_pa_city_44"/>
+        </record>
+        
+        <record id="fel_pa_county_90" model="fel_pa.tools.county">
+            <field name="name">CATIVA</field>
+            <field name="fel_pa_code">3-1-4</field>
+            <field name="city_id" ref="multipac_felpa.fel_pa_city_25"/>
+        </record>
+        
+        <record id="fel_pa_county_91" model="fel_pa.tools.county">
+            <field name="name">CATIVE</field>
+            <field name="fel_pa_code">9-11-4</field>
+            <field name="city_id" ref="multipac_felpa.fel_pa_city_73"/>
+        </record>
+        
+        <record id="fel_pa_county_92" model="fel_pa.tools.county">
+            <field name="name">CATORCE DE NOVIEMBRE</field>
+            <field name="fel_pa_code">9-7-5</field>
+            <field name="city_id" ref="multipac_felpa.fel_pa_city_62"/>
+        </record>
+        
+        <record id="fel_pa_county_93" model="fel_pa.tools.county">
+            <field name="name">CAUCHERO</field>
+            <field name="fel_pa_code">1-1-3</field>
+            <field name="city_id" ref="multipac_felpa.fel_pa_city_9"/>
+        </record>
+        
+        <record id="fel_pa_county_94" model="fel_pa.tools.county">
+            <field name="name">CAÑAS</field>
+            <field name="fel_pa_code">7-7-3</field>
+            <field name="city_id" ref="multipac_felpa.fel_pa_city_76"/>
+        </record>
+        
+        <record id="fel_pa_county_95" model="fel_pa.tools.county">
+            <field name="name">CAÑAS GORDAS</field>
+            <field name="fel_pa_code">4-10-3</field>
+            <field name="city_id" ref="multipac_felpa.fel_pa_city_61"/>
+        </record>
+        
+        <record id="fel_pa_county_96" model="fel_pa.tools.county">
+            <field name="name">CAÑAVERAL</field>
+            <field name="fel_pa_code">2-6-2</field>
+            <field name="city_id" ref="multipac_felpa.fel_pa_city_55"/>
+        </record>
+        
+        <record id="fel_pa_county_97" model="fel_pa.tools.county">
+            <field name="name">CAÑAZAS (CABECERA)</field>
+            <field name="fel_pa_code">9-3-1</field>
+            <field name="city_id" ref="multipac_felpa.fel_pa_city_15"/>
+        </record>
+        
+        <record id="fel_pa_county_98" model="fel_pa.tools.county">
+            <field name="name">CAÑITA</field>
+            <field name="fel_pa_code">8-5-2</field>
+            <field name="city_id" ref="multipac_felpa.fel_pa_city_21"/>
+        </record>
+        
+        <record id="fel_pa_county_99" model="fel_pa.tools.county">
+            <field name="name">CEBACO</field>
+            <field name="fel_pa_code">9-6-6</field>
+            <field name="city_id" ref="multipac_felpa.fel_pa_city_45"/>
+        </record>
+        
+        <record id="fel_pa_county_100" model="fel_pa.tools.county">
+            <field name="name">CERMEÑO</field>
+            <field name="fel_pa_code">13-2-4</field>
+            <field name="city_id" ref="multipac_felpa.fel_pa_city_14"/>
+        </record>
+        
+        <record id="fel_pa_county_101" model="fel_pa.tools.county">
+            <field name="name">CERRO BANCO</field>
+            <field name="fel_pa_code">12-1-4</field>
+            <field name="city_id" ref="multipac_felpa.fel_pa_city_8"/>
+        </record>
+        
+        <record id="fel_pa_county_102" model="fel_pa.tools.county">
+            <field name="name">CERRO CAÑA</field>
+            <field name="fel_pa_code">12-3-4</field>
+            <field name="city_id" ref="multipac_felpa.fel_pa_city_46"/>
+        </record>
+        
+        <record id="fel_pa_county_103" model="fel_pa.tools.county">
+            <field name="name">CERRO DE CASA</field>
+            <field name="fel_pa_code">9-5-2</field>
+            <field name="city_id" ref="multipac_felpa.fel_pa_city_38"/>
+        </record>
+        
+        <record id="fel_pa_county_104" model="fel_pa.tools.county">
+            <field name="name">CERRO DE PATENA</field>
+            <field name="fel_pa_code">12-1-5</field>
+            <field name="city_id" ref="multipac_felpa.fel_pa_city_8"/>
+        </record>
+        
+        <record id="fel_pa_county_105" model="fel_pa.tools.county">
+            <field name="name">CERRO IGLESIAS (CABECERA)</field>
+            <field name="fel_pa_code">12-4-1</field>
+            <field name="city_id" ref="multipac_felpa.fel_pa_city_48"/>
+        </record>
+        
+        <record id="fel_pa_county_106" model="fel_pa.tools.county">
+            <field name="name">CERRO LARGO</field>
+            <field name="fel_pa_code">6-4-2</field>
+            <field name="city_id" ref="multipac_felpa.fel_pa_city_50"/>
+        </record>
+        
+        <record id="fel_pa_county_107" model="fel_pa.tools.county">
+            <field name="name">CERRO PELADO</field>
+            <field name="fel_pa_code">12-5-4</field>
+            <field name="city_id" ref="multipac_felpa.fel_pa_city_49"/>
+        </record>
+        
+        <record id="fel_pa_county_108" model="fel_pa.tools.county">
+            <field name="name">CERRO PLATA</field>
+            <field name="fel_pa_code">9-3-2</field>
+            <field name="city_id" ref="multipac_felpa.fel_pa_city_15"/>
+        </record>
+        
+        <record id="fel_pa_county_109" model="fel_pa.tools.county">
+            <field name="name">CERRO PUERCO</field>
+            <field name="fel_pa_code">12-3-5</field>
+            <field name="city_id" ref="multipac_felpa.fel_pa_city_46"/>
+        </record>
+        
+        <record id="fel_pa_county_110" model="fel_pa.tools.county">
+            <field name="name">CERRO PUNTA</field>
+            <field name="fel_pa_code">4-5-4</field>
+            <field name="city_id" ref="multipac_felpa.fel_pa_city_12"/>
+        </record>
+        
+        <record id="fel_pa_county_111" model="fel_pa.tools.county">
+            <field name="name">CERRO SILVESTRE</field>
+            <field name="fel_pa_code">13-1-3</field>
+            <field name="city_id" ref="multipac_felpa.fel_pa_city_4"/>
+        </record>
+        
+        <record id="fel_pa_county_112" model="fel_pa.tools.county">
+            <field name="name">CERRO VIEJO</field>
+            <field name="fel_pa_code">4-13-3</field>
+            <field name="city_id" ref="multipac_felpa.fel_pa_city_75"/>
+        </record>
+        
+        <record id="fel_pa_county_113" model="fel_pa.tools.county">
+            <field name="name">CHAME (CABECERA)</field>
+            <field name="fel_pa_code">13-3-1</field>
+            <field name="city_id" ref="multipac_felpa.fel_pa_city_18"/>
+        </record>
+        
+        <record id="fel_pa_county_114" model="fel_pa.tools.county">
+            <field name="name">CHANGUINOLA (CABECERA)</field>
+            <field name="fel_pa_code">1-2-1</field>
+            <field name="city_id" ref="multipac_felpa.fel_pa_city_19"/>
+        </record>
+        
+        <record id="fel_pa_county_115" model="fel_pa.tools.county">
+            <field name="name">CHEPIGANA</field>
+            <field name="fel_pa_code">5-1-3</field>
+            <field name="city_id" ref="multipac_felpa.fel_pa_city_20"/>
+        </record>
+        
+        <record id="fel_pa_county_116" model="fel_pa.tools.county">
+            <field name="name">CHEPILLO</field>
+            <field name="fel_pa_code">8-5-3</field>
+            <field name="city_id" ref="multipac_felpa.fel_pa_city_21"/>
+        </record>
+        
+        <record id="fel_pa_county_117" model="fel_pa.tools.county">
+            <field name="name">CHEPO</field>
+            <field name="fel_pa_code">6-2-2</field>
+            <field name="city_id" ref="multipac_felpa.fel_pa_city_37"/>
+        </record>
+        
+        <record id="fel_pa_county_118" model="fel_pa.tools.county">
+            <field name="name">CHEPO (CABECERA)</field>
+            <field name="fel_pa_code">8-5-1</field>
+            <field name="city_id" ref="multipac_felpa.fel_pa_city_21"/>
+        </record>
+        
+        <record id="fel_pa_county_119" model="fel_pa.tools.county">
+            <field name="name">CHICA</field>
+            <field name="fel_pa_code">13-3-5</field>
+            <field name="city_id" ref="multipac_felpa.fel_pa_city_18"/>
+        </record>
+        
+        <record id="fel_pa_county_120" model="fel_pa.tools.county">
+            <field name="name">CHICHICA (CABECERA)</field>
+            <field name="fel_pa_code">12-3-1</field>
+            <field name="city_id" ref="multipac_felpa.fel_pa_city_46"/>
+        </record>
+        
+        <record id="fel_pa_county_121" model="fel_pa.tools.county">
+            <field name="name">CHIGUIRI ARRIBA</field>
+            <field name="fel_pa_code">2-6-4</field>
+            <field name="city_id" ref="multipac_felpa.fel_pa_city_55"/>
+        </record>
+        
+        <record id="fel_pa_county_122" model="fel_pa.tools.county">
+            <field name="name">CHILIBRE</field>
+            <field name="fel_pa_code">8-8-15</field>
+            <field name="city_id" ref="multipac_felpa.fel_pa_city_52"/>
+        </record>
+        
+        <record id="fel_pa_county_123" model="fel_pa.tools.county">
+            <field name="name">CHIMAN (CABECERA)</field>
+            <field name="fel_pa_code">8-6-1</field>
+            <field name="city_id" ref="multipac_felpa.fel_pa_city_22"/>
+        </record>
+        
+        <record id="fel_pa_county_124" model="fel_pa.tools.county">
+            <field name="name">CHIRIQUI</field>
+            <field name="fel_pa_code">4-6-4</field>
+            <field name="city_id" ref="multipac_felpa.fel_pa_city_27"/>
+        </record>
+        
+        <record id="fel_pa_county_125" model="fel_pa.tools.county">
+            <field name="name">CHIRIQUI GRANDE (CABECERA)</field>
+            <field name="fel_pa_code">1-3-1</field>
+            <field name="city_id" ref="multipac_felpa.fel_pa_city_23"/>
+        </record>
+        
+        <record id="fel_pa_county_126" model="fel_pa.tools.county">
+            <field name="name">CHITRA</field>
+            <field name="fel_pa_code">9-2-3</field>
+            <field name="city_id" ref="multipac_felpa.fel_pa_city_13"/>
+        </record>
+        
+        <record id="fel_pa_county_127" model="fel_pa.tools.county">
+            <field name="name">CHITRE (CABECERA)</field>
+            <field name="fel_pa_code">6-1-1</field>
+            <field name="city_id" ref="multipac_felpa.fel_pa_city_24"/>
+        </record>
+        
+        <record id="fel_pa_county_128" model="fel_pa.tools.county">
+            <field name="name">CHUMICAL</field>
+            <field name="fel_pa_code">6-2-3</field>
+            <field name="city_id" ref="multipac_felpa.fel_pa_city_37"/>
+        </record>
+        
+        <record id="fel_pa_county_129" model="fel_pa.tools.county">
+            <field name="name">CHUPA</field>
+            <field name="fel_pa_code">7-4-5</field>
+            <field name="city_id" ref="multipac_felpa.fel_pa_city_42"/>
+        </record>
+        
+        <record id="fel_pa_county_130" model="fel_pa.tools.county">
+            <field name="name">CHUPAMPA</field>
+            <field name="fel_pa_code">6-7-2</field>
+            <field name="city_id" ref="multipac_felpa.fel_pa_city_71"/>
+        </record>
+        
+        <record id="fel_pa_county_131" model="fel_pa.tools.county">
+            <field name="name">CIRI DE LOS SOTOS</field>
+            <field name="fel_pa_code">13-2-5</field>
+            <field name="city_id" ref="multipac_felpa.fel_pa_city_14"/>
+        </record>
+        
+        <record id="fel_pa_county_132" model="fel_pa.tools.county">
+            <field name="name">CIRI GRANDE</field>
+            <field name="fel_pa_code">13-2-6</field>
+            <field name="city_id" ref="multipac_felpa.fel_pa_city_14"/>
+        </record>
+        
+        <record id="fel_pa_county_133" model="fel_pa.tools.county">
+            <field name="name">CIRICITO</field>
+            <field name="fel_pa_code">3-1-5</field>
+            <field name="city_id" ref="multipac_felpa.fel_pa_city_25"/>
+        </record>
+        
+        <record id="fel_pa_county_134" model="fel_pa.tools.county">
+            <field name="name">CIRILO GUAINORA (CABECERA)</field>
+            <field name="fel_pa_code">11-1-1</field>
+            <field name="city_id" ref="multipac_felpa.fel_pa_city_16"/>
+        </record>
+        
+        <record id="fel_pa_county_135" model="fel_pa.tools.county">
+            <field name="name">COCHEA</field>
+            <field name="fel_pa_code">4-6-3</field>
+            <field name="city_id" ref="multipac_felpa.fel_pa_city_27"/>
+        </record>
+        
+        <record id="fel_pa_county_136" model="fel_pa.tools.county">
+            <field name="name">COCLE</field>
+            <field name="fel_pa_code">2-6-3</field>
+            <field name="city_id" ref="multipac_felpa.fel_pa_city_55"/>
+        </record>
+        
+        <record id="fel_pa_county_137" model="fel_pa.tools.county">
+            <field name="name">COCLE DEL NORTE</field>
+            <field name="fel_pa_code">3-3-2</field>
+            <field name="city_id" ref="multipac_felpa.fel_pa_city_29"/>
+        </record>
+        
+        <record id="fel_pa_county_138" model="fel_pa.tools.county">
+            <field name="name">COMARCA KUNA DE MADUNGANDI</field>
+            <field name="fel_pa_code">8-5-7</field>
+            <field name="city_id" ref="multipac_felpa.fel_pa_city_21"/>
+        </record>
+        
+        <record id="fel_pa_county_139" model="fel_pa.tools.county">
+            <field name="name">COMARCA KUNA DE WARGANDI</field>
+            <field name="fel_pa_code">5-2-9</field>
+            <field name="city_id" ref="multipac_felpa.fel_pa_city_57"/>
+        </record>
+        
+        <record id="fel_pa_county_140" model="fel_pa.tools.county">
+            <field name="name">CORDILLERA</field>
+            <field name="fel_pa_code">4-3-3</field>
+            <field name="city_id" ref="multipac_felpa.fel_pa_city_10"/>
+        </record>
+        
+        <record id="fel_pa_county_141" model="fel_pa.tools.county">
+            <field name="name">COROZAL</field>
+            <field name="fel_pa_code">9-5-3</field>
+            <field name="city_id" ref="multipac_felpa.fel_pa_city_38"/>
+        </record>
+        
+        <record id="fel_pa_county_142" model="fel_pa.tools.county">
+            <field name="name">COROZAL</field>
+            <field name="fel_pa_code">7-4-4</field>
+            <field name="city_id" ref="multipac_felpa.fel_pa_city_42"/>
+        </record>
+        
+        <record id="fel_pa_county_143" model="fel_pa.tools.county">
+            <field name="name">CORRAL FALSO</field>
+            <field name="fel_pa_code">9-8-2</field>
+            <field name="city_id" ref="multipac_felpa.fel_pa_city_66"/>
+        </record>
+        
+        <record id="fel_pa_county_144" model="fel_pa.tools.county">
+            <field name="name">COSTA HERMOSA</field>
+            <field name="fel_pa_code">9-6-7</field>
+            <field name="city_id" ref="multipac_felpa.fel_pa_city_45"/>
+        </record>
+        
+        <record id="fel_pa_county_145" model="fel_pa.tools.county">
+            <field name="name">CRISTOBAL</field>
+            <field name="fel_pa_code">3-1-6</field>
+            <field name="city_id" ref="multipac_felpa.fel_pa_city_25"/>
+        </record>
+        
+        <record id="fel_pa_county_146" model="fel_pa.tools.county">
+            <field name="name">CUANGO</field>
+            <field name="fel_pa_code">3-5-2</field>
+            <field name="city_id" ref="multipac_felpa.fel_pa_city_70"/>
+        </record>
+        
+        <!--<record id="fel_pa_county_147" model="fel_pa.tools.county">
+            <field name="name">CUCUNATI</field>
+            <field name="fel_pa_code">5-1-14</field>
+            <field name="city_id" ref="multipac_felpa.fel_pa_city_20"/>
+        </record>-->
+        
+        <record id="fel_pa_county_148" model="fel_pa.tools.county">
+            <field name="name">CURUNDU</field>
+            <field name="fel_pa_code">8-8-5</field>
+            <field name="city_id" ref="multipac_felpa.fel_pa_city_52"/>
+        </record>
+        
+        <record id="fel_pa_county_149" model="fel_pa.tools.county">
+            <field name="name">DAVID (CABECERA)</field>
+            <field name="fel_pa_code">4-6-1</field>
+            <field name="city_id" ref="multipac_felpa.fel_pa_city_27"/>
+        </record>
+        
+        <record id="fel_pa_county_150" model="fel_pa.tools.county">
+            <field name="name">DIVALA</field>
+            <field name="fel_pa_code">4-1-2</field>
+            <field name="city_id" ref="multipac_felpa.fel_pa_city_2"/>
+        </record>
+        
+        <record id="fel_pa_county_151" model="fel_pa.tools.county">
+            <field name="name">DOLEGA (CABECERA)</field>
+            <field name="fel_pa_code">4-7-1</field>
+            <field name="city_id" ref="multipac_felpa.fel_pa_city_28"/>
+        </record>
+        
+        <record id="fel_pa_county_152" model="fel_pa.tools.county">
+            <field name="name">DOMINICAL</field>
+            <field name="fel_pa_code">4-10-7</field>
+            <field name="city_id" ref="multipac_felpa.fel_pa_city_61"/>
+        </record>
+        
+        <record id="fel_pa_county_153" model="fel_pa.tools.county">
+            <field name="name">DON BOSCO</field>
+            <field name="fel_pa_code">8-8-25</field>
+            <field name="city_id" ref="multipac_felpa.fel_pa_city_52"/>
+        </record>
+        
+        <record id="fel_pa_county_154" model="fel_pa.tools.county">
+            <field name="name">DOS RIOS</field>
+            <field name="fel_pa_code">4-7-2</field>
+            <field name="city_id" ref="multipac_felpa.fel_pa_city_28"/>
+        </record>
+        
+        <record id="fel_pa_county_155" model="fel_pa.tools.county">
+            <field name="name">EDWIN FABREGA</field>
+            <field name="fel_pa_code">9-10-10</field>
+            <field name="city_id" ref="multipac_felpa.fel_pa_city_72"/>
+        </record>
+        
+        <record id="fel_pa_county_156" model="fel_pa.tools.county">
+            <field name="name">EL ALTO</field>
+            <field name="fel_pa_code">9-9-3</field>
+            <field name="city_id" ref="multipac_felpa.fel_pa_city_69"/>
+        </record>
+        
+        <record id="fel_pa_county_157" model="fel_pa.tools.county">
+            <field name="name">EL ARADO</field>
+            <field name="fel_pa_code">13-4-5</field>
+            <field name="city_id" ref="multipac_felpa.fel_pa_city_34"/>
+        </record>
+        
+        <record id="fel_pa_county_158" model="fel_pa.tools.county">
+            <field name="name">EL AROMILLO</field>
+            <field name="fel_pa_code">9-3-7</field>
+            <field name="city_id" ref="multipac_felpa.fel_pa_city_15"/>
+        </record>
+        
+        <record id="fel_pa_county_159" model="fel_pa.tools.county">
+            <field name="name">EL BALE</field>
+            <field name="fel_pa_code">12-5-5</field>
+            <field name="city_id" ref="multipac_felpa.fel_pa_city_49"/>
+        </record>
+        
+        <record id="fel_pa_county_160" model="fel_pa.tools.county">
+            <field name="name">EL BARRERO</field>
+            <field name="fel_pa_code">6-6-4</field>
+            <field name="city_id" ref="multipac_felpa.fel_pa_city_56"/>
+        </record>
+        
+        <record id="fel_pa_county_161" model="fel_pa.tools.county">
+            <field name="name">EL BARRITO</field>
+            <field name="fel_pa_code">9-1-2</field>
+            <field name="city_id" ref="multipac_felpa.fel_pa_city_5"/>
+        </record>
+        
+        <record id="fel_pa_county_162" model="fel_pa.tools.county">
+            <field name="name">EL BEBEDERO</field>
+            <field name="fel_pa_code">7-7-4</field>
+            <field name="city_id" ref="multipac_felpa.fel_pa_city_76"/>
+        </record>
+        
+        <record id="fel_pa_county_163" model="fel_pa.tools.county">
+            <field name="name">EL BONGO</field>
+            <field name="fel_pa_code">4-5-13</field>
+            <field name="city_id" ref="multipac_felpa.fel_pa_city_12"/>
+        </record>
+        
+        <record id="fel_pa_county_164" model="fel_pa.tools.county">
+            <field name="name">EL CACAO</field>
+            <field name="fel_pa_code">13-2-7</field>
+            <field name="city_id" ref="multipac_felpa.fel_pa_city_14"/>
+        </record>
+        
+        <record id="fel_pa_county_165" model="fel_pa.tools.county">
+            <field name="name">EL CACAO</field>
+            <field name="fel_pa_code">9-12-3</field>
+            <field name="city_id" ref="multipac_felpa.fel_pa_city_43"/>
+        </record>
+        
+        <record id="fel_pa_county_166" model="fel_pa.tools.county">
+            <field name="name">EL CACAO</field>
+            <field name="fel_pa_code">7-7-5</field>
+            <field name="city_id" ref="multipac_felpa.fel_pa_city_76"/>
+        </record>
+        
+        <record id="fel_pa_county_167" model="fel_pa.tools.county">
+            <field name="name">EL CALABACITO</field>
+            <field name="fel_pa_code">6-3-3</field>
+            <field name="city_id" ref="multipac_felpa.fel_pa_city_40"/>
+        </record>
+        
+        <record id="fel_pa_county_168" model="fel_pa.tools.county">
+            <field name="name">EL CARATE</field>
+            <field name="fel_pa_code">7-2-4</field>
+            <field name="city_id" ref="multipac_felpa.fel_pa_city_39"/>
+        </record>
+        
+        <record id="fel_pa_county_169" model="fel_pa.tools.county">
+            <field name="name">EL CAÑAFISTULO</field>
+            <field name="fel_pa_code">7-6-2</field>
+            <field name="city_id" ref="multipac_felpa.fel_pa_city_58"/>
+        </record>
+        
+        <record id="fel_pa_county_170" model="fel_pa.tools.county">
+            <field name="name">EL CAÑO</field>
+            <field name="fel_pa_code">2-4-3</field>
+            <field name="city_id" ref="multipac_felpa.fel_pa_city_47"/>
+        </record>
+        
+        <record id="fel_pa_county_171" model="fel_pa.tools.county">
+            <field name="name">EL CEDRO</field>
+            <field name="fel_pa_code">7-4-6</field>
+            <field name="city_id" ref="multipac_felpa.fel_pa_city_42"/>
+        </record>
+        
+        <record id="fel_pa_county_172" model="fel_pa.tools.county">
+            <field name="name">EL CEDRO</field>
+            <field name="fel_pa_code">6-3-4</field>
+            <field name="city_id" ref="multipac_felpa.fel_pa_city_40"/>
+        </record>
+        
+        <record id="fel_pa_county_173" model="fel_pa.tools.county">
+            <field name="name">EL CHIRU</field>
+            <field name="fel_pa_code">2-2-3</field>
+            <field name="city_id" ref="multipac_felpa.fel_pa_city_3"/>
+        </record>
+        
+        <record id="fel_pa_county_174" model="fel_pa.tools.county">
+            <field name="name">EL CHORRILLO</field>
+            <field name="fel_pa_code">8-8-2</field>
+            <field name="city_id" ref="multipac_felpa.fel_pa_city_52"/>
+        </record>
+        
+        <record id="fel_pa_county_175" model="fel_pa.tools.county">
+            <field name="name">EL CIRUELO</field>
+            <field name="fel_pa_code">6-6-6</field>
+            <field name="city_id" ref="multipac_felpa.fel_pa_city_56"/>
+        </record>
+        
+        <record id="fel_pa_county_176" model="fel_pa.tools.county">
+            <field name="name">EL COCAL</field>
+            <field name="fel_pa_code">7-2-5</field>
+            <field name="city_id" ref="multipac_felpa.fel_pa_city_39"/>
+        </record>
+        
+        <record id="fel_pa_county_177" model="fel_pa.tools.county">
+            <field name="name">EL COCLA</field>
+            <field name="fel_pa_code">9-2-4</field>
+            <field name="city_id" ref="multipac_felpa.fel_pa_city_13"/>
+        </record>
+        
+        <record id="fel_pa_county_178" model="fel_pa.tools.county">
+            <field name="name">EL COCO</field>
+            <field name="fel_pa_code">13-4-6</field>
+            <field name="city_id" ref="multipac_felpa.fel_pa_city_34"/>
+        </record>
+        
+        <record id="fel_pa_county_179" model="fel_pa.tools.county">
+            <field name="name">EL COCO</field>
+            <field name="fel_pa_code">2-6-5</field>
+            <field name="city_id" ref="multipac_felpa.fel_pa_city_55"/>
+        </record>
+        
+        <record id="fel_pa_county_180" model="fel_pa.tools.county">
+            <field name="name">EL COPE</field>
+            <field name="fel_pa_code">2-5-2</field>
+            <field name="city_id" ref="multipac_felpa.fel_pa_city_51"/>
+        </record>
+        
+        <record id="fel_pa_county_181" model="fel_pa.tools.county">
+            <field name="name">EL CORTEZO</field>
+            <field name="fel_pa_code">7-7-6</field>
+            <field name="city_id" ref="multipac_felpa.fel_pa_city_76"/>
+        </record>
+        
+        <record id="fel_pa_county_182" model="fel_pa.tools.county">
+            <field name="name">EL CRISTO</field>
+            <field name="fel_pa_code">4-13-4</field>
+            <field name="city_id" ref="multipac_felpa.fel_pa_city_75"/>
+        </record>
+        
+        <record id="fel_pa_county_183" model="fel_pa.tools.county">
+            <field name="name">EL CRISTO</field>
+            <field name="fel_pa_code">2-1-2</field>
+            <field name="city_id" ref="multipac_felpa.fel_pa_city_1"/>
+        </record>
+        
+        <record id="fel_pa_county_184" model="fel_pa.tools.county">
+            <field name="name">EL CUAY</field>
+            <field name="fel_pa_code">9-9-4</field>
+            <field name="city_id" ref="multipac_felpa.fel_pa_city_69"/>
+        </record>
+        
+        <record id="fel_pa_county_185" model="fel_pa.tools.county">
+            <field name="name">EL EMPALME</field>
+            <field name="fel_pa_code">1-2-6</field>
+            <field name="city_id" ref="multipac_felpa.fel_pa_city_19"/>
+        </record>
+        
+        <record id="fel_pa_county_186" model="fel_pa.tools.county">
+            <field name="name">EL ESPINAL</field>
+            <field name="fel_pa_code">7-1-2</field>
+            <field name="city_id" ref="multipac_felpa.fel_pa_city_31"/>
+        </record>
+        
+        <record id="fel_pa_county_187" model="fel_pa.tools.county">
+            <field name="name">EL ESPINO</field>
+            <field name="fel_pa_code">13-5-2</field>
+            <field name="city_id" ref="multipac_felpa.fel_pa_city_64"/>
+        </record>
+        
+        <record id="fel_pa_county_188" model="fel_pa.tools.county">
+            <field name="name">EL GUABO</field>
+            <field name="fel_pa_code">3-2-3</field>
+            <field name="city_id" ref="multipac_felpa.fel_pa_city_17"/>
+        </record>
+        
+        <record id="fel_pa_county_189" model="fel_pa.tools.county">
+            <field name="name">EL GUASIMO</field>
+            <field name="fel_pa_code">7-3-2</field>
+            <field name="city_id" ref="multipac_felpa.fel_pa_city_41"/>
+        </record>
+        
+        <record id="fel_pa_county_190" model="fel_pa.tools.county">
+            <field name="name">EL GUASIMO</field>
+            <field name="fel_pa_code">3-3-3</field>
+            <field name="city_id" ref="multipac_felpa.fel_pa_city_29"/>
+        </record>
+        
+        <record id="fel_pa_county_191" model="fel_pa.tools.county">
+            <field name="name">EL HARINO</field>
+            <field name="fel_pa_code">2-3-2</field>
+            <field name="city_id" ref="multipac_felpa.fel_pa_city_36"/>
+        </record>
+        
+        <record id="fel_pa_county_192" model="fel_pa.tools.county">
+            <field name="name">EL HATO</field>
+            <field name="fel_pa_code">7-1-9</field>
+            <field name="city_id" ref="multipac_felpa.fel_pa_city_31"/>
+        </record>
+        
+        <record id="fel_pa_county_193" model="fel_pa.tools.county">
+            <field name="name">EL HIGO</field>
+            <field name="fel_pa_code">13-5-3</field>
+            <field name="city_id" ref="multipac_felpa.fel_pa_city_64"/>
+        </record>
+        
+        <record id="fel_pa_county_194" model="fel_pa.tools.county">
+            <field name="name">EL LIBANO</field>
+            <field name="fel_pa_code">13-3-6</field>
+            <field name="city_id" ref="multipac_felpa.fel_pa_city_18"/>
+        </record>
+        
+        <record id="fel_pa_county_195" model="fel_pa.tools.county">
+            <field name="name">EL LIMON</field>
+            <field name="fel_pa_code">6-7-4</field>
+            <field name="city_id" ref="multipac_felpa.fel_pa_city_71"/>
+        </record>
+        
+        <record id="fel_pa_county_196" model="fel_pa.tools.county">
+            <field name="name">EL LLANO</field>
+            <field name="fel_pa_code">8-5-4</field>
+            <field name="city_id" ref="multipac_felpa.fel_pa_city_21"/>
+        </record>
+        
+        <record id="fel_pa_county_197" model="fel_pa.tools.county">
+            <field name="name">EL MACANO</field>
+            <field name="fel_pa_code">7-1-3</field>
+            <field name="city_id" ref="multipac_felpa.fel_pa_city_31"/>
+        </record>
+        
+        <record id="fel_pa_county_198" model="fel_pa.tools.county">
+            <field name="name">EL MANANTIAL</field>
+            <field name="fel_pa_code">7-2-6</field>
+            <field name="city_id" ref="multipac_felpa.fel_pa_city_39"/>
+        </record>
+        
+        <record id="fel_pa_county_199" model="fel_pa.tools.county">
+            <field name="name">EL MARAÑON</field>
+            <field name="fel_pa_code">9-11-5</field>
+            <field name="city_id" ref="multipac_felpa.fel_pa_city_73"/>
+        </record>
+        
+        <record id="fel_pa_county_200" model="fel_pa.tools.county">
+            <field name="name">EL MARIA</field>
+            <field name="fel_pa_code">9-5-4</field>
+            <field name="city_id" ref="multipac_felpa.fel_pa_city_38"/>
+        </record>
+        
+        <record id="fel_pa_county_201" model="fel_pa.tools.county">
+            <field name="name">EL MUÑOZ</field>
+            <field name="fel_pa_code">7-2-7</field>
+            <field name="city_id" ref="multipac_felpa.fel_pa_city_39"/>
+        </record>
+        
+        <record id="fel_pa_county_202" model="fel_pa.tools.county">
+            <field name="name">EL NANCITO</field>
+            <field name="fel_pa_code">4-9-2</field>
+            <field name="city_id" ref="multipac_felpa.fel_pa_city_60"/>
+        </record>
+        
+        <record id="fel_pa_county_203" model="fel_pa.tools.county">
+            <field name="name">EL PAJARO</field>
+            <field name="fel_pa_code">6-6-3</field>
+            <field name="city_id" ref="multipac_felpa.fel_pa_city_56"/>
+        </record>
+        
+        <record id="fel_pa_county_204" model="fel_pa.tools.county">
+            <field name="name">EL PALMAR</field>
+            <field name="fel_pa_code">2-5-3</field>
+            <field name="city_id" ref="multipac_felpa.fel_pa_city_51"/>
+        </record>
+        
+        <record id="fel_pa_county_205" model="fel_pa.tools.county">
+            <field name="name">EL PANTANO</field>
+            <field name="fel_pa_code">9-9-5</field>
+            <field name="city_id" ref="multipac_felpa.fel_pa_city_69"/>
+        </record>
+        
+        <record id="fel_pa_county_206" model="fel_pa.tools.county">
+            <field name="name">EL PAREDON</field>
+            <field name="fel_pa_code">12-5-6</field>
+            <field name="city_id" ref="multipac_felpa.fel_pa_city_49"/>
+        </record>
+        
+        <record id="fel_pa_county_207" model="fel_pa.tools.county">
+            <field name="name">EL PEDREGOSO</field>
+            <field name="fel_pa_code">6-6-5</field>
+            <field name="city_id" ref="multipac_felpa.fel_pa_city_56"/>
+        </record>
+        
+        <record id="fel_pa_county_208" model="fel_pa.tools.county">
+            <field name="name">EL PEDREGOSO</field>
+            <field name="fel_pa_code">7-2-8</field>
+            <field name="city_id" ref="multipac_felpa.fel_pa_city_39"/>
+        </record>
+        
+        <record id="fel_pa_county_209" model="fel_pa.tools.county">
+            <field name="name">EL PICACHO</field>
+            <field name="fel_pa_code">2-5-4</field>
+            <field name="city_id" ref="multipac_felpa.fel_pa_city_51"/>
+        </record>
+        
+        <record id="fel_pa_county_210" model="fel_pa.tools.county">
+            <field name="name">EL PICADOR</field>
+            <field name="fel_pa_code">9-3-3</field>
+            <field name="city_id" ref="multipac_felpa.fel_pa_city_15"/>
+        </record>
+        
+        <record id="fel_pa_county_211" model="fel_pa.tools.county">
+            <field name="name">EL PILON</field>
+            <field name="fel_pa_code">9-6-10</field>
+            <field name="city_id" ref="multipac_felpa.fel_pa_city_45"/>
+        </record>
+        
+        <record id="fel_pa_county_212" model="fel_pa.tools.county">
+            <field name="name">EL PIRO</field>
+            <field name="fel_pa_code">12-5-7</field>
+            <field name="city_id" ref="multipac_felpa.fel_pa_city_49"/>
+        </record>
+        
+        <record id="fel_pa_county_213" model="fel_pa.tools.county">
+            <field name="name">EL PORVENIR</field>
+            <field name="fel_pa_code">4-9-3</field>
+            <field name="city_id" ref="multipac_felpa.fel_pa_city_60"/>
+        </record>
+        
+        <record id="fel_pa_county_214" model="fel_pa.tools.county">
+            <field name="name">EL POTRERO</field>
+            <field name="fel_pa_code">9-2-5</field>
+            <field name="city_id" ref="multipac_felpa.fel_pa_city_13"/>
+        </record>
+        
+        <record id="fel_pa_county_215" model="fel_pa.tools.county">
+            <field name="name">EL POTRERO</field>
+            <field name="fel_pa_code">2-3-3</field>
+            <field name="city_id" ref="multipac_felpa.fel_pa_city_36"/>
+        </record>
+        
+        <record id="fel_pa_county_216" model="fel_pa.tools.county">
+            <field name="name">EL PRADO</field>
+            <field name="fel_pa_code">9-5-5</field>
+            <field name="city_id" ref="multipac_felpa.fel_pa_city_38"/>
+        </record>
+        
+        <record id="fel_pa_county_217" model="fel_pa.tools.county">
+            <field name="name">EL PUERTO</field>
+            <field name="fel_pa_code">4-9-4</field>
+            <field name="city_id" ref="multipac_felpa.fel_pa_city_60"/>
+        </record>
+        
+        <record id="fel_pa_county_218" model="fel_pa.tools.county">
+            <field name="name">EL REAL DE SANTA MARIA (CABECERA)</field>
+            <field name="fel_pa_code">5-2-1</field>
+            <field name="city_id" ref="multipac_felpa.fel_pa_city_57"/>
+        </record>
+        
+        <record id="fel_pa_county_219" model="fel_pa.tools.county">
+            <field name="name">EL RETIRO</field>
+            <field name="fel_pa_code">2-2-4</field>
+            <field name="city_id" ref="multipac_felpa.fel_pa_city_3"/>
+        </record>
+        
+        <record id="fel_pa_county_220" model="fel_pa.tools.county">
+            <field name="name">EL RINCON</field>
+            <field name="fel_pa_code">6-7-3</field>
+            <field name="city_id" ref="multipac_felpa.fel_pa_city_71"/>
+        </record>
+        
+        <record id="fel_pa_county_221" model="fel_pa.tools.county">
+            <field name="name">EL RINCON</field>
+            <field name="fel_pa_code">9-5-6</field>
+            <field name="city_id" ref="multipac_felpa.fel_pa_city_38"/>
+        </record>
+        
+        <record id="fel_pa_county_222" model="fel_pa.tools.county">
+            <field name="name">EL ROBLE</field>
+            <field name="fel_pa_code">2-1-3</field>
+            <field name="city_id" ref="multipac_felpa.fel_pa_city_1"/>
+        </record>
+        
+        <record id="fel_pa_county_223" model="fel_pa.tools.county">
+            <field name="name">EL TEJAR</field>
+            <field name="fel_pa_code">4-1-3</field>
+            <field name="city_id" ref="multipac_felpa.fel_pa_city_2"/>
+        </record>
+        
+        <record id="fel_pa_county_224" model="fel_pa.tools.county">
+            <field name="name">EL TIJERA</field>
+            <field name="fel_pa_code">6-4-6</field>
+            <field name="city_id" ref="multipac_felpa.fel_pa_city_50"/>
+        </record>
+        
+        <record id="fel_pa_county_225" model="fel_pa.tools.county">
+            <field name="name">EL TORO</field>
+            <field name="fel_pa_code">6-2-4</field>
+            <field name="city_id" ref="multipac_felpa.fel_pa_city_37"/>
+        </record>
+        
+        <record id="fel_pa_county_226" model="fel_pa.tools.county">
+            <field name="name">EL VALLE</field>
+            <field name="fel_pa_code">2-2-5</field>
+            <field name="city_id" ref="multipac_felpa.fel_pa_city_3"/>
+        </record>
+        
+        <record id="fel_pa_county_227" model="fel_pa.tools.county">
+            <field name="name">EMPLANADA DE CHORCHA</field>
+            <field name="fel_pa_code">12-1-6</field>
+            <field name="city_id" ref="multipac_felpa.fel_pa_city_8"/>
+        </record>
+        
+        <record id="fel_pa_county_228" model="fel_pa.tools.county">
+            <field name="name">ERNESTO CORDOBA CAMPOS</field>
+            <field name="fel_pa_code">8-8-22</field>
+            <field name="city_id" ref="multipac_felpa.fel_pa_city_52"/>
+        </record>
+        
+        <record id="fel_pa_county_229" model="fel_pa.tools.county">
+            <field name="name">ESCOBAL</field>
+            <field name="fel_pa_code">3-1-7</field>
+            <field name="city_id" ref="multipac_felpa.fel_pa_city_25"/>
+        </record>
+        
+        <record id="fel_pa_county_230" model="fel_pa.tools.county">
+            <field name="name">ESPINO AMARILLO</field>
+            <field name="fel_pa_code">7-4-7</field>
+            <field name="city_id" ref="multipac_felpa.fel_pa_city_42"/>
+        </record>
+        
+        <record id="fel_pa_county_231" model="fel_pa.tools.county">
+            <field name="name">FEUILLET</field>
+            <field name="fel_pa_code">13-4-7</field>
+            <field name="city_id" ref="multipac_felpa.fel_pa_city_34"/>
+        </record>
+        
+        <record id="fel_pa_county_232" model="fel_pa.tools.county">
+            <field name="name">FLORES</field>
+            <field name="fel_pa_code">7-7-7</field>
+            <field name="city_id" ref="multipac_felpa.fel_pa_city_76"/>
+        </record>
+        
+        <record id="fel_pa_county_233" model="fel_pa.tools.county">
+            <field name="name">GARACHINE</field>
+            <field name="fel_pa_code">5-1-4</field>
+            <field name="city_id" ref="multipac_felpa.fel_pa_city_20"/>
+        </record>
+        
+        <record id="fel_pa_county_234" model="fel_pa.tools.county">
+            <field name="name">GARROTE</field>
+            <field name="fel_pa_code">3-4-3</field>
+            <field name="city_id" ref="multipac_felpa.fel_pa_city_59"/>
+        </record>
+        
+        <record id="fel_pa_county_235" model="fel_pa.tools.county">
+            <field name="name">GATU O GATUCITO</field>
+            <field name="fel_pa_code">9-9-6</field>
+            <field name="city_id" ref="multipac_felpa.fel_pa_city_69"/>
+        </record>
+        
+        <record id="fel_pa_county_236" model="fel_pa.tools.county">
+            <field name="name">GOBEA</field>
+            <field name="fel_pa_code">3-3-4</field>
+            <field name="city_id" ref="multipac_felpa.fel_pa_city_29"/>
+        </record>
+        
+        <record id="fel_pa_county_237" model="fel_pa.tools.county">
+            <field name="name">GOBERNADORA</field>
+            <field name="fel_pa_code">9-6-3</field>
+            <field name="city_id" ref="multipac_felpa.fel_pa_city_45"/>
+        </record>
+        
+        <record id="fel_pa_county_238" model="fel_pa.tools.county">
+            <field name="name">GOMEZ</field>
+            <field name="fel_pa_code">4-5-5</field>
+            <field name="city_id" ref="multipac_felpa.fel_pa_city_12"/>
+        </record>
+        
+        <record id="fel_pa_county_239" model="fel_pa.tools.county">
+            <field name="name">GONZALO VASQUEZ</field>
+            <field name="fel_pa_code">8-6-3</field>
+            <field name="city_id" ref="multipac_felpa.fel_pa_city_22"/>
+        </record>
+        
+        <record id="fel_pa_county_240" model="fel_pa.tools.county">
+            <field name="name">GUABAL</field>
+            <field name="fel_pa_code">4-3-4</field>
+            <field name="city_id" ref="multipac_felpa.fel_pa_city_10"/>
+        </record>
+        
+        <record id="fel_pa_county_241" model="fel_pa.tools.county">
+            <field name="name">GUABITO</field>
+            <field name="fel_pa_code">1-2-3</field>
+            <field name="city_id" ref="multipac_felpa.fel_pa_city_19"/>
+        </record>
+        
+        <record id="fel_pa_county_242" model="fel_pa.tools.county">
+            <field name="name">GUACA</field>
+            <field name="fel_pa_code">4-6-5</field>
+            <field name="city_id" ref="multipac_felpa.fel_pa_city_27"/>
+        </record>
+        
+        <record id="fel_pa_county_243" model="fel_pa.tools.county">
+            <field name="name">GUADALUPE</field>
+            <field name="fel_pa_code">13-4-8</field>
+            <field name="city_id" ref="multipac_felpa.fel_pa_city_34"/>
+        </record>
+        
+        <record id="fel_pa_county_244" model="fel_pa.tools.county">
+            <field name="name">GUALACA (CABECERA)</field>
+            <field name="fel_pa_code">4-8-1</field>
+            <field name="city_id" ref="multipac_felpa.fel_pa_city_30"/>
+        </record>
+        
+        <record id="fel_pa_county_245" model="fel_pa.tools.county">
+            <field name="name">GUANICO</field>
+            <field name="fel_pa_code">7-7-8</field>
+            <field name="city_id" ref="multipac_felpa.fel_pa_city_76"/>
+        </record>
+        
+        <record id="fel_pa_county_246" model="fel_pa.tools.county">
+            <field name="name">GUARARE (CABECERA)</field>
+            <field name="fel_pa_code">7-1-1</field>
+            <field name="city_id" ref="multipac_felpa.fel_pa_city_31"/>
+        </record>
+        
+        <record id="fel_pa_county_247" model="fel_pa.tools.county">
+            <field name="name">GUARARE ARRIBA</field>
+            <field name="fel_pa_code">7-1-4</field>
+            <field name="city_id" ref="multipac_felpa.fel_pa_city_31"/>
+        </record>
+        
+        <record id="fel_pa_county_248" model="fel_pa.tools.county">
+            <field name="name">GUARIVIARA</field>
+            <field name="fel_pa_code">12-6-3</field>
+            <field name="city_id" ref="multipac_felpa.fel_pa_city_32"/>
+        </record>
+        
+        <record id="fel_pa_county_249" model="fel_pa.tools.county">
+            <field name="name">GUARUMAL</field>
+            <field name="fel_pa_code">9-11-6</field>
+            <field name="city_id" ref="multipac_felpa.fel_pa_city_73"/>
+        </record>
+        
+        <record id="fel_pa_county_250" model="fel_pa.tools.county">
+            <field name="name">GUARUMAL</field>
+            <field name="fel_pa_code">4-1-4</field>
+            <field name="city_id" ref="multipac_felpa.fel_pa_city_2"/>
+        </record>
+        
+        <record id="fel_pa_county_251" model="fel_pa.tools.county">
+            <field name="name">GUAYABAL</field>
+            <field name="fel_pa_code">4-3-5</field>
+            <field name="city_id" ref="multipac_felpa.fel_pa_city_10"/>
+        </record>
+        
+        <record id="fel_pa_county_252" model="fel_pa.tools.county">
+            <field name="name">GUAYABITO</field>
+            <field name="fel_pa_code">13-5-4</field>
+            <field name="city_id" ref="multipac_felpa.fel_pa_city_64"/>
+        </record>
+        
+        <record id="fel_pa_county_253" model="fel_pa.tools.county">
+            <field name="name">GUAYABITO</field>
+            <field name="fel_pa_code">12-5-8</field>
+            <field name="city_id" ref="multipac_felpa.fel_pa_city_49"/>
+        </record>
+        
+        <record id="fel_pa_county_254" model="fel_pa.tools.county">
+            <field name="name">GUIBALE</field>
+            <field name="fel_pa_code">12-5-9</field>
+            <field name="city_id" ref="multipac_felpa.fel_pa_city_49"/>
+        </record>
+        
+        <record id="fel_pa_county_255" model="fel_pa.tools.county">
+            <field name="name">GUORONI</field>
+            <field name="fel_pa_code">12-6-4</field>
+            <field name="city_id" ref="multipac_felpa.fel_pa_city_32"/>
+        </record>
+        
+        <record id="fel_pa_county_256" model="fel_pa.tools.county">
+            <field name="name">GUZMAN</field>
+            <field name="fel_pa_code">2-4-4</field>
+            <field name="city_id" ref="multipac_felpa.fel_pa_city_47"/>
+        </record>
+        
+        <record id="fel_pa_county_257" model="fel_pa.tools.county">
+            <field name="name">HATO CHAMI</field>
+            <field name="fel_pa_code">12-4-2</field>
+            <field name="city_id" ref="multipac_felpa.fel_pa_city_48"/>
+        </record>
+        
+        <record id="fel_pa_county_258" model="fel_pa.tools.county">
+            <field name="name">HATO COROTU</field>
+            <field name="fel_pa_code">12-2-3</field>
+            <field name="city_id" ref="multipac_felpa.fel_pa_city_44"/>
+        </record>
+        
+        <record id="fel_pa_county_259" model="fel_pa.tools.county">
+            <field name="name">HATO CULANTRO</field>
+            <field name="fel_pa_code">12-2-4</field>
+            <field name="city_id" ref="multipac_felpa.fel_pa_city_44"/>
+        </record>
+        
+        <record id="fel_pa_county_260" model="fel_pa.tools.county">
+            <field name="name">HATO JOBO</field>
+            <field name="fel_pa_code">12-2-5</field>
+            <field name="city_id" ref="multipac_felpa.fel_pa_city_44"/>
+        </record>
+        
+        <record id="fel_pa_county_261" model="fel_pa.tools.county">
+            <field name="name">HATO JULI</field>
+            <field name="fel_pa_code">12-2-6</field>
+            <field name="city_id" ref="multipac_felpa.fel_pa_city_44"/>
+        </record>
+        
+        <record id="fel_pa_county_262" model="fel_pa.tools.county">
+            <field name="name">HATO PILON (CABECERA)</field>
+            <field name="fel_pa_code">12-2-1</field>
+            <field name="city_id" ref="multipac_felpa.fel_pa_city_44"/>
+        </record>
+        
+        <record id="fel_pa_county_263" model="fel_pa.tools.county">
+            <field name="name">HERRERA</field>
+            <field name="fel_pa_code">13-4-9</field>
+            <field name="city_id" ref="multipac_felpa.fel_pa_city_34"/>
+        </record>
+        
+        <record id="fel_pa_county_264" model="fel_pa.tools.county">
+            <field name="name">HORCONCITOS (CABECERA)</field>
+            <field name="fel_pa_code">4-12-1</field>
+            <field name="city_id" ref="multipac_felpa.fel_pa_city_67"/>
+        </record>
+        
+        <record id="fel_pa_county_265" model="fel_pa.tools.county">
+            <field name="name">HORNITO</field>
+            <field name="fel_pa_code">4-8-2</field>
+            <field name="city_id" ref="multipac_felpa.fel_pa_city_30"/>
+        </record>
+        
+        <record id="fel_pa_county_266" model="fel_pa.tools.county">
+            <field name="name">HURTADO</field>
+            <field name="fel_pa_code">13-4-10</field>
+            <field name="city_id" ref="multipac_felpa.fel_pa_city_34"/>
+        </record>
+        
+        <record id="fel_pa_county_267" model="fel_pa.tools.county">
+            <field name="name">ISLA DE CAQAS</field>
+            <field name="fel_pa_code">7-7-11</field>
+            <field name="city_id" ref="multipac_felpa.fel_pa_city_76"/>
+        </record>
+        
+        <record id="fel_pa_county_268" model="fel_pa.tools.county">
+            <field name="name">ISLA GRANDE</field>
+            <field name="fel_pa_code">3-4-4</field>
+            <field name="city_id" ref="multipac_felpa.fel_pa_city_59"/>
+        </record>
+        
+        <record id="fel_pa_county_269" model="fel_pa.tools.county">
+            <field name="name">ITURRALDE</field>
+            <field name="fel_pa_code">13-4-11</field>
+            <field name="city_id" ref="multipac_felpa.fel_pa_city_34"/>
+        </record>
+        
+        <record id="fel_pa_county_270" model="fel_pa.tools.county">
+            <field name="name">JADEBERI</field>
+            <field name="fel_pa_code">12-4-3</field>
+            <field name="city_id" ref="multipac_felpa.fel_pa_city_48"/>
+        </record>
+        
+        <record id="fel_pa_county_271" model="fel_pa.tools.county">
+            <field name="name">JAQUE</field>
+            <field name="fel_pa_code">5-1-5</field>
+            <field name="city_id" ref="multipac_felpa.fel_pa_city_20"/>
+        </record>
+        
+        <record id="fel_pa_county_272" model="fel_pa.tools.county">
+            <field name="name">JARAMILLO</field>
+            <field name="fel_pa_code">4-4-5</field>
+            <field name="city_id" ref="multipac_felpa.fel_pa_city_11"/>
+        </record>
+        
+        <record id="fel_pa_county_273" model="fel_pa.tools.county">
+            <field name="name">JINGURUDO</field>
+            <field name="fel_pa_code">11-2-2</field>
+            <field name="city_id" ref="multipac_felpa.fel_pa_city_63"/>
+        </record>
+        
+        <record id="fel_pa_county_274" model="fel_pa.tools.county">
+            <field name="name">JOSE DOMINGO ESPINAR</field>
+            <field name="fel_pa_code">8-10-3</field>
+            <field name="city_id" ref="multipac_felpa.fel_pa_city_68"/>
+        </record>
+        
+        <record id="fel_pa_county_275" model="fel_pa.tools.county">
+            <field name="name">JUAN DEMOSTENES AROSEMENA</field>
+            <field name="fel_pa_code">13-1-4</field>
+            <field name="city_id" ref="multipac_felpa.fel_pa_city_4"/>
+        </record>
+        
+        <record id="fel_pa_county_276" model="fel_pa.tools.county">
+            <field name="name">JUAN DIAZ</field>
+            <field name="fel_pa_code">2-2-6</field>
+            <field name="city_id" ref="multipac_felpa.fel_pa_city_3"/>
+        </record>
+        
+        <record id="fel_pa_county_277" model="fel_pa.tools.county">
+            <field name="name">JUAN DIAZ</field>
+            <field name="fel_pa_code">8-8-12</field>
+            <field name="city_id" ref="multipac_felpa.fel_pa_city_52"/>
+        </record>
+        
+        <record id="fel_pa_county_278" model="fel_pa.tools.county">
+            <field name="name">JUAY</field>
+            <field name="fel_pa_code">4-11-2</field>
+            <field name="city_id" ref="multipac_felpa.fel_pa_city_65"/>
+        </record>
+        
+        <record id="fel_pa_county_279" model="fel_pa.tools.county">
+            <field name="name">JUSTO FIDEL PALACIOS</field>
+            <field name="fel_pa_code">4-13-5</field>
+            <field name="city_id" ref="multipac_felpa.fel_pa_city_75"/>
+        </record>
+        
+        <record id="fel_pa_county_280" model="fel_pa.tools.county">
+            <field name="name">KANKINTU</field>
+            <field name="fel_pa_code">12-6-5</field>
+            <field name="city_id" ref="multipac_felpa.fel_pa_city_32"/>
+        </record>
+        
+        <record id="fel_pa_county_281" model="fel_pa.tools.county">
+            <field name="name">KRUA</field>
+            <field name="fel_pa_code">12-3-6</field>
+            <field name="city_id" ref="multipac_felpa.fel_pa_city_46"/>
+        </record>
+        
+        <record id="fel_pa_county_282" model="fel_pa.tools.county">
+            <field name="name">KUSAPIN (CABECERA)</field>
+            <field name="fel_pa_code">12-7-1</field>
+            <field name="city_id" ref="multipac_felpa.fel_pa_city_33"/>
+        </record>
+        
+        <record id="fel_pa_county_283" model="fel_pa.tools.county">
+            <field name="name">LA ARENA</field>
+            <field name="fel_pa_code">6-3-5</field>
+            <field name="city_id" ref="multipac_felpa.fel_pa_city_40"/>
+        </record>
+        
+        <record id="fel_pa_county_284" model="fel_pa.tools.county">
+            <field name="name">LA ARENA</field>
+            <field name="fel_pa_code">6-1-2</field>
+            <field name="city_id" ref="multipac_felpa.fel_pa_city_24"/>
+        </record>
+        
+        <record id="fel_pa_county_285" model="fel_pa.tools.county">
+            <field name="name">LA CARRILLO</field>
+            <field name="fel_pa_code">9-1-4</field>
+            <field name="city_id" ref="multipac_felpa.fel_pa_city_5"/>
+        </record>
+        
+        <record id="fel_pa_county_286" model="fel_pa.tools.county">
+            <field name="name">LA COLORADA</field>
+            <field name="fel_pa_code">9-10-2</field>
+            <field name="city_id" ref="multipac_felpa.fel_pa_city_72"/>
+        </record>
+        
+        <record id="fel_pa_county_287" model="fel_pa.tools.county">
+            <field name="name">LA COLORADA</field>
+            <field name="fel_pa_code">7-3-3</field>
+            <field name="city_id" ref="multipac_felpa.fel_pa_city_41"/>
+        </record>
+        
+        <record id="fel_pa_county_288" model="fel_pa.tools.county">
+            <field name="name">LA CONCEPCION (CABECERA)</field>
+            <field name="fel_pa_code">4-5-1</field>
+            <field name="city_id" ref="multipac_felpa.fel_pa_city_12"/>
+        </record>
+        
+        <record id="fel_pa_county_289" model="fel_pa.tools.county">
+            <field name="name">LA ENCANTADA</field>
+            <field name="fel_pa_code">3-2-4</field>
+            <field name="city_id" ref="multipac_felpa.fel_pa_city_17"/>
+        </record>
+        
+        <record id="fel_pa_county_290" model="fel_pa.tools.county">
+            <field name="name">LA ENEA</field>
+            <field name="fel_pa_code">7-1-5</field>
+            <field name="city_id" ref="multipac_felpa.fel_pa_city_31"/>
+        </record>
+        
+        <record id="fel_pa_county_291" model="fel_pa.tools.county">
+            <field name="name">LA ENSENADA</field>
+            <field name="fel_pa_code">8-2-2</field>
+            <field name="city_id" ref="multipac_felpa.fel_pa_city_6"/>
+        </record>
+        
+        <record id="fel_pa_county_292" model="fel_pa.tools.county">
+            <field name="name">LA ERMITA</field>
+            <field name="fel_pa_code">13-5-5</field>
+            <field name="city_id" ref="multipac_felpa.fel_pa_city_64"/>
+        </record>
+        
+        <record id="fel_pa_county_293" model="fel_pa.tools.county">
+            <field name="name">LA ESMERALDA</field>
+            <field name="fel_pa_code">8-2-3</field>
+            <field name="city_id" ref="multipac_felpa.fel_pa_city_6"/>
+        </record>
+        
+        <record id="fel_pa_county_294" model="fel_pa.tools.county">
+            <field name="name">LA ESPIGADILLA</field>
+            <field name="fel_pa_code">7-3-4</field>
+            <field name="city_id" ref="multipac_felpa.fel_pa_city_41"/>
+        </record>
+        
+        <record id="fel_pa_county_295" model="fel_pa.tools.county">
+            <field name="name">LA ESTRELLA</field>
+            <field name="fel_pa_code">4-5-6</field>
+            <field name="city_id" ref="multipac_felpa.fel_pa_city_12"/>
+        </record>
+        
+        <record id="fel_pa_county_296" model="fel_pa.tools.county">
+            <field name="name">LA EXPOSICION O CALIDONIA</field>
+            <field name="fel_pa_code">8-8-4</field>
+            <field name="city_id" ref="multipac_felpa.fel_pa_city_52"/>
+        </record>
+        
+        <record id="fel_pa_county_297" model="fel_pa.tools.county">
+            <field name="name">LA GARCEANA</field>
+            <field name="fel_pa_code">9-6-4</field>
+            <field name="city_id" ref="multipac_felpa.fel_pa_city_45"/>
+        </record>
+        
+        <record id="fel_pa_county_298" model="fel_pa.tools.county">
+            <field name="name">LA GUINEA</field>
+            <field name="fel_pa_code">8-2-4</field>
+            <field name="city_id" ref="multipac_felpa.fel_pa_city_6"/>
+        </record>
+        
+        <record id="fel_pa_county_299" model="fel_pa.tools.county">
+            <field name="name">LA LAGUNA</field>
+            <field name="fel_pa_code">13-5-6</field>
+            <field name="city_id" ref="multipac_felpa.fel_pa_city_64"/>
+        </record>
+        
+        <record id="fel_pa_county_300" model="fel_pa.tools.county">
+            <field name="name">LA LAGUNA</field>
+            <field name="fel_pa_code">9-2-6</field>
+            <field name="city_id" ref="multipac_felpa.fel_pa_city_13"/>
+        </record>
+        
+        <record id="fel_pa_county_301" model="fel_pa.tools.county">
+            <field name="name">LA LAJA</field>
+            <field name="fel_pa_code">7-2-9</field>
+            <field name="city_id" ref="multipac_felpa.fel_pa_city_39"/>
+        </record>
+        
+        <record id="fel_pa_county_302" model="fel_pa.tools.county">
+            <field name="name">LA MESA</field>
+            <field name="fel_pa_code">7-4-8</field>
+            <field name="city_id" ref="multipac_felpa.fel_pa_city_42"/>
+        </record>
+        
+        <record id="fel_pa_county_303" model="fel_pa.tools.county">
+            <field name="name">LA MESA (CABECERA)</field>
+            <field name="fel_pa_code">9-4-1</field>
+            <field name="city_id" ref="multipac_felpa.fel_pa_city_35"/>
+        </record>
+        
+        <record id="fel_pa_county_304" model="fel_pa.tools.county">
+            <field name="name">LA MIEL</field>
+            <field name="fel_pa_code">7-2-10</field>
+            <field name="city_id" ref="multipac_felpa.fel_pa_city_39"/>
+        </record>
+        
+        <record id="fel_pa_county_305" model="fel_pa.tools.county">
+            <field name="name">LA MONTAÑUELA</field>
+            <field name="fel_pa_code">9-1-3</field>
+            <field name="city_id" ref="multipac_felpa.fel_pa_city_5"/>
+        </record>
+        
+        <record id="fel_pa_county_306" model="fel_pa.tools.county">
+            <field name="name">LA PALMA</field>
+            <field name="fel_pa_code">7-2-11</field>
+            <field name="city_id" ref="multipac_felpa.fel_pa_city_39"/>
+        </record>
+        
+        <record id="fel_pa_county_307" model="fel_pa.tools.county">
+            <field name="name">LA PALMA (CABECERA)</field>
+            <field name="fel_pa_code">5-1-1</field>
+            <field name="city_id" ref="multipac_felpa.fel_pa_city_20"/>
+        </record>
+        
+        <record id="fel_pa_county_308" model="fel_pa.tools.county">
+            <field name="name">LA PASERA</field>
+            <field name="fel_pa_code">7-1-6</field>
+            <field name="city_id" ref="multipac_felpa.fel_pa_city_31"/>
+        </record>
+        
+        <record id="fel_pa_county_309" model="fel_pa.tools.county">
+            <field name="name">LA PAVA</field>
+            <field name="fel_pa_code">2-5-5</field>
+            <field name="city_id" ref="multipac_felpa.fel_pa_city_51"/>
+        </record>
+        
+        <record id="fel_pa_county_310" model="fel_pa.tools.county">
+            <field name="name">LA PEÑA</field>
+            <field name="fel_pa_code">9-10-3</field>
+            <field name="city_id" ref="multipac_felpa.fel_pa_city_72"/>
+        </record>
+        
+        <record id="fel_pa_county_311" model="fel_pa.tools.county">
+            <field name="name">LA PINTADA (CABECERA)</field>
+            <field name="fel_pa_code">2-3-1</field>
+            <field name="city_id" ref="multipac_felpa.fel_pa_city_36"/>
+        </record>
+        
+        <record id="fel_pa_county_312" model="fel_pa.tools.county">
+            <field name="name">LA PITALOSA</field>
+            <field name="fel_pa_code">6-3-6</field>
+            <field name="city_id" ref="multipac_felpa.fel_pa_city_40"/>
+        </record>
+        
+        <record id="fel_pa_county_313" model="fel_pa.tools.county">
+            <field name="name">LA RAYA DE CALOBRE</field>
+            <field name="fel_pa_code">9-2-7</field>
+            <field name="city_id" ref="multipac_felpa.fel_pa_city_13"/>
+        </record>
+        
+        <record id="fel_pa_county_314" model="fel_pa.tools.county">
+            <field name="name">LA RAYA DE SANTA MARIA</field>
+            <field name="fel_pa_code">9-10-4</field>
+            <field name="city_id" ref="multipac_felpa.fel_pa_city_72"/>
+        </record>
+        
+        <record id="fel_pa_county_315" model="fel_pa.tools.county">
+            <field name="name">LA REPRESA</field>
+            <field name="fel_pa_code">13-4-12</field>
+            <field name="city_id" ref="multipac_felpa.fel_pa_city_34"/>
+        </record>
+        
+        <record id="fel_pa_county_316" model="fel_pa.tools.county">
+            <field name="name">LA SOLEDAD</field>
+            <field name="fel_pa_code">9-11-7</field>
+            <field name="city_id" ref="multipac_felpa.fel_pa_city_73"/>
+        </record>
+        
+        <record id="fel_pa_county_317" model="fel_pa.tools.county">
+            <field name="name">LA TETILLA</field>
+            <field name="fel_pa_code">9-2-8</field>
+            <field name="city_id" ref="multipac_felpa.fel_pa_city_13"/>
+        </record>
+        
+        <record id="fel_pa_county_318" model="fel_pa.tools.county">
+            <field name="name">LA TIZA</field>
+            <field name="fel_pa_code">7-2-12</field>
+            <field name="city_id" ref="multipac_felpa.fel_pa_city_39"/>
+        </record>
+        
+        <record id="fel_pa_county_319" model="fel_pa.tools.county">
+            <field name="name">LA TRINIDAD</field>
+            <field name="fel_pa_code">13-2-8</field>
+            <field name="city_id" ref="multipac_felpa.fel_pa_city_14"/>
+        </record>
+        
+        <record id="fel_pa_county_320" model="fel_pa.tools.county">
+            <field name="name">LA TRONOSA</field>
+            <field name="fel_pa_code">7-7-9</field>
+            <field name="city_id" ref="multipac_felpa.fel_pa_city_76"/>
+        </record>
+        
+        <record id="fel_pa_county_321" model="fel_pa.tools.county">
+            <field name="name">LA VILLA DE LOS SANTOS (CABECE</field>
+            <field name="fel_pa_code">7-3-1</field>
+            <field name="city_id" ref="multipac_felpa.fel_pa_city_41"/>
+        </record>
+        
+        <record id="fel_pa_county_322" model="fel_pa.tools.county">
+            <field name="name">LA YEGUADA</field>
+            <field name="fel_pa_code">9-2-9</field>
+            <field name="city_id" ref="multipac_felpa.fel_pa_city_13"/>
+        </record>
+        
+        <record id="fel_pa_county_323" model="fel_pa.tools.county">
+            <field name="name">LAJAMINA</field>
+            <field name="fel_pa_code">7-6-3</field>
+            <field name="city_id" ref="multipac_felpa.fel_pa_city_58"/>
+        </record>
+        
+        <record id="fel_pa_county_324" model="fel_pa.tools.county">
+            <field name="name">LAJAS ADENTRO</field>
+            <field name="fel_pa_code">4-11-3</field>
+            <field name="city_id" ref="multipac_felpa.fel_pa_city_65"/>
+        </record>
+        
+        <record id="fel_pa_county_325" model="fel_pa.tools.county">
+            <field name="name">LAJAS BLANCAS</field>
+            <field name="fel_pa_code">11-1-2</field>
+            <field name="city_id" ref="multipac_felpa.fel_pa_city_16"/>
+        </record>
+        
+        <record id="fel_pa_county_326" model="fel_pa.tools.county">
+            <field name="name">LAJAS DE TOLE</field>
+            <field name="fel_pa_code">4-13-6</field>
+            <field name="city_id" ref="multipac_felpa.fel_pa_city_75"/>
+        </record>
+        
+        <record id="fel_pa_county_327" model="fel_pa.tools.county">
+            <field name="name">LAJERO</field>
+            <field name="fel_pa_code">12-4-4</field>
+            <field name="city_id" ref="multipac_felpa.fel_pa_city_48"/>
+        </record>
+        
+        <record id="fel_pa_county_328" model="fel_pa.tools.county">
+            <field name="name">LAS CABRAS</field>
+            <field name="fel_pa_code">6-6-2</field>
+            <field name="city_id" ref="multipac_felpa.fel_pa_city_56"/>
+        </record>
+        
+        <record id="fel_pa_county_329" model="fel_pa.tools.county">
+            <field name="name">LAS CRUCES</field>
+            <field name="fel_pa_code">7-3-5</field>
+            <field name="city_id" ref="multipac_felpa.fel_pa_city_41"/>
+        </record>
+        
+        <record id="fel_pa_county_330" model="fel_pa.tools.county">
+            <field name="name">LAS CUMBRES</field>
+            <field name="fel_pa_code">8-8-16</field>
+            <field name="city_id" ref="multipac_felpa.fel_pa_city_52"/>
+        </record>
+        
+        <record id="fel_pa_county_331" model="fel_pa.tools.county">
+            <field name="name">LAS GARZAS</field>
+            <field name="fel_pa_code">8-8-26</field>
+            <field name="city_id" ref="multipac_felpa.fel_pa_city_52"/>
+        </record>
+        
+        <record id="fel_pa_county_332" model="fel_pa.tools.county">
+            <field name="name">LAS GUABAS</field>
+            <field name="fel_pa_code">7-3-6</field>
+            <field name="city_id" ref="multipac_felpa.fel_pa_city_41"/>
+        </record>
+        
+        <record id="fel_pa_county_333" model="fel_pa.tools.county">
+            <field name="name">LAS GUIAS</field>
+            <field name="fel_pa_code">9-2-10</field>
+            <field name="city_id" ref="multipac_felpa.fel_pa_city_13"/>
+        </record>
+        
+        <record id="fel_pa_county_334" model="fel_pa.tools.county">
+            <field name="name">LAS HUACAS</field>
+            <field name="fel_pa_code">2-4-5</field>
+            <field name="city_id" ref="multipac_felpa.fel_pa_city_47"/>
+        </record>
+        
+        <record id="fel_pa_county_335" model="fel_pa.tools.county">
+            <field name="name">LAS HUACAS</field>
+            <field name="fel_pa_code">9-7-2</field>
+            <field name="city_id" ref="multipac_felpa.fel_pa_city_62"/>
+        </record>
+        
+        <record id="fel_pa_county_336" model="fel_pa.tools.county">
+            <field name="name">LAS LAJAS</field>
+            <field name="fel_pa_code">13-3-7</field>
+            <field name="city_id" ref="multipac_felpa.fel_pa_city_18"/>
+        </record>
+        
+        <record id="fel_pa_county_337" model="fel_pa.tools.county">
+            <field name="name">LAS LAJAS (CABECERA)</field>
+            <field name="fel_pa_code">4-11-1</field>
+            <field name="city_id" ref="multipac_felpa.fel_pa_city_65"/>
+        </record>
+        
+        <record id="fel_pa_county_338" model="fel_pa.tools.county">
+            <field name="name">LAS LLANAS</field>
+            <field name="fel_pa_code">6-3-9</field>
+            <field name="city_id" ref="multipac_felpa.fel_pa_city_40"/>
+        </record>
+        
+        <record id="fel_pa_county_339" model="fel_pa.tools.county">
+            <field name="name">LAS LOMAS</field>
+            <field name="fel_pa_code">2-3-6</field>
+            <field name="city_id" ref="multipac_felpa.fel_pa_city_36"/>
+        </record>
+        
+        <record id="fel_pa_county_340" model="fel_pa.tools.county">
+            <field name="name">LAS LOMAS</field>
+            <field name="fel_pa_code">4-6-6</field>
+            <field name="city_id" ref="multipac_felpa.fel_pa_city_27"/>
+        </record>
+        
+        <record id="fel_pa_county_341" model="fel_pa.tools.county">
+            <field name="name">LAS MAQANITAS</field>
+            <field name="fel_pa_code">8-8-20</field>
+            <field name="city_id" ref="multipac_felpa.fel_pa_city_52"/>
+        </record>
+        
+        <record id="fel_pa_county_342" model="fel_pa.tools.county">
+            <field name="name">LAS MARGARITAS</field>
+            <field name="fel_pa_code">8-5-5</field>
+            <field name="city_id" ref="multipac_felpa.fel_pa_city_21"/>
+        </record>
+        
+        <record id="fel_pa_county_343" model="fel_pa.tools.county">
+            <field name="name">LAS MINAS (CABECERA)</field>
+            <field name="fel_pa_code">6-2-1</field>
+            <field name="city_id" ref="multipac_felpa.fel_pa_city_37"/>
+        </record>
+        
+        <record id="fel_pa_county_344" model="fel_pa.tools.county">
+            <field name="name">LAS OLLAS ARRIBA</field>
+            <field name="fel_pa_code">13-2-9</field>
+            <field name="city_id" ref="multipac_felpa.fel_pa_city_14"/>
+        </record>
+        
+        <record id="fel_pa_county_345" model="fel_pa.tools.county">
+            <field name="name">LAS PALMAS</field>
+            <field name="fel_pa_code">7-4-9</field>
+            <field name="city_id" ref="multipac_felpa.fel_pa_city_42"/>
+        </record>
+        
+        <record id="fel_pa_county_346" model="fel_pa.tools.county">
+            <field name="name">LAS PALMAS (CABECERA)</field>
+            <field name="fel_pa_code">9-5-1</field>
+            <field name="city_id" ref="multipac_felpa.fel_pa_city_38"/>
+        </record>
+        
+        <record id="fel_pa_county_347" model="fel_pa.tools.county">
+            <field name="name">LAS PALMITAS</field>
+            <field name="fel_pa_code">7-2-13</field>
+            <field name="city_id" ref="multipac_felpa.fel_pa_city_39"/>
+        </record>
+        
+        <record id="fel_pa_county_348" model="fel_pa.tools.county">
+            <field name="name">LAS TABLAS</field>
+            <field name="fel_pa_code">1-2-7</field>
+            <field name="city_id" ref="multipac_felpa.fel_pa_city_19"/>
+        </record>
+        
+        <record id="fel_pa_county_349" model="fel_pa.tools.county">
+            <field name="name">LAS TABLAS (CABECERA)</field>
+            <field name="fel_pa_code">7-2-1</field>
+            <field name="city_id" ref="multipac_felpa.fel_pa_city_39"/>
+        </record>
+        
+        <record id="fel_pa_county_350" model="fel_pa.tools.county">
+            <field name="name">LAS TABLAS ABAJO</field>
+            <field name="fel_pa_code">7-2-14</field>
+            <field name="city_id" ref="multipac_felpa.fel_pa_city_39"/>
+        </record>
+        
+        <record id="fel_pa_county_351" model="fel_pa.tools.county">
+            <field name="name">LAS TRANCAS</field>
+            <field name="fel_pa_code">7-1-7</field>
+            <field name="city_id" ref="multipac_felpa.fel_pa_city_31"/>
+        </record>
+        
+        <record id="fel_pa_county_352" model="fel_pa.tools.county">
+            <field name="name">LAS UVAS</field>
+            <field name="fel_pa_code">13-5-7</field>
+            <field name="city_id" ref="multipac_felpa.fel_pa_city_64"/>
+        </record>
+        
+        <record id="fel_pa_county_353" model="fel_pa.tools.county">
+            <field name="name">LEONES</field>
+            <field name="fel_pa_code">6-2-5</field>
+            <field name="city_id" ref="multipac_felpa.fel_pa_city_37"/>
+        </record>
+        
+        <record id="fel_pa_county_354" model="fel_pa.tools.county">
+            <field name="name">LEONES</field>
+            <field name="fel_pa_code">9-6-5</field>
+            <field name="city_id" ref="multipac_felpa.fel_pa_city_45"/>
+        </record>
+        
+        <record id="fel_pa_county_355" model="fel_pa.tools.county">
+            <field name="name">LIDICE</field>
+            <field name="fel_pa_code">13-2-10</field>
+            <field name="city_id" ref="multipac_felpa.fel_pa_city_14"/>
+        </record>
+        
+        <record id="fel_pa_county_356" model="fel_pa.tools.county">
+            <field name="name">LIMON</field>
+            <field name="fel_pa_code">3-1-8</field>
+            <field name="city_id" ref="multipac_felpa.fel_pa_city_25"/>
+        </record>
+        
+        <record id="fel_pa_county_357" model="fel_pa.tools.county">
+            <field name="name">LIMONES</field>
+            <field name="fel_pa_code">4-2-2</field>
+            <field name="city_id" ref="multipac_felpa.fel_pa_city_7"/>
+        </record>
+        
+        <record id="fel_pa_county_358" model="fel_pa.tools.county">
+            <field name="name">LLANO ABAJO</field>
+            <field name="fel_pa_code">7-1-8</field>
+            <field name="city_id" ref="multipac_felpa.fel_pa_city_31"/>
+        </record>
+        
+        <record id="fel_pa_county_359" model="fel_pa.tools.county">
+            <field name="name">LLANO BONITO</field>
+            <field name="fel_pa_code">6-1-4</field>
+            <field name="city_id" ref="multipac_felpa.fel_pa_city_24"/>
+        </record>
+        
+        <record id="fel_pa_county_360" model="fel_pa.tools.county">
+            <field name="name">LLANO DE CATIVAL O MARIATO (CABECERA)</field>
+            <field name="fel_pa_code">9-12-1</field>
+            <field name="city_id" ref="multipac_felpa.fel_pa_city_43"/>
+        </record>
+        
+        <record id="fel_pa_county_361" model="fel_pa.tools.county">
+            <field name="name">LLANO DE LA CRUZ</field>
+            <field name="fel_pa_code">6-5-4</field>
+            <field name="city_id" ref="multipac_felpa.fel_pa_city_53"/>
+        </record>
+        
+        <record id="fel_pa_county_362" model="fel_pa.tools.county">
+            <field name="name">LLANO DE PIEDRA</field>
+            <field name="fel_pa_code">7-4-10</field>
+            <field name="city_id" ref="multipac_felpa.fel_pa_city_42"/>
+        </record>
+        
+        <record id="fel_pa_county_363" model="fel_pa.tools.county">
+            <field name="name">LLANO GRANDE</field>
+            <field name="fel_pa_code">2-3-4</field>
+            <field name="city_id" ref="multipac_felpa.fel_pa_city_36"/>
+        </record>
+        
+        <record id="fel_pa_county_364" model="fel_pa.tools.county">
+            <field name="name">LLANO GRANDE</field>
+            <field name="fel_pa_code">9-4-4</field>
+            <field name="city_id" ref="multipac_felpa.fel_pa_city_35"/>
+        </record>
+        
+        <record id="fel_pa_county_365" model="fel_pa.tools.county">
+            <field name="name">LLANO GRANDE</field>
+            <field name="fel_pa_code">6-4-4</field>
+            <field name="city_id" ref="multipac_felpa.fel_pa_city_50"/>
+        </record>
+        
+        <record id="fel_pa_county_366" model="fel_pa.tools.county">
+            <field name="name">LLANO LARGO</field>
+            <field name="fel_pa_code">7-3-9</field>
+            <field name="city_id" ref="multipac_felpa.fel_pa_city_41"/>
+        </record>
+        
+        <record id="fel_pa_county_367" model="fel_pa.tools.county">
+            <field name="name">LOLA</field>
+            <field name="fel_pa_code">9-5-7</field>
+            <field name="city_id" ref="multipac_felpa.fel_pa_city_38"/>
+        </record>
+        
+        <record id="fel_pa_county_368" model="fel_pa.tools.county">
+            <field name="name">LOMA YUCA</field>
+            <field name="fel_pa_code">12-7-4</field>
+            <field name="city_id" ref="multipac_felpa.fel_pa_city_33"/>
+        </record>
+        
+        <record id="fel_pa_county_369" model="fel_pa.tools.county">
+            <field name="name">LOS ALGARROBOS</field>
+            <field name="fel_pa_code">9-10-8</field>
+            <field name="city_id" ref="multipac_felpa.fel_pa_city_72"/>
+        </record>
+        
+        <record id="fel_pa_county_370" model="fel_pa.tools.county">
+            <field name="name">LOS ALGARRROBOS</field>
+            <field name="fel_pa_code">4-7-8</field>
+            <field name="city_id" ref="multipac_felpa.fel_pa_city_28"/>
+        </record>
+        
+        <record id="fel_pa_county_371" model="fel_pa.tools.county">
+            <field name="name">LOS ANASTACIOS</field>
+            <field name="fel_pa_code">4-7-3</field>
+            <field name="city_id" ref="multipac_felpa.fel_pa_city_28"/>
+        </record>
+        
+        <record id="fel_pa_county_372" model="fel_pa.tools.county">
+            <field name="name">LOS ANGELES</field>
+            <field name="fel_pa_code">7-3-7</field>
+            <field name="city_id" ref="multipac_felpa.fel_pa_city_41"/>
+        </record>
+        
+        <record id="fel_pa_county_373" model="fel_pa.tools.county">
+            <field name="name">LOS ANGELES</field>
+            <field name="fel_pa_code">4-8-3</field>
+            <field name="city_id" ref="multipac_felpa.fel_pa_city_30"/>
+        </record>
+        
+        <record id="fel_pa_county_374" model="fel_pa.tools.county">
+            <field name="name">LOS ASIENTOS</field>
+            <field name="fel_pa_code">7-5-2</field>
+            <field name="city_id" ref="multipac_felpa.fel_pa_city_54"/>
+        </record>
+        
+        <record id="fel_pa_county_375" model="fel_pa.tools.county">
+            <field name="name">LOS CANELOS</field>
+            <field name="fel_pa_code">6-7-5</field>
+            <field name="city_id" ref="multipac_felpa.fel_pa_city_71"/>
+        </record>
+        
+        <record id="fel_pa_county_376" model="fel_pa.tools.county">
+            <field name="name">LOS CASTILLOS</field>
+            <field name="fel_pa_code">9-7-3</field>
+            <field name="city_id" ref="multipac_felpa.fel_pa_city_62"/>
+        </record>
+        
+        <record id="fel_pa_county_377" model="fel_pa.tools.county">
+            <field name="name">LOS CASTILLOS</field>
+            <field name="fel_pa_code">6-5-3</field>
+            <field name="city_id" ref="multipac_felpa.fel_pa_city_53"/>
+        </record>
+        
+        <record id="fel_pa_county_378" model="fel_pa.tools.county">
+            <field name="name">LOS CERRITOS</field>
+            <field name="fel_pa_code">6-3-7</field>
+            <field name="city_id" ref="multipac_felpa.fel_pa_city_40"/>
+        </record>
+        
+        <record id="fel_pa_county_379" model="fel_pa.tools.county">
+            <field name="name">LOS CERROS DE PAJA</field>
+            <field name="fel_pa_code">6-3-8</field>
+            <field name="city_id" ref="multipac_felpa.fel_pa_city_40"/>
+        </record>
+        
+        <record id="fel_pa_county_380" model="fel_pa.tools.county">
+            <field name="name">LOS DIAZ</field>
+            <field name="fel_pa_code">13-4-13</field>
+            <field name="city_id" ref="multipac_felpa.fel_pa_city_34"/>
+        </record>
+        
+        <record id="fel_pa_county_381" model="fel_pa.tools.county">
+            <field name="name">LOS HATILLOS</field>
+            <field name="fel_pa_code">9-8-3</field>
+            <field name="city_id" ref="multipac_felpa.fel_pa_city_66"/>
+        </record>
+        
+        <record id="fel_pa_county_382" model="fel_pa.tools.county">
+            <field name="name">LOS LLANITOS</field>
+            <field name="fel_pa_code">13-5-8</field>
+            <field name="city_id" ref="multipac_felpa.fel_pa_city_64"/>
+        </record>
+        
+        <record id="fel_pa_county_383" model="fel_pa.tools.county">
+            <field name="name">LOS LLANOS</field>
+            <field name="fel_pa_code">6-4-3</field>
+            <field name="city_id" ref="multipac_felpa.fel_pa_city_50"/>
+        </record>
+        
+        <record id="fel_pa_county_384" model="fel_pa.tools.county">
+            <field name="name">LOS MILAGROS</field>
+            <field name="fel_pa_code">9-4-6</field>
+            <field name="city_id" ref="multipac_felpa.fel_pa_city_35"/>
+        </record>
+        
+        <record id="fel_pa_county_385" model="fel_pa.tools.county">
+            <field name="name">LOS NARANJOS</field>
+            <field name="fel_pa_code">4-4-6</field>
+            <field name="city_id" ref="multipac_felpa.fel_pa_city_11"/>
+        </record>
+        
+        <record id="fel_pa_county_386" model="fel_pa.tools.county">
+            <field name="name">LOS OLIVOS</field>
+            <field name="fel_pa_code">7-3-8</field>
+            <field name="city_id" ref="multipac_felpa.fel_pa_city_41"/>
+        </record>
+        
+        <record id="fel_pa_county_387" model="fel_pa.tools.county">
+            <field name="name">LOS POZOS (CABECERA)</field>
+            <field name="fel_pa_code">6-3-1</field>
+            <field name="city_id" ref="multipac_felpa.fel_pa_city_40"/>
+        </record>
+        
+        <record id="fel_pa_county_388" model="fel_pa.tools.county">
+            <field name="name">LOS VALLES</field>
+            <field name="fel_pa_code">9-3-4</field>
+            <field name="city_id" ref="multipac_felpa.fel_pa_city_15"/>
+        </record>
+        
+        <record id="fel_pa_county_389" model="fel_pa.tools.county">
+            <field name="name">MACARACAS (CABECERA)</field>
+            <field name="fel_pa_code">7-4-1</field>
+            <field name="city_id" ref="multipac_felpa.fel_pa_city_42"/>
+        </record>
+        
+        <record id="fel_pa_county_390" model="fel_pa.tools.county">
+            <field name="name">MAN CREEK</field>
+            <field name="fel_pa_code">12-6-9</field>
+            <field name="city_id" ref="multipac_felpa.fel_pa_city_32"/>
+        </record>
+        
+        <record id="fel_pa_county_391" model="fel_pa.tools.county">
+            <field name="name">MANUEL ORTEGA</field>
+            <field name="fel_pa_code">11-1-3</field>
+            <field name="city_id" ref="multipac_felpa.fel_pa_city_16"/>
+        </record>
+        
+        <record id="fel_pa_county_392" model="fel_pa.tools.county">
+            <field name="name">MARACA</field>
+            <field name="fel_pa_code">12-3-7</field>
+            <field name="city_id" ref="multipac_felpa.fel_pa_city_46"/>
+        </record>
+        
+        <record id="fel_pa_county_393" model="fel_pa.tools.county">
+            <field name="name">MARIA CHIQUITA</field>
+            <field name="fel_pa_code">3-4-5</field>
+            <field name="city_id" ref="multipac_felpa.fel_pa_city_59"/>
+        </record>
+        
+        <record id="fel_pa_county_394" model="fel_pa.tools.county">
+            <field name="name">MARIABE</field>
+            <field name="fel_pa_code">7-5-3</field>
+            <field name="city_id" ref="multipac_felpa.fel_pa_city_54"/>
+        </record>
+        
+        <record id="fel_pa_county_395" model="fel_pa.tools.county">
+            <field name="name">MATEO ITURRALDE</field>
+            <field name="fel_pa_code">8-10-4</field>
+            <field name="city_id" ref="multipac_felpa.fel_pa_city_68"/>
+        </record>
+        
+        <record id="fel_pa_county_396" model="fel_pa.tools.county">
+            <field name="name">MENCHACA</field>
+            <field name="fel_pa_code">6-4-7</field>
+            <field name="city_id" ref="multipac_felpa.fel_pa_city_50"/>
+        </record>
+        
+        <record id="fel_pa_county_397" model="fel_pa.tools.county">
+            <field name="name">MENDOZA</field>
+            <field name="fel_pa_code">13-4-14</field>
+            <field name="city_id" ref="multipac_felpa.fel_pa_city_34"/>
+        </record>
+        
+        <record id="fel_pa_county_398" model="fel_pa.tools.county">
+            <field name="name">METETI</field>
+            <field name="fel_pa_code">5-2-8</field>
+            <field name="city_id" ref="multipac_felpa.fel_pa_city_57"/>
+        </record>
+        
+        <record id="fel_pa_county_399" model="fel_pa.tools.county">
+            <field name="name">MIGUEL DE LA BORDA (CABECERA)</field>
+            <field name="fel_pa_code">3-3-1</field>
+            <field name="city_id" ref="multipac_felpa.fel_pa_city_29"/>
+        </record>
+        
+        <record id="fel_pa_county_400" model="fel_pa.tools.county">
+            <field name="name">MIRAMAR</field>
+            <field name="fel_pa_code">3-5-3</field>
+            <field name="city_id" ref="multipac_felpa.fel_pa_city_70"/>
+        </record>
+        
+        <record id="fel_pa_county_401" model="fel_pa.tools.county">
+            <field name="name">MIRAMAR</field>
+            <field name="fel_pa_code">1-3-2</field>
+            <field name="city_id" ref="multipac_felpa.fel_pa_city_23"/>
+        </record>
+        
+        <record id="fel_pa_county_402" model="fel_pa.tools.county">
+            <field name="name">MOGOLLON</field>
+            <field name="fel_pa_code">7-4-11</field>
+            <field name="city_id" ref="multipac_felpa.fel_pa_city_42"/>
+        </record>
+        
+        <record id="fel_pa_county_403" model="fel_pa.tools.county">
+            <field name="name">MONAGRILLO</field>
+            <field name="fel_pa_code">6-1-3</field>
+            <field name="city_id" ref="multipac_felpa.fel_pa_city_24"/>
+        </record>
+        
+        <record id="fel_pa_county_404" model="fel_pa.tools.county">
+            <field name="name">MONJARAS</field>
+            <field name="fel_pa_code">9-2-11</field>
+            <field name="city_id" ref="multipac_felpa.fel_pa_city_13"/>
+        </record>
+        
+        <record id="fel_pa_county_405" model="fel_pa.tools.county">
+            <field name="name">MONTE LIRIO</field>
+            <field name="fel_pa_code">4-10-4</field>
+            <field name="city_id" ref="multipac_felpa.fel_pa_city_61"/>
+        </record>
+        
+        <record id="fel_pa_county_406" model="fel_pa.tools.county">
+            <field name="name">MONTIJO (CABECERA)</field>
+            <field name="fel_pa_code">9-6-1</field>
+            <field name="city_id" ref="multipac_felpa.fel_pa_city_45"/>
+        </record>
+        
+        <record id="fel_pa_county_407" model="fel_pa.tools.county">
+            <field name="name">MUNUNI</field>
+            <field name="fel_pa_code">12-6-6</field>
+            <field name="city_id" ref="multipac_felpa.fel_pa_city_32"/>
+        </record>
+        
+        <record id="fel_pa_county_408" model="fel_pa.tools.county">
+            <field name="name">NAMNONI</field>
+            <field name="fel_pa_code">12-1-7</field>
+            <field name="city_id" ref="multipac_felpa.fel_pa_city_8"/>
+        </record>
+        
+        <record id="fel_pa_county_409" model="fel_pa.tools.county">
+            <field name="name">NARGANA (CABECERA)</field>
+            <field name="fel_pa_code">10-1-1</field>
+            <field name="city_id" ref="multipac_felpa.fel_pa_city_26"/>
+        </record>
+        
+        <record id="fel_pa_county_410" model="fel_pa.tools.county">
+            <field name="name">NATA (CABECERA)</field>
+            <field name="fel_pa_code">2-4-1</field>
+            <field name="city_id" ref="multipac_felpa.fel_pa_city_47"/>
+        </record>
+        
+        <record id="fel_pa_county_411" model="fel_pa.tools.county">
+            <field name="name">NIBA</field>
+            <field name="fel_pa_code">12-1-8</field>
+            <field name="city_id" ref="multipac_felpa.fel_pa_city_8"/>
+        </record>
+        
+        <record id="fel_pa_county_412" model="fel_pa.tools.county">
+            <field name="name">NIBRA</field>
+            <field name="fel_pa_code">12-3-8</field>
+            <field name="city_id" ref="multipac_felpa.fel_pa_city_46"/>
+        </record>
+        
+        <record id="fel_pa_county_413" model="fel_pa.tools.county">
+            <field name="name">NOMBRE DE DIOS</field>
+            <field name="fel_pa_code">3-5-4</field>
+            <field name="city_id" ref="multipac_felpa.fel_pa_city_70"/>
+        </record>
+        
+        <record id="fel_pa_county_414" model="fel_pa.tools.county">
+            <field name="name">NUARIO</field>
+            <field name="fel_pa_code">7-2-15</field>
+            <field name="city_id" ref="multipac_felpa.fel_pa_city_39"/>
+        </record>
+        
+        <record id="fel_pa_county_415" model="fel_pa.tools.county">
+            <field name="name">NUEVA GORGONA</field>
+            <field name="fel_pa_code">13-3-8</field>
+            <field name="city_id" ref="multipac_felpa.fel_pa_city_18"/>
+        </record>
+        
+        <record id="fel_pa_county_416" model="fel_pa.tools.county">
+            <field name="name">NUEVA PROVIDENCIA</field>
+            <field name="fel_pa_code">3-1-9</field>
+            <field name="city_id" ref="multipac_felpa.fel_pa_city_25"/>
+        </record>
+        
+        <record id="fel_pa_county_417" model="fel_pa.tools.county">
+            <field name="name">NUEVO CHAGRES (CABECERA)</field>
+            <field name="fel_pa_code">3-2-1</field>
+            <field name="city_id" ref="multipac_felpa.fel_pa_city_17"/>
+        </record>
+        
+        <record id="fel_pa_county_418" model="fel_pa.tools.county">
+            <field name="name">NUEVO EMPERADOR</field>
+            <field name="fel_pa_code">13-1-5</field>
+            <field name="city_id" ref="multipac_felpa.fel_pa_city_4"/>
+        </record>
+        
+        <record id="fel_pa_county_419" model="fel_pa.tools.county">
+            <field name="name">NUEVO MEXICO</field>
+            <field name="fel_pa_code">4-1-9</field>
+            <field name="city_id" ref="multipac_felpa.fel_pa_city_2"/>
+        </record>
+        
+        <record id="fel_pa_county_420" model="fel_pa.tools.county">
+            <field name="name">OBALDIA</field>
+            <field name="fel_pa_code">13-4-15</field>
+            <field name="city_id" ref="multipac_felpa.fel_pa_city_34"/>
+        </record>
+        
+        <record id="fel_pa_county_421" model="fel_pa.tools.county">
+            <field name="name">OCU (CABECERA)</field>
+            <field name="fel_pa_code">6-4-1</field>
+            <field name="city_id" ref="multipac_felpa.fel_pa_city_50"/>
+        </record>
+        
+        <record id="fel_pa_county_422" model="fel_pa.tools.county">
+            <field name="name">OLA (CABECERA)</field>
+            <field name="fel_pa_code">2-5-1</field>
+            <field name="city_id" ref="multipac_felpa.fel_pa_city_51"/>
+        </record>
+        
+        <record id="fel_pa_county_423" model="fel_pa.tools.county">
+            <field name="name">OMAR TORRIJOS</field>
+            <field name="fel_pa_code">8-10-8</field>
+            <field name="city_id" ref="multipac_felpa.fel_pa_city_68"/>
+        </record>
+        
+        <record id="fel_pa_county_424" model="fel_pa.tools.county">
+            <field name="name">ORIA ARRIBA</field>
+            <field name="fel_pa_code">7-5-5</field>
+            <field name="city_id" ref="multipac_felpa.fel_pa_city_54"/>
+        </record>
+        
+        <record id="fel_pa_county_425" model="fel_pa.tools.county">
+            <field name="name">OTOQUE OCCIDENTE</field>
+            <field name="fel_pa_code">8-11-3</field>
+            <field name="city_id" ref="multipac_felpa.fel_pa_city_74"/>
+        </record>
+        
+        <record id="fel_pa_county_426" model="fel_pa.tools.county">
+            <field name="name">OTOQUE ORIENTE</field>
+            <field name="fel_pa_code">8-11-2</field>
+            <field name="city_id" ref="multipac_felpa.fel_pa_city_74"/>
+        </record>
+        
+        <record id="fel_pa_county_427" model="fel_pa.tools.county">
+            <field name="name">PACORA</field>
+            <field name="fel_pa_code">8-8-17</field>
+            <field name="city_id" ref="multipac_felpa.fel_pa_city_52"/>
+        </record>
+        
+        <record id="fel_pa_county_428" model="fel_pa.tools.county">
+            <field name="name">PAJA DE SOMBRERO</field>
+            <field name="fel_pa_code">4-8-4</field>
+            <field name="city_id" ref="multipac_felpa.fel_pa_city_30"/>
+        </record>
+        
+        <record id="fel_pa_county_429" model="fel_pa.tools.county">
+            <field name="name">PAJONAL</field>
+            <field name="fel_pa_code">2-6-6</field>
+            <field name="city_id" ref="multipac_felpa.fel_pa_city_55"/>
+        </record>
+        
+        <record id="fel_pa_county_430" model="fel_pa.tools.county">
+            <field name="name">PALENQUE (CABECERA)</field>
+            <field name="fel_pa_code">3-5-1</field>
+            <field name="city_id" ref="multipac_felpa.fel_pa_city_70"/>
+        </record>
+        
+        <record id="fel_pa_county_431" model="fel_pa.tools.county">
+            <field name="name">PALMAS BELLAS</field>
+            <field name="fel_pa_code">3-2-5</field>
+            <field name="city_id" ref="multipac_felpa.fel_pa_city_17"/>
+        </record>
+        
+        <record id="fel_pa_county_432" model="fel_pa.tools.county">
+            <field name="name">PALMIRA</field>
+            <field name="fel_pa_code">3-5-5</field>
+            <field name="city_id" ref="multipac_felpa.fel_pa_city_70"/>
+        </record>
+        
+        <record id="fel_pa_county_433" model="fel_pa.tools.county">
+            <field name="name">PALMIRA</field>
+            <field name="fel_pa_code">7-2-16</field>
+            <field name="city_id" ref="multipac_felpa.fel_pa_city_39"/>
+        </record>
+        
+        <record id="fel_pa_county_434" model="fel_pa.tools.county">
+            <field name="name">PALMIRA</field>
+            <field name="fel_pa_code">4-4-3</field>
+            <field name="city_id" ref="multipac_felpa.fel_pa_city_11"/>
+        </record>
+        
+        <record id="fel_pa_county_435" model="fel_pa.tools.county">
+            <field name="name">PALO GRANDE</field>
+            <field name="fel_pa_code">4-1-5</field>
+            <field name="city_id" ref="multipac_felpa.fel_pa_city_2"/>
+        </record>
+        
+        <record id="fel_pa_county_436" model="fel_pa.tools.county">
+            <field name="name">PARAISO</field>
+            <field name="fel_pa_code">7-6-4</field>
+            <field name="city_id" ref="multipac_felpa.fel_pa_city_58"/>
+        </record>
+        
+        <record id="fel_pa_county_437" model="fel_pa.tools.county">
+            <field name="name">PARAISO</field>
+            <field name="fel_pa_code">4-3-6</field>
+            <field name="city_id" ref="multipac_felpa.fel_pa_city_10"/>
+        </record>
+        
+        <record id="fel_pa_county_438" model="fel_pa.tools.county">
+            <field name="name">PARIS</field>
+            <field name="fel_pa_code">6-5-5</field>
+            <field name="city_id" ref="multipac_felpa.fel_pa_city_53"/>
+        </record>
+        
+        <record id="fel_pa_county_439" model="fel_pa.tools.county">
+            <field name="name">PARITA (CABECERA)</field>
+            <field name="fel_pa_code">6-5-1</field>
+            <field name="city_id" ref="multipac_felpa.fel_pa_city_53"/>
+        </record>
+        
+        <record id="fel_pa_county_440" model="fel_pa.tools.county">
+            <field name="name">PARITILLA</field>
+            <field name="fel_pa_code">7-6-5</field>
+            <field name="city_id" ref="multipac_felpa.fel_pa_city_58"/>
+        </record>
+        
+        <record id="fel_pa_county_441" model="fel_pa.tools.county">
+            <field name="name">PARQUE LEFEVRE</field>
+            <field name="fel_pa_code">8-8-10</field>
+            <field name="city_id" ref="multipac_felpa.fel_pa_city_52"/>
+        </record>
+        
+        <record id="fel_pa_county_442" model="fel_pa.tools.county">
+            <field name="name">PASIGA</field>
+            <field name="fel_pa_code">8-6-4</field>
+            <field name="city_id" ref="multipac_felpa.fel_pa_city_22"/>
+        </record>
+        
+        <record id="fel_pa_county_443" model="fel_pa.tools.county">
+            <field name="name">PAYA</field>
+            <field name="fel_pa_code">5-2-3</field>
+            <field name="city_id" ref="multipac_felpa.fel_pa_city_57"/>
+        </record>
+        
+        <record id="fel_pa_county_444" model="fel_pa.tools.county">
+            <field name="name">PEDASI (CABECERA)</field>
+            <field name="fel_pa_code">7-5-1</field>
+            <field name="city_id" ref="multipac_felpa.fel_pa_city_54"/>
+        </record>
+        
+        <record id="fel_pa_county_445" model="fel_pa.tools.county">
+            <field name="name">PEDREGAL</field>
+            <field name="fel_pa_code">4-3-7</field>
+            <field name="city_id" ref="multipac_felpa.fel_pa_city_10"/>
+        </record>
+        
+        <record id="fel_pa_county_446" model="fel_pa.tools.county">
+            <field name="name">PEDREGAL</field>
+            <field name="fel_pa_code">8-8-13</field>
+            <field name="city_id" ref="multipac_felpa.fel_pa_city_52"/>
+        </record>
+        
+        <record id="fel_pa_county_447" model="fel_pa.tools.county">
+            <field name="name">PEDREGAL</field>
+            <field name="fel_pa_code">4-6-7</field>
+            <field name="city_id" ref="multipac_felpa.fel_pa_city_27"/>
+        </record>
+        
+        <record id="fel_pa_county_448" model="fel_pa.tools.county">
+            <field name="name">PEDRO GONZALEZ</field>
+            <field name="fel_pa_code">8-2-5</field>
+            <field name="city_id" ref="multipac_felpa.fel_pa_city_6"/>
+        </record>
+        
+        <record id="fel_pa_county_449" model="fel_pa.tools.county">
+            <field name="name">PENONOME (CABECERA)</field>
+            <field name="fel_pa_code">2-6-1</field>
+            <field name="city_id" ref="multipac_felpa.fel_pa_city_55"/>
+        </record>
+        
+        <record id="fel_pa_county_450" model="fel_pa.tools.county">
+            <field name="name">PERALES</field>
+            <field name="fel_pa_code">7-1-10</field>
+            <field name="city_id" ref="multipac_felpa.fel_pa_city_31"/>
+        </record>
+        
+        <record id="fel_pa_county_451" model="fel_pa.tools.county">
+            <field name="name">PESE (CABECERA)</field>
+            <field name="fel_pa_code">6-6-1</field>
+            <field name="city_id" ref="multipac_felpa.fel_pa_city_56"/>
+        </record>
+        
+        <record id="fel_pa_county_452" model="fel_pa.tools.county">
+            <field name="name">PEÑA BLANCA</field>
+            <field name="fel_pa_code">12-3-9</field>
+            <field name="city_id" ref="multipac_felpa.fel_pa_city_46"/>
+        </record>
+        
+        <record id="fel_pa_county_453" model="fel_pa.tools.county">
+            <field name="name">PEÑA BLANCA</field>
+            <field name="fel_pa_code">7-2-17</field>
+            <field name="city_id" ref="multipac_felpa.fel_pa_city_39"/>
+        </record>
+        
+        <record id="fel_pa_county_454" model="fel_pa.tools.county">
+            <field name="name">PEÑAS CHATAS</field>
+            <field name="fel_pa_code">6-4-5</field>
+            <field name="city_id" ref="multipac_felpa.fel_pa_city_50"/>
+        </record>
+        
+        <record id="fel_pa_county_455" model="fel_pa.tools.county">
+            <field name="name">PIEDRA ROJA</field>
+            <field name="fel_pa_code">12-6-7</field>
+            <field name="city_id" ref="multipac_felpa.fel_pa_city_32"/>
+        </record>
+        
+        <record id="fel_pa_county_456" model="fel_pa.tools.county">
+            <field name="name">PIEDRAS GORDAS</field>
+            <field name="fel_pa_code">2-3-5</field>
+            <field name="city_id" ref="multipac_felpa.fel_pa_city_36"/>
+        </record>
+        
+        <record id="fel_pa_county_457" model="fel_pa.tools.county">
+            <field name="name">PINOGANA</field>
+            <field name="fel_pa_code">5-2-4</field>
+            <field name="city_id" ref="multipac_felpa.fel_pa_city_57"/>
+        </record>
+        
+        <record id="fel_pa_county_458" model="fel_pa.tools.county">
+            <field name="name">PIXVAE</field>
+            <field name="fel_pa_code">9-5-8</field>
+            <field name="city_id" ref="multipac_felpa.fel_pa_city_38"/>
+        </record>
+        
+        <record id="fel_pa_county_459" model="fel_pa.tools.county">
+            <field name="name">PIÑA</field>
+            <field name="fel_pa_code">3-2-6</field>
+            <field name="city_id" ref="multipac_felpa.fel_pa_city_17"/>
+        </record>
+        
+        <record id="fel_pa_county_460" model="fel_pa.tools.county">
+            <field name="name">PLAYA CHIQUITA</field>
+            <field name="fel_pa_code">3-5-6</field>
+            <field name="city_id" ref="multipac_felpa.fel_pa_city_70"/>
+        </record>
+        
+        <record id="fel_pa_county_461" model="fel_pa.tools.county">
+            <field name="name">PLAYA LEONA</field>
+            <field name="fel_pa_code">13-4-16</field>
+            <field name="city_id" ref="multipac_felpa.fel_pa_city_34"/>
+        </record>
+        
+        <record id="fel_pa_county_462" model="fel_pa.tools.county">
+            <field name="name">PLAZA CAISAN</field>
+            <field name="fel_pa_code">4-10-5</field>
+            <field name="city_id" ref="multipac_felpa.fel_pa_city_61"/>
+        </record>
+        
+        <record id="fel_pa_county_463" model="fel_pa.tools.county">
+            <field name="name">POCRI</field>
+            <field name="fel_pa_code">2-1-4</field>
+            <field name="city_id" ref="multipac_felpa.fel_pa_city_1"/>
+        </record>
+        
+        <record id="fel_pa_county_464" model="fel_pa.tools.county">
+            <field name="name">POCRI</field>
+            <field name="fel_pa_code">7-6-1</field>
+            <field name="city_id" ref="multipac_felpa.fel_pa_city_58"/>
+        </record>
+        
+        <record id="fel_pa_county_465" model="fel_pa.tools.county">
+            <field name="name">PONUGA</field>
+            <field name="fel_pa_code">9-10-5</field>
+            <field name="city_id" ref="multipac_felpa.fel_pa_city_72"/>
+        </record>
+        
+        <record id="fel_pa_county_466" model="fel_pa.tools.county">
+            <field name="name">PORTOBELILLO</field>
+            <field name="fel_pa_code">6-5-6</field>
+            <field name="city_id" ref="multipac_felpa.fel_pa_city_53"/>
+        </record>
+        
+        <record id="fel_pa_county_467" model="fel_pa.tools.county">
+            <field name="name">PORTOBELO (CABECERA)</field>
+            <field name="fel_pa_code">3-4-1</field>
+            <field name="city_id" ref="multipac_felpa.fel_pa_city_59"/>
+        </record>
+        
+        <record id="fel_pa_county_468" model="fel_pa.tools.county">
+            <field name="name">POTRERILLOS</field>
+            <field name="fel_pa_code">4-7-4</field>
+            <field name="city_id" ref="multipac_felpa.fel_pa_city_28"/>
+        </record>
+        
+        <record id="fel_pa_county_469" model="fel_pa.tools.county">
+            <field name="name">POTRERILLOS ABAJO</field>
+            <field name="fel_pa_code">4-7-5</field>
+            <field name="city_id" ref="multipac_felpa.fel_pa_city_28"/>
+        </record>
+        
+        <record id="fel_pa_county_470" model="fel_pa.tools.county">
+            <field name="name">POTRERO DE CAÑA</field>
+            <field name="fel_pa_code">4-13-7</field>
+            <field name="city_id" ref="multipac_felpa.fel_pa_city_75"/>
+        </record>
+        
+        <record id="fel_pa_county_471" model="fel_pa.tools.county">
+            <field name="name">POTUGA</field>
+            <field name="fel_pa_code">6-5-7</field>
+            <field name="city_id" ref="multipac_felpa.fel_pa_city_53"/>
+        </record>
+        
+        <record id="fel_pa_county_472" model="fel_pa.tools.county">
+            <field name="name">PROGRESO</field>
+            <field name="fel_pa_code">4-2-3</field>
+            <field name="city_id" ref="multipac_felpa.fel_pa_city_7"/>
+        </record>
+        
+        <record id="fel_pa_county_473" model="fel_pa.tools.county">
+            <field name="name">PUCURO</field>
+            <field name="fel_pa_code">5-2-5</field>
+            <field name="city_id" ref="multipac_felpa.fel_pa_city_57"/>
+        </record>
+        
+        <record id="fel_pa_county_474" model="fel_pa.tools.county">
+            <field name="name">PUEBLO NUEVO</field>
+            <field name="fel_pa_code">8-8-8</field>
+            <field name="city_id" ref="multipac_felpa.fel_pa_city_52"/>
+        </record>
+        
+        <record id="fel_pa_county_475" model="fel_pa.tools.county">
+            <field name="name">PUERTO ARMUELLES (CABECERA)</field>
+            <field name="fel_pa_code">4-2-1</field>
+            <field name="city_id" ref="multipac_felpa.fel_pa_city_7"/>
+        </record>
+        
+        <record id="fel_pa_county_476" model="fel_pa.tools.county">
+            <field name="name">PUERTO CAIMITO</field>
+            <field name="fel_pa_code">13-4-17</field>
+            <field name="city_id" ref="multipac_felpa.fel_pa_city_34"/>
+        </record>
+        
+        <record id="fel_pa_county_477" model="fel_pa.tools.county">
+            <field name="name">PUERTO OBALDIA</field>
+            <field name="fel_pa_code">10-1-3</field>
+            <field name="city_id" ref="multipac_felpa.fel_pa_city_26"/>
+        </record>
+        
+        <record id="fel_pa_county_478" model="fel_pa.tools.county">
+            <field name="name">PUERTO PILON</field>
+            <field name="fel_pa_code">3-1-10</field>
+            <field name="city_id" ref="multipac_felpa.fel_pa_city_25"/>
+        </record>
+        
+        <record id="fel_pa_county_479" model="fel_pa.tools.county">
+            <field name="name">PUERTO PIÑA</field>
+            <field name="fel_pa_code">5-1-6</field>
+            <field name="city_id" ref="multipac_felpa.fel_pa_city_20"/>
+        </record>
+        
+        <record id="fel_pa_county_480" model="fel_pa.tools.county">
+            <field name="name">PUERTO VIDAL</field>
+            <field name="fel_pa_code">9-5-9</field>
+            <field name="city_id" ref="multipac_felpa.fel_pa_city_38"/>
+        </record>
+        
+        <record id="fel_pa_county_481" model="fel_pa.tools.county">
+            <field name="name">PUNTA CHAME</field>
+            <field name="fel_pa_code">13-3-9</field>
+            <field name="city_id" ref="multipac_felpa.fel_pa_city_18"/>
+        </record>
+        
+        <record id="fel_pa_county_482" model="fel_pa.tools.county">
+            <field name="name">PUNTA LAUREL</field>
+            <field name="fel_pa_code">1-1-4</field>
+            <field name="city_id" ref="multipac_felpa.fel_pa_city_9"/>
+        </record>
+        
+        <record id="fel_pa_county_483" model="fel_pa.tools.county">
+            <field name="name">PUNTA PEÑA</field>
+            <field name="fel_pa_code">1-3-3</field>
+            <field name="city_id" ref="multipac_felpa.fel_pa_city_23"/>
+        </record>
+        
+        <record id="fel_pa_county_484" model="fel_pa.tools.county">
+            <field name="name">PUNTA ROBALO</field>
+            <field name="fel_pa_code">1-3-4</field>
+            <field name="city_id" ref="multipac_felpa.fel_pa_city_23"/>
+        </record>
+        
+        <record id="fel_pa_county_485" model="fel_pa.tools.county">
+            <field name="name">PURIO</field>
+            <field name="fel_pa_code">7-5-4</field>
+            <field name="city_id" ref="multipac_felpa.fel_pa_city_54"/>
+        </record>
+        
+        <record id="fel_pa_county_486" model="fel_pa.tools.county">
+            <field name="name">QUEBRADA DE LORO</field>
+            <field name="fel_pa_code">12-2-7</field>
+            <field name="city_id" ref="multipac_felpa.fel_pa_city_44"/>
+        </record>
+        
+        <record id="fel_pa_county_487" model="fel_pa.tools.county">
+            <field name="name">QUEBRADA DE ORO</field>
+            <field name="fel_pa_code">9-11-8</field>
+            <field name="city_id" ref="multipac_felpa.fel_pa_city_73"/>
+        </record>
+        
+        <record id="fel_pa_county_488" model="fel_pa.tools.county">
+            <field name="name">QUEBRADA DE PIEDRA</field>
+            <field name="fel_pa_code">4-13-8</field>
+            <field name="city_id" ref="multipac_felpa.fel_pa_city_75"/>
+        </record>
+        
+        <record id="fel_pa_county_489" model="fel_pa.tools.county">
+            <field name="name">QUEBRADA DEL ROSARIO</field>
+            <field name="fel_pa_code">6-2-6</field>
+            <field name="city_id" ref="multipac_felpa.fel_pa_city_37"/>
+        </record>
+        
+        <record id="fel_pa_county_490" model="fel_pa.tools.county">
+            <field name="name">QUEBRADA EL CIPRIAN</field>
+            <field name="fel_pa_code">6-2-7</field>
+            <field name="city_id" ref="multipac_felpa.fel_pa_city_37"/>
+        </record>
+        
+        <record id="fel_pa_county_491" model="fel_pa.tools.county">
+            <field name="name">QUEBRO</field>
+            <field name="fel_pa_code">9-12-4</field>
+            <field name="city_id" ref="multipac_felpa.fel_pa_city_43"/>
+        </record>
+        
+        <record id="fel_pa_county_492" model="fel_pa.tools.county">
+            <field name="name">QUEREVALO</field>
+            <field name="fel_pa_code">4-1-6</field>
+            <field name="city_id" ref="multipac_felpa.fel_pa_city_2"/>
+        </record>
+        
+        <record id="fel_pa_county_493" model="fel_pa.tools.county">
+            <field name="name">RAMBALA</field>
+            <field name="fel_pa_code">1-3-5</field>
+            <field name="city_id" ref="multipac_felpa.fel_pa_city_23"/>
+        </record>
+        
+        <record id="fel_pa_county_494" model="fel_pa.tools.county">
+            <field name="name">REMANCE</field>
+            <field name="fel_pa_code">9-8-4</field>
+            <field name="city_id" ref="multipac_felpa.fel_pa_city_66"/>
+        </record>
+        
+        <record id="fel_pa_county_495" model="fel_pa.tools.county">
+            <field name="name">REMEDIOS (CABECERA)</field>
+            <field name="fel_pa_code">4-9-1</field>
+            <field name="city_id" ref="multipac_felpa.fel_pa_city_60"/>
+        </record>
+        
+        <record id="fel_pa_county_496" model="fel_pa.tools.county">
+            <field name="name">RINCON</field>
+            <field name="fel_pa_code">4-8-5</field>
+            <field name="city_id" ref="multipac_felpa.fel_pa_city_30"/>
+        </record>
+        
+        <record id="fel_pa_county_497" model="fel_pa.tools.county">
+            <field name="name">RINCON HONDO</field>
+            <field name="fel_pa_code">6-6-8</field>
+            <field name="city_id" ref="multipac_felpa.fel_pa_city_56"/>
+        </record>
+        
+        <record id="fel_pa_county_498" model="fel_pa.tools.county">
+            <field name="name">RIO ABAJO</field>
+            <field name="fel_pa_code">8-8-11</field>
+            <field name="city_id" ref="multipac_felpa.fel_pa_city_52"/>
+        </record>
+        
+        <record id="fel_pa_county_499" model="fel_pa.tools.county">
+            <field name="name">RIO CHIRIQUI</field>
+            <field name="fel_pa_code">12-7-5</field>
+            <field name="city_id" ref="multipac_felpa.fel_pa_city_33"/>
+        </record>
+        
+        <!--<record id="fel_pa_county_500" model="fel_pa.tools.county">
+            <field name="name">RIO CONGO</field>
+            <field name="fel_pa_code">5-1-7</field>
+            <field name="city_id" ref="multipac_felpa.fel_pa_city_20"/>
+        </record>
+        
+        <record id="fel_pa_county_501" model="fel_pa.tools.county">
+            <field name="name">RIO CONGO ARRIBA</field>
+            <field name="fel_pa_code">5-1-15</field>
+            <field name="city_id" ref="multipac_felpa.fel_pa_city_20"/>
+        </record>-->
+        
+        <record id="fel_pa_county_502" model="fel_pa.tools.county">
+            <field name="name">RIO DE JESUS (CABECERA)</field>
+            <field name="fel_pa_code">9-7-1</field>
+            <field name="city_id" ref="multipac_felpa.fel_pa_city_62"/>
+        </record>
+        
+        <record id="fel_pa_county_503" model="fel_pa.tools.county">
+            <field name="name">RIO GRANDE</field>
+            <field name="fel_pa_code">2-6-7</field>
+            <field name="city_id" ref="multipac_felpa.fel_pa_city_55"/>
+        </record>
+        
+        <record id="fel_pa_county_504" model="fel_pa.tools.county">
+            <field name="name">RIO GRANDE</field>
+            <field name="fel_pa_code">9-11-9</field>
+            <field name="city_id" ref="multipac_felpa.fel_pa_city_73"/>
+        </record>
+        
+        <record id="fel_pa_county_505" model="fel_pa.tools.county">
+            <field name="name">RIO HATO</field>
+            <field name="fel_pa_code">2-2-7</field>
+            <field name="city_id" ref="multipac_felpa.fel_pa_city_3"/>
+        </record>
+        
+        <record id="fel_pa_county_506" model="fel_pa.tools.county">
+            <field name="name">RIO HONDO</field>
+            <field name="fel_pa_code">7-2-18</field>
+            <field name="city_id" ref="multipac_felpa.fel_pa_city_39"/>
+        </record>
+        
+        <!--<record id="fel_pa_county_507" model="fel_pa.tools.county">
+            <field name="name">RIO IGLESIAS</field>
+            <field name="fel_pa_code">5-1-8</field>
+            <field name="city_id" ref="multipac_felpa.fel_pa_city_20"/>
+        </record>-->
+        
+        <record id="fel_pa_county_508" model="fel_pa.tools.county">
+            <field name="name">RIO INDIO</field>
+            <field name="fel_pa_code">2-6-8</field>
+            <field name="city_id" ref="multipac_felpa.fel_pa_city_55"/>
+        </record>
+        
+        <record id="fel_pa_county_509" model="fel_pa.tools.county">
+            <field name="name">RIO INDIO</field>
+            <field name="fel_pa_code">3-3-5</field>
+            <field name="city_id" ref="multipac_felpa.fel_pa_city_29"/>
+        </record>
+        
+        <record id="fel_pa_county_510" model="fel_pa.tools.county">
+            <field name="name">RIO LUIS</field>
+            <field name="fel_pa_code">9-9-7</field>
+            <field name="city_id" ref="multipac_felpa.fel_pa_city_69"/>
+        </record>
+        
+        <record id="fel_pa_county_511" model="fel_pa.tools.county">
+            <field name="name">RIO SABALO</field>
+            <field name="fel_pa_code">11-2-1</field>
+            <field name="city_id" ref="multipac_felpa.fel_pa_city_63"/>
+        </record>
+        
+        <record id="fel_pa_county_512" model="fel_pa.tools.county">
+            <field name="name">RIO SERENO (CABECERA)</field>
+            <field name="fel_pa_code">4-10-1</field>
+            <field name="city_id" ref="multipac_felpa.fel_pa_city_61"/>
+        </record>
+        
+        <record id="fel_pa_county_513" model="fel_pa.tools.county">
+            <field name="name">RODEO VIEJO</field>
+            <field name="fel_pa_code">9-11-10</field>
+            <field name="city_id" ref="multipac_felpa.fel_pa_city_73"/>
+        </record>
+        
+        <record id="fel_pa_county_514" model="fel_pa.tools.county">
+            <field name="name">RODOLFO AGUILAR DELGADO</field>
+            <field name="fel_pa_code">4-2-5</field>
+            <field name="city_id" ref="multipac_felpa.fel_pa_city_7"/>
+        </record>
+        
+        <record id="fel_pa_county_515" model="fel_pa.tools.county">
+            <field name="name">ROKA</field>
+            <field name="fel_pa_code">12-3-10</field>
+            <field name="city_id" ref="multipac_felpa.fel_pa_city_46"/>
+        </record>
+        
+        <record id="fel_pa_county_516" model="fel_pa.tools.county">
+            <field name="name">ROVIRA</field>
+            <field name="fel_pa_code">4-7-6</field>
+            <field name="city_id" ref="multipac_felpa.fel_pa_city_28"/>
+        </record>
+        
+        <record id="fel_pa_county_517" model="fel_pa.tools.county">
+            <field name="name">RUFINA ALFARO</field>
+            <field name="fel_pa_code">8-10-9</field>
+            <field name="city_id" ref="multipac_felpa.fel_pa_city_68"/>
+        </record>
+        
+        <record id="fel_pa_county_518" model="fel_pa.tools.county">
+            <field name="name">SABANAGRANDE</field>
+            <field name="fel_pa_code">6-6-7</field>
+            <field name="city_id" ref="multipac_felpa.fel_pa_city_56"/>
+        </record>
+        
+        <record id="fel_pa_county_519" model="fel_pa.tools.county">
+            <field name="name">SABANAGRANDE</field>
+            <field name="fel_pa_code">7-3-10</field>
+            <field name="city_id" ref="multipac_felpa.fel_pa_city_41"/>
+        </record>
+        
+        <record id="fel_pa_county_520" model="fel_pa.tools.county">
+            <field name="name">SABANITAS</field>
+            <field name="fel_pa_code">3-1-11</field>
+            <field name="city_id" ref="multipac_felpa.fel_pa_city_25"/>
+        </record>
+        
+        <record id="fel_pa_county_521" model="fel_pa.tools.county">
+            <field name="name">SABOGA</field>
+            <field name="fel_pa_code">8-2-6</field>
+            <field name="city_id" ref="multipac_felpa.fel_pa_city_6"/>
+        </record>
+        
+        <record id="fel_pa_county_522" model="fel_pa.tools.county">
+            <field name="name">SAJALICES</field>
+            <field name="fel_pa_code">13-3-10</field>
+            <field name="city_id" ref="multipac_felpa.fel_pa_city_18"/>
+        </record>
+        
+        <record id="fel_pa_county_523" model="fel_pa.tools.county">
+            <field name="name">SALAMANCA</field>
+            <field name="fel_pa_code">3-1-12</field>
+            <field name="city_id" ref="multipac_felpa.fel_pa_city_25"/>
+        </record>
+        
+        <record id="fel_pa_county_524" model="fel_pa.tools.county">
+            <field name="name">SALTO DUPI</field>
+            <field name="fel_pa_code">12-2-8</field>
+            <field name="city_id" ref="multipac_felpa.fel_pa_city_44"/>
+        </record>
+        
+        <record id="fel_pa_county_525" model="fel_pa.tools.county">
+            <field name="name">SALUD</field>
+            <field name="fel_pa_code">3-2-7</field>
+            <field name="city_id" ref="multipac_felpa.fel_pa_city_17"/>
+        </record>
+        
+        <record id="fel_pa_county_526" model="fel_pa.tools.county">
+            <field name="name">SAMBU</field>
+            <field name="fel_pa_code">5-1-9</field>
+            <field name="city_id" ref="multipac_felpa.fel_pa_city_20"/>
+        </record>
+        
+        <record id="fel_pa_county_527" model="fel_pa.tools.county">
+            <field name="name">SAN ANDRES</field>
+            <field name="fel_pa_code">4-5-7</field>
+            <field name="city_id" ref="multipac_felpa.fel_pa_city_12"/>
+        </record>
+        
+        <record id="fel_pa_county_528" model="fel_pa.tools.county">
+            <field name="name">SAN ANTONIO</field>
+            <field name="fel_pa_code">9-1-5</field>
+            <field name="city_id" ref="multipac_felpa.fel_pa_city_5"/>
+        </record>
+        
+        <record id="fel_pa_county_529" model="fel_pa.tools.county">
+            <field name="name">SAN BARTOLO</field>
+            <field name="fel_pa_code">9-4-5</field>
+            <field name="city_id" ref="multipac_felpa.fel_pa_city_35"/>
+        </record>
+        
+        <record id="fel_pa_county_530" model="fel_pa.tools.county">
+            <field name="name">SAN CARLOS</field>
+            <field name="fel_pa_code">4-6-8</field>
+            <field name="city_id" ref="multipac_felpa.fel_pa_city_27"/>
+        </record>
+        
+        <record id="fel_pa_county_531" model="fel_pa.tools.county">
+            <field name="name">SAN CARLOS (CABECERA)</field>
+            <field name="fel_pa_code">13-5-1</field>
+            <field name="city_id" ref="multipac_felpa.fel_pa_city_64"/>
+        </record>
+        
+        <record id="fel_pa_county_532" model="fel_pa.tools.county">
+            <field name="name">SAN FELIPE</field>
+            <field name="fel_pa_code">8-8-1</field>
+            <field name="city_id" ref="multipac_felpa.fel_pa_city_52"/>
+        </record>
+        
+        <record id="fel_pa_county_533" model="fel_pa.tools.county">
+            <field name="name">SAN FELIX</field>
+            <field name="fel_pa_code">4-11-4</field>
+            <field name="city_id" ref="multipac_felpa.fel_pa_city_65"/>
+        </record>
+        
+        <record id="fel_pa_county_534" model="fel_pa.tools.county">
+            <field name="name">SAN FRANCISCO</field>
+            <field name="fel_pa_code">8-8-9</field>
+            <field name="city_id" ref="multipac_felpa.fel_pa_city_52"/>
+        </record>
+        
+        <record id="fel_pa_county_535" model="fel_pa.tools.county">
+            <field name="name">SAN FRANCISCO (CABECERA)</field>
+            <field name="fel_pa_code">9-8-1</field>
+            <field name="city_id" ref="multipac_felpa.fel_pa_city_66"/>
+        </record>
+        
+        <record id="fel_pa_county_536" model="fel_pa.tools.county">
+            <field name="name">SAN JOSE</field>
+            <field name="fel_pa_code">13-5-9</field>
+            <field name="city_id" ref="multipac_felpa.fel_pa_city_64"/>
+        </record>
+        
+        <record id="fel_pa_county_537" model="fel_pa.tools.county">
+            <field name="name">SAN JOSE</field>
+            <field name="fel_pa_code">7-2-19</field>
+            <field name="city_id" ref="multipac_felpa.fel_pa_city_39"/>
+        </record>
+        
+        <record id="fel_pa_county_538" model="fel_pa.tools.county">
+            <field name="name">SAN JOSE</field>
+            <field name="fel_pa_code">9-3-5</field>
+            <field name="city_id" ref="multipac_felpa.fel_pa_city_15"/>
+        </record>
+        
+        <record id="fel_pa_county_539" model="fel_pa.tools.county">
+            <field name="name">SAN JOSE</field>
+            <field name="fel_pa_code">9-2-12</field>
+            <field name="city_id" ref="multipac_felpa.fel_pa_city_13"/>
+        </record>
+        
+        <record id="fel_pa_county_540" model="fel_pa.tools.county">
+            <field name="name">SAN JOSE</field>
+            <field name="fel_pa_code">9-8-6</field>
+            <field name="city_id" ref="multipac_felpa.fel_pa_city_66"/>
+        </record>
+        
+        <record id="fel_pa_county_541" model="fel_pa.tools.county">
+            <field name="name">SAN JOSE DEL GENERAL</field>
+            <field name="fel_pa_code">3-3-6</field>
+            <field name="city_id" ref="multipac_felpa.fel_pa_city_29"/>
+        </record>
+        
+        <record id="fel_pa_county_542" model="fel_pa.tools.county">
+            <field name="name">SAN JUAN</field>
+            <field name="fel_pa_code">3-1-13</field>
+            <field name="city_id" ref="multipac_felpa.fel_pa_city_25"/>
+        </record>
+        
+        <record id="fel_pa_county_543" model="fel_pa.tools.county">
+            <field name="name">SAN JUAN</field>
+            <field name="fel_pa_code">4-12-4</field>
+            <field name="city_id" ref="multipac_felpa.fel_pa_city_67"/>
+        </record>
+        
+        <record id="fel_pa_county_544" model="fel_pa.tools.county">
+            <field name="name">SAN JUAN</field>
+            <field name="fel_pa_code">9-8-5</field>
+            <field name="city_id" ref="multipac_felpa.fel_pa_city_66"/>
+        </record>
+        
+        <record id="fel_pa_county_545" model="fel_pa.tools.county">
+            <field name="name">SAN JUAN BAUTISTA</field>
+            <field name="fel_pa_code">6-1-5</field>
+            <field name="city_id" ref="multipac_felpa.fel_pa_city_24"/>
+        </record>
+        
+        <record id="fel_pa_county_546" model="fel_pa.tools.county">
+            <field name="name">SAN JUAN DE DIOS</field>
+            <field name="fel_pa_code">2-2-8</field>
+            <field name="city_id" ref="multipac_felpa.fel_pa_city_3"/>
+        </record>
+        
+        <record id="fel_pa_county_547" model="fel_pa.tools.county">
+            <field name="name">SAN LORENZO</field>
+            <field name="fel_pa_code">4-12-5</field>
+            <field name="city_id" ref="multipac_felpa.fel_pa_city_67"/>
+        </record>
+        
+        <record id="fel_pa_county_548" model="fel_pa.tools.county">
+            <field name="name">SAN MARCELO</field>
+            <field name="fel_pa_code">9-3-6</field>
+            <field name="city_id" ref="multipac_felpa.fel_pa_city_15"/>
+        </record>
+        
+        <record id="fel_pa_county_549" model="fel_pa.tools.county">
+            <field name="name">SAN MARTIN</field>
+            <field name="fel_pa_code">8-8-18</field>
+            <field name="city_id" ref="multipac_felpa.fel_pa_city_52"/>
+        </record>
+        
+        <record id="fel_pa_county_550" model="fel_pa.tools.county">
+            <field name="name">SAN MARTIN DE PORRES</field>
+            <field name="fel_pa_code">9-10-11</field>
+            <field name="city_id" ref="multipac_felpa.fel_pa_city_72"/>
+        </record>
+        
+        <record id="fel_pa_county_551" model="fel_pa.tools.county">
+            <field name="name">SAN MARTIN DE PORRES</field>
+            <field name="fel_pa_code">9-5-10</field>
+            <field name="city_id" ref="multipac_felpa.fel_pa_city_38"/>
+        </record>
+        
+        <record id="fel_pa_county_552" model="fel_pa.tools.county">
+            <field name="name">SAN MIGUEL</field>
+            <field name="fel_pa_code">7-2-20</field>
+            <field name="city_id" ref="multipac_felpa.fel_pa_city_39"/>
+        </record>
+        
+        <record id="fel_pa_county_553" model="fel_pa.tools.county">
+            <field name="name">SAN MIGUEL (CABECERA)</field>
+            <field name="fel_pa_code">8-2-1</field>
+            <field name="city_id" ref="multipac_felpa.fel_pa_city_6"/>
+        </record>
+        
+        <record id="fel_pa_county_554" model="fel_pa.tools.county">
+            <field name="name">SAN PABLO NUEVO</field>
+            <field name="fel_pa_code">4-6-9</field>
+            <field name="city_id" ref="multipac_felpa.fel_pa_city_27"/>
+        </record>
+        
+        <record id="fel_pa_county_555" model="fel_pa.tools.county">
+            <field name="name">SAN PABLO VIEJO</field>
+            <field name="fel_pa_code">4-6-10</field>
+            <field name="city_id" ref="multipac_felpa.fel_pa_city_27"/>
+        </record>
+        
+        <record id="fel_pa_county_556" model="fel_pa.tools.county">
+            <field name="name">SAN PEDRO DEL ESPINO</field>
+            <field name="fel_pa_code">9-10-6</field>
+            <field name="city_id" ref="multipac_felpa.fel_pa_city_72"/>
+        </record>
+        
+        <record id="fel_pa_county_557" model="fel_pa.tools.county">
+            <field name="name">SANTA ANA</field>
+            <field name="fel_pa_code">7-3-11</field>
+            <field name="city_id" ref="multipac_felpa.fel_pa_city_41"/>
+        </record>
+        
+        <record id="fel_pa_county_558" model="fel_pa.tools.county">
+            <field name="name">SANTA ANA</field>
+            <field name="fel_pa_code">8-8-3</field>
+            <field name="city_id" ref="multipac_felpa.fel_pa_city_52"/>
+        </record>
+        
+        <record id="fel_pa_county_559" model="fel_pa.tools.county">
+            <field name="name">SANTA CLARA</field>
+            <field name="fel_pa_code">4-10-8</field>
+            <field name="city_id" ref="multipac_felpa.fel_pa_city_61"/>
+        </record>
+        
+        <record id="fel_pa_county_560" model="fel_pa.tools.county">
+            <field name="name">SANTA CLARA</field>
+            <field name="fel_pa_code">13-1-6</field>
+            <field name="city_id" ref="multipac_felpa.fel_pa_city_4"/>
+        </record>
+        
+        <record id="fel_pa_county_561" model="fel_pa.tools.county">
+            <field name="name">SANTA CRUZ</field>
+            <field name="fel_pa_code">4-11-5</field>
+            <field name="city_id" ref="multipac_felpa.fel_pa_city_65"/>
+        </record>
+        
+        <record id="fel_pa_county_562" model="fel_pa.tools.county">
+            <field name="name">SANTA CRUZ</field>
+            <field name="fel_pa_code">4-10-6</field>
+            <field name="city_id" ref="multipac_felpa.fel_pa_city_61"/>
+        </record>
+        
+        <record id="fel_pa_county_563" model="fel_pa.tools.county">
+            <field name="name">SANTA CRUZ DE CHININA</field>
+            <field name="fel_pa_code">8-5-6</field>
+            <field name="city_id" ref="multipac_felpa.fel_pa_city_21"/>
+        </record>
+        
+        <!--<record id="fel_pa_county_564" model="fel_pa.tools.county">
+            <field name="name">SANTA FE</field>
+            <field name="fel_pa_code">5-1-16</field>
+            <field name="city_id" ref="multipac_felpa.fel_pa_city_20"/>
+        </record>-->
+        
+        <record id="fel_pa_county_565" model="fel_pa.tools.county">
+            <field name="name">SANTA FE (CABECERA)</field>
+            <field name="fel_pa_code">9-9-1</field>
+            <field name="city_id" ref="multipac_felpa.fel_pa_city_69"/>
+        </record>
+        
+        <record id="fel_pa_county_566" model="fel_pa.tools.county">
+            <field name="name">SANTA ISABEL</field>
+            <field name="fel_pa_code">3-5-7</field>
+            <field name="city_id" ref="multipac_felpa.fel_pa_city_70"/>
+        </record>
+        
+        <record id="fel_pa_county_567" model="fel_pa.tools.county">
+            <field name="name">SANTA LUCIA</field>
+            <field name="fel_pa_code">4-9-5</field>
+            <field name="city_id" ref="multipac_felpa.fel_pa_city_60"/>
+        </record>
+        
+        <record id="fel_pa_county_568" model="fel_pa.tools.county">
+            <field name="name">SANTA MARIA (CABECERA)</field>
+            <field name="fel_pa_code">6-7-1</field>
+            <field name="city_id" ref="multipac_felpa.fel_pa_city_71"/>
+        </record>
+        
+        <record id="fel_pa_county_569" model="fel_pa.tools.county">
+            <field name="name">SANTA MARTA</field>
+            <field name="fel_pa_code">4-5-8</field>
+            <field name="city_id" ref="multipac_felpa.fel_pa_city_12"/>
+        </record>
+        
+        <record id="fel_pa_county_570" model="fel_pa.tools.county">
+            <field name="name">SANTA RITA</field>
+            <field name="fel_pa_code">2-2-9</field>
+            <field name="city_id" ref="multipac_felpa.fel_pa_city_3"/>
+        </record>
+        
+        <record id="fel_pa_county_571" model="fel_pa.tools.county">
+            <field name="name">SANTA RITA</field>
+            <field name="fel_pa_code">13-4-18</field>
+            <field name="city_id" ref="multipac_felpa.fel_pa_city_34"/>
+        </record>
+        
+        <record id="fel_pa_county_572" model="fel_pa.tools.county">
+            <field name="name">SANTA ROSA</field>
+            <field name="fel_pa_code">13-2-13</field>
+            <field name="city_id" ref="multipac_felpa.fel_pa_city_14"/>
+        </record>
+        
+        <record id="fel_pa_county_573" model="fel_pa.tools.county">
+            <field name="name">SANTA ROSA</field>
+            <field name="fel_pa_code">3-1-14</field>
+            <field name="city_id" ref="multipac_felpa.fel_pa_city_25"/>
+        </record>
+        
+        <record id="fel_pa_county_574" model="fel_pa.tools.county">
+            <field name="name">SANTA ROSA</field>
+            <field name="fel_pa_code">4-5-9</field>
+            <field name="city_id" ref="multipac_felpa.fel_pa_city_12"/>
+        </record>
+        
+        <record id="fel_pa_county_575" model="fel_pa.tools.county">
+            <field name="name">SANTIAGO (CABECERA)</field>
+            <field name="fel_pa_code">9-10-1</field>
+            <field name="city_id" ref="multipac_felpa.fel_pa_city_72"/>
+        </record>
+        
+        <record id="fel_pa_county_576" model="fel_pa.tools.county">
+            <field name="name">SANTO DOMINGO</field>
+            <field name="fel_pa_code">4-5-10</field>
+            <field name="city_id" ref="multipac_felpa.fel_pa_city_12"/>
+        </record>
+        
+        <record id="fel_pa_county_577" model="fel_pa.tools.county">
+            <field name="name">SANTO DOMINGO</field>
+            <field name="fel_pa_code">7-2-21</field>
+            <field name="city_id" ref="multipac_felpa.fel_pa_city_39"/>
+        </record>
+        
+        <record id="fel_pa_county_578" model="fel_pa.tools.county">
+            <field name="name">SANTO TOMAS</field>
+            <field name="fel_pa_code">4-1-7</field>
+            <field name="city_id" ref="multipac_felpa.fel_pa_city_2"/>
+        </record>
+        
+        <record id="fel_pa_county_579" model="fel_pa.tools.county">
+            <field name="name">SESTEADERO</field>
+            <field name="fel_pa_code">7-2-22</field>
+            <field name="city_id" ref="multipac_felpa.fel_pa_city_39"/>
+        </record>
+        
+        <record id="fel_pa_county_580" model="fel_pa.tools.county">
+            <field name="name">SETEGANTI</field>
+            <field name="fel_pa_code">5-1-10</field>
+            <field name="city_id" ref="multipac_felpa.fel_pa_city_20"/>
+        </record>
+        
+        <record id="fel_pa_county_581" model="fel_pa.tools.county">
+            <field name="name">SITIO PRADO</field>
+            <field name="fel_pa_code">12-3-11</field>
+            <field name="city_id" ref="multipac_felpa.fel_pa_city_46"/>
+        </record>
+        
+        <record id="fel_pa_county_582" model="fel_pa.tools.county">
+            <field name="name">SOLOY (CABECERA)</field>
+            <field name="fel_pa_code">12-1-1</field>
+            <field name="city_id" ref="multipac_felpa.fel_pa_city_8"/>
+        </record>
+        
+        <record id="fel_pa_county_583" model="fel_pa.tools.county">
+            <field name="name">SONA (CABECERA)</field>
+            <field name="fel_pa_code">9-11-1</field>
+            <field name="city_id" ref="multipac_felpa.fel_pa_city_73"/>
+        </record>
+        
+        <record id="fel_pa_county_584" model="fel_pa.tools.county">
+            <field name="name">SORA</field>
+            <field name="fel_pa_code">13-3-11</field>
+            <field name="city_id" ref="multipac_felpa.fel_pa_city_18"/>
+        </record>
+        
+        <record id="fel_pa_county_585" model="fel_pa.tools.county">
+            <field name="name">SORTOVA</field>
+            <field name="fel_pa_code">4-5-11</field>
+            <field name="city_id" ref="multipac_felpa.fel_pa_city_12"/>
+        </record>
+        
+        <record id="fel_pa_county_586" model="fel_pa.tools.county">
+            <field name="name">SUSAMA</field>
+            <field name="fel_pa_code">12-4-5</field>
+            <field name="city_id" ref="multipac_felpa.fel_pa_city_48"/>
+        </record>
+        
+        <record id="fel_pa_county_587" model="fel_pa.tools.county">
+            <field name="name">TABOGA (CABECERA)</field>
+            <field name="fel_pa_code">8-11-1</field>
+            <field name="city_id" ref="multipac_felpa.fel_pa_city_74"/>
+        </record>
+        
+        <record id="fel_pa_county_588" model="fel_pa.tools.county">
+            <field name="name">TAIMATI</field>
+            <field name="fel_pa_code">5-1-11</field>
+            <field name="city_id" ref="multipac_felpa.fel_pa_city_20"/>
+        </record>
+        
+        <record id="fel_pa_county_589" model="fel_pa.tools.county">
+            <field name="name">TEBARIO</field>
+            <field name="fel_pa_code">9-6-9</field>
+            <field name="city_id" ref="multipac_felpa.fel_pa_city_45"/>
+        </record>
+        
+        <record id="fel_pa_county_590" model="fel_pa.tools.county">
+            <field name="name">TEBARIO</field>
+            <field name="fel_pa_code">9-12-5</field>
+            <field name="city_id" ref="multipac_felpa.fel_pa_city_43"/>
+        </record>
+        
+        <record id="fel_pa_county_591" model="fel_pa.tools.county">
+            <field name="name">TERIBE</field>
+            <field name="fel_pa_code">1-2-4</field>
+            <field name="city_id" ref="multipac_felpa.fel_pa_city_19"/>
+        </record>
+        
+        <record id="fel_pa_county_592" model="fel_pa.tools.county">
+            <field name="name">TIERRA OSCURA</field>
+            <field name="fel_pa_code">1-1-5</field>
+            <field name="city_id" ref="multipac_felpa.fel_pa_city_9"/>
+        </record>
+        
+        <record id="fel_pa_county_593" model="fel_pa.tools.county">
+            <field name="name">TIJERAS</field>
+            <field name="fel_pa_code">4-3-8</field>
+            <field name="city_id" ref="multipac_felpa.fel_pa_city_10"/>
+        </record>
+        
+        <record id="fel_pa_county_594" model="fel_pa.tools.county">
+            <field name="name">TINAJAS</field>
+            <field name="fel_pa_code">4-7-7</field>
+            <field name="city_id" ref="multipac_felpa.fel_pa_city_28"/>
+        </record>
+        
+        <record id="fel_pa_county_595" model="fel_pa.tools.county">
+            <field name="name">TOABRE</field>
+            <field name="fel_pa_code">2-6-9</field>
+            <field name="city_id" ref="multipac_felpa.fel_pa_city_55"/>
+        </record>
+        
+        <record id="fel_pa_county_596" model="fel_pa.tools.county">
+            <field name="name">TOBOBE</field>
+            <field name="fel_pa_code">12-7-6</field>
+            <field name="city_id" ref="multipac_felpa.fel_pa_city_33"/>
+        </record>
+        
+        <record id="fel_pa_county_597" model="fel_pa.tools.county">
+            <field name="name">TOCUMEN</field>
+            <field name="fel_pa_code">8-8-19</field>
+            <field name="city_id" ref="multipac_felpa.fel_pa_city_52"/>
+        </record>
+        
+        <record id="fel_pa_county_598" model="fel_pa.tools.county">
+            <field name="name">TOLE (CABECERA)</field>
+            <field name="fel_pa_code">4-13-1</field>
+            <field name="city_id" ref="multipac_felpa.fel_pa_city_75"/>
+        </record>
+        
+        <record id="fel_pa_county_599" model="fel_pa.tools.county">
+            <field name="name">TONOSI (CABECERA)</field>
+            <field name="fel_pa_code">7-7-1</field>
+            <field name="city_id" ref="multipac_felpa.fel_pa_city_76"/>
+        </record>
+        
+        <record id="fel_pa_county_600" model="fel_pa.tools.county">
+            <field name="name">TORTI</field>
+            <field name="fel_pa_code">8-5-8</field>
+            <field name="city_id" ref="multipac_felpa.fel_pa_city_21"/>
+        </record>
+        
+        <record id="fel_pa_county_601" model="fel_pa.tools.county">
+            <field name="name">TOZA</field>
+            <field name="fel_pa_code">2-4-6</field>
+            <field name="city_id" ref="multipac_felpa.fel_pa_city_47"/>
+        </record>
+        
+        <record id="fel_pa_county_602" model="fel_pa.tools.county">
+            <field name="name">TRES QUEBRADAS</field>
+            <field name="fel_pa_code">7-3-12</field>
+            <field name="city_id" ref="multipac_felpa.fel_pa_city_41"/>
+        </record>
+        
+        <record id="fel_pa_county_603" model="fel_pa.tools.county">
+            <field name="name">TUBUALA</field>
+            <field name="fel_pa_code">10-1-4</field>
+            <field name="city_id" ref="multipac_felpa.fel_pa_city_26"/>
+        </record>
+        
+        <record id="fel_pa_county_604" model="fel_pa.tools.county">
+            <field name="name">TUCUTI</field>
+            <field name="fel_pa_code">5-1-12</field>
+            <field name="city_id" ref="multipac_felpa.fel_pa_city_20"/>
+        </record>
+        
+        <record id="fel_pa_county_605" model="fel_pa.tools.county">
+            <field name="name">TULU</field>
+            <field name="fel_pa_code">2-6-10</field>
+            <field name="city_id" ref="multipac_felpa.fel_pa_city_55"/>
+        </record>
+        
+        <record id="fel_pa_county_606" model="fel_pa.tools.county">
+            <field name="name">TUWAI</field>
+            <field name="fel_pa_code">12-6-8</field>
+            <field name="city_id" ref="multipac_felpa.fel_pa_city_32"/>
+        </record>
+        
+        <record id="fel_pa_county_607" model="fel_pa.tools.county">
+            <field name="name">UMANI</field>
+            <field name="fel_pa_code">12-3-12</field>
+            <field name="city_id" ref="multipac_felpa.fel_pa_city_46"/>
+        </record>
+        
+        <record id="fel_pa_county_608" model="fel_pa.tools.county">
+            <field name="name">UNION DEL NORTE</field>
+            <field name="fel_pa_code">9-6-8</field>
+            <field name="city_id" ref="multipac_felpa.fel_pa_city_45"/>
+        </record>
+        
+        <record id="fel_pa_county_609" model="fel_pa.tools.county">
+            <field name="name">UNION SANTEÑA</field>
+            <field name="fel_pa_code">8-6-5</field>
+            <field name="city_id" ref="multipac_felpa.fel_pa_city_22"/>
+        </record>
+        
+        <record id="fel_pa_county_610" model="fel_pa.tools.county">
+            <field name="name">URRACA</field>
+            <field name="fel_pa_code">9-10-12</field>
+            <field name="city_id" ref="multipac_felpa.fel_pa_city_72"/>
+        </record>
+        
+        <record id="fel_pa_county_611" model="fel_pa.tools.county">
+            <field name="name">UTIRA</field>
+            <field name="fel_pa_code">9-7-4</field>
+            <field name="city_id" ref="multipac_felpa.fel_pa_city_62"/>
+        </record>
+        
+        <record id="fel_pa_county_612" model="fel_pa.tools.county">
+            <field name="name">VALLE BONITO</field>
+            <field name="fel_pa_code">12-7-7</field>
+            <field name="city_id" ref="multipac_felpa.fel_pa_city_33"/>
+        </record>
+        
+        <record id="fel_pa_county_613" model="fel_pa.tools.county">
+            <field name="name">VALLE DEL RISCO</field>
+            <field name="fel_pa_code">1-2-5</field>
+            <field name="city_id" ref="multipac_felpa.fel_pa_city_19"/>
+        </record>
+        
+        <record id="fel_pa_county_614" model="fel_pa.tools.county">
+            <field name="name">VALLE RICO</field>
+            <field name="fel_pa_code">7-2-23</field>
+            <field name="city_id" ref="multipac_felpa.fel_pa_city_39"/>
+        </record>
+        
+        <record id="fel_pa_county_615" model="fel_pa.tools.county">
+            <field name="name">VALLERIQUITO</field>
+            <field name="fel_pa_code">7-2-24</field>
+            <field name="city_id" ref="multipac_felpa.fel_pa_city_39"/>
+        </record>
+        
+        <record id="fel_pa_county_616" model="fel_pa.tools.county">
+            <field name="name">VELADERO</field>
+            <field name="fel_pa_code">4-13-9</field>
+            <field name="city_id" ref="multipac_felpa.fel_pa_city_75"/>
+        </record>
+        
+        <record id="fel_pa_county_617" model="fel_pa.tools.county">
+            <field name="name">VERACRUZ</field>
+            <field name="fel_pa_code">13-1-7</field>
+            <field name="city_id" ref="multipac_felpa.fel_pa_city_4"/>
+        </record>
+        
+        <record id="fel_pa_county_618" model="fel_pa.tools.county">
+            <field name="name">VICTORIANO LORENZO</field>
+            <field name="fel_pa_code">8-10-5</field>
+            <field name="city_id" ref="multipac_felpa.fel_pa_city_68"/>
+        </record>
+        
+        <record id="fel_pa_county_619" model="fel_pa.tools.county">
+            <field name="name">VIENTO FRIO</field>
+            <field name="fel_pa_code">3-5-8</field>
+            <field name="city_id" ref="multipac_felpa.fel_pa_city_70"/>
+        </record>
+        
+        <record id="fel_pa_county_620" model="fel_pa.tools.county">
+            <field name="name">VIGUI</field>
+            <field name="fel_pa_code">9-5-11</field>
+            <field name="city_id" ref="multipac_felpa.fel_pa_city_38"/>
+        </record>
+        
+        <record id="fel_pa_county_621" model="fel_pa.tools.county">
+            <field name="name">VILLA CARMEN</field>
+            <field name="fel_pa_code">13-2-11</field>
+            <field name="city_id" ref="multipac_felpa.fel_pa_city_14"/>
+        </record>
+        
+        <record id="fel_pa_county_622" model="fel_pa.tools.county">
+            <field name="name">VILLA LOURDES</field>
+            <field name="fel_pa_code">7-3-14</field>
+            <field name="city_id" ref="multipac_felpa.fel_pa_city_41"/>
+        </record>
+        
+        <record id="fel_pa_county_623" model="fel_pa.tools.county">
+            <field name="name">VILLA ROSARIO</field>
+            <field name="fel_pa_code">13-2-12</field>
+            <field name="city_id" ref="multipac_felpa.fel_pa_city_14"/>
+        </record>
+        
+        <record id="fel_pa_county_624" model="fel_pa.tools.county">
+            <field name="name">VISTA ALEGRE</field>
+            <field name="fel_pa_code">13-1-8</field>
+            <field name="city_id" ref="multipac_felpa.fel_pa_city_4"/>
+        </record>
+        
+        <record id="fel_pa_county_625" model="fel_pa.tools.county">
+            <field name="name">VOLCAN</field>
+            <field name="fel_pa_code">4-5-12</field>
+            <field name="city_id" ref="multipac_felpa.fel_pa_city_12"/>
+        </record>
+        
+        <record id="fel_pa_county_626" model="fel_pa.tools.county">
+            <field name="name">YAPE</field>
+            <field name="fel_pa_code">5-2-6</field>
+            <field name="city_id" ref="multipac_felpa.fel_pa_city_57"/>
+        </record>
+        
+        <record id="fel_pa_county_627" model="fel_pa.tools.county">
+            <field name="name">YAVIZA</field>
+            <field name="fel_pa_code">5-2-7</field>
+            <field name="city_id" ref="multipac_felpa.fel_pa_city_57"/>
+        </record>
+        
+        <record id="fel_pa_county_628" model="fel_pa.tools.county">
+            <field name="name">ZAPOTILLO</field>
+            <field name="fel_pa_code">9-5-12</field>
+            <field name="city_id" ref="multipac_felpa.fel_pa_city_38"/>
+        </record>
+
+        <record id="fel_pa_county_629" model="fel_pa.tools.county">
+            <field name="name">AGUA FRIA</field>
+            <field name="fel_pa_code">5-3-1</field>
+            <field name="city_id" ref="multipac_felpa.fel_pa_city_74"/>
+        </record>
+
+        <record id="fel_pa_county_630" model="fel_pa.tools.county">
+            <field name="name">CUCUNATI</field>
+            <field name="fel_pa_code">5-3-2</field>
+            <field name="city_id" ref="multipac_felpa.fel_pa_city_74"/>
+        </record>
+
+        <record id="fel_pa_county_631" model="fel_pa.tools.county">
+            <field name="name">RIO CONGO</field>
+            <field name="fel_pa_code">5-3-3</field>
+            <field name="city_id" ref="multipac_felpa.fel_pa_city_74"/>
+        </record>
+
+        <record id="fel_pa_county_632" model="fel_pa.tools.county">
+            <field name="name">RIO CONGO ARRIBA</field>
+            <field name="fel_pa_code">5-3-4</field>
+            <field name="city_id" ref="multipac_felpa.fel_pa_city_74"/>
+        </record>
+
+        <record id="fel_pa_county_633" model="fel_pa.tools.county">
+            <field name="name">RIO IGLESIAS</field>
+            <field name="fel_pa_code">5-3-5</field>
+            <field name="city_id" ref="multipac_felpa.fel_pa_city_74"/>
+        </record>
+
+        <record id="fel_pa_county_634" model="fel_pa.tools.county">
+            <field name="name">ZAPALLAL</field>
+            <field name="fel_pa_code">5-3-7</field>
+            <field name="city_id" ref="multipac_felpa.fel_pa_city_74"/>
+        </record>
+
+        <record id="fel_pa_county_635" model="fel_pa.tools.county">
+            <field name="name">SANTA FE</field>
+            <field name="fel_pa_code">5-3-6</field>
+            <field name="city_id" ref="multipac_felpa.fel_pa_city_74"/>
+        </record>
+
+
+    </data>
+</odoo>

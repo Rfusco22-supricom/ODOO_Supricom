@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+
+    <!-- Menús en Contabilidad -->
+    <!-- Cierre de Caja Diario bajo Contabilidad > Clientes -->
+    <menuitem id="menu_daily_cash_closing_receivables"
+              name="Cierre de Caja Diario"
+              parent="account.menu_finance_receivables"
+              action="action_daily_cash_closing"
+              sequence="26"/>
+
+    <!-- Cierre de Caja Diario bajo Contabilidad > Informes -->
+    <menuitem id="menu_daily_cash_closing_reports"
+              name="Cierre de Caja Diario"
+              parent="account.menu_finance_reports"
+              action="action_daily_cash_closing"
+              sequence="16"/>
+
+    <!-- Reporte de Margen sobre Costo bajo Contabilidad > Informes -->
+    <menuitem id="menu_digiflex_sales_margin_report_account"
+              name="Ventas / Devoluciones (Margen s/ Costo)"
+              parent="account.menu_finance_reports"
+              action="action_digiflex_sales_margin_report"
+              sequence="22"/>
+
+    <!-- Menús en Ventas -->
+    <!-- Reporte de Ventas con Margen bajo Ventas > Informes -->
+    <menuitem id="menu_digiflex_sales_margin_report_sale"
+              name="Margen y Utilidad sobre Costo"
+              parent="sale.menu_sale_report"
+              action="action_digiflex_sales_margin_report"
+              sequence="15"/>
+
+    <!-- Asistente de Consulta de Ventas bajo Ventas > Informes -->
+    <menuitem id="menu_digiflex_sales_margin_wizard_sale"
+              name="Consulta Ventas / Devoluciones"
+              parent="sale.menu_sale_report"
+              action="action_digiflex_sales_margin_wizard"
+              sequence="16"/>
+
+</odoo>

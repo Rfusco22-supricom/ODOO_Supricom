@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+
+    <!-- Wizard Form View -->
+    <record id="view_digiflex_sales_margin_wizard_form" model="ir.ui.view">
+        <field name="name">digiflex.sales.margin.wizard.form</field>
+        <field name="model">digiflex.sales.margin.wizard</field>
+        <field name="arch" type="xml">
+            <form string="Filtros - Ventas / Devoluciones">
+                <sheet>
+                    <group string="Rango de Fechas">
+                        <group>
+                            <field name="date_from"/>
+                        </group>
+                        <group>
+                            <field name="date_to"/>
+                        </group>
+                    </group>
+
+                    <group string="Criterios de Selección">
+                        <group>
+                            <field name="sale_condition" widget="radio" options="{'horizontal': true}"/>
+                            <field name="movement_type" widget="radio" options="{'horizontal': true}"/>
+                        </group>
+                        <group>
+                            <field name="sale_type" widget="radio" options="{'horizontal': true}"/>
+                            <field name="include_service_cost"/>
+                            <field name="company_id" groups="base.group_multi_company"/>
+                        </group>
+                    </group>
+                </sheet>
+                <footer>
+                    <button name="action_view_report" string="Consultar en Pantalla" type="object" class="btn-primary" data-hotkey="q"/>
+                    <button name="action_export_excel" string="Exportar a Excel (.xlsx)" type="object" class="btn-success" icon="fa-file-excel-o" data-hotkey="e"/>
+                    <button string="Cancelar" class="btn-secondary" special="cancel" data-hotkey="x"/>
+                </footer>
+            </form>
+        </field>
+    </record>
+
+    <!-- Wizard Action -->
+    <record id="action_digiflex_sales_margin_wizard" model="ir.actions.act_window">
+        <field name="name">Ventas / Devoluciones - Filtros de Consulta</field>
+        <field name="res_model">digiflex.sales.margin.wizard</field>
+        <field name="view_mode">form</field>
+        <field name="target">new</field>
+    </record>
+
+</odoo>

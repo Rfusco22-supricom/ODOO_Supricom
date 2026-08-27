@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<odoo>
+	<data>
+
+		<menuitem name="FE-DGI" id="multipac_fel_pa_menu_root" sequence="4" web_icon="multipac_felpa,static/src/img/dgi_app_logo.png" groups="multipac_felpa.felpa_group_manager"/>
+
+
+		<menuitem name="Electronic Documents" id="multipac_fel_pa_menu_docs_root" parent="multipac_fel_pa_menu_root" sequence="1" />
+
+
+        <record id="view_multipac_felpa_account_move_tree" model="ir.ui.view">
+            <field name="name">view_multipac_felpa_account_move_tree</field>
+            <field name="model">account.move</field>
+            <field name="arch" type="xml">
+                <tree string="Invoices"
+                      js_class="account_tree"
+                      decoration-info="fel_pa_state == 'draft'"
+                      decoration-muted="fel_pa_state == 'cancelled'"
+                      decoration-danger="fel_pa_state == 'rejected'"
+                      decoration-warning="fel_pa_state == 'contingency'"
+                      expand="context.get('expand', False)"
+                      sample="1"
+                      create="false"
+                      edit="false"
+                      delete="false">
+                    <field name="made_sequence_hole" column_invisible="True"/>
+                    <field name="fel_pa_document_type_id"/>
+                    <field name="fel_pa_document_code"/>
+                    <field name="fel_pa_document_number"/>
+                    <field name="fel_pa_cufe" column_invisible="context.get('hide_fel_pa_colums')"/>
+                    <field name="fel_pa_date_reception" column_invisible="context.get('hide_fel_pa_colums')"/>
+                    <field name="invoice_partner_display_name" groups="base.group_user" string="Partner" />
+                    <field name="invoice_date" optional="show" readonly="state != 'draft'" string="Date"/>
+                    <field name="company_id" groups="base.group_multi_company" options="{'no_create': True}" optional="hide"/>
+                    <field name="company_id" groups="!base.group_multi_company" column_invisible="True"/>
+                    <field name="amount_total_signed" string="Total" sum="Total" decoration-bf="1" optional="show"/>
+                    <field name="currency_id" optional="hide" readonly="state in ['cancel', 'posted']"/>
+                    <field name="company_currency_id" column_invisible="True"/>
+                    <field name="payment_state"
+                           string="Payment"
+                           widget="badge"
+                           decoration-danger="payment_state == 'not_paid'"
+                           decoration-warning="payment_state in ('partial', 'in_payment')"
+                           decoration-success="payment_state in ('paid', 'reversed')"
+                           invisible="payment_state == 'invoicing_legacy' or state != 'posted' or move_type == 'entry'"
+                           optional="show"/>
+                    <field name="state" widget="badge" decoration-success="state == 'posted'" decoration-info="state == 'draft'" optional="show"/>
+                    <field name="move_type" column_invisible="context.get('default_move_type', True)"/>
+                    <field decoration-danger="fel_pa_state in ('rejected','cancelled')" decoration-info="fel_pa_state == 'draft'" decoration-success="fel_pa_state == 'accepted'" decoration-warning="fel_pa_state == 'contingency'" name="fel_pa_state" widget="badge"/>
+                    <field name="fel_pa_pac" column_invisible="1"/>
+                    <button invisible="fel_pa_state in ('rejected', 'accepted')" name="fel_pa_handle_online" string="Process FEL" type="object"/>
+                    <button invisible="fel_pa_state not in ('accepted') or fel_pa_pac == 'efacturapty'" name="fel_pa_document_state" string="Document State" type="object"/>
+                    <button invisible="fel_pa_state not in ('accepted')" name="fel_pa_pdf_download" string="Download PDF" type="object"/>
+                    <button invisible="fel_pa_state not in ('accepted')" name="fel_pa_xml_download" string="Download XML" type="object"/>
+                    <button invisible="fel_pa_state not in ('accepted') or fel_pa_pac not in ['the_factory_hka', 'ebi']" name="fel_pa_send_email" string="Send Email by PAC" type="object"/>
+                    <button invisible="fel_pa_state not in ('accepted') or fel_pa_pac not in ['the_factory_hka', 'ebi']" name="fel_pa_email_tracking" string="Email Sent by PAC" type="object"/>
+                </tree>
+            </field>
+        </record>
+
+        <record model="ir.actions.act_window" id="action_multipac_fel_pa_all_docs">
+			<field name="name">All Documents</field>
+			<field name="res_model">account.move</field>
+			<field name="view_mode">tree,form</field>
+            <field name="domain">[('fel_pa_state', 'in', ('accepted', 'rejected', 'contingency', 'cancelled'))]</field>
+            <field name="view_ids" eval="[(5, 0, 0),
+                (0, 0, {'view_mode': 'tree', 'view_id': ref('view_multipac_felpa_account_move_tree')}),
+                (0, 0, {'view_mode': 'form', 'view_id': ref('account.view_move_form')})]"/>
+		</record>
+
+        <menuitem name="All Documents" id="multipac_fel_pa_menu_all_docs" parent="multipac_fel_pa_menu_docs_root" action="action_multipac_fel_pa_all_docs" sequence="1"/>
+
+        <record model="ir.actions.act_window" id="action_multipac_fel_pa_accepted_docs">
+			<field name="name">All Documents</field>
+			<field name="res_model">account.move</field>
+			<field name="view_mode">tree</field>
+            <field name="domain">[('fel_pa_state', '=', 'accepted')]</field>
+            <field name="view_ids" eval="[(5, 0, 0),
+                (0, 0, {'view_mode': 'tree', 'view_id': ref('view_multipac_felpa_account_move_tree')}),
+                (0, 0, {'view_mode': 'form', 'view_id': ref('account.view_move_form')})]"/>
+		</record>
+
+        <menuitem name="Certified Documents" id="multipac_fel_pa_menu_cert_docs" parent="multipac_fel_pa_menu_docs_root" action="action_multipac_fel_pa_accepted_docs" sequence="2"/>
+
+        <record model="ir.actions.act_window" id="action_multipac_fel_pa_rejected_docs">
+			<field name="name">Error Documents</field>
+			<field name="res_model">account.move</field>
+			<field name="view_mode">tree</field>
+            <field name="domain">[('fel_pa_state', '=', 'rejected')]</field>
+            <field name="context">{'hide_fel_pa_colums': True}</field>
+            <field name="view_ids" eval="[(5, 0, 0),
+                (0, 0, {'view_mode': 'tree', 'view_id': ref('view_multipac_felpa_account_move_tree')}),
+                (0, 0, {'view_mode': 'form', 'view_id': ref('account.view_move_form')})]"/>
+		</record>
+
+        <menuitem name="Error Documents" id="multipac_fel_pa_menu_error_docs" parent="multipac_fel_pa_menu_docs_root" action="action_multipac_fel_pa_rejected_docs" sequence="3"/>
+
+        <record model="ir.actions.act_window" id="action_multipac_fel_pa_contingency_docs">
+			<field name="name">Contingency Documents</field>
+			<field name="res_model">account.move</field>
+			<field name="view_mode">tree</field>
+            <field name="domain">[('fel_pa_state', '=', 'contingency')]</field>
+            <field name="context">{'hide_fel_pa_colums': True}</field>
+            <field name="view_ids" eval="[(5, 0, 0),
+                (0, 0, {'view_mode': 'tree', 'view_id': ref('view_multipac_felpa_account_move_tree')}),
+                (0, 0, {'view_mode': 'form', 'view_id': ref('account.view_move_form')})]"/>
+		</record>
+
+        <menuitem name="Contingency Documents" id="multipac_fel_pa_menu_contingency_docs" parent="multipac_fel_pa_menu_docs_root" action="action_multipac_fel_pa_contingency_docs" sequence="4"/>
+
+        <record model="ir.actions.act_window" id="action_multipac_fel_pa_cancelled_docs">
+			<field name="name">Cancelled Documents</field>
+			<field name="res_model">account.move</field>
+			<field name="view_mode">tree</field>
+            <field name="domain">[('fel_pa_state', '=', 'cancelled')]</field>
+            <field name="view_ids" eval="[(5, 0, 0),
+                (0, 0, {'view_mode': 'tree', 'view_id': ref('view_multipac_felpa_account_move_tree')}),
+                (0, 0, {'view_mode': 'form', 'view_id': ref('account.view_move_form')})]"/>
+		</record>
+
+        <menuitem name="Cancelled Documents" id="multipac_fel_pa_menu_cancelled_docs" parent="multipac_fel_pa_menu_docs_root" action="action_multipac_fel_pa_cancelled_docs" sequence="5"/>
+
+
+        <menuitem name="API Requests" id="multipac_fel_pa_menu_api_request_root" parent="multipac_fel_pa_menu_root" sequence="2" />
+
+        <menuitem action="action_fel_pa_tools_api_request" groups="multipac_felpa.felpa_group_manager" id="fel_pa_tools_api_request_menu" name="FEL Api Requests" parent="multipac_fel_pa_menu_api_request_root"/>
+
+        <menuitem name="Contingency Sessions" id="multipac_fel_pa_menu_contingency_root" parent="multipac_fel_pa_menu_root" sequence="3" />
+
+        <menuitem action="action_fel_pa_tools_contingency" groups="multipac_felpa.felpa_group_manager" id="fel_pa_tools_contingency_menu" name="FEL Contingency" parent="multipac_fel_pa_menu_contingency_root"/>
+        
+		<menuitem name="Retenciones" id="multipac_fel_pa_menu_withholding_root" parent="multipac_fel_pa_menu_root" sequence="3" />
+		<menuitem name="Certificados de Retención" id="multipac_fel_pa_menu_withholding_certs" parent="multipac_fel_pa_menu_withholding_root" action="action_fel_pa_withholding" sequence="1"/>
+
+        <menuitem name="Configuration" id="multipac_fel_pa_menu_config_root" parent="multipac_fel_pa_menu_root" sequence="5" />
+
+        <record id="action_fel_pa_account_journal_form" model="ir.actions.act_window">
+            <field name="name">Journals</field>
+            <field name="res_model">account.journal</field>
+            <field name="domain">[('fel_pa_active', '=', True)]</field>
+            <field name="context">{'default_fel_pa_active': True}</field>
+            <field name="view_mode">tree,kanban,form</field>
+            <field name="view_ids" eval="[(5, 0, 0),
+                (0, 0, {'view_mode': 'tree', 'view_id': ref('account.view_account_journal_tree')}),
+                (0, 0, {'view_mode': 'kanban', 'view_id': ref('account.account_journal_view_kanban')}),
+                (0, 0, {'view_mode': 'form', 'view_id': ref('account.view_account_journal_form')})]"/>
+            <field name="help" type="html">
+              <p class="o_view_nocontent_smiling_face">
+                Add a journal
+              </p><p>
+                A journal is used to record transactions of all accounting data
+                related to the day-to-day business.
+              </p>
+            </field>
+        </record>
+
+        <menuitem name="Journal" id="multipac_fel_pa_menu_journal_config" parent="multipac_fel_pa_menu_config_root" action="action_fel_pa_account_journal_form" sequence="1"/>
+        <menuitem name="Company" id="multipac_fel_pa_menu_company_config" parent="multipac_fel_pa_menu_config_root" action="base.action_res_company_form" sequence="2"/>
+
+        <record model="ir.actions.act_window" id="action_multipac_fel_pa_company_action">
+			<field name="name">Invoice Template</field>
+			<field name="res_model">res.company</field>
+			<field name="view_mode">form</field>
+            <field name="view_id" eval="mutlicert_felpa_res_company_invoice_configuration_form_view"/>
+            <field name="res_id" ref="base.main_company"/>
+		</record>
+
+        <menuitem name="Invoice Template" id="multipac_fel_pa_menu_invoice_template_config" parent="multipac_fel_pa_menu_config_root" action="action_multipac_fel_pa_company_action" sequence="3"/>
+
+	</data>
+</odoo> 

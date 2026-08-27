@@ -1,0 +1,26 @@
+.pos .receipt-screen .buttons .print-receipt,
+.pos .receipt-screen .buttons .send-email,
+.pos .receipt-screen .send-email,
+.pos .receipt-screen .button.print,
+.pos .receipt-screen .button.send,
+.pos .receipt-screen .form.send-email,
+.pos .receipt-screen .input.email,
+.pos .receipt-screen button.print,
+.pos .receipt-screen .btn.print,
+.pos .receipt-screen .button[class*="print"],
+.pos .receipt-screen button[class*="print"],
+.pos .receipt-screen .button[class*="send"],
+.pos .receipt-screen button[class*="send"],
+.pos .receipt-screen .receipt-preview,
+.pos .receipt-screen .pos-receipt-container,
+.pos .receipt-screen .pos-receipt,
+.pos .receipt-screen .receipt {
+    display: none !important;
+    visibility: hidden !important;
+    height: 0 !important;
+    width: 0 !important;
+    padding: 0 !important;
+    margin: 0 !important;
+    pointer-events: none !important;
+    opacity: 0 !important;
+}

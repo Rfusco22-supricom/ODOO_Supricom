@@ -1,0 +1,31 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<odoo>
+    <data>
+        <record model="ir.ui.view" id="advertencia_wizard_form">
+            <field name="name">advertencia.wizard.form</field>
+            <field name="model">account.move</field>
+            <field name="arch" type="xml">
+                <form string="Advertencia">
+                    <div>
+                        <span>
+                            <label for="name" string="¿Está seguro que desea agregar este documento al libro fiscal? Una vez incluído, el mismo no podrá excluirse posteriormente."/>
+                            <field name="name" invisible="1"/>
+                        </span>
+                    </div>
+                    <footer>
+                        <button name="compute_sin_cred" string="Confirmar" type="object" />
+                        <button special="cancel" string="Cancelar" class="oe_highlight"/>
+                    </footer>
+                </form>
+            </field>
+        </record>
+        <record model="ir.actions.act_window" id="advertencia_wizard_act">
+            <field name="name">Advertencia</field>
+            <field name="res_model">account.move</field>
+            <field name="type">ir.actions.act_window</field>
+            <field name="view_mode">form</field>
+            <field name="view_id" ref="g3c_l10n_ve_full.advertencia_wizard_form"/>
+            <field name="target">new</field>
+        </record>
+    </data>
+</odoo>

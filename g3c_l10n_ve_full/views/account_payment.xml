@@ -1,0 +1,21 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<odoo>
+    <data>
+        <record id="extra_account_payment_venezuela_inherit" model="ir.ui.view">
+            <field name="name">Extra account.payment Venezuela inherit</field>
+            <field name="model">account.payment</field>
+            <field name="inherit_id" ref="account_dual_currency.account_payment_dual_currency"/>
+            <field name="arch" type="xml">
+                <xpath expr="//field[@name='partner_id']" position="attributes">
+                    <attribute name="required">1</attribute>
+                </xpath>
+                <xpath expr="//field[@name='date']" position="after">
+                    <field name="payment_registration_date" readonly="1" force_save="1"/>
+                </xpath>
+                <xpath expr="//field[@name='ref']" position="attributes">
+                    <attribute name="required">1</attribute>
+                </xpath>
+            </field>
+        </record>
+    </data>
+</odoo>

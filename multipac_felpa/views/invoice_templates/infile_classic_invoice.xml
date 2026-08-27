@@ -1,0 +1,196 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <template id="infile_classic_external_layout">
+        <!-- Multicompany -->
+        <t t-if="o and 'company_id' in o">
+            <t t-set="company" t-value="o.company_id"/>
+        </t>
+        <t t-if="not o or not 'company_id' in o">
+            <t t-set="company" t-value="res_company"/>
+        </t>
+        <t t-call="multipac_felpa.infile_classic_header"/>
+        <div class="article o_report_layout_standard" t-att-data-oe-model="o and o._name" t-att-data-oe-id="o and o.id" t-att-data-oe-lang="o and o.env.context.get('lang')">
+            <t t-out="0"/>
+        </div>
+        <t t-call="multipac_felpa.template_footer"/>
+    </template>
+
+    <template id="infile_classic_header">
+        <div class="header container" style="width:100%;" t-att-style="'font-family:'+(o.company_id.fel_pa_font_id.family or '')+';font-size:'+str(o.company_id.fel_pa_font_size)+'px;'">
+            <div class="row">
+                <div class="col-6" style="width:45%;text-align: center">
+                    <t t-if="o.journal_id.fel_pa_custom_logo">
+                        <t t-if="o.journal_id.fel_pa_invoice_custom_logo">
+                            <img t-attf-src="data:image/*;base64,{{o.journal_id.fel_pa_invoice_custom_logo}}" style="max-width: 140px;max-height:40px;"/>
+                        </t>
+                    </t>
+                    <t t-elif="o.company_id.fel_pa_invoice_logo">
+                        <img t-att-src="image_data_uri(o.company_id.fel_pa_invoice_logo)" style="max-width: 140px;max-height:40px;" t-if="o.company_id.fel_pa_invoice_logo"/>
+                    </t>
+                    <t t-else="">
+                        <t t-if="o.company_id.logo">
+                            <img src="/web/binary/company_logo" style="max-width: 140px;max-height:40px;"/>
+                        </t>
+                    </t>
+                    <div class="text-center" style="zoom: 80%;">
+                        <t t-call="multipac_felpa.templates_company_details"/>
+                    </div>
+                </div>
+                <div class="col-6" t-attf-style="color: #{company_color or '#ffffff'};zoom: 90%;width:45%;text-align: center;">
+                    <center>
+                        <t t-if="o.fel_pa_cufe">
+                            <t t-if="o.fel_pa_cufe">
+                                <t t-if="o.fel_pa_cufe ">
+                                    <strong style="font-size:15px;" class="text-justify">Comprobante Auxiliar de Factura Electrónica</strong>
+                                </t>
+                                <div style="font-size:20px;">
+                                    <span t-esc="o._fel_pa_invoice_name()"/>
+                                </div>
+                            </t>
+                            <table BORDERCOLOR="#{theme_color or '#000000'}" style="border: 1px solid;width:70%;border-radius: 5px;border-collapse:separate;">
+                                <th class="text-center" t-attf-style="background-color: #{theme_color or '#000000'}; color: #{theme_text_color or '#000000'};">
+                                    <strong>
+                                        <span t-esc="o._fel_pa_invoice_name()"/>
+                                    </strong>
+                                </th>
+                                <t t-if="o.fel_pa_cufe">
+                                    <tr t-attf-style="background-color: #{odd_party_color or '#f2f2f2'}">
+                                        <td class="text-center">Número:
+                                            <span t-field="o.fel_pa_document_number"/>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td class="text-center">Sucursal/Punto:
+                                            <span t-field="o.fel_pa_document_code"/>
+                                        </td>
+                                    </tr>
+                                </t>
+                            </table>
+                        </t>
+                        <br/>
+                        <table BORDERCOLOR="#{theme_color or '#000000'}" t-attf-style="color: #{company_color or '#ffffff'};width:70%;border: 1px solid;border-radius: 5px;border-collapse:separate;overflow: hidden !important;">
+                            <tr t-attf-style="background-color: #{theme_color or '#000000'}; color: #{theme_text_color or '#000000'};">
+                                <th class="text-center">DÍA</th>
+                                <th class="text-center">MES</th>
+                                <th class="text-center">AÑO</th>
+                            </tr>
+                            <tr>
+                                <td class="text-center">
+                                    <span t-field="o.invoice_date" t-options="{'format': 'dd'}"/>
+                                </td>
+                                <td class="text-center">
+                                    <span t-field="o.invoice_date" t-options="{'format': 'MM'}"/>
+                                </td>
+                                <td class="text-center">
+                                    <span t-field="o.invoice_date" t-options="{'format': 'YYYY'}"/>
+                                </td>
+                            </tr>
+                        </table>
+                        <t t-if="o.company_id.fel_pa_invoice_show_invoice_ref">
+                            <br/>
+                            Referencia: <span t-esc="o.name"/>
+                        </t>
+                        <t t-if="o.invoice_origin and o.company_id.fel_pa_invoice_show_origin_order_name">
+                            <br/>
+                            Documento Origen: <span class="text-center" t-field="o.invoice_origin"/>
+                        </t>
+                        <t t-if="o._get_fel_pa_origin_date(o.invoice_origin) and o.company_id.fel_pa_invoice_show_origin_order_date">
+                            <br/>
+                            Fecha Origen: <span class="text-center" t-esc="o._get_fel_pa_origin_date(o.invoice_origin)"/>
+                        </t>
+                        <t t-if="o._get_fel_pa_invoice_due_date() and o.company_id.fel_pa_invoice_show_invoice_date_due">
+                            <br/>
+                            Fecha Vencimiento: <span class="text-center" t-esc="o._get_fel_pa_invoice_due_date()"/>
+                        </t>
+                        <t t-if="o.partner_id.ref and o.company_id.fel_pa_invoice_show_customer_code">
+                            <br/>
+                            Código Cliente: <span class="text-center" t-esc="o.partner_id.ref"/>
+                        </t>
+                        <br/>
+                    </center>
+                </div>
+            </div>
+        </div>
+    </template>
+
+    <template id="report_invoice_template_custom_infile_classic">
+        <t t-call="multipac_felpa.infile_classic_external_layout">
+            <t t-set="o" t-value="o.with_context({'lang':o.partner_id.lang})"/>
+            <t t-set="theme_color" t-value="o.company_id and o.company_id.fel_pa_theme_color"/>
+            <t t-set="theme_text_color" t-value="o.company_id and o.company_id.fel_pa_theme_text_color"/>
+            <t t-set="company_color" t-value="o.company_id and o.company_id.fel_pa_company_color"/>
+            <t t-set="company_address_color" t-value="o.company_id and o.company_id.fel_pa_company_address_color"/>
+            <t t-set="customer_color" t-value="o.company_id and o.company_id.fel_pa_customer_color"/>
+            <t t-set="customer_address_color" t-value="o.company_id and o.company_id.fel_pa_customer_address_color"/>
+            <t t-set="text_color" t-value="o.company_id and o.company_id.fel_pa_text_color"/>
+            <t t-set="even_party_color" t-value="o.company_id.fel_pa_even_party_color"/>
+            <t t-set="odd_party_color" t-value="o.company_id.fel_pa_odd_party_color"/>
+            <div class="page" t-att-style="'font-family:'+(o.company_id.fel_pa_font_id.family or '')+';font-size:'+str(o.company_id.fel_pa_font_size)+'px;'">
+                <t t-call="multipac_felpa.template_watermark"/>
+                <div border="0" cellpadding="0" cellspacing="0" width="100%">
+                    <div class="container-fluid">
+                        <div class="container" style="padding:15px 0px 0 0; width:100%;">
+                            <table BORDERCOLOR="#{theme_color or '#000000'}" border="1" cellpadding="0" cellspacing="0" t-attf-style="color: #{customer_color or '#ffffff'};width:100%;border-collapse:separate;" class="table table-bordered table-sm">
+                                <tr t-attf-style="background-color: #{theme_color or '#000000'}; color: #{theme_text_color or '#000000'};">
+                                    <th class="text-center" colspan="2">
+                                        <strong>INFORMACIÓN DEL CLIENTE</strong>
+                                    </th>
+                                </tr>
+                                
+                                <tr>
+                                    <td>
+                                        <strong><![CDATA[&nbsp;]]>Nombre: </strong>
+                                        <t t-if="o.partner_id.parent_id">
+                                            <span t-field="o.partner_id.parent_id.name"/>
+                                        </t>
+                                        <t t-else="">
+                                            <span t-field="o.partner_id.name"/>
+                                        </t>
+                                    </td>
+                                    <td>
+                                        <strong><![CDATA[&nbsp;]]><span t-esc="o.partner_id.l10n_latam_identification_type_id.name"/>: </strong>
+                                        <span t-field="o.partner_id.vat"/>
+                                    </td>
+                                </tr>
+                                <tr t-attf-style="background-color: #{odd_party_color or '#f2f2f2'};">
+                                    <td colspan="2" t-attf-style="color: #{customer_address_color or '#ffffff'};">
+                                        <strong><![CDATA[&nbsp;]]>Dirección: </strong>
+                                        <span t-field="o.partner_id.street"/>
+                                    </td>
+                                </tr>
+                            </table>
+                        </div>
+                        
+                        <div style="padding:5px 0px 0 0; font-weight:bold; width:100%;" >
+                            <t t-call="multipac_felpa.report_invoice_order_lines"/>
+                        </div>
+                        <div>
+                            <t t-call="multipac_felpa.invoice_subtotal_tem" />
+                        </div>
+                        <div t-attf-style="border-bottom:1px solid #{'#959595'}; padding:0px">
+                            <t t-call="multipac_felpa.template_total_amount_word"/>
+                        </div>
+                        <div t-if="not o._compute_payments_widget_reconciled_info() and not o.company_id.fel_pa_invoice_hide_payment_status">
+                            <p t-att-style="'font-weight:bold; color:#000; margin-bottom:0; text-transform:capitalize; margin-top:8px; color: %s;' % (text_color)">
+                            Estado del Pago: 
+                                <span t-esc="dict(o._fields['payment_state']._description_selection(o.env)).get(o.payment_state)"/>
+                            </p>
+                        </div>
+                        <div class="pull-left" style="color: #{text_color or '#000000'}; padding-top:5px; ">
+                            <t t-call="multipac_felpa.report_invoice_notes"/>
+                        </div>
+                        <div align="right"  style="color: #{text_color or '#000000'};">
+                            <t t-call="multipac_felpa.report_invoice_signature"/>
+                        </div>
+                        <div class="oe_structure"/>
+                        <t t-call="multipac_felpa.report_invoice_barcode"/>
+                        <t t-call="multipac_felpa.report_invoice_fel_pac"/>
+                    </div>
+                </div>
+            </div>
+        </t>
+    </template>
+    <template id="report_invoice_template_infile_classic_duplicate" inherit_id="multipac_felpa.report_invoice_template_custom_infile_classic" primary="True">
+
+    </template>
+</odoo>

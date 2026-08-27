@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+
+    <!-- Tree View -->
+    <record id="view_digiflex_sales_margin_report_tree" model="ir.ui.view">
+        <field name="name">digiflex.sales.margin.report.tree</field>
+        <field name="model">digiflex.sales.margin.report</field>
+        <field name="arch" type="xml">
+            <tree string="Ventas / Devoluciones - Margen y Utilidad" create="false" edit="false" delete="false">
+                <header>
+                    <button name="%(digiflex_supricom_reports.action_digiflex_sales_margin_wizard)d" string="Filtrar / Exportar Excel" type="action" class="btn btn-primary"/>
+                </header>
+                <field name="currency_id" column_invisible="True"/>
+                <field name="invoice_date" string="Fecha"/>
+                <field name="document_number" string="Numero"/>
+                <field name="partner_ref" string="Cuenta"/>
+                <field name="partner_id" string="Cliente"/>
+                <field name="salesperson_id" string="Vendedor" widget="many2one_avatar_user"/>
+                <field name="quantity" string="Unidades" sum="Total Unidades"/>
+                <field name="cost_total" string="Costo" widget="monetary" sum="Total Costo"/>
+                <field name="sale_total" string="Venta" widget="monetary" sum="Total Venta"/>
+                <field name="margin_profit" string="Utilidad" widget="monetary" sum="Total Utilidad"/>
+                <field name="margin_cost_pct" string="MargenC (%)" widget="float" digits="[16, 2]"/>
+                <field name="sale_condition" string="Condición" optional="hide"/>
+                <field name="movement_type" string="Tipo Movimiento" optional="hide"/>
+                <field name="product_type" string="Tipo Venta" optional="hide"/>
+                <field name="company_id" groups="base.group_multi_company" optional="hide"/>
+            </tree>
+        </field>
+    </record>
+
+    <!-- Pivot View -->
+    <record id="view_digiflex_sales_margin_report_pivot" model="ir.ui.view">
+        <field name="name">digiflex.sales.margin.report.pivot</field>
+        <field name="model">digiflex.sales.margin.report</field>
+        <field name="arch" type="xml">
+            <pivot string="Análisis de Ventas y Margen" disable_linking="false">
+                <field name="salesperson_id" type="row"/>
+                <field name="invoice_date" interval="month" type="col"/>
+                <field name="quantity" type="measure"/>
+                <field name="cost_total" type="measure"/>
+                <field name="sale_total" type="measure"/>
+                <field name="margin_profit" type="measure"/>
+            </pivot>
+        </field>
+    </record>
+
+    <!-- Graph View -->
+    <record id="view_digiflex_sales_margin_report_graph" model="ir.ui.view">
+        <field name="name">digiflex.sales.margin.report.graph</field>
+        <field name="model">digiflex.sales.margin.report</field>
+        <field name="arch" type="xml">
+            <graph string="Análisis de Margen de Ventas" type="bar" sample="1">
+                <field name="salesperson_id"/>
+                <field name="margin_profit" type="measure"/>
+            </graph>
+        </field>
+    </record>
+
+    <!-- Search View -->
+    <record id="view_digiflex_sales_margin_report_search" model="ir.ui.view">
+        <field name="name">digiflex.sales.margin.report.search</field>
+        <field name="model">digiflex.sales.margin.report</field>
+        <field name="arch" type="xml">
+            <search string="Buscar en Ventas y Devoluciones">
+                <field name="document_number" string="Número / Factura"/>
+                <field name="partner_id" string="Cliente"/>
+                <field name="partner_ref" string="Cuenta"/>
+                <field name="salesperson_id" string="Vendedor"/>
+                <field name="product_id" string="Producto"/>
+
+                <separator/>
+                <filter string="Ventas" name="filter_sales" domain="[('movement_type', '=', 'sales')]"/>
+                <filter string="Devoluciones" name="filter_refunds" domain="[('movement_type', '=', 'refunds')]"/>
+
+                <separator/>
+                <filter string="Contado" name="filter_cash" domain="[('sale_condition', '=', 'cash')]"/>
+                <filter string="Crédito" name="filter_credit" domain="[('sale_condition', '=', 'credit')]"/>
+
+                <separator/>
+                <filter string="Productos" name="filter_products" domain="[('product_type', '=', 'product')]"/>
+                <filter string="Servicios" name="filter_services" domain="[('product_type', '=', 'service')]"/>
+
+                <separator/>
+                <filter string="Fecha Factura" name="filter_invoice_date" date="invoice_date"/>
+
+                <group expand="1" string="Agrupar por">
+                    <filter string="Vendedor" name="group_by_salesperson" domain="[]" context="{'group_by': 'salesperson_id'}"/>
+                    <filter string="Cliente" name="group_by_partner" domain="[]" context="{'group_by': 'partner_id'}"/>
+                    <filter string="Fecha (Mes)" name="group_by_date" domain="[]" context="{'group_by': 'invoice_date:month'}"/>
+                    <filter string="Condición" name="group_by_condition" domain="[]" context="{'group_by': 'sale_condition'}"/>
+                    <filter string="Tipo Movimiento" name="group_by_movement" domain="[]" context="{'group_by': 'movement_type'}"/>
+                    <filter string="Tipo de Venta" name="group_by_product_type" domain="[]" context="{'group_by': 'product_type'}"/>
+                    <filter string="Compañía" name="group_by_company" domain="[]" context="{'group_by': 'company_id'}" groups="base.group_multi_company"/>
+                </group>
+            </search>
+        </field>
+    </record>
+
+    <!-- Action Window -->
+    <record id="action_digiflex_sales_margin_report" model="ir.actions.act_window">
+        <field name="name">Ventas / Devoluciones (Margen y Utilidad)</field>
+        <field name="res_model">digiflex.sales.margin.report</field>
+        <field name="view_mode">tree,pivot,graph</field>
+        <field name="context">{'search_default_group_by_date': 1}</field>
+        <field name="help" type="html">
+            <p class="o_view_nocontent_smiling_face">
+                No se encontraron registros de ventas ni devoluciones.
+            </p>
+            <p>
+                Este reporte analiza el costo, subtotal de venta, utilidad y margen sobre costo de todas las facturas y notas de crédito confirmadas.
+            </p>
+        </field>
+    </record>
+
+</odoo>

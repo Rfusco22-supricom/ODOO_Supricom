@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <record id="view_brand_state_sales_report_pivot" model="ir.ui.view">
+        <field name="name">supricom.brand.state.sales.report.pivot</field>
+        <field name="model">supricom.brand.state.sales.report</field>
+        <field name="arch" type="xml">
+            <pivot string="Ventas por Marca y Estado" disable_linking="False">
+                <field name="state_id" type="row"/>
+                <field name="spiff_brand_id" type="col"/>
+                <field name="price_subtotal" type="measure"/>
+            </pivot>
+        </field>
+    </record>
+
+    <record id="view_brand_state_sales_report_graph" model="ir.ui.view">
+        <field name="name">supricom.brand.state.sales.report.graph</field>
+        <field name="model">supricom.brand.state.sales.report</field>
+        <field name="arch" type="xml">
+            <graph string="Ventas por Marca y Estado">
+                <field name="state_id"/>
+                <field name="price_subtotal" type="measure"/>
+            </graph>
+        </field>
+    </record>
+
+    <record id="view_brand_state_sales_report_tree" model="ir.ui.view">
+        <field name="name">supricom.brand.state.sales.report.tree</field>
+        <field name="model">supricom.brand.state.sales.report</field>
+        <field name="arch" type="xml">
+            <tree string="Detalle de Ventas" create="false" edit="false" delete="false">
+                <field name="date_order"/>
+                <field name="order_id" widget="many2one"/>
+                <field name="partner_id"/>
+                <field name="product_id"/>
+                <field name="state_id"/>
+                <field name="spiff_brand_id"/>
+                <field name="product_uom_qty"/>
+                <field name="price_subtotal"/>
+                <field name="company_id" groups="base.group_multi_company"/>
+                <button name="action_open_order" type="object" string="Abrir Orden" icon="fa-arrow-right"/>
+            </tree>
+        </field>
+    </record>
+
+    <record id="view_brand_state_sales_report_search" model="ir.ui.view">
+        <field name="name">supricom.brand.state.sales.report.search</field>
+        <field name="model">supricom.brand.state.sales.report</field>
+        <field name="arch" type="xml">
+            <search string="Ventas por Marca y Estado">
+                <field name="state_id"/>
+                <field name="spiff_brand_id"/>
+            </search>
+        </field>
+    </record>
+
+    <record id="action_brand_state_sales_report" model="ir.actions.act_window">
+        <field name="name">Ventas por Marca y Estado</field>
+        <field name="res_model">supricom.brand.state.sales.report</field>
+        <field name="view_mode">pivot,graph,tree</field>
+        <field name="search_view_id" ref="view_brand_state_sales_report_search"/>
+    </record>
+
+    <menuitem id="menu_brand_state_sales_report"
+              name="Ventas por Marca/Estado"
+              action="action_brand_state_sales_report"
+              parent="sale.menu_sale_report"
+              sequence="30"/>
+</odoo>

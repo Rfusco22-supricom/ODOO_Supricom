@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<templates xml:space="preserve">
+
+    <t t-name="chatroom.SaleIndicator" owl="1">
+        <div class="o_SaleIndicator">
+            <div class="o_graph_barchart">
+                <canvas t-ref="canvas" />
+            </div>
+            <t t-if="htmlLastSale">
+                <t t-out="htmlLastSale" />
+            </t>
+        </div>
+    </t>
+
+</templates>

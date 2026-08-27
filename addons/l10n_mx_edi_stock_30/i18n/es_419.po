@@ -1,0 +1,302 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+# * l10n_mx_edi_stock_30
+#
+# Weblate <noreply-mt-weblate@weblate.org>, 2025, 2026.
+# "Fernanda Alvarez (mfar)" <mfar@odoo.com>, 2026.
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 17.0+e\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-04-03 19:08+0000\n"
+"PO-Revision-Date: 2026-06-20 08:03+0000\n"
+"Last-Translator: \"Fernanda Alvarez (mfar)\" <mfar@odoo.com>\n"
+"Language-Team: Spanish (Latin America) <https://translate.odoo.com/projects/"
+"odoo-17-l10n/l10n_mx_edi_stock_30/es_419/>\n"
+"Language: es_419\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: \n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+"X-Generator: Weblate 2026.6.1\n"
+
+#. module: l10n_mx_edi_stock_30
+#: model:ir.actions.report,print_report_name:l10n_mx_edi_stock_30.action_report_cartaporte
+msgid "'Carta Porte - %s - %s' % (object.partner_id.name or '', object.name)"
+msgstr "'Carta Porte - %s - %s' % (object.partner_id.name or '', object.name)"
+
+#. module: l10n_mx_edi_stock_30
+#: model_terms:ir.ui.view,arch_db:l10n_mx_edi_stock_30.l10n_mx_edi_stock_report_cartaporte
+msgid "<strong>Autotransporte</strong>"
+msgstr "<strong>Autotransporte</strong>"
+
+#. module: l10n_mx_edi_stock_30
+#: model_terms:ir.ui.view,arch_db:l10n_mx_edi_stock_30.l10n_mx_edi_stock_report_cartaporte
+msgid "<strong>Carta Porte</strong> (CCP ID:"
+msgstr "<strong>Carta Porte</strong> (CCP ID:"
+
+#. module: l10n_mx_edi_stock_30
+#: model_terms:ir.ui.view,arch_db:l10n_mx_edi_stock_30.l10n_mx_edi_stock_report_cartaporte
+msgid "<strong>Destino</strong>"
+msgstr "<strong>Destino</strong>"
+
+#. module: l10n_mx_edi_stock_30
+#: model_terms:ir.ui.view,arch_db:l10n_mx_edi_stock_30.l10n_mx_edi_stock_report_cartaporte
+msgid "<strong>Figura Transporte</strong>"
+msgstr "<strong>Figura Transporte</strong>"
+
+#. module: l10n_mx_edi_stock_30
+#: model_terms:ir.ui.view,arch_db:l10n_mx_edi_stock_30.l10n_mx_edi_stock_report_cartaporte
+msgid "<strong>Mercancías</strong>"
+msgstr "<strong>Mercancías</strong>"
+
+#. module: l10n_mx_edi_stock_30
+#: model_terms:ir.ui.view,arch_db:l10n_mx_edi_stock_30.l10n_mx_edi_stock_report_cartaporte
+msgid "<strong>Origen</strong>"
+msgstr "<strong>Origen</strong>"
+
+#. module: l10n_mx_edi_stock_30
+#: model:ir.model.fields,help:l10n_mx_edi_stock_30.field_stock_picking__l10n_mx_edi_idccp
+msgid "Additional UUID for the Delivery Guide."
+msgstr "UUID adicional para la Carta Porte."
+
+#. module: l10n_mx_edi_stock_30
+#: model_terms:ir.ui.view,arch_db:l10n_mx_edi_stock_30.l10n_mx_edi_stock_report_cartaporte
+msgid "Asegura Resp Civil:"
+msgstr "Asegura Resp Civil:"
+
+#. module: l10n_mx_edi_stock_30
+#: model_terms:ir.ui.view,arch_db:l10n_mx_edi_stock_30.l10n_mx_edi_stock_report_cartaporte
+msgid "Año Modelo:"
+msgstr "Año Modelo:"
+
+#. module: l10n_mx_edi_stock_30
+#: model_terms:ir.ui.view,arch_db:l10n_mx_edi_stock_30.l10n_mx_edi_stock_report_cartaporte
+msgid "Calle:"
+msgstr "Calle:"
+
+#. module: l10n_mx_edi_stock_30
+#: model:ir.actions.report,name:l10n_mx_edi_stock_30.action_report_cartaporte
+msgid "Carta Porte"
+msgstr "Carta Porte"
+
+#. module: l10n_mx_edi_stock_30
+#: model_terms:ir.ui.view,arch_db:l10n_mx_edi_stock_30.l10n_mx_edi_stock_report_cartaporte
+msgid "Cartaporte Barcode"
+msgstr "Código de barras de la Carta Porte"
+
+#. module: l10n_mx_edi_stock_30
+#: model_terms:ir.ui.view,arch_db:l10n_mx_edi_stock_30.l10n_mx_edi_stock_report_cartaporte
+msgid "Config Vehícular:"
+msgstr "Config Vehicular:"
+
+#. module: l10n_mx_edi_stock_30
+#: model_terms:ir.ui.view,arch_db:l10n_mx_edi_stock_30.l10n_mx_edi_stock_report_cartaporte
+msgid "Código Postal:"
+msgstr "Código Postal:"
+
+#. module: l10n_mx_edi_stock_30
+#: model_terms:ir.ui.view,arch_db:l10n_mx_edi_stock_30.l10n_mx_edi_stock_report_cartaporte
+msgid "Destino ID:"
+msgstr "ID Destino:"
+
+#. module: l10n_mx_edi_stock_30
+#: model_terms:ir.ui.view,arch_db:l10n_mx_edi_stock_30.l10n_mx_edi_stock_report_cartaporte
+msgid "Distancia Recorrida:"
+msgstr "Distancia Recorrida:"
+
+#. module: l10n_mx_edi_stock_30
+#: model_terms:ir.ui.view,arch_db:l10n_mx_edi_stock_30.l10n_mx_edi_stock_report_cartaporte
+msgid "Estado:"
+msgstr "Estado:"
+
+#. module: l10n_mx_edi_stock_30
+#: model:ir.model.fields,field_description:l10n_mx_edi_stock_30.field_l10n_mx_edi_vehicle__gross_vehicle_weight
+#: model:ir.model.fields,field_description:l10n_mx_edi_stock_30.field_stock_picking__l10n_mx_edi_gross_vehicle_weight
+msgid "Gross Vehicle Weight"
+msgstr "Peso Bruto de Vehículo"
+
+#. module: l10n_mx_edi_stock_30
+#: model:ir.model.fields,field_description:l10n_mx_edi_stock_30.field_stock_picking__l10n_mx_edi_idccp
+msgid "IdCCP"
+msgstr "IdCCP"
+
+#. module: l10n_mx_edi_stock_30
+#: model:ir.model.fields.selection,name:l10n_mx_edi_stock_30.selection__l10n_mx_edi_figure__type__05
+msgid "Integrante de Coordinados"
+msgstr "Integrante de Coordinados"
+
+#. module: l10n_mx_edi_stock_30
+#: model_terms:ir.ui.view,arch_db:l10n_mx_edi_stock_30.l10n_mx_edi_stock_report_cartaporte
+msgid "Km"
+msgstr "Km"
+
+#. module: l10n_mx_edi_stock_30
+#: model:ir.model.fields,field_description:l10n_mx_edi_stock_30.field_stock_picking__l10n_mx_edi_is_delivery_guide_needed
+msgid "L10N Mx Edi Is Delivery Guide Needed"
+msgstr "Se necesita la Carta Porte"
+
+#. module: l10n_mx_edi_stock_30
+#: model_terms:ir.ui.view,arch_db:l10n_mx_edi_stock_30.l10n_mx_edi_stock_report_cartaporte
+msgid "Licencia:"
+msgstr "Licencia:"
+
+#. module: l10n_mx_edi_stock_30
+#: model_terms:ir.ui.view,arch_db:l10n_mx_edi_stock_30.l10n_mx_edi_stock_report_cartaporte
+msgid "Llegada:"
+msgstr "Llegada:"
+
+#. module: l10n_mx_edi_stock_30
+#: model:ir.model,name:l10n_mx_edi_stock_30.model_l10n_mx_edi_vehicle
+msgid "MX EDI Vehicle"
+msgstr "Vehículo MX EDI"
+
+#. module: l10n_mx_edi_stock_30
+#: model:ir.model,name:l10n_mx_edi_stock_30.model_l10n_mx_edi_figure
+msgid "MX EDI Vehicle Intermediary Figure"
+msgstr "Figura de transporte MX EDI"
+
+#. module: l10n_mx_edi_stock_30
+#: model:ir.model,name:l10n_mx_edi_stock_30.model_l10n_mx_edi_document
+msgid "Mexican documents that needs to transit outside of Odoo"
+msgstr "Documentos mexicanos que se deben procesar fuera de Odoo"
+
+#. module: l10n_mx_edi_stock_30
+#: model_terms:ir.ui.view,arch_db:l10n_mx_edi_stock_30.l10n_mx_edi_stock_report_cartaporte
+msgid "Municipio:"
+msgstr "Municipio:"
+
+#. module: l10n_mx_edi_stock_30
+#: model_terms:ir.ui.view,arch_db:l10n_mx_edi_stock_30.l10n_mx_edi_stock_report_cartaporte
+msgid "Num Total Mercancías:"
+msgstr "Num Total Mercancías:"
+
+#. module: l10n_mx_edi_stock_30
+#: model_terms:ir.ui.view,arch_db:l10n_mx_edi_stock_30.l10n_mx_edi_stock_report_cartaporte
+msgid "Núm Permiso SCT:"
+msgstr "Núm Permiso SCT:"
+
+#. module: l10n_mx_edi_stock_30
+#: model_terms:ir.ui.view,arch_db:l10n_mx_edi_stock_30.l10n_mx_edi_stock_report_cartaporte
+msgid "Núm Reg ID Trib:"
+msgstr "Núm Reg ID Trib:"
+
+#. module: l10n_mx_edi_stock_30
+#: model_terms:ir.ui.view,arch_db:l10n_mx_edi_stock_30.l10n_mx_edi_stock_report_cartaporte
+msgid "Origen ID:"
+msgstr "ID Origen:"
+
+#. module: l10n_mx_edi_stock_30
+#: model_terms:ir.ui.view,arch_db:l10n_mx_edi_stock_30.l10n_mx_edi_stock_report_cartaporte
+msgid "País Origen / Destino:"
+msgstr "País Origen / Destino:"
+
+#. module: l10n_mx_edi_stock_30
+#: model_terms:ir.ui.view,arch_db:l10n_mx_edi_stock_30.l10n_mx_edi_stock_report_cartaporte
+msgid "País:"
+msgstr "País:"
+
+#. module: l10n_mx_edi_stock_30
+#: model_terms:ir.ui.view,arch_db:l10n_mx_edi_stock_30.l10n_mx_edi_stock_report_cartaporte
+msgid "Perm SCT:"
+msgstr "Perm SCT:"
+
+#. module: l10n_mx_edi_stock_30
+#: model:ir.model.fields,help:l10n_mx_edi_stock_30.field_l10n_mx_edi_vehicle__gross_vehicle_weight
+msgid ""
+"Permitted weight of the vehicle (in tons) in accordance with NOM-"
+"SCT-012-2017."
+msgstr ""
+"El peso permitido del vehículo (en toneladas) según la NOM-SCT-012-2017."
+
+#. module: l10n_mx_edi_stock_30
+#: model_terms:ir.ui.view,arch_db:l10n_mx_edi_stock_30.l10n_mx_edi_stock_report_cartaporte
+msgid "Peso Bruto Total:"
+msgstr "Peso Bruto Total:"
+
+#. module: l10n_mx_edi_stock_30
+#: model_terms:ir.ui.view,arch_db:l10n_mx_edi_stock_30.l10n_mx_edi_stock_report_cartaporte
+msgid "Peso Bruto Vehícular:"
+msgstr "Peso Bruto Vehícular:"
+
+#. module: l10n_mx_edi_stock_30
+#: model_terms:ir.ui.view,arch_db:l10n_mx_edi_stock_30.l10n_mx_edi_stock_report_cartaporte
+msgid "Placa:"
+msgstr "Placa:"
+
+#. module: l10n_mx_edi_stock_30
+#. odoo-python
+#: code:addons/l10n_mx_edi_stock_30/models/stock_picking.py:0
+#, python-format
+msgid "Please define a gross vehicle weight."
+msgstr "Define un peso bruto vehicular."
+
+#. module: l10n_mx_edi_stock_30
+#: model_terms:ir.ui.view,arch_db:l10n_mx_edi_stock_30.stock_picking_form_inherit_l10n_mx_edi_stock_30
+msgid "Print Carta Porte"
+msgstr "Imprimir Carta Porte"
+
+#. module: l10n_mx_edi_stock_30
+#: model_terms:ir.ui.view,arch_db:l10n_mx_edi_stock_30.l10n_mx_edi_stock_report_cartaporte
+msgid "Póliza Resp Civil:"
+msgstr "Póliza Resp Civil:"
+
+#. module: l10n_mx_edi_stock_30
+#: model_terms:ir.ui.view,arch_db:l10n_mx_edi_stock_30.l10n_mx_edi_stock_report_cartaporte
+msgid "RFC Destinatario:"
+msgstr "RFC Destinatario:"
+
+#. module: l10n_mx_edi_stock_30
+#: model_terms:ir.ui.view,arch_db:l10n_mx_edi_stock_30.l10n_mx_edi_stock_report_cartaporte
+msgid "RFC Remitente:"
+msgstr "RFC Remitente:"
+
+#. module: l10n_mx_edi_stock_30
+#: model_terms:ir.ui.view,arch_db:l10n_mx_edi_stock_30.l10n_mx_edi_stock_report_cartaporte
+msgid "Res Fiscal:"
+msgstr "Res Fiscal:"
+
+#. module: l10n_mx_edi_stock_30
+#: model_terms:ir.ui.view,arch_db:l10n_mx_edi_stock_30.l10n_mx_edi_stock_report_cartaporte
+msgid "Residencia Fiscal:"
+msgstr "Residencia Fiscal:"
+
+#. module: l10n_mx_edi_stock_30
+#: model_terms:ir.ui.view,arch_db:l10n_mx_edi_stock_30.l10n_mx_edi_stock_report_cartaporte
+msgid "Salida:"
+msgstr "Salida:"
+
+#. module: l10n_mx_edi_stock_30
+#: model_terms:ir.ui.view,arch_db:l10n_mx_edi_stock_30.l10n_mx_edi_stock_report_cartaporte
+msgid "Tipo:"
+msgstr "Tipo:"
+
+#. module: l10n_mx_edi_stock_30
+#: model_terms:ir.ui.view,arch_db:l10n_mx_edi_stock_30.l10n_mx_edi_stock_report_cartaporte
+msgid "Total Distancia Recorrida:"
+msgstr "Total Distancia Recorrida:"
+
+#. module: l10n_mx_edi_stock_30
+#: model:ir.model,name:l10n_mx_edi_stock_30.model_stock_picking
+msgid "Transfer"
+msgstr "Transferir "
+
+#. module: l10n_mx_edi_stock_30
+#: model_terms:ir.ui.view,arch_db:l10n_mx_edi_stock_30.l10n_mx_edi_stock_report_cartaporte
+msgid "Transporte Internacional:"
+msgstr "Transporte Internacional:"
+
+#. module: l10n_mx_edi_stock_30
+#: model:ir.model.fields,field_description:l10n_mx_edi_stock_30.field_l10n_mx_edi_figure__type
+msgid "Type"
+msgstr "Tipo"
+
+#. module: l10n_mx_edi_stock_30
+#: model_terms:ir.ui.view,arch_db:l10n_mx_edi_stock_30.l10n_mx_edi_stock_report_cartaporte
+msgid "Via Entrada / Salida:"
+msgstr "Via Entrada / Salida:"
+
+#. module: l10n_mx_edi_stock_30
+#: model_terms:ir.ui.view,arch_db:l10n_mx_edi_stock_30.l10n_mx_edi_stock_report_cartaporte
+msgid "t"
+msgstr "t"

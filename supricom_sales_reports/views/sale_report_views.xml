@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <!-- Inherit Search View to add filter and group by for spiff_brand_id -->
+    <record id="view_order_product_search_inherit_spiff_brand" model="ir.ui.view">
+        <field name="name">sale.report.search.inherit.spiff.brand</field>
+        <field name="model">sale.report</field>
+        <field name="inherit_id" ref="sale.view_order_product_search"/>
+        <field name="arch" type="xml">
+            <field name="product_tmpl_id" position="after">
+                <field name="spiff_brand_id"/>
+            </field>
+            <filter name="Category" position="after">
+                <filter string="Marca (SPIFF)" name="group_by_spiff_brand_id" context="{'group_by': 'spiff_brand_id'}"/>
+            </filter>
+        </field>
+    </record>
+
+    <!-- Inherit Tree View to show spiff_brand_id column -->
+    <record id="sale_report_view_tree_inherit_spiff_brand" model="ir.ui.view">
+        <field name="name">sale.report.view.tree.inherit.spiff.brand</field>
+        <field name="model">sale.report</field>
+        <field name="inherit_id" ref="sale.sale_report_view_tree"/>
+        <field name="arch" type="xml">
+            <field name="product_id" position="after">
+                <field name="spiff_brand_id" optional="show"/>
+            </field>
+        </field>
+    </record>
+</odoo>

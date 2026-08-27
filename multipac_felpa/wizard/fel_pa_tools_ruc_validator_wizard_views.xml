@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    
+    <record id="fel_pa_tools_ruc_validator_wizard_form_view" model="ir.ui.view">
+        <field name="name">fel_pa_tools_ruc_validator_wizard_form_view</field>
+        <field name="model">fel_pa.tools.ruc_validator_wizard</field>
+        <field name="arch" type="xml">
+            <form>
+                <sheet>
+                    <group>
+                        <group>
+                            <field name="partner_id" readonly="1"/>
+                            <field name="fel_pa_ruc"/>
+                        </group>
+                        <group>
+                            <field name="fel_pa_recipient_type"/>
+                            <field name="fel_pa_taxpayer_type"/>
+                        </group>
+                    </group>
+                </sheet>
+                <footer>
+                    <button name="action_validate_ruc" string="Validate RUC" type="object" default_focus="1" class="oe_highlight"/>
+                    <button string="Cancel" class="btn btn-secondary" special="cancel" />
+                </footer>
+            </form>
+        </field>
+    </record>
+
+    <record id="action_ruc_validator_wizard" model="ir.actions.act_window">
+        <field name="name">FEL RUC Validator</field>
+        <field name="res_model">fel_pa.tools.ruc_validator_wizard</field>
+        <field name="view_mode">form</field>
+        <field name="target">new</field>
+    </record>
+
+</odoo>

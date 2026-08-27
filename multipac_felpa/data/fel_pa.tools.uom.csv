@@ -1,0 +1,163 @@
+id,name,code
+fel_pa_uom_um,Micrómetro: 10-6 m,um
+fel_pa_uom_mm,Milímetro: 10-3 m,mm
+fel_pa_uom_cm,Centímetro: 10-2 m,cm
+fel_pa_uom_dm,Decímetro: 10-1 m,dm
+fel_pa_uom_m,Metro,m
+fel_pa_uom_dam,Decámetro: 10 m,dam
+fel_pa_uom_hm,Hectómetro: 100 m,hm
+fel_pa_uom_km,Kilómetro: 1000 m,km
+fel_pa_uom_mi,Milla internacional: 1609.3 m,mi
+fel_pa_uom_nmi,Milla náutica: 1.852 m,nmi
+fel_pa_uom_in,Pulgada: 2.54 cm,in
+fel_pa_uom_ft,"Pie: 12 in, o 30.48 cm",ft
+fel_pa_uom_yd,"Yarda: 3 ft, o 91.44 cm",yd
+fel_pa_uom_mm2,Milímetro cuadrado,mm2
+fel_pa_uom_cm2,Centímetro cuadrado,cm2
+fel_pa_uom_dm2,Decímetro cuadrado,dm2
+fel_pa_uom_m2,Metro cuadrado,m2
+fel_pa_uom_ha,Hectárea: 1000 m2,ha
+fel_pa_uom_km2,Kilómetro cuadrado,km2
+fel_pa_uom_acre,Acre: 4046.87260987 m2,acre
+fel_pa_uom_mi2,Milla cuadrada,mi2
+fel_pa_uom_ping,Unidad de área equivalente a 3.3 metros cuadrados.,Ping
+fel_pa_uom_in2,Pulgada cuadrada,in2
+fel_pa_uom_ft2,Pie cuadrado,Ft2
+fel_pa_uom_yd2,Yarda cuadrada,yd2
+fel_pa_uom_ul,Microlitro: 10-6 l,ul
+fel_pa_uom_ml,Mililitro: 10-3 l,ml
+fel_pa_uom_cl,Centilitro: 10-2 l,cl
+fel_pa_uom_dl,Decilitro: 10-1 l,dl
+fel_pa_uom_l,Litro,l
+fel_pa_uom_dal,Decalitro: 10 l,dal
+fel_pa_uom_hl,Hectolitro: 100 l,hl
+fel_pa_uom_kl,Kilolitro: 1000 l,kl
+fel_pa_uom_mm3,Milímetro cúbico: 10-6 l,mm3
+fel_pa_uom_cm3,Centímetro cúbico: 10-3 l,cm3
+fel_pa_uom_dm3,Decímetro cúbico: 1 l,dm3
+fel_pa_uom_m3,Metro cúbico: 1000 l,m3
+fel_pa_uom_fl_oz,Onza líquida EUA: 29.5735295625 ml,fl oz
+fel_pa_uom_gill,"Gill: 4 fl oz, o 118.29411825 ml",gill
+fel_pa_uom_pint,"Pinta líquida EUA: 4 gills, 16 fl oz o 473.17647 ml",pint
+fel_pa_uom_quart,"Cuarto EUA: 2 pt, 8 gills, 32 fl oz o 0.94635295 l",quart
+fel_pa_uom_gal,"Galón EUA: 4 qt, 8 pt, 32 gills, 128 fl u oz 3.875 l",gal
+fel_pa_uom_fl_oz_uk,Onza líquida UK: 28.4130625 ml,fl oz UK
+fel_pa_uom_gill_uk,"Gill UK: 4 fl oz UK, o 142.0653125 ml",gill UK
+fel_pa_uom_pint_uk,Pinta líquida UK: 568.26125 ml,pint UK
+fel_pa_uom_quart_uk,Cuarto UK: 1.1365225 l,quart UK
+fel_pa_uom_gal_uk,Galón UK: 4.54609 l,gal UK
+fel_pa_uom_pinta_seca,Pinta seca: 550.610471358 ml,pinta seca
+fel_pa_uom_cuarto_seco,"Cuarto seco: 2 pinta seca, o 1.10122094272 l",cuarto seco
+fel_pa_uom_galon_seco,"Galón seco: 4 cuarto seco, 8 pinta seca, o 4.40488377086 l",galon seco
+fel_pa_uom_pk,"Peck: 2 galón seco, 8 cuarto seco, 16 pinta seca, o 8.80976754172 l",pk
+fel_pa_uom_bu,"Bushel (EUA): 8 gal, o 35.23907 l",bu
+fel_pa_uom_pinta_seca_uk,Pinta seca UK: 661.25560456 ml,pinta seca UK
+fel_pa_uom_cuarto_seco_uk,"Cuarto seco UK: 2 pinta seca UK, o 1,32251120912 l",cuarto seco UK
+fel_pa_uom_pk_uk,"Peck: 8 cuarto seco UK, 16 pinta seca UK, o 10.5800896729 l",pk UK
+fel_pa_uom_bu_uk,"Bushel (UK): 4 pk UK, o 42.3203586918 l",bu UK
+fel_pa_uom_in3,"Pulgada cúbica: 16,387064 cm³",in3
+fel_pa_uom_ft3,"Pie cúbico: 1728 in³, o 28,316846592 dm³",Ft3
+fel_pa_uom_yd3,"Yarda cúbica: 27 ft³, 46 656 in³ o 764.554857984 dm³",yd3
+fel_pa_uom_ug,Microgramo: 10-6 g,ug
+fel_pa_uom_mg,Miligramo: 10-3 g,mg
+fel_pa_uom_cg,Centígramo: 10-2 g,cg
+fel_pa_uom_dg,Decigramo: 10-1 g,dg
+fel_pa_uom_g,Gramo,g
+fel_pa_uom_dag,Decagramo: 10 g,dag
+fel_pa_uom_hg,Héctogramo: 100 g,hg
+fel_pa_uom_kg,Kilogramo: 1000 g,kg
+fel_pa_uom_t,Tonelada: 1000 kg,t
+fel_pa_uom_ton,Tonelada Curta: 907.18474 Kg,ton
+fel_pa_uom_ltn,Tonelada Longa: 1016.0469088 Kg,LTN
+fel_pa_uom_tn,"Tonelada de carga: Unidad de información que normalmente se utiliza para la facturación, que se define como sea el número de toneladas métricas o el número de metros cúbicos, lo que sea mayor",TN
+fel_pa_uom_gr,"Grain (1/7000 lb, o 64.79 mg)",gr
+fel_pa_uom_dr,"Dram (1/256 lb, 1/16 oz, o 1.772 g)",dr
+fel_pa_uom_oz,"Onza (1/16 lb, o 28.35 g)",oz
+fel_pa_uom_lb,Libra (453.6 g),lb
+fel_pa_uom_st,"Stone (14 lb, 1/2 qr, o 6.3504 kg)",st
+fel_pa_uom_qr,"Quarter (28 lb, o 12.708 kg)",qr
+fel_pa_uom_cwt,Hundredweight (50.8 kg),cwt
+fel_pa_uom_ozt,Onza troy: 31.103 g,ozt
+fel_pa_uom_lbt,Libra troy: 373.24 g,lbt
+fel_pa_uom_dwt,Pennyweight: 1.55 g,dwt
+fel_pa_uom_ct,"Quilate métrico: 200 mg (se utiliza para la medición de oro, piedras preciosas y perlas)",ct
+fel_pa_uom_unidad,Unidad,und
+fel_pa_uom_persona,Persona,Persona
+fel_pa_uom_cabeza,Cabeza: animal considerado como un número,Cabeza
+fel_pa_uom_grupo,Grupo: conjunto de elementos clasificados juntos,Grupo
+fel_pa_uom_bobina,Bobina,Bobina
+fel_pa_uom_decena,Unidad de recuento de definir el número de unidades en múltiplos de 10,Decena
+fel_pa_uom_docena,Unidad de recuento de definir el número de unidades en múltiplos de 12,Docena
+fel_pa_uom_ciento,Unidad de cuenta que define el número de unidades contadas en múltiplos de 100,Ciento
+fel_pa_uom_viaje,Viaje,Viaje
+fel_pa_uom_visita,Visita,Visita
+fel_pa_uom_barrica,Barrica,Barrica
+fel_pa_uom_barril,Barril,Barril
+fel_pa_uom_blanco,Unidad de conteo que define el número de blancos,Blanco
+fel_pa_uom_bolso,Recipiente de material flexible con tapa abierta o cerrada,Bolso
+fel_pa_uom_caja,Caja,Caja
+fel_pa_uom_cesta,Cesta,Cesta
+fel_pa_uom_btu,Unidad térmica británica,BTU
+fel_pa_uom_bit,Unidad de información igual a un dígito binario,bit
+fel_pa_uom_bits,Bits por segundo: Unidad de información igual a un dígito binario por segundo,bit/s
+fel_pa_uom_kbit,Kilobits: Unidad de información igual a 10³ (1000) bits (dígitos binarios),kbit
+fel_pa_uom_kbits,Kilobits por segundo: Unidad de información igual a 10 ³ (1000) bits (dígitos binarios) por segundo,kbit/s
+fel_pa_uom_kibit,Kibibit: Unidad de información igual a 2¹⁰ (1024) bits (dígitos binarios),Kibit
+fel_pa_uom_mbit,Megabit: Unidad de información igual a 10⁶ (1000000) bits (dígitos binarios),Mbit
+fel_pa_uom_mbits,Megabit por segundo: Unidad de información igual a 10⁶ (1000000) bits (dígitos binarios) por segundo.,Mbit/s
+fel_pa_uom_mibit,Mebibit: Unidad de información igual a 2²⁰ (1048576) bits (dígitos binarios),Mibit
+fel_pa_uom_gbit,Gigabit: Unidad de información igual a 10⁹ bits (dígitos binarios),Gbit
+fel_pa_uom_gbits,Gigabit por segundo: Unidad de información igual a 10⁹ bits (dígitos binarios) por segundo,Gbit/s
+fel_pa_uom_gibit,Gibibit: Unidad de información igual a 2³⁰ bits (dígitos binarios),Gibit
+fel_pa_uom_pbit,Petabit: Unidad de información igual a 10¹⁵ los bits (dígitos binarios),Pbit
+fel_pa_uom_tbit,Tebibit: Unidad de información igual a 10¹² los bits (dígitos binarios),Tbit
+fel_pa_uom_byte,Byte: Unidad de información igual a 8 bits,byte
+fel_pa_uom_kbyte,Kilobyte: Unidad de información igual a 103 bytes,kbyte
+fel_pa_uom_mbyte,Mbyte: Unidad de información igual a 106 bytes,Mbyte
+fel_pa_uom_gbyte,Gigabyte: Unidad de información igual a 109 bytes,Gbyte
+fel_pa_uom_tbyte,Terabyte: Unidad de información igual a 1012 bytes,Tbyte
+fel_pa_uom_pbyte,Petabyte: Unidad de información igual a 1015bytes,Pbyte
+fel_pa_uom_ebyte,Exbibyte: Unidad de información igual a 1018 bytes,Ebyte
+fel_pa_uom_kibyte,Kibibyte: Unidad de información igual a 2¹⁰ bytes,Kibyte
+fel_pa_uom_mibyte,Mebibyte: Unidad de información igual a 2²⁰ bytes,Mibyte
+fel_pa_uom_gibyte,Gibibyte: Unidad de información igual a 2³⁰ bytes,Gibyte
+fel_pa_uom_tibyte,Tebibyte: Unidad de información igual a 2⁴⁰ bytes,Tibyte
+fel_pa_uom_kcaracter,Kilocaracter: Unidad de información igual a 10³ caracteres,Kcaracter
+fel_pa_uom_pixel,Unidad de recuento de definir el número de píxeles (píxel: elemento de imagen),Pixel
+fel_pa_uom_mpixel,Megapíxeles: Unidad de recuento igual a 10⁶ (1000000) píxeles (elementos de imagen),MPixel
+fel_pa_uom_dpi,Puntos por pulgada: Número de puntos por pulgada lineal,dpi
+fel_pa_uom_lineas_acceso,Número de líneas de acceso telefónico,Lineas acceso
+fel_pa_uom_lineas_servicio,Número de líneas de servicio,Lineas servicio
+fel_pa_uom_llamada,Una unidad de recuento de definir el número de llamadas,Llamada
+fel_pa_uom_mml,Minuto y medio por llamada: Número de minutos (para el intervalo medio de una llamada),MML
+fel_pa_uom_puerto,Puerto de telecomunicaciones: Número de puerto de acceso a la red,Puerto
+fel_pa_uom_w,Watt,W
+fel_pa_uom_kw,Kilowatt,kW
+fel_pa_uom_mw,Megawatt,MW
+fel_pa_uom_gw,Gigawatt,GW
+fel_pa_uom_tw,Terawatt,TW
+fel_pa_uom_wh,Watt hora,Wh
+fel_pa_uom_kwh,Kilowatt hora,kWh
+fel_pa_uom_mwh,Megawatt hora,MWh
+fel_pa_uom_gwh,Gigawatt hora,GWh
+fel_pa_uom_twh,Terawatt hora,TWh
+fel_pa_uom_va,Voltio-amperio,VA
+fel_pa_uom_kva,Kilooltio-amperio,kVA
+fel_pa_uom_mva,Megavoltio-amperio,MVA
+fel_pa_uom_denier,Unidad tradicional para la indicación de la masa lineal de fibras e hilados textiles,Denier
+fel_pa_uom_lbb,Libra de bateo: Unidad de masa que define el número de libras de fibra acolchada,lbb
+fel_pa_uom_madeja,"Unidad de longitud, típicamente para el hilado",Madeja
+fel_pa_uom_ano,Unidad de tiempo equivalente a 365.25 días,Ano
+fel_pa_uom_ano_comun,"Es un año civil de 365 días, uno menos que el año bisiesto, por lo que tiene exactamente 52 semanas y un día",Ano comun
+fel_pa_uom_mes,Mes,Mes
+fel_pa_uom_dia,Dia,Dia
+fel_pa_uom_hora,Hora,Hora
+fel_pa_uom_min,Minuto,Min
+fel_pa_uom_seg,Segundo,Seg
+fel_pa_uom_semana,Período de tiempo estándar utilizado para los ciclos de días de trabajo y de descanso,Semana
+fel_pa_uom_actividad,Actividad: una unidad de trabajo o acción,Actividad
+fel_pa_uom_hora_trabajo,Número de horas de trabajo,Hora trabajo
+fel_pa_uom_hora_extra,Número de horas extras,Hora extra
+fel_pa_uom_mes_trabajo,Número de meses de trabajo,Mes trabajo
+fel_pa_uom_personas,Número de personas,Personas
+fel_pa_uom_puesto,Número de puestos de trabajo,Puesto

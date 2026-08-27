@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<odoo>
+    <data>
+        <!-- Plantilla de correo para notificación al SENIAT -->
+        <record id="mail_template_notify_seniat" model="mail.template">
+            <field name="name">Notificación al SENIAT</field>
+            <field name="email_from">ing.andresecas@gmail.com</field>
+            <field name="email_to">andresecas150801@gmail.com</field>
+            <field name="subject">Órdenes de Entrega Pendientes</field>
+            <field name="model_id" ref="account_accountant.model_account_change_lock_date"/>
+            <field name="body_html"><![CDATA[
+                <html>
+                <body>
+                        <p>Hola,</p>
+                    <p>Este es un aviso automático para informar sobre <strong>órdenes de entrega pendientes</strong> al establecer fecha de bloqueo en sistema:</p>
+                    <ul>
+                        <t t-set="orders" t-value="ctx.get('orders_details', [])"/>
+                        <t t-foreach="orders" t-as="order">
+                            <li><t t-out="order['name']"/> - <t t-out="order['date']"/></li>
+                        </t>
+                    </ul>
+                    <p>Por favor revisar lo antes posible.</p>
+                    <p>Gracias,</p>
+                    <p><strong>Sistema Odoo <t t-out="user.company_id.name"/></strong></p>
+                    </body>
+                </html>
+            ]]></field>
+        </record>
+    </data>
+</odoo>

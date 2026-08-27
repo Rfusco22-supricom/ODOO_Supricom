@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <!-- Menu item under Payroll > Reporting -->
+    <menuitem id="menu_hr_payroll_report_rules"
+              name="Reporte de Reglas Salariales"
+              parent="hr_payroll.menu_hr_payroll_report"
+              action="hr_payroll_reports.action_hr_payroll_report_wizard"
+              sequence="50"/>
+</odoo>

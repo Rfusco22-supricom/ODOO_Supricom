@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<templates xml:space="preserve">
+
+    <t t-name="chatroom.Chatroom" t-inherit="whatsapp_connector.chatroom.Chatroom" t-inherit-mode="extension" owl="1">
+        <xpath expr="//TabsContainer" position="attributes">
+            <attribute name="saleFormView">saleFormView</attribute>
+        </xpath>
+    </t>
+
+</templates>

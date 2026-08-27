@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data>
+        <record id="extra_partner_venezuela_g3c" model="ir.ui.view">
+            <field name="name">Extra partner Venezuela G3C</field>
+            <field name="model">res.partner</field>
+            <field name="inherit_id" ref="l10n_ve_full.extra_partner_venezuela"/>
+            <field name="arch" type="xml">
+                <xpath expr="//field[@name='people_type_company']" position="before">
+                    <field name="is_venezuela" invisible="1"/>
+                </xpath>
+
+                <xpath expr="//field[@name='people_type_individual']" position="attributes">
+                    <attribute name="invisible">company_type == 'company' or not is_venezuela</attribute>
+                </xpath>
+
+                <xpath expr="//field[@name='people_type_company']" position="attributes">
+                    <attribute name="required">company_type == 'company' and is_venezuela</attribute>
+                    <attribute name="invisible">company_type == 'person' or not is_venezuela</attribute>
+                </xpath>
+
+                <xpath expr="//field[@name='nationality']" position="attributes">
+                    <attribute name="invisible">company_type == 'company' or not is_venezuela</attribute>
+                </xpath>
+                
+                <xpath expr="//field[@name='identification_id']" position="attributes">
+                    <attribute name="required">0</attribute>
+                    <attribute name="invisible">company_type == 'company' or not is_venezuela</attribute>
+                </xpath>
+
+                <xpath expr="//field[@name='rif']" position="attributes">
+                    <attribute name="readonly">0</attribute>
+                    <attribute name="invisible">people_type_company == 'pjnd' or not is_venezuela</attribute>
+                </xpath>
+            </field>
+        </record>
+    </data>
+</odoo>

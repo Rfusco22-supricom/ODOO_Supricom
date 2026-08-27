@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <!-- ============================================================ -->
+    <!-- product.template FORM view: replace list_price with company_sale_price -->
+    <!-- ============================================================ -->
+    <record id="product_template_form_company_price" model="ir.ui.view">
+        <field name="name">product.template.form.company.price</field>
+        <field name="model">product.template</field>
+        <field name="inherit_id" ref="product.product_template_only_form_view"/>
+        <field name="priority">50</field>
+        <field name="arch" type="xml">
+            <!-- Hide original Sales Price label + field -->
+            <xpath expr="//label[@for='list_price']" position="attributes">
+                <attribute name="invisible">1</attribute>
+            </xpath>
+            <xpath expr="//div[@name='pricing']" position="attributes">
+                <attribute name="invisible">1</attribute>
+            </xpath>
+            <!-- Add company_sale_price with label before the hidden pricing div -->
+            <xpath expr="//label[@for='list_price']" position="before">
+                <field name="company_has_dual_currency" invisible="1"/>
+                <field name="company_currency_id" invisible="1"/>
+                <label for="company_sale_price" string="Precio Base"/>
+                <div class="o_row" name="company_pricing">
+                    <field name="company_sale_price"
+                           widget="monetary"
+                           options="{'currency_field': 'company_currency_id', 'field_digits': True}"/>
+                </div>
+                <label for="company_sale_price_usd" string="Precio Base USD" invisible="1"/>
+                <div class="o_row" name="company_pricing_usd" invisible="1">
+                    <field name="company_sale_price_usd"/>
+                </div>
+            </xpath>
+        </field>
+    </record>
+
+    <!-- ============================================================ -->
+    <!-- product.template TREE view: replace list_price with company_sale_price -->
+    <!-- ============================================================ -->
+    <record id="product_template_tree_company_price" model="ir.ui.view">
+        <field name="name">product.template.tree.company.price</field>
+        <field name="model">product.template</field>
+        <field name="inherit_id" ref="product.product_template_tree_view"/>
+        <field name="priority">50</field>
+        <field name="arch" type="xml">
+            <xpath expr="//field[@name='list_price']" position="after">
+                <field name="company_has_dual_currency" column_invisible="1"/>
+                <field name="company_currency_id" column_invisible="1"/>
+                <field name="company_sale_price"
+                       widget="monetary"
+                       options="{'currency_field': 'company_currency_id'}"/>
+                <field name="company_sale_price_usd" string="Precio Base USD" column_invisible="1"/>
+            </xpath>
+            <xpath expr="//field[@name='list_price']" position="attributes">
+                <attribute name="column_invisible">1</attribute>
+            </xpath>
+        </field>
+    </record>
+
+    <!-- ============================================================ -->
+    <!-- product.product TREE view: replace lst_price with company_sale_prices -->
+    <!-- ============================================================ -->
+    <record id="product_product_tree_company_price" model="ir.ui.view">
+        <field name="name">product.product.tree.company.price</field>
+        <field name="model">product.product</field>
+        <field name="inherit_id" ref="product.product_product_tree_view"/>
+        <field name="priority">50</field>
+        <field name="arch" type="xml">
+            <xpath expr="//field[@name='lst_price']" position="after">
+                <field name="company_has_dual_currency" column_invisible="1"/>
+                <field name="company_currency_id" column_invisible="1"/>
+                <field name="company_sale_price"
+                       widget="monetary"
+                       options="{'currency_field': 'company_currency_id'}"/>
+                <field name="company_sale_price_usd" string="Precio Base USD" column_invisible="1"/>
+            </xpath>
+            <xpath expr="//field[@name='lst_price']" position="attributes">
+                <attribute name="column_invisible">1</attribute>
+            </xpath>
+        </field>
+    </record>
+
+
+    <!-- ============================================================ -->
+    <!-- product.template KANBAN view: replace price with company_sale_price -->
+    <!-- ============================================================ -->
+    <record id="product_template_kanban_company_price" model="ir.ui.view">
+        <field name="name">product.template.kanban.company.price</field>
+        <field name="model">product.template</field>
+        <field name="inherit_id" ref="product.product_template_kanban_view"/>
+        <field name="priority">50</field>
+        <field name="arch" type="xml">
+            <xpath expr="//div[@name='product_lst_price']" position="replace">
+                <field name="company_has_dual_currency" invisible="1"/>
+                <field name="company_currency_id" invisible="1"/>
+                <div name="product_lst_price">
+                    <field name="company_sale_price" widget="monetary"
+                           options="{'currency_field': 'company_currency_id'}"/>
+                </div>
+                <div name="product_lst_price_usd" t-if="record.company_has_dual_currency.raw_value" class="mt-1">
+                    <field name="company_sale_price_usd"/>
+                    <span> USD</span>
+                </div>
+            </xpath>
+            <!-- Eliminar el div de list_price para no-VE que inyecta account_dual_currency -->
+            <xpath expr="//div[@name='product_lst_price_base']" position="replace"/>
+
+        </field>
+    </record>
+
+</odoo>

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+
+    <!-- Menú del Reporte de Cuentas por Cobrar en Informes / Reporting -->
+    <menuitem id="menu_digiflex_cxc_report"
+              name="Cuentas por Cobrar"
+              action="action_digiflex_cxc_report"
+              parent="account.menu_finance_reports"
+              sequence="15"/>
+
+</odoo>

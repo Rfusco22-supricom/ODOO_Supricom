@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<templates>
+
+    <t t-name="account_dual_currency.CurrencyReportFiltersCode">
+        <Dropdown togglerClass="'btn btn-secondary'">
+            <t t-set-slot="toggler">
+                <i class="fa fa-money me-1" />Moneda: <t
+                    t-if="controller.options.get('currency_dif') != None">
+                    <span style="color: red;">
+                        <t t-esc="controller.options.get('currency_dif')" />
+                    </span>
+                </t>
+                <t
+                    t-else="">
+                    <span style="color: red;">
+                        <t t-esc="controller.options.get('currency_id_company_name')" />
+                    </span>
+                </t>
+            </t>
+
+            <DropdownItem
+                class="{ 'filter_currency_bolivares_hook': true, 'selected': (controller.options.currency.filter == 'Bolívares') }"
+                onSelected="() => this.updateFilter('currency.filter', 'Bolívares')"
+            >
+                <t t-esc="controller.options['currency_id_company_name']" />
+            </DropdownItem>
+
+            <DropdownItem
+                class="{ 'filter_currency_dolares_hook': true, 'selected': (controller.options.currency.filter == 'Dólares') }"
+                onSelected="() => this.updateFilter('currency.filter', 'Dólares')"
+            >
+                <t t-esc="controller.options['currency_id_dif_name']" />
+            </DropdownItem>
+        </Dropdown>
+    </t>
+
+    <t t-name="account_dual_currency.CurrencyReportFilters"
+        t-inherit="account_reports.AccountReportFiltersCustomizable">
+        <xpath expr="//div[@id='filter_extra_options']" position="before">
+            <t t-if="'currency_dif' in this.controller.options">
+                <div id="currency_dif" class="filter_exchange_rate">
+                    <t t-call="account_dual_currency.CurrencyReportFiltersCode" />
+                </div>
+            </t>
+            <!-- </t> -->
+        </xpath>
+    </t>
+</templates>

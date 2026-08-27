@@ -1,0 +1,213 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data>
+        <!-- product.product inherit form view -->
+        <record id="product_variant_easy_edit_view" model="ir.ui.view">
+            <field name="name">product.product.inherit.view.form</field>
+            <field name="model">product.product</field>
+            <field name="inherit_id" ref="product.product_variant_easy_edit_view"/>
+            <field name="arch" type="xml">
+                <xpath expr="//field[@name='currency_id']" position="before">
+                    <field name="standard_price_usd"/>
+                </xpath></field>
+        </record>
+        <!-- <record id="product.product_variant_easy_edit_view" model="ir.ui.view">
+            <field name="name">product.product.view.form.easy</field>
+            <field name="model">product.product</field>
+            <field name="mode">primary</field>
+            <field name="arch" type="xml">
+                <form string="Variant Information" duplicate="false">
+                    <header>
+                        <button string="Print Labels" type="object" name="action_open_label_layout"/>
+                    </header>
+                    <sheet>
+                        <div class="oe_button_box" name="button_box"/>
+                        <widget name="web_ribbon" title="Archived" bg_color="bg-danger" invisible="active"/>
+                        <field name="active" invisible="1"/>
+                        <field name="id" invisible="1"/>
+                        <field name="company_id" invisible="1"/>
+                        <field name="image_1920" widget="image" class="oe_avatar" options="{'preview_image': 'image_128'}"/>
+                        <div class="oe_title">
+                            <label for="name" string="Product Name"/>
+                            <h1><field name="name" readonly="1" placeholder="e.g. Odoo Enterprise Subscription"/></h1>
+                            <field name="product_template_attribute_value_ids" widget="many2many_tags" readonly="1"/>
+                            <p>
+                                <span>All general settings about this product are managed on</span>
+                                <button name="open_product_template" type="object" string="the product template." class="oe_link oe_link_product pl-0 ml-1 mb-1"/>
+                            </p>
+                        </div>
+                        <group>
+                            <group name="codes" string="Codes">
+                                <field name="default_code"/>
+                                <field name="barcode"/>
+                                <field name="type" invisible="1"/>
+                            </group>
+                            <group name="pricing" string="Pricing">
+                                <field name="product_variant_count" invisible="1"/>
+                                <label for="lst_price" string="Sales Price"/>
+                                <div class="o_row col-5 pl-0">
+                                    <field name="lst_price" widget='monetary' options="{'currency_field': 'currency_id', 'field_digits': True}" readonly="product_variant_count &gt; 1"/>
+                                </div>
+                                <field name="standard_price" widget='monetary' options="{'currency_field': 'cost_currency_id'}"/>
+                                <field name="standard_price_usd"/>
+                                <field name="currency_id" invisible='1'/>
+                                <field name="cost_currency_id" invisible="1"/>
+                            </group>
+                        </group>
+                        <group>
+                            <group name="weight" string="Logistics" invisible="type not in ['product', 'consu']">
+                                <label for="volume"/>
+                                <div class="o_row">
+                                    <field name="volume"/>
+                                    <span><field name="volume_uom_name"/></span>
+                                </div>
+                                <label for="weight"/>
+                                <div class="o_row">
+                                    <field name="weight"/>
+                                    <span><field name="weight_uom_name"/></span>
+                                </div>
+                            </group>
+                            <group name="packaging" string="Packaging" groups="product.group_stock_packaging">
+                                <field name="packaging_ids" nolabel="1"
+                                    context="{'tree_view_ref':'product.product_packaging_tree_view2', 'default_company_id': company_id}"/>
+                            </group>
+                        </group>
+                    </sheet>
+                </form></field>
+        </record> -->
+        <record id="product_template_dual_currency_form" model="ir.ui.view">
+            <field name="name">product.template.dual_currency</field>
+            <field name="model">product.template</field>
+            <field name="inherit_id" ref="product.product_template_form_view"/>
+            <field name="arch" type="xml">
+                <xpath expr="//field[@name='taxes_id']" position="attributes">
+                    <attribute name="domain">[('company_id', 'in', allowed_company_ids)]</attribute>
+                </xpath>
+                <xpath expr="//field[@name='taxes_id']" position="before">
+                    <field name="is_ve_company" invisible="1"/>
+                    <field name="list_price_usd" invisible="1"/>
+                    <field name="list_price_vat_usd" options="{'currency_field': 'currency_usd_id', 'field_digits': True}" readonly="1" widget="monetary" invisible="1"/>
+                </xpath>
+                <xpath expr="//div[@name='pricing']" position="after">
+                    <field name="list_price_vat" options="{'currency_field': 'currency_id', 'field_digits': True}" readonly="1" widget="monetary" invisible="1"/>
+                </xpath>
+                <xpath expr="//div[@name='standard_price_uom']" position="after">
+                    <label for="standard_price_usd" string="Costo USD" groups="base.group_user" invisible="product_variant_count > 1 and is_product_variant == False or not is_ve_company"/>
+                    <div class="o_row" groups="base.group_user" invisible="product_variant_count > 1 and is_product_variant == False or not is_ve_company" name="standard_price_uom_usd">
+                        <field name="standard_price_usd" string="Costo USD"/>
+                        <span class="oe_read_only" groups="uom.group_uom">
+                            por
+                            <field name="uom_name"/>
+                        </span>
+                    </div>
+                </xpath></field>
+        </record>
+        <record id="product_template_dual_currency_tree" model="ir.ui.view">
+            <field name="name">product.template.dual_currency_tree</field>
+            <field name="model">product.template</field>
+            <field name="inherit_id" ref="product.product_template_tree_view"/>
+            <field name="arch" type="xml">
+                <xpath expr="//field[@name='list_price']" position="after">
+                    <field name="is_ve_company" column_invisible="1"/>
+                    <field name="list_price_vat" invisible="1" optional="hide"/>
+                    <field name="list_price_usd" invisible="1" optional="hide"/>
+                    <field name="list_price_vat_usd" invisible="1" optional="hide"/>
+                </xpath>
+                <xpath expr="//field[@name='standard_price']" position="after">
+                    <field name="standard_price_usd"/>
+                </xpath></field>
+        </record>
+        <record id="product_template_account_dual_currency_tree" model="ir.ui.view">
+            <field name="name">product.template.account.dual_currency_tree</field>
+            <field name="model">product.template</field>
+            <field name="inherit_id" ref="account.product_template_view_tree"/>
+            <field name="arch" type="xml">
+                <xpath expr="//field[@name='list_price']" position="after">
+                    <field name="list_price_vat" invisible="1"/>
+                    <field name="list_price_usd" invisible="1"/>
+                    <field name="list_price_vat_usd" invisible="1"/>
+                </xpath></field>
+        </record>
+        <record id="product_product_dual_currency_tree" model="ir.ui.view">
+            <field name="name">product.product.dual_currency_tree</field>
+            <field name="model">product.product</field>
+            <field name="inherit_id" ref="product.product_product_tree_view"/>
+            <field name="arch" type="xml">
+                <xpath expr="//field[@name='lst_price']" position="after">
+                    <field name="is_ve_company" column_invisible="1"/>
+                    <field name="list_price_vat" invisible="1" optional="hide"/>
+                    <field name="list_price_usd" invisible="1" optional="hide"/>
+                    <field name="list_price_vat_usd" invisible="1" optional="hide"/>
+                </xpath>
+                <xpath expr="//field[@name='standard_price']" position="after">
+                    <field name="standard_price_usd"/>
+                </xpath></field>
+        </record>
+        <record id="product_template_dual_currency_kanban" model="ir.ui.view">
+            <field name="name">product.template.dual_currency_kanban</field>
+            <field name="model">product.template</field>
+            <field name="inherit_id" ref="product.product_template_kanban_view"/>
+            <field name="arch" type="xml">
+                <xpath expr="//div[@name='product_lst_price']" position="replace">
+                    <field name="is_ve_company" invisible="1"/>
+                    <div t-if="record.is_ve_company.raw_value" class="mt-1" name="product_lst_price">
+                        Precio de Venta (Bs):
+                        <field name="list_price"/>
+                    </div>
+                    <!-- Si no es VE, restaurar el precio base de Odoo si se desea, o dejar el default del kanban -->
+                    <div t-if="!record.is_ve_company.raw_value" name="product_lst_price_base">
+                        <field name="list_price" widget="monetary" options="{'currency_field': 'currency_id'}"/>
+                    </div>
+
+                    <div class="mt-1" name="product_virtual_available">
+                        Disponible:
+                        <field name="virtual_available"/>
+                    </div>
+                </xpath></field>
+        </record>
+        <!-- product.product inherit kanban view -->
+        <record id="os_product_kanban_view_inherit" model="ir.ui.view">
+            <field name="name">product.product.inherit.view.kanban</field>
+            <field name="model">product.product</field>
+            <field name="inherit_id" ref="product.product_kanban_view"/>
+            <field name="arch" type="xml">
+                <xpath expr="//div[@name='product_lst_price']" position="replace">
+                    <field name="is_ve_company" invisible="1"/>
+                    <div t-if="record.is_ve_company.raw_value" class="mt-1" name="product_lst_price_vat" style="color: red;">
+                        Precio de Venta + IVA:
+                        <field name="list_price_vat"/>
+                        Bs
+                    </div>
+                    <div t-if="record.is_ve_company.raw_value" class="mt-1" name="product_lst_price">
+                        Precio de Venta (Bs):
+                        <field name="lst_price"/>
+                    </div>
+                    <div t-if="!record.is_ve_company.raw_value" name="product_lst_price_base">
+                         <field name="lst_price" widget="monetary" options="{'currency_field': 'currency_id'}"/>
+                    </div>
+                </xpath>
+                <xpath expr="//div[@name='tags']" position="before">
+                    <div class="mt-1" name="product_qty_available">
+                        A mano:
+                        <field name="qty_available"/>
+                        <field name="uom_id"/>
+                    </div>
+                    <div class="mt-1" name="product_virtual_available">
+                        Disponible:
+                        <field name="virtual_available"/>
+                    </div>
+                </xpath></field>
+        </record>
+
+        <record id="product_template_form_view_inherit_supplier_taxes" model="ir.ui.view">
+            <field name="name">product.template.form.inherit.supplier.taxes</field>
+            <field name="model">product.template</field>
+            <field name="inherit_id" ref="product.product_template_form_view"/>
+            <field name="arch" type="xml">
+                <xpath expr="//field[@name='supplier_taxes_id']" position="attributes">
+                    <attribute name="domain">[('company_id', 'in', allowed_company_ids)]</attribute>
+                </xpath>
+            </field>
+        </record>
+    </data>
+</odoo>

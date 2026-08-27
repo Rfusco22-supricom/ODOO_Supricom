@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <record id="view_product_pricelist_form_inherit_commissions" model="ir.ui.view">
+        <field name="name">product.pricelist.form.inherit.commissions</field>
+        <field name="model">product.pricelist</field>
+        <field name="inherit_id" ref="product.product_pricelist_view"/>
+        <field name="arch" type="xml">
+            <xpath expr="//group[@name='pricelist_availability']" position="before">
+                <group name="commission_mapping" string="Comisiones" invisible="not context.get('commission_use_pricelist_mapping', True)">
+                    <field name="commission_mapped_pricelist_id" options="{'no_create': True}"/>
+                </group>
+            </xpath>
+        </field>
+    </record>
+</odoo>

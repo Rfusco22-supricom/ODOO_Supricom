@@ -1,0 +1,4482 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+# 	* multipac_felpa
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 17.0+e-20240906\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2024-10-13 05:12+0000\n"
+"PO-Revision-Date: 2024-10-13 05:12+0000\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: \n"
+"Plural-Forms: \n"
+
+#. module: multipac_felpa
+#. odoo-python
+#: code:addons/multipac_felpa/models/res_company.py:0
+#, python-format
+msgid ""
+"\n"
+"\n"
+"License Date: %s"
+msgstr ""
+
+#. module: multipac_felpa
+#. odoo-python
+#: code:addons/multipac_felpa/models/res_company.py:0
+#, python-format
+msgid ""
+"\n"
+"\n"
+"Total Folios: %s"
+msgstr ""
+
+#. module: multipac_felpa
+#. odoo-python
+#: code:addons/multipac_felpa/models/account_move.py:0
+#: code:addons/multipac_felpa/models/account_move.py:0
+#, python-format
+msgid ""
+"\n"
+"CUFE: %s"
+msgstr ""
+
+#. module: multipac_felpa
+#. odoo-python
+#: code:addons/multipac_felpa/models/res_company.py:0
+#, python-format
+msgid ""
+"\n"
+"Cycle Date: %s"
+msgstr ""
+
+#. module: multipac_felpa
+#. odoo-python
+#: code:addons/multipac_felpa/models/res_company.py:0
+#, python-format
+msgid ""
+"\n"
+"Cycle: %s"
+msgstr ""
+
+#. module: multipac_felpa
+#. odoo-python
+#: code:addons/multipac_felpa/models/account_move.py:0
+#, python-format
+msgid ""
+"\n"
+"Date: %s"
+msgstr ""
+
+#. module: multipac_felpa
+#. odoo-python
+#: code:addons/multipac_felpa/models/account_move.py:0
+#: code:addons/multipac_felpa/models/account_move.py:0
+#, python-format
+msgid ""
+"\n"
+"Document State: %s"
+msgstr ""
+
+#. module: multipac_felpa
+#. odoo-python
+#: code:addons/multipac_felpa/models/account_move.py:0
+#, python-format
+msgid ""
+"\n"
+"Email: %s"
+msgstr ""
+
+#. module: multipac_felpa
+#. odoo-python
+#: code:addons/multipac_felpa/models/account_move.py:0
+#, python-format
+msgid ""
+"\n"
+"Estate: %s"
+msgstr ""
+
+#. module: multipac_felpa
+#. odoo-python
+#: code:addons/multipac_felpa/models/res_company.py:0
+#, python-format
+msgid ""
+"\n"
+"Folios Available in Cycle: %s"
+msgstr ""
+
+#. module: multipac_felpa
+#. odoo-python
+#: code:addons/multipac_felpa/models/res_company.py:0
+#, python-format
+msgid ""
+"\n"
+"Folios Used in Cycle: %s"
+msgstr ""
+
+#. module: multipac_felpa
+#. odoo-python
+#: code:addons/multipac_felpa/models/account_move.py:0
+#: code:addons/multipac_felpa/models/account_move.py:0
+#, python-format
+msgid ""
+"\n"
+"Issue Date: %s"
+msgstr ""
+
+#. module: multipac_felpa
+#. odoo-python
+#: code:addons/multipac_felpa/models/res_company.py:0
+#, python-format
+msgid ""
+"\n"
+"License: %s"
+msgstr ""
+
+#. module: multipac_felpa
+#. odoo-python
+#: code:addons/multipac_felpa/models/account_move.py:0
+#: code:addons/multipac_felpa/models/account_move.py:0
+#, python-format
+msgid ""
+"\n"
+"Message Document: %s"
+msgstr ""
+
+#. module: multipac_felpa
+#. odoo-python
+#: code:addons/multipac_felpa/models/account_move.py:0
+#, python-format
+msgid ""
+"\n"
+"Message ID: %s"
+msgstr ""
+
+#. module: multipac_felpa
+#. odoo-python
+#: code:addons/multipac_felpa/models/account_move.py:0
+#: code:addons/multipac_felpa/models/account_move.py:0
+#, python-format
+msgid ""
+"\n"
+"Reception Date: %s"
+msgstr ""
+
+#. module: multipac_felpa
+#. odoo-python
+#: code:addons/multipac_felpa/models/account_move.py:0
+#: code:addons/multipac_felpa/models/account_move.py:0
+#: code:addons/multipac_felpa/models/res_company.py:0
+#, python-format
+msgid ""
+"\n"
+"Result: %s"
+msgstr ""
+
+#. module: multipac_felpa
+#. odoo-python
+#: code:addons/multipac_felpa/models/res_company.py:0
+#, python-format
+msgid ""
+"\n"
+"Total Available Folios: %s"
+msgstr ""
+
+#. module: multipac_felpa
+#. odoo-python
+#: code:addons/multipac_felpa/models/res_company.py:0
+#, python-format
+msgid ""
+"\n"
+"Total Folios in Cycle: %s"
+msgstr ""
+
+#. module: multipac_felpa
+#: model:ir.model.fields.selection,name:multipac_felpa.selection__account_journal__fel_pa_cafe_delivery__1
+msgid " No CAFE issuing"
+msgstr ""
+
+#. module: multipac_felpa
+#: model_terms:ir.ui.view,arch_db:multipac_felpa.report_invoice_template_custom_infile_classic
+msgid "&amp;nbsp;"
+msgstr ""
+
+#. module: multipac_felpa
+#: model:ir.actions.report,print_report_name:multipac_felpa.report_invoice_template_advanced
+#: model:ir.actions.report,print_report_name:multipac_felpa.report_invoice_template_contemporary
+#: model:ir.actions.report,print_report_name:multipac_felpa.report_invoice_template_creative
+#: model:ir.actions.report,print_report_name:multipac_felpa.report_invoice_template_elegant
+#: model:ir.actions.report,print_report_name:multipac_felpa.report_invoice_template_exclusive
+#: model:ir.actions.report,print_report_name:multipac_felpa.report_invoice_template_incredible
+#: model:ir.actions.report,print_report_name:multipac_felpa.report_invoice_template_infile_classic
+#: model:ir.actions.report,print_report_name:multipac_felpa.report_invoice_template_odoo
+msgid "(object._get_report_base_filename())"
+msgstr ""
+
+#. module: multipac_felpa
+#: model_terms:ir.ui.view,arch_db:multipac_felpa.mutlicert_felpa_res_company_form_view_inherit
+#: model_terms:ir.ui.view,arch_db:multipac_felpa.mutlicert_felpa_res_company_invoice_configuration_form_view
+msgid "(reload fonts)"
+msgstr ""
+
+#. module: multipac_felpa
+#: model_terms:ir.ui.view,arch_db:multipac_felpa.report_invoice_template_custom_odoo
+msgid "2023-09-12"
+msgstr ""
+
+#. module: multipac_felpa
+#: model_terms:ir.ui.view,arch_db:multipac_felpa.report_invoice_template_custom_odoo
+msgid "2023-09-25"
+msgstr ""
+
+#. module: multipac_felpa
+#: model_terms:ir.ui.view,arch_db:multipac_felpa.report_invoice_template_custom_odoo
+msgid "2023-10-31"
+msgstr ""
+
+#. module: multipac_felpa
+#: model_terms:ir.ui.view,arch_db:multipac_felpa.creative_header
+#: model_terms:ir.ui.view,arch_db:multipac_felpa.report_invoice_elegant_main
+#: model_terms:ir.ui.view,arch_db:multipac_felpa.report_invoice_incredible_main
+#: model_terms:ir.ui.view,arch_db:multipac_felpa.report_invoice_template_main
+msgid "<b>Código Cliente:</b>"
+msgstr ""
+
+#. module: multipac_felpa
+#: model_terms:ir.ui.view,arch_db:multipac_felpa.report_invoice_advanced_main
+msgid "<b>Código Cliente:</b><br/>"
+msgstr ""
+
+#. module: multipac_felpa
+#: model_terms:ir.ui.view,arch_db:multipac_felpa.creative_header
+msgid "<b>Documento Origen:</b>"
+msgstr ""
+
+#. module: multipac_felpa
+#: model_terms:ir.ui.view,arch_db:multipac_felpa.creative_header
+#: model_terms:ir.ui.view,arch_db:multipac_felpa.report_invoice_template_main
+msgid "<b>Fecha Factura:</b>"
+msgstr ""
+
+#. module: multipac_felpa
+#: model_terms:ir.ui.view,arch_db:multipac_felpa.report_invoice_advanced_main
+msgid "<b>Fecha Factura:</b><br/>"
+msgstr ""
+
+#. module: multipac_felpa
+#: model_terms:ir.ui.view,arch_db:multipac_felpa.creative_header
+#: model_terms:ir.ui.view,arch_db:multipac_felpa.report_invoice_elegant_main
+#: model_terms:ir.ui.view,arch_db:multipac_felpa.report_invoice_incredible_main
+#: model_terms:ir.ui.view,arch_db:multipac_felpa.report_invoice_template_main
+msgid "<b>Fecha Orden Origen:</b>"
+msgstr ""
+
+#. module: multipac_felpa
+#: model_terms:ir.ui.view,arch_db:multipac_felpa.report_invoice_advanced_main
+msgid "<b>Fecha Orden Origen:</b><br/>"
+msgstr ""
+
+#. module: multipac_felpa
+#: model_terms:ir.ui.view,arch_db:multipac_felpa.creative_header
+#: model_terms:ir.ui.view,arch_db:multipac_felpa.report_invoice_elegant_main
+#: model_terms:ir.ui.view,arch_db:multipac_felpa.report_invoice_incredible_main
+#: model_terms:ir.ui.view,arch_db:multipac_felpa.report_invoice_template_main
+msgid "<b>Fecha Vencimiento:</b>"
+msgstr ""
+
+#. module: multipac_felpa
+#: model_terms:ir.ui.view,arch_db:multipac_felpa.report_invoice_advanced_main
+msgid "<b>Fecha Vencimiento:</b><br/>"
+msgstr ""
+
+#. module: multipac_felpa
+#: model_terms:ir.ui.view,arch_db:multipac_felpa.report_invoice_elegant_main
+#: model_terms:ir.ui.view,arch_db:multipac_felpa.report_invoice_incredible_main
+msgid "<b>Fecha emisión:</b>"
+msgstr ""
+
+#. module: multipac_felpa
+#: model_terms:ir.ui.view,arch_db:multipac_felpa.report_invoice_notes
+msgid "<b>Incoterm: </b>"
+msgstr ""
+
+#. module: multipac_felpa
+#: model_terms:ir.ui.view,arch_db:multipac_felpa.report_invoice_notes
+msgid "<b>Nota: </b>"
+msgstr ""
+
+#. module: multipac_felpa
+#: model_terms:ir.ui.view,arch_db:multipac_felpa.creative_header
+#: model_terms:ir.ui.view,arch_db:multipac_felpa.report_invoice_advanced_main
+#: model_terms:ir.ui.view,arch_db:multipac_felpa.report_invoice_elegant_main
+#: model_terms:ir.ui.view,arch_db:multipac_felpa.report_invoice_incredible_main
+#: model_terms:ir.ui.view,arch_db:multipac_felpa.report_invoice_template_main
+msgid "<b>Número:</b>"
+msgstr ""
+
+#. module: multipac_felpa
+#: model_terms:ir.ui.view,arch_db:multipac_felpa.report_invoice_elegant_main
+#: model_terms:ir.ui.view,arch_db:multipac_felpa.report_invoice_incredible_main
+#: model_terms:ir.ui.view,arch_db:multipac_felpa.report_invoice_template_main
+msgid "<b>Origen:</b>"
+msgstr ""
+
+#. module: multipac_felpa
+#: model_terms:ir.ui.view,arch_db:multipac_felpa.report_invoice_advanced_main
+msgid "<b>Origen:</b><br/>"
+msgstr ""
+
+#. module: multipac_felpa
+#: model_terms:ir.ui.view,arch_db:multipac_felpa.report_invoice_notes
+msgid "<b>Posición Fiscal: </b>"
+msgstr ""
+
+#. module: multipac_felpa
+#: model_terms:ir.ui.view,arch_db:multipac_felpa.creative_header
+#: model_terms:ir.ui.view,arch_db:multipac_felpa.report_invoice_elegant_main
+#: model_terms:ir.ui.view,arch_db:multipac_felpa.report_invoice_incredible_main
+#: model_terms:ir.ui.view,arch_db:multipac_felpa.report_invoice_template_main
+msgid "<b>Referencia:</b>"
+msgstr ""
+
+#. module: multipac_felpa
+#: model_terms:ir.ui.view,arch_db:multipac_felpa.report_invoice_advanced_main
+msgid "<b>Referencia:</b><br/>"
+msgstr ""
+
+#. module: multipac_felpa
+#: model_terms:ir.ui.view,arch_db:multipac_felpa.creative_header
+#: model_terms:ir.ui.view,arch_db:multipac_felpa.report_invoice_advanced_main
+#: model_terms:ir.ui.view,arch_db:multipac_felpa.report_invoice_elegant_main
+#: model_terms:ir.ui.view,arch_db:multipac_felpa.report_invoice_incredible_main
+#: model_terms:ir.ui.view,arch_db:multipac_felpa.report_invoice_template_main
+msgid "<b>Sucursal/Punto:</b>"
+msgstr ""
+
+#. module: multipac_felpa
+#: model_terms:ir.ui.view,arch_db:multipac_felpa.report_invoice_notes
+msgid "<b>Terminos de Pago: </b>"
+msgstr ""
+
+#. module: multipac_felpa
+#: model_terms:ir.ui.view,arch_db:multipac_felpa.report_invoice_exclusive_main
+msgid ""
+"<br/>\n"
+"                                    <span>Sucursal/Punto:</span>"
+msgstr ""
+
+#. module: multipac_felpa
+#: model_terms:ir.ui.view,arch_db:multipac_felpa.report_invoice_fel_pac
+msgid ""
+"<br/>\n"
+"                                <br/>ESCANEA EL CÓDIGO QR"
+msgstr ""
+
+#. module: multipac_felpa
+#: model_terms:ir.ui.view,arch_db:multipac_felpa.infile_classic_header
+msgid ""
+"<br/>\n"
+"                            Código Cliente:"
+msgstr ""
+
+#. module: multipac_felpa
+#: model_terms:ir.ui.view,arch_db:multipac_felpa.infile_classic_header
+msgid ""
+"<br/>\n"
+"                            Documento Origen:"
+msgstr ""
+
+#. module: multipac_felpa
+#: model_terms:ir.ui.view,arch_db:multipac_felpa.infile_classic_header
+msgid ""
+"<br/>\n"
+"                            Fecha Origen:"
+msgstr ""
+
+#. module: multipac_felpa
+#: model_terms:ir.ui.view,arch_db:multipac_felpa.infile_classic_header
+msgid ""
+"<br/>\n"
+"                            Fecha Vencimiento:"
+msgstr ""
+
+#. module: multipac_felpa
+#: model_terms:ir.ui.view,arch_db:multipac_felpa.infile_classic_header
+msgid ""
+"<br/>\n"
+"                            Referencia:"
+msgstr ""
+
+#. module: multipac_felpa
+#: model_terms:ir.ui.view,arch_db:multipac_felpa.report_invoice_fel_pac
+msgid ""
+"<br/>\n"
+"                Consulta en la página: https://dgi-fep.mef.gob.pa/Consultas/FacturasPorCUFE<br/>\n"
+"                Usando el CUFE:"
+msgstr ""
+
+#. module: multipac_felpa
+#: model_terms:ir.ui.view,arch_db:multipac_felpa.advanced_header
+msgid "<span><strong>Address:</strong></span><br/>"
+msgstr ""
+
+#. module: multipac_felpa
+#: model_terms:ir.ui.view,arch_db:multipac_felpa.advanced_header
+msgid "<span><strong>Email:</strong></span><br/>"
+msgstr ""
+
+#. module: multipac_felpa
+#: model_terms:ir.ui.view,arch_db:multipac_felpa.advanced_header
+msgid "<span><strong>Phone:</strong></span><br/>"
+msgstr ""
+
+#. module: multipac_felpa
+#: model_terms:ir.ui.view,arch_db:multipac_felpa.report_invoice_exclusive_main
+msgid "<span>Código Cliente:</span>"
+msgstr ""
+
+#. module: multipac_felpa
+#: model_terms:ir.ui.view,arch_db:multipac_felpa.mutlicert_felpa_res_company_form_view_inherit
+#: model_terms:ir.ui.view,arch_db:multipac_felpa.mutlicert_felpa_res_company_invoice_configuration_form_view
+msgid "<span>Extra Content</span>"
+msgstr ""
+
+#. module: multipac_felpa
+#: model_terms:ir.ui.view,arch_db:multipac_felpa.report_invoice_exclusive_main
+msgid "<span>Fecha Factura:</span>"
+msgstr ""
+
+#. module: multipac_felpa
+#: model_terms:ir.ui.view,arch_db:multipac_felpa.report_invoice_exclusive_main
+msgid "<span>Fecha Orden Origen:</span>"
+msgstr ""
+
+#. module: multipac_felpa
+#: model_terms:ir.ui.view,arch_db:multipac_felpa.report_invoice_exclusive_main
+msgid "<span>Fecha Vencimiento:</span>"
+msgstr ""
+
+#. module: multipac_felpa
+#: model_terms:ir.ui.view,arch_db:multipac_felpa.report_invoice_exclusive_main
+msgid "<span>Número:</span>"
+msgstr ""
+
+#. module: multipac_felpa
+#: model_terms:ir.ui.view,arch_db:multipac_felpa.report_invoice_exclusive_main
+msgid "<span>Origen:</span>"
+msgstr ""
+
+#. module: multipac_felpa
+#: model_terms:ir.ui.view,arch_db:multipac_felpa.report_invoice_exclusive_main
+msgid "<span>Referencia:</span>"
+msgstr ""
+
+#. module: multipac_felpa
+#: model_terms:ir.ui.view,arch_db:multipac_felpa.report_invoice_notes
+msgid ""
+"<strong class=\"text-center\">Escanear con aplicación de "
+"Banco.</strong><br/><br/>"
+msgstr ""
+
+#. module: multipac_felpa
+#: model_terms:ir.ui.view,arch_db:multipac_felpa.template_header
+msgid ""
+"<strong style=\"font-size:12px;\" class=\"text-justify\">Comprobante "
+"Auxiliar de Factura Electrónica</strong><br/>"
+msgstr ""
+
+#. module: multipac_felpa
+#: model_terms:ir.ui.view,arch_db:multipac_felpa.creative_header
+#: model_terms:ir.ui.view,arch_db:multipac_felpa.elegant_header
+#: model_terms:ir.ui.view,arch_db:multipac_felpa.infile_classic_header
+#: model_terms:ir.ui.view,arch_db:multipac_felpa.report_invoice_advanced_main
+#: model_terms:ir.ui.view,arch_db:multipac_felpa.report_invoice_exclusive_main
+#: model_terms:ir.ui.view,arch_db:multipac_felpa.report_invoice_incredible_main
+msgid ""
+"<strong style=\"font-size:15px;\" class=\"text-justify\">Comprobante "
+"Auxiliar de Factura Electrónica</strong>"
+msgstr ""
+
+#. module: multipac_felpa
+#: model_terms:ir.ui.view,arch_db:multipac_felpa.report_invoice_template_custom_infile_classic
+msgid "<strong>&amp;nbsp;Dirección: </strong>"
+msgstr ""
+
+#. module: multipac_felpa
+#: model_terms:ir.ui.view,arch_db:multipac_felpa.report_invoice_template_custom_infile_classic
+msgid "<strong>&amp;nbsp;Nombre: </strong>"
+msgstr ""
+
+#. module: multipac_felpa
+#: model_terms:ir.ui.view,arch_db:multipac_felpa.report_invoice_template_custom_odoo
+msgid "<strong>Comprobante Auxiliar de Factura Electrónica</strong><br/>"
+msgstr ""
+
+#. module: multipac_felpa
+#: model_terms:ir.ui.view,arch_db:multipac_felpa.invoice_templates_customer_details
+#: model_terms:ir.ui.view,arch_db:multipac_felpa.invoice_templates_customer_shipping_details
+#: model_terms:ir.ui.view,arch_db:multipac_felpa.templates_company_details
+msgid "<strong>Correo electrónico: </strong>"
+msgstr ""
+
+#. module: multipac_felpa
+#: model_terms:ir.ui.view,arch_db:multipac_felpa.report_invoice_template_custom_odoo
+msgid "<strong>Customer Code:</strong><br/>"
+msgstr ""
+
+#. module: multipac_felpa
+#: model_terms:ir.ui.view,arch_db:multipac_felpa.report_invoice_template_custom_odoo
+msgid "<strong>Dirección de Entrega:</strong>"
+msgstr ""
+
+#. module: multipac_felpa
+#: model_terms:ir.ui.view,arch_db:multipac_felpa.templates_customer_details
+msgid "<strong>Email:</strong>"
+msgstr ""
+
+#. module: multipac_felpa
+#: model_terms:ir.ui.view,arch_db:multipac_felpa.report_invoice_creative_main
+#: model_terms:ir.ui.view,arch_db:multipac_felpa.report_invoice_elegant_main
+msgid "<strong>Emisor:</strong><br/>"
+msgstr ""
+
+#. module: multipac_felpa
+#: model_terms:ir.ui.view,arch_db:multipac_felpa.report_invoice_template_custom_odoo
+msgid "<strong>Fecha Entrega:</strong><br/>"
+msgstr ""
+
+#. module: multipac_felpa
+#: model_terms:ir.ui.view,arch_db:multipac_felpa.report_invoice_template_custom_odoo
+msgid "<strong>Fecha Vencimiento:</strong><br/>"
+msgstr ""
+
+#. module: multipac_felpa
+#: model_terms:ir.ui.view,arch_db:multipac_felpa.report_invoice_template_custom_odoo
+msgid "<strong>Fecha:</strong><br/>"
+msgstr ""
+
+#. module: multipac_felpa
+#: model_terms:ir.ui.view,arch_db:multipac_felpa.report_invoice_template_custom_infile_classic
+msgid "<strong>INFORMACIÓN DEL CLIENTE</strong>"
+msgstr ""
+
+#. module: multipac_felpa
+#: model_terms:ir.ui.view,arch_db:multipac_felpa.invoice_subtotal_tem
+msgid "<strong>Importe Adeudado</strong>"
+msgstr ""
+
+#. module: multipac_felpa
+#: model_terms:ir.ui.view,arch_db:multipac_felpa.templates_customer_details
+msgid "<strong>Mobile:</strong>"
+msgstr ""
+
+#. module: multipac_felpa
+#: model_terms:ir.ui.view,arch_db:multipac_felpa.invoice_templates_customer_details
+#: model_terms:ir.ui.view,arch_db:multipac_felpa.invoice_templates_customer_shipping_details
+msgid "<strong>Móvil: </strong>"
+msgstr ""
+
+#. module: multipac_felpa
+#: model_terms:ir.ui.view,arch_db:multipac_felpa.report_invoice_template_custom_odoo
+msgid "<strong>Número:</strong><br/>"
+msgstr ""
+
+#. module: multipac_felpa
+#: model_terms:ir.ui.view,arch_db:multipac_felpa.report_invoice_template_custom_odoo
+msgid "<strong>Origen:</strong><br/>"
+msgstr ""
+
+#. module: multipac_felpa
+#: model_terms:ir.ui.view,arch_db:multipac_felpa.report_invoice_template_custom_odoo
+msgid "<strong>Referencia:</strong><br/>"
+msgstr ""
+
+#. module: multipac_felpa
+#: model_terms:ir.ui.view,arch_db:multipac_felpa.report_invoice_template_custom_odoo
+msgid "<strong>Sucursal/Punto:</strong><br/>"
+msgstr ""
+
+#. module: multipac_felpa
+#: model_terms:ir.ui.view,arch_db:multipac_felpa.templates_company_details
+msgid "<strong>Teléfono: </strong>"
+msgstr ""
+
+#. module: multipac_felpa
+#: model_terms:ir.ui.view,arch_db:multipac_felpa.document_tax_totals_custom
+msgid "<strong>Total</strong>"
+msgstr ""
+
+#. module: multipac_felpa
+#: model_terms:ir.ui.view,arch_db:multipac_felpa.templates_customer_details
+msgid "<strong>Vat:</strong>"
+msgstr ""
+
+#. module: multipac_felpa
+#: model_terms:ir.actions.act_window,help:multipac_felpa.action_fel_pa_account_journal_form
+msgid ""
+"A journal is used to record transactions of all accounting data\n"
+"                related to the day-to-day business."
+msgstr ""
+
+#. module: multipac_felpa
+#: model:res.city,name:multipac_felpa.fel_pa_city_1
+msgid "AGUADULCE"
+msgstr ""
+
+#. module: multipac_felpa
+#: model:res.city,name:multipac_felpa.fel_pa_city_2
+msgid "ALANJE"
+msgstr ""
+
+#. module: multipac_felpa
+#: model:res.city,name:multipac_felpa.fel_pa_city_3
+msgid "ANTON"
+msgstr ""
+
+#. module: multipac_felpa
+#: model_terms:ir.ui.view,arch_db:multipac_felpa.report_invoice_fel_pac
+msgid "ANULADA"
+msgstr ""
+
+#. module: multipac_felpa
+#: model:ir.model,name:multipac_felpa.model_fel_pa_tools_api_request
+msgid "API Request"
+msgstr ""
+
+#. module: multipac_felpa
+#: model:ir.ui.menu,name:multipac_felpa.multipac_fel_pa_menu_api_request_root
+msgid "API Requests"
+msgstr ""
+
+#. module: multipac_felpa
+#: model:res.city,name:multipac_felpa.fel_pa_city_4
+msgid "ARRAIJAN"
+msgstr ""
+
+#. module: multipac_felpa
+#: model:res.city,name:multipac_felpa.fel_pa_city_5
+msgid "ATALAYA"
+msgstr ""
+
+#. module: multipac_felpa
+#: model:ir.model.fields.selection,name:multipac_felpa.selection__account_move__fel_pa_state__accepted
+msgid "Accepted"
+msgstr ""
+
+#. module: multipac_felpa
+#: model:ir.model.fields,field_description:multipac_felpa.field_fel_pa_tools_api_request__access_warning
+msgid "Access warning"
+msgstr ""
+
+#. module: multipac_felpa
+#: model:ir.model,name:multipac_felpa.model_account_move_reversal
+msgid "Account Move Reversal"
+msgstr ""
+
+#. module: multipac_felpa
+#: model:ir.model.fields,field_description:multipac_felpa.field_fel_pa_tools_api_request__action
+msgid "Action"
+msgstr ""
+
+#. module: multipac_felpa
+#: model:ir.model.fields,field_description:multipac_felpa.field_fel_pa_tools_api_request__message_needaction
+msgid "Action Needed"
+msgstr ""
+
+#. module: multipac_felpa
+#: model:ir.model.fields,field_description:multipac_felpa.field_fel_pa_tools_contingency__active
+#: model:ir.model.fields,field_description:multipac_felpa.field_fel_pa_tools_document_type__active
+msgid "Active"
+msgstr ""
+
+#. module: multipac_felpa
+#: model:ir.model.fields,field_description:multipac_felpa.field_fel_pa_tools_api_request__activity_ids
+msgid "Activities"
+msgstr ""
+
+#. module: multipac_felpa
+#: model:ir.model.fields,field_description:multipac_felpa.field_fel_pa_tools_api_request__activity_exception_decoration
+msgid "Activity Exception Decoration"
+msgstr ""
+
+#. module: multipac_felpa
+#: model:ir.model.fields,field_description:multipac_felpa.field_fel_pa_tools_api_request__activity_state
+msgid "Activity State"
+msgstr ""
+
+#. module: multipac_felpa
+#: model:ir.model.fields,field_description:multipac_felpa.field_fel_pa_tools_api_request__activity_type_icon
+msgid "Activity Type Icon"
+msgstr ""
+
+#. module: multipac_felpa
+#: model_terms:ir.actions.act_window,help:multipac_felpa.action_fel_pa_account_journal_form
+msgid "Add a journal"
+msgstr ""
+
+#. module: multipac_felpa
+#: model:ir.model.fields,field_description:multipac_felpa.field_res_partner__fel_pa_affiliated_fe
+#: model:ir.model.fields,field_description:multipac_felpa.field_res_users__fel_pa_affiliated_fe
+msgid "Affiliated FE"
+msgstr ""
+
+#. module: multipac_felpa
+#: model:ir.model.fields,help:multipac_felpa.field_res_partner__fel_pa_affiliated_fe
+#: model:ir.model.fields,help:multipac_felpa.field_res_users__fel_pa_affiliated_fe
+msgid "Affiliated FE for Panamá Taxpayer"
+msgstr ""
+
+#. module: multipac_felpa
+#: model:ir.actions.act_window,name:multipac_felpa.action_multipac_fel_pa_accepted_docs
+#: model:ir.actions.act_window,name:multipac_felpa.action_multipac_fel_pa_all_docs
+#: model:ir.ui.menu,name:multipac_felpa.multipac_fel_pa_menu_all_docs
+msgid "All Documents"
+msgstr ""
+
+#. module: multipac_felpa
+#: model:ir.model.fields,field_description:multipac_felpa.field_fel_pa_tools_api_request__message_attachment_count
+msgid "Attachment Count"
+msgstr ""
+
+#. module: multipac_felpa
+#: model:ir.model.fields,help:multipac_felpa.field_account_bank_statement_line__fel_pa_authorization_protocol
+#: model:ir.model.fields,help:multipac_felpa.field_account_move__fel_pa_authorization_protocol
+#: model:ir.model.fields,help:multipac_felpa.field_account_payment__fel_pa_authorization_protocol
+msgid "Authorization Protocol for Panamá FEL"
+msgstr ""
+
+#. module: multipac_felpa
+#: model:ir.model.fields,field_description:multipac_felpa.field_res_company__fel_pa_auto_send_email_pac
+msgid "Auto Send Email by PAC"
+msgstr ""
+
+#. module: multipac_felpa
+#. odoo-python
+#: code:addons/multipac_felpa/models/account_move.py:0
+#: code:addons/multipac_felpa/models/res_company.py:0
+#, python-format
+msgid "Auto-Contingency"
+msgstr ""
+
+#. module: multipac_felpa
+#. odoo-python
+#: code:addons/multipac_felpa/models/account_journal.py:0
+#, python-format
+msgid "Auto-generated contingency"
+msgstr ""
+
+#. module: multipac_felpa
+#: model:ir.model.fields,field_description:multipac_felpa.field_product_product__fel_pa_axle_distance
+#: model:ir.model.fields,field_description:multipac_felpa.field_product_template__fel_pa_axle_distance
+msgid "Axle Distance (m)"
+msgstr ""
+
+#. module: multipac_felpa
+#: model_terms:ir.ui.view,arch_db:multipac_felpa.infile_classic_header
+msgid "AÑO"
+msgstr ""
+
+#. module: multipac_felpa
+#: model:res.city,name:multipac_felpa.fel_pa_city_6
+msgid "BALBOA"
+msgstr ""
+
+#. module: multipac_felpa
+#: model:res.city,name:multipac_felpa.fel_pa_city_7
+msgid "BARU"
+msgstr ""
+
+#. module: multipac_felpa
+#: model:res.city,name:multipac_felpa.fel_pa_city_8
+msgid "BESIKO"
+msgstr ""
+
+#. module: multipac_felpa
+#: model:res.city,name:multipac_felpa.fel_pa_city_9
+msgid "BOCAS DEL TORO"
+msgstr ""
+
+#. module: multipac_felpa
+#: model:res.city,name:multipac_felpa.fel_pa_city_10
+msgid "BOQUERON"
+msgstr ""
+
+#. module: multipac_felpa
+#: model:res.city,name:multipac_felpa.fel_pa_city_11
+msgid "BOQUETE"
+msgstr ""
+
+#. module: multipac_felpa
+#: model:res.city,name:multipac_felpa.fel_pa_city_12
+msgid "BUGABA"
+msgstr ""
+
+#. module: multipac_felpa
+#: model_terms:ir.ui.view,arch_db:multipac_felpa.multipac_felpa_product_product_form_inherit
+#: model_terms:ir.ui.view,arch_db:multipac_felpa.multipac_felpa_product_template_form_inherit
+msgid "Basic Configuration"
+msgstr ""
+
+#. module: multipac_felpa
+#: model:ir.actions.report,name:multipac_felpa.report_invoice_template_elegant
+#: model:ir.model.fields.selection,name:multipac_felpa.selection__res_company__fel_pa_standard_template__bold
+msgid "Bold"
+msgstr ""
+
+#. module: multipac_felpa
+#: model:ir.model.fields.selection,name:multipac_felpa.selection__product_template__fel_pa_vehicle_type__2
+msgid "Bus"
+msgstr ""
+
+#. module: multipac_felpa
+#: model:ir.model.fields.selection,name:multipac_felpa.selection__fel_pa_tools_ruc_validator_wizard__fel_pa_taxpayer_type__2
+#: model:ir.model.fields.selection,name:multipac_felpa.selection__res_partner__fel_pa_taxpayer_type__2
+msgid "Business"
+msgstr ""
+
+#. module: multipac_felpa
+#: model:ir.model.fields.selection,name:multipac_felpa.selection__account_move__fel_pa_sale_type__1
+#: model:ir.model.fields.selection,name:multipac_felpa.selection__res_company__fel_pa_default_sale_type__1
+msgid "Business sale"
+msgstr ""
+
+#. module: multipac_felpa
+#: model:ir.model.fields.selection,name:multipac_felpa.selection__account_journal__fel_pa_branch_type__2
+msgid "Business to business location"
+msgstr ""
+
+#. module: multipac_felpa
+#: model:ir.model.fields.selection,name:multipac_felpa.selection__account_journal__fel_pa_cafe_delivery__2
+msgid "CAFE issued on paper"
+msgstr ""
+
+#. module: multipac_felpa
+#: model:ir.model.fields.selection,name:multipac_felpa.selection__account_journal__fel_pa_cafe_delivery__3
+msgid "CAFE sent as an electronic document"
+msgstr ""
+
+#. module: multipac_felpa
+#: model:res.city,name:multipac_felpa.fel_pa_city_13
+msgid "CALOBRE"
+msgstr ""
+
+#. module: multipac_felpa
+#: model:res.city,name:multipac_felpa.fel_pa_city_14
+msgid "CAPIRA"
+msgstr ""
+
+#. module: multipac_felpa
+#: model:res.city,name:multipac_felpa.fel_pa_city_15
+msgid "CAÑAZAS"
+msgstr ""
+
+#. module: multipac_felpa
+#: model:res.city,name:multipac_felpa.fel_pa_city_16
+msgid "CEMACO"
+msgstr ""
+
+#. module: multipac_felpa
+#: model:res.city,name:multipac_felpa.fel_pa_city_17
+msgid "CHAGRES"
+msgstr ""
+
+#. module: multipac_felpa
+#: model:res.city,name:multipac_felpa.fel_pa_city_18
+msgid "CHAME"
+msgstr ""
+
+#. module: multipac_felpa
+#: model:res.city,name:multipac_felpa.fel_pa_city_19
+msgid "CHANGUINOLA"
+msgstr ""
+
+#. module: multipac_felpa
+#: model:res.city,name:multipac_felpa.fel_pa_city_20
+msgid "CHEPIGANA"
+msgstr ""
+
+#. module: multipac_felpa
+#: model:res.city,name:multipac_felpa.fel_pa_city_21
+msgid "CHEPO"
+msgstr ""
+
+#. module: multipac_felpa
+#: model:res.city,name:multipac_felpa.fel_pa_city_22
+msgid "CHIMAN"
+msgstr ""
+
+#. module: multipac_felpa
+#: model:res.city,name:multipac_felpa.fel_pa_city_23
+msgid "CHIRIQUI GRANDE"
+msgstr ""
+
+#. module: multipac_felpa
+#: model:res.city,name:multipac_felpa.fel_pa_city_24
+msgid "CHITRE"
+msgstr ""
+
+#. module: multipac_felpa
+#: model:res.city,name:multipac_felpa.fel_pa_city_25
+msgid "COLON"
+msgstr ""
+
+#. module: multipac_felpa
+#: model:res.city,name:multipac_felpa.fel_pa_city_26
+msgid "COMARCA KUNA YALA"
+msgstr ""
+
+#. module: multipac_felpa
+#: model:ir.model.fields,help:multipac_felpa.field_account_bank_statement_line__fel_pa_cufe
+#: model:ir.model.fields,help:multipac_felpa.field_account_move__fel_pa_cufe
+#: model:ir.model.fields,help:multipac_felpa.field_account_payment__fel_pa_cufe
+msgid "CUFE for Panamá FEL"
+msgstr ""
+
+#. module: multipac_felpa
+#. odoo-python
+#: code:addons/multipac_felpa/models/res_company.py:0
+#: model_terms:ir.ui.view,arch_db:multipac_felpa.fel_pa_tools_cancel_wizard_form_view
+#: model_terms:ir.ui.view,arch_db:multipac_felpa.fel_pa_tools_create_contingency_wizard_form_view
+#: model_terms:ir.ui.view,arch_db:multipac_felpa.fel_pa_tools_ruc_validator_wizard_form_view
+#, python-format
+msgid "Cancel"
+msgstr ""
+
+#. module: multipac_felpa
+#: model_terms:ir.ui.view,arch_db:multipac_felpa.fel_pa_tools_cancel_wizard_form_view
+msgid "Cancel Document(s)"
+msgstr ""
+
+#. module: multipac_felpa
+#: model:ir.actions.server,name:multipac_felpa.fel_pa_action_cancel_masive
+msgid "Cancel FE"
+msgstr ""
+
+#. module: multipac_felpa
+#: model_terms:ir.ui.view,arch_db:multipac_felpa.multipac_felpa_account_move_form_inherit
+msgid "Cancel FEL"
+msgstr ""
+
+#. module: multipac_felpa
+#: model:ir.model.fields,field_description:multipac_felpa.field_fel_pa_tools_cancel_wizard__name
+msgid "Cancel Motive"
+msgstr ""
+
+#. module: multipac_felpa
+#: model:ir.model.fields,help:multipac_felpa.field_account_bank_statement_line__fel_pa_cancel_motive
+#: model:ir.model.fields,help:multipac_felpa.field_account_move__fel_pa_cancel_motive
+#: model:ir.model.fields,help:multipac_felpa.field_account_payment__fel_pa_cancel_motive
+msgid "Cancel Motive for Panamá FEL"
+msgstr ""
+
+#. module: multipac_felpa
+#. odoo-python
+#: code:addons/multipac_felpa/models/account_move.py:0
+#, python-format
+msgid "Cancelation by User"
+msgstr ""
+
+#. module: multipac_felpa
+#. odoo-python
+#: code:addons/multipac_felpa/models/account_move.py:0
+#, python-format
+msgid "Cancellation by the user."
+msgstr ""
+
+#. module: multipac_felpa
+#: model:ir.model.fields.selection,name:multipac_felpa.selection__account_move__fel_pa_state__cancelled
+msgid "Cancelled"
+msgstr ""
+
+#. module: multipac_felpa
+#: model:ir.actions.act_window,name:multipac_felpa.action_multipac_fel_pa_cancelled_docs
+#: model:ir.ui.menu,name:multipac_felpa.multipac_fel_pa_menu_cancelled_docs
+msgid "Cancelled Documents"
+msgstr ""
+
+#. module: multipac_felpa
+#: model_terms:ir.ui.view,arch_db:multipac_felpa.report_invoice_order_lines
+msgid "Cantidad"
+msgstr ""
+
+#. module: multipac_felpa
+#: model:ir.model.fields.selection,name:multipac_felpa.selection__account_journal__fel_pa_payment_method__02
+msgid "Cash"
+msgstr ""
+
+#. module: multipac_felpa
+#: model_terms:ir.ui.view,arch_db:multipac_felpa.report_invoice_fel_pac
+msgid ""
+"Certificador: Documento validado por The Factory HKA Corp. con RUC "
+"155596713-2-2015, es Proveedor Autorizado Calificado, Resolución No. "
+"201-9719 de 12/10/2021<br/>"
+msgstr ""
+
+#. module: multipac_felpa
+#: model:ir.ui.menu,name:multipac_felpa.multipac_fel_pa_menu_cert_docs
+msgid "Certified Documents"
+msgstr ""
+
+#. module: multipac_felpa
+#: model:ir.model.fields,field_description:multipac_felpa.field_product_product__fel_pa_chassis
+#: model:ir.model.fields,field_description:multipac_felpa.field_product_template__fel_pa_chassis
+msgid "Chassis"
+msgstr ""
+
+#. module: multipac_felpa
+#: model:ir.model,name:multipac_felpa.model_res_city
+#: model:ir.model.fields,field_description:multipac_felpa.field_fel_pa_tools_county__city_id
+#: model:ir.model.fields,field_description:multipac_felpa.field_res_company__city_id
+#: model_terms:ir.ui.view,arch_db:multipac_felpa.multipac_felpa_res_partner_form_view_inherit
+#: model_terms:ir.ui.view,arch_db:multipac_felpa.mutlicert_felpa_res_company_form_view_inherit
+msgid "City"
+msgstr ""
+
+#. module: multipac_felpa
+#: model:ir.model.fields.selection,name:multipac_felpa.selection__res_company__fel_pa_standard_template__classic
+msgid "Classic"
+msgstr ""
+
+#. module: multipac_felpa
+#: model_terms:ir.actions.act_window,help:multipac_felpa.action_fel_report_extracontent
+msgid "Click to add a new extra content."
+msgstr ""
+
+#. module: multipac_felpa
+#: model_terms:ir.ui.view,arch_db:multipac_felpa.multipac_felpa_account_journal_form_inherit
+msgid "Close Active FEL Contingency"
+msgstr ""
+
+#. module: multipac_felpa
+#: model_terms:ir.ui.view,arch_db:multipac_felpa.fel_pa_tools_contingency_form
+#: model_terms:ir.ui.view,arch_db:multipac_felpa.multipac_felpa_account_journal_form_inherit
+msgid "Close Contingency"
+msgstr ""
+
+#. module: multipac_felpa
+#: model:ir.actions.report,name:multipac_felpa.report_invoice_template_incredible
+msgid "Clásico"
+msgstr ""
+
+#. module: multipac_felpa
+#: model:ir.model.fields,field_description:multipac_felpa.field_fel_pa_tools_document_type__code
+msgid "Code"
+msgstr ""
+
+#. module: multipac_felpa
+#: model:ir.model.fields,help:multipac_felpa.field_fel_pa_tools_document_type__code
+msgid "Code for the document number"
+msgstr ""
+
+#. module: multipac_felpa
+#: model:ir.model.fields,help:multipac_felpa.field_account_journal__fel_pa_code_branch_issuer
+msgid "Code of the branch issuer of the document"
+msgstr ""
+
+#. module: multipac_felpa
+#: model:ir.model.fields,field_description:multipac_felpa.field_product_product__fel_pa_color_code
+#: model:ir.model.fields,field_description:multipac_felpa.field_product_template__fel_pa_color_code
+msgid "Color Code"
+msgstr ""
+
+#. module: multipac_felpa
+#: model:ir.model.fields,field_description:multipac_felpa.field_product_product__fel_pa_color_name
+#: model:ir.model.fields,field_description:multipac_felpa.field_product_template__fel_pa_color_name
+msgid "Color Name"
+msgstr ""
+
+#. module: multipac_felpa
+#: model:ir.model.fields.selection,name:multipac_felpa.selection__product_template__fel_pa_vehicle_usage__1
+msgid "Commercial"
+msgstr ""
+
+#. module: multipac_felpa
+#: model:ir.model,name:multipac_felpa.model_res_company
+msgid "Companies"
+msgstr ""
+
+#. module: multipac_felpa
+#: model:ir.model.fields,field_description:multipac_felpa.field_fel_pa_tools_api_request__company_id
+#: model:ir.model.fields,field_description:multipac_felpa.field_fel_pa_tools_contingency__company_id
+#: model:ir.model.fields,field_description:multipac_felpa.field_fel_pa_tools_document_type__company_id
+#: model:ir.model.fields,field_description:multipac_felpa.field_fel_pa_tools_report_extra_content__company_id
+#: model:ir.ui.menu,name:multipac_felpa.multipac_fel_pa_menu_company_config
+msgid "Company"
+msgstr ""
+
+#. module: multipac_felpa
+#: model:ir.model.fields,field_description:multipac_felpa.field_res_company__fel_pa_company_address_color
+msgid "Company Address Color"
+msgstr ""
+
+#. module: multipac_felpa
+#: model_terms:ir.ui.view,arch_db:multipac_felpa.mutlicert_felpa_res_company_form_view_inherit
+#: model_terms:ir.ui.view,arch_db:multipac_felpa.mutlicert_felpa_res_company_invoice_configuration_form_view
+msgid "Company Colors"
+msgstr ""
+
+#. module: multipac_felpa
+#: model:ir.model.fields,field_description:multipac_felpa.field_res_company__fel_pa_company_color
+msgid "Company Name Color"
+msgstr ""
+
+#. module: multipac_felpa
+#: model:ir.model.fields,field_description:multipac_felpa.field_res_partner__fel_pa_company_name
+#: model:ir.model.fields,field_description:multipac_felpa.field_res_users__fel_pa_company_name
+msgid "Company Name FE"
+msgstr ""
+
+#. module: multipac_felpa
+#: model:ir.model.fields,help:multipac_felpa.field_res_partner__fel_pa_company_name
+#: model:ir.model.fields,help:multipac_felpa.field_res_users__fel_pa_company_name
+msgid "Company Name for Panamá Taxpayer"
+msgstr ""
+
+#. module: multipac_felpa
+#: model:ir.model.fields,field_description:multipac_felpa.field_res_company__fel_pa_pac_company_token
+msgid "Company Token"
+msgstr ""
+
+#. module: multipac_felpa
+#: model:ir.model.constraint,message:multipac_felpa.constraint_fel_pa_tools_report_extra_content_unique_model_company
+msgid "Company must be unique."
+msgstr ""
+
+#. module: multipac_felpa
+#: model:ir.model.fields,help:multipac_felpa.field_fel_pa_tools_contingency__company_id
+#: model:ir.model.fields,help:multipac_felpa.field_fel_pa_tools_document_type__company_id
+msgid "Company related to this journal"
+msgstr ""
+
+#. module: multipac_felpa
+#: model:ir.ui.menu,name:multipac_felpa.multipac_fel_pa_menu_config_root
+msgid "Configuration"
+msgstr ""
+
+#. module: multipac_felpa
+#: model:ir.model.fields.selection,name:multipac_felpa.selection__account_move__fel_pa_operation_nature__12
+#: model:ir.model.fields.selection,name:multipac_felpa.selection__res_company__fel_pa_default_operation_nature__12
+msgid "Consignment"
+msgstr ""
+
+#. module: multipac_felpa
+#: model:ir.model,name:multipac_felpa.model_res_partner
+msgid "Contact"
+msgstr ""
+
+#. module: multipac_felpa
+#: model:ir.model.fields.selection,name:multipac_felpa.selection__account_move__fel_pa_state__contingency
+msgid "Contingency"
+msgstr ""
+
+#. module: multipac_felpa
+#. odoo-python
+#: code:addons/multipac_felpa/wizard/fel_pa_tools_create_contingency_wizard.py:0
+#, python-format
+msgid "Contingency Created Successfully"
+msgstr ""
+
+#. module: multipac_felpa
+#: model:ir.actions.act_window,name:multipac_felpa.action_multipac_fel_pa_contingency_docs
+#: model:ir.ui.menu,name:multipac_felpa.multipac_fel_pa_menu_contingency_docs
+#: model_terms:ir.ui.view,arch_db:multipac_felpa.fel_pa_tools_contingency_form
+msgid "Contingency Documents"
+msgstr ""
+
+#. module: multipac_felpa
+#: model_terms:ir.ui.view,arch_db:multipac_felpa.multipac_felpa_account_move_form_inherit
+msgid "Contingency FEL"
+msgstr ""
+
+#. module: multipac_felpa
+#: model:ir.ui.menu,name:multipac_felpa.multipac_fel_pa_menu_contingency_root
+msgid "Contingency Sessions"
+msgstr ""
+
+#. module: multipac_felpa
+#: model:ir.model.fields.selection,name:multipac_felpa.selection__res_company__fel_pa_standard_template__corporate
+msgid "Corporate"
+msgstr ""
+
+#. module: multipac_felpa
+#: model:ir.actions.report,name:multipac_felpa.report_invoice_template_exclusive
+msgid "Corporativo"
+msgstr ""
+
+#. module: multipac_felpa
+#: model_terms:ir.ui.view,arch_db:multipac_felpa.template_footer
+msgid "Correo electrónico:"
+msgstr ""
+
+#. module: multipac_felpa
+#: model_terms:ir.ui.view,arch_db:multipac_felpa.multipac_felpa_res_partner_form_view_inherit
+#: model_terms:ir.ui.view,arch_db:multipac_felpa.mutlicert_felpa_res_company_form_view_inherit
+msgid "Country"
+msgstr ""
+
+#. module: multipac_felpa
+#: model:ir.model.fields,field_description:multipac_felpa.field_res_company__fel_pa_county_id
+#: model:ir.model.fields,field_description:multipac_felpa.field_res_partner__fel_pa_county_id
+#: model:ir.model.fields,field_description:multipac_felpa.field_res_users__fel_pa_county_id
+msgid "County"
+msgstr ""
+
+#. module: multipac_felpa
+#: model_terms:ir.ui.view,arch_db:multipac_felpa.multipac_felpa_res_partner_form_view_inherit
+#: model_terms:ir.ui.view,arch_db:multipac_felpa.mutlicert_felpa_res_company_form_view_inherit
+msgid "County..."
+msgstr ""
+
+#. module: multipac_felpa
+#: model_terms:ir.ui.view,arch_db:multipac_felpa.fel_pa_tools_create_contingency_wizard_form_view
+msgid "Create Contingency"
+msgstr ""
+
+#. module: multipac_felpa
+#: model_terms:ir.ui.view,arch_db:multipac_felpa.multipac_felpa_account_journal_form_inherit
+msgid "Create FEL Contingency"
+msgstr ""
+
+#. module: multipac_felpa
+#: model_terms:ir.ui.view,arch_db:multipac_felpa.multipac_felpa_account_journal_form_inherit
+msgid "Create FEL Document Types"
+msgstr ""
+
+#. module: multipac_felpa
+#. odoo-python
+#: code:addons/multipac_felpa/models/account_move.py:0
+#, python-format
+msgid "Create invoice/bill"
+msgstr ""
+
+#. module: multipac_felpa
+#: model:ir.model.fields,field_description:multipac_felpa.field_fel_pa_tools_api_request__create_uid
+#: model:ir.model.fields,field_description:multipac_felpa.field_fel_pa_tools_cancel_wizard__create_uid
+#: model:ir.model.fields,field_description:multipac_felpa.field_fel_pa_tools_contingency__create_uid
+#: model:ir.model.fields,field_description:multipac_felpa.field_fel_pa_tools_county__create_uid
+#: model:ir.model.fields,field_description:multipac_felpa.field_fel_pa_tools_create_contingency_wizard__create_uid
+#: model:ir.model.fields,field_description:multipac_felpa.field_fel_pa_tools_document_type__create_uid
+#: model:ir.model.fields,field_description:multipac_felpa.field_fel_pa_tools_msg_wizard__create_uid
+#: model:ir.model.fields,field_description:multipac_felpa.field_fel_pa_tools_product_unspsc_category__create_uid
+#: model:ir.model.fields,field_description:multipac_felpa.field_fel_pa_tools_report_extra_content__create_uid
+#: model:ir.model.fields,field_description:multipac_felpa.field_fel_pa_tools_report_fonts__create_uid
+#: model:ir.model.fields,field_description:multipac_felpa.field_fel_pa_tools_ruc_validator_wizard__create_uid
+msgid "Created by"
+msgstr ""
+
+#. module: multipac_felpa
+#: model:ir.model.fields,field_description:multipac_felpa.field_fel_pa_tools_api_request__create_date
+#: model:ir.model.fields,field_description:multipac_felpa.field_fel_pa_tools_cancel_wizard__create_date
+#: model:ir.model.fields,field_description:multipac_felpa.field_fel_pa_tools_contingency__create_date
+#: model:ir.model.fields,field_description:multipac_felpa.field_fel_pa_tools_county__create_date
+#: model:ir.model.fields,field_description:multipac_felpa.field_fel_pa_tools_create_contingency_wizard__create_date
+#: model:ir.model.fields,field_description:multipac_felpa.field_fel_pa_tools_document_type__create_date
+#: model:ir.model.fields,field_description:multipac_felpa.field_fel_pa_tools_msg_wizard__create_date
+#: model:ir.model.fields,field_description:multipac_felpa.field_fel_pa_tools_product_unspsc_category__create_date
+#: model:ir.model.fields,field_description:multipac_felpa.field_fel_pa_tools_report_extra_content__create_date
+#: model:ir.model.fields,field_description:multipac_felpa.field_fel_pa_tools_report_fonts__create_date
+#: model:ir.model.fields,field_description:multipac_felpa.field_fel_pa_tools_ruc_validator_wizard__create_date
+msgid "Created on"
+msgstr ""
+
+#. module: multipac_felpa
+#: model:ir.model.fields.selection,name:multipac_felpa.selection__account_journal__fel_pa_payment_method__01
+msgid "Credit"
+msgstr ""
+
+#. module: multipac_felpa
+#: model:ir.model.fields.selection,name:multipac_felpa.selection__account_journal__fel_pa_payment_method__03
+msgid "Credit Card"
+msgstr ""
+
+#. module: multipac_felpa
+#. odoo-python
+#: code:addons/multipac_felpa/models/account_move.py:0
+#: model:ir.model.fields.selection,name:multipac_felpa.selection__fel_pa_tools_document_type__document_type__04
+#, python-format
+msgid "Credit note referring to a E-bill"
+msgstr ""
+
+#. module: multipac_felpa
+#: model:ir.model.fields,field_description:multipac_felpa.field_res_company__fel_pa_customer_address_color
+msgid "Customer Address Color"
+msgstr ""
+
+#. module: multipac_felpa
+#: model:ir.model.fields,field_description:multipac_felpa.field_res_company__fel_pa_customer_color
+msgid "Customer Name Color"
+msgstr ""
+
+#. module: multipac_felpa
+#: model:ir.model.fields,help:multipac_felpa.field_fel_pa_tools_api_request__access_url
+msgid "Customer Portal URL"
+msgstr ""
+
+#. module: multipac_felpa
+#: model:res.city,name:multipac_felpa.fel_pa_city_27
+msgid "DAVID"
+msgstr ""
+
+#. module: multipac_felpa
+#: model:res.city,name:multipac_felpa.fel_pa_city_28
+msgid "DOLEGA"
+msgstr ""
+
+#. module: multipac_felpa
+#: model:res.city,name:multipac_felpa.fel_pa_city_29
+msgid "DONOSO"
+msgstr ""
+
+#. module: multipac_felpa
+#: model:ir.model.fields,field_description:multipac_felpa.field_res_partner__fel_pa_dv
+#: model:ir.model.fields,field_description:multipac_felpa.field_res_users__fel_pa_dv
+#: model_terms:ir.ui.view,arch_db:multipac_felpa.multipac_felpa_res_partner_form_view_inherit
+#: model_terms:ir.ui.view,arch_db:multipac_felpa.mutlicert_felpa_res_company_form_view_inherit
+msgid "DV"
+msgstr ""
+
+#. module: multipac_felpa
+#: model:ir.model.fields,field_description:multipac_felpa.field_res_company__fel_pa_dv
+#: model:ir.model.fields,help:multipac_felpa.field_res_company__fel_pa_dv
+#: model:ir.model.fields,help:multipac_felpa.field_res_partner__fel_pa_dv
+#: model:ir.model.fields,help:multipac_felpa.field_res_users__fel_pa_dv
+msgid "DV for Panamá Taxpayer"
+msgstr ""
+
+#. module: multipac_felpa
+#: model_terms:ir.ui.view,arch_db:multipac_felpa.invoice_templates_customer_details
+#: model_terms:ir.ui.view,arch_db:multipac_felpa.templates_company_details
+msgid "DV:"
+msgstr ""
+
+#. module: multipac_felpa
+#: model_terms:ir.ui.view,arch_db:multipac_felpa.fel_pa_tools_contingency_form
+#: model_terms:ir.ui.view,arch_db:multipac_felpa.view_multipac_felpa_account_move_tree
+msgid "Date"
+msgstr ""
+
+#. module: multipac_felpa
+#: model:ir.model.fields,help:multipac_felpa.field_account_bank_statement_line__fel_pa_date_reception
+#: model:ir.model.fields,help:multipac_felpa.field_account_move__fel_pa_date_reception
+#: model:ir.model.fields,help:multipac_felpa.field_account_payment__fel_pa_date_reception
+msgid "Date Reception for Panamá FEL"
+msgstr ""
+
+#. module: multipac_felpa
+#: model:ir.model.fields.selection,name:multipac_felpa.selection__account_journal__fel_pa_payment_method__04
+msgid "Debit Card"
+msgstr ""
+
+#. module: multipac_felpa
+#: model_terms:ir.ui.view,arch_db:multipac_felpa.multipac_felpa_account_move_form_inherit
+msgid "Debit Note Referenced"
+msgstr ""
+
+#. module: multipac_felpa
+#. odoo-python
+#: code:addons/multipac_felpa/models/account_move.py:0
+#: model:ir.model.fields.selection,name:multipac_felpa.selection__fel_pa_tools_document_type__document_type__05
+#, python-format
+msgid "Debit note referring to a E-bill"
+msgstr ""
+
+#. module: multipac_felpa
+#: model:ir.model.fields,field_description:multipac_felpa.field_res_company__fel_pa_default_cancel_motive
+msgid "Default Cancel Motive"
+msgstr ""
+
+#. module: multipac_felpa
+#: model_terms:ir.ui.view,arch_db:multipac_felpa.multipac_felpa_res_partner_form_view_inherit
+#: model_terms:ir.ui.view,arch_db:multipac_felpa.mutlicert_felpa_res_company_form_view_inherit
+#: model_terms:ir.ui.view,arch_db:multipac_felpa.mutlicert_felpa_res_company_invoice_configuration_form_view
+msgid "Default Configuration"
+msgstr ""
+
+#. module: multipac_felpa
+#: model:ir.model.fields,field_description:multipac_felpa.field_res_company__fel_pa_default_contingency_motive
+msgid "Default Contingency Motive"
+msgstr ""
+
+#. module: multipac_felpa
+#: model:ir.model.fields,field_description:multipac_felpa.field_res_company__fel_pa_default_product_unspsc_category_id
+msgid "Default Product UNSPSC Category"
+msgstr ""
+
+#. module: multipac_felpa
+#: model:ir.model.fields,help:multipac_felpa.field_res_company__fel_pa_default_product_unspsc_category_id
+msgid "Default UNSPSC category for the products."
+msgstr ""
+
+#. module: multipac_felpa
+#: model:ir.model.fields,help:multipac_felpa.field_res_company__fel_pa_default_cancel_motive
+msgid "Default cancel motive for the invoices."
+msgstr ""
+
+#. module: multipac_felpa
+#: model:ir.model.fields,field_description:multipac_felpa.field_account_bank_statement_line__delivery_count
+#: model:ir.model.fields,field_description:multipac_felpa.field_account_move__delivery_count
+#: model:ir.model.fields,field_description:multipac_felpa.field_account_payment__delivery_count
+msgid "Delivery Orders"
+msgstr ""
+
+#. module: multipac_felpa
+#: model_terms:ir.ui.view,arch_db:multipac_felpa.report_invoice_order_lines
+msgid "Desc."
+msgstr ""
+
+#. module: multipac_felpa
+#: model_terms:ir.ui.view,arch_db:multipac_felpa.report_invoice_order_lines
+msgid "Descripción"
+msgstr ""
+
+#. module: multipac_felpa
+#: model:ir.model.fields.selection,name:multipac_felpa.selection__product_template__fel_pa_fuel_type__02
+msgid "Diesel"
+msgstr ""
+
+#. module: multipac_felpa
+#: model:ir.model.fields.selection,name:multipac_felpa.selection__product_template__fel_pa_vehicle_usage__3
+msgid "Diplomatic"
+msgstr ""
+
+#. module: multipac_felpa
+#: model_terms:ir.ui.view,arch_db:multipac_felpa.invoice_templates_customer_shipping_details
+msgid "Dirección de Envio:"
+msgstr ""
+
+#. module: multipac_felpa
+#: model_terms:ir.ui.view,arch_db:multipac_felpa.invoice_templates_customer_details
+msgid "Dirección de facturación y envío:"
+msgstr ""
+
+#. module: multipac_felpa
+#: model_terms:ir.ui.view,arch_db:multipac_felpa.invoice_templates_customer_details
+msgid "Dirección de facturación:"
+msgstr ""
+
+#. module: multipac_felpa
+#: model_terms:ir.ui.view,arch_db:multipac_felpa.templates_company_details
+msgid "Dirección:"
+msgstr ""
+
+#. module: multipac_felpa
+#: model:ir.model.fields,field_description:multipac_felpa.field_fel_pa_tools_api_request__display_name
+#: model:ir.model.fields,field_description:multipac_felpa.field_fel_pa_tools_cancel_wizard__display_name
+#: model:ir.model.fields,field_description:multipac_felpa.field_fel_pa_tools_contingency__display_name
+#: model:ir.model.fields,field_description:multipac_felpa.field_fel_pa_tools_county__display_name
+#: model:ir.model.fields,field_description:multipac_felpa.field_fel_pa_tools_create_contingency_wizard__display_name
+#: model:ir.model.fields,field_description:multipac_felpa.field_fel_pa_tools_document_type__display_name
+#: model:ir.model.fields,field_description:multipac_felpa.field_fel_pa_tools_msg_wizard__display_name
+#: model:ir.model.fields,field_description:multipac_felpa.field_fel_pa_tools_product_unspsc_category__display_name
+#: model:ir.model.fields,field_description:multipac_felpa.field_fel_pa_tools_report_extra_content__display_name
+#: model:ir.model.fields,field_description:multipac_felpa.field_fel_pa_tools_report_fonts__display_name
+#: model:ir.model.fields,field_description:multipac_felpa.field_fel_pa_tools_ruc_validator_wizard__display_name
+msgid "Display Name"
+msgstr ""
+
+#. module: multipac_felpa
+#: model_terms:ir.ui.view,arch_db:multipac_felpa.multipac_felpa_res_partner_form_view_inherit
+#: model_terms:ir.ui.view,arch_db:multipac_felpa.mutlicert_felpa_res_company_form_view_inherit
+msgid "District..."
+msgstr ""
+
+#. module: multipac_felpa
+#: model:ir.model.fields,help:multipac_felpa.field_account_bank_statement_line__fel_pa_document_code
+#: model:ir.model.fields,help:multipac_felpa.field_account_move__fel_pa_document_code
+#: model:ir.model.fields,help:multipac_felpa.field_account_payment__fel_pa_document_code
+msgid "Document Code for Panamá FEL"
+msgstr ""
+
+#. module: multipac_felpa
+#: model:ir.model.fields,help:multipac_felpa.field_account_bank_statement_line__fel_pa_issue_date
+#: model:ir.model.fields,help:multipac_felpa.field_account_move__fel_pa_issue_date
+#: model:ir.model.fields,help:multipac_felpa.field_account_payment__fel_pa_issue_date
+msgid "Document Issue Date for Panamá FEL"
+msgstr ""
+
+#. module: multipac_felpa
+#: model:ir.model.fields,field_description:multipac_felpa.field_res_company__fel_pa_move_name
+msgid "Document Name by FEL"
+msgstr ""
+
+#. module: multipac_felpa
+#: model:ir.model.fields,help:multipac_felpa.field_account_bank_statement_line__fel_pa_document_number
+#: model:ir.model.fields,help:multipac_felpa.field_account_move__fel_pa_document_number
+#: model:ir.model.fields,help:multipac_felpa.field_account_payment__fel_pa_document_number
+msgid "Document Number for Panamá FEL"
+msgstr ""
+
+#. module: multipac_felpa
+#. odoo-python
+#: code:addons/multipac_felpa/models/account_move.py:0
+#: model_terms:ir.ui.view,arch_db:multipac_felpa.multipac_felpa_account_move_form_inherit
+#: model_terms:ir.ui.view,arch_db:multipac_felpa.view_multipac_felpa_account_move_tree
+#, python-format
+msgid "Document State"
+msgstr ""
+
+#. module: multipac_felpa
+#: model:ir.model.fields,field_description:multipac_felpa.field_fel_pa_tools_document_type__document_type
+msgid "Document Type"
+msgstr ""
+
+#. module: multipac_felpa
+#: model:ir.model.fields.selection,name:multipac_felpa.selection__fel_pa_tools_api_request__state__done
+msgid "Done"
+msgstr ""
+
+#. module: multipac_felpa
+#: model:ir.model.fields,help:multipac_felpa.field_res_company__fel_pa_default_contingency_motive
+msgid "Dontingency motive for the Auto-Contingency."
+msgstr ""
+
+#. module: multipac_felpa
+#: model_terms:ir.ui.view,arch_db:multipac_felpa.multipac_felpa_account_move_form_inherit
+msgid "Download FEL PDF"
+msgstr ""
+
+#. module: multipac_felpa
+#: model_terms:ir.ui.view,arch_db:multipac_felpa.multipac_felpa_account_move_form_inherit
+#: model_terms:ir.ui.view,arch_db:multipac_felpa.view_multipac_felpa_account_move_tree
+msgid "Download PDF"
+msgstr ""
+
+#. module: multipac_felpa
+#: model_terms:ir.ui.view,arch_db:multipac_felpa.multipac_felpa_account_move_form_inherit
+#: model_terms:ir.ui.view,arch_db:multipac_felpa.view_multipac_felpa_account_move_tree
+msgid "Download XML"
+msgstr ""
+
+#. module: multipac_felpa
+#: model:ir.model.fields.selection,name:multipac_felpa.selection__account_move__fel_pa_state__draft
+#: model:ir.model.fields.selection,name:multipac_felpa.selection__fel_pa_tools_api_request__state__draft
+msgid "Draft"
+msgstr ""
+
+#. module: multipac_felpa
+#: model_terms:ir.ui.view,arch_db:multipac_felpa.infile_classic_header
+msgid "DÍA"
+msgstr ""
+
+#. module: multipac_felpa
+#: model:ir.model.fields.selection,name:multipac_felpa.selection__fel_pa_tools_api_request__fel_pa_pac__ebi
+#: model:ir.model.fields.selection,name:multipac_felpa.selection__res_company__fel_pa_pac__ebi
+msgid "EBI"
+msgstr ""
+
+#. module: multipac_felpa
+#: model:ir.model.fields.selection,name:multipac_felpa.selection__product_template__fel_pa_fuel_type__08
+msgid "Electric"
+msgstr ""
+
+#. module: multipac_felpa
+#: model:ir.ui.menu,name:multipac_felpa.multipac_fel_pa_menu_docs_root
+msgid "Electronic Documents"
+msgstr ""
+
+#. module: multipac_felpa
+#. odoo-python
+#: code:addons/multipac_felpa/models/account_move.py:0
+#, python-format
+msgid "Email No. %s"
+msgstr ""
+
+#. module: multipac_felpa
+#: model_terms:ir.ui.view,arch_db:multipac_felpa.multipac_felpa_account_move_form_inherit
+#: model_terms:ir.ui.view,arch_db:multipac_felpa.view_multipac_felpa_account_move_tree
+msgid "Email Sent by PAC"
+msgstr ""
+
+#. module: multipac_felpa
+#. odoo-python
+#: code:addons/multipac_felpa/models/account_move.py:0
+#, python-format
+msgid "Email Successfully Sent"
+msgstr ""
+
+#. module: multipac_felpa
+#. odoo-python
+#: code:addons/multipac_felpa/models/account_move.py:0
+#, python-format
+msgid "Email Tracking Results"
+msgstr ""
+
+#. module: multipac_felpa
+#: model_terms:ir.ui.view,arch_db:multipac_felpa.templates_footer
+msgid "Email:"
+msgstr ""
+
+#. module: multipac_felpa
+#: model_terms:ir.ui.view,arch_db:multipac_felpa.report_invoice_exclusive_main
+#: model_terms:ir.ui.view,arch_db:multipac_felpa.report_invoice_template_main
+msgid "Emisor:"
+msgstr ""
+
+#. module: multipac_felpa
+#: model:l10n_latam.identification.type,name:multipac_felpa.it_ec
+msgid "End Consumer"
+msgstr ""
+
+#. module: multipac_felpa
+#: model:ir.model.fields,field_description:multipac_felpa.field_fel_pa_tools_contingency__end_date
+msgid "End Date"
+msgstr ""
+
+#. module: multipac_felpa
+#: model:ir.model.fields,field_description:multipac_felpa.field_product_product__fel_pa_engine_capacity
+#: model:ir.model.fields,field_description:multipac_felpa.field_product_template__fel_pa_engine_capacity
+msgid "Engine Capacity (in liters)"
+msgstr ""
+
+#. module: multipac_felpa
+#: model:ir.model.fields,field_description:multipac_felpa.field_product_product__fel_pa_engine_number
+#: model:ir.model.fields,field_description:multipac_felpa.field_product_template__fel_pa_engine_number
+msgid "Engine Number"
+msgstr ""
+
+#. module: multipac_felpa
+#: model:ir.model.fields,field_description:multipac_felpa.field_product_product__fel_pa_engine_power
+#: model:ir.model.fields,field_description:multipac_felpa.field_product_template__fel_pa_engine_power
+msgid "Engine Power (CV)"
+msgstr ""
+
+#. module: multipac_felpa
+#: model:ir.model.fields.selection,name:multipac_felpa.selection__fel_pa_tools_api_request__state__error
+msgid "Error"
+msgstr ""
+
+#. module: multipac_felpa
+#: model:ir.actions.act_window,name:multipac_felpa.action_multipac_fel_pa_rejected_docs
+#: model:ir.ui.menu,name:multipac_felpa.multipac_fel_pa_menu_error_docs
+msgid "Error Documents"
+msgstr ""
+
+#. module: multipac_felpa
+#: model_terms:ir.ui.view,arch_db:multipac_felpa.multipac_felpa_account_move_form_inherit
+msgid "Error en datos FEL"
+msgstr ""
+
+#. module: multipac_felpa
+#: model_terms:ir.ui.view,arch_db:multipac_felpa.report_invoice_advanced_main
+#: model_terms:ir.ui.view,arch_db:multipac_felpa.report_invoice_creative_main
+#: model_terms:ir.ui.view,arch_db:multipac_felpa.report_invoice_elegant_main
+#: model_terms:ir.ui.view,arch_db:multipac_felpa.report_invoice_exclusive_main
+#: model_terms:ir.ui.view,arch_db:multipac_felpa.report_invoice_incredible_main
+#: model_terms:ir.ui.view,arch_db:multipac_felpa.report_invoice_template_custom_infile_classic
+#: model_terms:ir.ui.view,arch_db:multipac_felpa.report_invoice_template_custom_odoo
+#: model_terms:ir.ui.view,arch_db:multipac_felpa.report_invoice_template_main
+msgid "Estado del Pago:"
+msgstr ""
+
+#. module: multipac_felpa
+#: model:ir.model.fields.selection,name:multipac_felpa.selection__product_template__fel_pa_fuel_type__03
+msgid "Ethanol"
+msgstr ""
+
+#. module: multipac_felpa
+#: model:ir.model.fields.selection,name:multipac_felpa.selection__account_move__fel_pa_operation_nature__02
+#: model:ir.model.fields.selection,name:multipac_felpa.selection__res_company__fel_pa_default_operation_nature__02
+msgid "Export"
+msgstr ""
+
+#. module: multipac_felpa
+#. odoo-python
+#: code:addons/multipac_felpa/models/account_move.py:0
+#: model:ir.model.fields.selection,name:multipac_felpa.selection__fel_pa_tools_document_type__document_type__03
+#, python-format
+msgid "Export bill"
+msgstr ""
+
+#. module: multipac_felpa
+#: model:ir.model.fields,field_description:multipac_felpa.field_fel_pa_tools_report_extra_content__append_extra_content
+msgid "Extra Content"
+msgstr ""
+
+#. module: multipac_felpa
+#: model:ir.actions.act_window,name:multipac_felpa.action_fel_report_extracontent
+msgid "Extra Content Panamá FEL"
+msgstr ""
+
+#. module: multipac_felpa
+#: model:ir.ui.menu,name:multipac_felpa.multipac_fel_pa_menu_root
+msgid "FE-DGI"
+msgstr ""
+
+#. module: multipac_felpa
+#: model_terms:ir.ui.view,arch_db:multipac_felpa.multipac_felpa_account_move_form_inherit
+msgid "FEL Actions"
+msgstr ""
+
+#. module: multipac_felpa
+#: model_terms:ir.ui.view,arch_db:multipac_felpa.multipac_felpa_account_journal_form_inherit
+msgid "FEL Active"
+msgstr ""
+
+#. module: multipac_felpa
+#: model:ir.ui.menu,name:multipac_felpa.fel_pa_tools_api_request_menu
+msgid "FEL Api Requests"
+msgstr ""
+
+#. module: multipac_felpa
+#: model:ir.actions.act_window,name:multipac_felpa.action_document_cancel_wizard
+msgid "FEL Cancel Tool"
+msgstr ""
+
+#. module: multipac_felpa
+#: model_terms:ir.ui.view,arch_db:multipac_felpa.multipac_felpa_account_move_form_inherit
+msgid "FEL Certification"
+msgstr ""
+
+#. module: multipac_felpa
+#: model_terms:ir.ui.view,arch_db:multipac_felpa.multipac_felpa_account_journal_form_inherit
+msgid "FEL Configuration"
+msgstr ""
+
+#. module: multipac_felpa
+#: model:ir.actions.act_window,name:multipac_felpa.action_create_contingency_wizard
+#: model:ir.ui.menu,name:multipac_felpa.fel_pa_tools_contingency_menu
+#: model_terms:ir.ui.view,arch_db:multipac_felpa.multipac_felpa_account_journal_form_inherit
+msgid "FEL Contingency"
+msgstr ""
+
+#. module: multipac_felpa
+#: model_terms:ir.ui.view,arch_db:multipac_felpa.mutlicert_felpa_res_company_form_view_inherit
+msgid "FEL Default Settings"
+msgstr ""
+
+#. module: multipac_felpa
+#: model_terms:ir.ui.view,arch_db:multipac_felpa.multipac_felpa_account_journal_form_inherit
+msgid "FEL Documents"
+msgstr ""
+
+#. module: multipac_felpa
+#: model_terms:ir.ui.view,arch_db:multipac_felpa.mutlicert_felpa_res_company_form_view_inherit
+msgid "FEL Extra Settings"
+msgstr ""
+
+#. module: multipac_felpa
+#: model_terms:ir.ui.view,arch_db:multipac_felpa.multipac_felpa_account_move_form_inherit
+msgid "FEL Invoice Information"
+msgstr ""
+
+#. module: multipac_felpa
+#: model_terms:ir.ui.view,arch_db:multipac_felpa.multipac_felpa_account_move_form_inherit
+msgid "FEL Invoice References"
+msgstr ""
+
+#. module: multipac_felpa
+#: model:res.groups,name:multipac_felpa.felpa_group_manager
+msgid "FEL Manager"
+msgstr ""
+
+#. module: multipac_felpa
+#: model:ir.model.fields,field_description:multipac_felpa.field_fel_pa_tools_product_unspsc_category__fel_pa_code
+msgid "FEL PA Code"
+msgstr ""
+
+#. module: multipac_felpa
+#: model:ir.actions.act_window,name:multipac_felpa.action_ruc_validator_wizard
+msgid "FEL RUC Validator"
+msgstr ""
+
+#. module: multipac_felpa
+#: model:res.groups,name:multipac_felpa.felpa_ruc_group_user
+msgid "FEL RUC Validator User"
+msgstr ""
+
+#. module: multipac_felpa
+#: model:res.groups,name:multipac_felpa.felpa_group_user
+msgid "FEL User"
+msgstr ""
+
+#. module: multipac_felpa
+#: model_terms:ir.ui.view,arch_db:multipac_felpa.creative_header
+#: model_terms:ir.ui.view,arch_db:multipac_felpa.elegant_header
+#: model_terms:ir.ui.view,arch_db:multipac_felpa.report_invoice_advanced_main
+#: model_terms:ir.ui.view,arch_db:multipac_felpa.report_invoice_exclusive_main
+#: model_terms:ir.ui.view,arch_db:multipac_felpa.report_invoice_incredible_main
+#: model_terms:ir.ui.view,arch_db:multipac_felpa.report_invoice_template_custom_odoo
+#: model_terms:ir.ui.view,arch_db:multipac_felpa.template_header
+msgid "Factura"
+msgstr ""
+
+#. module: multipac_felpa
+#: model_terms:ir.ui.view,arch_db:multipac_felpa.creative_header
+#: model_terms:ir.ui.view,arch_db:multipac_felpa.elegant_header
+#: model_terms:ir.ui.view,arch_db:multipac_felpa.report_invoice_advanced_main
+#: model_terms:ir.ui.view,arch_db:multipac_felpa.report_invoice_exclusive_main
+#: model_terms:ir.ui.view,arch_db:multipac_felpa.report_invoice_incredible_main
+#: model_terms:ir.ui.view,arch_db:multipac_felpa.report_invoice_template_custom_odoo
+#: model_terms:ir.ui.view,arch_db:multipac_felpa.template_header
+msgid "Factura Cancelada"
+msgstr ""
+
+#. module: multipac_felpa
+#: model_terms:ir.ui.view,arch_db:multipac_felpa.creative_header
+#: model_terms:ir.ui.view,arch_db:multipac_felpa.elegant_header
+#: model_terms:ir.ui.view,arch_db:multipac_felpa.report_invoice_advanced_main
+#: model_terms:ir.ui.view,arch_db:multipac_felpa.report_invoice_exclusive_main
+#: model_terms:ir.ui.view,arch_db:multipac_felpa.report_invoice_incredible_main
+#: model_terms:ir.ui.view,arch_db:multipac_felpa.report_invoice_template_custom_odoo
+#: model_terms:ir.ui.view,arch_db:multipac_felpa.template_header
+msgid "Factura Proveedor"
+msgstr ""
+
+#. module: multipac_felpa
+#: model_terms:ir.ui.view,arch_db:multipac_felpa.creative_header
+#: model_terms:ir.ui.view,arch_db:multipac_felpa.elegant_header
+#: model_terms:ir.ui.view,arch_db:multipac_felpa.report_invoice_advanced_main
+#: model_terms:ir.ui.view,arch_db:multipac_felpa.report_invoice_exclusive_main
+#: model_terms:ir.ui.view,arch_db:multipac_felpa.report_invoice_incredible_main
+#: model_terms:ir.ui.view,arch_db:multipac_felpa.report_invoice_template_custom_odoo
+#: model_terms:ir.ui.view,arch_db:multipac_felpa.template_header
+msgid "Factura en Borrador"
+msgstr ""
+
+#. module: multipac_felpa
+#: model:ir.model.fields,field_description:multipac_felpa.field_fel_pa_tools_report_extra_content__file_name
+msgid "File Name"
+msgstr ""
+
+#. module: multipac_felpa
+#: model:ir.model.fields.selection,name:multipac_felpa.selection__product_template__fel_pa_vehicle_condition__1
+msgid "Finished"
+msgstr ""
+
+#. module: multipac_felpa
+#: model:ir.model.fields.selection,name:multipac_felpa.selection__account_move__fel_pa_sale_type__2
+#: model:ir.model.fields.selection,name:multipac_felpa.selection__res_company__fel_pa_default_sale_type__2
+msgid "Fixed asset sale"
+msgstr ""
+
+#. module: multipac_felpa
+#: model:ir.model.fields,field_description:multipac_felpa.field_fel_pa_tools_api_request__message_follower_ids
+msgid "Followers"
+msgstr ""
+
+#. module: multipac_felpa
+#: model:ir.model.fields,field_description:multipac_felpa.field_fel_pa_tools_api_request__message_partner_ids
+msgid "Followers (Partners)"
+msgstr ""
+
+#. module: multipac_felpa
+#: model:ir.model.fields,field_description:multipac_felpa.field_fel_pa_tools_report_fonts__name
+msgid "Font Name"
+msgstr ""
+
+#. module: multipac_felpa
+#: model:ir.model.fields,help:multipac_felpa.field_fel_pa_tools_api_request__activity_type_icon
+msgid "Font awesome icon e.g. fa-tasks"
+msgstr ""
+
+#. module: multipac_felpa
+#: model:ir.model.fields,field_description:multipac_felpa.field_fel_pa_tools_report_fonts__family
+msgid "Font family"
+msgstr ""
+
+#. module: multipac_felpa
+#: model_terms:ir.ui.view,arch_db:multipac_felpa.mutlicert_felpa_res_company_form_view_inherit
+#: model_terms:ir.ui.view,arch_db:multipac_felpa.mutlicert_felpa_res_company_invoice_configuration_form_view
+msgid "Footer"
+msgstr ""
+
+#. module: multipac_felpa
+#: model:ir.model.fields,field_description:multipac_felpa.field_res_company__fel_pa_force_offline_normal_consumer
+msgid "Force Offline Certification Normal Consumer"
+msgstr ""
+
+#. module: multipac_felpa
+#: model:ir.model.fields.selection,name:multipac_felpa.selection__account_move__fel_pa_operation_destination__2
+#: model:ir.model.fields.selection,name:multipac_felpa.selection__fel_pa_tools_ruc_validator_wizard__fel_pa_recipient_type__04
+#: model:ir.model.fields.selection,name:multipac_felpa.selection__res_partner__fel_pa_recipient_type__04
+msgid "Foreign"
+msgstr ""
+
+#. module: multipac_felpa
+#: model:l10n_latam.identification.type,name:multipac_felpa.it_for
+msgid "Foreing"
+msgstr ""
+
+#. module: multipac_felpa
+#. odoo-python
+#: code:addons/multipac_felpa/models/account_move.py:0
+#: model:ir.model.fields.selection,name:multipac_felpa.selection__fel_pa_tools_document_type__document_type__08
+#, python-format
+msgid "Free Zone bill"
+msgstr ""
+
+#. module: multipac_felpa
+#: model:ir.model.fields.selection,name:multipac_felpa.selection__account_move__fel_pa_operation_nature__14
+#: model:ir.model.fields.selection,name:multipac_felpa.selection__res_company__fel_pa_default_operation_nature__14
+msgid "Free delivery"
+msgstr ""
+
+#. module: multipac_felpa
+#: model:ir.model.fields,field_description:multipac_felpa.field_product_product__fel_pa_fuel_type
+#: model:ir.model.fields,field_description:multipac_felpa.field_product_template__fel_pa_fuel_type
+msgid "Fuel Type"
+msgstr ""
+
+#. module: multipac_felpa
+#: model:ir.model.fields,field_description:multipac_felpa.field_product_product__fel_pa_fuel_type_nodef
+#: model:ir.model.fields,field_description:multipac_felpa.field_product_template__fel_pa_fuel_type_nodef
+msgid "Fuel Type Nodef"
+msgstr ""
+
+#. module: multipac_felpa
+#: model:res.city,name:multipac_felpa.fel_pa_city_30
+msgid "GUALACA"
+msgstr ""
+
+#. module: multipac_felpa
+#: model:res.city,name:multipac_felpa.fel_pa_city_31
+msgid "GUARARE"
+msgstr ""
+
+#. module: multipac_felpa
+#: model:ir.model.fields.selection,name:multipac_felpa.selection__product_template__fel_pa_fuel_type__01
+msgid "Gasoline"
+msgstr ""
+
+#. module: multipac_felpa
+#: model:ir.model.fields.selection,name:multipac_felpa.selection__product_template__fel_pa_fuel_type__09
+msgid "Gasoline/Electric"
+msgstr ""
+
+#. module: multipac_felpa
+#: model:ir.model.fields,field_description:multipac_felpa.field_res_company__fel_pa_text_color
+msgid "General Text Color"
+msgstr ""
+
+#. module: multipac_felpa
+#. odoo-python
+#: code:addons/multipac_felpa/models/account_move.py:0
+#: model:ir.model.fields.selection,name:multipac_felpa.selection__fel_pa_tools_document_type__document_type__06
+#, python-format
+msgid "Generic credit note"
+msgstr ""
+
+#. module: multipac_felpa
+#. odoo-python
+#: code:addons/multipac_felpa/models/account_move.py:0
+#: model:ir.model.fields.selection,name:multipac_felpa.selection__fel_pa_tools_document_type__document_type__07
+#, python-format
+msgid "Generic debit note"
+msgstr ""
+
+#. module: multipac_felpa
+#: model:ir.model.fields.selection,name:multipac_felpa.selection__account_journal__fel_pa_payment_method__07
+msgid "Gift Card"
+msgstr ""
+
+#. module: multipac_felpa
+#: model:ir.model.fields.selection,name:multipac_felpa.selection__product_template__fel_pa_product_type__goods_service
+msgid "Goods/Service"
+msgstr ""
+
+#. module: multipac_felpa
+#: model:ir.model.fields.selection,name:multipac_felpa.selection__fel_pa_tools_ruc_validator_wizard__fel_pa_recipient_type__03
+#: model:ir.model.fields.selection,name:multipac_felpa.selection__res_partner__fel_pa_recipient_type__03
+#: model:l10n_latam.identification.type,name:multipac_felpa.it_gob
+msgid "Government"
+msgstr ""
+
+#. module: multipac_felpa
+#: model:ir.model.fields,field_description:multipac_felpa.field_product_product__fel_pa_gross_weight
+#: model:ir.model.fields,field_description:multipac_felpa.field_product_template__fel_pa_gross_weight
+msgid "Gross Weight"
+msgstr ""
+
+#. module: multipac_felpa
+#: model:ir.model.fields,field_description:multipac_felpa.field_fel_pa_tools_api_request__has_message
+msgid "Has Message"
+msgstr ""
+
+#. module: multipac_felpa
+#: model:ir.model.fields.selection,name:multipac_felpa.selection__product_template__fel_pa_vehicle_type__9
+msgid "Hatchback"
+msgstr ""
+
+#. module: multipac_felpa
+#: model:ir.model.fields,field_description:multipac_felpa.field_res_company__fel_pa_invoice_hide_payment_status
+msgid "Hide Payment Status"
+msgstr ""
+
+#. module: multipac_felpa
+#: model:ir.model.fields,field_description:multipac_felpa.field_res_company__fel_pa_invoice_hide_payments
+msgid "Hide Payments"
+msgstr ""
+
+#. module: multipac_felpa
+#: model:ir.model.fields,field_description:multipac_felpa.field_fel_pa_tools_api_request__id
+#: model:ir.model.fields,field_description:multipac_felpa.field_fel_pa_tools_cancel_wizard__id
+#: model:ir.model.fields,field_description:multipac_felpa.field_fel_pa_tools_contingency__id
+#: model:ir.model.fields,field_description:multipac_felpa.field_fel_pa_tools_county__id
+#: model:ir.model.fields,field_description:multipac_felpa.field_fel_pa_tools_create_contingency_wizard__id
+#: model:ir.model.fields,field_description:multipac_felpa.field_fel_pa_tools_document_type__id
+#: model:ir.model.fields,field_description:multipac_felpa.field_fel_pa_tools_msg_wizard__id
+#: model:ir.model.fields,field_description:multipac_felpa.field_fel_pa_tools_product_unspsc_category__id
+#: model:ir.model.fields,field_description:multipac_felpa.field_fel_pa_tools_report_extra_content__id
+#: model:ir.model.fields,field_description:multipac_felpa.field_fel_pa_tools_report_fonts__id
+#: model:ir.model.fields,field_description:multipac_felpa.field_fel_pa_tools_ruc_validator_wizard__id
+msgid "ID"
+msgstr ""
+
+#. module: multipac_felpa
+#: model_terms:ir.ui.view,arch_db:multipac_felpa.report_invoice_template_custom_odoo
+msgid "INV/2023/00001"
+msgstr ""
+
+#. module: multipac_felpa
+#: model_terms:ir.ui.view,arch_db:multipac_felpa.report_invoice_template_custom_odoo
+msgid "INV/2023/0001"
+msgstr ""
+
+#. module: multipac_felpa
+#: model:ir.model.fields,field_description:multipac_felpa.field_fel_pa_tools_api_request__activity_exception_icon
+msgid "Icon"
+msgstr ""
+
+#. module: multipac_felpa
+#: model:ir.model.fields,help:multipac_felpa.field_fel_pa_tools_api_request__activity_exception_icon
+msgid "Icon to indicate an exception activity."
+msgstr ""
+
+#. module: multipac_felpa
+#: model:ir.model.fields,help:multipac_felpa.field_fel_pa_tools_api_request__message_needaction
+msgid "If checked, new messages require your attention."
+msgstr ""
+
+#. module: multipac_felpa
+#: model:ir.model.fields,help:multipac_felpa.field_fel_pa_tools_api_request__message_has_error
+#: model:ir.model.fields,help:multipac_felpa.field_fel_pa_tools_api_request__message_has_sms_error
+msgid "If checked, some messages have a delivery error."
+msgstr ""
+
+#. module: multipac_felpa
+#: model:ir.model.fields,help:multipac_felpa.field_res_company__fel_pa_move_name
+msgid "If checked, the document name will be generated by the FEL"
+msgstr ""
+
+#. module: multipac_felpa
+#: model:ir.model.fields,help:multipac_felpa.field_res_company__fel_pa_publish_onerror
+msgid "If checked, the document will be published even if it has errors."
+msgstr ""
+
+#. module: multipac_felpa
+#: model:ir.model.fields,help:multipac_felpa.field_res_company__fel_pa_auto_send_email_pac
+msgid "If checked, the email will be sent automatically by the PAC."
+msgstr ""
+
+#. module: multipac_felpa
+#: model:ir.model.fields,help:multipac_felpa.field_res_company__fel_pa_offline_available
+msgid "If checked, the offline utility will be available for the PAC."
+msgstr ""
+
+#. module: multipac_felpa
+#: model:ir.model.fields,help:multipac_felpa.field_res_company__fel_pa_force_offline_normal_consumer
+msgid "If checked, the offline utility will be used for the normal consumer."
+msgstr ""
+
+#. module: multipac_felpa
+#: model:ir.model.fields,field_description:multipac_felpa.field_res_partner__fel_pa_ignore_verificartion
+#: model:ir.model.fields,field_description:multipac_felpa.field_res_users__fel_pa_ignore_verificartion
+msgid "Ignore PAC Verification"
+msgstr ""
+
+#. module: multipac_felpa
+#: model_terms:ir.ui.view,arch_db:multipac_felpa.report_invoice_order_lines
+msgid "Imagen"
+msgstr ""
+
+#. module: multipac_felpa
+#: model:ir.model.fields.selection,name:multipac_felpa.selection__account_move__fel_pa_operation_nature__21
+#: model:ir.model.fields.selection,name:multipac_felpa.selection__res_company__fel_pa_default_operation_nature__21
+msgid "Import"
+msgstr ""
+
+#. module: multipac_felpa
+#. odoo-python
+#: code:addons/multipac_felpa/models/account_move.py:0
+#: model:ir.model.fields.selection,name:multipac_felpa.selection__fel_pa_tools_document_type__document_type__02
+#, python-format
+msgid "Import bill"
+msgstr ""
+
+#. module: multipac_felpa
+#: model_terms:ir.ui.view,arch_db:multipac_felpa.report_invoice_order_lines
+msgid "Impuestos"
+msgstr ""
+
+#. module: multipac_felpa
+#: model:ir.model.fields.selection,name:multipac_felpa.selection__fel_pa_tools_api_request__state__in_queue
+msgid "In Queue"
+msgstr ""
+
+#. module: multipac_felpa
+#: model:ir.actions.report,name:multipac_felpa.report_invoice_template_infile_classic
+msgid "Infile Clásico"
+msgstr ""
+
+#. module: multipac_felpa
+#: model:ir.model.fields,help:multipac_felpa.field_account_bank_statement_line__fel_pa_interes_information
+#: model:ir.model.fields,help:multipac_felpa.field_account_move__fel_pa_interes_information
+#: model:ir.model.fields,help:multipac_felpa.field_account_payment__fel_pa_interes_information
+msgid "Interes Information for Panamá FEL"
+msgstr ""
+
+#. module: multipac_felpa
+#. odoo-python
+#: code:addons/multipac_felpa/models/account_move.py:0
+#: code:addons/multipac_felpa/models/account_move.py:0
+#: model:ir.model.fields.selection,name:multipac_felpa.selection__fel_pa_tools_document_type__document_type__01
+#, python-format
+msgid "Internal bill"
+msgstr ""
+
+#. module: multipac_felpa
+#: model:ir.model.fields,field_description:multipac_felpa.field_stock_move__invoice_line_ids
+msgid "Invoice Line"
+msgstr ""
+
+#. module: multipac_felpa
+#: model:ir.actions.act_window,name:multipac_felpa.action_multipac_fel_pa_company_action
+#: model:ir.model.fields,field_description:multipac_felpa.field_account_bank_statement_line__fel_pa_report_template_id
+#: model:ir.model.fields,field_description:multipac_felpa.field_account_move__fel_pa_report_template_id
+#: model:ir.model.fields,field_description:multipac_felpa.field_account_payment__fel_pa_report_template_id
+#: model:ir.model.fields,field_description:multipac_felpa.field_res_company__fel_pa_report_template_id
+#: model:ir.ui.menu,name:multipac_felpa.multipac_fel_pa_menu_invoice_template_config
+msgid "Invoice Template"
+msgstr ""
+
+#. module: multipac_felpa
+#: model:ir.model.fields,field_description:multipac_felpa.field_account_bank_statement_line__fel_pa_report_template_id1
+#: model:ir.model.fields,field_description:multipac_felpa.field_account_move__fel_pa_report_template_id1
+#: model:ir.model.fields,field_description:multipac_felpa.field_account_payment__fel_pa_report_template_id1
+#: model:ir.model.fields,field_description:multipac_felpa.field_res_company__fel_pa_report_template_id1
+msgid "Invoice Template 1"
+msgstr ""
+
+#. module: multipac_felpa
+#: model:ir.model.fields,field_description:multipac_felpa.field_fel_pa_tools_cancel_wizard__invoices_ids
+#: model:ir.model.fields,field_description:multipac_felpa.field_fel_pa_tools_contingency__move_ids
+#: model:ir.model.fields,field_description:multipac_felpa.field_stock_picking__invoice_ids
+#: model_terms:ir.ui.view,arch_db:multipac_felpa.fel_pa_tools_contingency_form
+#: model_terms:ir.ui.view,arch_db:multipac_felpa.view_multipac_felpa_account_move_tree
+msgid "Invoices"
+msgstr ""
+
+#. module: multipac_felpa
+#. odoo-python
+#: code:addons/multipac_felpa/wizard/fel_pa_tools_cancel_wizard.py:0
+#, python-format
+msgid "Invoices Cancelled Successfully"
+msgstr ""
+
+#. module: multipac_felpa
+#: model:ir.model.fields,field_description:multipac_felpa.field_fel_pa_tools_api_request__message_is_follower
+msgid "Is Follower"
+msgstr ""
+
+#. module: multipac_felpa
+#: model:ir.model,name:multipac_felpa.model_account_journal
+#: model:ir.model.fields,field_description:multipac_felpa.field_fel_pa_tools_contingency__journal_id
+#: model:ir.model.fields,field_description:multipac_felpa.field_fel_pa_tools_create_contingency_wizard__journal_id
+#: model:ir.model.fields,field_description:multipac_felpa.field_fel_pa_tools_document_type__journal_id
+#: model:ir.ui.menu,name:multipac_felpa.multipac_fel_pa_menu_journal_config
+msgid "Journal"
+msgstr ""
+
+#. module: multipac_felpa
+#: model:ir.model,name:multipac_felpa.model_account_move
+msgid "Journal Entry"
+msgstr ""
+
+#. module: multipac_felpa
+#: model:ir.model,name:multipac_felpa.model_account_move_line
+msgid "Journal Item"
+msgstr ""
+
+#. module: multipac_felpa
+#: model:ir.actions.act_window,name:multipac_felpa.action_fel_pa_account_journal_form
+msgid "Journals"
+msgstr ""
+
+#. module: multipac_felpa
+#: model:res.city,name:multipac_felpa.fel_pa_city_32
+msgid "KANKINTU"
+msgstr ""
+
+#. module: multipac_felpa
+#: model:res.city,name:multipac_felpa.fel_pa_city_33
+msgid "KUSAPIN"
+msgstr ""
+
+#. module: multipac_felpa
+#: model:res.city,name:multipac_felpa.fel_pa_city_34
+msgid "LA CHORRERA"
+msgstr ""
+
+#. module: multipac_felpa
+#: model:res.city,name:multipac_felpa.fel_pa_city_35
+msgid "LA MEZA"
+msgstr ""
+
+#. module: multipac_felpa
+#: model:res.city,name:multipac_felpa.fel_pa_city_36
+msgid "LA PINTADA"
+msgstr ""
+
+#. module: multipac_felpa
+#: model:res.city,name:multipac_felpa.fel_pa_city_37
+msgid "LAS MINAS"
+msgstr ""
+
+#. module: multipac_felpa
+#: model:res.city,name:multipac_felpa.fel_pa_city_38
+msgid "LAS PALMAS"
+msgstr ""
+
+#. module: multipac_felpa
+#: model:res.city,name:multipac_felpa.fel_pa_city_39
+msgid "LAS TABLAS"
+msgstr ""
+
+#. module: multipac_felpa
+#: model:res.city,name:multipac_felpa.fel_pa_city_40
+msgid "LOS POZOS"
+msgstr ""
+
+#. module: multipac_felpa
+#: model:res.city,name:multipac_felpa.fel_pa_city_41
+msgid "LOS SANTOS"
+msgstr ""
+
+#. module: multipac_felpa
+#: model:ir.model.fields,field_description:multipac_felpa.field_fel_pa_tools_api_request__write_uid
+#: model:ir.model.fields,field_description:multipac_felpa.field_fel_pa_tools_cancel_wizard__write_uid
+#: model:ir.model.fields,field_description:multipac_felpa.field_fel_pa_tools_contingency__write_uid
+#: model:ir.model.fields,field_description:multipac_felpa.field_fel_pa_tools_county__write_uid
+#: model:ir.model.fields,field_description:multipac_felpa.field_fel_pa_tools_create_contingency_wizard__write_uid
+#: model:ir.model.fields,field_description:multipac_felpa.field_fel_pa_tools_document_type__write_uid
+#: model:ir.model.fields,field_description:multipac_felpa.field_fel_pa_tools_msg_wizard__write_uid
+#: model:ir.model.fields,field_description:multipac_felpa.field_fel_pa_tools_product_unspsc_category__write_uid
+#: model:ir.model.fields,field_description:multipac_felpa.field_fel_pa_tools_report_extra_content__write_uid
+#: model:ir.model.fields,field_description:multipac_felpa.field_fel_pa_tools_report_fonts__write_uid
+#: model:ir.model.fields,field_description:multipac_felpa.field_fel_pa_tools_ruc_validator_wizard__write_uid
+msgid "Last Updated by"
+msgstr ""
+
+#. module: multipac_felpa
+#: model:ir.model.fields,field_description:multipac_felpa.field_fel_pa_tools_api_request__write_date
+#: model:ir.model.fields,field_description:multipac_felpa.field_fel_pa_tools_cancel_wizard__write_date
+#: model:ir.model.fields,field_description:multipac_felpa.field_fel_pa_tools_contingency__write_date
+#: model:ir.model.fields,field_description:multipac_felpa.field_fel_pa_tools_county__write_date
+#: model:ir.model.fields,field_description:multipac_felpa.field_fel_pa_tools_create_contingency_wizard__write_date
+#: model:ir.model.fields,field_description:multipac_felpa.field_fel_pa_tools_document_type__write_date
+#: model:ir.model.fields,field_description:multipac_felpa.field_fel_pa_tools_msg_wizard__write_date
+#: model:ir.model.fields,field_description:multipac_felpa.field_fel_pa_tools_product_unspsc_category__write_date
+#: model:ir.model.fields,field_description:multipac_felpa.field_fel_pa_tools_report_extra_content__write_date
+#: model:ir.model.fields,field_description:multipac_felpa.field_fel_pa_tools_report_fonts__write_date
+#: model:ir.model.fields,field_description:multipac_felpa.field_fel_pa_tools_ruc_validator_wizard__write_date
+msgid "Last Updated on"
+msgstr ""
+
+#. module: multipac_felpa
+#: model:ir.model.fields.selection,name:multipac_felpa.selection__res_company__fel_pa_invoice_line_name__description
+msgid "Line Description"
+msgstr ""
+
+#. module: multipac_felpa
+#: model:ir.model.fields.selection,name:multipac_felpa.selection__res_company__fel_pa_watermark__logo
+msgid "Logo"
+msgstr ""
+
+#. module: multipac_felpa
+#: model:ir.model.fields.selection,name:multipac_felpa.selection__account_journal__fel_pa_payment_method__05
+msgid "Loyalty Card"
+msgstr ""
+
+#. module: multipac_felpa
+#: model:res.city,name:multipac_felpa.fel_pa_city_42
+msgid "MACARACAS"
+msgstr ""
+
+#. module: multipac_felpa
+#: model:res.city,name:multipac_felpa.fel_pa_city_43
+msgid "MARIATO"
+msgstr ""
+
+#. module: multipac_felpa
+#: model_terms:ir.ui.view,arch_db:multipac_felpa.infile_classic_header
+msgid "MES"
+msgstr ""
+
+#. module: multipac_felpa
+#: model:res.city,name:multipac_felpa.fel_pa_city_44
+msgid "MIRONO"
+msgstr ""
+
+#. module: multipac_felpa
+#: model:res.city,name:multipac_felpa.fel_pa_city_45
+msgid "MONTIJO"
+msgstr ""
+
+#. module: multipac_felpa
+#: model:res.city,name:multipac_felpa.fel_pa_city_46
+msgid "MUNA"
+msgstr ""
+
+#. module: multipac_felpa
+#: model:ir.model.fields,field_description:multipac_felpa.field_product_product__fel_pa_manufacture_year
+#: model:ir.model.fields,field_description:multipac_felpa.field_product_template__fel_pa_manufacture_year
+msgid "Manufacture Year"
+msgstr ""
+
+#. module: multipac_felpa
+#: model_terms:ir.ui.view,arch_db:multipac_felpa.mutlicert_felpa_res_company_form_view_inherit
+#: model_terms:ir.ui.view,arch_db:multipac_felpa.mutlicert_felpa_res_company_invoice_configuration_form_view
+msgid "Marca de Agua"
+msgstr ""
+
+#. module: multipac_felpa
+#: model:ir.model.fields.selection,name:multipac_felpa.selection__product_template__fel_pa_paint_type__4
+msgid "Matte"
+msgstr ""
+
+#. module: multipac_felpa
+#: model:ir.model.fields.selection,name:multipac_felpa.selection__product_template__fel_pa_product_type__medicine
+msgid "Medicine"
+msgstr ""
+
+#. module: multipac_felpa
+#: model:ir.model.fields,field_description:multipac_felpa.field_fel_pa_tools_msg_wizard__name
+#: model_terms:ir.ui.view,arch_db:multipac_felpa.fel_pa_tools_msg_wizard_form_view
+msgid "Message"
+msgstr ""
+
+#. module: multipac_felpa
+#: model:ir.model.fields,field_description:multipac_felpa.field_fel_pa_tools_api_request__message_has_error
+msgid "Message Delivery error"
+msgstr ""
+
+#. module: multipac_felpa
+#: model:ir.model.fields,field_description:multipac_felpa.field_fel_pa_tools_api_request__message_ids
+msgid "Messages"
+msgstr ""
+
+#. module: multipac_felpa
+#: model:ir.model.fields.selection,name:multipac_felpa.selection__product_template__fel_pa_paint_type__2
+msgid "Metallic"
+msgstr ""
+
+#. module: multipac_felpa
+#: model:ir.model.fields.selection,name:multipac_felpa.selection__product_template__fel_pa_vehicle_type__7
+msgid "Mini Pickup"
+msgstr ""
+
+#. module: multipac_felpa
+#. odoo-python
+#: code:addons/multipac_felpa/models/account_move.py:0
+#, python-format
+msgid "Missing Partner Email"
+msgstr ""
+
+#. module: multipac_felpa
+#: model:ir.model.fields,field_description:multipac_felpa.field_fel_pa_tools_report_fonts__mode
+msgid "Mode"
+msgstr ""
+
+#. module: multipac_felpa
+#: model:ir.model.fields,field_description:multipac_felpa.field_product_product__fel_pa_model_year
+#: model:ir.model.fields,field_description:multipac_felpa.field_product_template__fel_pa_model_year
+msgid "Model Year"
+msgstr ""
+
+#. module: multipac_felpa
+#: model:ir.actions.report,name:multipac_felpa.report_invoice_template_creative
+msgid "Moderno"
+msgstr ""
+
+#. module: multipac_felpa
+#: model_terms:ir.ui.view,arch_db:multipac_felpa.advanced_header
+msgid "Monday to Friday"
+msgstr ""
+
+#. module: multipac_felpa
+#: model:ir.model.fields.selection,name:multipac_felpa.selection__res_company__fel_pa_standard_template__morden
+msgid "Morden"
+msgstr ""
+
+#. module: multipac_felpa
+#: model:ir.model.fields,field_description:multipac_felpa.field_fel_pa_tools_contingency__motive
+#: model:ir.model.fields,field_description:multipac_felpa.field_fel_pa_tools_create_contingency_wizard__motive
+msgid "Motive"
+msgstr ""
+
+#. module: multipac_felpa
+#: model_terms:ir.ui.view,arch_db:multipac_felpa.report_invoice_fel_pac
+msgid "Motivo:"
+msgstr ""
+
+#. module: multipac_felpa
+#: model:ir.model.fields.selection,name:multipac_felpa.selection__product_template__fel_pa_vehicle_type__1
+msgid "Motorcycle"
+msgstr ""
+
+#. module: multipac_felpa
+#: model:ir.model.fields.selection,name:multipac_felpa.selection__res_company__fel_pa_report_footer_selection__multi_columns
+msgid "Multi-Column Footer"
+msgstr ""
+
+#. module: multipac_felpa
+#: model:ir.model.fields,field_description:multipac_felpa.field_fel_pa_tools_api_request__my_activity_date_deadline
+msgid "My Activity Deadline"
+msgstr ""
+
+#. module: multipac_felpa
+#: model_terms:ir.ui.view,arch_db:multipac_felpa.template_footer
+msgid "Móvil:"
+msgstr ""
+
+#. module: multipac_felpa
+#: model:res.city,name:multipac_felpa.fel_pa_city_47
+msgid "NATA"
+msgstr ""
+
+#. module: multipac_felpa
+#: model:res.city,name:multipac_felpa.fel_pa_city_48
+msgid "NOLE DUIMA"
+msgstr ""
+
+#. module: multipac_felpa
+#: model:res.city,name:multipac_felpa.fel_pa_city_49
+msgid "NURUM"
+msgstr ""
+
+#. module: multipac_felpa
+#: model:ir.model.fields,field_description:multipac_felpa.field_fel_pa_tools_api_request__name
+#: model:ir.model.fields,field_description:multipac_felpa.field_fel_pa_tools_county__name
+#: model:ir.model.fields,field_description:multipac_felpa.field_fel_pa_tools_document_type__name
+#: model:ir.model.fields,field_description:multipac_felpa.field_fel_pa_tools_product_unspsc_category__name
+msgid "Name"
+msgstr ""
+
+#. module: multipac_felpa
+#: model:ir.model.fields,field_description:multipac_felpa.field_product_product__fel_pa_net_weight
+#: model:ir.model.fields,field_description:multipac_felpa.field_product_template__fel_pa_net_weight
+msgid "Net Weight (in TON)"
+msgstr ""
+
+#. module: multipac_felpa
+#: model:ir.model.fields,field_description:multipac_felpa.field_fel_pa_tools_api_request__activity_date_deadline
+msgid "Next Activity Deadline"
+msgstr ""
+
+#. module: multipac_felpa
+#: model:ir.model.fields,field_description:multipac_felpa.field_fel_pa_tools_api_request__activity_summary
+msgid "Next Activity Summary"
+msgstr ""
+
+#. module: multipac_felpa
+#: model:ir.model.fields,field_description:multipac_felpa.field_fel_pa_tools_api_request__activity_type_id
+msgid "Next Activity Type"
+msgstr ""
+
+#. module: multipac_felpa
+#: model:ir.model.fields.selection,name:multipac_felpa.selection__account_journal__fel_pa_cafe_format__1
+msgid "No CAFE issuing"
+msgstr ""
+
+#. module: multipac_felpa
+#: model_terms:ir.ui.view,arch_db:multipac_felpa.report_invoice_order_lines
+msgid "No."
+msgstr ""
+
+#. module: multipac_felpa
+#: model:ir.model.fields.selection,name:multipac_felpa.selection__account_journal__fel_pa_container_sent__1
+msgid "Normal"
+msgstr ""
+
+#. module: multipac_felpa
+#: model:ir.model.fields.selection,name:multipac_felpa.selection__fel_pa_tools_ruc_validator_wizard__fel_pa_recipient_type__02
+#: model:ir.model.fields.selection,name:multipac_felpa.selection__res_partner__fel_pa_recipient_type__02
+msgid "Normal Consumer"
+msgstr ""
+
+#. module: multipac_felpa
+#: model_terms:ir.ui.view,arch_db:multipac_felpa.creative_header
+#: model_terms:ir.ui.view,arch_db:multipac_felpa.elegant_header
+#: model_terms:ir.ui.view,arch_db:multipac_felpa.report_invoice_advanced_main
+#: model_terms:ir.ui.view,arch_db:multipac_felpa.report_invoice_exclusive_main
+#: model_terms:ir.ui.view,arch_db:multipac_felpa.report_invoice_incredible_main
+#: model_terms:ir.ui.view,arch_db:multipac_felpa.report_invoice_template_custom_odoo
+#: model_terms:ir.ui.view,arch_db:multipac_felpa.template_header
+msgid "Nota de Credito"
+msgstr ""
+
+#. module: multipac_felpa
+#: model_terms:ir.ui.view,arch_db:multipac_felpa.creative_header
+#: model_terms:ir.ui.view,arch_db:multipac_felpa.elegant_header
+#: model_terms:ir.ui.view,arch_db:multipac_felpa.report_invoice_advanced_main
+#: model_terms:ir.ui.view,arch_db:multipac_felpa.report_invoice_exclusive_main
+#: model_terms:ir.ui.view,arch_db:multipac_felpa.report_invoice_incredible_main
+#: model_terms:ir.ui.view,arch_db:multipac_felpa.report_invoice_template_custom_odoo
+#: model_terms:ir.ui.view,arch_db:multipac_felpa.template_header
+msgid "Nota de Credito Proveedor"
+msgstr ""
+
+#. module: multipac_felpa
+#: model:ir.model.fields,field_description:multipac_felpa.field_fel_pa_tools_api_request__message_needaction_counter
+msgid "Number of Actions"
+msgstr ""
+
+#. module: multipac_felpa
+#: model:ir.model.fields,field_description:multipac_felpa.field_stock_picking__invoice_count
+msgid "Number of Invoices"
+msgstr ""
+
+#. module: multipac_felpa
+#: model:ir.model.fields,field_description:multipac_felpa.field_fel_pa_tools_api_request__message_has_error_counter
+msgid "Number of errors"
+msgstr ""
+
+#. module: multipac_felpa
+#: model:ir.model.fields,help:multipac_felpa.field_fel_pa_tools_api_request__message_needaction_counter
+msgid "Number of messages requiring action"
+msgstr ""
+
+#. module: multipac_felpa
+#: model:ir.model.fields,help:multipac_felpa.field_fel_pa_tools_api_request__message_has_error_counter
+msgid "Number of messages with delivery error"
+msgstr ""
+
+#. module: multipac_felpa
+#: model_terms:ir.ui.view,arch_db:multipac_felpa.infile_classic_header
+msgid "Número:"
+msgstr ""
+
+#. module: multipac_felpa
+#: model:res.city,name:multipac_felpa.fel_pa_city_50
+msgid "OCU"
+msgstr ""
+
+#. module: multipac_felpa
+#: model_terms:ir.ui.view,arch_db:multipac_felpa.fel_pa_tools_msg_wizard_form_view
+msgid "OK"
+msgstr ""
+
+#. module: multipac_felpa
+#: model:res.city,name:multipac_felpa.fel_pa_city_51
+msgid "OLA"
+msgstr ""
+
+#. module: multipac_felpa
+#: model:ir.actions.report,name:multipac_felpa.report_invoice_template_odoo
+msgid "Odoo"
+msgstr ""
+
+#. module: multipac_felpa
+#: model:ir.model.fields.selection,name:multipac_felpa.selection__product_template__fel_pa_vehicle_usage__4
+msgid "Official"
+msgstr ""
+
+#. module: multipac_felpa
+#: model:ir.model.fields,field_description:multipac_felpa.field_res_company__fel_pa_offline_available
+msgid "Offline Available"
+msgstr ""
+
+#. module: multipac_felpa
+#: model:ir.model.fields,field_description:multipac_felpa.field_res_company__fel_pa_offline_pending_path
+msgid "Offline Pending Path"
+msgstr ""
+
+#. module: multipac_felpa
+#: model:ir.model.fields,field_description:multipac_felpa.field_res_company__fel_pa_offline_utility_path
+msgid "Offline Utility Path"
+msgstr ""
+
+#. module: multipac_felpa
+#. odoo-python
+#: code:addons/multipac_felpa/models/fel_pa_tools_document_type.py:0
+#: model:ir.model.constraint,message:multipac_felpa.constraint_fel_pa_tools_document_type_unique_active_journal_document_type
+#, python-format
+msgid ""
+"Only one active document type per journal and document type is allowed."
+msgstr ""
+
+#. module: multipac_felpa
+#: model:ir.model.fields.selection,name:multipac_felpa.selection__account_journal__fel_pa_payment_method__99
+#: model:ir.model.fields.selection,name:multipac_felpa.selection__product_template__fel_pa_fuel_type__99
+#: model:ir.model.fields.selection,name:multipac_felpa.selection__product_template__fel_pa_paint_type__9
+#: model:l10n_latam.identification.type,name:multipac_felpa.it_other
+msgid "Other"
+msgstr ""
+
+#. module: multipac_felpa
+#: model_terms:ir.ui.view,arch_db:multipac_felpa.mutlicert_felpa_res_company_form_view_inherit
+#: model_terms:ir.ui.view,arch_db:multipac_felpa.mutlicert_felpa_res_company_invoice_configuration_form_view
+msgid "Other Configurations"
+msgstr ""
+
+#. module: multipac_felpa
+#: model:ir.model.fields,field_description:multipac_felpa.field_fel_pa_tools_api_request__fel_pa_pac
+#: model:ir.model.fields,field_description:multipac_felpa.field_res_company__fel_pa_pac
+msgid "PAC"
+msgstr ""
+
+#. module: multipac_felpa
+#: model_terms:ir.ui.view,arch_db:multipac_felpa.mutlicert_felpa_res_company_form_view_inherit
+msgid "PAC Offline Utility Settings"
+msgstr ""
+
+#. module: multipac_felpa
+#: model_terms:ir.ui.view,arch_db:multipac_felpa.mutlicert_felpa_res_company_form_view_inherit
+msgid "PAC Settings"
+msgstr ""
+
+#. module: multipac_felpa
+#: model:res.city,name:multipac_felpa.fel_pa_city_52
+msgid "PANAMÁ"
+msgstr ""
+
+#. module: multipac_felpa
+#: model:res.city,name:multipac_felpa.fel_pa_city_53
+msgid "PARITA"
+msgstr ""
+
+#. module: multipac_felpa
+#: model:res.city,name:multipac_felpa.fel_pa_city_54
+msgid "PEDASI"
+msgstr ""
+
+#. module: multipac_felpa
+#: model:res.city,name:multipac_felpa.fel_pa_city_55
+msgid "PENONOME"
+msgstr ""
+
+#. module: multipac_felpa
+#: model:res.city,name:multipac_felpa.fel_pa_city_56
+msgid "PESE"
+msgstr ""
+
+#. module: multipac_felpa
+#: model:res.city,name:multipac_felpa.fel_pa_city_57
+msgid "PINOGANA"
+msgstr ""
+
+#. module: multipac_felpa
+#: model:res.city,name:multipac_felpa.fel_pa_city_58
+msgid "POCRI"
+msgstr ""
+
+#. module: multipac_felpa
+#: model:res.city,name:multipac_felpa.fel_pa_city_59
+msgid "PORTOBELO"
+msgstr ""
+
+#. module: multipac_felpa
+#: model_terms:ir.ui.view,arch_db:multipac_felpa.invoice_subtotal_tem
+msgid "Pagado el"
+msgstr ""
+
+#. module: multipac_felpa
+#: model_terms:ir.ui.view,arch_db:multipac_felpa.templates_footer
+msgid ""
+"Page: \n"
+"                    <span class=\"page\"/>\n"
+"                    / \n"
+"                    <span class=\"topage\"/>"
+msgstr ""
+
+#. module: multipac_felpa
+#: model:ir.model.fields,field_description:multipac_felpa.field_product_product__fel_pa_paint_nodef
+#: model:ir.model.fields,field_description:multipac_felpa.field_product_template__fel_pa_paint_nodef
+msgid "Paint Nodef"
+msgstr ""
+
+#. module: multipac_felpa
+#: model:ir.model.fields,field_description:multipac_felpa.field_product_product__fel_pa_paint_type
+#: model:ir.model.fields,field_description:multipac_felpa.field_product_template__fel_pa_paint_type
+msgid "Paint Type"
+msgstr ""
+
+#. module: multipac_felpa
+#: model:ir.model.fields.selection,name:multipac_felpa.selection__account_move__fel_pa_operation_destination__1
+msgid "Panamá"
+msgstr ""
+
+#. module: multipac_felpa
+#: model_terms:ir.ui.view,arch_db:multipac_felpa.multipac_felpa_account_move_form_inherit
+msgid "Panamá FEL"
+msgstr ""
+
+#. module: multipac_felpa
+#: model:ir.model.fields,field_description:multipac_felpa.field_account_bank_statement_line__fel_pa_active
+#: model:ir.model.fields,field_description:multipac_felpa.field_account_journal__fel_pa_active
+#: model:ir.model.fields,field_description:multipac_felpa.field_account_move__fel_pa_active
+#: model:ir.model.fields,field_description:multipac_felpa.field_account_payment__fel_pa_active
+msgid "Panamá FEL Active"
+msgstr ""
+
+#. module: multipac_felpa
+#: model:ir.model.fields,field_description:multipac_felpa.field_account_journal__fel_pa_active_contingency_id
+msgid "Panamá FEL Active Contingency"
+msgstr ""
+
+#. module: multipac_felpa
+#: model:ir.actions.act_window,name:multipac_felpa.action_fel_pa_tools_api_request
+msgid "Panamá FEL Api Requests"
+msgstr ""
+
+#. module: multipac_felpa
+#: model:ir.model.fields,field_description:multipac_felpa.field_account_bank_statement_line__fel_pa_authorization_protocol
+#: model:ir.model.fields,field_description:multipac_felpa.field_account_move__fel_pa_authorization_protocol
+#: model:ir.model.fields,field_description:multipac_felpa.field_account_payment__fel_pa_authorization_protocol
+msgid "Panamá FEL Authorization Protocol"
+msgstr ""
+
+#. module: multipac_felpa
+#: model:ir.model.fields,field_description:multipac_felpa.field_account_journal__fel_pa_branch_type
+msgid "Panamá FEL Branch Type"
+msgstr ""
+
+#. module: multipac_felpa
+#: model:ir.model.fields,field_description:multipac_felpa.field_account_journal__fel_pa_cafe_delivery
+msgid "Panamá FEL CAFE Delivery"
+msgstr ""
+
+#. module: multipac_felpa
+#: model:ir.model.fields,field_description:multipac_felpa.field_account_journal__fel_pa_cafe_format
+msgid "Panamá FEL CAFE Format"
+msgstr ""
+
+#. module: multipac_felpa
+#: model:ir.model.fields,field_description:multipac_felpa.field_account_bank_statement_line__fel_pa_cufe
+#: model:ir.model.fields,field_description:multipac_felpa.field_account_move__fel_pa_cufe
+#: model:ir.model.fields,field_description:multipac_felpa.field_account_payment__fel_pa_cufe
+msgid "Panamá FEL CUFE"
+msgstr ""
+
+#. module: multipac_felpa
+#: model:ir.model.fields,field_description:multipac_felpa.field_account_bank_statement_line__fel_pa_cancel_motive
+#: model:ir.model.fields,field_description:multipac_felpa.field_account_move__fel_pa_cancel_motive
+#: model:ir.model.fields,field_description:multipac_felpa.field_account_payment__fel_pa_cancel_motive
+msgid "Panamá FEL Cancel Motive"
+msgstr ""
+
+#. module: multipac_felpa
+#: model:ir.model,name:multipac_felpa.model_fel_pa_tools_cancel_wizard
+msgid "Panamá FEL Cancel Wizard"
+msgstr ""
+
+#. module: multipac_felpa
+#: model:ir.model.fields,field_description:multipac_felpa.field_res_city__fel_pa_code
+msgid "Panamá FEL City Code"
+msgstr ""
+
+#. module: multipac_felpa
+#: model:ir.model.fields,field_description:multipac_felpa.field_account_journal__fel_pa_code_branch_issuer
+msgid "Panamá FEL Code Branch Issuer"
+msgstr ""
+
+#. module: multipac_felpa
+#: model_terms:ir.ui.view,arch_db:multipac_felpa.mutlicert_felpa_res_company_form_view_inherit
+msgid "Panamá FEL Config"
+msgstr ""
+
+#. module: multipac_felpa
+#: model_terms:ir.ui.view,arch_db:multipac_felpa.multipac_felpa_account_journal_form_inherit
+#: model_terms:ir.ui.view,arch_db:multipac_felpa.multipac_felpa_product_product_form_inherit
+#: model_terms:ir.ui.view,arch_db:multipac_felpa.multipac_felpa_product_template_form_inherit
+msgid "Panamá FEL Configuration"
+msgstr ""
+
+#. module: multipac_felpa
+#: model:ir.model.fields,field_description:multipac_felpa.field_account_journal__fel_pa_container_sent
+msgid "Panamá FEL Container Sent"
+msgstr ""
+
+#. module: multipac_felpa
+#: model:ir.model.fields,field_description:multipac_felpa.field_account_journal__fel_pa_contingency_ids
+msgid "Panamá FEL Contingencies"
+msgstr ""
+
+#. module: multipac_felpa
+#. odoo-python
+#: code:addons/multipac_felpa/models/account_journal.py:0
+#: model:ir.actions.act_window,name:multipac_felpa.action_fel_pa_tools_contingency
+#: model:ir.model,name:multipac_felpa.model_fel_pa_tools_contingency
+#: model:ir.model.fields,field_description:multipac_felpa.field_account_bank_statement_line__fel_pa_contingency_id
+#: model:ir.model.fields,field_description:multipac_felpa.field_account_move__fel_pa_contingency_id
+#: model:ir.model.fields,field_description:multipac_felpa.field_account_payment__fel_pa_contingency_id
+#, python-format
+msgid "Panamá FEL Contingency"
+msgstr ""
+
+#. module: multipac_felpa
+#: model:ir.model,name:multipac_felpa.model_fel_pa_tools_county
+msgid "Panamá FEL County"
+msgstr ""
+
+#. module: multipac_felpa
+#: model:ir.model.fields,field_description:multipac_felpa.field_fel_pa_tools_county__fel_pa_code
+msgid "Panamá FEL County Code"
+msgstr ""
+
+#. module: multipac_felpa
+#: model:ir.model,name:multipac_felpa.model_fel_pa_tools_create_contingency_wizard
+msgid "Panamá FEL Create Contingency"
+msgstr ""
+
+#. module: multipac_felpa
+#: model:ir.model.fields,field_description:multipac_felpa.field_account_journal__fel_pa_custom_logo
+msgid "Panamá FEL Custom Logo"
+msgstr ""
+
+#. module: multipac_felpa
+#: model:ir.model.fields,field_description:multipac_felpa.field_account_bank_statement_line__fel_pa_date_reception
+#: model:ir.model.fields,field_description:multipac_felpa.field_account_move__fel_pa_date_reception
+#: model:ir.model.fields,field_description:multipac_felpa.field_account_payment__fel_pa_date_reception
+msgid "Panamá FEL Date Reception"
+msgstr ""
+
+#. module: multipac_felpa
+#: model:ir.model.fields,field_description:multipac_felpa.field_account_journal__fel_pa_default_document_type_id
+msgid "Panamá FEL Default Document Type"
+msgstr ""
+
+#. module: multipac_felpa
+#: model:ir.model.fields,field_description:multipac_felpa.field_account_bank_statement_line__fel_pa_document_code
+#: model:ir.model.fields,field_description:multipac_felpa.field_account_move__fel_pa_document_code
+#: model:ir.model.fields,field_description:multipac_felpa.field_account_payment__fel_pa_document_code
+msgid "Panamá FEL Document Code"
+msgstr ""
+
+#. module: multipac_felpa
+#: model:ir.model.fields,field_description:multipac_felpa.field_account_bank_statement_line__fel_pa_document_number
+#: model:ir.model.fields,field_description:multipac_felpa.field_account_move__fel_pa_document_number
+#: model:ir.model.fields,field_description:multipac_felpa.field_account_payment__fel_pa_document_number
+msgid "Panamá FEL Document Number"
+msgstr ""
+
+#. module: multipac_felpa
+#: model:ir.model.fields,field_description:multipac_felpa.field_account_bank_statement_line__fel_pa_document_references_ids
+#: model:ir.model.fields,field_description:multipac_felpa.field_account_move__fel_pa_document_references_ids
+#: model:ir.model.fields,field_description:multipac_felpa.field_account_payment__fel_pa_document_references_ids
+msgid "Panamá FEL Document References"
+msgstr ""
+
+#. module: multipac_felpa
+#: model:ir.model,name:multipac_felpa.model_fel_pa_tools_document_type
+#: model:ir.model.fields,field_description:multipac_felpa.field_account_bank_statement_line__fel_pa_document_type_id
+#: model:ir.model.fields,field_description:multipac_felpa.field_account_move__fel_pa_document_type_id
+#: model:ir.model.fields,field_description:multipac_felpa.field_account_payment__fel_pa_document_type_id
+msgid "Panamá FEL Document Type"
+msgstr ""
+
+#. module: multipac_felpa
+#: model:ir.model.fields,field_description:multipac_felpa.field_account_journal__fel_pa_document_type_ids
+msgid "Panamá FEL Document Types"
+msgstr ""
+
+#. module: multipac_felpa
+#: model:ir.model.fields,field_description:multipac_felpa.field_account_bank_statement_line__fel_pa_emission_type
+#: model:ir.model.fields,field_description:multipac_felpa.field_account_move__fel_pa_emission_type
+#: model:ir.model.fields,field_description:multipac_felpa.field_account_payment__fel_pa_emission_type
+msgid "Panamá FEL Emission Type"
+msgstr ""
+
+#. module: multipac_felpa
+#: model:ir.model,name:multipac_felpa.model_fel_pa_tools_report_fonts
+msgid "Panamá FEL Fonts Available"
+msgstr ""
+
+#. module: multipac_felpa
+#: model:ir.module.category,name:multipac_felpa.module_multipac_felpa_category
+msgid "Panamá FEL Group"
+msgstr ""
+
+#. module: multipac_felpa
+#: model:ir.model.fields,field_description:multipac_felpa.field_account_bank_statement_line__fel_pa_interes_information
+#: model:ir.model.fields,field_description:multipac_felpa.field_account_move__fel_pa_interes_information
+#: model:ir.model.fields,field_description:multipac_felpa.field_account_payment__fel_pa_interes_information
+#: model_terms:ir.ui.view,arch_db:multipac_felpa.multipac_felpa_account_move_form_inherit
+msgid "Panamá FEL Interes Information"
+msgstr ""
+
+#. module: multipac_felpa
+#: model_terms:ir.ui.view,arch_db:multipac_felpa.mutlicert_felpa_res_company_form_view_inherit
+#: model_terms:ir.ui.view,arch_db:multipac_felpa.mutlicert_felpa_res_company_invoice_configuration_form_view
+msgid "Panamá FEL Invoice Configuration"
+msgstr ""
+
+#. module: multipac_felpa
+#: model:ir.model.fields,field_description:multipac_felpa.field_account_journal__fel_pa_invoice_custom_logo
+msgid "Panamá FEL Invoice Custom Logo"
+msgstr ""
+
+#. module: multipac_felpa
+#: model:ir.model.fields,field_description:multipac_felpa.field_account_bank_statement_line__fel_pa_issue_date
+#: model:ir.model.fields,field_description:multipac_felpa.field_account_move__fel_pa_issue_date
+#: model:ir.model.fields,field_description:multipac_felpa.field_account_payment__fel_pa_issue_date
+msgid "Panamá FEL Issue Date"
+msgstr ""
+
+#. module: multipac_felpa
+#: model:ir.model,name:multipac_felpa.model_fel_pa_tools_msg_wizard
+msgid "Panamá FEL Message Wizard"
+msgstr ""
+
+#. module: multipac_felpa
+#: model:ir.model.fields,field_description:multipac_felpa.field_account_bank_statement_line__fel_pa_operation_destination
+#: model:ir.model.fields,field_description:multipac_felpa.field_account_move__fel_pa_operation_destination
+#: model:ir.model.fields,field_description:multipac_felpa.field_account_payment__fel_pa_operation_destination
+msgid "Panamá FEL Operation Destination"
+msgstr ""
+
+#. module: multipac_felpa
+#: model:ir.model.fields,field_description:multipac_felpa.field_account_bank_statement_line__fel_pa_operation_nature
+#: model:ir.model.fields,field_description:multipac_felpa.field_account_move__fel_pa_operation_nature
+#: model:ir.model.fields,field_description:multipac_felpa.field_account_payment__fel_pa_operation_nature
+msgid "Panamá FEL Operation Nature"
+msgstr ""
+
+#. module: multipac_felpa
+#: model:ir.model.fields,field_description:multipac_felpa.field_res_company__fel_pa_default_operation_nature
+msgid "Panamá FEL Operation Nature Default"
+msgstr ""
+
+#. module: multipac_felpa
+#: model:ir.model.fields,field_description:multipac_felpa.field_account_journal__fel_pa_other_payment_description
+msgid "Panamá FEL Other Payment Description"
+msgstr ""
+
+#. module: multipac_felpa
+#: model_terms:ir.ui.view,arch_db:multipac_felpa.multipac_felpa_res_partner_form_view_inherit
+msgid "Panamá FEL Partner Configuration"
+msgstr ""
+
+#. module: multipac_felpa
+#: model:ir.model.fields,field_description:multipac_felpa.field_account_bank_statement_line__fel_pa_payment_method_id
+#: model:ir.model.fields,field_description:multipac_felpa.field_account_journal__fel_pa_payment_method
+#: model:ir.model.fields,field_description:multipac_felpa.field_account_move__fel_pa_payment_method_id
+#: model:ir.model.fields,field_description:multipac_felpa.field_account_payment__fel_pa_payment_method_id
+#: model:ir.model.fields,field_description:multipac_felpa.field_res_company__fel_pa_default_payment_method_id
+#: model_terms:ir.ui.view,arch_db:multipac_felpa.multipac_felpa_account_move_form_inherit
+msgid "Panamá FEL Payment Method"
+msgstr ""
+
+#. module: multipac_felpa
+#: model:ir.model,name:multipac_felpa.model_fel_pa_tools_product_unspsc_category
+msgid "Panamá FEL Product UNSPSC Category"
+msgstr ""
+
+#. module: multipac_felpa
+#: model:ir.model.fields,field_description:multipac_felpa.field_account_bank_statement_line__fel_pa_qr
+#: model:ir.model.fields,field_description:multipac_felpa.field_account_move__fel_pa_qr
+#: model:ir.model.fields,field_description:multipac_felpa.field_account_payment__fel_pa_qr
+msgid "Panamá FEL QR Code"
+msgstr ""
+
+#. module: multipac_felpa
+#: model:ir.model.fields,field_description:multipac_felpa.field_account_bank_statement_line__fel_pa_qr_url
+#: model:ir.model.fields,field_description:multipac_felpa.field_account_move__fel_pa_qr_url
+#: model:ir.model.fields,field_description:multipac_felpa.field_account_payment__fel_pa_qr_url
+msgid "Panamá FEL QR Code URL"
+msgstr ""
+
+#. module: multipac_felpa
+#: model:ir.module.category,name:multipac_felpa.module_multipac_felpa_ruc_validator_category
+msgid "Panamá FEL RUC Validator"
+msgstr ""
+
+#. module: multipac_felpa
+#: model:ir.model,name:multipac_felpa.model_fel_pa_tools_ruc_validator_wizard
+msgid "Panamá FEL RUC Validator Wizard"
+msgstr ""
+
+#. module: multipac_felpa
+#: model:ir.model,name:multipac_felpa.model_fel_pa_tools_report_extra_content
+msgid "Panamá FEL Report Extra Content"
+msgstr ""
+
+#. module: multipac_felpa
+#: model:ir.model.fields,field_description:multipac_felpa.field_account_bank_statement_line__fel_pa_sale_type
+#: model:ir.model.fields,field_description:multipac_felpa.field_account_move__fel_pa_sale_type
+#: model:ir.model.fields,field_description:multipac_felpa.field_account_payment__fel_pa_sale_type
+msgid "Panamá FEL Sale Type"
+msgstr ""
+
+#. module: multipac_felpa
+#: model:ir.model.fields,field_description:multipac_felpa.field_res_company__fel_pa_default_sale_type
+msgid "Panamá FEL Sale Type Default"
+msgstr ""
+
+#. module: multipac_felpa
+#: model:ir.model.fields,field_description:multipac_felpa.field_account_bank_statement_line__fel_pa_state
+#: model:ir.model.fields,field_description:multipac_felpa.field_account_move__fel_pa_state
+#: model:ir.model.fields,field_description:multipac_felpa.field_account_payment__fel_pa_state
+msgid "Panamá FEL State"
+msgstr ""
+
+#. module: multipac_felpa
+#: model:ir.model.fields,field_description:multipac_felpa.field_account_bank_statement_line__fel_pa_total_in_letters
+#: model:ir.model.fields,field_description:multipac_felpa.field_account_move__fel_pa_total_in_letters
+#: model:ir.model.fields,field_description:multipac_felpa.field_account_payment__fel_pa_total_in_letters
+msgid "Panamá FEL Total in Letters"
+msgstr ""
+
+#. module: multipac_felpa
+#: model:ir.actions.server,name:multipac_felpa.fel_pa_close_old_contigencies_ir_actions_server
+msgid "Panamá FEL: Close Old Contingencies"
+msgstr ""
+
+#. module: multipac_felpa
+#: model:ir.actions.server,name:multipac_felpa.fel_pa_contigency_reprocess_ir_actions_server
+msgid "Panamá FEL: Contingency Process"
+msgstr ""
+
+#. module: multipac_felpa
+#: model:ir.model.fields,field_description:multipac_felpa.field_product_product__fel_pa_info_item
+#: model:ir.model.fields,field_description:multipac_felpa.field_product_template__fel_pa_info_item
+msgid "Panamá Information Item"
+msgstr ""
+
+#. module: multipac_felpa
+#: model:ir.model.fields,field_description:multipac_felpa.field_product_product__fel_pa_product_type
+#: model:ir.model.fields,field_description:multipac_felpa.field_product_template__fel_pa_product_type
+msgid "Panamá Product Type"
+msgstr ""
+
+#. module: multipac_felpa
+#: model:ir.model.fields,field_description:multipac_felpa.field_product_product__fel_pa_unspsc_category_id
+#: model:ir.model.fields,field_description:multipac_felpa.field_product_template__fel_pa_unspsc_category_id
+msgid "Panamá UNSPSC Category"
+msgstr ""
+
+#. module: multipac_felpa
+#: model:ir.model.fields.selection,name:multipac_felpa.selection__product_template__fel_pa_vehicle_condition__2
+msgid "Partially-finished"
+msgstr ""
+
+#. module: multipac_felpa
+#: model:ir.model.fields,field_description:multipac_felpa.field_fel_pa_tools_ruc_validator_wizard__partner_id
+#: model_terms:ir.ui.view,arch_db:multipac_felpa.fel_pa_tools_contingency_form
+#: model_terms:ir.ui.view,arch_db:multipac_felpa.view_multipac_felpa_account_move_tree
+msgid "Partner"
+msgstr ""
+
+#. module: multipac_felpa
+#: model_terms:ir.ui.view,arch_db:multipac_felpa.mutlicert_felpa_res_company_form_view_inherit
+#: model_terms:ir.ui.view,arch_db:multipac_felpa.mutlicert_felpa_res_company_invoice_configuration_form_view
+msgid "Partner Colors"
+msgstr ""
+
+#. module: multipac_felpa
+#: model:ir.model.fields,field_description:multipac_felpa.field_product_product__fel_pa_passenger_capacity
+#: model:ir.model.fields,field_description:multipac_felpa.field_product_template__fel_pa_passenger_capacity
+msgid "Passenger Capacity"
+msgstr ""
+
+#. module: multipac_felpa
+#: model:ir.model.fields,field_description:multipac_felpa.field_res_company__fel_pa_pac_password_token
+msgid "Password Token"
+msgstr ""
+
+#. module: multipac_felpa
+#: model:ir.model.fields,field_description:multipac_felpa.field_fel_pa_tools_report_fonts__path
+msgid "Path"
+msgstr ""
+
+#. module: multipac_felpa
+#: model:ir.model.fields,help:multipac_felpa.field_res_company__fel_pa_offline_pending_path
+msgid "Path to the offline pending for the PAC."
+msgstr ""
+
+#. module: multipac_felpa
+#: model:ir.model.fields,help:multipac_felpa.field_res_company__fel_pa_offline_utility_path
+msgid "Path to the offline utility for the PAC."
+msgstr ""
+
+#. module: multipac_felpa
+#: model:ir.model.fields,field_description:multipac_felpa.field_fel_pa_tools_api_request__payload
+msgid "Payload"
+msgstr ""
+
+#. module: multipac_felpa
+#: model_terms:ir.ui.view,arch_db:multipac_felpa.fel_pa_tools_contingency_form
+#: model_terms:ir.ui.view,arch_db:multipac_felpa.view_multipac_felpa_account_move_tree
+msgid "Payment"
+msgstr ""
+
+#. module: multipac_felpa
+#: model_terms:ir.ui.view,arch_db:multipac_felpa.multipac_felpa_account_journal_form_inherit
+msgid "Payment Configuration"
+msgstr ""
+
+#. module: multipac_felpa
+#: model:ir.model.fields.selection,name:multipac_felpa.selection__product_template__fel_pa_paint_type__3
+msgid "Pearl"
+msgstr ""
+
+#. module: multipac_felpa
+#: model:ir.model.fields.selection,name:multipac_felpa.selection__fel_pa_tools_ruc_validator_wizard__fel_pa_taxpayer_type__1
+#: model:ir.model.fields.selection,name:multipac_felpa.selection__res_partner__fel_pa_taxpayer_type__1
+msgid "Person"
+msgstr ""
+
+#. module: multipac_felpa
+#: model_terms:ir.ui.view,arch_db:multipac_felpa.templates_footer
+msgid "Phone:"
+msgstr ""
+
+#. module: multipac_felpa
+#: model:ir.model.fields.selection,name:multipac_felpa.selection__product_template__fel_pa_vehicle_type__6
+msgid "Pickup"
+msgstr ""
+
+#. module: multipac_felpa
+#: model:ir.model.fields.selection,name:multipac_felpa.selection__product_template__fel_pa_vehicle_type__8
+msgid "Pickup Truck"
+msgstr ""
+
+#. module: multipac_felpa
+#: model:ir.model.fields,field_description:multipac_felpa.field_res_partner__fel_pa_report_template_id
+#: model:ir.model.fields,field_description:multipac_felpa.field_res_users__fel_pa_report_template_id
+msgid "Plantilla de Factura"
+msgstr ""
+
+#. module: multipac_felpa
+#: model:ir.model.fields,field_description:multipac_felpa.field_res_partner__fel_pa_report_template_id1
+#: model:ir.model.fields,field_description:multipac_felpa.field_res_users__fel_pa_report_template_id1
+msgid "Plantilla de Factura1"
+msgstr ""
+
+#. module: multipac_felpa
+#: model:ir.model.fields,help:multipac_felpa.field_res_company__fel_pa_is_show_notes
+msgid ""
+"Please check if you want to show invoice, sales, and purchase notes in the "
+"PDF."
+msgstr ""
+
+#. module: multipac_felpa
+#: model:ir.model.fields,help:multipac_felpa.field_res_company__fel_pa_is_show_payment_notes
+msgid "Please check if you want to show payment notes in the PDF."
+msgstr ""
+
+#. module: multipac_felpa
+#: model:ir.model.fields,help:multipac_felpa.field_res_company__fel_pa_dgi_logo
+msgid "Please check if you want to show the FEL logo in the PDF."
+msgstr ""
+
+#. module: multipac_felpa
+#: model:ir.model.fields,help:multipac_felpa.field_res_company__fel_pa_qr_code
+msgid "Please check if you want to show the QR code in the PDF."
+msgstr ""
+
+#. module: multipac_felpa
+#: model:ir.model.fields,help:multipac_felpa.field_res_company__fel_pa_is_show_barcode
+msgid "Please check if you want to show the barcode in the PDF."
+msgstr ""
+
+#. module: multipac_felpa
+#: model:ir.model.fields,help:multipac_felpa.field_res_company__fel_pa_is_company_bold
+msgid "Please check if you want to show the company name in bold."
+msgstr ""
+
+#. module: multipac_felpa
+#: model:ir.model.fields,help:multipac_felpa.field_res_company__fel_pa_is_customer_bold
+msgid "Please check if you want to show the customer name in bold."
+msgstr ""
+
+#. module: multipac_felpa
+#: model:ir.model.fields,help:multipac_felpa.field_res_company__fel_pa_is_description
+msgid ""
+"Please check if you want to show the product description in the report."
+msgstr ""
+
+#. module: multipac_felpa
+#: model:ir.model.fields,help:multipac_felpa.field_res_company__fel_pa_add_product_image
+msgid "Please check if you want to show the product image."
+msgstr ""
+
+#. module: multipac_felpa
+#: model:ir.model.fields,help:multipac_felpa.field_res_company__fel_pa_is_show_signature
+msgid "Please check if you want to show the signature in the PDF."
+msgstr ""
+
+#. module: multipac_felpa
+#: model:ir.model.fields,help:multipac_felpa.field_res_company__fel_pa_is_show_watermark
+msgid "Please check if you want to show the watermark."
+msgstr ""
+
+#. module: multipac_felpa
+#. odoo-python
+#: code:addons/multipac_felpa/models/res_company.py:0
+#, python-format
+msgid ""
+"Please enter a font size greater than 10 and less than 25, otherwise your "
+"report will be too large."
+msgstr ""
+
+#. module: multipac_felpa
+#. odoo-python
+#: code:addons/multipac_felpa/models/res_company.py:0
+#, python-format
+msgid ""
+"Please enter a watermark text font size greater than 0 and less than 10, "
+"otherwise your report will be too large."
+msgstr ""
+
+#. module: multipac_felpa
+#: model:ir.model.fields,help:multipac_felpa.field_res_company__fel_pa_watermark_text
+msgid "Please enter the watermark text."
+msgstr ""
+
+#. module: multipac_felpa
+#: model:ir.model.fields,help:multipac_felpa.field_res_company__fel_pa_report_template_id
+#: model:ir.model.fields,help:multipac_felpa.field_res_company__fel_pa_report_template_id1
+msgid "Please select the report template for the invoice"
+msgstr ""
+
+#. module: multipac_felpa
+#: model:ir.model.fields,help:multipac_felpa.field_res_company__fel_pa_standard_template
+msgid "Please select your standard color configuration for all templates."
+msgstr ""
+
+#. module: multipac_felpa
+#: model:ir.model.fields,help:multipac_felpa.field_res_company__fel_pa_company_address_color
+msgid "Please set the Hex color for the company address."
+msgstr ""
+
+#. module: multipac_felpa
+#: model:ir.model.fields,help:multipac_felpa.field_res_company__fel_pa_company_color
+msgid "Please set the Hex color for the company name."
+msgstr ""
+
+#. module: multipac_felpa
+#: model:ir.model.fields,help:multipac_felpa.field_res_company__fel_pa_customer_address_color
+msgid "Please set the Hex color for the customer address."
+msgstr ""
+
+#. module: multipac_felpa
+#: model:ir.model.fields,help:multipac_felpa.field_res_company__fel_pa_customer_color
+msgid "Please set the Hex color for the customer name."
+msgstr ""
+
+#. module: multipac_felpa
+#: model:ir.model.fields,help:multipac_felpa.field_res_company__fel_pa_text_color
+msgid "Please set the Hex color for the general text."
+msgstr ""
+
+#. module: multipac_felpa
+#: model:ir.model.fields,help:multipac_felpa.field_res_company__fel_pa_even_party_color
+msgid "Please set the Hex color for the table even parity."
+msgstr ""
+
+#. module: multipac_felpa
+#: model:ir.model.fields,help:multipac_felpa.field_res_company__fel_pa_odd_party_color
+msgid "Please set the Hex color for the table odd parity."
+msgstr ""
+
+#. module: multipac_felpa
+#: model:ir.model.fields,help:multipac_felpa.field_res_company__fel_pa_theme_text_color
+msgid "Please set the Hex color for the template text."
+msgstr ""
+
+#. module: multipac_felpa
+#: model:ir.model.fields,help:multipac_felpa.field_res_company__fel_pa_theme_color
+msgid "Please set the Hex color for the template."
+msgstr ""
+
+#. module: multipac_felpa
+#: model:ir.model.fields,help:multipac_felpa.field_res_company__fel_pa_watermark_text_color
+msgid "Please set the Hex color for the watermark text."
+msgstr ""
+
+#. module: multipac_felpa
+#: model:ir.model.fields,help:multipac_felpa.field_res_company__fel_pa_watermark_text_font_size
+msgid "Please set the font size for the watermark text."
+msgstr ""
+
+#. module: multipac_felpa
+#: model:ir.model.fields,help:multipac_felpa.field_res_company__fel_pa_logo_footer
+msgid "Please set the footer logo for the report."
+msgstr ""
+
+#. module: multipac_felpa
+#: model:ir.model.fields,help:multipac_felpa.field_res_company__fel_pa_watermark_logo
+msgid "Please set the watermark logo for the report."
+msgstr ""
+
+#. module: multipac_felpa
+#: model:ir.model.fields,help:multipac_felpa.field_res_company__fel_pa_add_amount_in_words
+msgid "Please uncheck if you want to hide the amount in words."
+msgstr ""
+
+#. module: multipac_felpa
+#: model:ir.model.fields,help:multipac_felpa.field_fel_pa_tools_report_extra_content__append_extra_content
+msgid ""
+"Please upload file (You can upload file like jpg, png, pdf, docx, pptx, "
+"xlsx, doc, ppt, xls, txt)"
+msgstr ""
+
+#. module: multipac_felpa
+#. odoo-python
+#: code:addons/multipac_felpa/models/fel_pa_tools_report_extra_content.py:0
+#, python-format
+msgid "Please upload pdf file only"
+msgstr ""
+
+#. module: multipac_felpa
+#: model:ir.model.fields,help:multipac_felpa.field_res_company__fel_pa_signature
+msgid "Please upload the signature image to show it in the report."
+msgstr ""
+
+#. module: multipac_felpa
+#: model:ir.model.fields.selection,name:multipac_felpa.selection__res_company__fel_pa_standard_template__polished
+msgid "Polished"
+msgstr ""
+
+#. module: multipac_felpa
+#: model:ir.model.fields,field_description:multipac_felpa.field_fel_pa_tools_api_request__access_url
+msgid "Portal Access URL"
+msgstr ""
+
+#. module: multipac_felpa
+#: model:ir.model.fields.selection,name:multipac_felpa.selection__account_move__fel_pa_emission_type__04
+msgid "Post emission Authorization, contingency operation"
+msgstr ""
+
+#. module: multipac_felpa
+#: model:ir.model.fields.selection,name:multipac_felpa.selection__account_move__fel_pa_emission_type__03
+msgid "Post emission Authorization, normal operation"
+msgstr ""
+
+#. module: multipac_felpa
+#: model_terms:ir.ui.view,arch_db:multipac_felpa.report_invoice_order_lines
+msgid "Precio Unitario"
+msgstr ""
+
+#. module: multipac_felpa
+#: model:ir.model.fields.selection,name:multipac_felpa.selection__account_move__fel_pa_emission_type__02
+msgid "Prior Authorization, contingency operation"
+msgstr ""
+
+#. module: multipac_felpa
+#: model:ir.model.fields.selection,name:multipac_felpa.selection__account_move__fel_pa_emission_type__01
+msgid "Prior Authorization, normal operation"
+msgstr ""
+
+#. module: multipac_felpa
+#: model:ir.model.fields.selection,name:multipac_felpa.selection__product_template__fel_pa_vehicle_usage__2
+msgid "Private"
+msgstr ""
+
+#. module: multipac_felpa
+#: model_terms:ir.ui.view,arch_db:multipac_felpa.fel_pa_tools_contingency_form
+#: model_terms:ir.ui.view,arch_db:multipac_felpa.multipac_felpa_account_move_form_inherit
+#: model_terms:ir.ui.view,arch_db:multipac_felpa.view_multipac_felpa_account_move_tree
+msgid "Process FEL"
+msgstr ""
+
+#. module: multipac_felpa
+#: model:ir.model,name:multipac_felpa.model_product_template
+msgid "Product"
+msgstr ""
+
+#. module: multipac_felpa
+#: model:ir.model.fields,field_description:multipac_felpa.field_res_company__fel_pa_invoice_line_name
+msgid "Product Description to FEL"
+msgstr ""
+
+#. module: multipac_felpa
+#: model:ir.model.fields.selection,name:multipac_felpa.selection__res_company__fel_pa_invoice_line_name__product
+msgid "Product Name"
+msgstr ""
+
+#. module: multipac_felpa
+#: model:ir.model,name:multipac_felpa.model_product_product
+msgid "Product Variant"
+msgstr ""
+
+#. module: multipac_felpa
+#: model_terms:ir.ui.view,arch_db:multipac_felpa.report_invoice_fel_pac
+msgid "Protocolo de autorización:"
+msgstr ""
+
+#. module: multipac_felpa
+#: model_terms:ir.ui.view,arch_db:multipac_felpa.multipac_felpa_res_partner_form_view_inherit
+#: model_terms:ir.ui.view,arch_db:multipac_felpa.mutlicert_felpa_res_company_form_view_inherit
+msgid "Province..."
+msgstr ""
+
+#. module: multipac_felpa
+#: model:ir.model.fields,field_description:multipac_felpa.field_res_company__fel_pa_publish_onerror
+msgid "Publish FEL with Errors"
+msgstr ""
+
+#. module: multipac_felpa
+#: model:ir.actions.report,name:multipac_felpa.report_invoice_template_advanced
+msgid "Pulido"
+msgstr ""
+
+#. module: multipac_felpa
+#: model:ir.model.fields.selection,name:multipac_felpa.selection__account_move__fel_pa_operation_nature__20
+#: model:ir.model.fields.selection,name:multipac_felpa.selection__res_company__fel_pa_default_operation_nature__20
+msgid "Purchase"
+msgstr ""
+
+#. module: multipac_felpa
+#: model_terms:ir.ui.view,arch_db:multipac_felpa.template_footer
+msgid "Página Web:"
+msgstr ""
+
+#. module: multipac_felpa
+#: model_terms:ir.ui.view,arch_db:multipac_felpa.template_footer
+msgid ""
+"Página: \n"
+"                    <span class=\"page\"/>\n"
+"                    / \n"
+"                    <span class=\"topage\"/>"
+msgstr ""
+
+#. module: multipac_felpa
+#: model:ir.model.fields,help:multipac_felpa.field_account_bank_statement_line__fel_pa_qr_url
+#: model:ir.model.fields,help:multipac_felpa.field_account_move__fel_pa_qr_url
+#: model:ir.model.fields,help:multipac_felpa.field_account_payment__fel_pa_qr_url
+msgid "QR Code URL for Panamá FEL"
+msgstr ""
+
+#. module: multipac_felpa
+#: model:ir.model.fields,help:multipac_felpa.field_account_bank_statement_line__fel_pa_qr
+#: model:ir.model.fields,help:multipac_felpa.field_account_move__fel_pa_qr
+#: model:ir.model.fields,help:multipac_felpa.field_account_payment__fel_pa_qr
+msgid "QR Code for Panamá FEL"
+msgstr ""
+
+#. module: multipac_felpa
+#: model:res.city,name:multipac_felpa.fel_pa_city_60
+msgid "REMEDIOS"
+msgstr ""
+
+#. module: multipac_felpa
+#: model:res.city,name:multipac_felpa.fel_pa_city_61
+msgid "RENACIMIENTO"
+msgstr ""
+
+#. module: multipac_felpa
+#: model:res.city,name:multipac_felpa.fel_pa_city_62
+msgid "RIO DE JESUS"
+msgstr ""
+
+#. module: multipac_felpa
+#: model:ir.model.fields,field_description:multipac_felpa.field_fel_pa_tools_ruc_validator_wizard__fel_pa_ruc
+msgid "RUC"
+msgstr ""
+
+#. module: multipac_felpa
+#. odoo-python
+#: code:addons/multipac_felpa/wizard/fel_pa_tools_ruc_validator_wizard.py:0
+#, python-format
+msgid "RUC Validated"
+msgstr ""
+
+#. module: multipac_felpa
+#. odoo-python
+#: code:addons/multipac_felpa/wizard/fel_pa_tools_ruc_validator_wizard.py:0
+#, python-format
+msgid "RUC Validation Failed"
+msgstr ""
+
+#. module: multipac_felpa
+#. odoo-python
+#: code:addons/multipac_felpa/models/res_partner.py:0
+#, python-format
+msgid "RUC not found"
+msgstr ""
+
+#. module: multipac_felpa
+#: model:ir.model.fields.selection,name:multipac_felpa.selection__account_move__fel_pa_sale_type__3
+#: model:ir.model.fields.selection,name:multipac_felpa.selection__res_company__fel_pa_default_sale_type__3
+msgid "Real estate sale"
+msgstr ""
+
+#. module: multipac_felpa
+#: model:ir.model.fields,field_description:multipac_felpa.field_fel_pa_tools_ruc_validator_wizard__fel_pa_recipient_type
+#: model:ir.model.fields,field_description:multipac_felpa.field_res_partner__fel_pa_recipient_type
+#: model:ir.model.fields,field_description:multipac_felpa.field_res_users__fel_pa_recipient_type
+msgid "Receipentent Type"
+msgstr ""
+
+#. module: multipac_felpa
+#. odoo-python
+#: code:addons/multipac_felpa/models/account_move.py:0
+#: model:ir.model.fields.selection,name:multipac_felpa.selection__fel_pa_tools_document_type__document_type__09
+#, python-format
+msgid "Reimbursement"
+msgstr ""
+
+#. module: multipac_felpa
+#: model:ir.model.fields.selection,name:multipac_felpa.selection__account_move__fel_pa_state__rejected
+msgid "Rejected"
+msgstr ""
+
+#. module: multipac_felpa
+#: model:ir.model.fields,field_description:multipac_felpa.field_account_bank_statement_line__picking_ids
+#: model:ir.model.fields,field_description:multipac_felpa.field_account_move__picking_ids
+#: model:ir.model.fields,field_description:multipac_felpa.field_account_payment__picking_ids
+msgid "Related Pickings"
+msgstr ""
+
+#. module: multipac_felpa
+#: model:ir.model.fields,field_description:multipac_felpa.field_account_move_line__move_line_ids
+msgid "Related Stock Moves"
+msgstr ""
+
+#. module: multipac_felpa
+#: model:ir.model.fields,help:multipac_felpa.field_account_bank_statement_line__picking_ids
+#: model:ir.model.fields,help:multipac_felpa.field_account_move__picking_ids
+#: model:ir.model.fields,help:multipac_felpa.field_account_payment__picking_ids
+msgid ""
+"Related pickings (only when the invoice has been generated from a sale "
+"order)."
+msgstr ""
+
+#. module: multipac_felpa
+#: model:ir.model.fields,help:multipac_felpa.field_account_move_line__move_line_ids
+msgid ""
+"Related stock moves (only when the invoice has been generated from a sale "
+"order)."
+msgstr ""
+
+#. module: multipac_felpa
+#. odoo-python
+#: code:addons/multipac_felpa/models/res_company.py:0
+#: model_terms:ir.ui.view,arch_db:multipac_felpa.mutlicert_felpa_res_company_form_view_inherit
+#, python-format
+msgid "Remaining Folios"
+msgstr ""
+
+#. module: multipac_felpa
+#: model:ir.model.fields.selection,name:multipac_felpa.selection__account_move__fel_pa_operation_nature__13
+#: model:ir.model.fields.selection,name:multipac_felpa.selection__res_company__fel_pa_default_operation_nature__13
+msgid "Remittance"
+msgstr ""
+
+#. module: multipac_felpa
+#: model_terms:ir.ui.view,arch_db:multipac_felpa.fel_pa_tools_api_request_form
+msgid "Reponse Text"
+msgstr ""
+
+#. module: multipac_felpa
+#: model:ir.model.fields,field_description:multipac_felpa.field_res_company__fel_pa_font_id
+#: model_terms:ir.ui.view,arch_db:multipac_felpa.mutlicert_felpa_res_company_form_view_inherit
+#: model_terms:ir.ui.view,arch_db:multipac_felpa.mutlicert_felpa_res_company_invoice_configuration_form_view
+msgid "Report Font"
+msgstr ""
+
+#. module: multipac_felpa
+#: model:ir.model.fields,field_description:multipac_felpa.field_res_company__fel_pa_font_size
+msgid "Report Font Size (px)"
+msgstr ""
+
+#. module: multipac_felpa
+#: model:ir.model.fields,field_description:multipac_felpa.field_res_company__fel_pa_logo_footer
+msgid "Report Footer Logo"
+msgstr ""
+
+#. module: multipac_felpa
+#: model:ir.model.fields,field_description:multipac_felpa.field_res_company__fel_pa_invoice_logo
+msgid "Report Logo"
+msgstr ""
+
+#. module: multipac_felpa
+#: model:ir.model.fields,field_description:multipac_felpa.field_res_company__fel_pa_watermark_logo
+msgid "Report Watermark Logo"
+msgstr ""
+
+#. module: multipac_felpa
+#: model_terms:ir.ui.view,arch_db:multipac_felpa.fel_pa_tools_api_request_form
+msgid "Request"
+msgstr ""
+
+#. module: multipac_felpa
+#: model:ir.model.fields,field_description:multipac_felpa.field_fel_pa_tools_api_request__response_code
+msgid "Response Code"
+msgstr ""
+
+#. module: multipac_felpa
+#: model:ir.model.fields,field_description:multipac_felpa.field_fel_pa_tools_api_request__response_message
+msgid "Response Message"
+msgstr ""
+
+#. module: multipac_felpa
+#: model:ir.model.fields,field_description:multipac_felpa.field_fel_pa_tools_api_request__response_result
+msgid "Response Result"
+msgstr ""
+
+#. module: multipac_felpa
+#: model:ir.model.fields,field_description:multipac_felpa.field_fel_pa_tools_api_request__response_text
+msgid "Response Text"
+msgstr ""
+
+#. module: multipac_felpa
+#: model:ir.model.fields,field_description:multipac_felpa.field_fel_pa_tools_api_request__activity_user_id
+msgid "Responsible User"
+msgstr ""
+
+#. module: multipac_felpa
+#: model:ir.model.fields.selection,name:multipac_felpa.selection__account_journal__fel_pa_branch_type__1
+msgid "Retail location"
+msgstr ""
+
+#. module: multipac_felpa
+#: model:ir.model.fields.selection,name:multipac_felpa.selection__account_move__fel_pa_operation_nature__11
+#: model:ir.model.fields.selection,name:multipac_felpa.selection__res_company__fel_pa_default_operation_nature__11
+msgid "Return"
+msgstr ""
+
+#. module: multipac_felpa
+#. odoo-python
+#: code:addons/multipac_felpa/wizard/account_move_reversal.py:0
+#, python-format
+msgid "Reversal of: %(move_name)s, %(reason)s"
+msgstr ""
+
+#. module: multipac_felpa
+#. odoo-python
+#: code:addons/multipac_felpa/wizard/account_move_reversal.py:0
+#, python-format
+msgid "Reversal of: %s"
+msgstr ""
+
+#. module: multipac_felpa
+#: model:res.city,name:multipac_felpa.fel_pa_city_63
+msgid "SAMBU"
+msgstr ""
+
+#. module: multipac_felpa
+#: model:res.city,name:multipac_felpa.fel_pa_city_64
+msgid "SAN CARLOS"
+msgstr ""
+
+#. module: multipac_felpa
+#: model:res.city,name:multipac_felpa.fel_pa_city_65
+msgid "SAN FELIX"
+msgstr ""
+
+#. module: multipac_felpa
+#: model:res.city,name:multipac_felpa.fel_pa_city_66
+msgid "SAN FRANCISCO"
+msgstr ""
+
+#. module: multipac_felpa
+#: model:res.city,name:multipac_felpa.fel_pa_city_67
+msgid "SAN LORENZO"
+msgstr ""
+
+#. module: multipac_felpa
+#: model:res.city,name:multipac_felpa.fel_pa_city_68
+msgid "SAN MIGUELITO"
+msgstr ""
+
+#. module: multipac_felpa
+#: model:res.city,name:multipac_felpa.fel_pa_city_69
+msgid "SANTA FE"
+msgstr ""
+
+#. module: multipac_felpa
+#: model:res.city,name:multipac_felpa.fel_pa_city_70
+msgid "SANTA ISABEL"
+msgstr ""
+
+#. module: multipac_felpa
+#: model:res.city,name:multipac_felpa.fel_pa_city_71
+msgid "SANTA MARIA"
+msgstr ""
+
+#. module: multipac_felpa
+#: model:res.city,name:multipac_felpa.fel_pa_city_72
+msgid "SANTIAGO"
+msgstr ""
+
+#. module: multipac_felpa
+#: model:ir.model.fields,field_description:multipac_felpa.field_fel_pa_tools_api_request__message_has_sms_error
+msgid "SMS Delivery error"
+msgstr ""
+
+#. module: multipac_felpa
+#: model_terms:ir.ui.view,arch_db:multipac_felpa.report_invoice_template_custom_odoo
+msgid "SO123"
+msgstr ""
+
+#. module: multipac_felpa
+#: model:res.city,name:multipac_felpa.fel_pa_city_73
+msgid "SONA"
+msgstr ""
+
+#. module: multipac_felpa
+#: model:ir.model.fields.selection,name:multipac_felpa.selection__product_template__fel_pa_vehicle_type__5
+msgid "SUV"
+msgstr ""
+
+#. module: multipac_felpa
+#: model:ir.model.fields.selection,name:multipac_felpa.selection__account_move__fel_pa_operation_nature__01
+#: model:ir.model.fields.selection,name:multipac_felpa.selection__res_company__fel_pa_default_operation_nature__01
+msgid "Sale"
+msgstr ""
+
+#. module: multipac_felpa
+#: model:ir.model,name:multipac_felpa.model_sale_order_line
+msgid "Sales Order Line"
+msgstr ""
+
+#. module: multipac_felpa
+#: model:ir.model.fields,field_description:multipac_felpa.field_fel_pa_tools_api_request__access_token
+msgid "Security Token"
+msgstr ""
+
+#. module: multipac_felpa
+#: model:ir.model.fields.selection,name:multipac_felpa.selection__product_template__fel_pa_vehicle_type__4
+msgid "Sedan"
+msgstr ""
+
+#. module: multipac_felpa
+#: model:ir.model.fields,help:multipac_felpa.field_res_partner__fel_pa_report_template_id
+#: model:ir.model.fields,help:multipac_felpa.field_res_partner__fel_pa_report_template_id1
+#: model:ir.model.fields,help:multipac_felpa.field_res_users__fel_pa_report_template_id
+#: model:ir.model.fields,help:multipac_felpa.field_res_users__fel_pa_report_template_id1
+msgid "Seleccione una plantilla para su factura FEL."
+msgstr ""
+
+#. module: multipac_felpa
+#: model:ir.model.fields,field_description:multipac_felpa.field_res_company__fel_pa_report_footer_selection
+msgid "Select Report Footer"
+msgstr ""
+
+#. module: multipac_felpa
+#: model:ir.model.fields,help:multipac_felpa.field_res_company__fel_pa_report_footer_selection
+msgid "Select the footer style if you want to show it in the report."
+msgstr ""
+
+#. module: multipac_felpa
+#: model_terms:ir.ui.view,arch_db:multipac_felpa.multipac_felpa_account_move_form_inherit
+#: model_terms:ir.ui.view,arch_db:multipac_felpa.view_multipac_felpa_account_move_tree
+msgid "Send Email by PAC"
+msgstr ""
+
+#. module: multipac_felpa
+#: model:ir.model.fields.selection,name:multipac_felpa.selection__fel_pa_tools_api_request__state__sent
+msgid "Sent"
+msgstr ""
+
+#. module: multipac_felpa
+#: model:ir.model.fields,field_description:multipac_felpa.field_fel_pa_tools_document_type__sequence_actual_number
+msgid "Sequence Actual Number"
+msgstr ""
+
+#. module: multipac_felpa
+#: model:ir.model.fields.selection,name:multipac_felpa.selection__account_move__fel_pa_sale_type__4
+#: model:ir.model.fields.selection,name:multipac_felpa.selection__res_company__fel_pa_default_sale_type__4
+msgid "Service bill"
+msgstr ""
+
+#. module: multipac_felpa
+#: model:ir.model.fields,help:multipac_felpa.field_res_company__fel_pa_font_id
+msgid ""
+"Set the font in the report header, it will be used as the default font in "
+"the user's company smart reports."
+msgstr ""
+
+#. module: multipac_felpa
+#. odoo-python
+#: code:addons/multipac_felpa/models/res_partner.py:0
+#, python-format
+msgid "Should enter a RUC"
+msgstr ""
+
+#. module: multipac_felpa
+#: model:ir.model.fields,field_description:multipac_felpa.field_res_company__fel_pa_add_amount_in_words
+msgid "Show Amount in Words"
+msgstr ""
+
+#. module: multipac_felpa
+#: model:ir.model.fields,field_description:multipac_felpa.field_res_company__fel_pa_is_company_bold
+msgid "Show Company Name in Bold"
+msgstr ""
+
+#. module: multipac_felpa
+#: model:ir.model.fields,field_description:multipac_felpa.field_res_company__fel_pa_invoice_show_customer_code
+msgid "Show Customer Code"
+msgstr ""
+
+#. module: multipac_felpa
+#: model:ir.model.fields,field_description:multipac_felpa.field_res_company__fel_pa_is_customer_bold
+msgid "Show Customer Name in Bold"
+msgstr ""
+
+#. module: multipac_felpa
+#: model:ir.model.fields,field_description:multipac_felpa.field_res_company__fel_pa_dgi_logo
+msgid "Show DGI Logo"
+msgstr ""
+
+#. module: multipac_felpa
+#: model:ir.model.fields,field_description:multipac_felpa.field_res_company__fel_pa_invoice_discount_column
+msgid "Show Discount Column"
+msgstr ""
+
+#. module: multipac_felpa
+#: model:ir.model.fields,field_description:multipac_felpa.field_res_company__fel_pa_invoice_show_invoice_date_due
+msgid "Show Due Date"
+msgstr ""
+
+#. module: multipac_felpa
+#: model:ir.model.fields,field_description:multipac_felpa.field_res_company__fel_pa_qr_code
+msgid "Show FEL QR"
+msgstr ""
+
+#. module: multipac_felpa
+#: model:ir.model.fields,field_description:multipac_felpa.field_res_company__fel_pa_invoice_show_invoice_ref
+msgid "Show Internal Invoice Name"
+msgstr ""
+
+#. module: multipac_felpa
+#: model:ir.model.fields,field_description:multipac_felpa.field_res_company__fel_pa_is_show_notes
+msgid "Show Notes"
+msgstr ""
+
+#. module: multipac_felpa
+#: model:ir.model.fields,field_description:multipac_felpa.field_res_company__fel_pa_invoice_show_origin_order_name
+msgid "Show Origin Order"
+msgstr ""
+
+#. module: multipac_felpa
+#: model:ir.model.fields,field_description:multipac_felpa.field_res_company__fel_pa_invoice_show_origin_order_date
+msgid "Show Origin Order Date"
+msgstr ""
+
+#. module: multipac_felpa
+#: model:ir.model.fields,field_description:multipac_felpa.field_res_company__fel_pa_is_show_payment_notes
+msgid "Show Payment Notes"
+msgstr ""
+
+#. module: multipac_felpa
+#: model:ir.model.fields,field_description:multipac_felpa.field_res_company__fel_pa_is_description
+msgid "Show Product Description"
+msgstr ""
+
+#. module: multipac_felpa
+#: model:ir.model.fields,field_description:multipac_felpa.field_res_company__fel_pa_add_product_image
+msgid "Show Product Image"
+msgstr ""
+
+#. module: multipac_felpa
+#: model:ir.model.fields,field_description:multipac_felpa.field_res_company__fel_pa_is_show_barcode
+msgid "Show Report Barcode"
+msgstr ""
+
+#. module: multipac_felpa
+#: model:ir.model.fields,field_description:multipac_felpa.field_res_company__fel_pa_is_show_signature
+msgid "Show Signature"
+msgstr ""
+
+#. module: multipac_felpa
+#: model:ir.model.fields,field_description:multipac_felpa.field_res_company__fel_pa_invoice_tax_column
+msgid "Show Tax Column"
+msgstr ""
+
+#. module: multipac_felpa
+#: model:ir.model.fields,field_description:multipac_felpa.field_res_company__fel_pa_watermark
+msgid "Show Watermark"
+msgstr ""
+
+#. module: multipac_felpa
+#: model:ir.model.fields,field_description:multipac_felpa.field_res_company__fel_pa_is_show_watermark
+msgid "Show Watermark?"
+msgstr ""
+
+#. module: multipac_felpa
+#: model:ir.model.fields,field_description:multipac_felpa.field_res_company__fel_pa_signature
+#: model_terms:ir.ui.view,arch_db:multipac_felpa.mutlicert_felpa_res_company_form_view_inherit
+#: model_terms:ir.ui.view,arch_db:multipac_felpa.mutlicert_felpa_res_company_invoice_configuration_form_view
+msgid "Signature"
+msgstr ""
+
+#. module: multipac_felpa
+#: model:ir.model.fields.selection,name:multipac_felpa.selection__product_template__fel_pa_paint_type__1
+msgid "Solid"
+msgstr ""
+
+#. module: multipac_felpa
+#: model:ir.model.fields.selection,name:multipac_felpa.selection__product_template__fel_pa_vehicle_usage__5
+msgid "Special"
+msgstr ""
+
+#. module: multipac_felpa
+#: model:ir.model.fields.selection,name:multipac_felpa.selection__res_company__fel_pa_report_footer_selection__standard
+msgid "Standard"
+msgstr ""
+
+#. module: multipac_felpa
+#: model:ir.model.fields,field_description:multipac_felpa.field_res_company__fel_pa_standard_template
+msgid "Standard Template Configuration"
+msgstr ""
+
+#. module: multipac_felpa
+#: model:ir.model.fields,field_description:multipac_felpa.field_fel_pa_tools_contingency__start_date
+msgid "Start Date"
+msgstr ""
+
+#. module: multipac_felpa
+#: model:ir.model.fields,field_description:multipac_felpa.field_fel_pa_tools_api_request__state
+msgid "State"
+msgstr ""
+
+#. module: multipac_felpa
+#: model:ir.model.fields.selection,name:multipac_felpa.selection__res_company__fel_pa_watermark__status
+msgid "Status"
+msgstr ""
+
+#. module: multipac_felpa
+#: model:ir.model.fields,help:multipac_felpa.field_fel_pa_tools_api_request__activity_state
+msgid ""
+"Status based on activities\n"
+"Overdue: Due date is already passed\n"
+"Today: Activity date is today\n"
+"Planned: Future activities."
+msgstr ""
+
+#. module: multipac_felpa
+#: model:ir.model,name:multipac_felpa.model_stock_move
+msgid "Stock Move"
+msgstr ""
+
+#. module: multipac_felpa
+#: model_terms:ir.ui.view,arch_db:multipac_felpa.multipac_felpa_res_partner_form_view_inherit
+#: model_terms:ir.ui.view,arch_db:multipac_felpa.mutlicert_felpa_res_company_form_view_inherit
+msgid "Street 2..."
+msgstr ""
+
+#. module: multipac_felpa
+#: model_terms:ir.ui.view,arch_db:multipac_felpa.multipac_felpa_res_partner_form_view_inherit
+#: model_terms:ir.ui.view,arch_db:multipac_felpa.mutlicert_felpa_res_company_form_view_inherit
+msgid "Street..."
+msgstr ""
+
+#. module: multipac_felpa
+#: model_terms:ir.ui.view,arch_db:multipac_felpa.infile_classic_header
+msgid "Sucursal/Punto:"
+msgstr ""
+
+#. module: multipac_felpa
+#: model:res.city,name:multipac_felpa.fel_pa_city_74
+msgid "TABOGA"
+msgstr ""
+
+#. module: multipac_felpa
+#: model:ir.model.fields.selection,name:multipac_felpa.selection__fel_pa_tools_api_request__fel_pa_pac__the_factory_hka
+#: model:ir.model.fields.selection,name:multipac_felpa.selection__res_company__fel_pa_pac__the_factory_hka
+msgid "THE FACTORY HKA"
+msgstr ""
+
+#. module: multipac_felpa
+#: model:res.city,name:multipac_felpa.fel_pa_city_75
+msgid "TOLE"
+msgstr ""
+
+#. module: multipac_felpa
+#: model:res.city,name:multipac_felpa.fel_pa_city_76
+msgid "TONOSI"
+msgstr ""
+
+#. module: multipac_felpa
+#: model:ir.model.fields,field_description:multipac_felpa.field_res_company__fel_pa_even_party_color
+msgid "Table Even Parity Color"
+msgstr ""
+
+#. module: multipac_felpa
+#: model:ir.model.fields,field_description:multipac_felpa.field_res_company__fel_pa_odd_party_color
+msgid "Table Odd Parity Color"
+msgstr ""
+
+#. module: multipac_felpa
+#: model:ir.model.fields.selection,name:multipac_felpa.selection__fel_pa_tools_ruc_validator_wizard__fel_pa_recipient_type__01
+#: model:ir.model.fields.selection,name:multipac_felpa.selection__res_partner__fel_pa_recipient_type__01
+msgid "Taxpayer"
+msgstr ""
+
+#. module: multipac_felpa
+#: model:ir.model.fields,field_description:multipac_felpa.field_fel_pa_tools_ruc_validator_wizard__fel_pa_taxpayer_type
+#: model:ir.model.fields,field_description:multipac_felpa.field_res_partner__fel_pa_taxpayer_type
+#: model:ir.model.fields,field_description:multipac_felpa.field_res_users__fel_pa_taxpayer_type
+msgid "Taxpayer Type"
+msgstr ""
+
+#. module: multipac_felpa
+#: model:ir.model.fields,field_description:multipac_felpa.field_res_company__fel_pa_theme_color
+msgid "Template Base Color"
+msgstr ""
+
+#. module: multipac_felpa
+#: model:ir.model.fields,field_description:multipac_felpa.field_res_company__fel_pa_theme_text_color
+msgid "Template Text Color"
+msgstr ""
+
+#. module: multipac_felpa
+#: model:ir.model.fields.selection,name:multipac_felpa.selection__res_company__fel_pa_watermark__text
+msgid "Text"
+msgstr ""
+
+#. module: multipac_felpa
+#. odoo-python
+#: code:addons/multipac_felpa/models/account_move.py:0
+#, python-format
+msgid "The Offline Pending Path is not set for the company."
+msgstr ""
+
+#. module: multipac_felpa
+#. odoo-python
+#: code:addons/multipac_felpa/models/account_move.py:0
+#, python-format
+msgid "The Offline Utility Path is not set for the company."
+msgstr ""
+
+#. module: multipac_felpa
+#. odoo-python
+#: code:addons/multipac_felpa/models/account_move.py:0
+#: code:addons/multipac_felpa/models/account_move.py:0
+#, python-format
+msgid "The PDF could not be downloaded. Error: %s"
+msgstr ""
+
+#. module: multipac_felpa
+#. odoo-python
+#: code:addons/multipac_felpa/wizard/fel_pa_tools_ruc_validator_wizard.py:0
+#, python-format
+msgid "The RUC has been validated successfuly: %s"
+msgstr ""
+
+#. module: multipac_felpa
+#. odoo-python
+#: code:addons/multipac_felpa/wizard/fel_pa_tools_ruc_validator_wizard.py:0
+#, python-format
+msgid "The RUC validation failed. Please check the RUC and try again."
+msgstr ""
+
+#. module: multipac_felpa
+#. odoo-python
+#: code:addons/multipac_felpa/models/account_move.py:0
+#, python-format
+msgid "The client must have a city to issue the invoice."
+msgstr ""
+
+#. module: multipac_felpa
+#. odoo-python
+#: code:addons/multipac_felpa/models/account_move.py:0
+#, python-format
+msgid "The client must have a location code to issue the invoice."
+msgstr ""
+
+#. module: multipac_felpa
+#. odoo-python
+#: code:addons/multipac_felpa/models/account_move.py:0
+#, python-format
+msgid "The client must have a state to issue the invoice."
+msgstr ""
+
+#. module: multipac_felpa
+#. odoo-python
+#: code:addons/multipac_felpa/models/account_move.py:0
+#, python-format
+msgid ""
+"The credit note or debit note must have a reference to the original(s) "
+"invoice(s)."
+msgstr ""
+
+#. module: multipac_felpa
+#. odoo-python
+#: code:addons/multipac_felpa/models/account_move.py:0
+#: code:addons/multipac_felpa/models/account_move.py:0
+#, python-format
+msgid "The document state have been successfully obtained."
+msgstr ""
+
+#. module: multipac_felpa
+#. odoo-python
+#: code:addons/multipac_felpa/models/account_move.py:0
+#, python-format
+msgid "The document type is required to post the invoice."
+msgstr ""
+
+#. module: multipac_felpa
+#. odoo-python
+#: code:addons/multipac_felpa/models/account_move.py:0
+#, python-format
+msgid "The email by PAC has been sent successfully."
+msgstr ""
+
+#. module: multipac_felpa
+#. odoo-python
+#: code:addons/multipac_felpa/models/account_move.py:0
+#, python-format
+msgid "The email by PAC has been sent successfully. PAC Message: %s"
+msgstr ""
+
+#. module: multipac_felpa
+#. odoo-python
+#: code:addons/multipac_felpa/models/account_move.py:0
+#, python-format
+msgid "The email could not be sent. Error: %s"
+msgstr ""
+
+#. module: multipac_felpa
+#. odoo-python
+#: code:addons/multipac_felpa/models/account_move.py:0
+#, python-format
+msgid "The email tracking have been successfully obtained."
+msgstr ""
+
+#. module: multipac_felpa
+#. odoo-python
+#: code:addons/multipac_felpa/models/account_move.py:0
+#: code:addons/multipac_felpa/models/account_move.py:0
+#, python-format
+msgid "The invoice could not be canceled. Error: %s"
+msgstr ""
+
+#. module: multipac_felpa
+#. odoo-python
+#: code:addons/multipac_felpa/models/account_move.py:0
+#: code:addons/multipac_felpa/models/account_move.py:0
+#: code:addons/multipac_felpa/models/account_move.py:0
+#, python-format
+msgid ""
+"The invoice could not be sent to the FEL, please validate the information "
+"and try again. Error: %s"
+msgstr ""
+
+#. module: multipac_felpa
+#. odoo-python
+#: code:addons/multipac_felpa/models/account_move.py:0
+#: code:addons/multipac_felpa/models/account_move.py:0
+#: code:addons/multipac_felpa/models/account_move.py:0
+#, python-format
+msgid "The invoice could not be sent to the FEL. Error: %s"
+msgstr ""
+
+#. module: multipac_felpa
+#. odoo-python
+#: code:addons/multipac_felpa/models/account_move.py:0
+#, python-format
+msgid "The invoice has been canceled successfully by the PAC. PAC Message: %s"
+msgstr ""
+
+#. module: multipac_felpa
+#. odoo-python
+#: code:addons/multipac_felpa/models/account_move.py:0
+#: code:addons/multipac_felpa/models/account_move.py:0
+#, python-format
+msgid "The partner does not have an email address."
+msgstr ""
+
+#. module: multipac_felpa
+#: model:ir.model.fields.selection,name:multipac_felpa.selection__account_journal__fel_pa_container_sent__2
+msgid ""
+"The receiver exempts the sender from the obligation of sending the container"
+msgstr ""
+
+#. module: multipac_felpa
+#. odoo-python
+#: code:addons/multipac_felpa/models/res_company.py:0
+#, python-format
+msgid "The remaining folios have been successfully obtained."
+msgstr ""
+
+#. module: multipac_felpa
+#. odoo-python
+#: code:addons/multipac_felpa/models/ir_reports.py:0
+#, python-format
+msgid ""
+"The report's template %r is wrong, please contact your administrator. \n"
+"\n"
+"Can not separate file to save as attachment because the report's template does not contains the attributes 'data-oe-model' and 'data-oe-id' on the div with 'article' classname."
+msgstr ""
+
+#. module: multipac_felpa
+#: model_terms:ir.ui.view,arch_db:multipac_felpa.mutlicert_felpa_res_company_form_view_inherit
+#: model_terms:ir.ui.view,arch_db:multipac_felpa.mutlicert_felpa_res_company_invoice_configuration_form_view
+msgid "Theme Colors"
+msgstr ""
+
+#. module: multipac_felpa
+#. odoo-python
+#: code:addons/multipac_felpa/models/fel_pa_tools_contingency.py:0
+#, python-format
+msgid "There is already an active contingency for this journal."
+msgstr ""
+
+#. module: multipac_felpa
+#: model:ir.model.fields,help:multipac_felpa.field_res_company__fel_pa_invoice_logo
+msgid ""
+"This field contains the image used as the logo for the invoice template "
+"report."
+msgstr ""
+
+#. module: multipac_felpa
+#: model:ir.model.fields.selection,name:multipac_felpa.selection__account_journal__fel_pa_cafe_format__2
+msgid "Ticket printer. 3: 8 ½” X 11” paper"
+msgstr ""
+
+#. module: multipac_felpa
+#: model_terms:ir.ui.view,arch_db:multipac_felpa.fel_pa_tools_contingency_form
+#: model_terms:ir.ui.view,arch_db:multipac_felpa.view_multipac_felpa_account_move_tree
+msgid "Total"
+msgstr ""
+
+#. module: multipac_felpa
+#: model_terms:ir.ui.view,arch_db:multipac_felpa.template_total_amount_word
+msgid "Total en letras:-"
+msgstr ""
+
+#. module: multipac_felpa
+#: model:ir.model.fields,help:multipac_felpa.field_account_bank_statement_line__fel_pa_total_in_letters
+#: model:ir.model.fields,help:multipac_felpa.field_account_move__fel_pa_total_in_letters
+#: model:ir.model.fields,help:multipac_felpa.field_account_payment__fel_pa_total_in_letters
+msgid "Total in Letters for Panamá FEL"
+msgstr ""
+
+#. module: multipac_felpa
+#: model:ir.model.fields.selection,name:multipac_felpa.selection__product_template__fel_pa_vehicle_type__33
+msgid "Tow Trailer"
+msgstr ""
+
+#. module: multipac_felpa
+#: model:ir.model.fields,field_description:multipac_felpa.field_product_product__fel_pa_traction_capacity
+#: model:ir.model.fields,field_description:multipac_felpa.field_product_template__fel_pa_traction_capacity
+msgid "Traction Capacity"
+msgstr ""
+
+#. module: multipac_felpa
+#: model:ir.model.fields.selection,name:multipac_felpa.selection__product_template__fel_pa_vehicle_type__31
+msgid "Trailer"
+msgstr ""
+
+#. module: multipac_felpa
+#: model:ir.model,name:multipac_felpa.model_stock_picking
+#: model:ir.model.fields.selection,name:multipac_felpa.selection__account_move__fel_pa_operation_nature__10
+#: model:ir.model.fields.selection,name:multipac_felpa.selection__res_company__fel_pa_default_operation_nature__10
+msgid "Transfer"
+msgstr ""
+
+#. module: multipac_felpa
+#: model:ir.model.fields.selection,name:multipac_felpa.selection__account_journal__fel_pa_payment_method__08
+msgid "Transfer/Deposit to Bank Account"
+msgstr ""
+
+#. module: multipac_felpa
+#: model:ir.model.fields.selection,name:multipac_felpa.selection__product_template__fel_pa_vehicle_type__27
+msgid "Tricycle"
+msgstr ""
+
+#. module: multipac_felpa
+#: model:ir.model.fields.selection,name:multipac_felpa.selection__product_template__fel_pa_vehicle_type__3
+msgid "Truck"
+msgstr ""
+
+#. module: multipac_felpa
+#: model:ir.model.fields,help:multipac_felpa.field_fel_pa_tools_api_request__activity_exception_decoration
+msgid "Type of the exception activity on record."
+msgstr ""
+
+#. module: multipac_felpa
+#: model:ir.model.fields,field_description:multipac_felpa.field_fel_pa_tools_api_request__url
+#: model:ir.model.fields,field_description:multipac_felpa.field_res_company__fel_pa_pac_url
+msgid "URL"
+msgstr ""
+
+#. module: multipac_felpa
+#. odoo-python
+#: code:addons/multipac_felpa/models/ir_reports.py:0
+#, python-format
+msgid "Unable to find Wkhtmltopdf on this system. The PDF can not be created."
+msgstr ""
+
+#. module: multipac_felpa
+#: model:ir.model.fields.selection,name:multipac_felpa.selection__product_template__fel_pa_vehicle_condition__3
+msgid "Unfinished"
+msgstr ""
+
+#. module: multipac_felpa
+#: model_terms:ir.ui.view,arch_db:multipac_felpa.fel_pa_tools_ruc_validator_wizard_form_view
+#: model_terms:ir.ui.view,arch_db:multipac_felpa.multipac_felpa_res_partner_form_view_inherit
+msgid "Validate RUC"
+msgstr ""
+
+#. module: multipac_felpa
+#: model_terms:ir.ui.view,arch_db:multipac_felpa.report_invoice_order_lines
+msgid "Valor"
+msgstr ""
+
+#. module: multipac_felpa
+#: model:ir.model.fields.selection,name:multipac_felpa.selection__product_template__fel_pa_product_type__vehicle
+msgid "Vehicle"
+msgstr ""
+
+#. module: multipac_felpa
+#: model:ir.model.fields,field_description:multipac_felpa.field_product_product__fel_pa_vehicle_condition
+#: model:ir.model.fields,field_description:multipac_felpa.field_product_template__fel_pa_vehicle_condition
+msgid "Vehicle Condition"
+msgstr ""
+
+#. module: multipac_felpa
+#: model_terms:ir.ui.view,arch_db:multipac_felpa.multipac_felpa_product_product_form_inherit
+#: model_terms:ir.ui.view,arch_db:multipac_felpa.multipac_felpa_product_template_form_inherit
+msgid "Vehicle FEL Configuration"
+msgstr ""
+
+#. module: multipac_felpa
+#: model:ir.model.fields,field_description:multipac_felpa.field_product_product__fel_pa_vehicle_type
+#: model:ir.model.fields,field_description:multipac_felpa.field_product_template__fel_pa_vehicle_type
+msgid "Vehicle Type"
+msgstr ""
+
+#. module: multipac_felpa
+#: model:ir.model.fields,field_description:multipac_felpa.field_product_product__fel_pa_vehicle_usage
+#: model:ir.model.fields,field_description:multipac_felpa.field_product_template__fel_pa_vehicle_usage
+msgid "Vehicle Usage"
+msgstr ""
+
+#. module: multipac_felpa
+#: model:ir.actions.report,name:multipac_felpa.report_invoice_template_contemporary
+#: model:ir.model.fields.selection,name:multipac_felpa.selection__res_company__fel_pa_standard_template__vintage
+msgid "Vintage"
+msgstr ""
+
+#. module: multipac_felpa
+#: model:ir.model.fields.selection,name:multipac_felpa.selection__account_journal__fel_pa_payment_method__06
+msgid "Voucher"
+msgstr ""
+
+#. module: multipac_felpa
+#: model:ir.model.fields,field_description:multipac_felpa.field_res_company__fel_pa_watermark_text
+msgid "Watermark Text"
+msgstr ""
+
+#. module: multipac_felpa
+#: model:ir.model.fields,field_description:multipac_felpa.field_res_company__fel_pa_watermark_text_color
+msgid "Watermark Text Color"
+msgstr ""
+
+#. module: multipac_felpa
+#: model:ir.model.fields,field_description:multipac_felpa.field_res_company__fel_pa_watermark_text_font_size
+msgid "Watermark Text Font Size (em)"
+msgstr ""
+
+#. module: multipac_felpa
+#: model:ir.model.fields,help:multipac_felpa.field_res_company__fel_pa_watermark
+msgid "We can choose the watermark for the PDF either logo, text, or status."
+msgstr ""
+
+#. module: multipac_felpa
+#: model_terms:ir.ui.view,arch_db:multipac_felpa.templates_footer
+msgid "Web:"
+msgstr ""
+
+#. module: multipac_felpa
+#: model:ir.model.fields,field_description:multipac_felpa.field_fel_pa_tools_api_request__website_message_ids
+msgid "Website Messages"
+msgstr ""
+
+#. module: multipac_felpa
+#: model:ir.model.fields,help:multipac_felpa.field_fel_pa_tools_api_request__website_message_ids
+msgid "Website communication history"
+msgstr ""
+
+#. module: multipac_felpa
+#. odoo-python
+#: code:addons/multipac_felpa/models/stock_move.py:0
+#, python-format
+msgid "You can not modify an invoiced stock move"
+msgstr ""
+
+#. module: multipac_felpa
+#: model:ir.model.constraint,message:multipac_felpa.constraint_fel_pa_tools_report_fonts_name_font_uniq
+msgid "You can not register two fonts with the same name"
+msgstr ""
+
+#. module: multipac_felpa
+#: model_terms:ir.ui.view,arch_db:multipac_felpa.multipac_felpa_res_partner_form_view_inherit
+#: model_terms:ir.ui.view,arch_db:multipac_felpa.mutlicert_felpa_res_company_form_view_inherit
+msgid "ZIP"
+msgstr ""
+
+#. module: multipac_felpa
+#: model_terms:ir.ui.view,arch_db:multipac_felpa.tax_groups_totals_custom
+msgid "en"
+msgstr ""
+
+#. module: multipac_felpa
+#: model_terms:ir.ui.view,arch_db:multipac_felpa.mutlicert_felpa_res_company_form_view_inherit
+#: model_terms:ir.ui.view,arch_db:multipac_felpa.mutlicert_felpa_res_company_invoice_configuration_form_view
+msgid "like #2763a1"
+msgstr ""
+
+#. module: multipac_felpa
+#: model_terms:ir.ui.view,arch_db:multipac_felpa.mutlicert_felpa_res_company_form_view_inherit
+#: model_terms:ir.ui.view,arch_db:multipac_felpa.mutlicert_felpa_res_company_invoice_configuration_form_view
+msgid "like #2763c1"
+msgstr ""
+
+#. module: multipac_felpa
+#: model_terms:ir.ui.view,arch_db:multipac_felpa.mutlicert_felpa_res_company_form_view_inherit
+#: model_terms:ir.ui.view,arch_db:multipac_felpa.mutlicert_felpa_res_company_invoice_configuration_form_view
+msgid "like #2b4e99"
+msgstr ""
+
+#. module: multipac_felpa
+#: model_terms:ir.ui.view,arch_db:multipac_felpa.mutlicert_felpa_res_company_form_view_inherit
+#: model_terms:ir.ui.view,arch_db:multipac_felpa.mutlicert_felpa_res_company_invoice_configuration_form_view
+msgid "like #5bb3d2"
+msgstr ""
+
+#. module: multipac_felpa
+#: model_terms:ir.ui.view,arch_db:multipac_felpa.mutlicert_felpa_res_company_form_view_inherit
+#: model_terms:ir.ui.view,arch_db:multipac_felpa.mutlicert_felpa_res_company_invoice_configuration_form_view
+msgid "like #5cc2d2"
+msgstr ""
+
+#. module: multipac_felpa
+#: model_terms:ir.ui.view,arch_db:multipac_felpa.mutlicert_felpa_res_company_form_view_inherit
+#: model_terms:ir.ui.view,arch_db:multipac_felpa.mutlicert_felpa_res_company_invoice_configuration_form_view
+msgid "like #aea8a8"
+msgstr ""
+
+#. module: multipac_felpa
+#: model_terms:ir.ui.view,arch_db:multipac_felpa.mutlicert_felpa_res_company_form_view_inherit
+#: model_terms:ir.ui.view,arch_db:multipac_felpa.mutlicert_felpa_res_company_invoice_configuration_form_view
+msgid "like #aea8aa"
+msgstr ""
+
+#. module: multipac_felpa
+#: model_terms:ir.ui.view,arch_db:multipac_felpa.mutlicert_felpa_res_company_form_view_inherit
+#: model_terms:ir.ui.view,arch_db:multipac_felpa.mutlicert_felpa_res_company_invoice_configuration_form_view
+msgid "like #b30000"
+msgstr ""
+
+#. module: multipac_felpa
+#: model_terms:ir.ui.view,arch_db:multipac_felpa.mutlicert_felpa_res_company_form_view_inherit
+#: model_terms:ir.ui.view,arch_db:multipac_felpa.mutlicert_felpa_res_company_invoice_configuration_form_view
+msgid "like #b30010"
+msgstr ""
+
+#. module: multipac_felpa
+#: model_terms:ir.ui.view,arch_db:multipac_felpa.mutlicert_felpa_res_company_form_view_inherit
+#: model_terms:ir.ui.view,arch_db:multipac_felpa.mutlicert_felpa_res_company_invoice_configuration_form_view
+msgid "like #d4d2d2"
+msgstr ""

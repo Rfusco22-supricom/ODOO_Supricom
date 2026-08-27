@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <record id="view_import_serials_sales_wizard_form" model="ir.ui.view">
+        <field name="name">import.serials.sales.wizard.form</field>
+        <field name="model">import.serials.sales.wizard</field>
+        <field name="arch" type="xml">
+            <form string="Importar Seriales desde Excel / CSV">
+                <field name="state" invisible="1"/>
+                <field name="picking_id" invisible="1"/>
+                <field name="move_id" invisible="1"/>
+                <field name="import_type" invisible="1"/>
+
+                <group invisible="state != 'draft'">
+                    <group>
+                        <field name="excel_file" filename="file_name" widget="binary"/>
+                        <field name="file_name" invisible="1"/>
+                        <field name="has_header"/>
+                    </group>
+                    <group>
+                        <field name="auto_create_lots"/>
+                        <button name="action_download_template"
+                                type="object"
+                                string="Descargar Plantilla Excel de Ejemplo"
+                                class="btn-link"
+                                icon="fa-download"/>
+                    </group>
+                </group>
+
+                <notebook invisible="state != 'draft'">
+                    <page string="Instrucciones del Archivo Excel">
+                        <div class="alert alert-info" role="status">
+                            <p><strong>Formato recomendado del archivo Excel (.xlsx / .csv):</strong></p>
+                            <ul>
+                                <li><strong>Columna A:</strong> Código de Referencia / Barcode / Nombre del producto.</li>
+                                <li><strong>Columna B:</strong> Número de Serie o Lote a asignar.</li>
+                            </ul>
+                            <p>Si el documento solo contiene 1 producto con seguimiento por serial, puede omitirse la Columna A dejando únicamente los números de serie en la primera columna.</p>
+                        </div>
+                    </page>
+                </notebook>
+
+                <div invisible="state != 'done'">
+                    <field name="log_output" readonly="1" style="white-space: pre-wrap; font-family: monospace; font-size: 13px; background-color: #f8f9fa; padding: 10px; border-radius: 4px; border: 1px solid #dee2e6;"/>
+                </div>
+
+                <footer>
+                    <button name="action_import_serials"
+                            string="Importar Seriales"
+                            type="object"
+                            class="btn-primary"
+                            invisible="state != 'draft'"
+                            data-hotkey="q"/>
+                    <button string="Cerrar" class="btn-secondary" special="cancel" data-hotkey="x"/>
+                </footer>
+            </form>
+        </field>
+    </record>
+
+    <record id="action_import_serials_sales_wizard" model="ir.actions.act_window">
+        <field name="name">Importar Seriales desde Excel</field>
+        <field name="res_model">import.serials.sales.wizard</field>
+        <field name="view_mode">form</field>
+        <field name="target">new</field>
+    </record>
+</odoo>

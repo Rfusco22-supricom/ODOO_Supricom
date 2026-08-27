@@ -1,0 +1,2096 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+# * l10n_ch_hr_payroll_elm
+#
+# Translators:
+# Sergio Zanchetta <primes2h@gmail.com>, 2025
+# Wil Odoo, 2025
+# Marianna Ciofani, 2025
+# Weblate <noreply-mt-weblate@weblate.org>, 2025, 2026.
+# "Marianna Ciofani (cima)" <cima@odoo.com>, 2026.
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 17.0+e\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-01-22 18:56+0000\n"
+"PO-Revision-Date: 2026-07-01 13:09+0000\n"
+"Last-Translator: \"Marianna Ciofani (cima)\" <cima@odoo.com>\n"
+"Language-Team: Italian <https://translate.odoo.com/projects/odoo-17-l10n/"
+"l10n_ch_hr_payroll_elm/it/>\n"
+"Language: it\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: \n"
+"Plural-Forms: nplurals=3; plural=(n == 1) ? 0 : ((n != 0 && n % 1000000 == "
+"0) ? 1 : 2);\n"
+"X-Generator: Weblate 2026.6.1\n"
+
+#. module: l10n_ch_hr_payroll_elm
+#: model:hr.salary.attachment.type,name:l10n_ch_hr_payroll_elm.hr_salary_attachment_type_14th_month
+#: model:hr.salary.rule,name:l10n_ch_hr_payroll_elm.l10n_ch_employees_14th_month
+msgid "14th Month"
+msgstr "14esima"
+
+#. module: l10n_ch_hr_payroll_elm
+#: model_terms:ir.ui.view,arch_db:l10n_ch_hr_payroll_elm.l10n_ch_insurance_report_view_form
+msgid "273S Sheet"
+msgstr "Foglio 273S"
+
+#. module: l10n_ch_hr_payroll_elm
+#: model:ir.model.fields,field_description:l10n_ch_hr_payroll_elm.field_hr_salary_rule__l10n_ch_5_cents_rounding
+msgid "5 cents rounding"
+msgstr "Arrotondamento 5 centesimi"
+
+#. module: l10n_ch_hr_payroll_elm
+#: model_terms:ir.ui.view,arch_db:l10n_ch_hr_payroll_elm.l10n_be_individual_account_view_form
+msgid ""
+"<i class=\"oi oi-fw oi-arrow-right\"/>The following XML file can be imported "
+"here for PDF Generation"
+msgstr ""
+"<i class=\"oi oi-fw oi-arrow-right\"/>Il seguente file XML può essere "
+"importato qui per la generazione di un PDF"
+
+#. module: l10n_ch_hr_payroll_elm
+#: model_terms:ir.ui.view,arch_db:l10n_ch_hr_payroll_elm.hr_contract_view_form
+msgid "<span>%</span>"
+msgstr "<span>%</span>"
+
+#. module: l10n_ch_hr_payroll_elm
+#: model_terms:ir.ui.view,arch_db:l10n_ch_hr_payroll_elm.hr_contract_view_form
+msgid "<span>CFH / lesson</span>"
+msgstr "<span>CFH/lezione</span>"
+
+#. module: l10n_ch_hr_payroll_elm
+#: model:hr.salary.rule,name:l10n_ch_hr_payroll_elm.l10n_ch_employees_ac_base
+#: model:hr.salary.rule.category,name:l10n_ch_hr_payroll_elm.hr_salary_rule_category_ac_base
+msgid "AC Base"
+msgstr "Base AC"
+
+#. module: l10n_ch_hr_payroll_elm
+#: model:hr.salary.rule,name:l10n_ch_hr_payroll_elm.l10n_ch_employees_ac_open
+msgid "AC OPEN"
+msgstr "AC APERTO"
+
+#. module: l10n_ch_hr_payroll_elm
+#. odoo-python
+#: code:addons/l10n_ch_hr_payroll_elm/models/l10n_ch_insurance_report.py:0
+#: model:hr.salary.rule.category,name:l10n_ch_hr_payroll_elm.hr_salary_rule_category_ac_open
+#, python-format
+msgid "AC Open"
+msgstr "AD Aperta"
+
+#. module: l10n_ch_hr_payroll_elm
+#. odoo-python
+#: code:addons/l10n_ch_hr_payroll_elm/models/l10n_ch_insurance_report.py:0
+#, python-format
+msgid "AC Salary"
+msgstr "Retribuzione AC"
+
+#. module: l10n_ch_hr_payroll_elm
+#: model:hr.salary.rule.category,name:l10n_ch_hr_payroll_elm.hr_salary_rule_category_ac_threshold
+msgid "AC Salary Maximum"
+msgstr "Stipendio massimo AD"
+
+#. module: l10n_ch_hr_payroll_elm
+#: model:hr.salary.rule,name:l10n_ch_hr_payroll_elm.l10n_ch_employees_ac_salary_max
+msgid "AC Salary Threshold"
+msgstr "Soglia retribuzione AC"
+
+#. module: l10n_ch_hr_payroll_elm
+#: model_terms:ir.ui.view,arch_db:l10n_ch_hr_payroll_elm.l10n_ch_social_insurance_view_form
+msgid "AC Thresholds"
+msgstr "Soglie AD"
+
+#. module: l10n_ch_hr_payroll_elm
+#. odoo-python
+#: code:addons/l10n_ch_hr_payroll_elm/models/l10n_ch_insurance_report.py:0
+#, python-format
+msgid "ACC Salary"
+msgstr "Retribuzione ACC"
+
+#. module: l10n_ch_hr_payroll_elm
+#: model:hr.salary.rule,name:l10n_ch_hr_payroll_elm.l10n_ch_employees_acc_salary_max
+#: model:hr.salary.rule.category,name:l10n_ch_hr_payroll_elm.hr_salary_rule_category_acc_threshold
+msgid "ACC Salary Maximum"
+msgstr "Salario minimo ACC"
+
+#. module: l10n_ch_hr_payroll_elm
+#: model_terms:ir.ui.view,arch_db:l10n_ch_hr_payroll_elm.l10n_ch_social_insurance_view_form
+msgid "ACC Thresholds"
+msgstr "Soglie AINF"
+
+#. module: l10n_ch_hr_payroll_elm
+#: model:hr.salary.rule,name:l10n_ch_hr_payroll_elm.l10n_ch_employees_as_days
+#: model:hr.salary.rule.category,name:l10n_ch_hr_payroll_elm.hr_salary_rule_category_as_days
+msgid "AS Days"
+msgstr "Giorni AS"
+
+#. module: l10n_ch_hr_payroll_elm
+#: model_terms:ir.ui.view,arch_db:l10n_ch_hr_payroll_elm.l10n_ch_insurance_report_view_form
+msgid "AVS"
+msgstr "AVS"
+
+#. module: l10n_ch_hr_payroll_elm
+#: model:ir.model,name:l10n_ch_hr_payroll_elm.model_ch_yearly_report
+msgid "AVS / LAA / LAAC / IJM Yearly Report"
+msgstr "Resoconto annuale AVS / LAA / LAAC / IGM"
+
+#. module: l10n_ch_hr_payroll_elm
+#: model:hr.salary.rule,name:l10n_ch_hr_payroll_elm.l10n_ch_employees_avs_base
+#: model:hr.salary.rule.category,name:l10n_ch_hr_payroll_elm.hr_salary_rule_category_avs_base
+msgid "AVS Base"
+msgstr "Base AVS"
+
+#. module: l10n_ch_hr_payroll_elm
+#: model:ir.model.fields.selection,name:l10n_ch_hr_payroll_elm.selection__ch_yearly_report_line__report_type__avs_open
+msgid "AVS Exempted Statement"
+msgstr "Dichiarazione di esenzione AVS"
+
+#. module: l10n_ch_hr_payroll_elm
+#: model:hr.salary.rule,name:l10n_ch_hr_payroll_elm.l10n_ch_employees_avs_franchise
+msgid "AVS Franchise IMPUTEE"
+msgstr "AVS Franchise IMPUTEE"
+
+#. module: l10n_ch_hr_payroll_elm
+#: model:hr.salary.rule.category,name:l10n_ch_hr_payroll_elm.hr_salary_rule_category_avs_franchise
+msgid "AVS Franchise Imputée"
+msgstr "AVS Franchise Imputée"
+
+#. module: l10n_ch_hr_payroll_elm
+#: model:hr.salary.rule.category,name:l10n_ch_hr_payroll_elm.hr_salary_rule_category_avs_franchise_non_imp
+msgid "AVS Franchise Non Imputée"
+msgstr "AVS Franchise Non Imputée"
+
+#. module: l10n_ch_hr_payroll_elm
+#: model:hr.salary.rule,name:l10n_ch_hr_payroll_elm.l10n_ch_employees_avs_open
+msgid "AVS OPEN"
+msgstr "AVS APERTO"
+
+#. module: l10n_ch_hr_payroll_elm
+#. odoo-python
+#: code:addons/l10n_ch_hr_payroll_elm/models/l10n_ch_insurance_report.py:0
+#: model:hr.salary.rule.category,name:l10n_ch_hr_payroll_elm.hr_salary_rule_category_avs_open
+#, python-format
+msgid "AVS Open"
+msgstr "AVS Aperta"
+
+#. module: l10n_ch_hr_payroll_elm
+#. odoo-python
+#: code:addons/l10n_ch_hr_payroll_elm/models/l10n_ch_insurance_report.py:0
+#, python-format
+msgid "AVS Salary"
+msgstr "Retribuzione AVS"
+
+#. module: l10n_ch_hr_payroll_elm
+#: model:hr.salary.rule,name:l10n_ch_hr_payroll_elm.l10n_ch_employees_avs_salary_retired
+#: model:hr.salary.rule.category,name:l10n_ch_hr_payroll_elm.hr_salary_rule_category_avs_salary_retired
+msgid "AVS Salary Retired"
+msgstr "Stipendio AVS pensione"
+
+#. module: l10n_ch_hr_payroll_elm
+#: model:ir.model.fields,field_description:l10n_ch_hr_payroll_elm.field_hr_contract__l10n_ch_avs_status
+msgid "AVS Special Status"
+msgstr "Stato speciale AVS"
+
+#. module: l10n_ch_hr_payroll_elm
+#: model:ir.model.fields.selection,name:l10n_ch_hr_payroll_elm.selection__ch_yearly_report_line__report_type__avs
+msgid "AVS Statement"
+msgstr "Dichiarazione AVS"
+
+#. module: l10n_ch_hr_payroll_elm
+#: model:ir.model.fields,field_description:l10n_ch_hr_payroll_elm.field_hr_payslip__l10n_ch_avs_status
+msgid "AVS Status"
+msgstr "Stato AVS"
+
+#. module: l10n_ch_hr_payroll_elm
+#: model:hr.salary.rule,name:l10n_ch_hr_payroll_elm.l10n_ch_employees_avs_franchise_non_imp
+msgid "Abattement Non Imputé (Cumul)"
+msgstr "Abattement Non Imputé (Cumul)"
+
+#. module: l10n_ch_hr_payroll_elm
+#: model:hr.salary.attachment.type,name:l10n_ch_hr_payroll_elm.hr_salary_attachment_action_collab
+#: model:hr.salary.rule,name:l10n_ch_hr_payroll_elm.l10n_ch_employees_action_collab
+msgid "Actions de collaborateurs"
+msgstr "Actions de collaborateurs"
+
+#. module: l10n_ch_hr_payroll_elm
+#: model_terms:hr.salary.rule,note:l10n_ch_hr_payroll_elm.l10n_ch_employees_laac_comp_1
+#: model_terms:hr.salary.rule,note:l10n_ch_hr_payroll_elm.l10n_ch_employees_laac_comp_2
+msgid "Additional Accident Insurance (LAAC)"
+msgstr "Assicurazione infortuni complementare (LAAC)"
+
+#. module: l10n_ch_hr_payroll_elm
+#: model:ir.model.fields,help:l10n_ch_hr_payroll_elm.field_hr_payslip__l10n_ch_after_departure_payment
+msgid ""
+"Additional payment after leaving in the current year with maximum salary and "
+"third-party benefits"
+msgstr ""
+"Pagamento aggiuntivo dopo aver lasciato l'azienda nell'anno in corso con "
+"stipendio massimo e benefici di terzi"
+
+#. module: l10n_ch_hr_payroll_elm
+#: model:ir.model.fields.selection,name:l10n_ch_hr_payroll_elm.selection__hr_payslip__l10n_ch_after_departure_payment__n
+msgid "After Departure Payment"
+msgstr "Pagamento dopo uscita"
+
+#. module: l10n_ch_hr_payroll_elm
+#: model:ir.model.fields.selection,name:l10n_ch_hr_payroll_elm.selection__hr_payslip__l10n_ch_after_departure_payment__nk
+msgid "After Departure Payment with ST correction"
+msgstr "Pagamento dopo uscita con correzione ST"
+
+#. module: l10n_ch_hr_payroll_elm
+#: model:ir.model.fields,field_description:l10n_ch_hr_payroll_elm.field_hr_payslip_is_log_line__amount
+#: model:ir.model.fields,field_description:l10n_ch_hr_payroll_elm.field_l10n_ch_social_insurance_avs_ac_threshold__amount
+#: model:ir.model.fields,field_description:l10n_ch_hr_payroll_elm.field_l10n_ch_social_insurance_avs_acc_threshold__amount
+#: model:ir.model.fields,field_description:l10n_ch_hr_payroll_elm.field_l10n_ch_social_insurance_avs_retirement_rente__amount
+msgid "Amount"
+msgstr "Importo"
+
+#. module: l10n_ch_hr_payroll_elm
+#: model:ir.model.fields.selection,name:l10n_ch_hr_payroll_elm.selection__l10n_ch_is_report__month__4
+msgid "April"
+msgstr "Aprile"
+
+#. module: l10n_ch_hr_payroll_elm
+#: model:ir.model.fields.selection,name:l10n_ch_hr_payroll_elm.selection__l10n_ch_is_report__month__8
+msgid "August"
+msgstr "Agosto"
+
+#. module: l10n_ch_hr_payroll_elm
+#: model:ir.model.fields,field_description:l10n_ch_hr_payroll_elm.field_ch_yearly_report__avs_institution_ids
+msgid "Avs Institution"
+msgstr "Istituzione AVS"
+
+#. module: l10n_ch_hr_payroll_elm
+#: model:hr.salary.attachment.type,name:l10n_ch_hr_payroll_elm.hr_salary_attachment_bik_correction
+msgid "BIK Correction"
+msgstr "Correzione BIK"
+
+#. module: l10n_ch_hr_payroll_elm
+#. odoo-python
+#: code:addons/l10n_ch_hr_payroll_elm/models/l10n_ch_location_unit.py:0
+#, python-format
+msgid "BUR-REE-Number checksum is not correct"
+msgstr "La somma di controllo del numero BUR-REE non è corretta"
+
+#. module: l10n_ch_hr_payroll_elm
+#. odoo-python
+#: code:addons/l10n_ch_hr_payroll_elm/models/l10n_ch_location_unit.py:0
+#, python-format
+msgid "BUR-REE-Number does not match the right format"
+msgstr "Il numero BUR-REE non corrisponde al formato corretto"
+
+#. module: l10n_ch_hr_payroll_elm
+#. odoo-python
+#: code:addons/l10n_ch_hr_payroll_elm/models/l10n_ch_insurance_report.py:0
+#, python-format
+msgid "Birthday"
+msgstr "Compleanno"
+
+#. module: l10n_ch_hr_payroll_elm
+#: model:hr.salary.rule,name:l10n_ch_hr_payroll_elm.l10n_ch_employees_imp_bonus
+msgid "Bonus for improvement proposal"
+msgstr "Bonus per proposte di miglioramento"
+
+#. module: l10n_ch_hr_payroll_elm
+#: model_terms:ir.ui.view,arch_db:l10n_ch_hr_payroll_elm.l10n_ch_insurance_report_view_form
+msgid "CAF"
+msgstr "CAF"
+
+#. module: l10n_ch_hr_payroll_elm
+#: model:hr.salary.rule,name:l10n_ch_hr_payroll_elm.l10n_ch_employees_fak_company
+msgid "CAF (Comp. Part.)"
+msgstr "CAF (Parte datore di lavoro)"
+
+#. module: l10n_ch_hr_payroll_elm
+#: model_terms:hr.salary.rule,note:l10n_ch_hr_payroll_elm.l10n_ch_employees_fak_company
+msgid "CAF Contribution (Family Allowances) Company"
+msgstr "Contributo CAF azienda (Assegni familiari)"
+
+#. module: l10n_ch_hr_payroll_elm
+#: model:ir.model.fields,field_description:l10n_ch_hr_payroll_elm.field_hr_salary_rule__l10n_ch_caf_statement
+#: model:ir.model.fields.selection,name:l10n_ch_hr_payroll_elm.selection__ch_yearly_report_line__report_type__caf
+msgid "CAF Statement"
+msgstr "Dichiarazione CAF"
+
+#. module: l10n_ch_hr_payroll_elm
+#: model:hr.salary.rule.category,name:l10n_ch_hr_payroll_elm.hr_salary_rule_category_ch_days
+msgid "CH Days"
+msgstr "Giorni CH"
+
+#. module: l10n_ch_hr_payroll_elm
+#: model:hr.salary.attachment.type,name:l10n_ch_hr_payroll_elm.hr_salary_attachment_childalwpay
+msgid "CHILDALWPAY"
+msgstr "CHILDALWPAY"
+
+#. module: l10n_ch_hr_payroll_elm
+#: model:ir.model.fields,field_description:l10n_ch_hr_payroll_elm.field_ch_yearly_report__caf_institution_ids
+msgid "Caf Institution"
+msgstr "Istituto CAF"
+
+#. module: l10n_ch_hr_payroll_elm
+#: model:ir.model.fields,field_description:l10n_ch_hr_payroll_elm.field_l10n_ch_is_report_line__canton
+msgid "Canton"
+msgstr "Cantone"
+
+#. module: l10n_ch_hr_payroll_elm
+#: model:hr.salary.attachment.type,name:l10n_ch_hr_payroll_elm.hr_salary_attachment_type_pension_capital
+#: model:hr.salary.rule,name:l10n_ch_hr_payroll_elm.l10n_ch_employees_pension_capital
+msgid "Capital benefit of a pension nature"
+msgstr "Prestazione in capitale di natura pensionistica"
+
+#. module: l10n_ch_hr_payroll_elm
+#: model:hr.salary.attachment.type,name:l10n_ch_hr_payroll_elm.hr_salary_attachment_cash_correction
+#: model:hr.salary.rule,name:l10n_ch_hr_payroll_elm.l10n_ch_employees_cash_advantage_correction
+msgid "Cash Advantage Correction"
+msgstr "Correzione vantaggio monetario"
+
+#. module: l10n_ch_hr_payroll_elm
+#: model:hr.salary.rule,name:l10n_ch_hr_payroll_elm.l10n_ch_employees_child_allowance_payment
+msgid "Child Allowance Payment"
+msgstr "Pagamento assegno familiare"
+
+#. module: l10n_ch_hr_payroll_elm
+#. odoo-python
+#: code:addons/l10n_ch_hr_payroll_elm/models/l10n_ch_insurance_report.py:0
+#, python-format
+msgid "Child Allowances"
+msgstr "Assegni familiari"
+
+#. module: l10n_ch_hr_payroll_elm
+#: model:ir.model.fields,field_description:l10n_ch_hr_payroll_elm.field_hr_payslip_is_log_line__code
+msgid "Code"
+msgstr "Codice"
+
+#. module: l10n_ch_hr_payroll_elm
+#: model:ir.model.fields,field_description:l10n_ch_hr_payroll_elm.field_hr_payslip__l10n_ch_after_departure_payment
+msgid "Code change, correction-payment after departure"
+msgstr "Modifica del codice, correzione-pagamento dopo la partenza"
+
+#. module: l10n_ch_hr_payroll_elm
+#: model:ir.model.fields,help:l10n_ch_hr_payroll_elm.field_hr_salary_rule__l10n_ch_wage_statement
+msgid ""
+"Code meaning:\n"
+"- I: Gross base salary and regular allowances\n"
+"    - Ordinary salary paid, such as monthly, hourly, piece rate, working "
+"from home, etc.\n"
+"    - Regular allowances paid, such as allowances for position or for length "
+"of service,\n"
+"      residence, housing, travel or cost of living allowances.\n"
+"    - Tips paid subject to AVS contributions.\n"
+"    - Regular payments (at each pay) of a commission, turnover contribution "
+"or other bonus\n"
+"      paid regularly.\n"
+"- J: Gross amount of compensation for shift work, Sunday or night work and "
+"other arduousness\n"
+"     bonuses (compensation for on-call duty, dirty work, etc.).\n"
+"- K: Total amount of family allowances paid by the employer in the form of "
+"child allowances,\n"
+"     vocational training allowances, household allowances or care "
+"allowances.\n"
+"- Y: Benefits provided by insurance or similar institutions and which have "
+"an impact on\n"
+"     employee contributions\n"
+"- L: Amount of AVS/AI/APG/AC/ (1st pillar) and AANP (employee’s share) "
+"contributions.\n"
+"     Not included:\n"
+"        - the employer’s share,\n"
+"        - the Parifonds,\n"
+"        - daily allowance insurance in the event of IJM illness,\n"
+"        - LAAC supplementary accident insurance\n"
+"        - Social contributions must in principle be transmitted in the form "
+"of negative values.\n"
+"- M: Amount of ordinary contributions (employee's share) to LPP professional "
+"pension provision or\n"
+"     the 2nd pillar, in accordance with legal, statutory or regulatory "
+"provisions.\n"
+"     The amount indicated should not include redemption contributions.\n"
+"     Regular BVG-LPP contributions must in principle be transmitted as "
+"negative values.\n"
+msgstr ""
+"Significato del codice:\n"
+"    - I: stipendio base lordo e indennità regolari\n"
+"        - Stipendio ordinario corrisposto, ad esempio mensile, orario, a "
+"cottimo, per lavoro da casa, ecc.\n"
+"        - Indennità regolari corrisposte, ad esempio indennità di posizione "
+"o di anzianità di servizio,\n"
+"          residenza, alloggio, viaggio o costo della vita.\n"
+"         - Mance soggette a contributi AVS.\n"
+"        - Pagamenti regolari (ad ogni retribuzione) di commissioni, "
+"contributi sul fatturato o altri bonus\n"
+"          pagati regolarmente.\n"
+"    - J: importo lordo delle indennità per lavoro a turni, lavoro domenicale "
+"o notturno e altre indennità per lavori gravosi\n"
+"         (indennità per servizio di reperibilità, lavori insudicianti, ecc.)"
+".\n"
+"- K: importo totale degli assegni familiari versati dal datore di lavoro "
+"sotto forma di assegni per figli,\n"
+"         assegni per la formazione professionale, assegni per la famiglia o "
+"assegni di assistenza.\n"
+"    - Y: prestazioni fornite da assicurazioni o istituzioni simili che hanno "
+"un impatto sui\n"
+"         contributi dei dipendenti\n"
+"- L: importo dei contributi AVS/AI/APG/AC/ (1° pilastro) e INP (quota a "
+"carico del dipendente).\n"
+"         Non sono inclusi:\n"
+"            - la quota a carico del datore di lavoro,\n"
+"            - i Parifonds,\n"
+"            - l'assicurazione di indennità giornaliera in caso di malattia "
+"IJM,\n"
+"            - l'assicurazione complementare contro gli infortuni LAAC\n"
+"            - i contributi sociali devono essere trasmessi in linea di "
+"principio sotto forma di valori negativi.\n"
+"    - M: importo dei contributi ordinari (quota del dipendente) alla "
+"previdenza professionale LPP o\n"
+"         al 2° pilastro, in conformità con le disposizioni legali, "
+"statutarie o regolamentari.\n"
+"         L'importo indicato non deve includere i contributi di riscatto.\n"
+"         I contributi regolari BVG-LPP devono essere trasmessi in linea di "
+"principio come valori negativi.\n"
+
+#. module: l10n_ch_hr_payroll_elm
+#: model:ir.model.fields,help:l10n_ch_hr_payroll_elm.field_hr_salary_rule__l10n_ch_yearly_statement
+msgid ""
+"Code meaning:\n"
+"- O: 13th salary paid (with the 14th and following) provided that it is not "
+"in the form of a bonus\n"
+"- P: Overtime pay\n"
+"- Q: Sporadic Benefits, e.g.\n"
+"        - bonuses,\n"
+"        - merit-based rewards,\n"
+"        - participation in profit or turnover,\n"
+"        - engagement bonuses and severance pay,\n"
+"        - loyalty bonuses, bonuses and gifts for length of service,\n"
+"        - fixed moving compensation,\n"
+"        - Christmas bonuses,\n"
+"        - compensation for members of the board of directors (attendance "
+"fees, fees, etc.).\n"
+"- R: Fringe Benefits\n"
+"        - board and lodging (section 2.1 of the salary certificate);\n"
+"      - the private share of the company car (section 2.2 of the salary "
+"certificate);\n"
+"      - other ancillary salary benefits (section 2.3 of the salary "
+"certificate);\n"
+"      - participation rights (section 5 of the salary certificate).\n"
+"- S: Capital Payment: Capital benefits of a pension nature paid by the "
+"employer directly to the\n"
+"     employee and likely to be taxed at a reduced rate.\n"
+"      - severance pay of a provident nature;\n"
+"      - capital benefits of a pension nature;\n"
+"      - salary payments after death.\n"
+"- T: Other Benefits: All other services covered on an optional basis by the "
+"employer, although\n"
+"     they are generally due by the employee.\n"
+"        - partial or total coverage of contributions owed by the employee to "
+"LPP professional\n"
+"          insurance, including executive insurance;\n"
+"        - payments to occupational pension institutions (2nd pillar) made by "
+"the employer in\n"
+"          favor of the employee (purchase contributions);\n"
+"        - payment of insurance contributions in favor of the employee and "
+"members of his family\n"
+"          (health insurance, optional 3rd pillar b insurance, life "
+"insurance, etc.);\n"
+"        - payment of contributions to recognized forms of linked individual "
+"pension provision (3rd pillar a)\n"
+"."
+msgstr ""
+"Significato del codice:\n"
+"    - O: tredicesima mensilità corrisposta (insieme alla quattordicesima e "
+"alle successive) purché non sotto forma di bonus\n"
+"    - P: retribuzione per lavoro straordinario\n"
+"    - Q: benefici sporadici, ad esempio\n"
+"            - bonus,\n"
+"            - premi basati sul merito,\n"
+"            - partecipazione agli utili o al fatturato,\n"
+"            - bonus di assunzione e indennità di fine rapporto,\n"
+"            - bonus di fedeltà, bonus e regali per anzianità di servizio,\n"
+"            - indennità fissa di trasferimento,\n"
+"            - bonus natalizi,\n"
+"            - indennità per i membri del consiglio di amministrazione "
+"(gettoni di presenza, onorari, ecc.).\n"
+"    - R: Benefici accessori\n"
+"- vitto e alloggio (sezione 2.1 del certificato di salario);\n"
+"          - quota privata dell'auto aziendale (sezione 2.2 del certificato "
+"di salario);\n"
+"          - altri benefici salariali accessori (sezione 2.3 del certificato "
+"di salario);\n"
+"          - diritti di partecipazione (sezione 5 del certificato di salario)"
+".\n"
+"    - S: Pagamento in capitale: benefici in capitale di natura pensionistica "
+"versati dal datore di lavoro direttamente al\n"
+"         dipendente e soggetti a un'aliquota fiscale ridotta.\n"
+"          - indennità di fine rapporto di natura previdenziale;\n"
+"          - benefici in capitale di natura pensionistica;\n"
+"          - pagamenti salariali dopo il decesso.\n"
+"    - T: Altri benefici: tutti gli altri servizi coperti su base facoltativa "
+"dal datore di lavoro, sebbene\n"
+"         siano generalmente a carico del dipendente.\n"
+"- Copertura parziale o totale dei contributi dovuti dal dipendente "
+"all'assicurazione professionale LPP,\n"
+" compresa l'assicurazione per dirigenti;\n"
+"- versamenti a istituti di previdenza professionale (2° pilastro) effettuati "
+"dal datore di lavoro a\n"
+"              favore del dipendente (contributi di acquisto);\n"
+"            - pagamento dei contributi assicurativi a favore del dipendente "
+"e dei suoi familiari\n"
+"              (assicurazione sanitaria, assicurazione facoltativa del 3° "
+"pilastro b, assicurazione sulla vita, ecc.);\n"
+"            - pagamento dei contributi a forme riconosciute di previdenza "
+"individuale collegata (3° pilastro a)."
+
+#. module: l10n_ch_hr_payroll_elm
+#: model:ir.model.fields,field_description:l10n_ch_hr_payroll_elm.field_ch_yearly_report__company_id
+#: model:ir.model.fields,field_description:l10n_ch_hr_payroll_elm.field_l10n_ch_is_report__company_id
+#: model:ir.model.fields,field_description:l10n_ch_hr_payroll_elm.field_l10n_ch_salary_certificate__company_id
+msgid "Company"
+msgstr "Azienda"
+
+#. module: l10n_ch_hr_payroll_elm
+#: model:ir.model.fields,field_description:l10n_ch_hr_payroll_elm.field_l10n_ch_social_insurance__laa_insurance_id
+msgid "Company LAA Insurance"
+msgstr "Società assicurativa LAA"
+
+#. module: l10n_ch_hr_payroll_elm
+#: model:ir.model.fields,field_description:l10n_ch_hr_payroll_elm.field_l10n_ch_social_insurance__lpp_insurance_id
+msgid "Company LPP Insurance"
+msgstr "Società assicurativa LPP"
+
+#. module: l10n_ch_hr_payroll_elm
+#: model:ir.model.fields,field_description:l10n_ch_hr_payroll_elm.field_l10n_ch_compensation_fund_line__company_rate
+msgid "Company Rate (%)"
+msgstr "Tasso aziendale (%)"
+
+#. module: l10n_ch_hr_payroll_elm
+#: model:hr.salary.rule,name:l10n_ch_hr_payroll_elm.l10n_ch_employees_employer_lpp_compensation
+msgid "Compensation for employer LPP contributions"
+msgstr "Indennità contributi LPP a carico del datore di lavoro"
+
+#. module: l10n_ch_hr_payroll_elm
+#: model:hr.salary.rule,name:l10n_ch_hr_payroll_elm.l10n_ch_employees_employer_lpp_compensation_rachat
+msgid "Compensation rachat LPP employeur"
+msgstr "Riscatto della LPP a carico del datore di lavoro"
+
+#. module: l10n_ch_hr_payroll_elm
+#: model:ir.model.fields,field_description:l10n_ch_hr_payroll_elm.field_hr_contract__l10n_ch_contractual_13th_month_rate
+msgid "Contractual allowances for 13th/14th month"
+msgstr "Indennità contrattuali per il 13°/14° mese"
+
+#. module: l10n_ch_hr_payroll_elm
+#: model:ir.model.fields,field_description:l10n_ch_hr_payroll_elm.field_hr_payslip_is_log_line__corrected_slip_id
+msgid "Corrected Slip"
+msgstr "Busta paga corretta"
+
+#. module: l10n_ch_hr_payroll_elm
+#: model:ir.model.fields,field_description:l10n_ch_hr_payroll_elm.field_hr_employee_is_line__correction_date
+msgid "Correction Date"
+msgstr "Data correzione"
+
+#. module: l10n_ch_hr_payroll_elm
+#: model:hr.salary.rule,name:l10n_ch_hr_payroll_elm.l10n_ch_employees_benefits_in_kind_correction
+msgid "Correction of benefits in kind"
+msgstr "Correzione prestazioni in natura"
+
+#. module: l10n_ch_hr_payroll_elm
+#: model:hr.salary.attachment.type,name:l10n_ch_hr_payroll_elm.hr_salary_attachment_type_third_party_correction
+#: model:hr.salary.rule,name:l10n_ch_hr_payroll_elm.l10n_ch_employees_third_party_correction
+msgid "Correction of third party compensation"
+msgstr "Correzione del compenso a terzi"
+
+#. module: l10n_ch_hr_payroll_elm
+#: model:ir.model.fields,field_description:l10n_ch_hr_payroll_elm.field_ch_yearly_report__create_uid
+#: model:ir.model.fields,field_description:l10n_ch_hr_payroll_elm.field_ch_yearly_report_line__create_uid
+#: model:ir.model.fields,field_description:l10n_ch_hr_payroll_elm.field_hr_employee_is_line__create_uid
+#: model:ir.model.fields,field_description:l10n_ch_hr_payroll_elm.field_hr_payslip_is_log_line__create_uid
+#: model:ir.model.fields,field_description:l10n_ch_hr_payroll_elm.field_l10n_ch_is_report__create_uid
+#: model:ir.model.fields,field_description:l10n_ch_hr_payroll_elm.field_l10n_ch_is_report_line__create_uid
+#: model:ir.model.fields,field_description:l10n_ch_hr_payroll_elm.field_l10n_ch_salary_certificate__create_uid
+#: model:ir.model.fields,field_description:l10n_ch_hr_payroll_elm.field_l10n_ch_social_insurance_avs_ac_threshold__create_uid
+#: model:ir.model.fields,field_description:l10n_ch_hr_payroll_elm.field_l10n_ch_social_insurance_avs_acc_threshold__create_uid
+#: model:ir.model.fields,field_description:l10n_ch_hr_payroll_elm.field_l10n_ch_social_insurance_avs_retirement_rente__create_uid
+msgid "Created by"
+msgstr "Creato da"
+
+#. module: l10n_ch_hr_payroll_elm
+#: model:ir.model.fields,field_description:l10n_ch_hr_payroll_elm.field_ch_yearly_report__create_date
+#: model:ir.model.fields,field_description:l10n_ch_hr_payroll_elm.field_ch_yearly_report_line__create_date
+#: model:ir.model.fields,field_description:l10n_ch_hr_payroll_elm.field_hr_employee_is_line__create_date
+#: model:ir.model.fields,field_description:l10n_ch_hr_payroll_elm.field_hr_payslip_is_log_line__create_date
+#: model:ir.model.fields,field_description:l10n_ch_hr_payroll_elm.field_l10n_ch_is_report__create_date
+#: model:ir.model.fields,field_description:l10n_ch_hr_payroll_elm.field_l10n_ch_is_report_line__create_date
+#: model:ir.model.fields,field_description:l10n_ch_hr_payroll_elm.field_l10n_ch_salary_certificate__create_date
+#: model:ir.model.fields,field_description:l10n_ch_hr_payroll_elm.field_l10n_ch_social_insurance_avs_ac_threshold__create_date
+#: model:ir.model.fields,field_description:l10n_ch_hr_payroll_elm.field_l10n_ch_social_insurance_avs_acc_threshold__create_date
+#: model:ir.model.fields,field_description:l10n_ch_hr_payroll_elm.field_l10n_ch_social_insurance_avs_retirement_rente__create_date
+msgid "Created on"
+msgstr "Data creazione"
+
+#. module: l10n_ch_hr_payroll_elm
+#: model:ir.model.fields,field_description:l10n_ch_hr_payroll_elm.field_ch_yearly_report__currency_id
+#: model:ir.model.fields,field_description:l10n_ch_hr_payroll_elm.field_l10n_ch_is_report__currency_id
+#: model:ir.model.fields,field_description:l10n_ch_hr_payroll_elm.field_l10n_ch_salary_certificate__currency_id
+msgid "Currency"
+msgstr "Valuta"
+
+#. module: l10n_ch_hr_payroll_elm
+#: model:ir.model.fields,field_description:l10n_ch_hr_payroll_elm.field_hr_contract__l10n_ch_current_occupation_rate
+msgid "Current Occupation rate"
+msgstr "Tasso d'occupazione attuale"
+
+#. module: l10n_ch_hr_payroll_elm
+#: model_terms:hr.salary.rule,note:l10n_ch_hr_payroll_elm.l10n_ch_employees_ijm_1
+#: model_terms:hr.salary.rule,note:l10n_ch_hr_payroll_elm.l10n_ch_employees_ijm_2
+#: model_terms:hr.salary.rule,note:l10n_ch_hr_payroll_elm.l10n_ch_employees_ijm_comp_1
+#: model_terms:hr.salary.rule,note:l10n_ch_hr_payroll_elm.l10n_ch_employees_ijm_comp_2
+msgid "Daily Sickness Insurance"
+msgstr "Assicurazione malattia giornaliera"
+
+#. module: l10n_ch_hr_payroll_elm
+#: model:ir.model.fields,field_description:l10n_ch_hr_payroll_elm.field_hr_payslip_is_log_line__date
+msgid "Date"
+msgstr "Data"
+
+#. module: l10n_ch_hr_payroll_elm
+#: model:hr.salary.attachment.type,name:l10n_ch_hr_payroll_elm.hr_salary_attachment_dead_alw
+#: model:hr.salary.rule,name:l10n_ch_hr_payroll_elm.l10n_ch_employees_death_allowance
+msgid "Death Allowance"
+msgstr "Indennità di morte"
+
+#. module: l10n_ch_hr_payroll_elm
+#: model:ir.model.fields.selection,name:l10n_ch_hr_payroll_elm.selection__l10n_ch_is_report__month__12
+msgid "December"
+msgstr "Dicembre"
+
+#. module: l10n_ch_hr_payroll_elm
+#: model:ir.model.fields,help:l10n_ch_hr_payroll_elm.field_hr_contract__l10n_ch_is_predefined_category
+msgid ""
+"Des barèmes fixes sont appliqués pour l'impôt à la source retenu sur les "
+"honoraires des administrateurs (art. 93 LIFD) et certaines participations de "
+"collaborateur (art. 97a LIFD). Pour ces impôts, aucun enfant n'est pris en "
+"compte et un seul taux en %% est appliqué. À cela s'ajoutent des catégories "
+"prédéfinies pour les annonces rectificatives et pour l'annonce des salaires "
+"bruts des frontaliers français pour lesquels l'accord spécial entre les "
+"cantons BE, BS, BL, JU, NE, SO, VD et VS et la France s'applique."
+msgstr ""
+"Des barèmes fixes sont appliqués pour l'impôt à la source retenu sur les "
+"honoraires des administrateurs (art. 93 LIFD) et certaines participations de "
+"collaborateur (art. 97a LIFD). Pour ces impôts, aucun enfant n'est pris en "
+"compte et un seul taux en %% est appliqué. À cela s'ajoutent des catégories "
+"prédéfinies pour les annonces rectificatives et pour l'annonce des salaires "
+"bruts des frontaliers français pour lesquels l'accord spécial entre les "
+"cantons BE, BS, BL, JU, NE, SO, VD et VS et la France s'applique."
+
+#. module: l10n_ch_hr_payroll_elm
+#: model:ir.model.fields,field_description:l10n_ch_hr_payroll_elm.field_l10n_ch_salary_certificate__name
+msgid "Description"
+msgstr "Descrizione"
+
+#. module: l10n_ch_hr_payroll_elm
+#: model_terms:ir.ui.view,arch_db:l10n_ch_hr_payroll_elm.l10n_ch_social_insurance_view_form
+msgid "Details"
+msgstr "Dettagli"
+
+#. module: l10n_ch_hr_payroll_elm
+#: model:ir.model.fields,field_description:l10n_ch_hr_payroll_elm.field_ch_yearly_report__display_name
+#: model:ir.model.fields,field_description:l10n_ch_hr_payroll_elm.field_ch_yearly_report_line__display_name
+#: model:ir.model.fields,field_description:l10n_ch_hr_payroll_elm.field_hr_employee_is_line__display_name
+#: model:ir.model.fields,field_description:l10n_ch_hr_payroll_elm.field_hr_payslip_is_log_line__display_name
+#: model:ir.model.fields,field_description:l10n_ch_hr_payroll_elm.field_l10n_ch_is_report__display_name
+#: model:ir.model.fields,field_description:l10n_ch_hr_payroll_elm.field_l10n_ch_is_report_line__display_name
+#: model:ir.model.fields,field_description:l10n_ch_hr_payroll_elm.field_l10n_ch_salary_certificate__display_name
+#: model:ir.model.fields,field_description:l10n_ch_hr_payroll_elm.field_l10n_ch_social_insurance_avs_ac_threshold__display_name
+#: model:ir.model.fields,field_description:l10n_ch_hr_payroll_elm.field_l10n_ch_social_insurance_avs_acc_threshold__display_name
+#: model:ir.model.fields,field_description:l10n_ch_hr_payroll_elm.field_l10n_ch_social_insurance_avs_retirement_rente__display_name
+msgid "Display Name"
+msgstr "Nome visualizzato"
+
+#. module: l10n_ch_hr_payroll_elm
+#: model:hr.salary.attachment.type,name:l10n_ch_hr_payroll_elm.hr_salary_attachment_ded_rht_itp
+#: model:hr.salary.rule,name:l10n_ch_hr_payroll_elm.l10n_ch_employees_rht_itp_ded
+msgid "Déduction RHT/ITP (SM)"
+msgstr "Déduction RHT/ITP (SM)"
+
+#. module: l10n_ch_hr_payroll_elm
+#: model:hr.salary.attachment.type,name:l10n_ch_hr_payroll_elm.hr_salary_attachment_delai_carence_rht_itp
+#: model:hr.salary.rule,name:l10n_ch_hr_payroll_elm.l10n_ch_employees_carence_rht_itp
+msgid "Délai de carence RHT/ITP"
+msgstr "Délai de carence RHT/ITP"
+
+#. module: l10n_ch_hr_payroll_elm
+#: model:hr.salary.attachment.type,name:l10n_ch_hr_payroll_elm.hr_salary_attachment_type_effective_expatriate_costs
+#: model:hr.salary.rule,name:l10n_ch_hr_payroll_elm.l10n_ch_employees_effective_expatriate_costs
+msgid "Effective expatriate costs"
+msgstr "Costi effettivi per gli espatriati"
+
+#. module: l10n_ch_hr_payroll_elm
+#: model:ir.model.fields,field_description:l10n_ch_hr_payroll_elm.field_hr_employee_is_line__employee_id
+msgid "Employee"
+msgstr "Dipendente"
+
+#. module: l10n_ch_hr_payroll_elm
+#: model:ir.model,name:l10n_ch_hr_payroll_elm.model_hr_contract
+msgid "Employee Contract"
+msgstr "Contratto dipendente"
+
+#. module: l10n_ch_hr_payroll_elm
+#. odoo-python
+#: code:addons/l10n_ch_hr_payroll_elm/models/l10n_ch_insurance_report.py:0
+#, python-format
+msgid "Employee Number"
+msgstr "Numero dipendente"
+
+#. module: l10n_ch_hr_payroll_elm
+#: model:ir.model.fields,field_description:l10n_ch_hr_payroll_elm.field_l10n_ch_compensation_fund_line__employee_rate
+msgid "Employee Rate (%)"
+msgstr "Tariffa dipendente (%)"
+
+#. module: l10n_ch_hr_payroll_elm
+#: model:ir.model.fields,help:l10n_ch_hr_payroll_elm.field_hr_contract__l10n_ch_lesson_wage
+msgid "Employee's gross wage by lesson."
+msgstr "La retribuzione lorda del dipendente per lezione."
+
+#. module: l10n_ch_hr_payroll_elm
+#: model:ir.model.fields.selection,name:l10n_ch_hr_payroll_elm.selection__hr_contract__l10n_ch_avs_status__exempted
+#: model:ir.model.fields.selection,name:l10n_ch_hr_payroll_elm.selection__hr_payslip__l10n_ch_avs_status__exempted
+msgid "Exempted"
+msgstr "Esente"
+
+#. module: l10n_ch_hr_payroll_elm
+#: model:hr.salary.rule,name:l10n_ch_hr_payroll_elm.l10n_ch_employees_fee
+msgid "FEE"
+msgstr "COSTI"
+
+#. module: l10n_ch_hr_payroll_elm
+#: model:hr.salary.attachment.type,name:l10n_ch_hr_payroll_elm.hr_salary_attachment_funalw
+msgid "FUNALW"
+msgstr "FUNALW"
+
+#. module: l10n_ch_hr_payroll_elm
+#: model:ir.model.fields.selection,name:l10n_ch_hr_payroll_elm.selection__l10n_ch_is_report__month__2
+msgid "February"
+msgstr "Febbraio"
+
+#. module: l10n_ch_hr_payroll_elm
+#: model:hr.salary.attachment.type,name:l10n_ch_hr_payroll_elm.hr_salary_attachment_fee_ch
+msgid "Fee"
+msgstr "Commissione"
+
+#. module: l10n_ch_hr_payroll_elm
+#: model:hr.contract.type,name:l10n_ch_hr_payroll_elm.l10n_ch_contract_type_fixedSalaryHrs
+msgid "Fixed-term contract with salary hourly"
+msgstr "Contratto a tempo determinato con salario orario"
+
+#. module: l10n_ch_hr_payroll_elm
+#: model:hr.contract.type,name:l10n_ch_hr_payroll_elm.l10n_ch_contract_type_fixedSalaryNoTimeConstraint
+msgid "Fixed-term contract, with commission, packages, piece rate salary, etc."
+msgstr ""
+"Contratto a tempo determinato con commissioni, pacchetti, stipendio a "
+"cottimo, ecc."
+
+#. module: l10n_ch_hr_payroll_elm
+#: model:hr.salary.attachment.type,name:l10n_ch_hr_payroll_elm.hr_salary_attachment_type_flat_expatriate_costs
+#: model:hr.salary.rule,name:l10n_ch_hr_payroll_elm.l10n_ch_employees_flat_expatriate_costs
+msgid "Flat rate fees for expatriates"
+msgstr "Tariffe forfettarie per gli espatriati"
+
+#. module: l10n_ch_hr_payroll_elm
+#. odoo-python
+#: code:addons/l10n_ch_hr_payroll_elm/models/l10n_ch_insurance_report.py:0
+#: model:ir.model.fields,field_description:l10n_ch_hr_payroll_elm.field_l10n_ch_social_insurance_avs_ac_threshold__date_from
+#: model:ir.model.fields,field_description:l10n_ch_hr_payroll_elm.field_l10n_ch_social_insurance_avs_acc_threshold__date_from
+#: model:ir.model.fields,field_description:l10n_ch_hr_payroll_elm.field_l10n_ch_social_insurance_avs_retirement_rente__date_from
+#, python-format
+msgid "From"
+msgstr "Da"
+
+#. module: l10n_ch_hr_payroll_elm
+#: model:hr.salary.rule,name:l10n_ch_hr_payroll_elm.l10n_ch_employees_func_allowance
+msgid "Functional allowance"
+msgstr "Indennità di funzione"
+
+#. module: l10n_ch_hr_payroll_elm
+#: model:hr.salary.attachment.type,name:l10n_ch_hr_payroll_elm.hr_salary_attachment_grosscomp
+msgid "GROSSCOMP"
+msgstr "GROSSCOMP"
+
+#. module: l10n_ch_hr_payroll_elm
+#: model_terms:ir.ui.view,arch_db:l10n_ch_hr_payroll_elm.l10n_be_individual_account_view_form
+msgid "Generate Certificates"
+msgstr "Genera certificati"
+
+#. module: l10n_ch_hr_payroll_elm
+#: model_terms:ir.ui.view,arch_db:l10n_ch_hr_payroll_elm.l10n_ch_insurance_report_view_form
+#: model_terms:ir.ui.view,arch_db:l10n_ch_hr_payroll_elm.l10n_ch_is_report_view_form
+msgid "Generate Reports"
+msgstr "Genera resoconti"
+
+#. module: l10n_ch_hr_payroll_elm
+#: model:hr.salary.rule,name:l10n_ch_hr_payroll_elm.l10n_ch_employees_gross_comp
+msgid "Gross Compensation"
+msgstr "Retribuzione lorda"
+
+#. module: l10n_ch_hr_payroll_elm
+#: model:ir.model.fields,field_description:l10n_ch_hr_payroll_elm.field_hr_salary_rule__l10n_ch_gross_included
+msgid "Gross Included"
+msgstr "Lordo incluso"
+
+#. module: l10n_ch_hr_payroll_elm
+#. odoo-python
+#: code:addons/l10n_ch_hr_payroll_elm/models/l10n_ch_insurance_report.py:0
+#, python-format
+msgid "Gross Salary"
+msgstr "Retribuzione lorda"
+
+#. module: l10n_ch_hr_payroll_elm
+#: model:hr.salary.rule,name:l10n_ch_hr_payroll_elm.l10n_ch_employees_holiday_allowance
+msgid "Holidays allowance"
+msgstr "Indennità per festività"
+
+#. module: l10n_ch_hr_payroll_elm
+#: model:hr.salary.attachment.type,name:l10n_ch_hr_payroll_elm.hr_salary_attachment_house_allowance
+#: model:hr.salary.rule,name:l10n_ch_hr_payroll_elm.l10n_ch_employees_house_allowance
+msgid "House Allowance"
+msgstr "Indennità di alloggio"
+
+#. module: l10n_ch_hr_payroll_elm
+#: model:ir.model.fields,field_description:l10n_ch_hr_payroll_elm.field_ch_yearly_report__id
+#: model:ir.model.fields,field_description:l10n_ch_hr_payroll_elm.field_ch_yearly_report_line__id
+#: model:ir.model.fields,field_description:l10n_ch_hr_payroll_elm.field_hr_employee_is_line__id
+#: model:ir.model.fields,field_description:l10n_ch_hr_payroll_elm.field_hr_payslip_is_log_line__id
+#: model:ir.model.fields,field_description:l10n_ch_hr_payroll_elm.field_l10n_ch_is_report__id
+#: model:ir.model.fields,field_description:l10n_ch_hr_payroll_elm.field_l10n_ch_is_report_line__id
+#: model:ir.model.fields,field_description:l10n_ch_hr_payroll_elm.field_l10n_ch_salary_certificate__id
+#: model:ir.model.fields,field_description:l10n_ch_hr_payroll_elm.field_l10n_ch_social_insurance_avs_ac_threshold__id
+#: model:ir.model.fields,field_description:l10n_ch_hr_payroll_elm.field_l10n_ch_social_insurance_avs_acc_threshold__id
+#: model:ir.model.fields,field_description:l10n_ch_hr_payroll_elm.field_l10n_ch_social_insurance_avs_retirement_rente__id
+msgid "ID"
+msgstr "ID"
+
+#. module: l10n_ch_hr_payroll_elm
+#: model_terms:ir.ui.view,arch_db:l10n_ch_hr_payroll_elm.l10n_ch_insurance_report_view_form
+msgid "IJM"
+msgstr "IGM"
+
+#. module: l10n_ch_hr_payroll_elm
+#. odoo-python
+#: code:addons/l10n_ch_hr_payroll_elm/models/l10n_ch_insurance_report.py:0
+#: model:hr.salary.rule,name:l10n_ch_hr_payroll_elm.l10n_ch_employees_ijm_base
+#: model:hr.salary.rule.category,name:l10n_ch_hr_payroll_elm.hr_salary_rule_category_ijm_base
+#, python-format
+msgid "IJM Base"
+msgstr "Base IGM"
+
+#. module: l10n_ch_hr_payroll_elm
+#. odoo-python
+#: code:addons/l10n_ch_hr_payroll_elm/models/l10n_ch_insurance_report.py:0
+#, python-format
+msgid "IJM Code"
+msgstr "Codice IGM"
+
+#. module: l10n_ch_hr_payroll_elm
+#. odoo-python
+#: code:addons/l10n_ch_hr_payroll_elm/models/l10n_ch_insurance_report.py:0
+#, python-format
+msgid "IJM Salary"
+msgstr "Stipendio IGM"
+
+#. module: l10n_ch_hr_payroll_elm
+#: model:hr.salary.rule,name:l10n_ch_hr_payroll_elm.l10n_ch_employees_ijm_salary_1
+#: model:hr.salary.rule.category,name:l10n_ch_hr_payroll_elm.hr_salary_rule_category_ijm_salary_1
+msgid "IJM Salary Main Insurance"
+msgstr "Assicurazione principale IGM stipendio"
+
+#. module: l10n_ch_hr_payroll_elm
+#: model:hr.salary.rule,name:l10n_ch_hr_payroll_elm.l10n_ch_employees_ijm_salary_max_1
+#: model:hr.salary.rule.category,name:l10n_ch_hr_payroll_elm.hr_salary_rule_category_ijm_salary_max_1
+msgid "IJM Salary Maximum Main Insurance"
+msgstr "Assicurazione principale IGM stipendio massimo"
+
+#. module: l10n_ch_hr_payroll_elm
+#: model:hr.salary.rule,name:l10n_ch_hr_payroll_elm.l10n_ch_employees_ijm_salary_max_2
+#: model:hr.salary.rule,name:l10n_ch_hr_payroll_elm.l10n_ch_employees_ijm_salary_min_2
+#: model:hr.salary.rule.category,name:l10n_ch_hr_payroll_elm.hr_salary_rule_category_ijm_salary_max_2
+msgid "IJM Salary Maximum Second Insurance"
+msgstr "Seconda assicurazione IGM stipendio massimo"
+
+#. module: l10n_ch_hr_payroll_elm
+#: model:hr.salary.rule,name:l10n_ch_hr_payroll_elm.l10n_ch_employees_ijm_salary_min_1
+#: model:hr.salary.rule.category,name:l10n_ch_hr_payroll_elm.hr_salary_rule_category_ijm_salary_min_1
+msgid "IJM Salary Minimum Main Insurance"
+msgstr "Assicurazione principale IGM stipendio minimo"
+
+#. module: l10n_ch_hr_payroll_elm
+#: model:hr.salary.rule.category,name:l10n_ch_hr_payroll_elm.hr_salary_rule_category_ijm_salary_min_2
+msgid "IJM Salary Minimum Second Insurance"
+msgstr "Stipendio minimo IGM Seconda assicurazione"
+
+#. module: l10n_ch_hr_payroll_elm
+#: model:hr.salary.rule,name:l10n_ch_hr_payroll_elm.l10n_ch_employees_ijm_salary_2
+#: model:hr.salary.rule.category,name:l10n_ch_hr_payroll_elm.hr_salary_rule_category_ijm_salary_2
+msgid "IJM Salary Second Insurance"
+msgstr "Seconda assicurazione IGM stipendio"
+
+#. module: l10n_ch_hr_payroll_elm
+#: model:ir.model.fields.selection,name:l10n_ch_hr_payroll_elm.selection__ch_yearly_report_line__report_type__ijm
+msgid "IJM Statement"
+msgstr "Dichiarazione IGM"
+
+#. module: l10n_ch_hr_payroll_elm
+#: model:hr.salary.rule,name:l10n_ch_hr_payroll_elm.l10n_ch_employees_ijm_1
+msgid "IJM1"
+msgstr "IGM1"
+
+#. module: l10n_ch_hr_payroll_elm
+#: model:hr.salary.rule,name:l10n_ch_hr_payroll_elm.l10n_ch_employees_ijm_comp_1
+msgid "IJM1 (Comp. Part.)"
+msgstr "IGM1 (Parte datore di lavoro)"
+
+#. module: l10n_ch_hr_payroll_elm
+#: model:hr.salary.rule,name:l10n_ch_hr_payroll_elm.l10n_ch_employees_ijm_2
+msgid "IJM2"
+msgstr "IGM2"
+
+#. module: l10n_ch_hr_payroll_elm
+#: model:hr.salary.rule,name:l10n_ch_hr_payroll_elm.l10n_ch_employees_ijm_comp_2
+msgid "IJM2 (Comp. Part.)"
+msgstr "IGM2 (Parte datore di lavoro)"
+
+#. module: l10n_ch_hr_payroll_elm
+#: model:hr.salary.attachment.type,name:l10n_ch_hr_payroll_elm.hr_salary_attachment_impbonus
+msgid "IMPBONUS"
+msgstr "Bonus miglioramento"
+
+#. module: l10n_ch_hr_payroll_elm
+#: model:hr.salary.attachment.type,name:l10n_ch_hr_payroll_elm.hr_salary_attachment_improv
+msgid "IMPROV"
+msgstr "Miglioramento"
+
+#. module: l10n_ch_hr_payroll_elm
+#: model_terms:ir.ui.view,arch_db:l10n_ch_hr_payroll_elm.hr_contract_view_form
+msgid "IS Additional Info"
+msgstr "È informazione aggiuntiva"
+
+#. module: l10n_ch_hr_payroll_elm
+#: model:hr.salary.rule,name:l10n_ch_hr_payroll_elm.l10n_ch_employees_is_base
+#: model:hr.salary.rule.category,name:l10n_ch_hr_payroll_elm.hr_salary_rule_category_is_base
+msgid "IS Base"
+msgstr "Base IS"
+
+#. module: l10n_ch_hr_payroll_elm
+#: model:ir.model.fields,field_description:l10n_ch_hr_payroll_elm.field_hr_payslip__l10n_ch_is_code
+msgid "IS Code"
+msgstr "Codice IS"
+
+#. module: l10n_ch_hr_payroll_elm
+#: model:hr.salary.rule,name:l10n_ch_hr_payroll_elm.l10n_ch_employees_is_salary_dt_aperiodic
+#: model:hr.salary.rule.category,name:l10n_ch_hr_payroll_elm.hr_salary_rule_category_is_dt_aperiodic_salary
+msgid "IS DT Aperiodic Salary"
+msgstr "IS DT Stipendio aperiodico"
+
+#. module: l10n_ch_hr_payroll_elm
+#: model:hr.salary.rule,name:l10n_ch_hr_payroll_elm.l10n_ch_employees_is_salary_dt_periodic
+#: model:hr.salary.rule.category,name:l10n_ch_hr_payroll_elm.hr_salary_rule_category_is_dt_periodic_salary
+msgid "IS DT Periodic Salary"
+msgstr "Stipendio periodico IS DT"
+
+#. module: l10n_ch_hr_payroll_elm
+#: model:hr.salary.rule,name:l10n_ch_hr_payroll_elm.l10n_ch_employees_is_salary_dt
+#: model:hr.salary.rule.category,name:l10n_ch_hr_payroll_elm.hr_salary_rule_category_is_dt_salary
+msgid "IS DT Salary"
+msgstr "Stipendio IS DT"
+
+#. module: l10n_ch_hr_payroll_elm
+#: model:ir.model,name:l10n_ch_hr_payroll_elm.model_hr_employee_is_line
+msgid "IS Entry / Withdrawals / Mutations"
+msgstr "IS: registrazione/addebito/modifica"
+
+#. module: l10n_ch_hr_payroll_elm
+#: model:ir.actions.act_window,name:l10n_ch_hr_payroll_elm.action_l10n_ch_is_line
+msgid "IS Line"
+msgstr "Riga IS"
+
+#. module: l10n_ch_hr_payroll_elm
+#: model_terms:ir.ui.view,arch_db:l10n_ch_hr_payroll_elm.l10n_ch_employee_is_line_view_tree
+msgid "IS Lines"
+msgstr "Righe IS"
+
+#. module: l10n_ch_hr_payroll_elm
+#: model_terms:ir.ui.view,arch_db:l10n_ch_hr_payroll_elm.hr_payslip_view_form_inherit
+msgid "IS Log Lines"
+msgstr "Righe registro IS"
+
+#. module: l10n_ch_hr_payroll_elm
+#: model:ir.model,name:l10n_ch_hr_payroll_elm.model_hr_payslip_is_log_line
+msgid "IS Log lines"
+msgstr "Righe registro IS"
+
+#. module: l10n_ch_hr_payroll_elm
+#: model:ir.model.fields,field_description:l10n_ch_hr_payroll_elm.field_hr_contract__l10n_ch_is_model
+#: model:ir.model.fields,field_description:l10n_ch_hr_payroll_elm.field_hr_payslip__l10n_ch_is_model
+msgid "IS Model"
+msgstr "Modello IS"
+
+#. module: l10n_ch_hr_payroll_elm
+#: model:ir.model.fields,field_description:l10n_ch_hr_payroll_elm.field_hr_contract__l10n_ch_is_predefined_category
+msgid "IS Predefined Category"
+msgstr "Categoria predefinita IS"
+
+#. module: l10n_ch_hr_payroll_elm
+#: model:hr.salary.rule,name:l10n_ch_hr_payroll_elm.l10n_ch_employees_is_rate
+#: model:hr.salary.rule.category,name:l10n_ch_hr_payroll_elm.hr_salary_rule_category_is_rate
+msgid "IS Rate"
+msgstr "Tasso IS"
+
+#. module: l10n_ch_hr_payroll_elm
+#: model_terms:ir.ui.view,arch_db:l10n_ch_hr_payroll_elm.l10n_ch_is_report_view_form
+msgid "IS Report"
+msgstr "Resoconto IS"
+
+#. module: l10n_ch_hr_payroll_elm
+#: model:hr.salary.rule,name:l10n_ch_hr_payroll_elm.l10n_ch_employees_is_salary
+#: model:hr.salary.rule.category,name:l10n_ch_hr_payroll_elm.hr_salary_rule_category_is_salary
+msgid "IS Salary"
+msgstr "Stipendio IS"
+
+#. module: l10n_ch_hr_payroll_elm
+#: model:hr.salary.rule,name:l10n_ch_hr_payroll_elm.l10n_ch_employees_is_salary_dt_ap
+#: model:hr.salary.rule.category,name:l10n_ch_hr_payroll_elm.hr_salary_rule_category_is_salary_dt_ap
+msgid "IS Salary DT AP"
+msgstr "Stipendio IS DT AP"
+
+#. module: l10n_ch_hr_payroll_elm
+#: model:hr.salary.rule,name:l10n_ch_hr_payroll_elm.l10n_ch_employees_is_salary_dt_p
+#: model:hr.salary.rule.category,name:l10n_ch_hr_payroll_elm.hr_salary_rule_category_is_salary_dt_p
+msgid "IS Salary DT P"
+msgstr "Stipendio IS DT P"
+
+#. module: l10n_ch_hr_payroll_elm
+#: model:ir.model.fields,field_description:l10n_ch_hr_payroll_elm.field_ch_yearly_report__ijm_institution_ids
+msgid "Ijm Institution"
+msgstr "Istituzione IGM"
+
+#. module: l10n_ch_hr_payroll_elm
+#: model:hr.salary.rule,name:l10n_ch_hr_payroll_elm.l10n_ch_employees_perfecting
+msgid "Improvement"
+msgstr "Miglioramento"
+
+#. module: l10n_ch_hr_payroll_elm
+#: model:hr.salary.rule.category,name:l10n_ch_hr_payroll_elm.hr_salary_rule_category_indemnite_perte_gain
+msgid "Indemnite Perte de Gain"
+msgstr "Indennizzo per perdita di guadagno"
+
+#. module: l10n_ch_hr_payroll_elm
+#: model:hr.salary.attachment.type,name:l10n_ch_hr_payroll_elm.hr_salary_attachment_indemnite_chomage
+#: model:hr.salary.rule,name:l10n_ch_hr_payroll_elm.l10n_ch_employees_indemnite_chomage
+msgid "Indemnité de chômage"
+msgstr "Indemnité de chômage"
+
+#. module: l10n_ch_hr_payroll_elm
+#: model_terms:ir.ui.view,arch_db:l10n_ch_hr_payroll_elm.l10n_ch_insurance_report_view_form
+msgid "Institutions"
+msgstr "Istituzioni"
+
+#. module: l10n_ch_hr_payroll_elm
+#: model:ir.model.fields,field_description:l10n_ch_hr_payroll_elm.field_l10n_ch_social_insurance_avs_ac_threshold__insurance_id
+#: model:ir.model.fields,field_description:l10n_ch_hr_payroll_elm.field_l10n_ch_social_insurance_avs_acc_threshold__insurance_id
+#: model:ir.model.fields,field_description:l10n_ch_hr_payroll_elm.field_l10n_ch_social_insurance_avs_retirement_rente__insurance_id
+msgid "Insurance"
+msgstr "Assicurazione"
+
+#. module: l10n_ch_hr_payroll_elm
+#: model:ir.model.fields,field_description:l10n_ch_hr_payroll_elm.field_l10n_ch_accident_insurance__insurance_code
+#: model:ir.model.fields,field_description:l10n_ch_hr_payroll_elm.field_l10n_ch_additional_accident_insurance__insurance_code
+#: model:ir.model.fields,field_description:l10n_ch_hr_payroll_elm.field_l10n_ch_compensation_fund__insurance_code
+#: model:ir.model.fields,field_description:l10n_ch_hr_payroll_elm.field_l10n_ch_lpp_insurance__insurance_code
+#: model:ir.model.fields,field_description:l10n_ch_hr_payroll_elm.field_l10n_ch_sickness_insurance__insurance_code
+#: model:ir.model.fields,field_description:l10n_ch_hr_payroll_elm.field_l10n_ch_social_insurance__insurance_code
+msgid "Insurance Code"
+msgstr "Codice assicurazione"
+
+#. module: l10n_ch_hr_payroll_elm
+#: model:ir.model.fields,field_description:l10n_ch_hr_payroll_elm.field_l10n_ch_accident_insurance__insurance_company
+#: model:ir.model.fields,field_description:l10n_ch_hr_payroll_elm.field_l10n_ch_additional_accident_insurance__insurance_company
+#: model:ir.model.fields,field_description:l10n_ch_hr_payroll_elm.field_l10n_ch_compensation_fund__insurance_company
+#: model:ir.model.fields,field_description:l10n_ch_hr_payroll_elm.field_l10n_ch_lpp_insurance__insurance_company
+#: model:ir.model.fields,field_description:l10n_ch_hr_payroll_elm.field_l10n_ch_sickness_insurance__insurance_company
+#: model:ir.model.fields,field_description:l10n_ch_hr_payroll_elm.field_l10n_ch_social_insurance__insurance_company
+msgid "Insurance Company"
+msgstr "Compagnia assicurativa"
+
+#. module: l10n_ch_hr_payroll_elm
+#: model:ir.model,name:l10n_ch_hr_payroll_elm.model_ch_yearly_report_line
+#: model_terms:ir.ui.view,arch_db:l10n_ch_hr_payroll_elm.l10n_ch_insurance_report_view_tree
+#: model_terms:ir.ui.view,arch_db:l10n_ch_hr_payroll_elm.l10n_ch_is_report_view_tree
+msgid "Insurance Reports"
+msgstr "Resoconti assicurazione"
+
+#. module: l10n_ch_hr_payroll_elm
+#: model:ir.actions.report,name:l10n_ch_hr_payroll_elm.action_insurance_yearly_report
+msgid "Insurance Yearly Report PDF"
+msgstr "Resoconto annuale assicurazione PDF"
+
+#. module: l10n_ch_hr_payroll_elm
+#: model:ir.model.fields,field_description:l10n_ch_hr_payroll_elm.field_hr_payslip_is_log_line__is_code
+msgid "Is Code"
+msgstr "È codice"
+
+#. module: l10n_ch_hr_payroll_elm
+#: model:ir.model.fields,field_description:l10n_ch_hr_payroll_elm.field_hr_payslip_is_log_line__is_correction
+msgid "Is Correction"
+msgstr "È correzione"
+
+#. module: l10n_ch_hr_payroll_elm
+#: model:ir.model.fields,field_description:l10n_ch_hr_payroll_elm.field_hr_salary_attachment__is_refund
+msgid "Is Refund"
+msgstr "È rimborsato"
+
+#. module: l10n_ch_hr_payroll_elm
+#: model:ir.actions.report,name:l10n_ch_hr_payroll_elm.action_is_report
+msgid "Is Report PDF"
+msgstr "È resoconto PDF"
+
+#. module: l10n_ch_hr_payroll_elm
+#: model:ir.model.fields,field_description:l10n_ch_hr_payroll_elm.field_hr_salary_attachment__is_quantity
+#: model:ir.model.fields,field_description:l10n_ch_hr_payroll_elm.field_hr_salary_attachment_type__is_quantity
+msgid "Is quantity ?"
+msgstr "Quantità?"
+
+#. module: l10n_ch_hr_payroll_elm
+#: model:ir.model.fields.selection,name:l10n_ch_hr_payroll_elm.selection__l10n_ch_is_report__month__1
+msgid "January"
+msgstr "Gennaio"
+
+#. module: l10n_ch_hr_payroll_elm
+#: model:ir.model.fields.selection,name:l10n_ch_hr_payroll_elm.selection__l10n_ch_is_report__month__7
+msgid "July"
+msgstr "Luglio"
+
+#. module: l10n_ch_hr_payroll_elm
+#: model:ir.model.fields.selection,name:l10n_ch_hr_payroll_elm.selection__l10n_ch_is_report__month__6
+msgid "June"
+msgstr "Giugno"
+
+#. module: l10n_ch_hr_payroll_elm
+#: model:ir.model.fields,field_description:l10n_ch_hr_payroll_elm.field_l10n_ch_social_insurance__l10n_ch_avs_ac_threshold_ids
+msgid "L10N Ch Avs Ac Threshold"
+msgstr "L10N Ch Soglia AVS AC"
+
+#. module: l10n_ch_hr_payroll_elm
+#: model:ir.model.fields,field_description:l10n_ch_hr_payroll_elm.field_l10n_ch_social_insurance__l10n_ch_avs_acc_threshold_ids
+msgid "L10N Ch Avs Acc Threshold"
+msgstr "L10N Ch Soglia AVS ACC"
+
+#. module: l10n_ch_hr_payroll_elm
+#: model:ir.model.fields,field_description:l10n_ch_hr_payroll_elm.field_l10n_ch_social_insurance__l10n_ch_avs_rente_ids
+msgid "L10N Ch Avs Rente"
+msgstr "L10N Ch Rendita AVS"
+
+#. module: l10n_ch_hr_payroll_elm
+#: model:ir.model.fields,field_description:l10n_ch_hr_payroll_elm.field_hr_payslip__l10n_ch_is_log_line_ids
+msgid "L10N Ch Is Log Line"
+msgstr "L10N Ch Riga registro IS"
+
+#. module: l10n_ch_hr_payroll_elm
+#: model:ir.model.fields,field_description:l10n_ch_hr_payroll_elm.field_hr_payslip__l10n_ch_lpp_not_insured
+msgid "L10N Ch Lpp Not Insured"
+msgstr "L10N Ch LPP non assicurato"
+
+#. module: l10n_ch_hr_payroll_elm
+#: model:ir.model.fields,field_description:l10n_ch_hr_payroll_elm.field_hr_salary_rule__l10n_ch_salary_certificate
+msgid "L10N Ch Salary Certificate"
+msgstr "Certificato salariale L10N Ch"
+
+#. module: l10n_ch_hr_payroll_elm
+#: model_terms:ir.ui.view,arch_db:l10n_ch_hr_payroll_elm.l10n_ch_insurance_report_view_form
+msgid "LAA"
+msgstr "LAA"
+
+#. module: l10n_ch_hr_payroll_elm
+#. odoo-python
+#: code:addons/l10n_ch_hr_payroll_elm/models/l10n_ch_insurance_report.py:0
+#: model:hr.salary.rule,name:l10n_ch_hr_payroll_elm.l10n_ch_employees_laa_base
+#: model:hr.salary.rule.category,name:l10n_ch_hr_payroll_elm.hr_salary_rule_category_laa_base
+#, python-format
+msgid "LAA Base"
+msgstr "Base LAA"
+
+#. module: l10n_ch_hr_payroll_elm
+#. odoo-python
+#: code:addons/l10n_ch_hr_payroll_elm/models/l10n_ch_insurance_report.py:0
+#, python-format
+msgid "LAA Code"
+msgstr "Codice LAA"
+
+#. module: l10n_ch_hr_payroll_elm
+#. odoo-python
+#: code:addons/l10n_ch_hr_payroll_elm/models/l10n_ch_insurance_report.py:0
+#: model:hr.salary.rule,name:l10n_ch_hr_payroll_elm.l10n_ch_employees_laa_salary_2
+#: model:hr.salary.rule.category,name:l10n_ch_hr_payroll_elm.hr_salary_rule_category_laa_salary
+#, python-format
+msgid "LAA Salary"
+msgstr "Salario LAA"
+
+#. module: l10n_ch_hr_payroll_elm
+#: model:hr.salary.rule,name:l10n_ch_hr_payroll_elm.l10n_ch_employees_laa_salary_max
+#: model:hr.salary.rule.category,name:l10n_ch_hr_payroll_elm.hr_salary_rule_category_laa_threshold
+msgid "LAA Salary Maximum"
+msgstr "Salario massimo LAA"
+
+#. module: l10n_ch_hr_payroll_elm
+#: model:ir.model.fields.selection,name:l10n_ch_hr_payroll_elm.selection__ch_yearly_report_line__report_type__laa
+msgid "LAA Statement"
+msgstr "Dichiarazione AINF"
+
+#. module: l10n_ch_hr_payroll_elm
+#: model:ir.model.fields,field_description:l10n_ch_hr_payroll_elm.field_l10n_ch_social_insurance__laa_insurance_from
+msgid "LAA: Valid as of"
+msgstr "LAA: valida a partire dal"
+
+#. module: l10n_ch_hr_payroll_elm
+#: model_terms:ir.ui.view,arch_db:l10n_ch_hr_payroll_elm.l10n_ch_insurance_report_view_form
+msgid "LAAC"
+msgstr "LAAC"
+
+#. module: l10n_ch_hr_payroll_elm
+#. odoo-python
+#: code:addons/l10n_ch_hr_payroll_elm/models/l10n_ch_insurance_report.py:0
+#: model:hr.salary.rule,name:l10n_ch_hr_payroll_elm.l10n_ch_employees_laac_base
+#: model:hr.salary.rule.category,name:l10n_ch_hr_payroll_elm.hr_salary_rule_category_laac_base
+#, python-format
+msgid "LAAC Base"
+msgstr "Base LAAC"
+
+#. module: l10n_ch_hr_payroll_elm
+#. odoo-python
+#: code:addons/l10n_ch_hr_payroll_elm/models/l10n_ch_insurance_report.py:0
+#, python-format
+msgid "LAAC Code"
+msgstr "Codice AINF"
+
+#. module: l10n_ch_hr_payroll_elm
+#: model:ir.model.fields,field_description:l10n_ch_hr_payroll_elm.field_hr_salary_rule__l10n_ch_laac_included
+msgid "LAAC Included"
+msgstr "LAAC inclusa"
+
+#. module: l10n_ch_hr_payroll_elm
+#. odoo-python
+#: code:addons/l10n_ch_hr_payroll_elm/models/l10n_ch_insurance_report.py:0
+#, python-format
+msgid "LAAC Salary"
+msgstr "Stipendio AINF"
+
+#. module: l10n_ch_hr_payroll_elm
+#: model:hr.salary.rule,name:l10n_ch_hr_payroll_elm.l10n_ch_employees_laac_salary_1
+#: model:hr.salary.rule.category,name:l10n_ch_hr_payroll_elm.hr_salary_rule_category_laac_salary_1
+msgid "LAAC Salary Main Insurance"
+msgstr "Assicurazione principale LAAC salario"
+
+#. module: l10n_ch_hr_payroll_elm
+#: model:hr.salary.rule,name:l10n_ch_hr_payroll_elm.l10n_ch_employees_laac_salary_max_1
+#: model:hr.salary.rule.category,name:l10n_ch_hr_payroll_elm.hr_salary_rule_category_laac_salary_max_1
+msgid "LAAC Salary Maximum Main Insurance"
+msgstr "Assicurazione principale LAAC salario massimo"
+
+#. module: l10n_ch_hr_payroll_elm
+#: model:hr.salary.rule,name:l10n_ch_hr_payroll_elm.l10n_ch_employees_laac_salary_max_2
+#: model:hr.salary.rule.category,name:l10n_ch_hr_payroll_elm.hr_salary_rule_category_laac_salary_max_2
+msgid "LAAC Salary Maximum Second Insurance"
+msgstr "Assicurazione secondaria LAAC salario massimo"
+
+#. module: l10n_ch_hr_payroll_elm
+#: model:hr.salary.rule,name:l10n_ch_hr_payroll_elm.l10n_ch_employees_laac_salary_min_1
+#: model:hr.salary.rule.category,name:l10n_ch_hr_payroll_elm.hr_salary_rule_category_laac_salary_min_1
+msgid "LAAC Salary Minimum Main Insurance"
+msgstr "Assicurazione principale LAAC salario minimo"
+
+#. module: l10n_ch_hr_payroll_elm
+#: model:hr.salary.rule,name:l10n_ch_hr_payroll_elm.l10n_ch_employees_laac_salary_min_2
+#: model:hr.salary.rule.category,name:l10n_ch_hr_payroll_elm.hr_salary_rule_category_laac_salary_min_2
+msgid "LAAC Salary Minimum Second Insurance"
+msgstr "Assicurazione secondaria LAAC salario minimo"
+
+#. module: l10n_ch_hr_payroll_elm
+#: model:hr.salary.rule,name:l10n_ch_hr_payroll_elm.l10n_ch_employees_laac_salary_2
+#: model:hr.salary.rule.category,name:l10n_ch_hr_payroll_elm.hr_salary_rule_category_laac_salary_2
+msgid "LAAC Salary Second Insurance"
+msgstr "Assicurazione secondaria LAAC salario"
+
+#. module: l10n_ch_hr_payroll_elm
+#: model:ir.model.fields.selection,name:l10n_ch_hr_payroll_elm.selection__ch_yearly_report_line__report_type__laac
+msgid "LAAC Statement"
+msgstr "Dichiarazione AINF"
+
+#. module: l10n_ch_hr_payroll_elm
+#: model:hr.salary.rule,name:l10n_ch_hr_payroll_elm.l10n_ch_employees_laac_comp_1
+msgid "LAAC1 (Comp. Part.)"
+msgstr "AINF1 (Parte datore di lavoro)"
+
+#. module: l10n_ch_hr_payroll_elm
+#: model:hr.salary.rule,name:l10n_ch_hr_payroll_elm.l10n_ch_employees_laac_2
+msgid "LAAC2"
+msgstr "AINF2"
+
+#. module: l10n_ch_hr_payroll_elm
+#: model:hr.salary.rule,name:l10n_ch_hr_payroll_elm.l10n_ch_employees_laac_comp_2
+msgid "LAAC2 (Comp. Part.)"
+msgstr "AINF2 (Parte datore di lavoro)"
+
+#. module: l10n_ch_hr_payroll_elm
+#: model:ir.model.fields,field_description:l10n_ch_hr_payroll_elm.field_hr_salary_rule__l10n_ch_lpp_factor
+msgid "LPP Factor"
+msgstr "Fattore LPP"
+
+#. module: l10n_ch_hr_payroll_elm
+#: model:ir.model.fields,field_description:l10n_ch_hr_payroll_elm.field_hr_salary_rule__l10n_ch_lpp_forecast
+msgid "LPP Forecast"
+msgstr "Previsione LPP"
+
+#. module: l10n_ch_hr_payroll_elm
+#: model:ir.model.fields,field_description:l10n_ch_hr_payroll_elm.field_hr_salary_rule__l10n_ch_lpp_retroactive
+msgid "LPP Retroactive"
+msgstr "LPP retroattivo"
+
+#. module: l10n_ch_hr_payroll_elm
+#: model:ir.model.fields,field_description:l10n_ch_hr_payroll_elm.field_l10n_ch_social_insurance__lpp_insurance_from
+msgid "LPP: Valid as of"
+msgstr "LPP: valida a partire dal"
+
+#. module: l10n_ch_hr_payroll_elm
+#: model:ir.model.fields,field_description:l10n_ch_hr_payroll_elm.field_ch_yearly_report__laa_institution_ids
+msgid "Laa Institution"
+msgstr "Istituzione LAA"
+
+#. module: l10n_ch_hr_payroll_elm
+#: model:ir.model.fields,field_description:l10n_ch_hr_payroll_elm.field_ch_yearly_report__laac_institution_ids
+msgid "Laac Institution"
+msgstr "Istituzione LAAC"
+
+#. module: l10n_ch_hr_payroll_elm
+#: model:ir.model.fields,field_description:l10n_ch_hr_payroll_elm.field_ch_yearly_report__write_uid
+#: model:ir.model.fields,field_description:l10n_ch_hr_payroll_elm.field_ch_yearly_report_line__write_uid
+#: model:ir.model.fields,field_description:l10n_ch_hr_payroll_elm.field_hr_employee_is_line__write_uid
+#: model:ir.model.fields,field_description:l10n_ch_hr_payroll_elm.field_hr_payslip_is_log_line__write_uid
+#: model:ir.model.fields,field_description:l10n_ch_hr_payroll_elm.field_l10n_ch_is_report__write_uid
+#: model:ir.model.fields,field_description:l10n_ch_hr_payroll_elm.field_l10n_ch_is_report_line__write_uid
+#: model:ir.model.fields,field_description:l10n_ch_hr_payroll_elm.field_l10n_ch_salary_certificate__write_uid
+#: model:ir.model.fields,field_description:l10n_ch_hr_payroll_elm.field_l10n_ch_social_insurance_avs_ac_threshold__write_uid
+#: model:ir.model.fields,field_description:l10n_ch_hr_payroll_elm.field_l10n_ch_social_insurance_avs_acc_threshold__write_uid
+#: model:ir.model.fields,field_description:l10n_ch_hr_payroll_elm.field_l10n_ch_social_insurance_avs_retirement_rente__write_uid
+msgid "Last Updated by"
+msgstr "Ultimo aggiornamento di"
+
+#. module: l10n_ch_hr_payroll_elm
+#: model:ir.model.fields,field_description:l10n_ch_hr_payroll_elm.field_ch_yearly_report__write_date
+#: model:ir.model.fields,field_description:l10n_ch_hr_payroll_elm.field_ch_yearly_report_line__write_date
+#: model:ir.model.fields,field_description:l10n_ch_hr_payroll_elm.field_hr_employee_is_line__write_date
+#: model:ir.model.fields,field_description:l10n_ch_hr_payroll_elm.field_hr_payslip_is_log_line__write_date
+#: model:ir.model.fields,field_description:l10n_ch_hr_payroll_elm.field_l10n_ch_is_report__write_date
+#: model:ir.model.fields,field_description:l10n_ch_hr_payroll_elm.field_l10n_ch_is_report_line__write_date
+#: model:ir.model.fields,field_description:l10n_ch_hr_payroll_elm.field_l10n_ch_salary_certificate__write_date
+#: model:ir.model.fields,field_description:l10n_ch_hr_payroll_elm.field_l10n_ch_social_insurance_avs_ac_threshold__write_date
+#: model:ir.model.fields,field_description:l10n_ch_hr_payroll_elm.field_l10n_ch_social_insurance_avs_acc_threshold__write_date
+#: model:ir.model.fields,field_description:l10n_ch_hr_payroll_elm.field_l10n_ch_social_insurance_avs_retirement_rente__write_date
+msgid "Last Updated on"
+msgstr "Ultimo aggiornamento il"
+
+#. module: l10n_ch_hr_payroll_elm
+#: model:ir.model.fields,field_description:l10n_ch_hr_payroll_elm.field_hr_contract__l10n_ch_lesson_wage
+msgid "Lesson Wage"
+msgstr "Retribuzione per lezione"
+
+#. module: l10n_ch_hr_payroll_elm
+#: model:hr.salary.attachment.type,name:l10n_ch_hr_payroll_elm.hr_salary_attachment_type_salary_lesson
+msgid "Lessons count"
+msgstr "Numero di lezioni"
+
+#. module: l10n_ch_hr_payroll_elm
+#. odoo-python
+#: code:addons/l10n_ch_hr_payroll_elm/models/l10n_ch_insurance_report.py:0
+#, python-format
+msgid "M/F"
+msgstr "M/F"
+
+#. module: l10n_ch_hr_payroll_elm
+#: model:ir.model.fields.selection,name:l10n_ch_hr_payroll_elm.selection__l10n_ch_is_report__month__3
+msgid "March"
+msgstr "Marzo"
+
+#. module: l10n_ch_hr_payroll_elm
+#: model:ir.model.fields.selection,name:l10n_ch_hr_payroll_elm.selection__l10n_ch_is_report__month__5
+msgid "May"
+msgstr "Maggio"
+
+#. module: l10n_ch_hr_payroll_elm
+#: model:hr.contract.type,name:l10n_ch_hr_payroll_elm.l10n_ch_contract_type_administrativeBoard
+msgid "Member of a board of directors"
+msgstr "Membro del consiglio di amministrazione"
+
+#. module: l10n_ch_hr_payroll_elm
+#: model:ir.model.fields,field_description:l10n_ch_hr_payroll_elm.field_l10n_ch_is_report__month
+msgid "Month"
+msgstr "Mese"
+
+#. module: l10n_ch_hr_payroll_elm
+#: model:ir.model.fields.selection,name:l10n_ch_hr_payroll_elm.selection__hr_contract__l10n_ch_is_model__monthly
+#: model:ir.model.fields.selection,name:l10n_ch_hr_payroll_elm.selection__hr_payslip__l10n_ch_is_model__monthly
+msgid "Monthly"
+msgstr "Mensile"
+
+#. module: l10n_ch_hr_payroll_elm
+#: model:ir.model.fields,field_description:l10n_ch_hr_payroll_elm.field_hr_contract__l10n_ch_monthly_effective_days
+msgid "Monthly Effective Working Days"
+msgstr "Giorni di lavoro mensili effettivi"
+
+#. module: l10n_ch_hr_payroll_elm
+#: model:ir.actions.act_window,name:l10n_ch_hr_payroll_elm.l10n_ch_is_report_action
+msgid "Monthly IS Report"
+msgstr "Resoconto IS mensile"
+
+#. module: l10n_ch_hr_payroll_elm
+#: model:ir.model.fields,field_description:l10n_ch_hr_payroll_elm.field_hr_salary_rule__l10n_ch_wage_statement
+msgid "Monthly Statistic"
+msgstr "Statistica mensile"
+
+#. module: l10n_ch_hr_payroll_elm
+#: model:hr.salary.attachment.type,name:l10n_ch_hr_payroll_elm.hr_salary_attachment_nightalw
+msgid "NIGHTALW"
+msgstr "Indennità notturna"
+
+#. module: l10n_ch_hr_payroll_elm
+#. odoo-python
+#: code:addons/l10n_ch_hr_payroll_elm/models/l10n_ch_insurance_report.py:0
+#: model:ir.model.fields,field_description:l10n_ch_hr_payroll_elm.field_ch_yearly_report__name
+#: model:ir.model.fields,field_description:l10n_ch_hr_payroll_elm.field_l10n_ch_is_report__name
+#, python-format
+msgid "Name"
+msgstr "Nome"
+
+#. module: l10n_ch_hr_payroll_elm
+#: model:hr.salary.rule,name:l10n_ch_hr_payroll_elm.l10n_ch_employees_night_allowance
+msgid "Night Allowance"
+msgstr "Indennità notturna"
+
+#. module: l10n_ch_hr_payroll_elm
+#. odoo-python
+#: code:addons/l10n_ch_hr_payroll_elm/models/l10n_ch_social_insurance.py:0
+#, python-format
+msgid "No AC threshold rates found for date %s"
+msgstr "Nessuna soglia AC trovata per la data %s"
+
+#. module: l10n_ch_hr_payroll_elm
+#. odoo-python
+#: code:addons/l10n_ch_hr_payroll_elm/models/l10n_ch_social_insurance.py:0
+#, python-format
+msgid "No ACC threshold rates found for date %s"
+msgstr "Nessuna soglia ACC trovata per la data %s"
+
+#. module: l10n_ch_hr_payroll_elm
+#. odoo-python
+#: code:addons/l10n_ch_hr_payroll_elm/models/l10n_ch_compensation_fund.py:0
+#, python-format
+msgid "No CAF rates found for date %s"
+msgstr "Nessun tasso CAF trovato per la data %s"
+
+#. module: l10n_ch_hr_payroll_elm
+#. odoo-python
+#: code:addons/l10n_ch_hr_payroll_elm/models/l10n_ch_social_insurance.py:0
+#, python-format
+msgid "No retirement exoneration amounts found for date date %s"
+msgstr "Nessun importo esenzione per pensione trovato per la data %s"
+
+#. module: l10n_ch_hr_payroll_elm
+#: model:ir.model.fields,field_description:l10n_ch_hr_payroll_elm.field_hr_contract__l10n_ch_lpp_not_insured
+msgid "Not LPP Insured"
+msgstr "Non assicurato LPP"
+
+#. module: l10n_ch_hr_payroll_elm
+#: model:ir.model.fields.selection,name:l10n_ch_hr_payroll_elm.selection__l10n_ch_is_report__month__11
+msgid "November"
+msgstr "Novembre"
+
+#. module: l10n_ch_hr_payroll_elm
+#: model:hr.salary.attachment.type,name:l10n_ch_hr_payroll_elm.hr_salary_attachment_oncallalw
+msgid "ONCALLALW"
+msgstr "Indennità di reperibilità"
+
+#. module: l10n_ch_hr_payroll_elm
+#: model:hr.salary.attachment.type,name:l10n_ch_hr_payroll_elm.hr_salary_attachment_optcollab
+msgid "OPTCOLLAB"
+msgstr "Opzioni collaboratori"
+
+#. module: l10n_ch_hr_payroll_elm
+#: model:hr.salary.attachment.type,name:l10n_ch_hr_payroll_elm.hr_salary_attachment_overtime100
+msgid "OVERTIME100"
+msgstr "Straordinari100"
+
+#. module: l10n_ch_hr_payroll_elm
+#: model:ir.model.fields,field_description:l10n_ch_hr_payroll_elm.field_hr_contract__l10n_ch_other_employers_occupation_rate
+msgid "Occupation rate other employers"
+msgstr "Tasso di occupazione altri datori di lavoro"
+
+#. module: l10n_ch_hr_payroll_elm
+#: model:ir.model.fields.selection,name:l10n_ch_hr_payroll_elm.selection__l10n_ch_is_report__month__10
+msgid "October"
+msgstr "Ottobre"
+
+#. module: l10n_ch_hr_payroll_elm
+#: model_terms:ir.ui.view,arch_db:l10n_ch_hr_payroll_elm.l10n_ch_social_insurance_view_form
+msgid "Old-age and survivors' insurance (AVS)"
+msgstr "Assicurazione vecchiaia e superstiti (AVS)"
+
+#. module: l10n_ch_hr_payroll_elm
+#: model:hr.salary.rule,name:l10n_ch_hr_payroll_elm.l10n_ch_employees_on_call_alw
+msgid "On-call service allowance"
+msgstr "Indennità reperibilità"
+
+#. module: l10n_ch_hr_payroll_elm
+#: model:hr.salary.rule,name:l10n_ch_hr_payroll_elm.l10n_ch_employees_option_collab
+msgid "Options de collaborateurs"
+msgstr "Opzioni collaboratori"
+
+#. module: l10n_ch_hr_payroll_elm
+#: model:ir.model.fields,field_description:l10n_ch_hr_payroll_elm.field_hr_contract__l10n_ch_other_employers
+msgid "Other Employers"
+msgstr "Altri datori di lavoro"
+
+#. module: l10n_ch_hr_payroll_elm
+#: model:hr.salary.rule,name:l10n_ch_hr_payroll_elm.l10n_ch_employees_overtime_100
+msgid "Overtime 100%"
+msgstr "Straordinari 100%"
+
+#. module: l10n_ch_hr_payroll_elm
+#: model:hr.salary.attachment.type,name:l10n_ch_hr_payroll_elm.hr_salary_attachment_overtime_125
+#: model:hr.salary.rule,name:l10n_ch_hr_payroll_elm.l10n_ch_employees_overtime_125
+msgid "Overtime 125%"
+msgstr "Straordinari 125%"
+
+#. module: l10n_ch_hr_payroll_elm
+#: model:hr.salary.attachment.type,name:l10n_ch_hr_payroll_elm.hr_salary_attachment_overtime_after_departure
+msgid "Overtime after Departure"
+msgstr "Straordinari dopo la partenza"
+
+#. module: l10n_ch_hr_payroll_elm
+#: model:hr.salary.rule,name:l10n_ch_hr_payroll_elm.l10n_ch_employees_overtime_after_departure
+msgid "Overtime after departure"
+msgstr "Straordinari dopo la partenza"
+
+#. module: l10n_ch_hr_payroll_elm
+#: model:ir.model.fields,field_description:l10n_ch_hr_payroll_elm.field_ch_yearly_report_line__pdf_file
+#: model:ir.model.fields,field_description:l10n_ch_hr_payroll_elm.field_l10n_ch_is_report_line__pdf_file
+msgid "PDF File"
+msgstr "File PDF"
+
+#. module: l10n_ch_hr_payroll_elm
+#: model:ir.model.fields,field_description:l10n_ch_hr_payroll_elm.field_ch_yearly_report_line__pdf_filename
+#: model:ir.model.fields,field_description:l10n_ch_hr_payroll_elm.field_l10n_ch_is_report_line__pdf_filename
+msgid "PDF Filename"
+msgstr "Nome file PDF"
+
+#. module: l10n_ch_hr_payroll_elm
+#: model:hr.salary.attachment.type,name:l10n_ch_hr_payroll_elm.hr_salary_attachment_prevybonus
+msgid "PREVYBONUS"
+msgstr "Bonus anno precedente"
+
+#. module: l10n_ch_hr_payroll_elm
+#: model:ir.model,name:l10n_ch_hr_payroll_elm.model_hr_payslip
+msgid "Pay Slip"
+msgstr "Busta paga"
+
+#. module: l10n_ch_hr_payroll_elm
+#: model:ir.model.fields,field_description:l10n_ch_hr_payroll_elm.field_hr_payslip__l10n_ch_pay_13th_month
+msgid "Pay Thirteen Month"
+msgstr "Paga tredicesima"
+
+#. module: l10n_ch_hr_payroll_elm
+#: model:ir.model.fields,field_description:l10n_ch_hr_payroll_elm.field_hr_contract__l10n_ch_has_withholding_tax
+msgid "Pay Withholding Taxes"
+msgstr "Paga ritenute alla fonte"
+
+#. module: l10n_ch_hr_payroll_elm
+#: model:ir.model.fields,field_description:l10n_ch_hr_payroll_elm.field_hr_payslip_is_log_line__payslip_id
+msgid "Payslip"
+msgstr "Busta paga"
+
+#. module: l10n_ch_hr_payroll_elm
+#: model:ir.model.fields,field_description:l10n_ch_hr_payroll_elm.field_hr_employee_is_line__payslips_to_correct
+msgid "Payslips To Correct"
+msgstr "Buste paga da correggere"
+
+#. module: l10n_ch_hr_payroll_elm
+#: model:hr.contract.type,name:l10n_ch_hr_payroll_elm.l10n_ch_contract_type_indefiniteSalaryHrs
+msgid "Permanent contract with salary hourly"
+msgstr "Contratto a tempo indeterminato con salario orario"
+
+#. module: l10n_ch_hr_payroll_elm
+#: model:hr.contract.type,name:l10n_ch_hr_payroll_elm.l10n_ch_contract_type_indefiniteSalaryNoTimeConstraint
+msgid "Permanent contract, with commission, packages, piece rate pay, etc."
+msgstr ""
+"Contratto a tempo indeterminato con commissioni, pacchetti, salario a "
+"cottimo, ecc."
+
+#. module: l10n_ch_hr_payroll_elm
+#: model:hr.salary.attachment.type,name:l10n_ch_hr_payroll_elm.hr_salary_attachment_indemnite_perte_gain
+#: model:hr.salary.rule,name:l10n_ch_hr_payroll_elm.l10n_ch_employees_indemnite_perte_gain
+msgid "Perte de gain RHT/ITP (SH)"
+msgstr "Perte de gain RHT/ITP (SH)"
+
+#. module: l10n_ch_hr_payroll_elm
+#: model:hr.salary.rule,name:l10n_ch_hr_payroll_elm.l10n_ch_employees_previous_year_bonus
+msgid "Previous Year Bonus"
+msgstr "Bonus anno precedente"
+
+#. module: l10n_ch_hr_payroll_elm
+#: model:hr.salary.rule,name:l10n_ch_hr_payroll_elm.l10n_ch_employees_public_holiday_allowance
+msgid "Public holiday allowance"
+msgstr "Indennità per festività"
+
+#. module: l10n_ch_hr_payroll_elm
+#: model:ir.model.fields,field_description:l10n_ch_hr_payroll_elm.field_hr_employee_is_line__reason
+msgid "Reason"
+msgstr "Causale"
+
+#. module: l10n_ch_hr_payroll_elm
+#: model_terms:ir.ui.view,arch_db:l10n_ch_hr_payroll_elm.hr_salary_attachment_view_search
+msgid "Refunds"
+msgstr "Note di credito"
+
+#. module: l10n_ch_hr_payroll_elm
+#: model:hr.salary.attachment.type,name:l10n_ch_hr_payroll_elm.hr_salary_attachment_type_rental_housing
+#: model:hr.salary.rule,name:l10n_ch_hr_payroll_elm.l10n_ch_employees_rental_housing
+msgid "Rental housing rent reduction"
+msgstr "Riduzione affitto"
+
+#. module: l10n_ch_hr_payroll_elm
+#: model:ir.model.fields,field_description:l10n_ch_hr_payroll_elm.field_ch_yearly_report_line__report_id
+#: model:ir.model.fields,field_description:l10n_ch_hr_payroll_elm.field_l10n_ch_is_report_line__report_id
+msgid "Report"
+msgstr "Resoconto"
+
+#. module: l10n_ch_hr_payroll_elm
+#: model:ir.model.fields,field_description:l10n_ch_hr_payroll_elm.field_ch_yearly_report__report_line_ids
+#: model:ir.model.fields,field_description:l10n_ch_hr_payroll_elm.field_l10n_ch_is_report__report_line_ids
+msgid "Report Line"
+msgstr "Riga rendiconto"
+
+#. module: l10n_ch_hr_payroll_elm
+#: model:ir.model.fields,field_description:l10n_ch_hr_payroll_elm.field_ch_yearly_report_line__report_type
+msgid "Report Type"
+msgstr "Tipo resoconto"
+
+#. module: l10n_ch_hr_payroll_elm
+#: model:hr.salary.attachment.type,name:l10n_ch_hr_payroll_elm.hr_salary_attachment_type_restreint_private_share_service_car
+#: model:hr.salary.rule,name:l10n_ch_hr_payroll_elm.l10n_ch_employees_restreint_private_share_service_car
+msgid "Restraint Private share service car"
+msgstr "Servizio auto private a noleggio"
+
+#. module: l10n_ch_hr_payroll_elm
+#: model:ir.model.fields.selection,name:l10n_ch_hr_payroll_elm.selection__hr_contract__l10n_ch_avs_status__retired
+#: model:ir.model.fields.selection,name:l10n_ch_hr_payroll_elm.selection__hr_payslip__l10n_ch_avs_status__retired
+msgid "Retired"
+msgstr "Pensionamento"
+
+#. module: l10n_ch_hr_payroll_elm
+#: model_terms:ir.ui.view,arch_db:l10n_ch_hr_payroll_elm.l10n_ch_social_insurance_view_form
+msgid "Retired Employees AVS/AC Exoneration"
+msgstr "Esenzione AVS/AD mensile dipendenti in pensione"
+
+#. module: l10n_ch_hr_payroll_elm
+#: model:hr.salary.attachment.type,name:l10n_ch_hr_payroll_elm.hr_salary_attachment_sevpay
+msgid "SEVPAY"
+msgstr "Liquidazione"
+
+#. module: l10n_ch_hr_payroll_elm
+#. odoo-python
+#: code:addons/l10n_ch_hr_payroll_elm/models/l10n_ch_insurance_report.py:0
+#, python-format
+msgid "SV-AS Number"
+msgstr "Numero SV-AS"
+
+#. module: l10n_ch_hr_payroll_elm
+#: model:ir.model,name:l10n_ch_hr_payroll_elm.model_hr_salary_attachment
+msgid "Salary Attachment"
+msgstr "Allegato stipendio"
+
+#. module: l10n_ch_hr_payroll_elm
+#: model:ir.model,name:l10n_ch_hr_payroll_elm.model_hr_salary_attachment_type
+msgid "Salary Attachment Type"
+msgstr "Tipo allegato stipendio"
+
+#. module: l10n_ch_hr_payroll_elm
+#: model:ir.actions.act_window,name:l10n_ch_hr_payroll_elm.l10n_ch_salary_certificate_action
+#: model_terms:ir.ui.view,arch_db:l10n_ch_hr_payroll_elm.l10n_be_individual_account_view_form
+#: model_terms:ir.ui.view,arch_db:l10n_ch_hr_payroll_elm.l10n_ch_salary_certificate_view_tree
+msgid "Salary Certificates"
+msgstr "Certificati di stipendio"
+
+#. module: l10n_ch_hr_payroll_elm
+#. odoo-python
+#: code:addons/l10n_ch_hr_payroll_elm/models/l10n_ch_salary_certificate_report.py:0
+#, python-format
+msgid "Salary Certificates - Year %s"
+msgstr "Certificati di stipendio - Anno %s"
+
+#. module: l10n_ch_hr_payroll_elm
+#: model:ir.ui.menu,name:l10n_ch_hr_payroll_elm.menu_l10n_ch_salary_certificate
+msgid "Salary Certificates Rectification"
+msgstr "Rettifica certificati di salario"
+
+#. module: l10n_ch_hr_payroll_elm
+#: model:hr.salary.attachment.type,name:l10n_ch_hr_payroll_elm.hr_salary_attachment_type_salary_correction
+#: model:hr.salary.rule,name:l10n_ch_hr_payroll_elm.l10n_ch_employees_basic_correction
+msgid "Salary Correction"
+msgstr "Correzione stipendio"
+
+#. module: l10n_ch_hr_payroll_elm
+#: model:ir.model,name:l10n_ch_hr_payroll_elm.model_hr_salary_rule
+msgid "Salary Rule"
+msgstr "Regola di retribuzione"
+
+#. module: l10n_ch_hr_payroll_elm
+#: model:hr.salary.attachment.type,name:l10n_ch_hr_payroll_elm.hr_salary_attachment_type_salary_hourly
+msgid "Salary per Hour"
+msgstr "Stipendio orario"
+
+#. module: l10n_ch_hr_payroll_elm
+#: model:hr.salary.rule,name:l10n_ch_hr_payroll_elm.l10n_ch_employees_basic_lesson
+msgid "Salary per Lesson"
+msgstr "Stipendio per lezione"
+
+#. module: l10n_ch_hr_payroll_elm
+#: model_terms:hr.salary.rule,note:l10n_ch_hr_payroll_elm.l10n_ch_employees_laac_2
+msgid "Second Additional Accident Insurance (LAAC)"
+msgstr "Assicurazione infortunio complementare secondaria (LAAC)"
+
+#. module: l10n_ch_hr_payroll_elm
+#: model:ir.model.fields.selection,name:l10n_ch_hr_payroll_elm.selection__l10n_ch_is_report__month__9
+msgid "September"
+msgstr "Settembre"
+
+#. module: l10n_ch_hr_payroll_elm
+#: model:hr.salary.rule,name:l10n_ch_hr_payroll_elm.l10n_ch_employees_sev_pay
+msgid "Severance pay (subject to AVS)"
+msgstr "Indennità di fine rapporto (soggetta all’AVS)"
+
+#. module: l10n_ch_hr_payroll_elm
+#: model:ir.model.fields,field_description:l10n_ch_hr_payroll_elm.field_l10n_ch_accident_insurance_line__solution_code
+msgid "Solution Code"
+msgstr "Codice soluzione"
+
+#. module: l10n_ch_hr_payroll_elm
+#: model:ir.ui.menu,name:l10n_ch_hr_payroll_elm.menu_l10n_ch_is_report
+msgid "Source-Tax"
+msgstr "Imposta alla fonte"
+
+#. module: l10n_ch_hr_payroll_elm
+#: model:ir.ui.menu,name:l10n_ch_hr_payroll_elm.menu_l10n_ch_employee_is_line
+msgid "Source-Tax Corrections"
+msgstr "Correzioni imposta alla fonte"
+
+#. module: l10n_ch_hr_payroll_elm
+#: model:hr.salary.attachment.type,name:l10n_ch_hr_payroll_elm.hr_salary_attachment_type_special_indemnity
+#: model:hr.salary.rule,name:l10n_ch_hr_payroll_elm.l10n_ch_employees_special_indemnity
+msgid "Special Indemnity"
+msgstr "Indennizzo speciale"
+
+#. module: l10n_ch_hr_payroll_elm
+#: model:ir.model.fields,field_description:l10n_ch_hr_payroll_elm.field_l10n_ch_social_insurance__age_stop_male
+msgid "Start of retirement age for men"
+msgstr "Inizio dell'età pensionabile per gli uomini"
+
+#. module: l10n_ch_hr_payroll_elm
+#: model:ir.model.fields,field_description:l10n_ch_hr_payroll_elm.field_l10n_ch_social_insurance__age_stop_female
+msgid "Start of retirement age for women"
+msgstr "Inizio dell'età pensionabile per le donne"
+
+#. module: l10n_ch_hr_payroll_elm
+#: model:ir.model.fields,field_description:l10n_ch_hr_payroll_elm.field_l10n_ch_social_insurance__age_start
+msgid "Start of the obligation to contribute to the AVS"
+msgstr "Inizio dell'obbligo di contribuzione all'AVS"
+
+#. module: l10n_ch_hr_payroll_elm
+#: model:hr.salary.attachment.type,name:l10n_ch_hr_payroll_elm.hr_salary_attachment_sunday_allowance
+#: model:hr.salary.rule,name:l10n_ch_hr_payroll_elm.l10n_ch_employees_sunday_allowance
+msgid "Sunday Allowance"
+msgstr "Bonus domenicale"
+
+#. module: l10n_ch_hr_payroll_elm
+#: model:ir.model,name:l10n_ch_hr_payroll_elm.model_l10n_ch_social_insurance_avs_ac_threshold
+msgid "Swiss: AC: Rate Threshold"
+msgstr "Svizzera: AC: soglia tasso"
+
+#. module: l10n_ch_hr_payroll_elm
+#: model:ir.model,name:l10n_ch_hr_payroll_elm.model_l10n_ch_social_insurance_avs_acc_threshold
+msgid "Swiss: ACC: Rate Threshold"
+msgstr "Svizzera: ACC: soglia tasso"
+
+#. module: l10n_ch_hr_payroll_elm
+#: model:ir.model,name:l10n_ch_hr_payroll_elm.model_l10n_ch_accident_insurance
+msgid "Swiss: Accident Insurances (AAP/AANP)"
+msgstr "Svizzera: assicurazioni infortuni (IP/INP)"
+
+#. module: l10n_ch_hr_payroll_elm
+#: model:ir.model,name:l10n_ch_hr_payroll_elm.model_l10n_ch_accident_insurance_line
+msgid "Swiss: Accident Insurances Line (AAP/AANP)"
+msgstr "Svizzera: riga assicurazioni infortuni (IP/INP)"
+
+#. module: l10n_ch_hr_payroll_elm
+#: model:ir.model,name:l10n_ch_hr_payroll_elm.model_l10n_ch_additional_accident_insurance
+msgid "Swiss: Additional Accident Insurances (LAAC)"
+msgstr "Svizzera: assicurazione infortuni complementare (LAINFC)"
+
+#. module: l10n_ch_hr_payroll_elm
+#: model:ir.model,name:l10n_ch_hr_payroll_elm.model_l10n_ch_compensation_fund
+msgid "Swiss: Family Allowance (CAF)"
+msgstr "Svizzera: indennità familiare (CAF)"
+
+#. module: l10n_ch_hr_payroll_elm
+#: model:ir.model,name:l10n_ch_hr_payroll_elm.model_l10n_ch_compensation_fund_line
+msgid "Swiss: Family Allowance Rate (CAF)"
+msgstr "Svizzera: tasso indennità familiare (CAF)"
+
+#. module: l10n_ch_hr_payroll_elm
+#: model:ir.model,name:l10n_ch_hr_payroll_elm.model_l10n_ch_lpp_insurance
+msgid "Swiss: LPP Insurances"
+msgstr "Svizzera: assicurazioni LPP"
+
+#. module: l10n_ch_hr_payroll_elm
+#: model:ir.model,name:l10n_ch_hr_payroll_elm.model_l10n_ch_social_insurance_avs_retirement_rente
+msgid "Swiss: Retired Employees Exoneration"
+msgstr "Svizzera: esenzione dipendenti in pensione"
+
+#. module: l10n_ch_hr_payroll_elm
+#: model:ir.model,name:l10n_ch_hr_payroll_elm.model_l10n_ch_sickness_insurance
+msgid "Swiss: Sickness Insurances (IJM)"
+msgstr "Svizzera: assicurazione malattia (IGM)"
+
+#. module: l10n_ch_hr_payroll_elm
+#: model:ir.model,name:l10n_ch_hr_payroll_elm.model_l10n_ch_social_insurance
+msgid "Swiss: Social Insurances (AVS, AC)"
+msgstr "Svizzera: assicurazioni sociali (AVS, AC)"
+
+#. module: l10n_ch_hr_payroll_elm
+#: model:hr.salary.attachment.type,name:l10n_ch_hr_payroll_elm.hr_salary_attachment_taxpfee
+msgid "TAXPFEE"
+msgstr "Spese di partecipazione tassate"
+
+#. module: l10n_ch_hr_payroll_elm
+#: model:hr.salary.attachment.type,name:l10n_ch_hr_payroll_elm.hr_salary_attachment_thirdpilla
+msgid "THIRDPILLA"
+msgstr "Terzo pilastro A"
+
+#. module: l10n_ch_hr_payroll_elm
+#: model:hr.salary.attachment.type,name:l10n_ch_hr_payroll_elm.hr_salary_attachment_thirdpillb
+msgid "THIRDPILLB"
+msgstr "Terzo pilastro B"
+
+#. module: l10n_ch_hr_payroll_elm
+#: model:ir.model,name:l10n_ch_hr_payroll_elm.model_l10n_ch_salary_certificate
+msgid "Tax Salaries Rectification"
+msgstr "Rettifica salari imponibili"
+
+#. module: l10n_ch_hr_payroll_elm
+#: model:ir.model,name:l10n_ch_hr_payroll_elm.model_l10n_ch_is_report
+msgid "Tax at Source Monthly Report"
+msgstr "Resoconto mensile imposta alla fonte"
+
+#. module: l10n_ch_hr_payroll_elm
+#: model:ir.model,name:l10n_ch_hr_payroll_elm.model_l10n_ch_is_report_line
+msgid "Tax at Source Monthly Report Line"
+msgstr "Riga resoconto mensile ritenute alla fonte"
+
+#. module: l10n_ch_hr_payroll_elm
+#: model:hr.salary.rule,name:l10n_ch_hr_payroll_elm.l10n_ch_employees_tax_part_fees
+msgid "Taxable participation fees"
+msgstr "Quote di partecipazione tassate"
+
+#. module: l10n_ch_hr_payroll_elm
+#: model:hr.salary.attachment.type,name:l10n_ch_hr_payroll_elm.hr_salary_attachment_team_work
+#: model:hr.salary.rule,name:l10n_ch_hr_payroll_elm.l10n_ch_employees_team_work
+msgid "Team Work"
+msgstr "Lavoro di squadra"
+
+#. module: l10n_ch_hr_payroll_elm
+#: model:hr.salary.rule,name:l10n_ch_hr_payroll_elm.l10n_ch_employees_third_pill_a
+msgid "Third pillar A paid by employer"
+msgstr "Terzo pilastro A a carico del datore di lavoro"
+
+#. module: l10n_ch_hr_payroll_elm
+#: model:hr.salary.rule,name:l10n_ch_hr_payroll_elm.l10n_ch_employees_third_pill_b
+msgid "Third pillar B paid by employer"
+msgstr "Terzo pilastro B a carico del datore di lavoro"
+
+#. module: l10n_ch_hr_payroll_elm
+#. odoo-python
+#: code:addons/l10n_ch_hr_payroll_elm/models/l10n_ch_insurance_report.py:0
+#: model:ir.model.fields,field_description:l10n_ch_hr_payroll_elm.field_l10n_ch_social_insurance_avs_ac_threshold__date_to
+#: model:ir.model.fields,field_description:l10n_ch_hr_payroll_elm.field_l10n_ch_social_insurance_avs_acc_threshold__date_to
+#: model:ir.model.fields,field_description:l10n_ch_hr_payroll_elm.field_l10n_ch_social_insurance_avs_retirement_rente__date_to
+#, python-format
+msgid "To"
+msgstr "Al"
+
+#. module: l10n_ch_hr_payroll_elm
+#: model:ir.model.fields,field_description:l10n_ch_hr_payroll_elm.field_hr_contract__l10n_ch_total_occupation_rate
+msgid "Total occupation rate"
+msgstr "Tasso di occupazione totale"
+
+#. module: l10n_ch_hr_payroll_elm
+#: model_terms:ir.ui.view,arch_db:l10n_ch_hr_payroll_elm.l10n_ch_social_insurance_view_form
+msgid "Unemployment insurance (AC)"
+msgstr "Assicurazione disoccupazione (AD)"
+
+#. module: l10n_ch_hr_payroll_elm
+#: model:hr.salary.attachment.type,name:l10n_ch_hr_payroll_elm.hr_salary_attachment_vacalw
+msgid "VACALW"
+msgstr "Pagamento vacanze"
+
+#. module: l10n_ch_hr_payroll_elm
+#: model:hr.salary.rule,name:l10n_ch_hr_payroll_elm.l10n_ch_employees_vacation_payment
+msgid "Vacation Payment"
+msgstr "Pagamento ferie"
+
+#. module: l10n_ch_hr_payroll_elm
+#: model:ir.model.fields,field_description:l10n_ch_hr_payroll_elm.field_hr_employee_is_line__valid_as_of
+msgid "Valid As Of"
+msgstr "Valido a partire dal"
+
+#. module: l10n_ch_hr_payroll_elm
+#: model:ir.model.fields,field_description:l10n_ch_hr_payroll_elm.field_l10n_ch_location_unit__weekly_hours
+msgid "Weekly Hours"
+msgstr "Ore settimanali"
+
+#. module: l10n_ch_hr_payroll_elm
+#: model:ir.model.fields,field_description:l10n_ch_hr_payroll_elm.field_l10n_ch_location_unit__weekly_lessons
+msgid "Weekly Lessons"
+msgstr "Lezioni settimanali"
+
+#. module: l10n_ch_hr_payroll_elm
+#: model:ir.model.fields,help:l10n_ch_hr_payroll_elm.field_hr_salary_rule__l10n_ch_laac_included
+msgid ""
+"Whether the amount is included in the basis to compute the additional "
+"accident insurance deduction"
+msgstr ""
+"Se l'importo è incluso nella base di calcolo della detrazione aggiuntiva per "
+"l'assicurazione contro gli infortuni"
+
+#. module: l10n_ch_hr_payroll_elm
+#: model:ir.model.fields,field_description:l10n_ch_hr_payroll_elm.field_l10n_ch_is_report__work_location_ids
+msgid "Work Location"
+msgstr "Luogo di lavoro"
+
+#. module: l10n_ch_hr_payroll_elm
+#: model_terms:ir.ui.view,arch_db:l10n_ch_hr_payroll_elm.l10n_ch_is_report_view_form
+msgid "Work Locations"
+msgstr "Luoghi di lavoro"
+
+#. module: l10n_ch_hr_payroll_elm
+#: model:ir.model,name:l10n_ch_hr_payroll_elm.model_l10n_ch_location_unit
+msgid "Work Place - Swiss Payroll"
+msgstr "Posto di lavoro - Sistema di retribuzione Svizzera"
+
+#. module: l10n_ch_hr_payroll_elm
+#: model_terms:ir.ui.view,arch_db:l10n_ch_hr_payroll_elm.l10n_ch_employee_is_line_form
+msgid "Work address"
+msgstr "Indirizzo di lavoro"
+
+#. module: l10n_ch_hr_payroll_elm
+#: model:hr.salary.rule,name:l10n_ch_hr_payroll_elm.l10n_ch_employees_worked_days
+#: model:hr.salary.rule.category,name:l10n_ch_hr_payroll_elm.hr_salary_rule_category_worked_days
+msgid "Worked Days Total"
+msgstr "Totale giorni di lavoro"
+
+#. module: l10n_ch_hr_payroll_elm
+#: model:hr.salary.rule,name:l10n_ch_hr_payroll_elm.l10n_ch_employees_ch_days
+msgid "Worked Days in CH"
+msgstr "Giorni di lavoro in Svizzera"
+
+#. module: l10n_ch_hr_payroll_elm
+#: model:ir.model.fields,field_description:l10n_ch_hr_payroll_elm.field_hr_contract__l10n_ch_location_unit_id
+msgid "Workplace"
+msgstr "Luogo di lavoro"
+
+#. module: l10n_ch_hr_payroll_elm
+#: model:ir.model.fields,field_description:l10n_ch_hr_payroll_elm.field_l10n_ch_salary_certificate__xml_file
+msgid "Xml File"
+msgstr "File XML"
+
+#. module: l10n_ch_hr_payroll_elm
+#: model:ir.model.fields,field_description:l10n_ch_hr_payroll_elm.field_l10n_ch_salary_certificate__xml_filename
+msgid "Xml Filename"
+msgstr "Nome file XML"
+
+#. module: l10n_ch_hr_payroll_elm
+#: model:ir.model.fields,field_description:l10n_ch_hr_payroll_elm.field_ch_yearly_report__year
+#: model:ir.model.fields,field_description:l10n_ch_hr_payroll_elm.field_l10n_ch_is_report__year
+#: model:ir.model.fields,field_description:l10n_ch_hr_payroll_elm.field_l10n_ch_salary_certificate__year
+msgid "Year"
+msgstr "Anno"
+
+#. module: l10n_ch_hr_payroll_elm
+#: model:ir.model.fields.selection,name:l10n_ch_hr_payroll_elm.selection__hr_contract__l10n_ch_is_model__yearly
+#: model:ir.model.fields.selection,name:l10n_ch_hr_payroll_elm.selection__hr_payslip__l10n_ch_is_model__yearly
+msgid "Yearly"
+msgstr "Annuale"
+
+#. module: l10n_ch_hr_payroll_elm
+#: model:ir.model.fields,field_description:l10n_ch_hr_payroll_elm.field_hr_contract__l10n_ch_yearly_holidays
+msgid "Yearly Holidays Count"
+msgstr "Numero di giorni di ferie annuali"
+
+#. module: l10n_ch_hr_payroll_elm
+#: model:ir.actions.act_window,name:l10n_ch_hr_payroll_elm.l10n_ch_insurance_report_action
+msgid "Yearly Institution Reports"
+msgstr "Resoconti annuali istituzione"
+
+#. module: l10n_ch_hr_payroll_elm
+#: model:ir.model.fields,field_description:l10n_ch_hr_payroll_elm.field_hr_contract__l10n_ch_yearly_paid_public_holidays
+msgid "Yearly Paid Public Holidays Count"
+msgstr "Numero di giorni festivi retribuiti all'anno"
+
+#. module: l10n_ch_hr_payroll_elm
+#: model:ir.ui.menu,name:l10n_ch_hr_payroll_elm.menu_l10n_ch_insurance_report
+msgid "Yearly Salaries"
+msgstr "Retribuzioni annuali"
+
+#. module: l10n_ch_hr_payroll_elm
+#: model:ir.model.fields,field_description:l10n_ch_hr_payroll_elm.field_hr_salary_rule__l10n_ch_yearly_statement
+msgid "Yearly Statistic"
+msgstr "Statistica annuale"
+
+#. module: l10n_ch_hr_payroll_elm
+#. odoo-python
+#: code:addons/l10n_ch_hr_payroll_elm/models/l10n_ch_insurance_report.py:0
+#: code:addons/l10n_ch_hr_payroll_elm/models/l10n_ch_salary_certificate_report.py:0
+#: code:addons/l10n_ch_hr_payroll_elm/models/l10n_ch_tax_at_source_report.py:0
+#, python-format
+msgid "You must be logged in a Swiss company to use this feature"
+msgstr ""
+"Per utilizzare questa funzione è necessario effettuare l'accesso a "
+"un'azienda svizzera"
+
+#. module: l10n_ch_hr_payroll_elm
+#: model:ir.model.fields.selection,name:l10n_ch_hr_payroll_elm.selection__hr_contract__l10n_ch_avs_status__youth
+#: model:ir.model.fields.selection,name:l10n_ch_hr_payroll_elm.selection__hr_payslip__l10n_ch_avs_status__youth
+msgid "Youth"
+msgstr "Giovane"
+
+#. module: l10n_ch_hr_payroll_elm
+#: model_terms:ir.ui.view,arch_db:l10n_ch_hr_payroll_elm.l10n_ch_social_insurance_view_form
+msgid "e.g. \"Social Insurance AK Bern\""
+msgstr "ad es. \"Assicurazione sociale AK Bern\""
+
+#. module: l10n_ch_hr_payroll_elm
+#: model_terms:ir.ui.view,arch_db:l10n_ch_hr_payroll_elm.l10n_ch_is_report_view_form
+msgid "e.g. 12/2024 Monthly Report"
+msgstr "Esempio: resoconto mensile 12/2024"
+
+#. module: l10n_ch_hr_payroll_elm
+#: model_terms:ir.ui.view,arch_db:l10n_ch_hr_payroll_elm.l10n_ch_insurance_report_view_form
+msgid "e.g. 2024 Yearly Report"
+msgstr "ad es. Resoconto annuale 2024"
+
+#~ msgid "2022-01-01"
+#~ msgstr "01-01-2022"
+
+#~ msgid "2022-12-31"
+#~ msgstr "31-12-2022"

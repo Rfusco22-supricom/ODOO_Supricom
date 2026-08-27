@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data noupdate="1">
+        <!-- VENEZUELA -->
+        <record id="vendor_type_ven_normal" model="commission.vendor.type">
+            <field name="name">Normal</field>
+            <field name="code">N</field>
+            <field name="country">VEN</field>
+        </record>
+        <record id="vendor_type_ven_especial" model="commission.vendor.type">
+            <field name="name">Especial</field>
+            <field name="code">E</field>
+            <field name="country">VEN</field>
+        </record>
+        <record id="vendor_type_ven_outsourcing" model="commission.vendor.type">
+            <field name="name">Outsourcing</field>
+            <field name="code">O</field>
+            <field name="country">VEN</field>
+        </record>
+        <record id="vendor_type_ven_prueba" model="commission.vendor.type">
+            <field name="name">Prueba</field>
+            <field name="code">P</field>
+            <field name="country">VEN</field>
+        </record>        <record id="vendor_type_ven_interno" model="commission.vendor.type">
+            <field name="name">Vendedor Interno Venezuela</field>
+            <field name="code">I</field>
+            <field name="country">VEN</field>
+        </record>
+        <record id="vendor_type_ven_externo" model="commission.vendor.type">
+            <field name="name">Vendedor Externo Venezuela</field>
+            <field name="code">X</field>
+            <field name="country">VEN</field>
+        </record>
+
+        <!-- PANAMA -->
+        <record id="vendor_type_pan_interno" model="commission.vendor.type">
+            <field name="name">Vendedor Interno Panama</field>
+            <field name="code">I</field>
+            <field name="country">PAN</field>
+        </record>
+        <record id="vendor_type_pan_externo" model="commission.vendor.type">
+            <field name="name">Vendedor Externo Panama</field>
+            <field name="code">X</field>
+            <field name="country">PAN</field>
+        </record>
+    </data>
+</odoo>

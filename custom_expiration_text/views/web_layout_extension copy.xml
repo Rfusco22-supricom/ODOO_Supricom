@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<odoo>
+    <data>
+        <record id="neutralize_banner" model="ir.ui.view">
+            <field name="name">Neutralize Banner</field>
+            <field name="inherit_id" ref="web.layout"/>
+            <field name="arch" type="xml">
+                <!-- Inserta el contenido al inicio del cuerpo -->
+                <xpath expr="//body" position="inside">
+                    <div style="width: 100%;">
+                        <!-- Banner 1 -->
+                        <div style="display: block; text-align: center; background-color: #222; color: #fff; padding: 8px; font-weight: bold;">
+                            🔧 VERSIÓN: 17.0.1
+                        </div>
+
+                        <!-- Banner 2 -->
+                        <div style="background-color: #FFD700; padding: 12px; text-align: center;">
+                            <div style="font-size: 16px; font-weight: bold; color: red; margin-bottom: 5px;">
+                                🚨 ADVERTENCIA: <span style="color: black;">PERIODO ANTERIOR SIN CERRAR</span>
+                            </div>
+                            <div style="color: #333; font-weight: 600;">
+                                Antes de iniciar un nuevo periodo, debe cerrarse correctamente el periodo anterior.<br/>
+                                Por favor, revise y complete el cierre correspondiente para evitar inconsistencias en los registros.
+                            </div>
+                        </div>
+                    </div>
+                </xpath>
+            </field>
+        </record>
+    </data>
+</odoo>

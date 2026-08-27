@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <record id="res_config_settings_view_form" model="ir.ui.view">
+        <field name="name">res.config.settings.view.form.inherit.commissions</field>
+        <field name="model">res.config.settings</field>
+        <field name="inherit_id" ref="base.res_config_settings_view_form"/>
+        <field name="arch" type="xml">
+            <xpath expr="//form" position="inside">
+                <app data-string="Comisiones" string="Comisiones" name="supricom_commissions" groups="base.group_system">
+                    <block title="Reglas de Cálculo y Metas">
+                        <setting string="Usar Metas de Cumplimiento" help="Si está activo, se usa la matriz de cumplimiento. Si no, se usa la tasa base (0%).">
+                            <field name="commission_use_targets"/>
+                        </setting>
+                        <setting string="Modo de Cumplimiento" help="Individual (Por Vendedor) o Sucursal (Global por Compañía)">
+                            <field name="commission_target_mode" widget="radio" invisible="not commission_use_targets"/>
+                        </setting>
+                        <setting string="Base de Comisión" help="Base para el cálculo de comisión.">
+                            <field name="commission_base_type" widget="radio"/>
+                        </setting>
+                        <setting string="Mostrar Costo y Rentabilidad" help="Mostrar las columnas de Costo, Rentabilidad y Base Pagada en reportes.">
+                            <field name="commission_show_profitability"/>
+                        </setting>
+                        <setting string="% Meta Mínima de Ventas" help="Porcentaje mínimo de cumplimiento requerido para generar comisiones (ej. 80%).">
+                            <field name="commission_min_target_pct"/>
+                        </setting>
+                        <setting string="Tope Máximo de Meta (%)" help="Tope máximo de porcentaje de cumplimiento para el cálculo (ej. 150%).">
+                            <field name="commission_max_target_cap"/>
+                        </setting>
+
+                    </block>
+
+                    <block title="Políticas de Cobranza y Crédito">
+                        <setting string="Solo Cobradas Completas" help="Solo paga comisión a facturas de crédito si están cobradas al 100%.">
+                            <field name="commission_strict_full_payment"/>
+                        </setting>
+                        <setting string="Tolerancia de Pago (%)" help="Margen de tolerancia para retenciones al considerar factura pagada 100%.">
+                            <field name="commission_payment_tolerance"/>
+                        </setting>
+                        <setting string="Umbral de Crédito" help="Facturas de crédito menores a este monto pagan comisión en el mes como contado.">
+                            <field name="commission_credit_threshold" widget="monetary"/>
+                        </setting>
+                        <setting string="Días de Gracia (Mora)" help="Días adicionales después del vencimiento antes de considerar el pago como mora.">
+                            <field name="commission_grace_days"/>
+                        </setting>
+                    </block>
+
+                    <block title="Tasas Base y Excepciones">
+                        <setting string="% Comisión (Contado)" help="Tasa base para ventas al contado.">
+                            <field name="commission_cash_rate"/>
+                        </setting>
+                        <setting string="% Comisión (Crédito)" help="Tasa base para ventas a crédito cobradas.">
+                            <field name="commission_credit_rate"/>
+                        </setting>
+                        <setting string="Validar Precio Mínimo" help="Activar penalizaciones por precio mínimo.">
+                            <field name="commission_use_min_price"/>
+                        </setting>
+                        <setting string="Mapeo de Listas (Lista 2)" help="Activa el mapeo dinámico de listas de precios base en el formulario de cada lista.">
+                            <field name="commission_use_pricelist_mapping"/>
+                        </setting>
+                        <setting string="Comisión % Fijo por Producto" help="Habilitar porcentaje fijo por producto en lugar de la matriz.">
+                            <field name="commission_use_fixed_percentage"/>
+                            <div class="content-group" invisible="not commission_use_fixed_percentage">
+                                <div class="mt8">
+                                    <label for="commission_fixed_pct_product_ids" string="Por Productos" class="o_light_label"/>
+                                    <field name="commission_fixed_pct_product_ids" widget="many2many_tags" placeholder="Productos específicos..."/>
+                                </div>
+                                <div class="mt8">
+                                    <label for="commission_fixed_pct_product_tag_ids" string="Por Etiquetas" class="o_light_label"/>
+                                    <field name="commission_fixed_pct_product_tag_ids" widget="many2many_tags" placeholder="Etiquetas de productos..."/>
+                                </div>
+                                <div class="mt8">
+                                    <label for="commission_fixed_pct_product_category_ids" string="Por Categorías" class="o_light_label"/>
+                                    <field name="commission_fixed_pct_product_category_ids" widget="many2many_tags" placeholder="Categorías de productos..."/>
+                                </div>
+                                <div class="text-muted mt8">
+                                    Si no seleccionas ninguno de los anteriores, el % fijo aplicará a <b>todos</b> los productos configurados.
+                                </div>
+                            </div>
+                        </setting>
+
+                        <setting string="Comisión Fija ($) por Producto" help="Habilitar montos fijos por producto en lugar de porcentajes.">
+                            <field name="commission_use_fixed_amount"/>
+                            <div class="content-group" invisible="not commission_use_fixed_amount">
+                                <div class="mt8">
+                                    <label for="commission_fixed_product_ids" string="Por Productos" class="o_light_label"/>
+                                    <field name="commission_fixed_product_ids" widget="many2many_tags" placeholder="Productos específicos..."/>
+                                </div>
+                                <div class="mt8">
+                                    <label for="commission_fixed_product_tag_ids" string="Por Etiquetas" class="o_light_label"/>
+                                    <field name="commission_fixed_product_tag_ids" widget="many2many_tags" placeholder="Etiquetas de productos..."/>
+                                </div>
+                                <div class="mt8">
+                                    <label for="commission_fixed_product_category_ids" string="Por Categorías" class="o_light_label"/>
+                                    <field name="commission_fixed_product_category_ids" widget="many2many_tags" placeholder="Categorías de productos..."/>
+                                </div>
+                                <div class="text-muted mt8">
+                                    Si no seleccionas ninguno de los anteriores, la comisión fija aplicará a <b>todos</b> los productos configurados con monto fijo.
+                                </div>
+                            </div>
+                        </setting>
+                    </block>
+                </app>
+            </xpath>
+        </field>
+    </record>
+    
+    <menuitem id="menu_commission_config_settings"
+        parent="menu_commission_config"
+        sequence="99"
+        action="base_setup.action_general_configuration"
+        groups="base.group_system"/>
+</odoo>
+

@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data>
+        
+        <record id="fel_pa_tools_report_extra_content_form" model="ir.ui.view">
+            <field name="name">fel_pa_tools_report_extra_content_form</field>
+            <field name="model">fel_pa.tools.report_extra_content</field>
+            <field name="arch" type="xml">
+                <form>
+                    <sheet>
+                        <group col="4">
+                            <field filename="file_name" name="append_extra_content"/>
+                            <field name="company_id"/>
+                            <field invisible="1" name="file_name"/>
+                        </group>
+                    </sheet>
+                </form>
+            </field>
+        </record>
+
+        <record id="fel_pa_tools_report_extra_content_tree" model="ir.ui.view">
+            <field name="name">fel_pa_tools_report_extra_content_tree</field>
+            <field name="model">fel_pa.tools.report_extra_content</field>
+            <field name="arch" type="xml">
+                <tree>
+                    <field name="file_name"/>
+                    <field name="company_id"/>
+                </tree>
+            </field>
+        </record>
+
+        <record id="action_fel_report_extracontent" model="ir.actions.act_window">
+            <field name="name">Extra Content Panamá FEL</field>
+            <field name="res_model">fel_pa.tools.report_extra_content</field>
+            <field name="view_mode">tree,form</field>
+            <field name="help" type="html">
+                <p class="oe_view_nocontent_create">Click to add a new extra content.</p>
+            </field>
+        </record>
+
+    </data>
+</odoo>

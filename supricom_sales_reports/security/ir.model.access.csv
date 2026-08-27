@@ -1,0 +1,3 @@
+id,name,model_id:id,group_id:id,perm_read,perm_write,perm_create,perm_unlink
+access_new_customer_sales_report,supricom.new.customer.sales.report,model_supricom_new_customer_sales_report,sales_team.group_sale_salesman,1,0,0,0
+access_brand_state_sales_report,supricom.brand.state.sales.report,model_supricom_brand_state_sales_report,sales_team.group_sale_salesman,1,0,0,0

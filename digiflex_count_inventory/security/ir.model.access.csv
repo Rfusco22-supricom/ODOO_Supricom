@@ -1,0 +1,6 @@
+id,name,model_id:id,group_id:id,perm_read,perm_write,perm_create,perm_unlink
+access_digiflex_count_inventory_user,digiflex.count.inventory.user,model_digiflex_count_inventory,group_count_inventory_user,1,1,1,0
+access_digiflex_count_inventory_manager,digiflex.count.inventory.manager,model_digiflex_count_inventory,group_count_inventory_manager,1,1,1,1
+access_digiflex_count_inventory_line_user,digiflex.count.inventory.line.user,model_digiflex_count_inventory_line,group_count_inventory_user,1,1,1,0
+access_digiflex_count_inventory_line_manager,digiflex.count.inventory.line.manager,model_digiflex_count_inventory_line,group_count_inventory_manager,1,1,1,1
+access_digiflex_count_inventory_assign_wizard,digiflex.count.inventory.assign.wizard,model_digiflex_count_inventory_assign_wizard,group_count_inventory_manager,1,1,1,1

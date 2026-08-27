@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data>
+        <record id="account_payment_dual_currency" model="ir.ui.view">
+            <field name="name">Dual Currency: account.payment.form</field>
+            <field name="model">account.payment</field>
+            <field name="inherit_id" ref="account.view_account_payment_form"/>
+            <field name="arch" type="xml">
+                <xpath expr="//field[@name='date']" position="replace">
+                    <field name="is_ve_company" invisible="1"/>
+                    <field invisible="1" name="currency_equal"/>
+                    <field name="custom_rate" widget="boolean_toggle" groups="account_dual_currency.group_edit_trm" readonly="state != 'draft'" invisible="not is_ve_company"/>
+                    <field name="date" readonly="state != 'draft'"/>
+                    <field name="tax_today_readonly" invisible="1"/>
+                    <field name="tax_today" readonly="tax_today_readonly" required="not tax_today_readonly" invisible="not is_ve_company"/>
+                    <field force_save="1" invisible="currency_equal != True or not is_ve_company" name="amount_local" readonly="1"/>
+                    <field force_save="1" invisible="currency_equal == True or not is_ve_company" name="amount_ref" readonly="1"/>
+                    <field invisible="currency_equal == True or not is_ve_company" name="currency_id_dif" readonly="1"/>
+                    <field invisible="1" name="currency_id_company"/>
+                </xpath>
+                <xpath expr="//field[@name='journal_id']" position="after">
+                    <field name="move_id_dif" invisible="not is_ve_company"/>
+                </xpath>
+                <xpath expr="//group[@name='group2']" position="after">
+                    <group name="group_igtf" invisible="not is_ve_company">
+                        <field invisible="1" name="currency_id_name"/>
+                        <field invisible="currency_id_name == 'VEF'" name="aplicar_igtf_divisa" readonly="state != 'draft'"/>
+                        <field domain="[('type', 'in', ('bank', 'cash'))]" invisible="aplicar_igtf_divisa == False or currency_id_name == 'VEF'" name="journal_igtf_id" readonly="state != 'draft'" widget="selection"/>
+                        <field invisible="aplicar_igtf_divisa == False or currency_id_name == 'VEF'" name="igtf_divisa_porcentage"/>
+                        <field invisible="aplicar_igtf_divisa == False or currency_id_name == 'VEF'" name="mount_igtf"/>
+                        <field invisible="aplicar_igtf_divisa == False or currency_id_name == 'VEF'" name="amount_total_pagar" style="color: red;"/>
+                        <field invisible="aplicar_igtf_divisa == False or currency_id_name == 'VEF'" name="move_id_igtf_divisa"/>
+                    </group>
+                </xpath></field>
+        </record>
+    </data>
+</odoo>

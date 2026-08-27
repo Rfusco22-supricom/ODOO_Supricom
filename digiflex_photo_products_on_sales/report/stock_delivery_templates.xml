@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <template id="report_delivery_document_inherit_photo" inherit_id="stock.report_delivery_document" priority="100000000">
+        <!-- 1. Encabezado en tabla de movimientos stock_move_table (estado borrador / listo / asignado) -->
+        <xpath expr="//table[@name='stock_move_table']/thead/tr/th[@name='th_sm_product']" position="before">
+            <th t-if="o.show_product_image" name="th_sm_image" class="text-center" style="width: 60px;">Imagen</th>
+        </xpath>
+
+        <!-- 2. Celda de imagen en cada línea de movimiento -->
+        <xpath expr="//table[@name='stock_move_table']/tbody//tr/td[1]" position="before">
+            <td t-if="o.show_product_image" name="td_sm_image" class="text-center align-middle" style="width: 60px; padding: 4px;">
+                <t t-if="move.product_id and move.product_id.image_128">
+                    <img t-att-src="image_data_uri(move.product_id.image_128)" style="max-height: 50px; max-width: 50px; object-fit: contain; border-radius: 4px;" alt="Foto Producto"/>
+                </t>
+            </td>
+        </xpath>
+
+        <!-- 3. Encabezado en tabla stock_move_line_table (estado realizado / hecho) -->
+        <xpath expr="//table[@name='stock_move_line_table']/thead/tr/th[@name='th_sml_product']" position="before">
+            <th t-if="o.show_product_image" name="th_sml_image" class="text-center" style="width: 60px;">Imagen</th>
+        </xpath>
+    </template>
+
+    <!-- 4. Celda de imagen para líneas agregadas de entregas realizadas (sin lote/serie) -->
+    <template id="stock_report_delivery_aggregated_move_lines_inherit_photo" inherit_id="stock.stock_report_delivery_aggregated_move_lines" priority="100000000">
+        <xpath expr="//tr/td[1]" position="before">
+            <td t-if="o.show_product_image" name="td_sml_aggregated_image" class="text-center align-middle" style="width: 60px; padding: 4px;">
+                <t t-if="aggregated_lines[line].get('product') and aggregated_lines[line]['product'].image_128">
+                    <img t-att-src="image_data_uri(aggregated_lines[line]['product'].image_128)" style="max-height: 50px; max-width: 50px; object-fit: contain; border-radius: 4px;" alt="Foto Producto"/>
+                </t>
+            </td>
+        </xpath>
+    </template>
+
+    <!-- 5. Celda de imagen para líneas con lote/serie de entregas realizadas -->
+    <template id="stock_report_delivery_has_serial_move_line_inherit_photo" inherit_id="stock.stock_report_delivery_has_serial_move_line" priority="100000000">
+        <xpath expr="//td[1]" position="before">
+            <td t-if="o.show_product_image" name="td_sml_serial_image" class="text-center align-middle" style="width: 60px; padding: 4px;">
+                <t t-if="move_line.product_id and move_line.product_id.image_128">
+                    <img t-att-src="image_data_uri(move_line.product_id.image_128)" style="max-height: 50px; max-width: 50px; object-fit: contain; border-radius: 4px;" alt="Foto Producto"/>
+                </t>
+            </td>
+        </xpath>
+    </template>
+</odoo>

@@ -1,0 +1,143 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+# * theme_orchid
+#
+# Weblate <noreply-mt-weblate@weblate.org>, 2026.
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 17.0+e\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2023-09-28 12:23+0000\n"
+"PO-Revision-Date: 2026-07-05 14:09+0000\n"
+"Last-Translator: Weblate <noreply-mt-weblate@weblate.org>\n"
+"Language-Team: Lao <https://translate.odoo.com/projects/odoo-17/theme_orchid/"
+"lo/>\n"
+"Language: lo\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: \n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"X-Generator: Weblate 2026.6.1\n"
+
+#. module: theme_orchid
+#: model_terms:theme.ir.ui.view,arch:theme_orchid.s_text_image
+msgid ""
+"<br/>\n"
+"        Deliver flowers to live up to your dedication for your loved ones."
+msgstr ""
+"<br/>\n"
+"        ສົ່ງມອບດອກໄມ້ເພື່ອສະແດງເຖິງຄວາມຕັ້ງໃຈຂອງທ່ານທີ່ມີຕໍ່ຄົນທີ່ທ່ານຮັກ."
+
+#. module: theme_orchid
+#: model_terms:theme.ir.ui.view,arch:theme_orchid.s_quotes_carousel
+msgid ""
+"A small shop with a very large selection of roses. Nice prices and above all"
+" a very professional and friendly welcome."
+msgstr ""
+"ຮ້ານຂະໜາດນ້ອຍທີ່ມີດອກກຸຫຼາບໃຫ້ເລືອກຫຼາຍ. ລາຄາດີ ແລະ ສິ່ງສຳຄັນທີ່ສຸດແມ່ນການຕ້ອນຮັບທີ່ເປັນກັນເອງ ແລະ ເປັ"
+"ນມືອາຊີບ."
+
+#. module: theme_orchid
+#: model_terms:theme.ir.ui.view,arch:theme_orchid.s_quotes_carousel
+msgid ""
+"A wide range of high quality products and a warm welcome! I recommend this "
+"shop 200%!"
+msgstr ""
+"ສິນຄ້າຄຸນນະພາບສູງຫຼາກຫຼາຍລາຍການ ແລະ ການຕ້ອນຮັບທີ່ອົບອຸ່ນ! ຂ້ອຍຂໍແນະນຳຮ້ານນີ້ 200% ເລີຍ!"
+
+#. module: theme_orchid
+#: model_terms:theme.ir.ui.view,arch:theme_orchid.s_three_columns
+msgid ""
+"As we use local growers, our flowers last longer and smell better. Just like"
+" the event you want to celebrate with flowers!"
+msgstr ""
+"ເນື່ອງຈາກພວກເຮົາໃຊ້ດອກໄມ້ຈາກຜູ້ປູກໃນທ້ອງຖິ່ນ, ດອກໄມ້ຂອງພວກເຮົາຈຶ່ງສົດໄດ້ດົນກວ່າ ແລະ ມີກິ່ນຫອມກວ່າ. ເ"
+"ໝາະສົມທີ່ສຸດສຳລັບງານທີ່ທ່ານຕ້ອງການສະເຫຼີມສະຫຼອງດ້ວຍດອກໄມ້!"
+
+#. module: theme_orchid
+#: model_terms:theme.ir.ui.view,arch:theme_orchid.s_three_columns
+msgid "Bio Flowers"
+msgstr "ດອກໄມ້ອໍແກນິກ"
+
+#. module: theme_orchid
+#: model_terms:theme.ir.ui.view,arch:theme_orchid.s_three_columns
+msgid ""
+"Don't offer pesticides to your beloved one! By choosing our flowers, we "
+"guarantee you organic flowers."
+msgstr ""
+"ຢ່າເອົາສານພິດໃຫ້ຄົນທີ່ທ່ານຮັກ! ເມື່ອເລືອກດອກໄມ້ຂອງພວກເຮົາ, ພວກເຮົາຮັບປະກັນວ່າເປັນດອກໄມ້ອໍແກນິກ."
+
+#. module: theme_orchid
+#: model_terms:theme.ir.ui.view,arch:theme_orchid.s_three_columns
+msgid "Eco-Friendly Packaging"
+msgstr "ການຫຸ້ມຫໍ່ທີ່ເປັນມິດກັບສິ່ງແວດລ້ອມ"
+
+#. module: theme_orchid
+#: model_terms:theme.ir.ui.view,arch:theme_orchid.s_image_text
+msgid ""
+"From your local producer to your door, discover how we deliver our multiple "
+"sorts of flowers and bring you happiness."
+msgstr ""
+"ຈາກຜູ້ຜະລິດທ້ອງຖິ່ນເຖິງໜ້າບ້ານທ່ານ, ຄົ້ນຫາວິທີທີ່ພວກເຮົາຈັດສົ່ງດອກໄມ້ຫຼາກຫຼາຍຊະນິດ ແລະ ມອບຄວາມສຸກໃຫ້ກັບທ່"
+"ານ."
+
+#. module: theme_orchid
+#: model_terms:theme.ir.ui.view,arch:theme_orchid.s_cover
+msgid "Live life in full bloom"
+msgstr "ໃຊ້ຊີວິດໃຫ້ເບີກບານຄືດອກໄມ້ທີ່ເບັ່ງບານ"
+
+#. module: theme_orchid
+#: model_terms:theme.ir.ui.view,arch:theme_orchid.s_three_columns
+msgid "Local Producers"
+msgstr "ຜູ້ຜະລິດພາຍໃນທ້ອງຖິ່ນ"
+
+#. module: theme_orchid
+#: model_terms:theme.ir.ui.view,arch:theme_orchid.s_text_image
+msgid "Our Mission"
+msgstr "ພັນທະກິດຂອງພວກເຮົາ"
+
+#. module: theme_orchid
+#: model_terms:theme.ir.ui.view,arch:theme_orchid.s_image_text
+msgid "The Orchid Concept"
+msgstr "ແນວຄິດແບບດອກກ້ວຍໄມ້ (The Orchid Concept)"
+
+#. module: theme_orchid
+#: model:ir.model,name:theme_orchid.model_theme_utils
+msgid "Theme Utils"
+msgstr "ເຄື່ອງມືຊ່ວຍຈັດການທີມ (Theme Utils)"
+
+#. module: theme_orchid
+#: model_terms:theme.ir.ui.view,arch:theme_orchid.s_call_to_action
+msgid "There are always flowers <br/>for those who want to see them."
+msgstr "ມີດອກໄມ້ສະເໝີ <br/>ສຳລັບຜູ້ທີ່ຢາກຈະເຫັນພວກມັນ."
+
+#. module: theme_orchid
+#: model_terms:theme.ir.ui.view,arch:theme_orchid.s_text_image
+msgid ""
+"To do so, we collaborate with local producers who care about the environment"
+" and cultivate their flowers with love."
+msgstr ""
+"ເພື່ອເຮັດແນວນັ້ນ, ພວກເຮົາໄດ້ຮ່ວມມືກັບຜູ້ຜະລິດທ້ອງຖິ່ນທີ່ໃສ່ໃຈສິ່ງແວດລ້ອມ ແລະ ປູກດອກໄມ້ດ້ວຍຄວາມຮັກ."
+
+#. module: theme_orchid
+#: model_terms:theme.ir.ui.view,arch:theme_orchid.s_quotes_carousel
+msgid ""
+"Very nice, colorful shop with many choices in the heart of a very pretty "
+"town."
+msgstr ""
+"ຮ້ານທີ່ສວຍງາມ ແລະ ມີສີສັນຫຼາກຫຼາຍ ພ້ອມກັບຕົວເລືອກມາກມາຍ ຕັ້ງຢູ່ໃຈກາງເມືອງທີ່ໜ້າຮັກ."
+
+#. module: theme_orchid
+#: model_terms:theme.ir.ui.view,arch:theme_orchid.s_three_columns
+msgid ""
+"We use 100% recycled materials. We believe the best gifts should also do "
+"good for the planet."
+msgstr ""
+"ພວກເຮົາໃຊ້ວັດສະດຸຣີໄຊເຄິນ 100%. ພວກເຮົາເຊື່ອວ່າຂອງຂວັນທີ່ດີທີ່ສຸດຄວນຈະດີຕໍ່ໂລກນຳ."
+
+#. module: theme_orchid
+#. odoo-javascript
+#: code:addons/theme_orchid/static/src/js/tour.js:0
+#, python-format
+msgid "width"
+msgstr "ຄວາມກວ້າງ"

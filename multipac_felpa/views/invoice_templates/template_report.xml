@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data>
+        <!-- Invoice Template -->
+        <record id="report_invoice_template_contemporary" model="ir.actions.report">
+            <field name="name">Vintage</field>
+            <field name="model">account.move</field>
+            <field name="report_type">qweb-pdf</field>
+            <field name="report_name">multipac_felpa.report_invoice_template_custom</field>
+            <field name="report_file">multipac_felpa.report_invoice_template_custom</field>
+            <field name="print_report_name">(object._get_report_base_filename())</field>
+            <field name="attachment">(object.state == 'posted') and ((object.name or 'INV').replace('/','_')+'.pdf')</field>
+            <field name="binding_model_id" ref="model_account_move"/>
+            <field name="binding_type">report</field>
+            <field name="binding_view_types">None</field>
+        </record>
+        <record id="report_invoice_template_elegant" model="ir.actions.report">
+            <field name="name">Bold</field>
+            <field name="model">account.move</field>
+            <field name="report_type">qweb-pdf</field>
+            <field name="report_name">multipac_felpa.report_invoice_template_custom_elegant</field>
+            <field name="report_file">multipac_felpa.report_invoice_template_custom_elegant</field>
+            <field name="print_report_name">(object._get_report_base_filename())</field>
+            <field name="attachment">(object.state == 'posted') and ((object.name or 'INV').replace('/','_')+'.pdf')</field>
+            <field name="binding_model_id" ref="model_account_move"/>
+            <field name="binding_type">report</field>
+            <field name="binding_view_types">None</field>
+        </record>
+         <record id="report_invoice_template_creative" model="ir.actions.report">
+            <field name="name">Moderno</field>
+            <field name="model">account.move</field>
+            <field name="report_type">qweb-pdf</field>
+            <field name="report_name">multipac_felpa.report_invoice_template_custom_creative</field>
+            <field name="report_file">multipac_felpa.report_invoice_template_custom_creative</field>
+            <field name="print_report_name">(object._get_report_base_filename())</field>
+            <field name="attachment">(object.state == 'posted') and ((object.name or 'INV').replace('/','_')+'.pdf')</field>
+            <field name="binding_model_id" ref="model_account_move"/>
+            <field name="binding_type">report</field>
+            <field name="binding_view_types">None</field>
+        </record>
+        <record id="report_invoice_template_advanced" model="ir.actions.report">
+            <field name="name">Pulido</field>
+            <field name="model">account.move</field>
+            <field name="report_type">qweb-pdf</field>
+            <field name="report_name">multipac_felpa.report_invoice_template_custom_advanced</field>
+            <field name="report_file">multipac_felpa.report_invoice_template_custom_advanced</field>
+            <field name="print_report_name">(object._get_report_base_filename())</field>
+            <field name="attachment">(object.state == 'posted') and ((object.name or 'INV').replace('/','_')+'.pdf')</field>
+            <field name="binding_model_id" ref="model_account_move"/>
+            <field name="binding_type">report</field>
+            <field name="binding_view_types">None</field>
+        </record>
+        <record id="report_invoice_template_exclusive" model="ir.actions.report">
+            <field name="name">Corporativo</field>
+            <field name="model">account.move</field>
+            <field name="report_type">qweb-pdf</field>
+            <field name="report_name">multipac_felpa.report_invoice_template_custom_exclusive</field>
+            <field name="report_file">multipac_felpa.report_invoice_template_custom_exclusive</field>
+            <field name="print_report_name">(object._get_report_base_filename())</field>
+            <field name="attachment">(object.state == 'posted') and ((object.name or 'INV').replace('/','_')+'.pdf')</field>
+            <field name="binding_model_id" ref="model_account_move"/>
+            <field name="binding_type">report</field>
+            <field name="binding_view_types">None</field>
+        </record>
+        <record id="report_invoice_template_incredible" model="ir.actions.report">
+            <field name="name">Clásico</field>
+            <field name="model">account.move</field>
+            <field name="report_type">qweb-pdf</field>
+            <field name="report_name">multipac_felpa.report_invoice_template_custom_incredible</field>
+            <field name="report_file">multipac_felpa.report_invoice_template_custom_incredible</field>
+            <field name="print_report_name">(object._get_report_base_filename())</field>
+            <field name="attachment">(object.state == 'posted') and ((object.name or 'INV').replace('/','_')+'.pdf')</field>
+            <field name="binding_model_id" ref="model_account_move"/>
+            <field name="binding_type">report</field>
+            <field name="binding_view_types">None</field>
+        </record>
+        <record id="report_invoice_template_infile_classic" model="ir.actions.report">
+            <field name="name">Infile Clásico</field>
+            <field name="model">account.move</field>
+            <field name="report_type">qweb-pdf</field>
+            <field name="report_name">multipac_felpa.report_invoice_template_custom_infile_classic</field>
+            <field name="report_file">multipac_felpa.report_invoice_template_custom_infile_classic</field>
+            <field name="print_report_name">(object._get_report_base_filename())</field>
+            <field name="attachment">(object.state == 'posted') and ((object.name or 'INV').replace('/','_')+'.pdf')</field>
+            <field name="binding_model_id" ref="model_account_move"/>
+            <field name="binding_type">report</field>
+            <field name="binding_view_types">None</field>
+        </record>
+        <record id="report_invoice_template_odoo" model="ir.actions.report">
+            <field name="name">Odoo</field>
+            <field name="model">account.move</field>
+            <field name="report_type">qweb-pdf</field>
+            <field name="report_name">multipac_felpa.report_invoice_template_custom_odoo</field>
+            <field name="report_file">multipac_felpa.report_invoice_template_custom_odoo</field>
+            <field name="print_report_name">(object._get_report_base_filename())</field>
+            <field name="attachment">(object.state == 'posted') and ((object.name or 'INV').replace('/','_')+'.pdf')</field>
+            <field name="binding_model_id" ref="model_account_move"/>
+            <field name="binding_type">report</field>
+            <field name="binding_view_types">None</field>
+        </record>
+        
+    </data>
+</odoo>

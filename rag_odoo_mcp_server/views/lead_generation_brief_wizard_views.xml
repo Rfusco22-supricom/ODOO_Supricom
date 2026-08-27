@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <record id="lead_brief_wizard_view_form" model="ir.ui.view">
+        <field name="name">rag_odoo_mcp_server.lead_brief_wizard.form</field>
+        <field name="model">rag_odoo_mcp_server.lead_brief_wizard</field>
+        <field name="arch" type="xml">
+            <form string="Claude Lead Generation Brief">
+                <sheet>
+                    <div class="alert alert-info mb-3" role="alert">
+                        Define your targeting criteria. Save the brief, then ask Claude
+                        to <strong>call lead_gen_get_brief</strong> and it will find matching
+                        companies and create leads automatically.
+                    </div>
+
+                    <group>
+                        <field name="brief_title" placeholder="Name this brief"/>
+                        <field name="company_id" groups="base.group_multi_company"/>
+                    </group>
+
+                    <h2>How many leads would you like?</h2>
+                    <group name="requests">
+                        <group>
+                            <div class="o_row py-3">
+                                <field name="lead_number" nolabel="1"
+                                       class="oe_inline pe-2 o_input_3ch o_field_highlight"/>
+                                <field name="search_type" widget="selection" nolabel="1"
+                                       class="oe_inline o_field_highlight"/>
+                            </div>
+                        </group>
+                    </group>
+
+                    <group>
+                        <group name="companies">
+                            <field name="country_ids" widget="many2many_tags"
+                                   options="{'no_create': True, 'no_open': True}"/>
+                            <field name="available_state_ids" invisible="1"/>
+                            <field name="state_ids" widget="many2many_tags"
+                                   placeholder="Pick States..."
+                                   invisible="not country_ids or not available_state_ids"
+                                   domain="[('id', 'in', available_state_ids)]"
+                                   options="{'no_create': True, 'no_open': True}"/>
+                            <field name="industry_ids" widget="many2many_tags"
+                                   options="{'no_create': True, 'no_open': True}"
+                                   class="o_industry o_field_highlight"/>
+                            <field name="filter_on_size"/>
+                            <label for="company_size_min" invisible="not filter_on_size"/>
+                            <div invisible="not filter_on_size">
+                                From
+                                <field name="company_size_min"
+                                       class="oe_inline px-2 o_input_5ch"
+                                       required="filter_on_size"/>
+                                to
+                                <field name="company_size_max"
+                                       class="oe_inline px-2 o_input_7ch"
+                                       required="filter_on_size"/>
+                                employees
+                            </div>
+                        </group>
+                        <group name="lead_info">
+                            <field name="lead_type" groups="crm.group_use_lead"/>
+                            <field name="team_id"
+                                   options="{'no_create': True, 'no_open': True}"/>
+                            <field name="user_id" widget="many2one_avatar_user"
+                                   options="{'no_create': True, 'no_open': True}"/>
+                            <field name="tag_ids" string="Default Tags"
+                                   widget="many2many_tags"
+                                   options="{'color_field': 'color', 'no_create_edit': True}"/>
+                        </group>
+                    </group>
+
+                    <!-- Contacts section (only when Target = people) -->
+                    <group name="contacts" invisible="search_type != 'people'">
+                        <div colspan="2" class="py-3">
+                            <field name="contact_number"
+                                   required="search_type == 'people'"
+                                   nolabel="1"
+                                   class="oe_inline pe-2 col-md-1 o_input_2ch"/>
+                            <span class="col-md-6">Extra contacts per Company</span>
+                        </div>
+                    </group>
+                    <group invisible="search_type != 'people'">
+                        <group>
+                            <field name="contact_filter_type" widget="radio"
+                                   options="{'horizontal': true}"/>
+                            <field name="preferred_role_id"
+                                   options="{'no_create_edit': True, 'no_quick_create': True, 'no_open': True}"
+                                   invisible="contact_filter_type != 'role'"
+                                   required="search_type == 'people' and contact_filter_type == 'role'"/>
+                            <field name="role_ids" widget="many2many_tags"
+                                   options="{'color_field': 'color', 'no_create_edit': True, 'no_quick_create': True}"
+                                   invisible="not preferred_role_id or contact_filter_type != 'role'"/>
+                            <field name="seniority_id"
+                                   options="{'no_create_edit': True, 'no_quick_create': True, 'no_open': True}"
+                                   invisible="contact_filter_type != 'seniority'"
+                                   required="search_type == 'people' and contact_filter_type == 'seniority'"/>
+                        </group>
+                    </group>
+
+                    <!-- Claude instructions -->
+                    <separator string="Instructions for Claude"/>
+                    <group>
+                        <group>
+                            <field name="lead_nature"/>
+                            <field name="subsector_notes"/>
+                            <field name="revenue_hint"/>
+                            <field name="geo_notes"/>
+                            <field name="language_id"/>
+                        </group>
+                        <group>
+                            <field name="job_titles_keywords"/>
+                            <field name="research_sources_hint"/>
+                            <field name="keywords_include"/>
+                            <field name="keywords_exclude"/>
+                            <field name="competitor_landscape"/>
+                        </group>
+                    </group>
+                    <group>
+                        <field name="buyer_persona"
+                               placeholder="Goals, pains, objections..."/>
+                        <field name="product_service_fit"
+                               placeholder="What we sell and why they care"/>
+                    </group>
+
+                    <!-- Marketing / UTM -->
+                    <group string="Marketing and value">
+                        <group>
+                            <field name="campaign_id"/>
+                            <field name="medium_id"/>
+                            <field name="source_id"/>
+                        </group>
+                        <group>
+                            <field name="expected_revenue_hint"/>
+                            <field name="currency_id" groups="base.group_multi_currency"/>
+                            <field name="prefer_iap_enrich"/>
+                        </group>
+                    </group>
+
+                    <!-- Compliance -->
+                    <group string="Compliance">
+                        <field name="compliance_notes"
+                               placeholder="GDPR, opt-in..."/>
+                        <field name="extra_notes"/>
+                    </group>
+
+                    <footer>
+                        <button name="action_save_brief_for_mcp" type="object"
+                                string="Save for Claude (MCP)"
+                                default_focus="1" class="btn-primary"
+                                invisible="not context.get('is_modal')"
+                                data-hotkey="q"/>
+                        <button string="Cancel" class="btn-secondary"
+                                special="cancel"
+                                invisible="not context.get('is_modal')"
+                                data-hotkey="x"/>
+                    </footer>
+
+                </sheet>
+            </form>
+        </field>
+    </record>
+</odoo>

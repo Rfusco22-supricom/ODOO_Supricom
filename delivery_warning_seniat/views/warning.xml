@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<odoo>
+    <data>
+        <record id="view_account_change_lock_date_form" model="ir.ui.view">
+            <field name="name">account.change.lock.date.form</field>
+            <field name="model">account.change.lock.date</field>
+            <field name="inherit_id" ref="account_accountant.view_account_change_lock_date"/>
+            <field name="arch" type="xml">
+                <xpath expr="//sheet" position="inside">
+                    <div class="alert alert-warning" style="display: none;" id="warning_message_container">
+                        <span id="warning_message_content"></span>
+                    </div>
+                    <div>
+                        <field name="warning_message" 
+                            string="ADVERTENCIA" 
+                            invisible="0" 
+                            style="color:red; font-size: 16px; font-weight: bold;" />
+                    </div>
+                </xpath>
+            </field>
+        </record>
+    </data>
+</odoo>

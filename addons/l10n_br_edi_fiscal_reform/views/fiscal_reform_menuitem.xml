@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <menuitem id="brazil_fiscal_reform_menu" name="Brazil Fiscal Reform" sequence="10" parent="account.menu_finance_configuration" groups="account.group_account_manager"/>
+</odoo>

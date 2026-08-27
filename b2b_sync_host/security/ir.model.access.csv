@@ -1,0 +1,3 @@
+id,name,model_id:id,group_id:id,perm_read,perm_write,perm_create,perm_unlink
+access_b2b_client_config_user,b2b.client.config.user,model_b2b_client_config,sales_team.group_sale_salesman,1,1,1,1
+access_b2b_client_config_manager,b2b.client.config.manager,model_b2b_client_config,sales_team.group_sale_manager,1,1,1,1

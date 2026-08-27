@@ -1,0 +1,315 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+# * theme_real_estate
+#
+# Weblate <noreply-mt-weblate@weblate.org>, 2026.
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 17.0+e\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-06-19 17:38+0000\n"
+"PO-Revision-Date: 2026-06-13 17:41+0000\n"
+"Last-Translator: Weblate <noreply-mt-weblate@weblate.org>\n"
+"Language-Team: Lao <https://translate.odoo.com/projects/odoo-17/"
+"theme_real_estate/lo/>\n"
+"Language: lo\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: \n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"X-Generator: Weblate 2026.6.1\n"
+
+#. module: theme_real_estate
+#: model_terms:theme.ir.ui.view,arch:theme_real_estate.s_quotes_carousel
+msgid "<b>Iris Doe</b> • Customer, sold an appartement"
+msgstr ""
+
+#. module: theme_real_estate
+#: model_terms:theme.ir.ui.view,arch:theme_real_estate.s_quotes_carousel
+msgid "<b>Jane Doe</b> • Customer, bought a house"
+msgstr ""
+
+#. module: theme_real_estate
+#: model_terms:theme.ir.ui.view,arch:theme_real_estate.s_quotes_carousel
+msgid "<b>John Doe</b> • Customer, bought an appartement"
+msgstr ""
+
+#. module: theme_real_estate
+#: model_terms:theme.ir.ui.view,arch:theme_real_estate.s_banner
+msgid "<b>Real Estate Agency.<br/>Near You.</b>"
+msgstr "<b>ຕົວແທນອະສັງຫາລິມະຊັບ.<br/>ໃກ້ຕົວທ່ານ.</b>"
+
+#. module: theme_real_estate
+#: model_terms:theme.ir.ui.view,arch:theme_real_estate.s_three_columns
+msgid "<span class=\"text-600 fw-bold\">$1,295,000,000</span>"
+msgstr ""
+
+#. module: theme_real_estate
+#: model_terms:theme.ir.ui.view,arch:theme_real_estate.s_three_columns
+msgid "<span class=\"text-600 fw-bold\">$295,000</span>"
+msgstr ""
+
+#. module: theme_real_estate
+#: model_terms:theme.ir.ui.view,arch:theme_real_estate.s_three_columns
+msgid "<span class=\"text-600 fw-bold\">$455,000</span>"
+msgstr ""
+
+#. module: theme_real_estate
+#: model_terms:theme.ir.ui.view,arch:theme_real_estate.s_quotes_carousel
+msgid ""
+"Amazing team! smiling, always nice to talk with, they always have the best "
+"advices for you, adapted to your needs!"
+msgstr ""
+"ທີມງານທີ່ຍອດຢ້ຽມ! ຍິ້ມແຍ້ມແຈ່ມໃສ, ສົນທະນາດ້ວຍຄວາມເປັນກັນເອງ, "
+"ພວກເຂົາມີຄຳແນະນຳທີ່ດີທີ່ສຸດໃຫ້ທ່ານສະເໝີ ແລະ ແທດເໝາະກັບຄວາມຕ້ອງການຂອງທ່ານ!"
+
+#. module: theme_real_estate
+#: model_terms:theme.ir.ui.view,arch:theme_real_estate.s_text_image
+msgid "Are you thinking of selling?"
+msgstr "ທ່ານກຳລັງຄິດທີ່ຈະຂາຍແມ່ນບໍ?"
+
+#. module: theme_real_estate
+#: model_terms:theme.ir.ui.view,arch:theme_real_estate.s_text_block
+msgid ""
+"At <b>Odoo Travel Agency</b> our agents are more than a consultant, they are "
+"fellow <b>travelers with a passion</b> to help you explore the world. With "
+"more than 75 years combined experience you can be sure we are devoted to "
+"finding the best solutions for your travel plans."
+msgstr ""
+"ທີ່ <b>ຕົວແທນການທ່ອງທ່ຽວ Odoo</b> ຕົວແທນຂອງພວກເຮົາເປັນຫຼາຍກວ່າທີ່ປຶກສາ, ພວກເຂົາແມ່ນ "
+"<b>ເພື່ອນຮ່ວມທາງທີ່ມີຄວາມມຸ່ງໝັ້ນ</b> ທີ່ຈະຊ່ວຍໃຫ້ທ່ານອອກໄປສຳຫຼວດໂລກ. ດ້ວຍປະສົບການລວມກັນຫຼາຍກວ່າ "
+"75 ປີ, ທ່ານສາມາດໝັ້ນໃຈໄດ້ວ່າພວກເຮົາທຸ່ມເທເພື່ອຄົ້ນຫາທາງເລືອກທີ່ດີທີ່ສຸດສຳລັບແຜນການເດີນທາງຂອງທ່ານ."
+
+#. module: theme_real_estate
+#: model_terms:theme.ir.ui.view,arch:theme_real_estate.s_masonry_block_default_template
+msgid ""
+"At Real Estate Agency we have fixed price fees. This means we only charge "
+"when your home sale is confirmed."
+msgstr ""
+
+#. module: theme_real_estate
+#: model_terms:theme.ir.ui.view,arch:theme_real_estate.s_image_text
+msgid "Bored with your interior?"
+msgstr "ເບື່ອການຕົບແຕ່ງພາຍໃນແບບເກົ່າແລ້ວແມ່ນບໍ?"
+
+#. module: theme_real_estate
+#: model_terms:theme.ir.ui.view,arch:theme_real_estate.s_image_text
+msgid ""
+"Discover our tailor-made services to embellish the decoration of your home."
+msgstr "ຄົ້ນພົບການບໍລິການທີ່ອອກແບບມາສະເພາະ ເພື່ອເພີ່ມຄວາມສວຍງາມໃຫ້ກັບການຕົບແຕ່ງເຮືອນຂອງທ່ານ."
+
+#. module: theme_real_estate
+#: model_terms:theme.ir.ui.view,arch:theme_real_estate.s_three_columns
+msgid ""
+"Elegant, modern sophisticated architecture with an impressive in large scale "
+"home designed with the finest imported finishes. Marble and wood floors..."
+msgstr ""
+"ສະຖາປັດຕະຍາກຳທີ່ສະຫງ່າງາມ ແລະ ທັນສະໄໝ ໃນເຮືອນຂະໜາດໃຫຍ່ທີ່ໜ້າປະທັບໃຈ "
+"ອອກແບບດ້ວຍວັດສະດຸຕົບແຕ່ງນຳເຂົ້າທີ່ດີທີ່ສຸດ. ພື້ນຫີນອ່ອນ ແລະ ໄມ້..."
+
+#. module: theme_real_estate
+#: model_terms:theme.ir.ui.view,arch:theme_real_estate.s_image_text
+msgid "Explore our services"
+msgstr "ຄົ້ນຫາບໍລິການຂອງພວກເຮົາ"
+
+#. module: theme_real_estate
+#: model_terms:theme.ir.ui.view,arch:theme_real_estate.s_quotes_carousel
+msgid ""
+"From start to finish, they were extremely professional, friendly, helpful "
+"and easy to do business with. Very happy with the experience and the company."
+msgstr ""
+"ຕັ້ງແຕ່ຕົ້ນຈົນຈົບ, ພວກເຂົາມີຄວາມເປັນມືອາຊີບຫຼາຍ, ເປັນກັນເອງ, ຊ່ວຍເຫຼືອດີ ແລະ ຮ່ວມງານນຳໄດ້ງ່າຍ. "
+"ຮູ້ສຶກພໍໃຈຫຼາຍກັບປະສົບການ ແລະ ບໍລິສັດນີ້."
+
+#. module: theme_real_estate
+#: model_terms:theme.ir.ui.view,arch:theme_real_estate.s_three_columns
+msgid "House On The Hill"
+msgstr "ເຮືອນເທິງເນີນເຂົາ"
+
+#. module: theme_real_estate
+#: model_terms:theme.ir.ui.view,arch:theme_real_estate.s_masonry_block_default_template
+msgid ""
+"Increase Visitor retention. Customer engagement on a website with virtual "
+"tour is 5 times longer compared to a site without it."
+msgstr ""
+
+#. module: theme_real_estate
+#: model_terms:theme.ir.ui.view,arch:theme_real_estate.s_masonry_block_default_template
+msgid "Increased Visibility"
+msgstr ""
+
+#. module: theme_real_estate
+#: model_terms:theme.ir.ui.view,arch:theme_real_estate.s_text_image
+msgid ""
+"Make an appointment for a free valuation of your property. We visit the "
+"property, advise you on a realistic asking price and we explain our way of "
+"working. <br/>\n"
+"        You can decide in all freedom whether or not you would like to work "
+"with us for the sale of your property."
+msgstr ""
+"ນັດໝາຍເພື່ອປະເມີນມູນຄ່າອະສັງຫາລິມະຊັບຂອງທ່ານໂດຍບໍ່ເສຍຄ່າ. ພວກເຮົາຈະລົງພື້ນທີ່ຕົວຈິງ, "
+"ໃຫ້ຄຳແນະນຳກ່ຽວກັບລາຄາທີ່ເໝາະສົມ ແລະ ອະທິບາຍວິທີການເຮັດວຽກຂອງພວກເຮົາ. <br/>\n"
+"        ທ່ານສາມາດຕັດສິນໃຈໄດ້ຢ່າງອິດສະຫຼະວ່າຈະຮ່ວມງານກັບພວກເຮົາໃນການຂາຍອະສັງຫາລິມະຊັບຂອງທ່ານຫຼືບໍ່."
+
+#. module: theme_real_estate
+#: model_terms:theme.ir.ui.view,arch:theme_real_estate.s_three_columns
+msgid "Moutain View"
+msgstr "ວິວພູເຂົາ"
+
+#. module: theme_real_estate
+#: model_terms:theme.ir.ui.view,arch:theme_real_estate.s_masonry_block_default_template
+msgid "No fixed fees"
+msgstr ""
+
+#. module: theme_real_estate
+#: model_terms:theme.ir.ui.view,arch:theme_real_estate.s_banner
+msgid ""
+"Now you can find more than 5,000+ property choices with our professional "
+"agents!<br/>"
+msgstr ""
+"ຕອນນີ້ທ່ານສາມາດຄົ້ນຫາອະສັງຫາລິມະຊັບຫຼາຍກວ່າ 5,000 ແຫ່ງ ກັບຕົວແທນມືອາຊີບຂອງພວກເຮົາ!<br/>"
+
+#. module: theme_real_estate
+#: model_terms:theme.ir.ui.view,arch:theme_real_estate.s_picture
+msgid "Open your horizons"
+msgstr "ເປີດຂອບເຂດໃໝ່ຂອງທ່ານ"
+
+#. module: theme_real_estate
+#: model_terms:theme.ir.ui.view,arch:theme_real_estate.s_image_text
+msgid ""
+"Our decoration experts are at your disposal to guide you step by step in the "
+"design of your interior and will give you the best advice for your interior "
+"design."
+msgstr ""
+"ຜູ້ຊ່ຽວຊານດ້ານການຕົບແຕ່ງຂອງພວກເຮົາ ພ້ອມທີ່ຈະແນະນຳທ່ານແຕ່ລະຂັ້ນຕອນໃນການອອກແບບພາຍໃນ ແລະ "
+"ໃຫ້ຄຳປຶກສາທີ່ດີທີ່ສຸດສຳລັບເຮືອນຂອງທ່ານ."
+
+#. module: theme_real_estate
+#: model_terms:theme.ir.ui.view,arch:theme_real_estate.s_three_columns
+msgid "Paradise Residence"
+msgstr "ບ້ານພັກພາຣາໄດຊ໌"
+
+#. module: theme_real_estate
+#: model_terms:theme.ir.ui.view,arch:theme_real_estate.s_quotes_carousel
+msgid ""
+"Positive energy, great team spirit, hard workers and awesome people! I "
+"warmly recommend them!"
+msgstr ""
+"ພະລັງງານບວກ, ຈິດວິນຍານຂອງທີມທີ່ດີເລີດ, ເຮັດວຽກໜັກ ແລະ ເປັນຄົນທີ່ຍອດຢ້ຽມ! ຂ້ອຍຂໍແນະນຳພວກເຂົາເລີຍ!"
+
+#. module: theme_real_estate
+#: model_terms:theme.ir.ui.view,arch:theme_real_estate.s_masonry_block_default_template
+msgid "Premium Quality"
+msgstr ""
+
+#. module: theme_real_estate
+#: model_terms:theme.ir.ui.view,arch:theme_real_estate.s_masonry_block_default_template
+msgid "Pro Photo Shoot"
+msgstr ""
+
+#. module: theme_real_estate
+#: model_terms:theme.ir.ui.view,arch:theme_real_estate.s_picture
+msgid "Property on the coasts of the Mediterranean."
+msgstr "ອະສັງຫາລິມະຊັບບໍລິເວນຊາຍຝັ່ງທະເລເມດິເຕີເຣນຽນ."
+
+#. module: theme_real_estate
+#: model_terms:theme.ir.ui.view,arch:theme_real_estate.s_banner
+msgid "See properties"
+msgstr "ເບິ່ງອະສັງຫາລິມະຊັບ"
+
+#. module: theme_real_estate
+#: model_terms:theme.ir.ui.view,arch:theme_real_estate.s_three_columns
+msgid ""
+"The house is surrounded by garden terraces that create unique spaces and an "
+"intimate ambience. With no overlooking neighbours, the garden offers real "
+"privacy."
+msgstr ""
+
+#. module: theme_real_estate
+#: model:ir.model,name:theme_real_estate.model_theme_utils
+msgid "Theme Utils"
+msgstr "ເຄື່ອງມືຮູບແບບສີສັນ"
+
+#. module: theme_real_estate
+#: model_terms:theme.ir.ui.view,arch:theme_real_estate.s_masonry_block_default_template
+msgid ""
+"They say an image is worth a thousand words and we know you know how "
+"important it is to have the best photography."
+msgstr ""
+
+#. module: theme_real_estate
+#: model_terms:theme.ir.ui.view,arch:theme_real_estate.s_three_columns
+msgid "View details"
+msgstr "ເບິ່ງລາຍລະອຽດ"
+
+#. module: theme_real_estate
+#: model_terms:theme.ir.ui.view,arch:theme_real_estate.s_call_to_action
+msgid "Want To Become A Real Estate Agent?"
+msgstr "ຢາກກາຍເປັນຕົວແທນອະສັງຫາລິມະຊັບແມ່ນບໍ?"
+
+#. module: theme_real_estate
+#: model_terms:theme.ir.ui.view,arch:theme_real_estate.s_three_columns
+msgid ""
+"Waste no time in viewing this truly stunning property. The property's "
+"surroundings really set it apart, offering idyllic sea views overlooking a "
+"park."
+msgstr ""
+"ຢ່າລໍຊ້າທີ່ຈະເຂົ້າຊົມອະສັງຫາລິມະຊັບທີ່ສວຍງາມນີ້. ສະພາບແວດລ້ອມທີ່ໂດດເດັ່ນ ພ້ອມວິວທະເລທີ່ງົດງາມ ແລະ "
+"ສວນສາທາລະນະ ເຮັດໃຫ້ບ່ອນນີ້ພິເສດກວ່າບ່ອນອື່ນ."
+
+#. module: theme_real_estate
+#: model_terms:theme.ir.ui.view,arch:theme_real_estate.s_text_block
+msgid ""
+"We are <b>Odoo Travel Agency</b>, dedicated to making your vacation dreams "
+"come true! Overwhelmed with too many choices on the internet? We offer you "
+"answers, support, advice, and itineraries that will amaze you with their "
+"<b>thoroughness and thoughtfulness</b>."
+msgstr ""
+"ພວກເຮົາແມ່ນ <b>ຕົວແທນການທ່ອງທ່ຽວ Odoo</b>, "
+"ທີ່ທຸ່ມເທເພື່ອເຮັດໃຫ້ຄວາມຝັນໃນການພັກຜ່ອນຂອງທ່ານເປັນຈິງ! "
+"ຮູ້ສຶກສັບສົນກັບທາງເລືອກທີ່ຫຼາຍເກີນໄປໃນອິນເຕີເນັດແມ່ນບໍ? ພວກເຮົາພ້ອມມອບຄຳຕອບ, ການຊ່ວຍເຫຼືອ, "
+"ຄຳແນະນຳ ແລະ ແຜນການເດີນທາງທີ່ຈະເຮັດໃຫ້ທ່ານປະທັບໃຈດ້ວຍ <b>ຄວາມລະອຽດ ແລະ ຄວາມໃສ່ໃຈ</b>."
+
+#. module: theme_real_estate
+#: model_terms:theme.ir.ui.view,arch:theme_real_estate.s_masonry_block_default_template
+msgid ""
+"We are committed to delivering high quality services that enhance your brand "
+"by allowing visitors to interact virtually."
+msgstr ""
+
+#. module: theme_real_estate
+#: model_terms:theme.ir.ui.view,arch:theme_real_estate.s_call_to_action
+msgid "We'll help you to grow your career and growth."
+msgstr "ພວກເຮົາຈະຊ່ວຍໃຫ້ທ່ານເຕີບໂຕໃນສາຍອາຊີບ ແລະ ກ້າວໜ້າຕໍ່ໄປ."
+
+#. module: theme_real_estate
+#: model_terms:theme.ir.ui.view,arch:theme_real_estate.s_picture
+msgid ""
+"We’ve selected properties from all types and all areas.<br/>\n"
+"        The house of your dreams is around the corner."
+msgstr ""
+"ພວກເຮົາໄດ້ຄັດສັນອະສັງຫາລິມະຊັບທຸກປະເພດ ແລະ ທຸກພື້ນທີ່.<br/>\n"
+"        ເຮືອນໃນຝັນຂອງທ່ານຢູ່ໃກ້ພຽງເອື້ອມມື."
+
+#. module: theme_real_estate
+#: model_terms:theme.ir.ui.view,arch:theme_real_estate.s_numbers
+msgid "amazing agents"
+msgstr "ຕົວແທນທີ່ຍອດຢ້ຽມ"
+
+#. module: theme_real_estate
+#: model_terms:theme.ir.ui.view,arch:theme_real_estate.s_numbers
+msgid "happy customers"
+msgstr "ລູກຄ້າທີ່ມີຄວາມສຸກ"
+
+#. module: theme_real_estate
+#: model_terms:theme.ir.ui.view,arch:theme_real_estate.s_numbers
+msgid "offices"
+msgstr ""
+
+#. module: theme_real_estate
+#: model_terms:theme.ir.ui.view,arch:theme_real_estate.s_numbers
+msgid "properties already sold"
+msgstr "ອະສັງຫາລິມະຊັບທີ່ຂາຍອອກແລ້ວ"
+
+#~ msgid "142"
+#~ msgstr "142"
