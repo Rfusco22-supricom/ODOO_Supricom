@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <!--
+        Dos categorías de Approvals para los KPIs de Gestión Administrativa y
+        Cumplimiento (issue #8 del Dashboard). Los ids externos
+        (categoria_operaciones_fuera_politica, categoria_solicitud_administrativa)
+        son cómo el dashboard las encuentra en tiempo de ejecución: buscar por
+        `name` es frágil porque el nombre se traduce, el id externo no.
+
+        noupdate="1": si Administración renombra o reconfigura estas categorías
+        en producción, una actualización del módulo no debe pisar ese cambio.
+        Sigue el mismo patrón que approvals/data/approval_category_data.xml.
+    -->
+    <data noupdate="1">
+        <record id="categoria_solicitud_administrativa" model="approval.category">
+            <field name="name">Solicitud Administrativa</field>
+            <field name="image" type="base64" file="approvals/static/src/img/Folder.png"/>
+            <field name="sequence">20</field>
+            <field name="has_date">no</field>
+            <field name="has_period">no</field>
+            <field name="has_product">no</field>
+            <field name="has_quantity">no</field>
+            <field name="has_amount">no</field>
+            <field name="has_reference">no</field>
+            <field name="has_partner">no</field>
+            <field name="has_payment_method">no</field>
+            <field name="has_location">no</field>
+            <field name="requirer_document">optional</field>
+            <field name="approval_minimum">1</field>
+            <field name="manager_approval">approver</field>
+        </record>
+
+        <record id="categoria_operaciones_fuera_politica" model="approval.category">
+            <field name="name">Excepción de Política</field>
+            <field name="image" type="base64" file="approvals/static/src/img/Contract.png"/>
+            <field name="sequence">21</field>
+            <field name="has_date">no</field>
+            <field name="has_period">no</field>
+            <field name="has_product">no</field>
+            <field name="has_quantity">no</field>
+            <field name="has_amount">required</field>
+            <field name="has_reference">no</field>
+            <field name="has_partner">no</field>
+            <field name="has_payment_method">no</field>
+            <field name="has_location">no</field>
+            <!-- Toda excepción de política exige su justificación adjunta:
+                 es justo lo que hoy falta en manual_commission_override, que
+                 solo tiene una nota de texto libre y sin obligar a nada. -->
+            <field name="requirer_document">required</field>
+            <field name="approval_minimum">1</field>
+            <field name="manager_approval">approver</field>
+        </record>
+    </data>
+</odoo>

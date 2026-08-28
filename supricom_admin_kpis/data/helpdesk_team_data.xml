@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <!--
+        Equipo de Helpdesk para incidencias administrativas (issue #8, KPI
+        "incidencias abiertas vencidas"). helpdesk.ticket ya trae sla_deadline
+        y sla_fail; lo único que faltaba era un equipo con una politica de SLA
+        activa — hoy hay 8 equipos y solo 3 tienen use_sla=True, y ninguno es
+        de Administración.
+
+        No se declaran stage_ids: al dejarlos vacíos el equipo usa los stages
+        por defecto (helpdesk.stage_new, stage_in_progress, stage_solved,
+        stage_cancelled), que es el mismo patrón que sigue el equipo de
+        fábrica "Customer Care" (helpdesk_data.xml) — así los usuarios ven las
+        mismas columnas de siempre, no un kanban nuevo que aprender.
+
+        noupdate="1": un ajuste manual del SLA en producción no debe revertirse
+        con una actualización del módulo.
+    -->
+    <data noupdate="1">
+        <record id="equipo_incidencias_administrativas" model="helpdesk.team">
+            <field name="name">Incidencias Administrativas</field>
+            <field name="use_sla" eval="True"/>
+        </record>
+
+        <record id="sla_incidencias_administrativas" model="helpdesk.sla">
+            <field name="name">Resolución en 5 días hábiles</field>
+            <field name="team_id" ref="equipo_incidencias_administrativas"/>
+            <!-- stage_id: llegar a Solucionado dentro del plazo. -->
+            <field name="stage_id" ref="helpdesk.stage_solved"/>
+            <field name="time">40</field> <!-- 5 dias habiles x 8h -->
+            <field name="priority">0</field>
+        </record>
+    </data>
+</odoo>

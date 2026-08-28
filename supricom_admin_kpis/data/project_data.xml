@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <!--
+        Dos proyectos para los KPIs que hoy no tienen ningún registro:
+        "cumplimiento de cierre mensual" y "pendientes de auditoría".
+
+        Se declaran los stages a proposito: un project.project creado sin
+        stage_ids queda con el kanban vacío hasta que alguien lo configure a
+        mano en la UI, y el KPI necesita saber en qué stage vive "cerrado" o
+        "vencido" para poder consultarlo por RPC de forma estable.
+
+        No se automatiza la creación mensual del checklist (project.task con
+        recurring_task=True). Requiere configurar project.task.recurrence, que
+        interactúa con un cron y es fácil de dejar en un estado roto sin poder
+        probarlo con calma en un ciclo completo de un mes. Queda para una
+        segunda vuelta, una vez Administración confirme la lista real de items
+        del checklist — hoy los de abajo son EJEMPLOS de relleno, no la lista
+        real; hay que reemplazarlos antes de usar esto en producción.
+
+        noupdate="1": los ajustes que Administración haga sobre estos proyectos
+        (renombrar stages, mover tareas) no deben revertirse al actualizar el
+        módulo.
+    -->
+    <data noupdate="1">
+
+        <!-- ───────────── Cumplimiento de cierre mensual ───────────── -->
+
+        <record id="stage_cierre_pendiente" model="project.task.type">
+            <field name="name">Pendiente</field>
+            <field name="sequence">1</field>
+        </record>
+        <record id="stage_cierre_en_revision" model="project.task.type">
+            <field name="name">En Revisión</field>
+            <field name="sequence">2</field>
+        </record>
+        <record id="stage_cierre_cerrado" model="project.task.type">
+            <field name="name">Cerrado</field>
+            <field name="sequence">3</field>
+            <field name="fold">True</field>
+        </record>
+
+        <record id="proyecto_cierre_mensual" model="project.project">
+            <field name="name">Cierre Mensual Contable</field>
+            <field name="label_tasks">Ítems de cierre</field>
+            <field name="type_ids" eval="[(6, 0, [
+                ref('stage_cierre_pendiente'),
+                ref('stage_cierre_en_revision'),
+                ref('stage_cierre_cerrado'),
+            ])]"/>
+        </record>
+
+        <!-- Ejemplos de relleno — reemplazar por el checklist real de
+             Administración antes de usar esto en producción. -->
+        <record id="tarea_cierre_ejemplo_1" model="project.task">
+            <field name="name">[EJEMPLO] Conciliación bancaria del mes</field>
+            <field name="project_id" ref="proyecto_cierre_mensual"/>
+            <field name="stage_id" ref="stage_cierre_pendiente"/>
+        </record>
+        <record id="tarea_cierre_ejemplo_2" model="project.task">
+            <field name="name">[EJEMPLO] Cierre de nómina del mes</field>
+            <field name="project_id" ref="proyecto_cierre_mensual"/>
+            <field name="stage_id" ref="stage_cierre_pendiente"/>
+        </record>
+
+        <!-- ───────────── Auditoría interna ───────────── -->
+
+        <record id="stage_auditoria_abierto" model="project.task.type">
+            <field name="name">Abierto</field>
+            <field name="sequence">1</field>
+        </record>
+        <record id="stage_auditoria_en_correccion" model="project.task.type">
+            <field name="name">En Corrección</field>
+            <field name="sequence">2</field>
+        </record>
+        <record id="stage_auditoria_cerrado" model="project.task.type">
+            <field name="name">Cerrado</field>
+            <field name="sequence">3</field>
+            <field name="fold">True</field>
+        </record>
+
+        <record id="tag_reincidencia" model="project.tags">
+            <field name="name">Reincidencia</field>
+        </record>
+
+        <record id="proyecto_auditoria_interna" model="project.project">
+            <field name="name">Auditoría Interna</field>
+            <field name="label_tasks">Hallazgos</field>
+            <field name="tag_ids" eval="[(6, 0, [ref('tag_reincidencia')])]"/>
+            <field name="type_ids" eval="[(6, 0, [
+                ref('stage_auditoria_abierto'),
+                ref('stage_auditoria_en_correccion'),
+                ref('stage_auditoria_cerrado'),
+            ])]"/>
+        </record>
+
+    </data>
+</odoo>
